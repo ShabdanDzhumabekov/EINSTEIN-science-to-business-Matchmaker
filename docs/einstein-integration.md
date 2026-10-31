@@ -37,6 +37,12 @@ This turns "meet industry" into specific, checkable conversations before the fin
 
 It can also widen the applicant pool (8 in 2025) without ranking people: when a company challenge fits early-career researchers who state they are open to industry work, the programme team can tell them about the call. The researcher decides; the system never scores candidates or predicts winners.
 
+## Cost and scale
+
+Measured on 31.10.2026 with GPT-6.1 Sol and Jev 1.14 through OpenRouter: one challenge costs $0.10–0.25 and 1–3 minutes (Jev screening of all 1,047 researchers about $0.02 of that; Writer and Critic about 80%); one researcher against all 489 challenges (Stars) about $0.30. The whole dataset, 489 challenges, is an estimated $50–120, and the screening is cached, so a changed challenge or profile re-screens only itself.
+
+The screening is the step that grows with the network: 489 × 1,047 ≈ 512,000 pair questions today. A larger network could put a company-level pre-filter in front of it: ask Jev once per researcher and company (153 × 1,047 ≈ 160,000 questions) whether the researcher's methods could matter to anything this company does, and screen challenges only within the pairs that survive. We measured it on 31.10 against the cached screenings of 15 challenges ([docs/company-prefilter-test.md](company-prefilter-test.md)): at a threshold of 0.4 it removes 46% of the researchers and loses none of the 166 kept pairs, the welding researcher behind C003-CH1 included; at 0.5 it loses three borderline pairs. It is not enabled, because at this size it saves about $1.7 per full screening after paying for itself; it becomes worthwhile when companies carry many challenges or screenings are repeated, and it would be switched on at 0.3 after the same measurement on the network's own data.
+
 ## What exists today and what would be new
 
 | Today, in this repository | Needed for EINSTEIN |

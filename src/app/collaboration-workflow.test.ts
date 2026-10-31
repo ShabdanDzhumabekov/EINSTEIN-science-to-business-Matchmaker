@@ -3,6 +3,7 @@ import { aCompany, aDataset, aPublication, aResearcher } from '../test-support/d
 import { aPairAssessment, aProposal, aSourceRef } from '../test-support/pair-builders'
 import { FakeDecision } from '../test-support/fake-decision'
 import { FakeRoleInference } from '../test-support/fake-role-inference'
+import type { CompanyScreening } from '../contracts/company-screening'
 import type { TaskScreening } from '../contracts/task-screening'
 import type { RoleInference, RoleInferenceRequest } from '../contracts/role-inference'
 import type { ScreeningStore } from '../screening/screening-store'
@@ -26,6 +27,8 @@ class MemoryScreenings implements ScreeningStore {
   constructor(private readonly screenings: Map<string, TaskScreening> = new Map()) {}
   find(taskId: string) { return this.screenings.get(taskId) }
   save(screening: TaskScreening) { this.screenings.set(screening.taskId, screening); return screening }
+  findCompany() { return undefined }
+  saveCompany(screening: CompanyScreening) { return screening }
 }
 
 function twoResearcherDataset() {

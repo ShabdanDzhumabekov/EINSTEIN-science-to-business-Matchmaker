@@ -1,0 +1,577 @@
+{
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "results": [
+    {
+      "status": "ready",
+      "taskId": "C001-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C001-CH1-R1008",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T16-18-25-488Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C001-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C001-CH1-R1008",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C001-CH1-R1008",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Explainable, Site-Specific Anomaly Detection for ProtoSense",
+          "facts": [
+            {
+              "text": "ArmaturaSec reports several terabytes of consenting-client captures collected over three years, no labelled malicious traffic, and the possibility of previously undetected compromise.",
+              "sources": [
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "we have nothing labelled as malicious.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "if they were compromised they would not know.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company describes ProtoSense as passive inspection for Modbus TCP and BACnet/IP.",
+              "sources": [
+                {
+                  "recordId": "C001",
+                  "field": "products",
+                  "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "ArmaturaSec reports on-device inference hardware and custom Yocto Linux. Its hardware-development plan discusses anomaly detection and forwarding latency together; numeric resource limits are not supplied.",
+              "sources": [
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "we have the hardware to run inference on-device",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001",
+                  "field": "tech",
+                  "quote": "Embedded Linux (custom Yocto build)",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001",
+                  "field": "plans",
+                  "quote": "to support on-device anomaly detection without affecting packet forwarding latency.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports that excessive false positives caused clients to disable alerts and identifies plant managers as the audience for explanations.",
+              "sources": [
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001-CH1",
+                  "field": "detail",
+                  "quote": "we can explain to a plant manager in plain language.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "ArmaturaSec describes capacity of one to two part-time engineers and archive, bench and firmware access under NDA.",
+              "sources": [
+                {
+                  "recordId": "C001",
+                  "field": "rd_capacity",
+                  "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C001",
+                  "field": "rd_capacity",
+                  "quote": "with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kiss's published Modbus work constructs per-register statistical baselines and documents seasonal baseline drift.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-10472",
+                  "field": "abstract",
+                  "quote": "This paper describes the construction of per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-10472",
+                  "field": "abstract",
+                  "quote": "The paper also quantifies the effect of seasonal load variation on baseline drift",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kiss lists joint projects with ICS-monitoring companies among her interests. Her group's testbed access is described under a data-sharing agreement.",
+              "sources": [
+                {
+                  "recordId": "R1008",
+                  "field": "open_to",
+                  "quote": "joint projects with companies deploying ICS monitoring solutions",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R1008",
+                  "field": "notes",
+                  "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "Site-specific statistical baselines suggest a plausible alternative to supervised attack classification, explaining deviations in timing, values or commands. Seasonal variation could nevertheless recreate alert fatigue.",
+            "Modbus evidence does not establish BACnet effectiveness or ProtoSense hardware fit. Contaminated archives and aggressive adaptation could conceal attacks; controlled bench detection cannot establish coverage of unknown real attacks.",
+            "This joint-project proposal is conditional: Kiss is open to this format, but her availability is unknown. Client collection consent also does not establish permission for research sharing."
+          ],
+          "proposedActions": [
+            "Propose a six-week pilot using representative per-site Modbus and BACnet archives as unlabelled data, plus safe bench injections. Separate training, tuning and held-out evaluation periods; verify independence and operating-cycle coverage. Compare fixed-threshold rules with statistical one-class baselines; select the best configuration using tuning data without attack-labelled training or threshold selection. Each protocol must separately pass held-out operational and bench evaluation. Proposed gates: a lower 95% confidence bound of at least 80% injected-episode detection within 60 seconds; an upper 95% confidence bound of at most one false-alert episode per observed site-day; agreed device-budget compliance; and no measurable forwarding-latency increase under matched load and agreed measurement tolerances. Require plant managers to correctly explain four of five randomly sampled alerts under a pre-agreed rubric. Missing data, insufficient precision or any failed gate means no deployment approval. Propose company engineers prepare permitted captures and Yocto integration, with Kiss's group developing features and calibration; use weeks one–two for preparation, three–four for tuning and five–six for locked evaluation.",
+            "Propose merging same-site, device and deviation-type alerts separated by at most five minutes into episodes. Review every evaluation episode; count unresolved episodes as false alerts. Divide by observed monitoring hours/24; pre-agree site-day-cluster-aware confidence bounds. Independently label a uniform random sample of all non-overlapping evaluation windows, alerted or not, recording inclusion probabilities. Use these labels to audit contamination, not estimate episode totals; measure detection only on injected or confirmed cases. Insufficient exposure or precision prevents acceptance.",
+            "Before tuning, agree and freeze protocol-specific challenge matrices, episode boundaries, repetition allocation and detection-confidence calculations; keep evaluation outcomes unavailable for configuration selection. Include Modbus replay, coil writes and scans; BACnet unauthorised property writes, discovery sweeps and flooding; and stable/high-load operation, maintenance and reconfiguration controls. Test BACnet features separately and compare frozen versus operator-approved baseline updates against legitimate changes and persistent anomalies. Allocate repetitions across families and conditions so repeated easy cases cannot determine acceptance."
+          ],
+          "questions": [
+            "Can Kiss confirm availability for this joint project, and can both parties agree the proposed responsibilities, part-time engineering scope, budget and six-week schedule?",
+            "Which appliance is current, was the security-processor variant released, and what CPU, memory, storage, throughput and latency budgets and measurement tolerances should govern matched-load testing?",
+            "Can representative held-out captures for both protocols, operating logs and client research-sharing permissions be secured under suitable NDA, testbed data-sharing, retention and firmware terms?",
+            "Who will adjudicate episodes and approve baseline changes, and can operators accept the proposed burden, delay and review workload, with five alerts randomly sampled per protocol and correctness defined beforehand as identifying the affected device, observed deviation and reason for concern in plain language?"
+          ],
+          "benefits": {
+            "company": "The pilot could establish whether useful, understandable alerts are feasible without labelled attack training data, while exposing BACnet, alert-burden or hardware barriers before deployment.",
+            "researcher": "Conditional on agreement and permissions, Kiss could test cross-protocol calibration and drift handling using operational captures and controlled bench cases."
+          },
+          "markdown": "# Explainable, Site-Specific Anomaly Detection for ProtoSense\n\n## Verified facts\n- ArmaturaSec reports several terabytes of consenting-client captures collected over three years, no labelled malicious traffic, and the possibility of previously undetected compromise. [F1]\n- The company describes ProtoSense as passive inspection for Modbus TCP and BACnet/IP. [F2]\n- ArmaturaSec reports on-device inference hardware and custom Yocto Linux. Its hardware-development plan discusses anomaly detection and forwarding latency together; numeric resource limits are not supplied. [F3]\n- The company reports that excessive false positives caused clients to disable alerts and identifies plant managers as the audience for explanations. [F4]\n- ArmaturaSec describes capacity of one to two part-time engineers and archive, bench and firmware access under NDA. [F5]\n- Kiss's published Modbus work constructs per-register statistical baselines and documents seasonal baseline drift. [F6]\n- Kiss lists joint projects with ICS-monitoring companies among her interests. Her group's testbed access is described under a data-sharing agreement. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether useful, understandable alerts are feasible without labelled attack training data, while exposing BACnet, alert-burden or hardware barriers before deployment.\n- For the researcher: Conditional on agreement and permissions, Kiss could test cross-protocol calibration and drift handling using operational captures and controlled bench cases.\n\n## Our inference\n- Site-specific statistical baselines suggest a plausible alternative to supervised attack classification, explaining deviations in timing, values or commands. Seasonal variation could nevertheless recreate alert fatigue.\n- Modbus evidence does not establish BACnet effectiveness or ProtoSense hardware fit. Contaminated archives and aggressive adaptation could conceal attacks; controlled bench detection cannot establish coverage of unknown real attacks.\n- This joint-project proposal is conditional: Kiss is open to this format, but her availability is unknown. Client collection consent also does not establish permission for research sharing.\n\n## Proposed next steps\n- Propose a six-week pilot using representative per-site Modbus and BACnet archives as unlabelled data, plus safe bench injections. Separate training, tuning and held-out evaluation periods; verify independence and operating-cycle coverage. Compare fixed-threshold rules with statistical one-class baselines; select the best configuration using tuning data without attack-labelled training or threshold selection. Each protocol must separately pass held-out operational and bench evaluation. Proposed gates: a lower 95% confidence bound of at least 80% injected-episode detection within 60 seconds; an upper 95% confidence bound of at most one false-alert episode per observed site-day; agreed device-budget compliance; and no measurable forwarding-latency increase under matched load and agreed measurement tolerances. Require plant managers to correctly explain four of five randomly sampled alerts under a pre-agreed rubric. Missing data, insufficient precision or any failed gate means no deployment approval. Propose company engineers prepare permitted captures and Yocto integration, with Kiss's group developing features and calibration; use weeks one–two for preparation, three–four for tuning and five–six for locked evaluation.\n- Propose merging same-site, device and deviation-type alerts separated by at most five minutes into episodes. Review every evaluation episode; count unresolved episodes as false alerts. Divide by observed monitoring hours/24; pre-agree site-day-cluster-aware confidence bounds. Independently label a uniform random sample of all non-overlapping evaluation windows, alerted or not, recording inclusion probabilities. Use these labels to audit contamination, not estimate episode totals; measure detection only on injected or confirmed cases. Insufficient exposure or precision prevents acceptance.\n- Before tuning, agree and freeze protocol-specific challenge matrices, episode boundaries, repetition allocation and detection-confidence calculations; keep evaluation outcomes unavailable for configuration selection. Include Modbus replay, coil writes and scans; BACnet unauthorised property writes, discovery sweeps and flooding; and stable/high-load operation, maintenance and reconfiguration controls. Test BACnet features separately and compare frozen versus operator-approved baseline updates against legitimate changes and persistent anomalies. Allocate repetitions across families and conditions so repeated easy cases cannot determine acceptance.\n\n## Open questions\n- Can Kiss confirm availability for this joint project, and can both parties agree the proposed responsibilities, part-time engineering scope, budget and six-week schedule?\n- Which appliance is current, was the security-processor variant released, and what CPU, memory, storage, throughput and latency budgets and measurement tolerances should govern matched-load testing?\n- Can representative held-out captures for both protocols, operating logs and client research-sharing permissions be secured under suitable NDA, testbed data-sharing, retention and firmware terms?\n- Who will adjudicate episodes and approve baseline changes, and can operators accept the proposed burden, delay and review workload, with five alerts randomly sampled per protocol and correctness defined beforehand as identifying the affected device, observed deviation and reason for concern in plain language?",
+          "taskId": "C001-CH1",
+          "researcherId": "R1008",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C001-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C001-CH1-R1008",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C001-CH1-R1008",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C009-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C009-CH1-R0288",
+          "version": 3
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T16-18-25-488Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C009-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C009-CH1-R0288",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C009-CH1-R0288",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Serbian morphology and mixed-script retrieval for LinguaBot",
+          "facts": [
+            {
+              "text": "LinguaBot reports that, in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result. Its analysis attributed more than half of those misses to morphological mismatch or script confusion.",
+              "sources": [
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "our analysis traced more than half of those misses directly to morphological mismatch or script confusion.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company describes an Elasticsearch baseline using a Croatian-oriented stemmer that misses Serbian-specific forms, and users switching scripts even within words.",
+              "sources": [
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "LinguaBot reports that manual synonym-list maintenance does not scale as clients add product terminology every quarter.",
+              "sources": [
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "can be updated when new vocabulary arrives without a full re-index.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company has around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate proposed solutions.",
+              "sources": [
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "our two in-house linguists can annotate or validate proposed solutions.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's stated tooling or data-work budget is around EUR 8,000.",
+              "sources": [
+                {
+                  "recordId": "C009-CH1",
+                  "field": "detail",
+                  "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Nikolić’s lemmatizer uses a unified internal representation before lemmatization and restores the original script afterward. Her tokenization work normalizes script boundaries within tokens. Her retrieval study reports the highest F1 for full lemmatization combined with paradigm-aware indexing.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-03588",
+                  "field": "abstract",
+                  "quote": "The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-03594",
+                  "field": "abstract",
+                  "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-03589",
+                  "field": "abstract",
+                  "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Her morphological lexicon study reports 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-03592",
+                  "field": "abstract",
+                  "quote": "finding 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a strong methodological match, but reference-corpus and social-media results do not establish banking or telecom retrieval performance. Borrowing errors are a transfer risk; normalization or expansion could also merge distinct terms and conceal relevance losses.",
+            "Fixing morphology and script handling likely addresses an important subset of misses, but the reported attribution does not establish that these changes alone can reach below 5%.",
+            "This joint-project proposal is conditional on availability. Nikolić is listed as open to joint projects, but her availability is unknown; staffing and a six-month commitment remain unconfirmed."
+          ],
+          "proposedActions": [
+            "Propose diagnosing the 12,000-query sample and separating tuning/evaluation samples from approximately 85,000 pairs; verify client, time and duplicate-family independence. Compare Elasticsearch with independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, holding documents and ranking controls comparable. Propose Nikolić lead linguistic design and LinguaBot implement and validate relevance. Select the best configuration on tuning data; evaluate once on held-out original-bank and broader-client queries separately, including inflection, mixed-script and unseen-term slices. Proposed go/no-go requires upper 95% miss-rate bounds below 5% in both populations, precision acceptance, automatic inflection/script handling, and simulated quarterly updates preserving these results without full re-indexing. Apply statistical gates before and after replay. Missing independent original-bank data or insufficient evidence means no pass. Also require agreed maintenance/latency limits, tooling/data spend within approximately EUR 8,000 and a testable implementation within six months.",
+            "Review every evaluation query; count each occurrence once without deduplication. Miss rate is queries without useful results divided by all evaluated queries; unresolved judgements count as misses. Propose precision as mean relevant fraction at an agreed cutoff, unresolved results counted irrelevant. Agree a precision non-inferiority margin and paired confidence procedure beforehand. Require the lower 95% bound on candidate-minus-baseline precision to exceed the negative margin in both populations before and after replay; record annotation disagreement.",
+            "Propose months one–two for permissions, definitions and baseline reproduction; three–four for comparisons; five–six for locked evaluation and replay. Prototype query-time expansion or versioned dictionaries against actual mappings. Record update duration, staff minutes, corrected paradigms, affected documents, latency and tooling/data expenditure; agree numeric maintenance/latency limits before evaluation. Test newly introduced terms and repeated updates for transfer and sustainability, rather than assuming corpus accuracy establishes deployment suitability."
+          ],
+          "questions": [
+            "Can Nikolić confirm availability for this joint project, and can both parties identify implementation, annotation and maintenance owners and funding for their time?",
+            "Can client permissions, de-identification and secure access support the proposed samples, including independent held-out queries from the original bank?",
+            "What defines a useful result, retrieval cutoff, precision non-inferiority margin and latency/maintenance limits, and does the below-5% target extend to every client separately?",
+            "Which Elasticsearch mappings and update operations are available, what counts as a full re-index, and do tool licences, compute capacity and deployment restrictions permit the proposed implementation?"
+          ],
+          "benefits": {
+            "company": "The experiment could establish whether Serbian-aware retrieval meets the miss-rate target under vocabulary updates, while exposing relevance losses and maintenance costs before deployment.",
+            "researcher": "Subject to agreement and approved access, Nikolić could test how corpus-derived morphology transfers to banking and telecom support language, using validated query judgements and terminology-update cases."
+          },
+          "markdown": "# Serbian morphology and mixed-script retrieval for LinguaBot\n\n## Verified facts\n- LinguaBot reports that, in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result. Its analysis attributed more than half of those misses to morphological mismatch or script confusion. [F1]\n- The company describes an Elasticsearch baseline using a Croatian-oriented stemmer that misses Serbian-specific forms, and users switching scripts even within words. [F2]\n- LinguaBot reports that manual synonym-list maintenance does not scale as clients add product terminology every quarter. [F3]\n- The company has around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate proposed solutions. [F4]\n- The company's stated tooling or data-work budget is around EUR 8,000. [F5]\n- Nikolić’s lemmatizer uses a unified internal representation before lemmatization and restores the original script afterward. Her tokenization work normalizes script boundaries within tokens. Her retrieval study reports the highest F1 for full lemmatization combined with paradigm-aware indexing. [F6]\n- Her morphological lexicon study reports 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings. [F7]\n\n## Potential benefits\n- For the company: The experiment could establish whether Serbian-aware retrieval meets the miss-rate target under vocabulary updates, while exposing relevance losses and maintenance costs before deployment.\n- For the researcher: Subject to agreement and approved access, Nikolić could test how corpus-derived morphology transfers to banking and telecom support language, using validated query judgements and terminology-update cases.\n\n## Our inference\n- This suggests a strong methodological match, but reference-corpus and social-media results do not establish banking or telecom retrieval performance. Borrowing errors are a transfer risk; normalization or expansion could also merge distinct terms and conceal relevance losses.\n- Fixing morphology and script handling likely addresses an important subset of misses, but the reported attribution does not establish that these changes alone can reach below 5%.\n- This joint-project proposal is conditional on availability. Nikolić is listed as open to joint projects, but her availability is unknown; staffing and a six-month commitment remain unconfirmed.\n\n## Proposed next steps\n- Propose diagnosing the 12,000-query sample and separating tuning/evaluation samples from approximately 85,000 pairs; verify client, time and duplicate-family independence. Compare Elasticsearch with independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, holding documents and ranking controls comparable. Propose Nikolić lead linguistic design and LinguaBot implement and validate relevance. Select the best configuration on tuning data; evaluate once on held-out original-bank and broader-client queries separately, including inflection, mixed-script and unseen-term slices. Proposed go/no-go requires upper 95% miss-rate bounds below 5% in both populations, precision acceptance, automatic inflection/script handling, and simulated quarterly updates preserving these results without full re-indexing. Apply statistical gates before and after replay. Missing independent original-bank data or insufficient evidence means no pass. Also require agreed maintenance/latency limits, tooling/data spend within approximately EUR 8,000 and a testable implementation within six months.\n- Review every evaluation query; count each occurrence once without deduplication. Miss rate is queries without useful results divided by all evaluated queries; unresolved judgements count as misses. Propose precision as mean relevant fraction at an agreed cutoff, unresolved results counted irrelevant. Agree a precision non-inferiority margin and paired confidence procedure beforehand. Require the lower 95% bound on candidate-minus-baseline precision to exceed the negative margin in both populations before and after replay; record annotation disagreement.\n- Propose months one–two for permissions, definitions and baseline reproduction; three–four for comparisons; five–six for locked evaluation and replay. Prototype query-time expansion or versioned dictionaries against actual mappings. Record update duration, staff minutes, corrected paradigms, affected documents, latency and tooling/data expenditure; agree numeric maintenance/latency limits before evaluation. Test newly introduced terms and repeated updates for transfer and sustainability, rather than assuming corpus accuracy establishes deployment suitability.\n\n## Open questions\n- Can Nikolić confirm availability for this joint project, and can both parties identify implementation, annotation and maintenance owners and funding for their time?\n- Can client permissions, de-identification and secure access support the proposed samples, including independent held-out queries from the original bank?\n- What defines a useful result, retrieval cutoff, precision non-inferiority margin and latency/maintenance limits, and does the below-5% target extend to every client separately?\n- Which Elasticsearch mappings and update operations are available, what counts as a full re-index, and do tool licences, compute capacity and deployment restrictions permit the proposed implementation?",
+          "taskId": "C009-CH1",
+          "researcherId": "R0288",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C009-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C009-CH1-R0288",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C009-CH1-R0288",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C003-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C003-CH1-R0365",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T16-18-25-488Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C003-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C003-CH1-R0365",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C003-CH1-R0365",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Explaining chilled-service cracking in AutomVoj conveyor welds",
+          "facts": [
+            {
+              "text": "AutomVoj reports painted mild-steel hollow-section frames cracking at main crossmember-to-stringer welds after about 18 months in cold stores typically operating at 2–6 °C. It reports 14 warranty assembly replacements this year.",
+              "sources": [
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "typically operating between 2 °C and 6 °C",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "weld joint cracking at the main crossmember-to-stringer connections after about 18 months of continuous use.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "This year alone we have replaced 14 complete frame assemblies under warranty",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports that room-temperature loaded tests pass. It suspects thermal cycling, condensation and loaded-belt vibration acting together; this is a suspected explanation, not an established mechanism.",
+              "sources": [
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "We test frames under load at room temperature and they pass without any problem.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "AutomVoj's retained failure evidence comprises site photographs, measurements and two failed sections.",
+              "sources": [
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "AutomVoj lacks low-temperature cyclic-testing equipment and expertise. Erić's chamber and servo-hydraulic machine are shared with two other groups; extended campaigns require advance scheduling.",
+              "sources": [
+                {
+                  "recordId": "C003-CH1",
+                  "field": "detail",
+                  "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0365",
+                  "field": "notes",
+                  "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide their time between live projects and improvement work.",
+              "sources": [
+                {
+                  "recordId": "C003",
+                  "field": "rd_capacity",
+                  "quote": "We have no dedicated R&D department",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C003",
+                  "field": "rd_capacity",
+                  "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić's research compared isothermal fatigue with in-phase and out-of-phase thermomechanical fatigue in butt-welded S275JR plates. His stated interests include joint projects on low-temperature or combined-loading fatigue testing.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-04475",
+                  "field": "abstract",
+                  "quote": "butt-welded S275JR plates.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-04475",
+                  "field": "abstract",
+                  "quote": "Four loading programmes were applied: isothermal fatigue at 20 °C, isothermal fatigue at −30 °C, in-phase thermo-mechanical fatigue (TMF), and out-of-phase TMF",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0365",
+                  "field": "open_to",
+                  "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a joint project combining failure examination, service measurements and controlled fatigue testing could distinguish interacting contributors rather than simply repeat ambient qualification.",
+            "The published plate experiments do not validate a mechanism for painted hollow-section joints at 2–6 °C. Different material, geometry, coating and loading make direct transfer risky; condensation-control and corrosion-analysis capability also remain unverified.",
+            "The proposal is conditional: Erić is open to this project format, but his availability is unknown. Shared equipment and company project duties likely make a bounded, scheduled campaign more practical than an open-ended investigation."
+          ],
+          "proposedActions": [
+            "First experiment: use matching painted joints in an eight-condition matrix: baseline, each factor alone, all pairs, all three. Independently define thermal cycling as measured excursions versus constant chilled temperature, condensation as wet versus dry, and vibration as measured loaded-belt excitation versus matched static mean load. Add a room-temperature loaded comparator; match geometry, coating, mean load and exposure, randomise and replicate. Measure strain, temperature, wetness, cycles to detectable cracking, growth, origin, path and fracture morphology. Before held-out testing, freeze specimen denominator, exposure, specimen-level site-match rubric and contrasts using tuning data. Proposed go/no-go for the best-supported explanation: at least two matching held-out joints under representative 2–6 °C exposure, with a 95% lower confidence bound on matching fraction above 50%; count ambiguous matches as nonmatches. Require multiplicity-adjusted 95% confidence intervals excluding zero in prespecified directions for claimed effects/interactions. Unresolved interactions, insufficient replication or unavailable validation evidence mean hold. An isolated null never ends investigation; acceleration cannot establish 18-month durability.",
+            "Propose two weeks for evidence and feasibility: document both failed sections before authorising cuts; compare failed and unaffected joints; establish material, weld, filler and coating specifications; plan service strain, vibration, temperature and humidity monitoring. Confirm chamber fit, simultaneous loading, moisture control, external support, staff allocation and booking. AutomVoj would supply records and fabricate representative specimens; Erić would lead examination and testing. Separate tuning and held-out specimens, checking independence across fabrication batches before evaluation.",
+            "Propose an eight-week pilot after access and specimen readiness, subject to measured cycle durations. Use tuning results to select welding, filler or geometry changes, then evaluate the best selected configuration independently under representative chilled exposure. Before modification testing, negotiate a measurable improvement threshold using cycles to site-matched cracking, fixed exposure and an uncertainty-aware acceptance rule. Laboratory improvement would not establish that warranty replacements will stop; field confirmation would remain necessary."
+          ],
+          "questions": [
+            "Can Erić confirm availability and laboratory support for this joint project, and can AutomVoj name an engineering owner with time allocated around live projects?",
+            "Can AutomVoj authorise evidence-preserving examination, supply specifications and matching joints, and arrange customer-site monitoring of loading, shutdowns, washdowns and condensation?",
+            "What chamber dimensions, fixture limits, simultaneous thermal–mechanical capability, humidity control and booking dates are available?",
+            "What budget, delivery deadline and customer acceptance requirements apply, including the improvement threshold and field evidence needed before adopting a revised joint?"
+          ],
+          "benefits": {
+            "company": "The pilot could identify which service factors explain the observed cracking and provide evidence for choosing a welding, filler or joint-design change rather than another ambient-only qualification.",
+            "researcher": "Subject to agreement and access, Erić could test whether thermomechanical fatigue methods transfer to coated conveyor joints, using retained failure evidence, measured service histories and representative specimens."
+          },
+          "markdown": "# Explaining chilled-service cracking in AutomVoj conveyor welds\n\n## Verified facts\n- AutomVoj reports painted mild-steel hollow-section frames cracking at main crossmember-to-stringer welds after about 18 months in cold stores typically operating at 2–6 °C. It reports 14 warranty assembly replacements this year. [F1]\n- The company reports that room-temperature loaded tests pass. It suspects thermal cycling, condensation and loaded-belt vibration acting together; this is a suspected explanation, not an established mechanism. [F2]\n- AutomVoj's retained failure evidence comprises site photographs, measurements and two failed sections. [F3]\n- AutomVoj lacks low-temperature cyclic-testing equipment and expertise. Erić's chamber and servo-hydraulic machine are shared with two other groups; extended campaigns require advance scheduling. [F4]\n- AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide their time between live projects and improvement work. [F5]\n- Erić's research compared isothermal fatigue with in-phase and out-of-phase thermomechanical fatigue in butt-welded S275JR plates. His stated interests include joint projects on low-temperature or combined-loading fatigue testing. [F6]\n\n## Potential benefits\n- For the company: The pilot could identify which service factors explain the observed cracking and provide evidence for choosing a welding, filler or joint-design change rather than another ambient-only qualification.\n- For the researcher: Subject to agreement and access, Erić could test whether thermomechanical fatigue methods transfer to coated conveyor joints, using retained failure evidence, measured service histories and representative specimens.\n\n## Our inference\n- This suggests a joint project combining failure examination, service measurements and controlled fatigue testing could distinguish interacting contributors rather than simply repeat ambient qualification.\n- The published plate experiments do not validate a mechanism for painted hollow-section joints at 2–6 °C. Different material, geometry, coating and loading make direct transfer risky; condensation-control and corrosion-analysis capability also remain unverified.\n- The proposal is conditional: Erić is open to this project format, but his availability is unknown. Shared equipment and company project duties likely make a bounded, scheduled campaign more practical than an open-ended investigation.\n\n## Proposed next steps\n- First experiment: use matching painted joints in an eight-condition matrix: baseline, each factor alone, all pairs, all three. Independently define thermal cycling as measured excursions versus constant chilled temperature, condensation as wet versus dry, and vibration as measured loaded-belt excitation versus matched static mean load. Add a room-temperature loaded comparator; match geometry, coating, mean load and exposure, randomise and replicate. Measure strain, temperature, wetness, cycles to detectable cracking, growth, origin, path and fracture morphology. Before held-out testing, freeze specimen denominator, exposure, specimen-level site-match rubric and contrasts using tuning data. Proposed go/no-go for the best-supported explanation: at least two matching held-out joints under representative 2–6 °C exposure, with a 95% lower confidence bound on matching fraction above 50%; count ambiguous matches as nonmatches. Require multiplicity-adjusted 95% confidence intervals excluding zero in prespecified directions for claimed effects/interactions. Unresolved interactions, insufficient replication or unavailable validation evidence mean hold. An isolated null never ends investigation; acceleration cannot establish 18-month durability.\n- Propose two weeks for evidence and feasibility: document both failed sections before authorising cuts; compare failed and unaffected joints; establish material, weld, filler and coating specifications; plan service strain, vibration, temperature and humidity monitoring. Confirm chamber fit, simultaneous loading, moisture control, external support, staff allocation and booking. AutomVoj would supply records and fabricate representative specimens; Erić would lead examination and testing. Separate tuning and held-out specimens, checking independence across fabrication batches before evaluation.\n- Propose an eight-week pilot after access and specimen readiness, subject to measured cycle durations. Use tuning results to select welding, filler or geometry changes, then evaluate the best selected configuration independently under representative chilled exposure. Before modification testing, negotiate a measurable improvement threshold using cycles to site-matched cracking, fixed exposure and an uncertainty-aware acceptance rule. Laboratory improvement would not establish that warranty replacements will stop; field confirmation would remain necessary.\n\n## Open questions\n- Can Erić confirm availability and laboratory support for this joint project, and can AutomVoj name an engineering owner with time allocated around live projects?\n- Can AutomVoj authorise evidence-preserving examination, supply specifications and matching joints, and arrange customer-site monitoring of loading, shutdowns, washdowns and condensation?\n- What chamber dimensions, fixture limits, simultaneous thermal–mechanical capability, humidity control and booking dates are available?\n- What budget, delivery deadline and customer acceptance requirements apply, including the improvement threshold and field evidence needed before adopting a revised joint?",
+          "taskId": "C003-CH1",
+          "researcherId": "R0365",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C003-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C003-CH1-R0365",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C003-CH1-R0365",
+              "version": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

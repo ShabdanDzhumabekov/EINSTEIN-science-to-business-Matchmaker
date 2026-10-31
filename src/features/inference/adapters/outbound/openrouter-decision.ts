@@ -10,11 +10,33 @@ const JevAnswer = z.object({
   usage: z.object({ cost: z.number().finite().nonnegative().optional() }).optional(),
 })
 
+/* 21 screening batches in flight at once produced connection resets on 31.10; six at a time ran 105 batches cleanly. */
+const MAX_CONCURRENT_REQUESTS = 6
+
 export class OpenRouterDecision implements Decision {
+  private inFlight = 0
+  private readonly waiting: Array<() => void> = []
+
   constructor(private readonly apiKey: string, private readonly journal: Journal, private readonly fetcher: typeof fetch = fetch) {
     if (!apiKey) throw new TypeError('OPENROUTER_API_KEY is required')
   }
   async probabilities(state: Readonly<Record<string, unknown>>, questions: ReadonlyArray<NoulQuestion>): Promise<ReadonlyMap<string, number>> {
+    await this.acquire()
+    try { return await this.request(state, questions) }
+    finally { this.release() }
+  }
+
+  private acquire(): Promise<void> {
+    if (this.inFlight < MAX_CONCURRENT_REQUESTS) { this.inFlight++; return Promise.resolve() }
+    return new Promise(resolve => this.waiting.push(() => { this.inFlight++; resolve() }))
+  }
+
+  private release(): void {
+    this.inFlight--
+    this.waiting.shift()?.()
+  }
+
+  private async request(state: Readonly<Record<string, unknown>>, questions: ReadonlyArray<NoulQuestion>): Promise<ReadonlyMap<string, number>> {
     this.journal.record('request.dispatched', { model: JEV_MODEL, questions: questions.length })
     let response: Response
     try {
@@ -24,7 +46,8 @@ export class OpenRouterDecision implements Decision {
           { type: 'noul', instructions: question.instructions, criteria: { true: question.whenTrue, false: question.whenFalse } }])) }),
       })
     } catch (cause) {
-      throw new RoleInferenceError(cause instanceof DOMException && cause.name === 'TimeoutError' ? 'timeout' : 'provider', 'Jev request failed', { cause })
+      const reason = cause instanceof Error ? `${cause.message}${cause.cause instanceof Error ? `: ${cause.cause.message}` : ''}` : String(cause)
+      throw new RoleInferenceError(cause instanceof DOMException && cause.name === 'TimeoutError' ? 'timeout' : 'provider', `Jev request failed: ${reason}`, { cause })
     }
     if (!response.ok) {
       if (response.body) await response.body.cancel()

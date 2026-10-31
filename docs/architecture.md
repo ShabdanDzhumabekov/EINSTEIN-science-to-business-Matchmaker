@@ -4,6 +4,66 @@ This describes what `npm start` does on the current code. Every number below is 
 
 ![Route](architecture.svg)
 
+The same route in Mermaid, with the optional company pre-filter drawn dashed and the Stars entry (`npm run stars`) on the side ([source](architecture.mmd)):
+
+```mermaid
+flowchart TD
+    BC["Business cards (code)<br/>one per challenge, quotable passages"]
+    SC["Researcher cards (code)<br/>1,047, confirmed works only"]
+
+    PF{{"Optional: company pre-filter (Jev)<br/>researcher × company, off by default<br/>PREFILTER_THRESHOLD"}}
+    JS["Jev screening<br/>challenge × researchers + research-problem check"]
+    MM["Matchmaker (LLM)<br/>one pair per call, best Jev first, ≤ 8"]
+    JC["Jev check<br/>does the quoted rationale hold?"]
+    WR["Writer (LLM)<br/>facts, inferences, proposal"]
+    CR["Critic: code + LLM checklist + Jev fact check"]
+    RES["Result<br/>first approved proposal"]
+
+    subgraph STARS["EINSTEIN Stars mode: npm run stars"]
+        ST1["One researcher's full card (code)<br/>fields, bio, industry experience, works with abstracts"]
+        ST2["Jev reverse screening<br/>researcher × all 489 challenges<br/>methods fit AND research problem, both ≥ 0.5"]
+        ST3["Challenges for this person<br/>first 3 kept go in depth as fixed pairs"]
+        ST1 --> ST2 --> ST3
+    end
+
+    OUT(["Challenge screened_out<br/>(ends)"])
+    DROP(["Pair dropped<br/>next screened pair, none left: ends"])
+
+    BC --> JS
+    SC --> JS
+    BC -.-> PF
+    SC -.-> PF
+    PF -. "kept ≥ threshold" .-> JS
+
+    JS -- "≥ 0.5" --> MM
+    JS -- "< 0.5" --> OUT
+    MM -- "pair" --> JC
+    MM -- "no fit" --> DROP
+    JC -- "≥ 0.9" --> WR
+    JC -- "< 0.9" --> DROP
+    WR --> CR
+    CR -- "revise, up to 2" --> WR
+    CR -- "after 2 revisions" --> DROP
+    CR -- "ok" --> RES
+    DROP -- "next pair" --> MM
+    ST3 -. "same route, fixed pair" .-> MM
+    RES -.-> STR(["Stars report<br/>list of challenges + proposals"])
+
+    classDef code fill:#f1f5f9,stroke:#94a3b8,color:#0f172a
+    classDef jev fill:#fef3c7,stroke:#d97706,color:#0f172a
+    classDef llm fill:#e0e7ff,stroke:#6366f1,color:#0f172a
+    classDef optional fill:#fef3c7,stroke:#d97706,stroke-dasharray:5 5,color:#0f172a
+    classDef stop fill:#fee2e2,stroke:#dc2626,color:#0f172a
+    class BC,SC,RES code
+    class JS,JC jev
+    class MM,WR,CR llm
+    class PF optional
+    class OUT,DROP stop
+    class ST1,STR code
+    class ST2 jev
+    class ST3 code
+```
+
 ## Agents and code steps
 
 | Step | Who | Input | Output | Drop rule | Code |
@@ -15,6 +75,8 @@ This describes what `npm start` does on the current code. Every number below is 
 | 5. Writer | LLM Mozaik agent | both cards, the pair assessment, Critic or code feedback and, on a revision, its own rejected draft with the rule to keep every acceptance condition | `Proposal`: facts with quotes, inferences, potential benefits, proposed actions, questions | code checks quotes, a fact from the researcher's own work, every pair constraint, list items and limits | `src/features/proposals/adapters/outbound/write-proposal.ts` |
 | 6. Critic | code + LLM Mozaik agent + Jev | the proposal, both cards, the company's original text and the cited sentences; the LLM fills a ten-item checklist whose `pass` needs the proposal span that satisfies the item | `CriticVerdict` with issues, LLM issues whose quotes code could not find (`unverifiedIssues`, never blocking) and Jev's support probability for every fact (`jevFactCheck`, with the question wording) | any blocking issue → back to Writer; after 3 Writer attempts → next pair (`proposal_needs_revision`) | `src/agents/critic/critique-proposal.ts` |
 | 7. Result | code | the first approved proposal | Markdown ending with the evidence ledger (fact, record, field, quote), JSON artifacts, trace | the task stops at its first approved pair | `src/features/workflow/application/collaboration-workflow.ts` |
+
+**Optional company pre-filter** (off by default, `PREFILTER_THRESHOLD`, `src/screening/screen-company.ts`): before step 2, Jev asks once per researcher and company whether the researcher's methods could matter to the company, and step 2 then screens only the researchers at or above the threshold. The task screening artifact embeds the full company screening, so a researcher missing from a challenge list can be traced to the pre-filter. Measured in [company-prefilter-test.md](company-prefilter-test.md): no kept pair lost up to 0.4.
 
 The Matchmaker sees at most 8 screened pairs per challenge, in Jev order (`MAX_CANDIDATES`). A dropped pair never returns work to an earlier role; the only loop is Writer ⇄ Critic, and a dropped pair hands over to the next screened pair. The status of a challenge without a proposal is the furthest stage any of its pairs reached: `screened_out`, `no_fit`, `check_failed`, `proposal_needs_revision`; technical failures are `limit_reached` or `execution_failed`.
 

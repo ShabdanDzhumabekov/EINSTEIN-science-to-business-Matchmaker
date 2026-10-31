@@ -11,8 +11,9 @@ cp "$run_dir/summary.json" "$run_dir/metrics.json" "$run_dir/trace.jsonl" "$run_
 for extra in stars-report.md stars-screening.json; do [[ -f "$run_dir/$extra" ]] && cp "$run_dir/$extra" "$target/"; done
 dataset_version="$(node -e 'console.log(JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).datasetVersion)' "$run_dir/summary.json")"
 [[ -f "$run_dir/stars-screening.json" ]] || for task in $(node -e 'for (const r of JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).results) console.log(r.taskId)' "$run_dir/summary.json"); do
-  screening="runs/screening/$dataset_version/$task.json"
-  [[ -f "$screening" ]] && cp "$screening" "$target/screening/"
+  for screening in "runs/screening/$dataset_version/$task.json" "runs/screening/$dataset_version/$task".prefilter-*.json "runs/screening/$dataset_version/company-${task%%-*}.json"; do
+    [[ -f "$screening" ]] && cp "$screening" "$target/screening/"
+  done
 done
 if grep -rq "sk-or-" "$target"; then echo "Refusing: an API key pattern was found in $target" >&2; rm -rf "$target"; exit 1; fi
 echo "Bundled $run_dir -> $target ($(du -sh "$target" | cut -f1))"

@@ -1,4 +1,5 @@
 import { z } from "zod"
+import { CompanyScreening } from "./company-screening"
 import { QuestionText } from "./decision"
 
 export const ScreenedPair = z.object({
@@ -17,6 +18,8 @@ export const TaskScreening = z.object({
 	model: z.string().min(1),
 	/* Wording of the two Jev questions; `<researcherId>` stands for the id inserted per researcher. Optional only for cache files written before it was recorded. */
 	questions: z.object({ researchProblem: QuestionText, pairFit: QuestionText }).optional(),
+	/* Present when a company-level pre-filter chose which researchers this screening saw; the others have no pair entry. */
+	prefilter: z.object({ threshold: z.number().min(0).max(1), company: CompanyScreening, researchersScreened: z.number().int().nonnegative(), researchersRemoved: z.number().int().nonnegative() }).optional(),
 	/* Set by the screening store: when the screening was made and whether this run reused it from the cache. */
 	provenance: z.object({ screenedAt: z.string().min(1), isFromCache: z.boolean() }).optional(),
 })

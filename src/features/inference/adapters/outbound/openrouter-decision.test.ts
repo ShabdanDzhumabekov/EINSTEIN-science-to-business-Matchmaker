@@ -64,3 +64,26 @@ it('reports a broken response body as a provider error', async () => {
 
   await expect(pending).rejects.toMatchObject({ code: 'provider', message: 'Jev response could not be read' })
 })
+
+it('names the network cause when the Jev request itself fails', async () => {
+  const decision = new OpenRouterDecision('test-placeholder', { record() {} }, async () => { throw new TypeError('fetch failed: ECONNRESET') })
+
+  const pending = decision.probabilities({ task: 'x' }, fitQuestions())
+
+  await expect(pending).rejects.toMatchObject({ code: 'provider', message: 'Jev request failed: fetch failed: ECONNRESET' })
+})
+
+it('sends at most six Jev requests at a time', async () => {
+  let inFlight = 0; let peak = 0
+  const fetcher: typeof fetch = async () => {
+    inFlight++; peak = Math.max(peak, inFlight)
+    await new Promise(resolve => setTimeout(resolve, 5))
+    inFlight--
+    return jevResponse({ fit_R1: 0.5 })
+  }
+  const decision = new OpenRouterDecision('test-placeholder', { record() {} }, fetcher)
+
+  await Promise.all(Array.from({ length: 20 }, () => decision.probabilities({ task: 'x' }, fitQuestions())))
+
+  expect(peak).toBe(6)
+})

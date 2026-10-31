@@ -89,6 +89,22 @@ All three runs loaded the Jev screening from the cache written by the first Deep
 - [`2026-10-30T23-59-47-335Z`](2026-10-30T23-59-47-335Z/): the previous main run on earlier code, also 3 × `ready` (C001-CH1 paired with R0416), 1 Critic intervention.
 - [`2026-10-31T00-38-00-194Z`](2026-10-31T00-38-00-194Z/): C064-CH3 (sales coaching) `screened_out`, Jev research-problem probability 0.03.
 
+## Live run with the company pre-filter: `2026-10-31T16-18-25-488Z`
+
+The optional pre-filter (`PREFILTER_THRESHOLD=0.4`, commit `cbb81fe`, off by default) on the three main challenges, compared with the cold run `13-11-35` without it. Its company and challenge screenings were computed by the same code in the preceding attempts, which lost tasks to network failures (connection closed by the server, `EADDRNOTAVAIL`; each attempt is kept in the ignored `runs/` directory with its error), and this run loaded them from the cache.
+
+| Challenge | Researchers left after the pre-filter | Kept by the challenge screening (cold run without it) | Kept pairs of the cold run cut by the pre-filter | Top 8 shared with the cold run | Result |
+|---|---:|---:|---:|---:|---|
+| C001-CH1 | 503 of 1,047 | 18 (20) | 0 | 7 | `ready`, R1008 |
+| C009-CH1 | 391 of 1,047 | 17 (19) | 0 | 8 | `ready`, R0288 (R0349 first in the cold run) |
+| C003-CH1 | 800 of 1,047 | 12 (13) | 0 | 6 | `ready`, R0365 |
+
+No pair kept by the cold screening was removed by the pre-filter; the small differences in the kept counts come from Jev seeing different batches. 30 requests, $0.67, 4 Critic interventions. The main run is unchanged and made without the pre-filter.
+
+## Company pre-filter test
+
+[`company-prefilter-2026-10-31/`](company-prefilter-2026-10-31/): Jev's answers for 15 companies × 1,047 researchers to the company-level question, with the request journal (105 requests, $0.28). Method, table and decision: [docs/company-prefilter-test.md](../docs/company-prefilter-test.md).
+
 ## Independent review
 
 [reviews/](reviews/) holds reviews by Codex `gpt-6-astra`, used as a stand-in for a human reader. Each checked every ledger quote against the dataset and judged the proposals from the company's and the researcher's side.

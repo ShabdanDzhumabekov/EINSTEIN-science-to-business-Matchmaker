@@ -1,0 +1,110 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: upper 95% uncertainty bounds below 5% in both populations, no precision regression, automatic handling of inflections/script mixing, and a simulated quarterly update preserving these results without full re-indexing.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The confidence-bound rule covers miss rates, but the separate precision gate has no statistical acceptance condition, so sampling noise could permit acceptance despite a real relevance regression. Add a prerequisite to agree a precision non-inferiority margin and require the lower confidence bound on the paired precision difference to exceed its negative, both before and after the update replay.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"about 18% returned no useful result\" and \"Its analysis attributed more than half of those misses to morphological mismatch or script confusion.\" Proposed next steps: \"a simulated quarterly update preserving these results without full re-indexing.\" These identify the concrete retrieval failures and the vocabulary-maintenance objective, rather than merely proposing better Serbian NLP."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"tooling/data spend within approximately EUR 8,000, and a testable implementation within six months; insufficient evidence means no pass\"; \"Record update duration, staff minutes, corrected paradigms, affected documents, latency and tooling/data expenditure\"; and \"a simulated quarterly update preserving these results without full re-indexing.\" Open questions: \"can both parties identify implementation, annotation and maintenance owners and funding for their time?\" and \"Can client permissions, de-identification and secure access support the proposed samples\". These make budget, timing, update compatibility, staffing and access either verifiable conditions or explicit prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Nikolić's work describes unified-script lemmatization, within-token script normalization, and retrieval experiments in which lemmatization with paradigm-aware indexing achieved the highest F1. These are candidate methods, not demonstrated LinguaBot results\" and \"Her lexicon study reports lower paradigm correctness for borrowings than common vocabulary\". Our inference: \"reference-corpus and social-media evidence does not establish banking or telecom retrieval performance.\" These connect her documented methods to the failures while identifying transfer limits and the terminology-quality trade-off."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company has around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate solutions.\" Proposed next steps: \"Propose Nikolić lead linguistic design and LinguaBot implement and validate relevance.\" Our inference: \"neither staffing nor a six-month commitment is established.\" These distinguish existing resources, proposed work allocation and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"using the 12,000-query sample for diagnosis and separate tuning and held-out evaluation samples from the approximately 85,000 pairs; verify independence by client, time and duplicate families\"; \"baseline, each alone, all pairs and all three, holding documents and ranking controls comparable\"; and \"Select the best configuration on tuning data, then evaluate once, separately on held-out original-bank queries and broader clients\". These specify inputs, baseline, factorial conditions and selection-independent evaluation, with missing independent bank data explicitly retained as a prerequisite."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Count each evaluated query occurrence once; misses are queries with no useful result among all reviewed queries, with unresolved judgements counted as misses\"; \"Review every evaluation query rather than sampling labels\"; and \"upper 95% uncertainty bounds below 5% in both populations\" define the miss-rate unit, denominator, repeat handling, labels and separate population acceptance. However, \"no precision regression\" and \"Define precision at an agreed retrieval cutoff and record annotation disagreement\" do not define a statistical acceptance rule for the precision gate; the miss-rate confidence requirement does not establish precision non-regression."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, holding documents and ranking controls comparable.\" Our inference: \"the reported attribution does not establish that these changes alone can reach below 5%.\" The factorial comparison permits component and interaction assessment without attributing an uncontrolled combined improvement to one method."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Incorrect normalization or expansion could merge distinct terms and conceal relevance losses\" and \"reference-corpus and social-media evidence does not establish banking or telecom retrieval performance.\" Verified facts: \"lower paradigm correctness for borrowings than common vocabulary\". Open questions ask whether \"tool licences, compute capacity and deployment restrictions permit the proposed implementation\". These identify the principal methodological and execution risks without presenting unresolved deployment assumptions as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"This joint-project proposal is conditional on availability. Nikolić is open to joint projects, but her availability is unknown; neither staffing nor a six-month commitment is established.\" Open questions: \"Can Nikolić confirm availability for this joint project\". The proposed role remains conditional and matches her documented openness to joint projects."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could establish whether Serbian-aware retrieval meets the miss-rate target under realistic vocabulary updates, while exposing relevance losses and maintenance costs before deployment\" and \"Subject to agreement and approved access, Nikolić could test how corpus-derived morphology transfers to banking and telecom support language\". Both gains follow from the proposed measurements and are framed as potential benefits rather than guaranteed outcomes."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.96,
+        0.89,
+        0.94,
+        0.99,
+        0.54,
+        0.66,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

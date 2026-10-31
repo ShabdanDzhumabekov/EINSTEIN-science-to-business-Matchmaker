@@ -14,7 +14,7 @@ import { RoleInferenceError } from '../features/inference/domain/role-inference-
 import { FileArtifacts } from '../features/workflow/adapters/outbound/file-artifacts'
 import type { SavedArtifact } from '../features/workflow/domain/saved-artifact'
 import type { WorkflowResult } from '../features/workflow/domain/workflow-result'
-import { createStages } from './create-stages'
+import { createStages, prefilterThresholdOf } from './create-stages'
 import { verifyDataset } from './verify-dataset'
 import { ScreeningFiles } from './screening-files'
 
@@ -38,7 +38,8 @@ export function runEnvironment(directoryPrefix: string) {
     reserveUSD: Number(process.env.REQUEST_RESERVE_USD ?? 0.05), maxOutputTokens: Number(process.env.MAX_OUTPUT_TOKENS ?? 32768),
   }, new OpenRouterCompletion(key), new SystemClock(), journal)
   const decision = new MozaikDecision(new OpenRouterDecision(key, journal))
-  const stages = createStages(inference, decision, dataset, new ScreeningFiles(join('runs', 'screening', dataset.version)))
+  const prefilterThreshold = prefilterThresholdOf(process.env.PREFILTER_THRESHOLD)
+  const stages = createStages(inference, decision, dataset, new ScreeningFiles(join('runs', 'screening', dataset.version)), { prefilterThreshold })
   const writeProposal = (taskId: string, proposal: SavedArtifact<Proposal>) => {
     const evidenceFile = `../artifacts/${proposal.ref.artifactId}.v${proposal.ref.version}.json`
     writeFileSync(join(directory, 'proposals', `${taskId}.md`), `${proposal.content.markdown}\n\n${evidenceLedgerMarkdown(proposal.content.facts)}\n\n[Full ledger with dataset version](${evidenceFile})\n\nDataset: ${dataset.version}. Synthetic profiles; human review and participant confirmation are required.\n`)

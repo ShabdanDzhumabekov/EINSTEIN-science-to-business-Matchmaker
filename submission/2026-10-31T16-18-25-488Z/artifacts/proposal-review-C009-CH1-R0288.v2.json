@@ -1,0 +1,137 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "The company's stated tooling/data budget is around EUR 8,000; this does not establish funding for researcher time.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this fact by its source sentences at 0.48. Keep in the fact only what the source states; move any condition, requirement or next step into proposedActions or questions.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Nikolić's work describes unified-script lemmatization, within-token script normalization, and retrieval experiments in which lemmatization with paradigm-aware indexing achieved the highest F1. These are published results, not demonstrated LinguaBot results.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this fact by its source sentences at 0.16. Keep in the fact only what the source states; move any condition, requirement or next step into proposedActions or questions.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “LinguaBot reports that, in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result. Its analysis attributed more than half of those misses to morphological mismatch or script confusion.” Also: “LinguaBot reports that manual synonym-list maintenance does not scale with quarterly additions to product terminology.” Proposed next steps: “a simulated quarterly update preserving these results without full re-indexing.” These identify the concrete retrieval failures and vocabulary-maintenance problem rather than a generic Serbian NLP goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Also require agreed maintenance/latency limits, tooling/data spend within approximately EUR 8,000 and a testable implementation within six months.” Also: “Record update duration, staff minutes, corrected paradigms, affected documents, latency and tooling/data expenditure; agree numeric maintenance/latency limits before evaluation.” The required update is explicitly “without full re-indexing,” and the schedule is “months one–two for permissions, definitions and baseline reproduction; three–four for comparisons; five–six for locked evaluation and replay.” Open questions ask whether “client permissions, de-identification and secure access support the proposed samples” and request “implementation, annotation and maintenance owners and funding for their time.” These provide budget, schedule and update checks while leaving access and staff commitments as explicit prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić's work describes unified-script lemmatization, within-token script normalization, and retrieval experiments in which lemmatization with paradigm-aware indexing achieved the highest F1. These are published results, not demonstrated LinguaBot results.” Also: “Her lexicon study reports lower paradigm correctness for borrowings than common vocabulary, a documented limitation relevant to unfamiliar product terminology.” Our inference: “reference-corpus and social-media evidence does not establish banking or telecom retrieval performance. Incorrect normalization or expansion could merge distinct terms and conceal relevance losses.” These connect her documented methods to the company’s specific failure modes while identifying transfer limits and correctness/relevance trade-offs."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company has around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate solutions.” Proposed next steps: “Propose Nikolić lead linguistic design and LinguaBot implement and validate relevance.” Open questions: “Can Nikolić confirm availability for this joint project, and can both parties identify implementation, annotation and maintenance owners and funding for their time?” These distinguish documented data and linguistic capacity from proposed responsibilities and unconfirmed staffing or funding."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose diagnosing the 12,000-query sample and creating separate tuning/evaluation samples from approximately 85,000 pairs; verify independence by client, time and duplicate families.” Also: “Compare current Elasticsearch with independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, with comparable documents and ranking controls.” Configuration selection is separated explicitly: “Select the best configuration on tuning data, then evaluate once, separately on held-out original-bank queries and broader clients, including inflection, mixed-script and unseen-term slices.” The experiment therefore specifies inputs, baseline, factorial conditions and held-out evaluation; permissions, mappings and judgement definitions remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Review every evaluation query; count each occurrence once, without deduplication. Miss rate is queries without useful results divided by all evaluated queries; unresolved judgements count as misses.” The primary acceptance rule is “upper 95% miss-rate bounds below 5% in both populations,” with “Missing independent original-bank data or insufficient evidence means no pass.” Relevance acceptance is specified as “precision as mean relevant fraction at an agreed cutoff, unresolved results counted irrelevant,” and “Require the lower 95% confidence bound on candidate-minus-baseline precision to exceed the negative margin, separately in both populations before and after replay.” The margin and paired confidence procedure must be agreed “Before testing”; numeric maintenance/latency limits must be agreed “before evaluation.” These proposed rules define the counted unit, repeated occurrences, complete evaluation numerator, denominator, uncertain labels, statistical acceptance and separate population gates, including preservation after updates."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, with comparable documents and ranking controls.” Our inference: “Fixing morphology and script handling likely addresses an important subset of misses, but the reported attribution does not establish that these changes alone can reach below 5%.” The factorial comparison supports distinguishing component effects and interactions under comparable controls, while the proposal avoids claiming that morphology fixes alone explain or solve all misses."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Incorrect normalization or expansion could merge distinct terms and conceal relevance losses.” Verified facts identify “lower paradigm correctness for borrowings than common vocabulary.” Proposed next steps require testing “newly introduced terms and repeated updates for transfer and sustainability, rather than assuming corpus accuracy establishes deployment suitability,” and state “Missing independent original-bank data or insufficient evidence means no pass.” Open questions cover “tool licences, compute capacity and deployment restrictions” and whether the available mappings and update operations permit implementation. These address the principal linguistic, transfer, relevance, evaluation and deployment risks without presenting unknown conditions as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional on availability. Nikolić is listed as open to joint projects, but her availability is unknown; neither staffing nor a six-month commitment is established.” Proposed next steps say “Propose Nikolić lead linguistic design,” and Open questions ask her to “confirm availability for this joint project.” Participation is consistent with her stated openness and does not turn proposed responsibilities into commitments."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could establish whether Serbian-aware retrieval meets the miss-rate target under vocabulary updates, while exposing relevance losses and maintenance costs before deployment.” For the researcher: “Subject to agreement and approved access, Nikolić could test how corpus-derived morphology transfers to banking and telecom support language, using validated query judgements and terminology-update cases.” Both benefits follow directly from the planned evaluation and update replay and are framed as conditional opportunities, not guaranteed outcomes."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.95,
+        0.9,
+        0.96,
+        0.98,
+        0.48,
+        0.16,
+        0.92
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    },
+    "checkedClaimCount": 6,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj reports painted mild-steel hollow-section frames cracking at main crossmember-to-stringer welds after about 18 months in cold stores typically operating at 2–6 °C. It reports 14 warranty assembly replacements this year.” Also: “The company reports that room-temperature loaded tests pass.” These identify the affected component, operating environment, failure history and inability to reproduce the failure, rather than a generic fatigue-reduction goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “document both failed sections before authorising cuts”; “establish material, weld, filler and coating specifications”; “Confirm chamber fit, simultaneous loading, moisture control, external support, staff allocation and booking.” Open questions: “Can AutomVoj authorise evidence-preserving examination, supply specifications and matching joints, and arrange customer-site monitoring of loading, shutdowns, washdowns and condensation?” Verified facts also acknowledge the lack of company testing capability, shared laboratory equipment and competing engineering duties. These preserve limited evidence and make representative specimens, external facilities, access and staffing explicit feasibility checks; the proposed schedule is conditional on readiness, and no original budget or deadline is asserted."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić's research compared isothermal fatigue with in-phase and out-of-phase thermomechanical fatigue in butt-welded S275JR plates.” Our inference: “The published plate experiments do not validate a mechanism for painted hollow-section joints at 2–6 °C. Different material, geometry, coating and loading make direct transfer risky; condensation-control and corrosion-analysis capability also remain unverified.” Proposed next steps use independently varied thermal, moisture and vibration conditions and require evidence for interactions. This connects his documented comparative thermomechanical-fatigue method to the conveyor investigation while explicitly limiting transfer; it does not import the paper's numerical results or tentative mechanism as conveyor facts."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “AutomVoj would supply records and fabricate representative specimens; Erić would lead examination and testing.” These are proposed roles, distinguished from the documented retained evidence and laboratory equipment in Verified facts. “Confirm chamber fit, simultaneous loading, moisture control, external support, staff allocation and booking” and the questions requesting laboratory support, an engineering owner and customer-site monitoring keep additional capabilities and commitments unconfirmed."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “use matching painted joints in an eight-condition matrix: baseline, each factor alone, all pairs, all three”; “Independently define thermal cycling as measured excursions versus constant chilled temperature, condensation as wet versus dry, and vibration as measured loaded-belt excitation versus matched static mean load.” Also: “Add a room-temperature loaded comparator; match geometry, coating, mean load and exposure, randomise and replicate.” “Before held-out testing, freeze specimen denominator, exposure, specimen-level site-match rubric and contrasts using tuning data” and “Separate tuning and held-out specimens, checking independence across fabrication batches before evaluation” provide inputs, controls, comparisons and independent evaluation; unresolved service measurements and facility details remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Measure strain, temperature, wetness, cycles to detectable cracking, growth, origin, path and fracture morphology.” “Before held-out testing, freeze specimen denominator, exposure, specimen-level site-match rubric and contrasts using tuning data.” The proposed acceptance is “at least two matching held-out joints under representative 2–6 °C exposure, with a 95% lower confidence bound on matching fraction above 50%; count ambiguous matches as nonmatches.” This establishes specimen-level counting, a prospectively fixed denominator and exposure, held-out site matching, conservative ambiguous-label treatment and a confidence-bound rule. “Require multiplicity-adjusted 95% confidence intervals excluding zero in prespecified directions for claimed effects/interactions” adds uncertainty control for explanatory claims. Modification acceptance remains explicitly conditional: “Before modification testing, negotiate a measurable improvement threshold using cycles to site-matched cracking, fixed exposure and an uncertainty-aware acceptance rule.” The targets concern reproducing and reducing the company's cracking, not merely outperforming another method; no separately named company population is omitted."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps specify “baseline, each factor alone, all pairs, all three” and “match geometry, coating, mean load and exposure, randomise and replicate.” They require “multiplicity-adjusted 95% confidence intervals excluding zero in prespecified directions for claimed effects/interactions” and state: “Unresolved interactions, insufficient replication or unavailable validation evidence mean hold.” The independent factorial comparisons support investigation of the named factors and interactions, while “An isolated null never ends investigation; acceleration cannot establish 18-month durability” and the requirement for field confirmation prevent extending laboratory conclusions to guaranteed service durability."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Different material, geometry, coating and loading make direct transfer risky; condensation-control and corrosion-analysis capability also remain unverified.” Also: “his availability is unknown” and “Shared equipment and company project duties likely make a bounded, scheduled campaign more practical than an open-ended investigation.” Proposed next steps preserve failed sections, check fabrication-batch independence and hold on insufficient replication or unavailable validation evidence. The open questions cover site access, equipment limits, budget, deadlines and customer acceptance, while “acceleration cannot establish 18-month durability” identifies the principal accelerated-testing limitation."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “The proposal is conditional: Erić is open to this project format, but his availability is unknown.” Open questions: “Can Erić confirm availability and laboratory support for this joint project, and can AutomVoj name an engineering owner with time allocated around live projects?” The proposed roles therefore remain conditional, match the documented openness to joint fatigue-testing projects, and do not assign a declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could identify which service factors explain the observed cracking and provide evidence for choosing a welding, filler or joint-design change rather than another ambient-only qualification.” For the researcher: “Subject to agreement and access, Erić could test whether thermomechanical fatigue methods transfer to coated conveyor joints, using retained failure evidence, measured service histories and representative specimens.” These are plausible benefits of the proposed comparisons and transfer test, not guarantees; Proposed next steps explicitly state that laboratory improvement would not establish that warranty replacements will stop."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.94,
+        0.97,
+        0.91,
+        0.99,
+        0.69
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

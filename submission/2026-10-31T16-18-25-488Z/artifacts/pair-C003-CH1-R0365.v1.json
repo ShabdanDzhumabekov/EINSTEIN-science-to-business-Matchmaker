@@ -1,0 +1,190 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What mechanisms cause cracking at AutomVoj’s painted mild-steel conveyor-frame welds in chilled service, and could changes to welding procedure, filler material or joint geometry reduce damage? Guided by examination of failed sections and measured service conditions, the first experiment would compare representative joints under room-temperature and 2–6 °C cyclic loading, with controlled thermal and condensation exposure where feasible, to test whether environmental effects explain the failures before evaluating modifications.",
+    "rationale": [
+      {
+        "text": "Erić’s research directly addresses fatigue and fracture of welded steel under combined mechanical cycling and low-temperature excursions.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "His research group focuses on fatigue and fracture mechanics of welded structural steel joints subjected to combined cyclic mechanical loading and low-temperature thermal excursions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His experimental work provides a relevant approach for separating isothermal fatigue from interacting thermal and mechanical cycling, without establishing that the same mechanism applies to these conveyors.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "Four loading programmes were applied: isothermal fatigue at 20 °C, isothermal fatigue at −30 °C, in-phase thermo-mechanical fatigue (TMF), and out-of-phase TMF",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His field-assessment work demonstrates experience reconstructing operational loading from strain and temperature measurements, relevant to defining representative conveyor tests.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has measured weld residual stresses and compared them with thermal–mechanical simulations, supporting investigation of welding-related contributions to cracking.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04473",
+            "field": "abstract",
+            "quote": "were measured by hole-drilling with strain-gauge rosettes and compared with sequentially coupled thermal–mechanical FE simulations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project is consistent with his stated collaboration interests.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Test specimens and models must represent the actual hollow-section material, coating and crossmember-to-stringer weld detail; generic welded-plate results cannot substitute for component-specific evidence.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "weld joint cracking at the main crossmember-to-stringer connections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The test programme must represent chilled service and investigate the suspected environmental and vibration contributions rather than repeat room-temperature-only qualification.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Failure analysis must account for the limited retained material and preserve evidence before destructive sampling; the available starting evidence comprises site records and two failed sections.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Low-temperature cyclic testing requires external laboratory access because AutomVoj lacks that capability; the researcher's shared chamber and fatigue machine require advance scheduling.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company engineering effort must be explicitly allocated around live projects rather than assumed to come from a dedicated R&D team.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The cited thermal-fatigue studies concern different temperatures, steel grades, weld geometries and loading regimes. Their mechanisms and numerical corrections may not transfer to painted hollow-section conveyor joints at 2–6 °C; the first representative-joint experiment must test this transfer.",
+      "Condensation and coating-related degradation are suspected, not established. Humidity-control capability and relevant corrosion-analysis support are not documented and may require additional facilities or collaborators.",
+      "The actual service load spectrum, temperature excursions and crack initiation history are unknown. An accelerated test could reproduce a different failure mechanism unless grounded in field measurements and failed-section evidence.",
+      "Two retained failed sections may not capture variation across all warranty failures, and destructive examination could exhaust critical evidence.",
+      "Researcher availability is unknown, shared-equipment access may delay testing, and company engineering staff have competing live-project duties.",
+      "Budget, delivery deadline, customer-site access and feasible specimen size are unknown; these could prevent a representative test campaign or implementation of proposed changes."
+    ],
+    "questions": [
+      "What are the exact steel grade, wall thickness, joint drawings, welding procedure, filler, inspection records and coating specification, and do failed and unaffected frames differ?",
+      "Can the two failed sections and original site records be examined before cutting, and can matching unfailed joints and newly fabricated specimens be supplied?",
+      "Can customer sites provide access for strain, vibration, temperature and humidity monitoring, including loading changes, shutdowns, washdowns and condensation events?",
+      "What chamber dimensions, fixture capacity, simultaneous thermal–mechanical operation and humidity-control capability are available, and when can the shared equipment be booked?",
+      "What researcher time and laboratory support can Erić commit, and who at AutomVoj will own specimen fabrication, field measurements and engineering decisions?",
+      "What budget, deadline and applicable customer or structural acceptance requirements govern the work, and what evidence would be required before adopting a revised weld, filler or joint design?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

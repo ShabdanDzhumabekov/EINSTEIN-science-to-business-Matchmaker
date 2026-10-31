@@ -15,6 +15,14 @@ it("keeps pairs at or above the threshold and orders them by Jev probability", a
 	expect(screening.pairs.map((pair) => `${pair.researcherId}:${pair.jev}:${pair.isKept}`)).toEqual(["R0002:0.8:true", "R0003:0.5:true", "R0001:0.4:false"])
 })
 
+it("asks whether the task is a research problem even when no researcher is left to screen", async () => {
+	const decision = new FakeDecision({ is_research_problem: 0.8 })
+
+	const screening = await screenTask(decision, aBusinessCard(), [], { threshold: 0.5, batchSize: 100 })
+
+	expect([screening.researchFit, screening.pairs]).toEqual([0.8, []])
+})
+
 it("records whether Jev considers the task a research problem", async () => {
 	const decision = new FakeDecision({ is_research_problem: 0.3, fit_R0001: 0.9, fit_R0002: 0.9, fit_R0003: 0.9 })
 

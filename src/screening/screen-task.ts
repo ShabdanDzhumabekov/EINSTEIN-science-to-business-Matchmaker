@@ -2,6 +2,7 @@ import type { BusinessCard } from "../contracts/business-card"
 import type { Decision, NoulQuestion } from "../contracts/decision"
 import type { ScholarCard } from "../contracts/scholar-card"
 import type { TaskScreening } from "../contracts/task-screening"
+import { compactScholar } from "./compact-scholar"
 import { questionText } from "./question-text"
 
 export type ScreeningOptions = { threshold: number; batchSize: number }
@@ -12,12 +13,11 @@ const RESEARCH_QUESTION: NoulQuestion = {
 	whenTrue: "The need contains an open technical or scientific question",
 	whenFalse: "The need is not a research problem",
 }
-const WORK_TITLES_SHOWN = 8
 
 /* Stage 2: Jev forms the pairs itself from the task and the whole researcher table, split into batches that fit one request. */
 export async function screenTask(decision: Decision, business: BusinessCard, scholars: ReadonlyArray<ScholarCard>, options: ScreeningOptions): Promise<TaskScreening> {
 	const task = { challenge: business.challenge.text.text, detail: business.challenge.detail.text, company: business.company.about.text }
-	const batches = Array.from({ length: Math.ceil(scholars.length / options.batchSize) }, (_, index) => scholars.slice(index * options.batchSize, (index + 1) * options.batchSize))
+	const batches = Array.from({ length: Math.max(1, Math.ceil(scholars.length / options.batchSize)) }, (_, index) => scholars.slice(index * options.batchSize, (index + 1) * options.batchSize))
 	const answers = await Promise.all(batches.map((batch, index) => decision.probabilities(
 		{ task, researchers: Object.fromEntries(batch.map((scholar) => [scholar.researcherId, compactScholar(scholar)])) },
 		[...(index === 0 ? [RESEARCH_QUESTION] : []), ...batch.map((scholar) => fitQuestion(scholar.researcherId))],
@@ -42,10 +42,6 @@ export async function screenTask(decision: Decision, business: BusinessCard, sch
 		model: "typesafe/jev-1.14",
 		questions: { researchProblem: questionText(RESEARCH_QUESTION), pairFit: questionText(fitQuestion("<researcherId>")) },
 	}
-}
-
-function compactScholar(scholar: ScholarCard) {
-	return { fields: scholar.fields, keywords: scholar.keywords, works: scholar.works.slice(0, WORK_TITLES_SHOWN).map((work) => work.title) }
 }
 
 function fitQuestion(researcherId: string): NoulQuestion {

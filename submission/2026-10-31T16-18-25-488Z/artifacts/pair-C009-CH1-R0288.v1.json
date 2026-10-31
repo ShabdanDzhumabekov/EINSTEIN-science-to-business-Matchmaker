@@ -1,0 +1,200 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can Serbian-specific lemmatization, within-token script normalization and paradigm-aware retrieval reduce LinguaBot’s support-search misses toward its below-5% target while supporting vocabulary updates without full re-indexing? The first experiment would compare these components against the current Elasticsearch baseline on held-out support queries, explicitly testing transfer from reference and social-media corpora to banking and telecom terminology, mixed-script typos, retrieval precision and update costs.",
+    "rationale": [
+      {
+        "text": "Nikolić’s work directly addresses Serbian lemmatization across Latin and Cyrillic scripts, providing a relevant candidate component rather than evidence of validated support-search performance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her retrieval research compares the principal alternatives relevant to LinguaBot’s morphological mismatch problem, including paradigm-aware indexing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "The paper evaluates three mitigation strategies — stemming, full lemmatization, and paradigm-based query expansion — comparing their precision and recall",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her cross-script tokenization work specifically addresses script boundaries inside tokens, closely matching the company’s mixed-script typo problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her corpus-driven paradigm induction offers a candidate workflow for expanding morphological coverage as product vocabulary changes.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03592",
+            "field": "abstract",
+            "quote": "candidate lemmas are identified through lemmatisation, and their full inflectional paradigms are hypothesised by a rule engine and then validated against corpus evidence.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her spelling-variation research provides evidence for comparing conservative normalization with methods intended to generalize to unfamiliar borrowings.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must handle Serbian-specific inflection and automatic Latin–Cyrillic normalization, including script changes within words; replacing the stemmer alone would not cover the stated task.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must integrate with the existing Elasticsearch search system and support new vocabulary without a full re-index or an expanding manual synonym-maintenance burden.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation must connect to the measured no-useful-result problem and the company’s below-5% target, using the available labelled pairs and linguist validation; that target is not an established outcome.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope tooling and data work to approximately EUR 8,000 and produce something testable within six months; this does not establish a budget for researcher time.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer remains unvalidated: corpus lemmatization accuracy, social-media tokenization performance and retrieval-test-collection results do not establish performance on LinguaBot’s banking and telecom support queries. The first experiment must measure these gaps explicitly.",
+      "New product names and borrowings may receive incorrect paradigms: the morphological lexicon study reports 78.6% paradigm correctness for borrowings, below its result for common vocabulary.",
+      "Normalization and query expansion may merge distinct terms or increase irrelevant matches. Lowering the no-result rate without checking answer relevance could conceal a precision regression.",
+      "More than half of the observed misses were attributed to morphology or script confusion, but the evidence does not establish that fixing these causes alone can reach the below-5% target.",
+      "The published methods do not demonstrate vocabulary updates without full Elasticsearch re-indexing. Existing index design may limit which approaches satisfy this requirement.",
+      "Researcher availability and committed company engineering and annotation time are unknown. A six-month joint project needs explicit staffing and funding agreement.",
+      "Permission to share client queries, required de-identification, deployment restrictions, compute availability and exact commercial-use licence terms remain unknown."
+    ],
+    "questions": [
+      "What time can Nikolić commit over the next six months, and who will own implementation, linguistic validation and ongoing maintenance at LinguaBot?",
+      "Does the EUR 8,000 cover only tooling and data work, and what separate funding is available for researcher and engineering time?",
+      "Can the researcher access the 85,000 labelled pairs and the 12,000-query failure sample? What client approvals, de-identification and secure-access arrangements are required?",
+      "How is 'no useful result' defined, and do the labels identify relevant knowledge-base documents as well as responses? Can the first experiment use client- and time-separated held-out queries with separate morphology, mixed-script and new-vocabulary slices?",
+      "What relevance, latency and maintenance-cost limits must accompany the below-5% miss-rate target, and is that target intended for the original bank sample or all clients?",
+      "What Elasticsearch version, analyzers, mappings and update mechanisms are deployed? Does 'without a full re-index' permit targeted document updates, query-time expansion or versioned external dictionaries?",
+      "Which published tools and datasets are currently available, and do their exact licences permit the intended commercial deployment? What compute and external-service restrictions apply?",
+      "Can the first experiment include a simulated quarterly vocabulary update to test unseen-term coverage, correction effort and whether the no-full-re-index requirement is achievable?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0288",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -7,6 +7,8 @@ import { businessCard } from '../cards/business-card'
 import { scholarCard } from '../cards/scholar-card'
 import { critiqueProposal } from '../agents/critic/critique-proposal'
 import { screenTask } from '../screening/screen-task'
+import { screenCompany } from '../screening/screen-company'
+import type { CompanyScreening } from '../contracts/company-screening'
 import { checkPair } from '../screening/check-pair'
 import type { ScreeningStore } from '../screening/screening-store'
 import { assessPair } from '../features/matching/adapters/outbound/assess-pair'
@@ -38,8 +40,19 @@ function carefulCritic(inference: RoleInference): RoleInference {
   }
 }
 
-export function createStages(inference: RoleInference, decision: Decision, dataset: Dataset, screenings: ScreeningStore): CollaborationStages {
+export type StageOptions = { prefilterThreshold?: number }
+
+/* Absent means off; any value must be a probability. An empty or malformed value is a configuration error, not "off". */
+export function prefilterThresholdOf(raw: string | undefined): number | undefined {
+  if (raw === undefined) return undefined
+  const threshold = raw.trim() === '' ? Number.NaN : Number(raw)
+  if (!Number.isFinite(threshold) || threshold < 0 || threshold > 1) throw new RangeError(`PREFILTER_THRESHOLD must be a probability between 0 and 1, got "${raw}"`)
+  return threshold
+}
+
+export function createStages(inference: RoleInference, decision: Decision, dataset: Dataset, screenings: ScreeningStore, options: StageOptions = {}): CollaborationStages {
   const flags = researcherQualityFlags(dataset)
+  const companyScreenings = new Map<string, Promise<CompanyScreening>>()
   const scholars = new Map<string, ScholarCard>()
   const scholarCardOf = (researcherId: string) => {
     const cached = scholars.get(researcherId)
@@ -52,10 +65,21 @@ export function createStages(inference: RoleInference, decision: Decision, datas
     businessCard: taskId => businessCard(dataset, taskId),
     scholarCard: scholarCardOf,
     async screen(business) {
-      const cached = screenings.find(business.taskId)
+      const cached = screenings.find(business.taskId, options.prefilterThreshold)
       if (cached) return cached
-      const screening = await screenTask(decision, business, [...dataset.researchers.keys()].map(scholarCardOf), { threshold: SCREENING_THRESHOLD, batchSize: SCREENING_BATCH_SIZE })
-      return screenings.save(screening)
+      const everyone = [...dataset.researchers.keys()].map(scholarCardOf)
+      if (options.prefilterThreshold === undefined) {
+        return screenings.save(await screenTask(decision, business, everyone, { threshold: SCREENING_THRESHOLD, batchSize: SCREENING_BATCH_SIZE }))
+      }
+      const threshold = options.prefilterThreshold
+      const inFlight = companyScreenings.get(business.companyId) ?? (async () => screenings.findCompany(business.companyId)
+        ?? screenings.saveCompany(await screenCompany(decision, business, everyone, { threshold, batchSize: SCREENING_BATCH_SIZE })))()
+      companyScreenings.set(business.companyId, inFlight)
+      const company = await inFlight
+      const kept = new Set(company.pairs.filter(pair => pair.jev >= threshold).map(pair => pair.researcherId))
+      const screened = everyone.filter(scholar => kept.has(scholar.researcherId))
+      const screening = await screenTask(decision, business, screened, { threshold: SCREENING_THRESHOLD, batchSize: SCREENING_BATCH_SIZE })
+      return screenings.save({ ...screening, prefilter: { threshold, company, researchersScreened: screened.length, researchersRemoved: everyone.length - screened.length } })
     },
     async assess(request) {
       try { return await assessPair(inference, dataset, request) }

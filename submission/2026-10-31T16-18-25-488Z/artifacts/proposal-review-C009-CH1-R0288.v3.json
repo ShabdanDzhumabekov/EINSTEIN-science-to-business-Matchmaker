@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 3
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 3
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 3
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result”; “an Elasticsearch baseline using a Croatian-oriented stemmer that misses Serbian-specific forms, and users switching scripts even within words”; “manual synonym-list maintenance does not scale as clients add product terminology every quarter.” Proposed next steps requires “simulated quarterly updates preserving these results without full re-indexing.” These identify the concrete retrieval failures, their linguistic causes and the vocabulary-maintenance problem rather than a generic search-improvement goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “automatic inflection/script handling”; “simulated quarterly updates preserving these results without full re-indexing”; “tooling/data spend within approximately EUR 8,000 and a testable implementation within six months”; “Record update duration, staff minutes, corrected paradigms, affected documents, latency and tooling/data expenditure; agree numeric maintenance/latency limits before evaluation.” Open questions: “Can client permissions, de-identification and secure access support the proposed samples” and “can both parties identify implementation, annotation and maintenance owners and funding for their time?” These make the functional, budget, schedule and maintenance requirements acceptance conditions with recorded verification, while leaving access and staffing as explicit prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić’s lemmatizer uses a unified internal representation before lemmatization and restores the original script afterward. Her tokenization work normalizes script boundaries within tokens. Her retrieval study reports the highest F1 for full lemmatization combined with paradigm-aware indexing”; “91.3% paradigm correctness for common vocabulary and 78.6% for borrowings.” Our inference: “reference-corpus and social-media results do not establish banking or telecom retrieval performance.” Proposed next steps compares “lemmatization, within-token normalization and paradigm-aware retrieval.” These connect documented methods to the actual failure modes while distinguishing published results from unvalidated domain transfer and acknowledging the borrowing-quality limitation."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate proposed solutions.” Proposed next steps: “Propose Nikolić lead linguistic design and LinguaBot implement and validate relevance.” Our inference: “staffing and a six-month commitment remain unconfirmed.” Open questions asks both parties to “identify implementation, annotation and maintenance owners and funding for their time.” These distinguish available company resources and documented research methods from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “diagnosing the 12,000-query sample and separating tuning/evaluation samples from approximately 85,000 pairs; verify client, time and duplicate-family independence”; “baseline, each alone, all pairs and all three, holding documents and ranking controls comparable”; “Select the best configuration on tuning data; evaluate once on held-out original-bank and broader-client queries separately, including inflection, mixed-script and unseen-term slices”; “months one–two for permissions, definitions and baseline reproduction”; “Test newly introduced terms and repeated updates for transfer and sustainability.” These specify inputs, baseline, factorial conditions, separate selection and evaluation, and the update test, with execution definitions and permissions explicitly deferred to prerequisite work."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Review every evaluation query; count each occurrence once without deduplication. Miss rate is queries without useful results divided by all evaluated queries; unresolved judgements count as misses”; “upper 95% miss-rate bounds below 5% in both populations”; “Propose precision as mean relevant fraction at an agreed cutoff, unresolved results counted irrelevant”; “Agree a precision non-inferiority margin and paired confidence procedure beforehand”; “Require the lower 95% bound on candidate-minus-baseline precision to exceed the negative margin in both populations before and after replay”; “Missing independent original-bank data or insufficient evidence means no pass”; “agree numeric maintenance/latency limits before evaluation.” Open questions asks “What defines a useful result, retrieval cutoff, precision non-inferiority margin and latency/maintenance limits”. These proposed gates define occurrence counting, full numerator review, denominators, uncertain-label treatment, statistical acceptance and separate original-bank/broader-client acceptance, while making remaining operational thresholds prerequisites rather than silently assuming them."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “independently defined lemmatization, within-token normalization and paradigm-aware retrieval: baseline, each alone, all pairs and all three, holding documents and ranking controls comparable.” Our inference: “the reported attribution does not establish that these changes alone can reach below 5%.” These provide component and combination controls capable of distinguishing main effects and interactions, and avoid treating the company's diagnostic attribution as proof of achievable improvement."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “reference-corpus and social-media results do not establish banking or telecom retrieval performance. Borrowing errors are a transfer risk; normalization or expansion could also merge distinct terms and conceal relevance losses”; “staffing and a six-month commitment remain unconfirmed.” Verified facts reports “78.6% for borrowings.” Open questions asks about “tool licences, compute capacity and deployment restrictions” and “what counts as a full re-index”. These identify domain transfer, known lexicon limitations, relevance regressions, resourcing and deployment/update uncertainties without presenting unknowns as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional on availability. Nikolić is listed as open to joint projects, but her availability is unknown; staffing and a six-month commitment remain unconfirmed.” Proposed next steps: “Propose Nikolić lead linguistic design”. Open questions: “Can Nikolić confirm availability for this joint project”. These match her documented openness to joint projects and make the proposed role conditional rather than assigning an agreed commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could establish whether Serbian-aware retrieval meets the miss-rate target under vocabulary updates, while exposing relevance losses and maintenance costs before deployment”; “Subject to agreement and approved access, Nikolić could test how corpus-derived morphology transfers to banking and telecom support language, using validated query judgements and terminology-update cases.” These are conditional benefits directly supported by the planned retrieval, relevance, transfer and update evaluations, not guarantees of deployment success or access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.97,
+        0.92,
+        0.98,
+        0.94,
+        0.99,
+        0.61,
+        0.95
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

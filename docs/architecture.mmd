@@ -1,0 +1,57 @@
+%% EINSTEIN Matchmaker: route as executed (src/features/workflow/application/collaboration-workflow.ts; Stars entry: src/app/stars.ts)
+%% Render: GitHub shows it inline from docs/architecture.md; locally `npx @mermaid-js/mermaid-cli -i docs/architecture.mmd -o architecture.svg`
+flowchart TD
+    BC["Business cards (code)<br/>one per challenge, quotable passages"]
+    SC["Researcher cards (code)<br/>1,047, confirmed works only"]
+
+    PF{{"Optional: company pre-filter (Jev)<br/>researcher × company, off by default<br/>PREFILTER_THRESHOLD"}}
+    JS["Jev screening<br/>challenge × researchers + research-problem check"]
+    MM["Matchmaker (LLM)<br/>one pair per call, best Jev first, ≤ 8"]
+    JC["Jev check<br/>does the quoted rationale hold?"]
+    WR["Writer (LLM)<br/>facts, inferences, proposal"]
+    CR["Critic: code + LLM checklist + Jev fact check"]
+    RES["Result<br/>first approved proposal"]
+
+    subgraph STARS["EINSTEIN Stars mode: npm run stars"]
+        ST1["One researcher's full card (code)<br/>fields, bio, industry experience, works with abstracts"]
+        ST2["Jev reverse screening<br/>researcher × all 489 challenges<br/>methods fit AND research problem, both ≥ 0.5"]
+        ST3["Challenges for this person<br/>first 3 kept go in depth as fixed pairs"]
+        ST1 --> ST2 --> ST3
+    end
+
+    OUT(["Challenge screened_out<br/>(ends)"])
+    DROP(["Pair dropped<br/>next screened pair, none left: ends"])
+
+    BC --> JS
+    SC --> JS
+    BC -.-> PF
+    SC -.-> PF
+    PF -. "kept ≥ threshold" .-> JS
+
+    JS -- "≥ 0.5" --> MM
+    JS -- "< 0.5" --> OUT
+    MM -- "pair" --> JC
+    MM -- "no fit" --> DROP
+    JC -- "≥ 0.9" --> WR
+    JC -- "< 0.9" --> DROP
+    WR --> CR
+    CR -- "revise, up to 2" --> WR
+    CR -- "after 2 revisions" --> DROP
+    CR -- "ok" --> RES
+    DROP -- "next pair" --> MM
+    ST3 -. "same route, fixed pair" .-> MM
+    RES -.-> STR(["Stars report<br/>list of challenges + proposals"])
+
+    classDef code fill:#f1f5f9,stroke:#94a3b8,color:#0f172a
+    classDef jev fill:#fef3c7,stroke:#d97706,color:#0f172a
+    classDef llm fill:#e0e7ff,stroke:#6366f1,color:#0f172a
+    classDef optional fill:#fef3c7,stroke:#d97706,stroke-dasharray:5 5,color:#0f172a
+    classDef stop fill:#fee2e2,stroke:#dc2626,color:#0f172a
+    class BC,SC,RES code
+    class JS,JC jev
+    class MM,WR,CR llm
+    class PF optional
+    class OUT,DROP stop
+    class ST1,STR code
+    class ST2 jev
+    class ST3 code

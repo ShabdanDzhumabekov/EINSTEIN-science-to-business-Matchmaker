@@ -43,7 +43,7 @@ From one run that processed three challenges at the same time, with Matchmaker, 
 
 ## How this plugs into the EINSTEIN network and EINSTEIN Stars
 
-**Network.** A technology-transfer coordinator at the University of Novi Sad or Science and Technology Park Novi Sad enters a challenge from a network company. The system returns source-linked proposals, open questions and the Critic's record; the coordinator reads them and decides whether to introduce the two sides. Nothing is sent to a company or researcher automatically. Partner universities (JKU Linz, WUR, DTU) could add their researchers as more scholar cards.
+**Network.** A technology-transfer coordinator at the University of Novi Sad or Science and Technology Park Novi Sad enters a challenge from a network company. The system returns source-linked proposals, open questions and the Critic's record; the coordinator reads them and decides whether to introduce the two sides. Nothing is sent to a company or researcher automatically. Partner universities (JKU Linz, WUR, DTU) could add their researchers as more researcher cards.
 
 **EINSTEIN Stars** is the project's programme for PhD students and early-career researchers with industrial potential, which promises them industry contacts. `npm run stars` runs the route the other way: one researcher's full card (fields, bio, industry experience, confirmed works with abstracts) against all 489 company challenges, in Jev batches of at most 25 challenges and 96 KiB; a challenge is kept when Jev rates both "the methods address it" and "it is a research problem" at 0.5 or more. The first three kept challenges go through the same Matchmaker, Jev 0.9 check, Writer and Critic for that fixed pair. The output is a list of challenges for that person; the system never compares people or predicts winners.
 
@@ -60,7 +60,7 @@ Two runs, on researchers chosen before running ([submission/README.md](submissio
 
 The profiles are synthetic and whether these people would apply to Stars is not known. The Jev values are screening filters, not the probability that a project succeeds, and three attempts are not a full search.
 
-We have no EINSTEIN or Stars API; the connector format and approval points have to be agreed with their owners. Details: [docs/einstein-integration.md](docs/einstein-integration.md).
+We have no EINSTEIN or Stars API; the connector format and approval points have to be agreed with their owners. Cost and scale (one challenge $0.10–0.25, the whole dataset an estimated $50–120, and a company-level pre-filter for a larger network, measured on 15 challenges: no kept pair lost up to a threshold of 0.4): [docs/einstein-integration.md](docs/einstein-integration.md#cost-and-scale).
 
 
 ## Development
@@ -85,7 +85,7 @@ RUN_TASKS=all TASK_CONCURRENCY=3 npm start   # every challenge in the dataset
 scripts/bundle-run.sh runs/<run-id>          # copy a run into submission/ to commit it
 ```
 
-`DATASET_DIR` overrides the default `data/data` path. Source hashes are checked against [the pinned manifest](docs/dataset-manifest.json). The default model for every LLM role is `openai/gpt-6.1-sol` (`MODEL_STRONG`; `MODEL_FAST` is not used by the current route); every role sends `medium` reasoning effort, and the inference journal records it. Earlier bundles used `deepseek/deepseek-v4.1-flash-1017`. A live transport smoke has passed. Full-run quality and failure results are recorded separately.
+`PREFILTER_THRESHOLD=0.4` turns on the optional company-level pre-filter before the challenge screening (off by default; [measurement](docs/company-prefilter-test.md)). `DATASET_DIR` overrides the default `data/data` path. Source hashes are checked against [the pinned manifest](docs/dataset-manifest.json). The default model for every LLM role is `openai/gpt-6.1-sol` (`MODEL_STRONG`; `MODEL_FAST` is not used by the current route); every role sends `medium` reasoning effort, and the inference journal records it. Earlier bundles used `deepseek/deepseek-v4.1-flash-1017`. A live transport smoke has passed. Full-run quality and failure results are recorded separately.
 
 Output is written to ignored `runs/<run-id>/`: `summary.json`, `inference.jsonl`, workflow `trace.jsonl`, readable `trace.md`, measured `metrics.json`, immutable JSON artifacts and approved proposal Markdown. The Markdown links to its fact/evidence ledger. Failed runs and rejected versions are retained; validation repairs are distinguished from Critic interventions.
 

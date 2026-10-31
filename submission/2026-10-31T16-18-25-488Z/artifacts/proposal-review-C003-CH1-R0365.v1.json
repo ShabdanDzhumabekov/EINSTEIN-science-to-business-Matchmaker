@@ -1,0 +1,102 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 6,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: the best-supported explanation must reproduce site-observed location and fracture features in at least two held-out joints under representative 2–6 °C service exposure, with repeatable controlled contrasts resolving claimed interactions.",
+        "sources": [],
+        "explanation": "Two matching joints could satisfy this rule despite many nonmatching specimens, while “repeatable” and the treatment of ambiguous fracture matches have no defined acceptance rule, permitting false acceptance of an explanation. Make acceptance conditional on prespecifying the held-out denominator and exposure, specimen-level matching and uncertain-label rules, and a confidence-bound or equivalent decision rule for the claimed contrasts before held-out testing.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj reports painted mild-steel hollow-section frames cracking at main crossmember-to-stringer welds after about 18 months in cold stores typically operating at 2–6 °C. It reports 14 warranty assembly replacements this year.” Also: “The company reports that room-temperature loaded tests pass.” These identify the component, service conditions, failure history and failed reproduction attempt rather than a generic fatigue problem."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Confirm chamber fit, simultaneous loading and moisture control, external support if needed, staff allocation and laboratory booking before committing to testing.” Open questions: “can AutomVoj name an engineering owner with time allocated around live projects?” These make external testing capability, shared-equipment access and limited company staffing explicit prerequisites rather than assumed resources; no fixed budget or deadline is stated in the original challenge."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić's research compared isothermal fatigue with in-phase and out-of-phase thermomechanical fatigue in butt-welded S275JR plates.” Our inference: “The published plate experiments do not validate a mechanism for painted hollow-section joints at 2–6 °C. Different material, geometry, coating and loading make direct transfer risky”. Proposed next steps: “Run an eight-condition matrix: baseline, each factor alone, all pairs and all three.” These connect his documented controlled-comparison method to the conveyor problem while explicitly limiting transfer rather than importing published effects or numerical corrections."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “propose AutomVoj fabricate matching painted joints and supply service records; Erić would lead failure analysis and testing.” Verified facts identifies the shared laboratory equipment; Open questions asks, “Can Erić confirm availability and laboratory support for this joint project”. Together these distinguish documented resources, proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Use separate tuning and held-out validation specimens, checking independence across fabrication batches.” Also: “Independently define thermal cycling as measured excursions versus constant chilled temperature, condensation as controlled wet versus dry surfaces, and vibration as measured loaded-belt excitation versus matched static mean load. Include a room-temperature loaded comparator; match geometry, coating, mean load and exposure, randomise order and replicate conditions.” These specify representative inputs, independently varied conditions, controls and separate evaluation; field measurements and laboratory feasibility remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Proposed go/no-go: the best-supported explanation must reproduce site-observed location and fracture features in at least two held-out joints under representative 2–6 °C service exposure, with repeatable controlled contrasts resolving claimed interactions.” Also: “Insufficient replication, unresolved interactions or unavailable validation evidence means hold, not success”. These provide a proposed event and minimum count, but not the held-out denominator/exposure, an operational rule for matching uncertain site evidence, or a statistical or equivalent acceptance rule for “repeatable” contrasts; two selected matches could therefore pass despite predominantly nonmatching results."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Run an eight-condition matrix: baseline, each factor alone, all pairs and all three” and “match geometry, coating, mean load and exposure, randomise order and replicate conditions.” Also: “unresolved interactions or unavailable validation evidence means hold, not success; accelerated testing cannot establish 18-month durability.” These independently vary the suspected factors with comparable controls and withhold conclusions where interactions or service-life transfer remain unresolved."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Different material, geometry, coating and loading make direct transfer risky; condensation-control and corrosion-analysis capability also remain unverified.” Proposed next steps: “document both failed sections before authorising any cuts” and “accelerated testing cannot establish 18-month durability.” Open questions asks about site monitoring, fixture limits, equipment booking and availability; these address transfer, evidence preservation, acceleration and execution risks without presenting unknown capabilities as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “The proposal is conditional: Erić is open to this project format, but his availability is unknown.” Open questions: “Can Erić confirm availability and laboratory support for this joint project”. These correctly distinguish openness to a joint project from an actual commitment and assign no declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could identify which service factors explain the observed cracking and provide evidence for choosing a welding, filler or joint-design change” and “Subject to agreement and access, Erić could test whether thermomechanical fatigue methods transfer to coated conveyor joints”. These are conditional gains supported by the proposed comparisons, not guarantees of durability, warranty savings or researcher participation."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.55,
+        0.95,
+        0.94,
+        0.99,
+        0.82
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

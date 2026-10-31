@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T16-18-25-488Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"no labelled malicious traffic, and the possibility of previously undetected compromise\" and \"excessive false positives caused clients to disable alerts\"; Proposed next steps: \"using representative per-site Modbus and BACnet archives as unlabelled data\" and \"Compare fixed-threshold rules with statistical one-class baselines\"; these address site-specific anomaly detection without attack labels and make operational alert burden, rather than generic detection performance, an acceptance criterion."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"without attack-labelled training or threshold selection\", \"Each protocol must separately pass held-out operational and bench evaluation\", \"agreed device-budget compliance\", \"no measurable forwarding-latency increase under matched load and agreed measurement tolerances\", and \"Require plant managers to correctly explain four of five randomly sampled alerts under a pre-agreed rubric\"; Open questions: \"can both parties agree the proposed responsibilities, part-time engineering scope, budget and six-week schedule?\" and \"Can representative held-out captures for both protocols, operating logs and client research-sharing permissions be secured under suitable NDA, testbed data-sharing, retention and firmware terms?\"; these respect the data, protocol, on-device, explainability, staffing and access constraints, with unresolved execution limits explicitly conditional on agreement."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Kiss's published Modbus work constructs per-register statistical baselines and documents seasonal baseline drift\"; Our inference: \"Site-specific statistical baselines suggest a plausible alternative to supervised attack classification, explaining deviations in timing, values or commands. Seasonal variation could nevertheless recreate alert fatigue\" and \"Modbus evidence does not establish BACnet effectiveness or ProtoSense hardware fit\"; these tie her documented method to the task while identifying its reported drift limitation and the unproven protocol and hardware transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"ArmaturaSec describes capacity of one to two part-time engineers and archive, bench and firmware access under NDA\" and \"Her group's testbed access is described under a data-sharing agreement\"; Proposed next steps: \"Propose company engineers prepare permitted captures and Yocto integration, with Kiss's group developing features and calibration\"; Open questions: \"can both parties agree the proposed responsibilities, part-time engineering scope, budget and six-week schedule?\"; these distinguish available company resources and documented research capacity from proposed responsibilities that remain unconfirmed."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"using representative per-site Modbus and BACnet archives as unlabelled data, plus safe bench injections\", \"Separate training, tuning and held-out evaluation periods; verify independence and operating-cycle coverage\", \"Compare fixed-threshold rules with statistical one-class baselines\", and \"compare frozen versus operator-approved baseline updates against legitimate changes and persistent anomalies\"; the additional prerequisite \"Before tuning, agree and freeze protocol-specific challenge matrices, episode boundaries, repetition allocation and detection-confidence calculations\" makes the inputs, controls, compared conditions and separation of configuration selection from evaluation assessable without pretending execution details are already agreed."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Each protocol must separately pass held-out operational and bench evaluation\", \"a lower 95% confidence bound of at least 80% injected-episode detection within 60 seconds\", and \"an upper 95% confidence bound of at most one false-alert episode per observed site-day\"; counting is specified by \"merging same-site, device and deviation-type alerts separated by at most five minutes into episodes\", \"Review every evaluation episode; count unresolved episodes as false alerts\", and \"Divide by observed monitoring hours/24; pre-agree site-day-cluster-aware confidence bounds\". Detection design is conditional on freezing \"episode boundaries, repetition allocation and detection-confidence calculations\", with allocation \"so repeated easy cases cannot determine acceptance\". The sampled contamination audit explicitly says \"Use these labels to audit contamination, not estimate episode totals\". Explainability requires \"four of five randomly sampled alerts under a pre-agreed rubric\", clarified in Open questions as \"five alerts randomly sampled per protocol\" and identification of \"the affected device, observed deviation and reason for concern in plain language\"; together with agreed hardware measurements and \"Missing data, insufficient precision or any failed gate means no deployment approval\", these define proposed company-objective gates, conservative uncertain-label handling and protocol-specific acceptance."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Compare fixed-threshold rules with statistical one-class baselines\", \"compare frozen versus operator-approved baseline updates against legitimate changes and persistent anomalies\", and \"under matched load and agreed measurement tolerances\"; Our inference: \"Modbus evidence does not establish BACnet effectiveness or ProtoSense hardware fit\" and \"controlled bench detection cannot establish coverage of unknown real attacks\"; these support bounded feasibility comparisons without claiming that protocol transfer, unknown-attack coverage or individual components of an update policy have independently been established."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Seasonal variation could nevertheless recreate alert fatigue\", \"Contaminated archives and aggressive adaptation could conceal attacks\", and \"controlled bench detection cannot establish coverage of unknown real attacks\"; Proposed next steps: \"verify independence and operating-cycle coverage\"; Open questions ask about current hardware, resource budgets, permissions, adjudication and baseline approval; these identify the principal methodological and execution risks, including the published drift limitation, while leaving unknowns explicitly unresolved."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"This joint-project proposal is conditional: Kiss is open to this format, but her availability is unknown\"; Open questions: \"Can Kiss confirm availability for this joint project, and can both parties agree the proposed responsibilities, part-time engineering scope, budget and six-week schedule?\"; these accurately distinguish openness to collaboration from a commitment of time or delivery."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The pilot could establish whether useful, understandable alerts are feasible without labelled attack training data, while exposing BACnet, alert-burden or hardware barriers before deployment\" and \"Conditional on agreement and permissions, Kiss could test cross-protocol calibration and drift handling using operational captures and controlled bench cases\"; these are conditional gains supported by the proposed measurements and comparisons, not guarantees of deployment or research access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.87,
+        0.99,
+        0.85,
+        0.97,
+        0.99,
+        0.94,
+        0.95
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}
