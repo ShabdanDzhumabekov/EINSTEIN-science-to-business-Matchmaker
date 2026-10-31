@@ -2,6 +2,8 @@
 
 Agents turn a company challenge into a source-linked researcher collaboration proposal. Three LLM roles run on Mozaik 4.2.0: Matchmaker, Writer and Critic. Jev (`typesafe/jev-1.14`, OpenRouter Decisions API) screens pairs, checks the Matchmaker's rationale and checks proposal facts; each Jev request runs as its own Pair Screener agent on Mozaik.
 
+Presentation (7 slides): [docs/presentation.pdf](docs/presentation.pdf).
+
 Up to `TASK_CONCURRENCY` challenges (default 3) are processed at the same time. LLM requests share one Mozaik runtime that admits at most `MAX_CONCURRENT` (default 4) at once and stops at `BUDGET_USD`; Jev requests run outside that limit (a challenge's screening batches in parallel) and their cost is journaled but not budgeted.
 
 Route ([architecture as executed](docs/architecture.md), with the constants and files behind each step):
