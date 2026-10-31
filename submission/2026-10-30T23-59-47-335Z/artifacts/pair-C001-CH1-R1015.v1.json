@@ -1,0 +1,191 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1015",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1015",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an unsupervised, site-specific baseline learned only from benign Modbus TCP and BACnet/IP traffic detect behaviour drift accurately enough and explain alerts plainly enough for a plant manager, while running on the ProtoSense appliance within its latency budget? Any detection or false-positive performance is a hypothesis to be tested on ArmaturaSec's own archives and hardware bench, not a promised result.",
+    "rationale": [
+      {
+        "text": "The researcher has already built and evaluated unsupervised Modbus anomaly detection trained exclusively on benign traffic, which matches the company's no-labels setting.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10523",
+            "field": "abstract",
+            "quote": "Anomalies are identified by measuring reconstruction error against learned normal patterns, without requiring labelled attack data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His comparative SCADA IDS study evaluates detection architectures on detection accuracy, latency, resource consumption and concept drift, the operational dimensions the company must balance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10525",
+            "field": "abstract",
+            "quote": "Performance is measured in terms of detection accuracy, latency, resource consumption, and adaptability to concept drift",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked on model compression for on-device detection on memory- and power-constrained hardware, which maps onto running inference inside an OT appliance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10531",
+            "field": "abstract",
+            "quote": "reduce model size by up to 94% relative to full-precision baselines, while preserving detection accuracy above 90%",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His threat-modelling work on smart building controllers gives him domain grounding relevant to the BACnet side of the company's ProtoSense module.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10524",
+            "field": "abstract",
+            "quote": "applies a structured threat modelling methodology—adapted from STRIDE and augmented with ICS-specific threat categories—to a representative smart building controller architecture",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He contributes to an ICS monitoring project targeting Modbus and other factory protocols in Serbian manufacturing facilities.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0017",
+            "field": "summary",
+            "quote": "The platform targets Modbus, PROFINET, and EtherNet/IP protocol stacks commonly found in Serbian manufacturing facilities",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He is explicitly open to both joint projects and industrial PhD supervision, so either collaboration route is available.",
+        "sources": [
+          {
+            "recordId": "R1015",
+            "field": "bio",
+            "quote": "He is open to supervising industrial PhD students and engaging in joint research projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must learn a site-specific baseline from benign traffic alone, because the company holds no confirmed malicious captures.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Output must be explainable to non-specialist plant staff in plain language, not just a numeric anomaly score.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "False positives must stay low enough that clients do not disable alerting, as happened with the earlier supervised classifier.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on the appliance without affecting packet forwarding latency; the dedicated security processor is only planned, not yet shipped.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "a fifth hardware variant in late 2025 with a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work depends on NDA-protected traffic archives, firmware codebase and bench access, with only part-time engineering capacity.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project, with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Models must fit resource-constrained industrial deployment targets rather than only desktop or server hardware.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10523",
+            "field": "abstract",
+            "quote": "offering practical guidance for deployment in resource-constrained industrial environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The Modbus autoencoder results were obtained on a synthetic dataset from a PLC testbed; transfer to ArmaturaSec's real multi-site archives is unproven and must be the first experiment.",
+      "Evidence on BACnet is threat modelling of building controllers, not traffic-based anomaly detection, so the BACnet/IP half of ProtoSense carries a larger methodological gap.",
+      "With no confirmed attacks in the archives, true detection performance cannot be measured directly; evaluation would rely on red-team or bench-injected attacks whose realism is unknown.",
+      "Public ICS datasets previously caused false positives in real deployments, signalling a domain-shift problem that a purely benign-trained baseline may not solve.",
+      "The researcher's availability is recorded as unknown, and the company offers only one to two part-time engineers, so scheduling and supervision capacity are uncertain.",
+      "Turning reconstruction-error or drift signals into plain-language explanations that satisfy plant managers and possibly regulators is unresolved by the cited work.",
+      "The on-device latency target depends on a hardware variant planned for late 2025, so early results would run on the existing bench rather than the target platform."
+    ],
+    "questions": [
+      "What is Professor Đukić's actual availability and time commitment per month for this collaboration?",
+      "Which protocol should be tackled first, Modbus TCP or BACnet/IP, and how are the three years of captures split between them?",
+      "Do any captures contain suspected or red-team incidents that could serve as a held-out evaluation set, even if unconfirmed?",
+      "Can attack traffic be generated on the hardware-in-the-loop bench with physical PLC simulators to validate detection?",
+      "What is the hard latency budget per packet and memory budget on the current appliance, and does the fifth hardware variant timeline align with the project?",
+      "What NDA and data-handling terms apply to the traffic archives and firmware codebase?",
+      "Which format does the company prefer first: a joint project or an industrial PhD co-supervision?",
+      "What level of explanation and reporting do the end clients or any regulator require from an alert?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1015",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1015",
+        "version": 1
+      }
+    ]
+  }
+}

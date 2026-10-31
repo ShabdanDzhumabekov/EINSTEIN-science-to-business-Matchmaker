@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Dragić prefers a well-defined, sufficiently large Serbian corpus. The company describes its internal information-security policy as ISO 27001-aligned and self-assessed; this does not establish permission to share contracts.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Dragić preferira saradnju s kompanijama koje imaju jasno definisan i dovoljno veliki tekstualni korpus na srpskom jeziku",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "ISO 27001-aligned internal information security policy (self-assessed)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.44; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

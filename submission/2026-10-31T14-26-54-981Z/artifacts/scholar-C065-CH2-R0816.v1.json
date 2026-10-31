@@ -1,0 +1,252 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0816",
+    "name": "Branislava Erić",
+    "faculty": "Faculty of Economics in Subotica",
+    "department": "Department of Business Informatics",
+    "fields": [
+      "Information Systems",
+      "Machine Learning and Recommender Systems",
+      "Retail Analytics",
+      "Business Informatics"
+    ],
+    "keywords": [
+      "cold-start problem",
+      "hybrid recommendation systems",
+      "content-based filtering",
+      "collaborative filtering",
+      "sparse data",
+      "small-scale retail",
+      "transactional datasets",
+      "behavioural modelling",
+      "item similarity",
+      "matrix factorization"
+    ],
+    "openTo": [
+      "joint projects with retail technology companies",
+      "contract research on recommendation system design and evaluation",
+      "consulting on data collection practices for small retailers",
+      "student internships at companies working on e-commerce or retail analytics",
+      "access to anonymised retail transaction corpus for collaborative research"
+    ],
+    "bio": {
+      "recordId": "R0816",
+      "field": "bio",
+      "text": "Branislava Erić completed her undergraduate and master's studies in Business Informatics at the Faculty of Economics in Subotica, University of Novi Sad, graduating in 2011 and 2013 respectively. She received her PhD in 2019 from the same faculty, with a dissertation on hybrid recommendation strategies for data-sparse retail environments. Since 2020 she has held an Assistant Professor position in the Department of Business Informatics. Her research group focuses on recommendation system design under cold-start conditions, combining content-based filtering with behavioural signals derived from sparse transactional logs typical of small and medium retail businesses. She teaches courses in database systems, business intelligence, and applied data mining. The group works with the faculty's data analytics laboratory, using standard open-source tooling including Python-based ML frameworks and a locally maintained anonymised retail transaction corpus collected through industry partnerships."
+    },
+    "industryExperience": {
+      "recordId": "R0816",
+      "field": "industry_experience",
+      "text": "Between 2013 and 2015 Erić worked part-time as a data analyst for a regional wholesale distributor in Subotica, where she was responsible for sales reporting and early experiments with purchase pattern analysis. This experience directly informed her focus on the practical constraints of small-retail transaction data."
+    },
+    "notes": {
+      "recordId": "R0816",
+      "field": "notes",
+      "text": "Erić is particularly interested in collaborations with NTP companies that have access to live transaction streams from physical or online retail, as her current project work is constrained by the static nature of collected datasets. She is cautious about commitments that require more than one day per week outside the faculty during the academic semester but is flexible in summer months."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03666",
+        "kind": "publication",
+        "title": "A Comparative Review of Recommendation Approaches for Sparse Purchase Histories in Small Retail",
+        "body": {
+          "recordId": "SYN-PUB-03666",
+          "field": "abstract",
+          "text": "This paper surveys techniques applied to recommendation tasks where transaction logs contain fewer than twenty interactions per user on average, a condition common in independent and small-chain retail settings. The review covers memory-based collaborative filtering, content-based methods using product attribute vectors, and several hybrid architectures published between 2005 and 2013. Evaluation metrics across surveyed studies are standardised to precision at five and normalised discounted cumulative gain to allow comparison. The analysis identifies consistent shortcomings in purely collaborative approaches when item catalogues exceed a few hundred products but user bases remain small. Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations. The paper concludes by outlining criteria for selecting hybrid strategies depending on catalogue density, session length, and the availability of product metadata, offering a structured decision guide intended for practitioners in the regional retail sector."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08868",
+        "kind": "publication",
+        "title": "Encoding Product Attributes for Cold-Start Item Recommendation in a Grocery Context",
+        "body": {
+          "recordId": "SYN-PUB-08868",
+          "field": "abstract",
+          "text": "When a new product enters a retail catalogue with no purchase history, collaborative signals are entirely absent. This study investigates how structured product attribute data—category hierarchy, price tier, packaging size, and supplier origin—can be encoded into feature vectors to support immediate recommendation of new items. Experiments are conducted on a dataset of 412 SKUs from a single independent grocery retailer in Vojvodina, with transactions spanning 14 months and covering 3,840 distinct customers. Attribute vectors are constructed using one-hot encoding for categorical fields and min-max normalisation for continuous fields. Cosine similarity between attribute vectors is used to rank candidate new items against items with established purchase histories. The approach achieves a mean reciprocal rank of 0.31 on a held-out set of 28 newly introduced products, compared to 0.19 for a random baseline and 0.27 for a frequency-only heuristic. Limitations related to attribute completeness and supplier data availability are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02898",
+        "kind": "publication",
+        "title": "Incorporating Session-Level Behavioural Signals into a Content-Based Recommender for a Sparse Transactional Log",
+        "body": {
+          "recordId": "SYN-PUB-02898",
+          "field": "abstract",
+          "text": "This paper proposes a recommendation architecture that augments a content-based item similarity model with short-session behavioural signals derived from point-of-sale sequences. The hypothesis is that items co-purchased within the same basket, even without long-term user history, carry exploitable proximity information. Data come from two small clothing retailers operating in Serbia, collectively yielding 9,200 baskets over 18 months, with a median basket size of three items. Item content features include garment category, fabric type, and price range. A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations. Grid search over the weighting parameter identifies an optimal blend of 0.6 content to 0.4 session co-occurrence, yielding a precision at three of 0.38 against a pure content baseline of 0.29. The study highlights that even minimal session data meaningfully stabilises recommendation quality when transaction histories per user are fewer than five."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08869",
+        "kind": "publication",
+        "title": "Matrix Factorization Under Extreme Sparsity: Behaviour and Failure Modes in Datasets Below 0.5% Density",
+        "body": {
+          "recordId": "SYN-PUB-08869",
+          "field": "abstract",
+          "text": "Matrix factorization methods are widely applied in recommendation research but are understood to degrade under high sparsity. This paper systematically examines that degradation by constructing synthetic user–item matrices at densities from 5% down to 0.1%, seeded from a real transaction log of a home-goods retailer with 620 users and 380 products. Alternating least squares and stochastic gradient descent variants of non-negative matrix factorization are evaluated alongside a probabilistic latent semantic analysis baseline. Root mean squared error and hit rate at ten are tracked across density levels. Both factorization approaches show relatively stable performance down to approximately 1% density, after which error increases non-linearly and hit rate drops below the non-personalised popularity baseline at 0.3% density. The findings provide empirical thresholds useful for practitioners deciding when to fall back to content-based or hybrid alternatives rather than relying on collaborative decomposition."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08870",
+        "kind": "publication",
+        "title": "Hybrid Recommendation for New Users in Small Retail: A Two-Stage Architecture Using Demographic Proxies and Early Purchase Signals",
+        "body": {
+          "recordId": "SYN-PUB-08870",
+          "field": "abstract",
+          "text": "The new-user cold-start problem is addressed with a two-stage architecture. In the first stage, demographic proxy features collected at registration—age group, postal region, and loyalty card tier—are used to assign a new user to one of eight pre-computed customer segments derived by k-means clustering on historical purchasers. Segment-level popularity rankings initialise the recommendation list. In the second stage, as soon as the user completes at least two transactions, item-level collaborative signals begin to replace segment defaults through a blending function that shifts weight gradually over the first ten interactions. Experiments use a dataset from a regional pharmacy chain operating twelve outlets in Vojvodina, with 5,400 registered users and 14 months of transaction records. The two-stage model achieves a recall at five of 0.44 for users with two to five transactions, compared to 0.36 for pure segment-level recommendation and 0.28 for global popularity. Transition dynamics and sensitivity to segment granularity are analysed in detail."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08871",
+        "kind": "publication",
+        "title": "Knowledge Graph Embeddings as Item Feature Representations in Cold-Start Retail Recommendation",
+        "body": {
+          "recordId": "SYN-PUB-08871",
+          "field": "abstract",
+          "text": "This paper investigates whether knowledge graph embeddings constructed from a product ontology can substitute for hand-crafted attribute vectors in cold-start recommendation, with the goal of reducing reliance on manual feature engineering. A product knowledge graph is built for a mixed-category retailer covering 890 SKUs, linking items through category membership, brand relationships, compatible-use associations, and price tier proximity. TransE and RotatE embedding methods are applied to produce 64-dimensional item vectors. These embeddings replace the manually coded attribute vectors in a previously validated cosine similarity pipeline. On a held-out evaluation covering 55 items introduced during the study period, RotatE-derived embeddings achieve a precision at five of 0.41, compared to 0.39 for manual attribute vectors and 0.33 for TransE embeddings. The marginal gain is modest but the approach requires substantially less manual curation effort. Limitations related to ontology construction time and update frequency are considered."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08872",
+        "kind": "publication",
+        "title": "Benchmarking Hybrid Recommender Architectures on a Shared Small-Retail Dataset: Protocol and Baseline Results",
+        "body": {
+          "recordId": "SYN-PUB-08872",
+          "field": "abstract",
+          "text": "Reproducibility in small-retail recommendation research is hampered by the absence of shared, well-documented benchmark datasets. This paper describes the construction and release of a curated anonymised transaction dataset drawn from five independent retailers in Serbia and Hungary, covering a combined 21,000 baskets, 1,200 unique customers, and 2,100 products across grocery, household, and personal care categories. A preprocessing protocol is specified, including rules for temporal train-test split, treatment of single-purchase users, and handling of product discontinuations. Four baseline architectures are evaluated under this protocol: global popularity, pure content-based cosine similarity, item-based kNN collaborative filtering, and a simple linear hybrid of the latter two. Results are reported for precision, recall, and F1 at ranks three, five, and ten. The dataset and evaluation code are released under a permissive open data licence to facilitate comparison in future work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08873",
+        "kind": "publication",
+        "title": "Temporal Drift in Product Relevance: Adjusting Content-Behavioural Hybrid Weights Over a Seasonal Retail Cycle",
+        "body": {
+          "recordId": "SYN-PUB-08873",
+          "field": "abstract",
+          "text": "Recommendation systems trained on annual data implicitly average over seasonal variation in purchase patterns. This paper examines how optimal hybrid weighting between content-based and collaborative signals shifts across the four quarters of a retail year in a small sports-equipment retailer. Monthly transaction snapshots are drawn from a 26-month log covering 780 customers and 510 SKUs. For each month, a grid search identifies the content-to-collaborative weight that maximises normalised discounted cumulative gain on a one-week-ahead evaluation window. Results show that content-based signals are most informative in months when new season products are introduced—typically March and September—when collaborative history for new items is absent. Collaborative signals recover predictive weight within six to eight weeks of product introduction as purchase history accumulates. A simple adaptive schedule that shifts weights by calendar quarter, rather than per month, captures most of this gain with lower implementation complexity."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01541",
+        "kind": "publication",
+        "title": "Evaluating Explanation Strategies for Cold-Start Recommendations in a Small Retail Web Interface: A User Study",
+        "body": {
+          "recordId": "SYN-PUB-01541",
+          "field": "abstract",
+          "text": "Algorithmic recommendation quality alone does not determine whether a small retailer's customers accept and act on suggestions. This paper reports a controlled user study examining how three explanation strategies—no explanation, attribute-based rationale, and social proof framing—affect click-through intention on cold-start recommendations shown in a prototype web shop interface. Participants were 94 adult consumers recruited through a regional consumer panel in Vojvodina. Each participant evaluated ten cold-start recommendation scenarios under one explanation condition. Click-through intention was measured on a five-point scale. Attribute-based rationale explanations produced a mean intention score of 3.71 compared to 3.12 for social proof and 2.84 for no explanation. A moderation analysis shows the attribute explanation advantage is stronger for participants who report higher product involvement. The study suggests that for small retailers with limited social proof data, investing in structured product metadata also supports explanation quality, creating a secondary motivation beyond algorithmic performance."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08874",
+        "kind": "publication",
+        "title": "Cross-Retailer Transfer of Item Embeddings to Address Catalogue Cold-Start: Feasibility and Boundary Conditions",
+        "body": {
+          "recordId": "SYN-PUB-08874",
+          "field": "abstract",
+          "text": "Training item embeddings from scratch requires a sufficient volume of interactions, which individual small retailers often cannot provide. This paper investigates whether item embeddings trained on a source retailer with denser transaction data can be transferred to a target retailer sharing a partial product catalogue overlap. Transfer is implemented by aligning shared SKU vectors from a source embedding space to the target space using a linear mapping estimated on the overlapping items. Experiments use two real retailer datasets sharing approximately 30% SKU overlap; source data contains 48,000 baskets, target data contains 6,200 baskets. Transferred embeddings are evaluated in a cold-start scenario where 20% of target items have no transactions. Transferred embeddings yield a precision at five of 0.36 compared to 0.28 for attribute-only content vectors and 0.40 for full in-domain training (where available as an oracle). Performance degrades when SKU overlap falls below 15%, establishing a practical lower bound for transfer applicability."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01534",
+        "kind": "publication",
+        "title": "Forecasting Demand for a Long-Tail Product Assortment: Clustering-Then-Forecasting on Sparse E-Commerce Data",
+        "body": {
+          "recordId": "SYN-PUB-01534",
+          "field": "abstract",
+          "text": "E-commerce platforms with long-tail assortments face the challenge that a large fraction of SKUs have sparse, intermittent demand histories too short or irregular to support individual model training. This paper proposes a clustering-then-forecasting approach in which SKUs are grouped using k-means on feature vectors comprising mean demand, coefficient of variation, average inter-demand interval, and promotional responsiveness score. A single XGBoost model is then fitted per cluster rather than per SKU, using cluster membership as an additional input feature. The method is evaluated on a dataset of 9,400 SKUs from a multi-category online retailer, of which 64% have fewer than 90 non-zero sales days over a 12-month training window. Compared to a global single-model baseline and individual ARIMA fits where feasible, the clustering approach reduces overall MAE by 8.1% and improves accuracy most substantially for the two sparse-demand clusters. Cluster stability across time is examined and found to be acceptable for quarterly re-clustering."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01213",
+        "kind": "publication",
+        "title": "Immutable Record Retention Requirements and Database Log Architecture: Lessons from Early Serbian Banking Regulation",
+        "body": {
+          "recordId": "SYN-PUB-01213",
+          "field": "abstract",
+          "text": "Following the introduction of the Law on Accounting and Auditing of the Federal Republic of Yugoslavia in 1996 and subsequent National Bank directives, commercial banks were required to retain complete transaction audit records for a minimum of ten years. This paper analyses the gap between that legal obligation and the physical log-rotation practices observed at eight Serbian commercial banks between 1997 and 1999. On-site assessments revealed that six institutions routinely purged log files after ninety days due to storage constraints, with no archival copy maintained in an integrity-verified format. The paper formalises a retention architecture built around write-once optical disc storage combined with a hash-tree index allowing point-in-time log completeness proofs. A prototype was implemented on an IBM AS/400 platform using a custom RPGIII module and tested against synthetic transaction streams of up to 50,000 records per day. Completeness verification queries ran within four seconds on a 500,000-record archive segment. The design is evaluated against both the regulatory requirements and the operational constraints typical of medium-sized Serbian banks at the time."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03435",
+        "kind": "publication",
+        "title": "Coupling Agent-Based Market Models with Satellite-Derived Crop Yield Estimates: A Feasibility Study",
+        "body": {
+          "recordId": "SYN-PUB-03435",
+          "field": "abstract",
+          "text": "Exogenous supply shocks driven by weather and crop failure are a primary source of price volatility in regional commodity markets, yet most agent-based microstructure models treat supply as either fixed or drawn from stylised stochastic processes. This paper explores the feasibility of coupling an agent-based grain market model with Sentinel-2 derived NDVI-based crop yield estimates for the Vojvodina region, covering the 2018–2022 growing seasons. Yield estimates are produced at municipality resolution (45 spatial units) and aggregated to produce a seasonal supply signal fed into the simulation's supply schedule. In three out of four years tested, coupling the satellite-derived signal reduces the root mean squared error of simulated end-of-season price levels relative to observed prices by 14–22 percent compared with the climatological baseline. The main limitation is a six-week lag in NDVI-based yield confidence, which limits operational usefulness. The study is intended as a feasibility assessment rather than a production system and identifies three data processing bottlenecks requiring further engineering work."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0030",
+        "kind": "project",
+        "title": "Sparse-Data Recommendation Strategies for Small and Medium Retailers in the Cross-Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-0030",
+          "field": "summary",
+          "text": "SPAREC brought together researchers from Subotica and Debrecen to collect, anonymise, and jointly analyse transaction data from small retailers operating in the Hungarian–Serbian cross-border region. The project aimed to produce recommendation methods and practical implementation guidelines suited to retailers with fewer than five hundred active customers and limited IT infrastructure. Erić led the work package responsible for algorithm development and evaluation, coordinating the construction of the shared benchmark dataset later published in 2022. The project also delivered a publicly available technical report and two workshops for regional retailers on practical data collection practices that improve recommendation feasibility without requiring expensive system upgrades."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0031",
+        "kind": "project",
+        "title": "Transfer Learning Methods for Retail Recommendation Under Data Scarcity",
+        "body": {
+          "recordId": "SYN-PRJ-0031",
+          "field": "summary",
+          "text": "RETRANSFER investigates the conditions under which item and user representations learned in data-rich retail environments can be transferred to data-scarce ones, with a focus on the small independent retail sector in Serbia. The project develops alignment methods that require only partial catalogue overlap between source and target retailers, establishes empirical thresholds for transfer viability, and examines how transferred representations interact with cold-start recommendation pipelines. Research is conducted on datasets collected through ongoing retail partnerships and through the shared dataset established under SPAREC. The project involves collaborators from the University of Pavia and is expected to produce four journal papers, one publicly released software toolkit, and training materials for retail technology practitioners."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1585",
+        "kind": "project",
+        "title": "Semantic Standards for Interoperable Public Procurement in South-East Europe",
+        "body": {
+          "recordId": "SYN-PRJ-1585",
+          "field": "summary",
+          "text": "The project developed a family of OWL 2 ontology profiles and SHACL validation constraint sets covering the procurement systems of Serbia, Bosnia-Herzegovina, Montenegro, and North Macedonia. Core outputs include a regional procurement ontology registry, a set of SPARQL-based alignment tests, and a bilingual (Serbian/English) ontology documentation portal. The project also produced policy briefs submitted to the national public procurement offices of all four countries and to the Regional Cooperation Council in Sarajevo. Two PhD students completed dissertations within the project."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "joint projects with retail technology companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "contract research on recommendation system design and evaluation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "access to anonymised retail transaction corpus for collaborative research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

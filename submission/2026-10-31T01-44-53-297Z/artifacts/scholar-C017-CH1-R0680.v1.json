@@ -1,0 +1,306 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0680",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0680",
+    "name": "Đuro Đorđević",
+    "faculty": "Faculty of Agriculture",
+    "department": "Department of Field and Vegetable Crops",
+    "fields": [
+      "Agronomy and Crop Science",
+      "Precision Agriculture",
+      "Soil Science",
+      "Geospatial Analysis"
+    ],
+    "keywords": [
+      "variable-rate application",
+      "nutrient prescription maps",
+      "soil spatial variability",
+      "yield response functions",
+      "crop protection modelling",
+      "geostatistics",
+      "electromagnetic induction",
+      "management zones",
+      "winter wheat",
+      "sunflower"
+    ],
+    "openTo": [
+      "joint projects with agri-tech companies developing variable-rate application hardware or farm management software",
+      "contract research on prescription algorithm development and validation",
+      "consulting for advisory services seeking to build spatially explicit recommendation workflows",
+      "student internships (MSc and final-year BSc) involving field data collection and GIS analysis",
+      "equipment access for ECa surveys and drone multispectral imaging on commercial fields"
+    ],
+    "bio": {
+      "recordId": "R0680",
+      "field": "bio",
+      "text": "Đuro Đorđević received his BSc and MSc in Agronomy from the Faculty of Agriculture, University of Novi Sad in 2001 and 2004 respectively, and completed his PhD at the same institution in 2009, with a dissertation on spatially variable nitrogen prescription modelling in winter wheat. He joined the Department of Field and Vegetable Crops as a Research Associate in 2010 and was promoted to Senior Research Associate in 2016. His group develops spatially explicit algorithms that combine soil electrical conductivity surveys, historical yield maps, and crop-protection response data into variable-rate prescription layers for major field crops. He teaches graduate courses in precision agriculture and crop production technology. The group regularly uses portable XRF analysers, EM38 soil sensors, drone-mounted multispectral cameras, and GIS workstations equipped with QGIS and custom R-based modelling pipelines."
+    },
+    "industryExperience": {
+      "recordId": "R0680",
+      "field": "industry_experience",
+      "text": "Đorđević has provided paid advisory services to two large farm holdings in Vojvodina on the implementation of management-zone-based nutrient prescription, including trial design and annual calibration updates over three seasons. He has also participated as a technical reviewer in one tender evaluation for a regional agricultural advisory digitisation programme."
+    },
+    "notes": {
+      "recordId": "R0680",
+      "field": "notes",
+      "text": "Prefers collaborations where field access to commercial farms is part of the arrangement, as the group's validation pipeline requires diverse real-farm conditions. Most receptive to industry partners willing to share yield monitor and soil sampling data under a joint data-use agreement."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07651",
+        "kind": "publication",
+        "title": "Kriging-based nitrogen prescription maps for winter wheat on chernozem soils of Vojvodina: accuracy versus sampling density",
+        "body": {
+          "recordId": "SYN-PUB-07651",
+          "field": "abstract",
+          "text": "Variable-rate nitrogen application requires spatially continuous estimates of soil mineral nitrogen from discrete point observations. This study evaluated ordinary kriging, co-kriging with apparent electrical conductivity (ECa) as a covariate, and inverse-distance weighting at four sampling densities (1, 2, 4, and 8 ha per sample) across three commercial fields totalling 340 ha on Vojvodina chernozem. Variogram parameters were fitted for each field and density level; cross-validation mean absolute error (MAE) and prescription rate deviation were used as criteria. Co-kriging with ECa reduced MAE by 18–31% relative to ordinary kriging at the 4 ha per sample density, allowing prescription maps of comparable quality to the 2 ha benchmark at substantially lower cost. The resulting variable-rate N prescriptions differed from uniform-rate recommendations by up to 38 kg N ha⁻¹ within individual fields. The study provides practical sampling guidelines for advisory services operating on Vojvodina chernozem."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05468",
+        "kind": "publication",
+        "title": "Delineation of within-field management zones using fuzzy k-means clustering of soil and topographic attributes",
+        "body": {
+          "recordId": "SYN-PUB-05468",
+          "field": "abstract",
+          "text": "Management zone delineation groups within-field locations with similar production potential so that inputs can be tailored to each zone. This paper applied fuzzy k-means clustering to seven soil attributes (organic matter, pH, plant-available P and K, clay content, ECa at two depths) and three topographic indices derived from a 1 m LiDAR DTM across 18 fields (total 2 140 ha) in the Bačka region. The fuzziness performance index and modified partition entropy were used to determine the optimal number of zones (two to six). Three zones emerged as optimal for 14 of 18 fields. Subsequent soil sampling within delineated zones versus a regular grid showed that zone-based sampling captured 23% more variance in organic matter at 30% fewer samples. The approach is directly applicable to prescription generation within commercial advisory workflows."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07652",
+        "kind": "publication",
+        "title": "Integrating historical yield maps into phosphorus prescription models: a five-year case study in sunflower production",
+        "body": {
+          "recordId": "SYN-PUB-07652",
+          "field": "abstract",
+          "text": "Phosphorus prescription in intensive sunflower production typically relies on single-year soil test data, which may not capture the long-term spatial structure of yield response. This study used five consecutive yield maps (2008–2012) from four commercial sunflower fields (total 480 ha) in South Bačka to derive stable yield response zones. Temporal stability analysis identified consistently low-yielding (14% of area) and consistently high-yielding (22% of area) zones. These zones were overlaid with current Olsen-P maps to produce a two-factor phosphorus prescription: standard soil-test-based rates adjusted by a yield-stability coefficient ranging from 0.75 to 1.25. A randomised strip trial in year six showed a 6.4% improvement in economic return compared with uniform application at the field average. The study demonstrates a practical method for incorporating multi-year yield data into routine prescription generation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07653",
+        "kind": "publication",
+        "title": "Spatial modelling of herbicide prescription rates in maize based on soil organic matter and texture gradients",
+        "body": {
+          "recordId": "SYN-PUB-07653",
+          "field": "abstract",
+          "text": "Pre-emergence herbicide efficacy depends on soil organic matter and clay content because both affect adsorption and bioavailability. This study developed a spatially explicit prescription algorithm for two pre-emergence herbicide active substances (acetochlor and atrazine) applied to maize across twelve fields (1 650 ha) in the Srem sub-region. Soil organic matter was estimated by near-infrared reflectance spectroscopy on 2 ha grid samples; clay content was predicted from ECa using field-calibrated transfer functions. A published adsorption model was parameterised with local soil data and used to compute spatially variable application rates that achieve a uniform herbicide concentration in soil solution. Rates varied by 28% and 34% across fields for the two active substances respectively. Post-emergence assessment at 35 days after application showed weed cover was statistically equivalent between variable-rate and the high-rate uniform standard, while active substance use was reduced by 19% on average."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07654",
+        "kind": "publication",
+        "title": "Comparison of semivariogram model families for describing ECa spatial structure in heterogeneous Vojvodina fields",
+        "body": {
+          "recordId": "SYN-PUB-07654",
+          "field": "abstract",
+          "text": "Choice of semivariogram model affects the quality of spatial interpolation and, downstream, the precision of prescription maps. Using ECa data collected with an EM38 sensor along parallel transects at 12 m spacing across 30 fields (ranging from 25 to 280 ha) in Vojvodina, this study fitted spherical, exponential, Gaussian, and Matérn (κ = 1.5 and 2.5) semivariogram models and compared them by leave-one-out cross-validation RMSE and by the resulting prescription map entropy. Range parameters varied from 54 m to 312 m across fields. The Matérn κ = 1.5 model produced the lowest cross-validation RMSE in 18 of 30 fields, closely followed by the exponential in 9 fields. Prescription map entropy differences between model families were small (< 4%) when the optimal model was selected per field, but using a fixed spherical model throughout increased mean prescription deviation by 7.2 kg N ha⁻¹ across the dataset. Practical guidance for model selection is provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02668",
+        "kind": "publication",
+        "title": "Drone-acquired canopy reflectance indices as in-season proxies for crop nitrogen status in winter wheat: calibration against soil mineral nitrogen and yield data",
+        "body": {
+          "recordId": "SYN-PUB-02668",
+          "field": "abstract",
+          "text": "In-season adjustment of nitrogen top-dressing could reduce surplus application if reliable crop-N status proxies are available at field scale. This study evaluated five vegetation indices (NDVI, NDRE, GNDVI, CIre, and MCARI2) derived from drone-mounted five-band multispectral imagery at four growth stages (GS25, GS30, GS37, GS49 on the Zadoks scale) across eight fields (total 620 ha) in northern Vojvodina over two seasons. Indices were calibrated against destructive plant tissue N content (n = 240 sample points), soil mineral N at 0–60 cm, and end-of-season yield. CIre at GS37 explained 61% of variance in tissue N and 54% of yield variance across both seasons. A two-step prescription algorithm was derived: management zones from baseline ECa maps are used at pre-sowing, and CIre at GS37 triggers in-season adjustments bounded by ±30 kg N ha⁻¹ relative to the zone prescription. Field validation in year three reduced average N application by 14% without yield penalty."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07656",
+        "kind": "publication",
+        "title": "Soil variability indices for parameterising prescription algorithms: a comparative assessment of ECa, gamma-ray spectrometry, and vis-NIR scanning",
+        "body": {
+          "recordId": "SYN-PUB-07656",
+          "field": "abstract",
+          "text": "Three proximal soil sensing methods were compared as inputs for management-zone delineation and prescription map parameterisation on 15 fields (total 1 870 ha) in Vojvodina. Apparent electrical conductivity (EM38 dual-depth), vehicle-mounted gamma-ray spectrometry (total count, potassium, uranium, thorium channels), and vis-NIR scanning of intact cores (350–2 500 nm) were each used to predict clay content, organic matter, and Olsen-P by partial least-squares regression with leave-one-out cross-validation. Gamma-ray potassium channel alone achieved an R² of 0.74 for clay and 0.69 for organic matter prediction, competitive with EM38 dual-depth (0.77 and 0.66 respectively). Vis-NIR performed best overall for organic matter (R² 0.81) but was the most time-consuming. A cost-per-hectare analysis suggested that gamma-ray spectrometry offers the best trade-off for large commercial holdings (> 100 ha per field), while vis-NIR justifies its cost for high-value horticultural fields. Prescription maps generated from all three sensor inputs agreed within 12 kg N ha⁻¹ on 80% of the mapped area."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03351",
+        "kind": "publication",
+        "title": "Variable-rate fungicide scheduling in winter wheat using spatially explicit canopy wetness and disease risk indices",
+        "body": {
+          "recordId": "SYN-PUB-03351",
+          "field": "abstract",
+          "text": "Timing and spatial targeting of fungicide applications in winter wheat are typically uniform across fields, despite documented within-field variation in canopy microclimate and disease pressure. This study coupled a spatially distributed canopy wetness model, driven by interpolated field-level air temperature and relative humidity from a temporary 12-node sensor network, with a published Septoria tritici blotch (STB) infection risk index across four fields (total 510 ha) in two growing seasons. Management zones were defined by combining baseline ECa-derived soil texture classes with crop canopy architecture estimated from early-season drone NDVI. Application decisions were made at zone level rather than field level. Compared with standard timing based on growth stage alone, the zone-based schedule reduced total fungicide active substance use by 16% over two seasons while maintaining grain yield and marketable quality. The sensor network deployment protocol is described in detail to enable replication."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02669",
+        "kind": "publication",
+        "title": "Prescription algorithm transferability across farm holdings: evaluating the effect of soil-type mismatch on nitrogen use efficiency",
+        "body": {
+          "recordId": "SYN-PUB-02669",
+          "field": "abstract",
+          "text": "Prescription algorithms developed on one farm are frequently applied, without recalibration, to neighbouring holdings with different soil properties. This study quantified the error introduced by such transfers using data from 22 farm holdings in Vojvodina. For each holding, a locally calibrated yield response function was treated as ground truth; the prescription error was then computed when applying functions calibrated on each of the other 21 holdings. Transfer error in prescribed N rate correlated strongly with ECa dissimilarity (Pearson r = 0.71) and less so with geographic distance (r = 0.38). Holdings sharing similar ECa ranges (within 15 mS m⁻¹) could exchange algorithms with mean prescription error below 12 kg N ha⁻¹. A simple pre-screening tool based on ECa summary statistics is proposed to identify candidate donor–recipient pairs. The findings have direct practical implications for advisory services managing large and heterogeneous farm portfolios."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06728",
+        "kind": "publication",
+        "title": "Incorporating legacy soil survey data into prescription modelling: a harmonisation workflow for 1:50 000 soil maps and contemporary point observations in Serbia",
+        "body": {
+          "recordId": "SYN-PUB-06728",
+          "field": "abstract",
+          "text": "Serbia's 1:50 000 legacy soil survey polygons represent decades of field work but were not designed for precision agriculture applications. This paper describes a harmonisation workflow that merges polygon-level soil attribute estimates from digitised legacy maps with contemporary point observations (grid sampling at 2–4 ha density) using a regression-kriging approach. The workflow was applied across 38 fields (total 4 200 ha) in three municipalities of Vojvodina. Incorporating legacy data as soft constraints in the regression-kriging covariance structure reduced the required contemporary sample density for achieving a target organic-matter prediction error (RMSE < 2 g kg⁻¹) from 2 ha to 3.5 ha per sample, representing a 43% reduction in sampling cost. Prescription maps produced with harmonised inputs deviated from the full-sampling benchmark by a mean of 9 kg N ha⁻¹, within operationally acceptable limits. The workflow is implemented as an open R script distributed with the paper."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05458",
+        "kind": "publication",
+        "title": "Comparison of shovelomics and soil core washing for estimating root crown architecture traits in field-grown maize",
+        "body": {
+          "recordId": "SYN-PUB-05458",
+          "field": "abstract",
+          "text": "Shovelomics and soil core washing are the two most widely applied destructive field phenotyping methods for maize root crowns, yet systematic side-by-side comparisons under Pannonian field conditions are sparse. We assessed five root crown traits—nodal root number, first-whorl angle, lateral branching density, root diameter, and crown width—in 12 maize hybrids at two plant densities across two sites in 2012. At each site and density combination, 30 plants per hybrid were excavated by shovel and an adjacent 30 by 20 cm diameter soil core to 35 cm depth. Cores were washed on a 1 mm mesh and scanned with a flatbed scanner; shovel crowns were photographed with a calibrated overhead rig. Nodal root number showed strong agreement between methods (intraclass correlation coefficient, ICC = 0.91), while first-whorl angle deviated more substantially (ICC = 0.74), presumably because coring disrupts the natural root trajectory. Shovelomics throughput was 2.3-fold higher per person-hour. We recommend shovelomics for angle and count traits in large trials and core washing when fresh root mass and diameter distribution are required."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05388",
+        "kind": "publication",
+        "title": "Use of portable X-ray fluorescence spectrometry for estimating total potassium and calcium in saline soil profiles of the Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PUB-05388",
+          "field": "abstract",
+          "text": "Portable X-ray fluorescence (pXRF) spectrometry was tested as a rapid, non-destructive method for estimating total potassium and calcium in soil profiles from six saline and saline-sodic sites across the Pannonian Plain in Serbia and Hungary. A total of 180 soil samples from depths of 0–100 cm were measured with a pXRF device and also analysed in the laboratory by acid digestion followed by ICP-OES. Linear regression models between pXRF and laboratory values achieved R² of 0.87 for potassium and 0.79 for calcium when field-moist samples were used. Predictive accuracy improved markedly (R² of 0.93 for K, 0.85 for Ca) after air-drying and sieving to 2 mm, suggesting that moisture content is a major source of error under field conditions. Depth-specific calibration equations were more accurate than a single pooled model, particularly below 40 cm where organic matter interference diminished. The findings support the use of pXRF as a screening tool for profile characterisation in salt-affected soil surveys where laboratory throughput is a limiting factor."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05759",
+        "kind": "publication",
+        "title": "Influence of cover crop mulch on weed emergence and early-season competition in no-till soybean",
+        "body": {
+          "recordId": "SYN-PUB-05759",
+          "field": "abstract",
+          "text": "A three-year experiment (2018–2020) examined how cereal rye (Secale cereale) cover crop residue at three mulch levels (0, 2, and 4 t dry matter ha⁻¹) affected weed emergence density and early-season biomass accumulation in no-till soybean. Weed counts were taken weekly for six weeks after soybean emergence. At 4 t ha⁻¹ mulch, total weed emergence was suppressed by 54–67% across years, with the greatest suppression observed for small-seeded species (Chenopodium album, Amaranthus retroflexus). Larger-seeded species (Xanthium strumarium, Datura stramonium) were not consistently affected by mulch level. Soybean emergence was delayed by 1.2 days per tonne of mulch. Final soybean yield under 4 t ha⁻¹ mulch without herbicide was 4–12% lower than under 4 t ha⁻¹ mulch plus a single reduced-rate herbicide treatment. Mulch alone did not fully substitute for chemical control in high-pressure years."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05378",
+        "kind": "publication",
+        "title": "Nitrogen mineralisation from two-component cover crop mixtures with contrasting C:N ratios in a maize rotation",
+        "body": {
+          "recordId": "SYN-PUB-05378",
+          "field": "abstract",
+          "text": "A controlled incubation study combined with a three-year field trial examined net nitrogen mineralisation from binary cover crop mixtures of hairy vetch with winter rye at seeding ratios of 75:25, 50:50 and 25:75 (by seed weight). Incubations at 15°C and 25°C using 250 g disturbed soil cores showed that the 75:25 mixture released 42 kg N ha⁻¹ equivalent within 21 days at 15°C, compared with 27 kg N ha⁻¹ equivalent for the 50:50 mixture and 11 kg N ha⁻¹ equivalent for the 25:75 mixture. In field trials, the 75:25 mixture supported maize seedling dry weight 18% higher than bare fallow at the V3 growth stage. Final grain yield differences were not statistically significant in two of three years, suggesting that early-season nitrogen is important but not the sole limiting factor. Aboveground biomass at termination ranged from 2.8 to 4.1 t dry matter ha⁻¹ depending on mixture ratio and year."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05383",
+        "kind": "publication",
+        "title": "Soil enzyme activities as indicators of biological activity following cover crop residue incorporation in a sunflower rotation",
+        "body": {
+          "recordId": "SYN-PUB-05383",
+          "field": "abstract",
+          "text": "Urease, dehydrogenase and β-glucosidase activities were measured at six time points (0, 14, 28, 42, 63 and 90 days) after incorporation of hairy vetch, hairy vetch/winter rye (50:50) and winter rye cover crop residues in a sunflower rotation trial conducted in 2017–2019 at Rimski Šančevi. Urease activity peaked at 14 days post-incorporation for hairy vetch (62.4 µg NH₄⁺-N g⁻¹ soil h⁻¹), consistent with rapid protein mineralisation. Dehydrogenase activity showed a broader peak (days 14–42) for the mixture treatment. β-glucosidase activity was highest under winter rye residues at days 42–63, indicating continued carbohydrate decomposition. Principal component analysis grouped enzyme activity profiles clearly by residue C:N ratio, with sunflower plant counts positively correlated (r = 0.54, P = 0.02) with urease activity at day 14. Enzyme activity indices are proposed as practical diagnostic tools for assessing cover crop-induced biological activity in farm advisory contexts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05521",
+        "kind": "publication",
+        "title": "Yield component partitioning under terminal drought in sunflower: head diameter, seed number and individual seed weight responses across eight genotypes",
+        "body": {
+          "recordId": "SYN-PUB-05521",
+          "field": "abstract",
+          "text": "A pot experiment was conducted under controlled rainout-shelter conditions to isolate the effect of terminal drought (applied from R5 to physiological maturity) on yield component partitioning in eight sunflower genotypes. Drought was imposed by withholding irrigation when soil matric potential reached −0.35 MPa; control plants were maintained at −0.05 MPa. At harvest, head diameter, seeds per head, and individual seed weight (ISW) were recorded along with oil concentration determined by NMR. Terminal drought reduced seed number by 14–31 % and ISW by 8–22 %, depending on genotype. The relative contribution of seed number loss to total yield reduction exceeded that of ISW loss in six of eight genotypes. Oil concentration declined by 2.1–4.8 percentage points under stress. One genotype with above-average OA capacity (0.68 MPa) maintained ISW closest to the control, suggesting that osmotic adjustment partially protects seed-filling processes. These results are relevant for choosing selection criteria in breeding programmes targeting terminal drought environments in the Pannonian region."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06480",
+        "kind": "publication",
+        "title": "Landscape-scale effects on wild bee communities in sunflower: a gradient analysis across 40 farms in the Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PUB-06480",
+          "field": "abstract",
+          "text": "We investigated how landscape composition at three spatial scales (500 m, 1 km, 2 km radius) affects wild bee species richness, functional group composition, and sunflower seed set across 40 farms in Vojvodina and adjacent Hungarian territory. Landscape variables were derived from CORINE Land Cover and high-resolution orthophotos. Bee sampling combined pan traps and 15-minute transect counts at each farm during peak sunflower anthesis. Mixed-effects models showed that proportion of SNH at the 1 km scale best explained wild bee species richness (R² = 0.51) and abundance of solitary bees (R² = 0.44). Sunflower seed set was positively related to solitary bee abundance (β = 0.38, p < 0.001) but not to bumblebee abundance after controlling for landscape context. Farms in landscapes with >8% SNH had significantly higher estimated yield gains attributable to wild bee pollination (mean 6.1% over the landscape average) compared to farms with <4% SNH (mean 1.8%). These results support targeted SNH restoration at the 1 km scale as a cost-effective pollination management strategy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03138",
+        "kind": "publication",
+        "title": "Quantifying the microclimate penalty of narrow-strip intercropping for organic pepper production: a multi-site assessment across Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-03138",
+          "field": "abstract",
+          "text": "Four certified organic farms across Vojvodina were instrumented with identical sensor networks (quantum sensors, thermocouple psychrometers, leaf wetness plates) during the 2024 growing season. Pepper–onion strip intercrops of 0.6 m and 1.2 m strips were compared with sole-crop pepper at each site. Data from 112 sensor-days were pooled and analysed with a mixed model accounting for site as a random effect. Narrow 0.6 m strips increased cumulative leaf wetness duration by a mean of 31 % and Botrytis cinerea incidence by 16 percentage points relative to sole-crop controls, while 1.2 m strips showed no significant increase in either variable. The microclimate penalty was strongest at the farm with the densest surrounding hedgerow structure, suggesting that wind environment interacts with strip geometry. Farmers reported yield advantages from the 1.2 m design consistent with weed suppression without a disease penalty, supporting adoption under organic management constraints."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0142",
+        "kind": "project",
+        "title": "Spatially Scalable Prescription Algorithms for Diversified Cereal and Oilseed Farms in the Pannonian Basin",
+        "body": {
+          "recordId": "SYN-PRJ-0142",
+          "field": "summary",
+          "text": "PRESCALE aimed to develop prescription algorithms that could be calibrated on data-rich pilot farms and transferred to data-sparse farms across the Hungarian–Serbian border region. The University of Novi Sad team led the work package on algorithm transferability and cross-border soil data harmonisation. Field trials were conducted on 14 farms in Vojvodina and Csongrád-Csanád County covering winter wheat, sunflower, and maize. The project produced an open decision-support module, documented sampling protocols, and trained 45 farm advisers from both countries in two workshops held in Novi Sad and Szeged."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0143",
+        "kind": "project",
+        "title": "Integration of Proximal Soil Sensing Data Streams into Variable-Rate Prescription Workflows",
+        "body": {
+          "recordId": "SYN-PRJ-0143",
+          "field": "summary",
+          "text": "SOILPRES investigated how multiple proximal soil sensing modalities can be fused into a single prescription model without requiring prohibitively dense destructive sampling. The project combined EM38 surveys, drone multispectral imaging, and vis-NIR core scanning across 20 commercial fields in Vojvodina. A key output was a Bayesian data-fusion framework that weights sensor contributions according to their field-specific predictive performance, implemented in an R package made publicly available. The project also validated the framework on six external fields not used in algorithm development, demonstrating robust transferability. Three journal papers, one conference paper, and training materials for MSc students were produced."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1182",
+        "kind": "project",
+        "title": "Cover Crop Mixtures as Drivers of Nitrogen Flow Efficiency in Pannonian Arable Systems",
+        "body": {
+          "recordId": "SYN-PRJ-1182",
+          "field": "summary",
+          "text": "COVERFLOW established a network of 12 paired field trial sites across Vojvodina and southern Hungary to measure nitrogen mineralisation dynamics from a standardised set of cover crop mixtures on chernozem and calcareous chernozem soils. The project combined incubation subplots with on-farm demonstration trials and developed a bilingual (Serbian–Hungarian) advisory leaflet and a simple spreadsheet tool for farmers to select cover crop mixture composition and termination date based on their target cash crop and local soil type. Three workshops for extension advisers were held in Novi Sad, Subotica and Pécs. The project also produced a shared soil enzyme activity dataset that fed into the multi-site calibration study published in 2025."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1187",
+        "kind": "project",
+        "title": "Rotation Effects Under Changing Climate: Decomposing Long-Term Yield Records from Multi-Site Experiments in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-1187",
+          "field": "summary",
+          "text": "ROTACLIM assembled multi-decade yield datasets from four experimental stations across the Pannonian Basin — two in Serbia and one each in Hungary and Romania — to perform cross-site rotation effect decomposition. The project standardised historical input and climate covariate series, developed a shared data schema, and applied hierarchical Bayesian mixed models to estimate site-specific and pooled rotation effect sizes. Climate reanalysis data from E-OBS and CHESS-TERA were spatially matched to each station. The project produced a publicly archived dataset of 18 harmonised rotation series, quantified how the rotation yield advantage has changed over successive decades, and assessed whether the advantage narrows or widens under warmer and drier growing seasons. A guidance document for experimental station managers on metadata collection was also produced."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0680",
+            "field": "open_to",
+            "quote": "joint projects with agri-tech companies developing variable-rate application hardware or farm management software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0680",
+            "field": "open_to",
+            "quote": "contract research on prescription algorithm development and validation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

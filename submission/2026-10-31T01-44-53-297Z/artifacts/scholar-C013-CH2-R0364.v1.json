@@ -1,0 +1,226 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0364",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0364",
+    "name": "Žarko Pejić",
+    "faculty": "BioSense Institute",
+    "department": "Remote Sensing and GIS Group",
+    "fields": [
+      "Remote Sensing and Earth Observation",
+      "Hydrometeorology and Climatology",
+      "Agricultural Risk and Insurance",
+      "Spatial Statistics and GIS"
+    ],
+    "keywords": [
+      "spatial downscaling",
+      "satellite precipitation estimation",
+      "geostatistical interpolation",
+      "index insurance",
+      "rainfall variability",
+      "NDVI",
+      "Vojvodina",
+      "kriging with external drift",
+      "field-level weather indices",
+      "bias correction"
+    ],
+    "openTo": [
+      "joint projects on spatial weather data products for agri-insurance or precision agriculture",
+      "contract research involving satellite precipitation downscaling or geostatistical interpolation",
+      "consulting for insurers or reinsurers designing rainfall index products for the Pannonian region",
+      "student internships for MSc students working on spatial data science or hydrometeorology",
+      "equipment access to the group's dense gauge network for short deployment campaigns"
+    ],
+    "bio": {
+      "recordId": "R0364",
+      "field": "bio",
+      "text": "Žarko Pejić completed his BSc in Geography at the University of Novi Sad in 2011 and his MSc in Remote Sensing and Environmental Monitoring at the same institution in 2014. He received his PhD from the University of Novi Sad in 2020, with a dissertation on geostatistical downscaling of satellite precipitation estimates for agricultural applications in the Vojvodina plain. Since 2021 he has held a Research Associate position within the Remote Sensing and GIS Group at BioSense Institute, where the group focuses on Earth observation data processing, land-use mapping, and precision agriculture. He participates in undergraduate fieldwork courses and co-supervises MSc students. His primary laboratory work involves QGIS, R, and Python environments running on the institute's high-performance computing cluster, alongside access to meteorological station networks maintained by the Republic Hydrometeorological Service of Serbia."
+    },
+    "industryExperience": {
+      "recordId": "R0364",
+      "field": "industry_experience",
+      "text": "Pejić provided technical consultancy to Agroprotekta d.o.o., a regional agricultural insurance intermediary based in Novi Sad, in 2023, advising on spatial resolution requirements for parametric rainfall products covering Vojvodina. He has participated in one workshop organised by a Vienna-based reinsurance analytics firm evaluating satellite rainfall data quality for Eastern European agricultural portfolios."
+    },
+    "notes": {
+      "recordId": "R0364",
+      "field": "notes",
+      "text": "Pejić is particularly interested in partnerships with companies that process or distribute agronomic data, operate IoT sensor networks in fields, or develop insurance technology platforms, as these could complement his group's remote sensing data streams. He is not currently on sabbatical and supervises one PhD student whose topic overlaps directly with this specialty."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-04460",
+        "kind": "publication",
+        "title": "Comparison of IDW and Ordinary Kriging for Monthly Rainfall Interpolation in the Vojvodina Lowlands Using a Sparse Station Network",
+        "body": {
+          "recordId": "SYN-PUB-04460",
+          "field": "abstract",
+          "text": "Accurate spatial representations of monthly rainfall in flat agricultural regions are difficult to achieve when ground station density is low. This study compared inverse distance weighting (IDW) and ordinary kriging (OK) for interpolating monthly precipitation totals across Vojvodina using data from 24 meteorological stations maintained by the Republic Hydrometeorological Service of Serbia for the period 2001–2010. Cross-validation was performed by withholding one station at a time; root mean square errors were 18.3 mm for IDW and 14.7 mm for OK at the monthly scale, with the largest discrepancies occurring during convective summer months. Semivariogram analysis revealed a mean range of approximately 62 km for summer months and 110 km for winter months, indicating substantial seasonal changes in spatial autocorrelation structure. The results suggest that ordinary kriging outperforms IDW in this region but that both methods underestimate peak rainfall cells associated with localised convective events. These findings informed subsequent work on integrating satellite data as auxiliary covariates."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04013",
+        "kind": "publication",
+        "title": "Evaluation of PERSIANN-CDR Satellite Precipitation Estimates Against Ground Observations Over the Middle Danube Basin, 2003–2013",
+        "body": {
+          "recordId": "SYN-PUB-04013",
+          "field": "abstract",
+          "text": "Satellite-derived precipitation products are increasingly used in data-sparse regions, but their accuracy must be assessed against independent ground observations before application in agronomic or hydrological models. This study evaluated PERSIANN-CDR daily and monthly precipitation estimates over the Middle Danube Basin covering Serbia, northern Croatia, and southwestern Hungary, comparing them with records from 47 synoptic stations for the period 2003–2013. Statistical metrics including bias ratio, correlation coefficient, probability of detection, and false alarm ratio were computed at both temporal aggregations. At the monthly scale, PERSIANN-CDR showed a mean wet bias of 8.4% over the study area, with overestimation concentrated in the Fruška Gora foothill zone and underestimation over the flat Vojvodina plain. Daily performance was markedly lower, with a probability of detection of 0.61 and a false alarm ratio of 0.34 for events exceeding 10 mm. Systematic biases identified here were used as inputs for a multiplicative bias correction scheme applied in follow-up downscaling work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04461",
+        "kind": "publication",
+        "title": "Kriging with External Drift Using IMERG Precipitation as a Covariate for Sub-Monthly Rainfall Mapping at 1 km Resolution in Northern Serbia",
+        "body": {
+          "recordId": "SYN-PUB-04461",
+          "field": "abstract",
+          "text": "This study applied kriging with external drift (KED) to downscale 10-day accumulated rainfall to a 1 km grid over northern Serbia, using GPM IMERG Late Run estimates as the external drift variable and data from 31 ground stations as primary observations. The analysis covered the 2014–2018 growing seasons (April–September). IMERG values were resampled from their native 0.1° resolution to 1 km using bilinear interpolation before entering the KED framework. Leave-one-out cross-validation showed that KED reduced RMSE by 21% relative to ordinary kriging and by 34% relative to IDW, averaged across the study period. Performance gains were most pronounced during spatially heterogeneous convective periods in June and July. The resulting 1 km grids captured within-field rainfall gradients of up to 15 mm per 10-day period across large agricultural parcels, which ordinary kriging had smoothed over. Maps produced in this study were subsequently used as candidate index layers for parametric crop insurance pilot design."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04462",
+        "kind": "publication",
+        "title": "Design of a Rainfall Deficit Index for Maize Insurance in the Vojvodina Region: Sensitivity to Spatial Resolution of Input Precipitation Grids",
+        "body": {
+          "recordId": "SYN-PUB-04462",
+          "field": "abstract",
+          "text": "Index insurance products that trigger payouts based on area-average rainfall can suffer from basis risk when the spatial resolution of the underlying precipitation data does not capture field-level variability. This study quantified how the choice of precipitation grid resolution (0.25°, 0.05°, and 1 km downscaled) affects the properties of a 30-day rainfall deficit index (RDI) designed for rainfed maize in Vojvodina. Historical RDI series were reconstructed for 1995–2018 using ERA5 reanalysis at 0.25°, CHIRPS at 0.05°, and a KED-downscaled product at 1 km. Basis risk was approximated by computing the correlation between field-scale simulated crop water deficits from a DSSAT maize model and each RDI series for 120 sample parcels. Pearson correlation with the 1 km RDI was 0.71, versus 0.58 for CHIRPS and 0.49 for ERA5. Trigger and exit thresholds calibrated on the 1 km product changed payout frequency by up to 18 percentage points compared with coarser inputs. The findings support the use of downscaled grids in parametric product design where field-level basis risk reduction is a priority."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04465",
+        "kind": "publication",
+        "title": "Field-Level Validation of Downscaled Precipitation Grids Using Dense Micro-Station Networks in Two Vojvodina Municipalities",
+        "body": {
+          "recordId": "SYN-PUB-04465",
+          "field": "abstract",
+          "text": "Validating precipitation downscaling products at the field level requires ground truth at sub-kilometre spacing, which standard meteorological networks cannot provide. This study deployed a temporary network of 18 tipping-bucket rain gauges at 300–600 m spacing across two municipalities in Vojvodina—Bačka Palanka and Zrenjanin—during the 2022 and 2023 growing seasons, collecting data at 15-minute resolution. These measurements were withheld from the downscaling model and used exclusively for validation. The KED-downscaled product at 1 km showed mean absolute errors of 3.1 mm per 10-day period, compared with 5.8 mm for bilinearly resampled IMERG and 4.4 mm for CHIRPS. The micro-station data also revealed that within-field gradients exceeding 8 mm per 10-day period occurred in approximately 12% of observed convective events, confirming that field-level insurance products cannot rely on grid spacings coarser than 1–2 km in this region. Equipment deployment and data management protocols developed here are available as a supplementary technical guide."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04014",
+        "kind": "publication",
+        "title": "Constructing a 25-Year Field-Scale Rainfall Archive for Vojvodina and Its Application to Historical Burn Analysis of Parametric Crop Insurance",
+        "body": {
+          "recordId": "SYN-PUB-04014",
+          "field": "abstract",
+          "text": "Actuarially sound index insurance products require long historical records at the spatial resolution at which policies will be written. This paper describes the construction of a daily, 1 km resolution rainfall archive for Vojvodina spanning 1999–2023, produced by applying the KED downscaling framework to a blended ERA5–IMERG covariate and using all available station records (29–48 stations per year depending on network completeness). Archive consistency across the pre-IMERG era was maintained by substituting TMPA 3B42 for years before 2014 after demonstrating statistically equivalent covariate performance. A burn analysis was performed for three parametric products—sowing-period deficit, flowering-period excess, and grain-filling deficit—for maize and sunflower across 1,214 cadastral municipalities. Mean annual payout frequencies under tested trigger calibrations ranged from 14% to 27% depending on product and crop. The archive and analysis scripts are made publicly available. These outputs are intended to support insurers and reinsurers operating in the Pannonian agricultural zone in setting actuarially fair premiums."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04466",
+        "kind": "publication",
+        "title": "Assessing sub-kilometre spatial coherence of convective rainfall using a dense disdrometer transect across the Fruška Gora ridge",
+        "body": {
+          "recordId": "SYN-PUB-04466",
+          "field": "abstract",
+          "text": "A transect of 22 optical disdrometers spaced 800 m apart along a 17.5 km line perpendicular to the Fruška Gora mountain ridge was operated during May–September 2022 to characterise the spatial decorrelation of convective rainfall intensity at sub-kilometre scales. During 38 convective events, inter-instrument correlation coefficients for 5-minute intensities were computed as a function of separation distance and storm advection direction. The correlation length for 5-minute intensities exceeded 8 km for stratiform rainfall but dropped to 2.1 km for intense convective cells (R > 20 mm h⁻¹). An anisotropy ratio of 1.6 was identified between the ridge-parallel and ridge-perpendicular directions, attributable to orographic forcing of cell alignment. These results impose quantitative limits on the validity of spatial interpolation at spacings used by most national rain-gauge networks. Implications for the accuracy of kriging-merged products at sub-hourly time steps are discussed with reference to the error budgets reported in our earlier Pannonian Plain merging study."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04467",
+        "kind": "publication",
+        "title": "Atmospheric correction of Landsat-5 TM imagery over lowland agricultural areas using MODIS-derived aerosol optical depth",
+        "body": {
+          "recordId": "SYN-PUB-04467",
+          "field": "abstract",
+          "text": "Accurate atmospheric correction is a prerequisite for quantitative surface reflectance retrieval in flat, spectrally homogeneous landscapes. This study evaluates the MODTRAN-based Second Simulation of a Satellite Signal in the Solar Spectrum (6S) code applied to a 2008–2010 Landsat-5 TM archive covering the Vojvodina plain, using collocated AERONET and MODIS MOD04 aerosol optical depth (AOD) at 550 nm as input. Twenty-seven cloud-free scenes were processed. Substituting MODIS-derived AOD for the standard rural aerosol model reduced the root-mean-square error of surface reflectance in the red band from 0.031 to 0.018 when validated against 14 in-situ spectroradiometer measurements collected on concurrent ground-truth campaigns. Corrections were smallest in the blue band (residual RMSE 0.025) owing to remaining uncertainty in the fine-mode fraction. Results confirm that MODIS MOD04 provides a practical, spatially continuous AOD input suitable for retrospective archive processing in the region, avoiding the dependence on sparse sunphotometer networks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04468",
+        "kind": "publication",
+        "title": "Object-based classification of informal housing clusters in post-socialist peri-urban zones: a case study of Novi Sad",
+        "body": {
+          "recordId": "SYN-PUB-04468",
+          "field": "abstract",
+          "text": "This study applied object-based image analysis (OBIA) to a 2009 QuickBird-2 mosaic (0.6 m pan-sharpened) covering 48 km² on the southern and eastern fringes of Novi Sad to delineate informal residential clusters. Segmentation was performed with a multiresolution algorithm at scale parameters 40–80. Seventeen spectral, textural and geometric features were derived per segment, and a random forest classifier trained on 620 manually labelled reference objects achieved an overall accuracy of 87.3 % (kappa 0.83). The method distinguished informal structures from formal low-density housing and agricultural storage buildings with a producer accuracy of 84 % and user accuracy of 89 % for the informal class. Results documented approximately 340 ha of informally constructed residential fabric predating the 2009 imagery, concentrating along the Danube floodplain margins and two main arterial corridors. The paper discusses the sensitivity of results to segmentation scale choice and the transferability of the feature set to adjacent municipalities."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04469",
+        "kind": "publication",
+        "title": "Temporal comparison of peri-urban expansion in three Vojvodina towns using Ikonos and WorldView-1 imagery, 2003–2010",
+        "body": {
+          "recordId": "SYN-PUB-04469",
+          "field": "abstract",
+          "text": "Change between 2003 Ikonos (4 m multispectral) and 2010 WorldView-1 (0.5 m panchromatic) imagery was assessed for peri-urban zones of Subotica, Zrenjanin and Sombor to quantify the rate and spatial pattern of new construction at urban fringes. Pre-processing included sensor-specific radiometric normalisation, histogram matching, and co-registration to sub-pixel accuracy (RMSE < 0.4 m). Binary change maps derived from post-classification comparison were validated against municipal building permit records and field survey points. Across the three towns, a combined 178 ha of new built-up area was detected, of which 41 % lacked corresponding building permit records, indicating informal construction activity. Growth was markedly asymmetric: southern peripheral zones showed the highest expansion rates, coinciding with proximity to road infrastructure and lower agricultural land values. Seasonal spectral variability between acquisition dates introduced a false-alarm rate of approximately 7 %, which was reduced to 3 % after applying a minimum mapping unit of 100 m²."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04470",
+        "kind": "publication",
+        "title": "Automated extraction of road network encroachment by informal construction from multi-temporal VHR imagery",
+        "body": {
+          "recordId": "SYN-PUB-04470",
+          "field": "abstract",
+          "text": "Informal buildings constructed within legal road reserve setbacks reduce effective carriageway width and complicate future road improvement projects. A workflow was developed to detect such encroachments automatically by overlaying multi-temporal change maps (2012–2023, derived from Pléiades and WorldView-2) with cadastrally defined road reserve polygons for 85 km of peri-urban road network in four Vojvodina municipalities. Encroachment detection used a 3 m buffer inward from the road reserve boundary to account for co-registration uncertainty. Over the period, 138 discrete new structures were detected within road reserves, totalling 2,940 m² of footprint. The approach was validated against a municipal road authority field inventory conducted in 2022, achieving 83 % concordance at the segment level. Processing time for the 85 km network was approximately 4 hours on a single GPU workstation. The workflow is designed to run within Google Earth Engine with minor adaptation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04471",
+        "kind": "publication",
+        "title": "Seasonal variation in voxel-based canopy structure metrics derived from repeated UAV LiDAR acquisitions in a temperate mixed forest",
+        "body": {
+          "recordId": "SYN-PUB-04471",
+          "field": "abstract",
+          "text": "The sensitivity of voxel-based structural metrics to seasonal leaf phenology was assessed through five repeated UAV LiDAR acquisitions conducted at three mixed broadleaf forest plots in northern Serbia between March and October 2024. Metrics examined included filled-voxel ratio, vertical plant area volume density profiles, and upper canopy rugosity index, computed at a 0.10 m voxel resolution. Leaf-off acquisitions in early spring showed filled-voxel ratios 41–58% lower than peak leaf-on values in July, with the largest relative changes observed in the understorey layer (below 8 m). Height percentile metrics (P70–P95) remained comparatively stable across seasons (coefficient of variation < 6%), suggesting utility as season-independent inputs for AGB models. Point cloud density varied from 95 to 220 points m⁻² across flights due to wind-induced platform instability. The study provides a seasonal calibration reference for researchers integrating multi-temporal LiDAR data into continuous forest monitoring workflows in continental European climates."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0112",
+        "kind": "project",
+        "title": "Field-Scale Rainfall Mapping for Agricultural Insurance Applications in the Pannonian Basin",
+        "body": {
+          "recordId": "SYN-PRJ-0112",
+          "field": "summary",
+          "text": "RAINFIELD developed and validated a production-grade geostatistical downscaling pipeline for converting coarse-resolution satellite precipitation products into field-scale (1 km) daily rainfall grids over Vojvodina and adjoining cross-border agricultural zones. Core activities included deployment of a temporary dense rain-gauge network, construction of a 25-year historical archive, and a formal actuarial burn analysis for parametric maize and sunflower insurance products. The project produced open-access gridded datasets, published R and Python processing scripts, and a technical design guide intended for agricultural insurers. Collaboration with the Faculty of Agriculture and the Faculty of Economics at the University of Novi Sad ensured the agronomic and financial dimensions of the outputs were grounded in local practice."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0113",
+        "kind": "project",
+        "title": "Cross-Border Agricultural Data Infrastructure for Climate Risk Management in the Hungary–Serbia Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-0113",
+          "field": "summary",
+          "text": "AGRIDATA-CROSS builds a shared meteorological data infrastructure and climate risk assessment platform serving agricultural stakeholders in the Hungary–Serbia border region. Žarko Pejić leads the work package responsible for harmonising national meteorological station records, generating consistent cross-border gridded precipitation climatologies, and providing spatial input layers to a joint drought monitoring dashboard. The project links national hydrometeorological services, regional agricultural extension offices, and university research groups on both sides of the border. Outputs include a web-accessible map viewer, an annual climate risk bulletin, and training workshops for farmers and insurance intermediaries on interpreting spatial weather data."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0364",
+            "field": "open_to",
+            "quote": "joint projects on spatial weather data products for agri-insurance or precision agriculture",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0364",
+            "field": "open_to",
+            "quote": "contract research involving satellite precipitation downscaling or geostatistical interpolation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

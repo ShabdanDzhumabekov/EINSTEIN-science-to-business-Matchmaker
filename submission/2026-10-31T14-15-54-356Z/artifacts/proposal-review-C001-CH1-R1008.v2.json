@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec reports several terabytes of client captures collected over three years, but no confirmed attack captures.” and “ArmaturaSec reports that its previous classifier's false positives caused clients to disable alerts.” Proposed next steps: “Compare fixed-threshold rules, statistical baselines and one-class models, training and calibrating without attack labels.” and “Evaluate separately for Modbus and BACnet on held-out client replay and controlled bench anomalies, including BACnet commands and legitimate changes.” These connect the concrete absence of attack labels and unacceptable deployed alert burden to a site-specific, two-protocol experiment rather than a generic detection goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Separate presumed-normal, unlabelled training, tuning and later held-out periods; verify independence and operating-mode coverage.” and “training and calibrating without attack labels” respect the lack of confirmed attacks without certifying archives as clean. “at least 80% correct plant-manager identification of changed behaviour and appropriate next action” makes plain-language usefulness testable. “agreed CPU, RAM, storage and throughput limits; and no measurable forwarding-latency increase under representative peak load at agreed resolution. Benchmark the actual Yocto/C/Rust appliance, not presumed hardware fit” makes on-device compatibility conditional on measurement. “Negotiate NDA, client permissions and testbed data-sharing terms within the stated part-time capacity before execution” respects access and staffing limits. Open questions: “Can Kiss confirm availability, implementation responsibilities, and a feasible budget and six-week schedule” and “Which appliance, resource limits, peak traffic conditions and latency measurement resolution will define acceptance” explicitly leave unknown execution constraints to agreement rather than asserting compliance."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss’s Modbus research models per-register timing, values and command sequences. Her incremental modelling work also tested operator-acknowledged resets after planned process reconfiguration.” and “Her review discusses a false-alarm versus response-latency tradeoff.” Our inference: “This suggests a practical joint project combining interpretable statistical baselines with one-class modelling.” and “The supplied work does not establish BACnet validity or ProtoSense hardware compatibility.” Proposed next steps: “Require operator approval for baseline resets and test whether persistent injected anomalies are silently learned away.” These tie methods supported by her own works to the proposed site baselines and drift handling, acknowledge the reported operational trade-off, and bound protocol and hardware transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec states a collaboration capacity of one to two part-time engineers and identifies traffic archives, a hardware bench and its firmware codebase within an NDA framework.” and “Kiss’s group operates an ICS testbed with Modbus/TCP and DNP3 traffic generators.” Proposed next steps: “Propose a six-week pilot: ArmaturaSec supplies authorised captures, bench replay and firmware integration; Kiss designs features and evaluation.” Open questions: “Can Kiss confirm availability, implementation responsibilities, and a feasible budget and six-week schedule, and can ArmaturaSec nominate expert reviewers and plant managers” and “can authorised captures for both protocols, documented operating changes and BACnet-capable bench equipment be made available”. These distinguish documented infrastructure and company capacity from proposed work allocation and unconfirmed personnel, permissions and BACnet equipment."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Separate presumed-normal, unlabelled training, tuning and later held-out periods; verify independence and operating-mode coverage. Compare fixed-threshold rules, statistical baselines and one-class models, training and calibrating without attack labels. Select the best configuration using tuning data, whichever method wins. Evaluate separately for Modbus and BACnet on held-out client replay and controlled bench anomalies, including BACnet commands and legitimate changes.” These specify archive and bench inputs, a rule baseline, candidate methods, evaluation conditions and a tuning/held-out separation. “Missing protocol data, permissions or sufficient evidence leaves acceptance unresolved” makes execution and adequate evidence prerequisites, while the open questions require preregistered scoring, minimum runs and episodes, equipment and operating conditions before acceptance."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Proposed go/no-go requires the statistical prerequisites below” makes the numerical targets proposals subject to the subsequent rules. For burden: “counting all alert episodes, merging flagged non-overlapping ten-second windows within site/protocol across gaps at most 60 seconds” and “Require upper 95% day-block-bootstrap bounds of one episode per observed site/protocol-day and, additionally, 1% flagged windows per observed windows, separately per protocol” define units, merging, exposure, bounds and protocol-specific acceptance. “Retain unresolved alerts in both numerators” and “These burden measures use all alerts, not sampled labels” prevent uncertain labels or sampling from lowering measured burden. For sampled review: “Randomly sample all evaluation windows uniformly, including non-alert windows, with inclusion probability n/N” and “unresolved labels remain potentially anomalous, not clean.” Open questions define detection as “one-to-one matching of each fully annotated injected episode to a new alert beginning within 60 seconds of onset, unmatched episodes counted as misses” with “a one-sided 95% lower confidence bound of at least 80%, using independent-run cluster resampling” separately per protocol. They define explanation success by “each distinct user-case first response” with both rubric components correct, “incomplete answers as failures, repeats excluded,” and a protocol-specific “one-sided 95% lower confidence bound of at least 80% using user-and-case clustered resampling”. Minimum exposure, runs, episodes, users and cases must be agreed beforehand and insufficient evidence cannot pass. Hardware acceptance is separately conditioned on agreed resource limits, peak traffic and latency resolution. Thus acceptance uses company-facing detection, burden, comprehension and appliance criteria, not merely superiority over another method."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare fixed-threshold rules, statistical baselines and one-class models” and “Select the best configuration using tuning data, whichever method wins” frame a configuration comparison rather than attributing gains to an independently isolated algorithmic component. Our inference: “The supplied work does not establish BACnet validity or ProtoSense hardware compatibility” and “injected scenarios cannot establish real-world attack recall.” Proposed next steps: “Restrict detection claims to fully annotated injected or confirmed cases.” These bound conclusions to tested configurations, protocols, hardware and annotated cases without claiming that bench results identify real-world attack recall or separate adaptation and feature effects."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Unnoticed compromise could contaminate training, while maintenance could trigger nuisance alerts. Automatic adaptation might absorb persistent attacks; restrictive updates could increase alert burden. The reported false-alarm versus response-latency tradeoff is a deployment risk.” Also: “The supplied work does not establish BACnet validity or ProtoSense hardware compatibility” and “injected scenarios cannot establish real-world attack recall.” Open questions ask about availability, implementation, budget, schedule, reviewers, plant managers, appliance limits, permissions and BACnet-capable equipment. These name the central contamination, drift, transfer, evaluation and deployment risks while keeping unresolved resources and access explicitly unknown."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “Participation remains conditional because Kiss’s availability is unknown, despite her stated openness to joint projects.” Proposed next steps introduce the allocation with “Propose a six-week pilot”. Open questions: “Can Kiss confirm availability, implementation responsibilities, and a feasible budget and six-week schedule”. These keep the joint-project role and work allocation conditional on confirmation, consistent with documented openness but unknown availability; no declined role is assigned."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits, company: “The pilot could establish whether site-specific detection produces manageable, understandable alerts on both protocols without compromising appliance operation, and identify unresolved deployment barriers.” Researcher: “Subject to agreement, Kiss could investigate transfer from established Modbus methods to BACnet and operational hardware, using authorised longitudinal captures and controlled bench scenarios to study calibration, drift and explanation quality.” Both are conditional knowledge gains directly supported by the proposed evaluations, not guarantees of deployment success, access or participation."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.95,
+        0.8,
+        0.91,
+        0.98,
+        0.95,
+        0.95,
+        0.95
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

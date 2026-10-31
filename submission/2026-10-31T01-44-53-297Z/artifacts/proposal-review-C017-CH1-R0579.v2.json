@@ -1,0 +1,40 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C017-CH1-R0579",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C017-CH1-R0579",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C017-CH1-R0579",
+      "version": 2
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "constraint_omitted",
+        "severity": "blocking",
+        "claim": "add covariate groups one at a time (Sentinel-2, soil/terrain maps, any EM38/EM31 or field-sensor data)",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Probali smo da koristimo satelitske NDVI snimke kao vodič za adaptivno uzorkovanje, ali nismo imali dobre rezultate jer se salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The company already tried satellite vegetation indices as an adaptive-sampling guide and reports they failed because salinity is not visible in early-spring indices; the plan reintroduces Sentinel-2 covariates without acknowledging that failure or stating which season/composite should be used. Add this as a known risk and specify that Sentinel-2 covariates are tested with non-early-spring (e.g. autumn) composites and must beat the 4-ha baseline before inclusion.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

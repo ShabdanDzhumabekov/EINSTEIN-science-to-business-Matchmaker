@@ -1,0 +1,210 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0971",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0971",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an uncertainty-aware workflow linking farm policies to verified parcels or buildings and weather grids identify hail-related underpricing more reliably than municipality-level rating? A first pilot would test location matching on independently verified properties, establish whether the available weather data support field-level differentiation, and compare predictive performance against the municipal baseline on held-out storms or years.",
+    "rationale": [
+      {
+        "text": "Đorđević has directly relevant experience harmonising cadastral parcel identifiers, attributes and geometries, supporting investigation of policy-to-property matching.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00852",
+            "field": "abstract",
+            "quote": "Attribute alignment covered parcel identifier structures, tenure type classifications, and area measurement methods.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0468",
+            "field": "summary",
+            "quote": "Katarina Đorđević led the work package on data quality assessment and transformation infrastructure, supervising two research staff and one PhD student",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her regional coordinate-transformation work offers a basis for checking and aligning spatial layers before joining policies, claims and weather data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10169",
+            "field": "abstract",
+            "quote": "This paper derives a locally refined NTv2-compatible grid shift model for the Bačka and Srem subregions using 412 geodetic points",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10169",
+            "field": "abstract",
+            "quote": "Grid shift files in NTv2 format are provided and tested for direct import into PROJ, QGIS, and FME.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has demonstrated automated spatial quality-checking methods using tools relevant to a reproducible geospatial pipeline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10173",
+            "field": "abstract",
+            "quote": "The detection pipeline is implemented in Python using GDAL/OGR and produces a structured error report with suggested corrections.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10170",
+            "field": "abstract",
+            "quote": "executed within a PostGIS environment extended with custom PL/pgSQL functions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her evaluation of Vojvodina building footprints is relevant to assessing supplementary location sources without treating their coverage or accuracy as assured.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10172",
+            "field": "abstract",
+            "quote": "Completeness ranged from 41% to 78% across municipalities, positional RMSE from 1.1 m to 2.6 m",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10172",
+            "field": "abstract",
+            "quote": "The framework is designed to be reusable and operationalised as a semi-automated QGIS model.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The workflow must explicitly handle settlement-only policy locations and the daily five-kilometre weather grid; field-level hail intensity cannot be assumed from these inputs alone.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must respect the limited historical sample and distinguish geo-tagged losses from the unresolved locations of the wider insured exposure.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must include an agreed automated handoff into pricing, rather than only GIS maps, compatible with the company's Python batch refresh process.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company implementation effort must be explicitly allocated within shared pricing and IT teams; a dedicated research unit is unavailable.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Start with a bounded joint-project pilot and confirm supervision and delivery capacity; the researcher reports limited capacity for large commitments before mid-2026.",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "notes",
+            "quote": "limited availability for large new commitments before mid-2026",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0971",
+            "field": "notes",
+            "quote": "shorter consulting engagements or clearly scoped contract research are more feasible in the near term.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Parcel harmonisation, CRS checking and building-footprint validation have not been demonstrated here for insurance address matching or hail-intensity estimation. The first pilot must test these transfers against independently verified locations and suitable hail observations.",
+      "Daily five-kilometre weather data may not resolve narrow hail tracks, even after policy locations are improved; finer-resolution observations or meteorological expertise may be necessary.",
+      "The supplied material does not establish hail-modelling or actuarial-pricing expertise. Spatial integration alone may not explain the reported 18% excess claim cost.",
+      "Three claim years may contain too few independent storms for stable conclusions; coverage, insured values, repair inflation and claims practices could confound apparent geographic underpricing.",
+      "Current researcher availability, budget, delivery dates, data permissions and access to cadastral or finer-resolution weather data remain unknown.",
+      "Operational integration could stall: the company's earlier flood-mapping prototype was completed but has not been integrated into pricing."
+    ],
+    "questions": [
+      "What are Đorđević's current availability, proposed scope, staffing and budget for a bounded joint-project pilot?",
+      "Can the company provide the full insured portfolio, including non-claiming policies, insured values, coverage terms, premiums, exposure dates and event-linked claims—not only geo-tagged losses?",
+      "Do policy records contain parcel identifiers, building identifiers or other address evidence, and can an independently verified sample of insured locations be assembled for the first experiment?",
+      "What exactly does MeteoVoj supply: hail observations, hail proxies or model estimates? Are event timestamps, uncertainty metadata and independent radar or ground observations available to test field-level differentiation?",
+      "Who will provide hail-science and actuarial validation, and what held-out storm or year evaluation and acceptance criteria will be agreed before examining results?",
+      "What permissions and privacy safeguards govern policy geolocation, cadastral access and weather-data reuse, and what are the costs of additional data?",
+      "Who owns production integration and maintenance, what output contract is required by the pricing pipeline, and how should ambiguous locations and uncertain exposure estimates be handled?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0971",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0971",
+        "version": 1
+      }
+    ]
+  }
+}

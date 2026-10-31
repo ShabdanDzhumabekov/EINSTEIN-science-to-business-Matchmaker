@@ -1,0 +1,284 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R0030",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0030",
+    "name": "Vladana Vojnović",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning and Data Mining",
+      "Distributed Systems and Infrastructure Monitoring",
+      "Network Security and Intrusion Detection",
+      "Data Stream Processing"
+    ],
+    "keywords": [
+      "anomaly detection",
+      "log analysis",
+      "unsupervised learning",
+      "event correlation",
+      "high-velocity data streams",
+      "clustering",
+      "intrusion detection",
+      "time-series analysis",
+      "Apache Kafka",
+      "SIEM"
+    ],
+    "openTo": [
+      "joint projects with companies generating high-volume operational or security logs",
+      "contract research on anomaly detection pipeline design and deployment",
+      "industrial PhD supervision for candidates from NTP Novi Sad companies",
+      "student internships (master's level) focused on log analysis tooling",
+      "consulting on SIEM tuning and alert fatigue reduction",
+      "equipment access to StreamLab Kafka testbed for short-term experiments"
+    ],
+    "bio": {
+      "recordId": "R0030",
+      "field": "bio",
+      "text": "Vladana Vojnović received her B.Sc. and M.Sc. degrees in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2005 and 2008 respectively, and her Ph.D. from the same institution in 2013, with a dissertation on unsupervised clustering methods for distributed system log analysis. She joined the Department of Computing and Control Engineering as an Assistant Professor in 2014 and was promoted to Associate Professor in 2019. Her research group focuses on real-time anomaly detection, event correlation across heterogeneous log sources, and streaming data pipelines. She teaches courses in operating systems, distributed systems monitoring, and applied machine learning. The group operates the StreamLab facility, equipped with a small on-premises Kafka-based testbed, GPU workstations for model training, and access to the university HPC cluster."
+    },
+    "industryExperience": {
+      "recordId": "R0030",
+      "field": "industry_experience",
+      "text": "Vojnović spent four months in 2020 as a visiting researcher at Sinteza IT d.o.o. in Novi Sad, where she assisted in designing a log collection and triage pipeline for a managed security service offering. She has since maintained an informal advisory relationship with the company."
+    },
+    "notes": {
+      "recordId": "R0030",
+      "field": "notes",
+      "text": "Vojnović is currently co-supervising three PhD students and has limited capacity for new large commitments until mid-2026. She prefers industry partnerships that include access to real operational log datasets, even under NDA, as benchmark data remains a bottleneck for the group's research. She is particularly interested in contact with companies in manufacturing, utilities, and telecommunications operating in the region."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-00345",
+        "kind": "publication",
+        "title": "Comparing Autoencoder Architectures for Anomaly Scoring in Web Server Access Logs",
+        "body": {
+          "recordId": "SYN-PUB-00345",
+          "field": "abstract",
+          "text": "We evaluate four autoencoder designs—shallow, deep, variational, and denoising—for scoring anomalies in Apache access logs gathered from three production web services over 90 days. Input features include request method, status code, payload size, inter-arrival time, and URI path hash. Each architecture is trained on a 70-day clean baseline and tested on 20 days containing 1,247 manually labelled anomalies spanning DDoS precursors, crawler bursts, and authentication brute-force sequences. The denoising autoencoder achieves the highest AUROC of 0.91, while the variational model offers better calibration of reconstruction-error thresholds. We find that log volume spikes caused by legitimate marketing campaigns substantially raise false-positive rates unless a session-level normalisation step is applied. Processing latency for the best model is 18 ms per 10,000 requests on a single GPU, making online deployment feasible. Code and anonymised dataset excerpts are released."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00346",
+        "kind": "publication",
+        "title": "Temporal Pattern Mining in Multi-Source Event Logs Using Frequent Episode Discovery",
+        "body": {
+          "recordId": "SYN-PUB-00346",
+          "field": "abstract",
+          "text": "Frequent episode discovery is applied to correlated event sequences drawn simultaneously from OS syslogs, application logs, and SNMP traps in a mid-sized enterprise network. The study covers a 14-month trace comprising events from 120 devices. Episodes are mined at three temporal granularities (1 s, 10 s, 60 s) and ranked by a lift-based interestingness measure. Results show that 83% of confirmed incidents correspond to at least one high-lift episode identified at the 10-second granularity, while per-source mining misses 41% of the same incidents. A post-processing step uses agglomerative hierarchical clustering to group structurally similar episodes, reducing the analyst's review set from ~9,000 raw episodes to 214 episode families. The paper also discusses the computational cost of episode mining as event rates grow, reporting quadratic scaling behaviour beyond roughly 50,000 events per second on commodity hardware."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00347",
+        "kind": "publication",
+        "title": "Benchmarking Stream Processing Engines for Real-Time Log Anomaly Detection Pipelines",
+        "body": {
+          "recordId": "SYN-PUB-00347",
+          "field": "abstract",
+          "text": "This study compares Apache Flink, Apache Storm, and a custom lightweight engine for deploying log anomaly detection models in a streaming context. Three detection algorithms—isolation forest, one-class SVM, and a sliding-window statistical method—are embedded into each engine and evaluated on synthetic log streams injected at rates from 10,000 to 500,000 events per second. Metrics collected include end-to-end latency, throughput, CPU and memory footprint, and detection recall under backpressure conditions. Flink exhibits the most stable latency (median 7 ms at 200 k events/s) and the lowest performance degradation when detection model inference time increases. The one-class SVM degrades most severely under high throughput, dropping recall from 0.88 to 0.61 at 400 k events/s due to feature computation bottlenecks. Recommendations for practitioners on engine and algorithm pairing are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00348",
+        "kind": "publication",
+        "title": "Log Parsing at Scale: Evaluating Drain, Spell, and AEL on Industrial SCADA Event Logs",
+        "body": {
+          "recordId": "SYN-PUB-00348",
+          "field": "abstract",
+          "text": "Log parsing is a prerequisite for machine learning on unstructured log data, yet most parsing benchmarks use IT rather than operational technology (OT) logs. This paper evaluates three representative parsers—Drain, Spell, and Abstracting Event Log (AEL)—on logs collected from two SCADA systems in a regional water treatment facility and a district heating network, totalling 22 million lines across eight months. Evaluation uses grouping accuracy against a manually annotated ground truth of 310 distinct event templates. Drain achieves 94.1% grouping accuracy on water-treatment logs but drops to 81.7% on heating-network logs, where message formats are less regular. A hybrid pre-processing step combining domain-specific token masking with Drain raises accuracy to 97.4% on both corpora. Parser throughput, sensitivity to depth and similarity-threshold hyperparameters, and degradation under firmware update events are also analysed in detail."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00349",
+        "kind": "publication",
+        "title": "Correlated Anomaly Detection Across Microservice Traces and Infrastructure Logs Using Graph-Based Clustering",
+        "body": {
+          "recordId": "SYN-PUB-00349",
+          "field": "abstract",
+          "text": "Modern applications generate interleaved traces from dozens of microservices alongside infrastructure logs from the underlying Kubernetes nodes. This paper proposes representing concurrent events as nodes in a time-attributed multigraph, where edges encode causal or temporal co-occurrence within a configurable window. Community detection via the Louvain algorithm is then applied to identify correlated anomaly clusters. Experiments are conducted on a synthetic microservice benchmark (8 services, 14 days, 4.3 billion events) with injected faults covering latency spikes, pod crashes, and network partitions. The graph-based approach achieves a macro-averaged F1 of 0.84 for fault-type classification, compared to 0.71 for an independent per-log isolation forest baseline. Memory consumption grows linearly with the number of active trace IDs, reaching 6.2 GB at peak load in the test environment. A pruning strategy based on trace-completion events reduces memory usage by 38%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00350",
+        "kind": "publication",
+        "title": "Self-Tuning Threshold Selection for Streaming Anomaly Detectors Under Non-Stationary Log Distributions",
+        "body": {
+          "recordId": "SYN-PUB-00350",
+          "field": "abstract",
+          "text": "Fixed reconstruction-error thresholds for autoencoder-based anomaly detectors become unreliable when log distributions shift due to application updates, workload changes, or seasonal traffic patterns. This paper introduces a threshold adaptation scheme based on extreme value theory (EVT), specifically fitting a generalised Pareto distribution to the tail of recent reconstruction errors in a sliding window of configurable width. The scheme is evaluated on four real-world log datasets with documented distribution shifts: a university web portal (50 days), an e-commerce backend (90 days), a CI/CD pipeline (120 days), and a virtualised telecom switching platform (60 days). Compared to static thresholds and a simple percentile-based method, the EVT approach reduces false-positive rates by between 22% and 47% depending on dataset, while maintaining recall above 0.87 in all four cases. Computational overhead of threshold updates is under 2 ms per window step."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00351",
+        "kind": "publication",
+        "title": "Unsupervised Detection of Lateral Movement in Enterprise Networks via Windows Event Log Correlation",
+        "body": {
+          "recordId": "SYN-PUB-00351",
+          "field": "abstract",
+          "text": "Lateral movement by adversaries typically produces subtle, distributed signals across Windows Security Event Logs on multiple hosts. This study constructs user-host access graphs from Security Event IDs 4624, 4648, 4768, and 4769 collected over 30 days from a 600-host enterprise test environment, with synthetic lateral movement sequences injected following MITRE ATT&CK patterns. Node embeddings derived from a graph autoencoder are clustered with k-means; cluster membership deviation is used as an anomaly score. The method detects 19 of 24 injected lateral movement chains with a false-positive rate of 3.2 per day—substantially below the 11.7 per day produced by a signature-based SIEM rule set. A user-facing triage interface ranks suspicious chains by graph anomaly score. Limitations around encrypted Kerberos traffic and pass-the-hash variants that bypass standard logging are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00352",
+        "kind": "publication",
+        "title": "Log-Based Predictive Maintenance for Conveyor Belt Controllers: A Case Study from a Food-Processing Plant",
+        "body": {
+          "recordId": "SYN-PUB-00352",
+          "field": "abstract",
+          "text": "Predictive maintenance using log data from industrial programmable logic controllers (PLCs) is explored in a food-processing facility in Vojvodina operating 14 conveyor belt lines. PLC diagnostic logs recording motor current deviations, sensor timeouts, and safety interlock triggers were collected over 18 months, yielding approximately 9.4 million log entries and 38 confirmed maintenance events. A combination of sliding-window frequency features and an isolation forest classifier trained on normal operating periods is used to flag degradation precursors. Leave-one-out cross-validation across the 38 events yields a mean warning lead time of 4.3 hours before failure with a precision of 0.79 and recall of 0.87. The paper describes practical challenges including irregular maintenance windows that contaminate normal-operation labels and proprietary log formats that required manual template construction."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00353",
+        "kind": "publication",
+        "title": "Dimension Reduction Strategies for Log Embeddings in High-Throughput Anomaly Detection: UMAP, PCA, and Random Projections Compared",
+        "body": {
+          "recordId": "SYN-PUB-00353",
+          "field": "abstract",
+          "text": "Log embedding vectors derived from transformer-based language models are high-dimensional (768–1024 dimensions) and expensive to process at stream-processing speeds. This paper systematically compares three dimension-reduction strategies—PCA, random projections, and UMAP—for use in downstream anomaly detection on log streams, evaluating trade-offs between compression ratio, anomaly detection accuracy, and reduction latency. Experiments use four publicly available log datasets augmented with two proprietary datasets from partners, covering syslog, HDFS, BGL supercomputer logs, and application logs from a regional ISP. At a 32-dimensional target, UMAP preserves anomaly structure best (AUROC 0.89 averaged across datasets) but requires 14× more time to fit than PCA. Random projections at 64 dimensions achieve AUROC 0.84 with negligible fitting overhead, making them preferable in continuously retraining deployments. Interaction effects between reduction method and downstream detector type are analysed with a factorial experimental design."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00354",
+        "kind": "publication",
+        "title": "Federated Anomaly Detection on Distributed Log Streams Without Raw Data Sharing",
+        "body": {
+          "recordId": "SYN-PUB-00354",
+          "field": "abstract",
+          "text": "Many organisations are willing to participate in shared anomaly detection initiatives but cannot transfer raw logs off-premises due to regulatory or competitive concerns. This paper proposes a federated learning framework in which each participant trains a local autoencoder on its own log streams and shares only model parameter gradients with a central aggregator. Experiments involve five simulated organisations with heterogeneous log formats (web, database, VPN, mail, and DNS servers) and deliberately asynchronous update schedules. Federated averaging and two robust aggregation strategies (coordinate-wise median and trimmed mean) are compared. The federated model achieves AUROC within 0.04 of a centrally trained oracle model on anomalies present across multiple participants, though performance degrades for organisation-specific anomaly types unique to a single participant. Communication overhead per round is under 12 MB per participant."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00355",
+        "kind": "publication",
+        "title": "Temporal Causality Inference Between Correlated Log Events Using Granger-Inspired Tests on Count Time Series",
+        "body": {
+          "recordId": "SYN-PUB-00355",
+          "field": "abstract",
+          "text": "Distinguishing genuine causal relationships between event types from spurious temporal correlations is a persistent challenge in multi-source log analysis. This paper adapts Granger causality testing to discrete-valued count time series formed by bucketing log event occurrences at 1-second resolution. A negative binomial regression model accounts for overdispersion common in log count data. The approach is validated on a synthetic dataset of 50 known causal pairs injected into background traffic and on a real 90-day production log corpus from a cloud-hosted ERP system. On the synthetic data, the method recovers 46 of 50 causal pairs at a 5% false-discovery-rate threshold; on the production corpus, six previously unknown causal pairs are identified that collectively explain a recurring five-minute service degradation whose root cause had been unresolved for over a year. Sensitivity to bucket width and minimum event frequency is characterised."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00356",
+        "kind": "publication",
+        "title": "A Structured Dataset of Serbian Bank Statement Scans for Financial OCR Research",
+        "body": {
+          "recordId": "SYN-PUB-00356",
+          "field": "abstract",
+          "text": "Progress in financial document OCR is hampered by the lack of publicly available, annotated datasets that reflect real-world scan quality variation. This paper describes the construction and release of SerbBankScan-2018, a corpus of 2,400 bank statement page images sourced from three Serbian commercial banks (anonymised), spanning the years 2005–2015. Images were digitised at 200 and 300 dpi under three scanner types and include instances of ink smearing, paper yellowing, and duplex bleed-through. Ground-truth transcriptions were produced by two independent annotators and reconciled, covering approximately 1.1 million character instances. Inter-annotator agreement on ambiguous tokens reached 94.3%. The paper describes annotation guidelines, class distribution statistics, and baseline OCR results obtained with Tesseract 4.0 and a fine-tuned CRNN model, reporting character error rates of 7.2% and 3.8% respectively."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00357",
+        "kind": "publication",
+        "title": "Segmentation of Multi-Page Laboratory Reports into Logical Sections Using Hierarchical Clustering of Visual Features",
+        "body": {
+          "recordId": "SYN-PUB-00357",
+          "field": "abstract",
+          "text": "Multi-page laboratory reports often bundle a cover page, summary tables, appendices with raw measurement data, and signature blocks into a single PDF. Downstream extraction systems benefit from first segmenting the document into these logical sections. This paper applies agglomerative clustering over a feature vector that combines text density, estimated line spacing, font-height distribution, and the presence of ruling lines per page. No labelled training data are used; the number of clusters is selected by the silhouette criterion. Evaluated on 620 multi-page reports from five laboratories, covering water analysis, soil testing, and food microbiology, the method correctly assigns 91.2 % of pages to their ground-truth section class when the section count is known and 87.4 % when it is estimated automatically. The paper includes an ablation study showing that ruling-line features provide the largest marginal contribution to clustering quality."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00358",
+        "kind": "publication",
+        "title": "Stability of Feature Importance Rankings Under Bootstrap Resampling in Random Forests",
+        "body": {
+          "recordId": "SYN-PUB-00358",
+          "field": "abstract",
+          "text": "Feature importance scores derived from tree-based models are widely used to explain predictions, but their stability under data perturbation is rarely quantified. This study applies bootstrap resampling (B=500) to four tabular datasets ranging from 2,000 to 80,000 instances, computing mean decrease in impurity and permutation-based importance at each resample. Rank correlation (Spearman ρ) between importance vectors from different bootstrap draws is used as a stability metric. The analysis finds that for datasets with fewer than 5,000 instances, the top-ranked feature changes in approximately 22% of resample pairs, rising to 38% when correlated features are present. A simple ranking stabilisation procedure based on averaging importance across 50 sub-models reduces rank volatility by roughly half with less than 2% increase in training time. The findings suggest that single-run importance scores should be treated with caution in regulatory reporting contexts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00359",
+        "kind": "publication",
+        "title": "Resilience-Aware Joint VNF Placement and Migration Scheduling in Backbone SD-WANs: A Survey and Taxonomy",
+        "body": {
+          "recordId": "SYN-PUB-00359",
+          "field": "abstract",
+          "text": "The joint problem of placing VNFs and scheduling their migrations to maintain service resilience in backbone SD-WANs has attracted significant research attention since 2014. This survey collects and classifies 87 papers published between 2014 and 2025, organising them along four axes: problem formulation (static, dynamic, stochastic), optimisation method (exact, heuristic, learning-based), failure model (single link, multi-link, node, correlated), and evaluation methodology (analytical, simulated, emulated, deployed). The survey identifies that fewer than 20% of papers combine placement and migration scheduling jointly, and fewer than 10% validate on real deployed infrastructure. Key open challenges include handling correlated failures from shared-risk link groups, integrating placement with BGP convergence timescales, and building public benchmarks with realistic failure traces. The paper proposes a reference architecture and a checklist for experimental reproducibility."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0498",
+        "kind": "project",
+        "title": "Adaptive Anomaly Detection Frameworks for High-Velocity Industrial Log Streams",
+        "body": {
+          "recordId": "SYN-PRJ-0498",
+          "field": "summary",
+          "text": "STREAMGUARD investigates adaptive unsupervised methods for detecting anomalies in log streams generated by industrial control and IT infrastructure, with a focus on handling concept drift and heterogeneous log sources in real time. The project funds two PhD students and one postdoctoral researcher. Work packages cover log parsing standardisation, streaming algorithm design, EVT-based threshold adaptation, and evaluation on datasets from regional industrial partners. Hardware procured under the project includes two GPU workstations and an expansion of the Kafka testbed. Results are being transferred to two regional companies through technology-transfer agreements negotiated in the final project year."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0499",
+        "kind": "project",
+        "title": "Privacy-Preserving Federated Log Analytics for Cross-Organisational Threat Intelligence",
+        "body": {
+          "recordId": "SYN-PRJ-0499",
+          "field": "summary",
+          "text": "LOGFED brings together eight partners from five countries to develop federated machine learning infrastructure for shared threat detection without raw log exchange. Vojnović leads the work package on federated model architecture and aggregation robustness. The Novi Sad team is responsible for the heterogeneous-log simulation environment and for benchmarking aggregation strategies under adversarial participant conditions. The project targets GDPR-compliant deployment scenarios in healthcare, utilities, and financial sectors. An open-source toolkit for federated log anomaly detection is planned for release in the final project year."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0118",
+        "kind": "project",
+        "title": "Drift-Aware Semi-Supervised Monitoring for Low-Label Industrial Environments",
+        "body": {
+          "recordId": "SYN-PRJ-0118",
+          "field": "summary",
+          "text": "DRIFTGUARD addresses the combined challenge of label scarcity and concept drift in industrial condition monitoring. The project develops a unified framework in which a semi-supervised classifier is coupled with a lightweight drift detector; when drift is flagged, the system selects a small targeted query set using active learning rather than retraining from scratch on all historical data. The framework is validated on sensor streams from two partner facilities: a food-processing conveyor line and a district heating pump station. Expected outcomes include an open benchmark dataset with documented drift events, a reference software implementation, and design guidelines for practitioners. The project funds one PhD student and two master student thesis positions at the Faculty of Technical Sciences, University of Novi Sad."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0268",
+        "kind": "project",
+        "title": "Adaptive Learning Pathways for STEM Education Using Reinforcement Learning",
+        "body": {
+          "recordId": "SYN-PRJ-0268",
+          "field": "summary",
+          "text": "ADALEARN investigates the use of offline reinforcement learning methods to construct personalised learning paths for secondary-school students in mathematics and physics. The project collects interaction logs from a partner online tutoring platform operating in Serbia and uses these logs to train and evaluate sequential recommendation policies via offline policy evaluation techniques. A key objective is developing a reward function that balances short-term exercise performance with estimated long-term knowledge retention, measured through delayed post-tests administered at 4-week intervals. The project also produces an open benchmark dataset and releases evaluation tooling for the Serbian research community. Two Ph.D. students and three master's students are involved."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0030",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates from NTP Novi Sad companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0030",
+            "field": "open_to",
+            "quote": "joint projects with companies generating high-volume operational or security logs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0030",
+            "field": "open_to",
+            "quote": "contract research on anomaly detection pipeline design and deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

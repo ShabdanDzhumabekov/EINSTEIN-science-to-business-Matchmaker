@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0194",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0194",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What explains the increase in manganese between AquaCikl’s greywater inlet and coagulation outlet, and which retrofit-compatible operating change could address both manganese and iron exceedances? The first experiment would test whether Marković’s metal-treatment diagnostic methods transfer to this low-concentration greywater matrix through analytical recovery checks, time-aligned stage sampling and controlled media/tank-contact tests, before testing any corrective intervention.",
+    "rationale": [
+      {
+        "text": "Marković has industrial process-audit experience relevant to investigating the source of a treatment-stage failure, although that experience is in electroplating rather than greywater recycling.",
+        "sources": [
+          {
+            "recordId": "R0194",
+            "field": "industry_experience",
+            "quote": "providing on-site process audits and sizing calculations for EC unit installations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His laboratory provides potentially useful metal-analysis and bench-testing infrastructure; suitability for the required manganese and iron concentrations must be checked.",
+        "sources": [
+          {
+            "recordId": "R0194",
+            "field": "bio",
+            "quote": "The group operates a dedicated electrochemical reactor laboratory equipped with monopolar and bipolar pilot-scale cells, atomic absorption spectrometry, and TOC analysers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His experimental work supports structured testing of interacting process variables rather than further unstructured dose changes.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02493",
+            "field": "abstract",
+            "quote": "A central composite design (CCD) with five factors—current density, pH, reaction time, NaCl concentration, and inter-electrode gap—was applied",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02493",
+            "field": "abstract",
+            "quote": "The study demonstrates RSM as an efficient tool for multi-parameter EC optimisation in SME contexts.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience collecting operational data across industrial sites, relevant to comparing the three affected installations and distinguishing common causes from site-specific conditions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02499",
+            "field": "abstract",
+            "quote": "On-site measurements were conducted at seven electroplating SMEs in Vojvodina that had installed or were trialling EC units of varying design.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02499",
+            "field": "abstract",
+            "quote": "Data collected over six months included influent and effluent metal concentrations, electrical energy meters, electrode mass loss records, and treated volume logs.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Use the company-reported discharge thresholds of 0.10 mg/L manganese and 0.30 mg/L iron as provisional acceptance criteria, subject to confirming the applicable regulation, permit and sampling basis.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The diagnostic and intervention programme must fit within four months of company staffing and leave time before the five-month reinspection. The researcher reports capacity for only one new project start in 2026; his actual start date and effort remain unconfirmed.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0194",
+            "field": "notes",
+            "quote": "He is not on sabbatical and has capacity for one new project start in 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must prioritise a verified root cause and a change compatible with existing installations, not a major replacement or an assumed deployment of the researcher's EC–EO equipment.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The investigation must reconcile the reported inlet-to-outlet manganese increase before treating this solely as insufficient removal; a repeat of dose or pH adjustment alone is not an adequate diagnostic plan.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Field validation must be planned around operating installations and coordinated stage sampling, using the available three-site access rather than assuming an unrestricted pilot facility.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "with access to three operating installations for field testing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The supplied research evidence concerns predominantly electroplating metals and cyanides, often at much higher concentrations. It does not validate manganese removal, manganese cycling or conventional coagulation diagnosis in laundry greywater; the first real-matrix analytical and contact tests must assess this transfer gap.",
+      "A new electrochemical treatment stage could conflict with the no-major-equipment requirement. Iron-electrode treatment would also require checking residual iron rather than assuming it helps both discharge problems.",
+      "The apparent manganese increase could reflect release from materials or reagents, storage-related cycling, concentration effects, or non-comparable sampling. None is established, and a premature choice of mechanism could waste the short investigation window.",
+      "Iron concentrations, dissolved versus total metal results, analytical detection limits and detailed process routing are absent. These gaps could prevent a defensible mass balance or an intervention that addresses both metals.",
+      "Participation in joint projects is open, but availability for this deadline is unknown. The stated single 2026 project slot may not align with the reinspection schedule.",
+      "Budget, permitted operational disruption and access to suitably sensitive accredited analyses are unknown. These could limit replication and field validation."
+    ],
+    "questions": [
+      "Can Marković commit a start date and sufficient supervision and laboratory time within the four-month project window, and is his single new-project slot still available?",
+      "What are the actual iron concentrations by stage, and do the manganese and iron limits apply to total, dissolved or another specified analytical fraction? Can the applicable regulation, site permits and reinspection protocol be supplied?",
+      "Can AquaCikl provide process-flow diagrams, recycle and backwash routes, flows, residence times, historical metal results and time-aligned operating logs for all three installations?",
+      "Which coagulant grades and batches, filter media, carbon, wetted materials and cleaning reagents are used at each site, and can representative materials and reagent samples be tested for manganese and iron release?",
+      "What methods, preservation procedures, filtration practices, detection limits and quality-control results were used for inlet and outlet measurements? Can the first campaign include blanks, duplicates, matrix spikes and accredited split-sample confirmation?",
+      "Can the first experiment combine time-aligned stage sampling with dissolved/total metal measurements and controlled media/tank-contact tests under representative pH and redox conditions, to distinguish actual release from sampling or matrix effects?",
+      "What budget and allowable operating changes or shutdowns are available, and what evidence of sustained performance must be obtained before reinspection?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0194",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0194",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0013",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0013",
+    "name": "Igor Marić",
+    "faculty": "Faculty of Agriculture",
+    "department": "Department of Plant and Environmental Protection",
+    "fields": [
+      "Soil Science",
+      "Environmental Chemistry",
+      "Agricultural Modelling",
+      "Land Management"
+    ],
+    "keywords": [
+      "soil buffering capacity",
+      "lime requirement",
+      "cation exchange capacity",
+      "hydromorphic soils",
+      "chernozem",
+      "soil amelioration",
+      "base saturation",
+      "soil acidification",
+      "Vojvodina soils",
+      "Pannonian Basin pedology"
+    ],
+    "openTo": [
+      "contract research on soil testing method validation",
+      "consulting on amelioration design and liming programs",
+      "joint projects involving variable-rate lime application technology",
+      "equipment access (AAS, ion chromatography, automated titration units)",
+      "student internships in soil chemistry laboratory",
+      "industrial PhD supervision"
+    ],
+    "bio": {
+      "recordId": "R0013",
+      "field": "bio",
+      "text": "Igor Marić completed his B.Sc. and M.Sc. degrees in Agronomy at the Faculty of Agriculture, University of Novi Sad, in 2005 and 2008 respectively, followed by a Ph.D. in Soil Science from the same institution in 2013. He was appointed Teaching Assistant in 2013 and promoted to Assistant Professor in 2018. His research focuses on quantitative modelling of soil buffering capacity and lime requirement estimation across hydromorphic and chernozem soil associations of Vojvodina and the broader Pannonian Basin. The group maintains a soil chemistry laboratory equipped with an automated ion chromatography system, a flame atomic absorption spectrometer, and titration units for buffer curve determination. He teaches undergraduate courses in Soil Fertility and Soil Amelioration and supervises M.Sc. theses on acidification dynamics and cation exchange capacity measurement protocols."
+    },
+    "industryExperience": {
+      "recordId": "R0013",
+      "field": "industry_experience",
+      "text": "Marić has provided paid consultancy to two agricultural cooperatives in Vojvodina regarding large-scale liming programmes, involving soil survey design and interpretation of buffering data for approximately 2 300 ha of arable land. He has no formal employment history outside academia."
+    },
+    "notes": {
+      "recordId": "R0013",
+      "field": "notes",
+      "text": "Marić is comfortable with applied problems and has good familiarity with the practical constraints of field sampling and routine laboratory settings. He is particularly interested in connecting with companies developing soil sensors or precision agriculture hardware that could be evaluated against his laboratory reference data. His group's sample archive of over 800 characterised Vojvodina soils is a resource that external partners could access through a formal collaboration agreement."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-00143",
+        "kind": "publication",
+        "title": "Buffer pH method calibration for lime requirement estimation on Vojvodina chernozem soils",
+        "body": {
+          "recordId": "SYN-PUB-00143",
+          "field": "abstract",
+          "text": "Reliable lime requirement prediction depends on the choice of buffer pH method and its local calibration. This study compared three buffer solutions—modified Shoemaker–McLean–Pratt (SMP), Adams–Evans, and a phosphate-acetate buffer—against incubation lime requirement values obtained from 48 chernozem soil samples collected across five municipalities in northern Vojvodina. Soil pH ranged from 5.4 to 6.8, organic carbon from 1.9 to 3.6 percent, and clay content from 22 to 41 percent. The SMP buffer showed the strongest linear relationship with incubation lime requirement (r² = 0.87, RMSE = 0.31 t CaCO₃ ha⁻¹), while the Adams–Evans method systematically underestimated requirements by 12–18 percent in soils with high smectite content. Regression equations specific to chernozem texture classes are presented, and practical correction factors are proposed for laboratory use. The results suggest that regional recalibration is necessary before any single buffer method is adopted in routine advisory services across the Pannonian Basin."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00144",
+        "kind": "publication",
+        "title": "Cation exchange capacity fractionation in seasonally waterlogged soils of the Sava–Danube interfluve",
+        "body": {
+          "recordId": "SYN-PUB-00144",
+          "field": "abstract",
+          "text": "Hydromorphic soils subject to seasonal waterlogging exhibit dynamic shifts in cation exchange capacity (CEC) due to redox-driven changes in organic matter and iron-oxyhydroxide surfaces. Sixty-two soil profiles from the Sava–Danube interfluve were sampled at three depths (0–20, 20–40, and 40–60 cm) in dry and wet seasons over two consecutive years. CEC was measured by the ammonium acetate method at pH 7.0, and exchangeable cation composition was determined by AAS. CEC values in the surface horizon ranged from 14.2 to 31.7 cmol(+) kg⁻¹ and declined by an average of 28 percent at 40–60 cm in waterlogged profiles, with calcium saturation dropping from 78 to 51 percent. The seasonal difference in surface CEC was statistically significant (paired t-test, p < 0.01) and correlated with loss-on-ignition fluctuation. Implications for amelioration planning and lime timing are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00145",
+        "kind": "publication",
+        "title": "Spatial variability of soil reaction and base saturation across a toposequence in the Fruška Gora footzone",
+        "body": {
+          "recordId": "SYN-PUB-00145",
+          "field": "abstract",
+          "text": "A transect-based study was conducted along a 4.2 km toposequence descending from Fruška Gora ridgeline to alluvial terrace to characterise spatial trends in pH, exchangeable acidity, and base saturation. Ninety-six composite samples were collected on a 200 m grid and analysed for pH (water and KCl), exchangeable Al³⁺, H⁺, Ca²⁺, Mg²⁺, K⁺, and Na⁺. Kriging-interpolated maps showed a clear acidification gradient from ridge (mean pHKCl 4.6) to upper terrace (pHKCl 5.9), with exchangeable Al³⁺ reaching 3.8 cmol(+) kg⁻¹ in Cambisol-dominated ridge soils. Base saturation increased from 42 to 89 percent along the toposequence. The study identified two distinct liming priority zones and estimated an aggregate lime requirement of 5 800 t CaCO₃ for the surveyed 480 ha catchment. Results are discussed in the context of precision amelioration scheduling."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00146",
+        "kind": "publication",
+        "title": "Modelling lime requirement from readily available soil parameters: a comparison of regression and random forest approaches",
+        "body": {
+          "recordId": "SYN-PUB-00146",
+          "field": "abstract",
+          "text": "Laboratory determination of lime requirement through incubation or buffer methods is time-consuming and not universally available. This study assessed whether lime requirement can be predicted sufficiently accurately from routinely measured soil variables—pH (KCl), organic carbon, clay content, and electrical conductivity—using multiple linear regression and random forest models. A dataset of 310 topsoil samples from Vojvodina representing three soil associations (chernozem, eutric Fluvisol, and gleyic Phaeozem) was split 70:30 for training and testing. The random forest model outperformed linear regression (test RMSE 0.41 vs. 0.68 t CaCO₃ ha⁻¹; R² 0.81 vs. 0.64), with clay content and organic carbon identified as the most influential predictors by permutation importance. Cross-validation across soil associations revealed that the model trained on chernozem alone performed poorly on Fluvisol samples (RMSE increased to 1.12), indicating that association-specific training sets are necessary for practical deployment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00147",
+        "kind": "publication",
+        "title": "Soil buffering curves under long-term calcium carbonate application: evidence from a 12-year field experiment",
+        "body": {
+          "recordId": "SYN-PUB-00147",
+          "field": "abstract",
+          "text": "Long-term effects of repeated liming on soil acid–base buffering behaviour are rarely quantified. This paper presents data from a 12-year field experiment on a slightly acid chernozem at the Rimski Šančevi experimental station where CaCO₃ was applied at 0, 2, 4, and 6 t ha⁻¹ every four years. Soil was sampled in years 0, 4, 8, and 12 at two depths. Acid–base titration buffer curves were constructed from each sample by incremental HCl and NaOH additions. The highest application rate elevated pHKCl from 5.7 to 6.5 after 12 years and shifted the inflection point of the buffer curve by 0.4 pH units. Buffer capacity, calculated as the slope of the linear portion of the titration curve, increased proportionally with cumulative CaCO₃ input (r = 0.77). Exchangeable Mg²⁺ declined slightly at 40–60 cm under the highest treatment, a finding with practical implications for maintaining cation balance."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00148",
+        "kind": "publication",
+        "title": "Exchangeable sodium percentage dynamics following gypsum amendment in solonetz soils of the Banat plain",
+        "body": {
+          "recordId": "SYN-PUB-00148",
+          "field": "abstract",
+          "text": "Solonetz soils in the Banat plain suffer from high exchangeable sodium percentage (ESP) that restricts permeability and root development. A two-year micro-plot experiment tested four gypsum doses (0, 5, 10, and 15 t ha⁻¹) combined with two irrigation water qualities on solonetz soils with initial ESP values of 21–36 percent. ESP, hydraulic conductivity, and exchangeable cation composition were measured at six-month intervals. The 10 t ha⁻¹ dose reduced ESP below the 15 percent threshold within 18 months across all water quality treatments, whereas 5 t ha⁻¹ achieved this only when irrigation EC was below 0.8 dS m⁻¹. Hydraulic conductivity improved from 0.03 to 0.19 cm h⁻¹ at the highest dose after 24 months. A simple first-order kinetic model fitted ESP decline well (R² = 0.84), and dose-specific rate constants are tabulated."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00149",
+        "kind": "publication",
+        "title": "Sensitivity analysis of lime requirement models to measurement uncertainty in soil pH and CEC inputs",
+        "body": {
+          "recordId": "SYN-PUB-00149",
+          "field": "abstract",
+          "text": "This conference paper presents a Monte Carlo sensitivity analysis applied to four lime requirement models (Shoemaker–McLean–Pratt, Mehlich, Nair–Graetz, and a locally calibrated Vojvodina model) to quantify how analytical uncertainty in input variables propagates to uncertainty in lime dose recommendation. Input uncertainties were defined from interlaboratory comparison data for 15 Serbian soil testing laboratories: coefficient of variation was 2.1 percent for pH(KCl), 8.4 percent for CEC, and 11.7 percent for organic carbon. Ten thousand Monte Carlo iterations per model were run for three reference soils representing light, medium, and heavy texture classes. Resulting lime dose uncertainty expressed as 95 percent prediction intervals ranged from ±0.6 to ±2.3 t CaCO₃ ha⁻¹ depending on model and texture, with organic carbon uncertainty being the dominant driver in two of the four models. The results support stricter interlaboratory harmonisation for organic carbon determination."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00150",
+        "kind": "publication",
+        "title": "Relationship between soil organic matter fractions and pH buffering intensity in degraded Vojvodina chernozem",
+        "body": {
+          "recordId": "SYN-PUB-00150",
+          "field": "abstract",
+          "text": "Organic matter contributes substantially to soil acid–base buffering through carboxylate and phenolic functional groups, yet its fractions differ in buffering effectiveness. This study isolated humic acids, fulvic acids, and humin fractions from 36 degraded chernozem samples spanning a gradient of organic carbon from 0.9 to 3.1 percent. Potentiometric titration of isolated fractions was conducted from pH 3 to 10. Humic acid fractions showed the highest specific buffering capacity (mean 420 mmol H⁺ kg⁻¹ per pH unit), followed by humin (310) and fulvic acid (185). In a multiple regression including clay CEC, the organic matter fractions together explained 71 percent of variance in whole-soil buffering intensity. Degraded soils with organic carbon below 1.5 percent had buffering capacities 38 percent lower than undegraded counterparts at equivalent clay content, suggesting that organic matter loss significantly reduces resilience to acidification inputs."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00151",
+        "kind": "publication",
+        "title": "A GIS-assisted framework for catchment-scale lime requirement mapping integrating soil association boundaries and topographic wetness index",
+        "body": {
+          "recordId": "SYN-PUB-00151",
+          "field": "abstract",
+          "text": "Existing lime requirement maps for Vojvodina are typically produced at the field level and do not account for lateral redistribution of bases through surface and subsurface flow. This study developed a catchment-scale mapping framework combining conventional soil survey data with topographic wetness index (TWI) derived from a 5 m resolution digital elevation model. Lime requirement was first estimated at 214 sample points using the calibrated SMP buffer method, then modelled as a function of soil association membership, TWI, and depth-to-groundwater using a generalised additive model (GAM). The framework was applied to three 200–600 ha catchments in south Bačka. Cross-validation RMSE was 0.55 t CaCO₃ ha⁻¹, comparable to within-field variability. Maps highlighted systematically higher lime needs in concave footslope positions within otherwise uniformly classified chernozem zones, with practical consequences for variable-rate lime application planning."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00152",
+        "kind": "publication",
+        "title": "Leaching risk assessment of acetochlor in Vojvodina soils using column experiments and the PELMO model",
+        "body": {
+          "recordId": "SYN-PUB-00152",
+          "field": "abstract",
+          "text": "Undisturbed soil columns (50 cm length, 10 cm diameter) representing three Vojvodina soil series (chernozem, solonetz, and alluvial meadow soil) were used in laboratory leaching experiments. Acetochlor was applied at the soil surface at 2.0 kg a.i. ha⁻¹ and columns were irrigated at 5 mm day⁻¹ for 60 days. Leachate fractions (every 5 days) and soil layers (0–10, 10–25, 25–50 cm) were analysed by GC-ECD. Acetochlor was detected in leachate from the solonetz columns starting at day 20, reaching a maximum concentration of 0.82 µg L⁻¹ at day 35, exceeding the EU drinking water limit of 0.1 µg L⁻¹. Chernozem columns showed no leachate detections above 0.05 µg L⁻¹. PELMO 3.3 model predictions agreed reasonably with observed chernozem data (normalised root mean squared error 18%) but underestimated leaching from solonetz by a factor of 2.4, attributed to preferential flow. Results indicate a site-specific leaching risk for solonetz soils common in southern Vojvodina."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0172",
+        "kind": "project",
+        "title": "Soil Buffering Capacity Indicators for Sustainable Amelioration Planning in the Pannonian Basin",
+        "body": {
+          "recordId": "SYN-PRJ-0172",
+          "field": "summary",
+          "text": "SOLBUFF aims to produce a regionally validated set of buffering capacity indicators that can be measured in routine soil testing laboratories and translated directly into amelioration recommendations. The project covers chernozem, hydromorphic, and solonetz soil associations across Vojvodina, sampling approximately 400 profiles over three years. Laboratory work includes potentiometric buffer curve construction, organic matter fractionation, and X-ray diffraction clay mineralogy. The outputs will include a published calibration dataset, an open-access decision-support tool for lime and gypsum dose calculation, and draft amendments to the national soil testing protocol currently used by agricultural extension services."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0173",
+        "kind": "project",
+        "title": "Humus Quality Monitoring for Smart Liming in the Tisa River Basin",
+        "body": {
+          "recordId": "SYN-PRJ-0173",
+          "field": "summary",
+          "text": "HUMSMART brought together soil science teams from Serbia and Hungary to harmonise organic matter characterisation methods and examine links between humus quality indicators and soil acid buffering across the Serbian–Hungarian border region of the Tisa basin. Igor Marić led Work Package 3 covering laboratory inter-calibration and the development of a shared soil sample archive. The project produced joint sampling campaigns on 14 paired transects, a bilingual laboratory manual, and a dataset of 520 soil profiles shared between partners. The project also funded two short researcher exchanges to the University of Debrecen. Results fed into a joint policy brief submitted to both national agricultural ministries."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1205",
+        "kind": "project",
+        "title": "Orchard Floor Vegetation as a Reservoir for Phytoseiid Biological Control Agents in Low-Input Apple Production",
+        "body": {
+          "recordId": "SYN-PRJ-1205",
+          "field": "summary",
+          "text": "The project examined how different orchard floor plant communities—permanent grass, legume-grass mixtures, and Phacelia intercrop strips—affect resident phytoseiid mite populations and their capacity to suppress Panonychus ulmi in apple orchards of Vojvodina under reduced-acaricide management. Field experiments were conducted at the Rimski Šančevi station and in two commercial orchards. Key activities included seasonal dispersal tracking by trunk sticky-band traps, mesocosm predator-prey ratio studies, and the development of a decision-support spreadsheet tool for growers. The project trained two PhD students and produced seven peer-reviewed publications. Outcomes were communicated to regional agricultural extension advisors through a series of workshops held in Novi Sad and Sremska Mitrovica."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0013",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0013",
+            "field": "open_to",
+            "quote": "contract research on soil testing method validation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0013",
+            "field": "open_to",
+            "quote": "joint projects involving variable-rate lime application technology",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “LinguaBot reports inflection-related search misses and script switching, including within-word typos. In 12,000 real support queries from one bank client, about 18% returned no useful result.” Also: “The company’s Elasticsearch setup uses a Croatian stemmer. It identifies vocabulary updates without full re-indexing as an unresolved part of its search problem.” These identify the concrete retrieval failures, measured bank baseline, existing system and vocabulary-update requirement rather than a generic Serbian NLP goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Also require agreed precision, latency and maintenance limits, Elasticsearch compatibility, updates without full re-indexing, tooling/data costs within approximately EUR 8,000 and a testable prototype within six months.” Verification includes “months five through six for held-out testing and update rehearsal” and “Log update failures, linguist minutes, engineering effort and recurring synonym work to test whether maintenance remains manageable”. Staffing remains bounded by “within an agreed workload”; access and integration remain prerequisites in Open questions: “Can client permissions support the required data and snapshots” and “does the no-full-re-index constraint permit incremental document updates, auxiliary lexicons or query-time services?” These make budget, schedule, maintenance and technical compatibility acceptance conditions, with a rehearsal and effort records, without assuming unconfirmed access or allocations."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts [F6]: “Nikolić’s work provides Serbian cross-script lemmatization, within-token normalization and retrieval comparisons. Her lexicon evaluation reports lower paradigm correctness for borrowings than common vocabulary: 78.6% versus 91.3%.” Proposed next steps connect those documented methods to the experiment through “lemmatization alone, within-token normalization alone, paradigm expansion alone, all three pairwise combinations, and all three together.” Our inference limits transfer explicitly: “Corpus and social-media results do not establish performance on banking or telecom support. Borrowing errors suggest particular risk for new product names; normalization and expansion could also merge distinct meanings and increase irrelevant retrieval.” The cited works support the candidate methods, while the proposal distinguishes published linguistic results from unproven support-search performance and identifies relevant correctness and precision risks."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts document that “its two linguists can annotate or validate solutions” and that “Nikolić’s work provides Serbian cross-script lemmatization, within-token normalization and retrieval comparisons.” Proposed next steps distinguish proposed responsibilities: “Propose that LinguaBot engineers prepare permitted query-response data and matching knowledge-base snapshots, reproduce the bank baseline and implement integration. Its linguists would define usefulness and adjudicate results within an agreed workload. Nikolić would guide morphology, normalization, paradigm induction and error analysis.” Open questions ask whether Nikolić can confirm her time and whether LinguaBot can identify “engineering ownership and funding for research time”; the needed engineering, annotation and research contributions are identified without treating them as confirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps specify “a controlled eight-configuration comparison: current Elasticsearch baseline, lemmatization alone, within-token normalization alone, paradigm expansion alone, all three pairwise combinations, and all three together” and require “Define each component independently and hold documents, ranking and query sets constant.” Inputs are “permitted query-response data and matching knowledge-base snapshots”. Selection and evaluation are separated: “Select the best configuration on tuning data; evaluate once on independent held-out queries from the original bank and separately on other clients.” Additional safeguards are “check duplicate, client and temporal leakage” and “Use genuinely later vocabulary held out from tuning”. These define the inputs, baseline, comparisons and independent evaluation, while permissions, implementation details and acceptance limits remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps define the event, exposure, repeat treatment and labels: “Count one miss per query returning no useful result at an agreed depth; denominator is all evaluated queries, without merging. Adjudicate every query, counting unresolved cases as misses.” The proposed company-metric gate is “the bank’s one-sided 95% upper miss-rate bound is below 5%”, with separate safeguards that “held-out inflectional, mixed-script and genuinely new-product cases separately meet pre-agreed useful-retrieval limits, including after a vocabulary-update rehearsal.” Secondary gates require “agreed precision, latency and maintenance limits”, budget, compatibility and schedule compliance. Open questions require the “retrieval depth and usefulness rubric” and acceptance limits to be “fixed before testing”; “Insufficient evaluation evidence means no pass; no particular component must win.” Thus acceptance depends on useful retrieval and operational requirements, not relative method superiority, with unresolved metric details explicitly blocking acceptance until agreed."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps include the baseline, each individual component, “all three pairwise combinations, and all three together”, with the instruction to “Define each component independently and hold documents, ranking and query sets constant.” Potential benefits say only that the experiment “could identify which changes address actual support-search misses”. The full component comparison supports distinguishing individual and combined effects under comparable conditions, while the text makes no claim that corpus performance or the combined system already establishes a causal retrieval improvement."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference states: “Corpus and social-media results do not establish performance on banking or telecom support. Borrowing errors suggest particular risk for new product names; normalization and expansion could also merge distinct meanings and increase irrelevant retrieval.” Verified facts give the documented borrowing limitation, “78.6% versus 91.3%”. Proposed next steps address leakage and maintenance through “check duplicate, client and temporal leakage” and recording effort “rather than assuming corpus-derived vocabulary eliminates manual validation.” Open questions cover availability, research funding, client permissions, privacy, infrastructure, licensing and Elasticsearch compatibility; the main methodological and execution risks are identified, and unresolved conditions remain questions rather than asserted facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić lists joint projects among her participation interests.” Our inference: “The proposal is conditional because Nikolić’s availability is unknown.” Open questions ask: “Can Nikolić confirm availability and time commitment for this joint project”. Responsibilities appear under “Propose that” and use “would”; this matches the documented openness to joint projects without equating that openness with availability or an agreed role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits, company: “The experiment could identify which changes address actual support-search misses and whether the best configuration meets the bank target without hiding failures on script mixing or new products.” Researcher: “Subject to agreement and permissions, Nikolić could test transfer of corpus-based methods to support retrieval using adjudicated client queries, controlled component comparisons and vocabulary-update evidence.” Both are conditional gains directly supported by the proposed retrieval comparison, held-out evaluation and update rehearsal, rather than guaranteed deployment or research outcomes."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.93,
+        0.82,
+        0.82,
+        0.96,
+        0.99,
+        0.92,
+        0.73
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Report telecom, mixed-script and unseen-term results separately.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We need an approach that handles lemmatisation or indexing in a way that is accurate for Serbian, tolerates script mixing automatically, and can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009",
+            "field": "about",
+            "quote": "today we serve four banks and two telecoms providers across Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The bank-wide confidence bound could pass while mixed-script queries, new terminology or telecom queries remain unacceptable, because separate reporting does not constrain acceptance. Add a prerequisite to agree separate acceptance criteria and sufficient evaluation evidence for these populations; the company need not adopt the bank's numerical threshold for every subset.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: the selected configuration's upper 95% confidence bound is below 5% on a separate held-out sample from the original bank population, with no precision loss against baseline.",
+        "sources": [],
+        "explanation": "The miss-rate gate is defined, but the additional precision gate has no retrieval cutoff, counted unit, aggregation rule or statistical acceptance condition, so different reasonable measurements could produce opposite decisions. Briefly make agreement on a precision definition and paired uncertainty-based no-loss rule a prerequisite to tuning and evaluation.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Go/no-go additionally requires sustained below-5% bank performance, an agreed maintenance-hours ceiling, tooling/data costs within approximately EUR 8,000, and a testable prototype within six months.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "“Sustained” has no defined update sequence, evaluation exposure or statistical rule, allowing a single favorable post-update replay to stand in for keeping the miss rate below 5% as vocabulary changes. Require an agreed sequence of vocabulary-update rounds with independent post-update evaluation and an explicit confidence-based acceptance rule, which can be stated as a prerequisite within the existing length.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"LinguaBot reports that about 18% of a sample of 12,000 real support queries from one bank client returned no useful result; its analysis attributed more than half of those misses to morphology or script confusion.\" Also: \"The company's Elasticsearch setup uses a Croatian-oriented stemmer, while users mix Latin and Cyrillic even within words.\" These identify the concrete retrieval failure, its measured baseline and the relevant linguistic mechanisms rather than a generic search-improvement goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Replay new terminology without full re-indexing or continually expanding manual synonym lists; measure post-update miss rate, index operations, elapsed update time and linguist hours.\" Also: \"Go/no-go additionally requires sustained below-5% bank performance, an agreed maintenance-hours ceiling, tooling/data costs within approximately EUR 8,000, and a testable prototype within six months.\" Staffing and access remain conditional: \"Subject to agreement, Nikolić would guide morphology, normalization and error analysis; LinguaBot engineers would implement Elasticsearch comparisons, and its linguists would validate relevance and new paradigms within reserved hours.\" And: \"Before implementation, establish protected data access, commercial resource licences, deployment limits and ownership of maintenance.\" These respect the update, budget, time, data and staffing constraints and identify feasibility measurements or prerequisites; the performance-acceptance gaps are addressed under metric."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Nikolić's work describes cross-script lemmatization and normalization inside tokens.\" And: \"Her morphological-lexicon study reports lower paradigm correctness for borrowings than for common vocabulary: 78.6% versus 91.3%.\" Our inference: \"This suggests a strong methodological fit, but corpus and social-media results do not establish support-retrieval performance. Banking terminology, telecom terminology and within-word typos need direct testing; borrowing errors and meaning conflation could increase false matches.\" These connect her documented methods to the specific failure mechanisms while explicitly limiting transfer and identifying the reported borrowing-quality trade-off."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"LinguaBot describes around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate solutions.\" Proposed next steps: \"Subject to agreement, Nikolić would guide morphology, normalization and error analysis; LinguaBot engineers would implement Elasticsearch comparisons, and its linguists would validate relevance and new paradigms within reserved hours.\" Our inference: \"Openness to joint projects does not establish a time commitment, company staffing or an agreed total project budget.\" These distinguish documented resources and research expertise from proposed responsibilities and unconfirmed allocations."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Propose a first experiment using permitted query-response pairs and knowledge-base documents, with separate tuning and held-out evaluation samples; verify independence through duplicate, client and time checks.\" Also: \"Compare current Elasticsearch with a controlled eight-configuration matrix: baseline, Serbian lemmatization, within-token normalization, paradigm expansion, each pair and all three, holding documents and ranking settings constant. Select the best configuration on tuning data.\" These specify inputs, the operational baseline, a complete component-comparison design and separate selection and evaluation data; access and rubric details remain explicit prerequisites rather than assumed facts."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Linguists would judge every evaluation query using a fixed usefulness rubric, including non-misses. Count each query once; miss rate is queries without useful results divided by all evaluated queries, with unresolved judgments counted as misses.\" Also: \"Proposed go/no-go: the selected configuration's upper 95% confidence bound is below 5% on a separate held-out sample from the original bank population, with no precision loss against baseline.\" These define the primary bank miss-rate unit, denominator, label acquisition, uncertain-label treatment and confidence rule. However, \"Report telecom, mixed-script and unseen-term results separately\" supplies reporting but no acceptance rule for those populations; \"with no precision loss against baseline\" leaves precision and its statistical acceptance undefined; and \"Go/no-go additionally requires sustained below-5% bank performance\" does not define the update rounds or evaluation exposure needed to establish sustained performance."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Compare current Elasticsearch with a controlled eight-configuration matrix: baseline, Serbian lemmatization, within-token normalization, paradigm expansion, each pair and all three, holding documents and ranking settings constant.\" Potential benefits: \"The experiment could identify which components reduce actual support-search misses and whether vocabulary updates remain practical without full re-indexing.\" The full component matrix and common documents and ranking settings support these cautious component-level conclusions and allow component interactions to be examined; no unsupported deployment or linguistic-accuracy-to-retrieval causal claim is made."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Banking terminology, telecom terminology and within-word typos need direct testing; borrowing errors and meaning conflation could increase false matches.\" Also: \"Query-time normalization and expansion could offer an incremental-update route, but compatibility with LinguaBot's Elasticsearch mappings and avoidance of full re-indexing remain unvalidated.\" Open questions ask: \"What client permissions, anonymization, retention, external-service restrictions and resource licences would govern access to queries, responses and knowledge-base documents?\" These identify domain transfer, false matches, the documented borrowing weakness, architectural feasibility and access/licensing uncertainty without presenting unresolved matters as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"This joint-project proposal is conditional because Nikolić's availability is unknown. Openness to joint projects does not establish a time commitment, company staffing or an agreed total project budget.\" Open questions: \"Can Nikolić confirm availability for this six-month joint project and agree a feasible allocation alongside company engineering and linguist time?\" These correctly distinguish documented openness to joint projects from unknown availability and make participation conditional."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could identify which components reduce actual support-search misses and whether vocabulary updates remain practical without full re-indexing.\" And: \"Subject to agreement and permissions, the project could provide support-domain evaluation material for studying cross-script morphology, borrowing errors and the gap between linguistic accuracy and retrieval usefulness.\" Both are plausible outputs of the proposed comparisons and validation work, expressed as potential benefits rather than guarantees or agreed commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.91,
+        0.96,
+        0.98,
+        0.98,
+        0.85,
+        0.98
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

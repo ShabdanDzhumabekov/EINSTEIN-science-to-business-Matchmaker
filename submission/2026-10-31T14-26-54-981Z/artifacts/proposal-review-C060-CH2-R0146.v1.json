@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C060-CH2-R0146",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C060-CH2-R0146",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C060-CH2-R0146",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company reports a contractual benchmark of displayed ETAs within 90 seconds of actual arrival at least 85% of the time. Its current PassengerView uses the published timetable plus a last-position offset.” Proposed next steps: “Compare against current PassengerView using prediction-time information only.” These identify the existing system and concrete contractual shortfall to test, rather than substituting generic prediction accuracy."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Its PostgreSQL archive contains roughly 2.8 billion rows, and weather data is not integrated”; “It offers a senior backend engineer and domain specialist part-time; its Python-capable data engineer lacks time-series modelling experience.” Our inference proposes “A bounded extraction and replay study”. Proposed next steps require “Before extraction, sign an operator-authorised data-sharing agreement”, “Start without weather features”, “company-led Java/on-premise integration and researcher-led modelling handover”, and “Measure telemetry-to-display delay and serving cost against agreed deployment limits.” Acceptance additionally requires “feasible integration within the remaining twelve-month window.” Open questions ask for the actual approval date, availability and effort, and “compute, latency, refresh-rate, budget and ownership limits”. These respect the documented access, scale, staffing, technology and timing constraints, while making execution and deployment feasibility conditional on resolving the unknown limits."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Novaković's published work develops Kalman-filter travel-time estimation from AVL. Her cross-network study reports topology-dependent transfer limits; her recurrent-model study reports weaker evening-peak performance on shared congested corridors.” Our inference: “Her AVL modelling experience suggests a strong methodological fit, but results from other networks and error metrics do not establish Romanian contractual performance.” Proposed next steps assign proposed development of “locally calibrated state-space and GRU candidates”. Together these connect her documented methods to the company's AVL problem while explicitly limiting transfer claims and identifying reported weaknesses."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts distinguish the company's offered part-time staff and historical-data access from Novaković's published modelling experience and collaboration interests. Proposed next steps: “Company staff would extract Romanian AVL/timetable samples and validate arrivals; Novaković would develop locally calibrated state-space and GRU candidates” and “Propose company-led Java/on-premise integration and researcher-led modelling handover, including fallback, retraining and monitoring procedures”. Our inference says “This joint-project proposal is conditional: current availability remains unconfirmed”. These identify the necessary extraction, validation, modelling, integration and handover contributions as proposals, not confirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose an eight-week replay experiment after prerequisites are resolved”; “Company staff would extract Romanian AVL/timetable samples and validate arrivals; Novaković would develop locally calibrated state-space and GRU candidates”; “Compare against current PassengerView using prediction-time information only”; and “Separate tuning and later held-out periods by municipality, checking independence and leakage; select the configuration on tuning data.” The plan also requires independently checked arrivals and reconstructed historical timetables, with “Missing Romanian evaluation data” an “unresolved prerequisite”. These specify inputs, baseline, candidate conditions and separate selection/evaluation periods without assuming unavailable labels or customer coverage."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Count each agreed eligible display update once, without merging; denominator is all eligible updates during observed service periods”; “Score absolute arrival error ≤90 seconds using validated arrivals; conservatively count unresolved outcomes and missing predictions as failures”; and “Report census counts, service-day uncertainty, and separate peak/disruption results.” The explicit proposed acceptance is “the best tuning-selected configuration, including baseline, reaches ≥85% separately for every customer's holdout, with a service-day confidence lower bound ≥85%, plus feasible integration within the remaining twelve-month window”; “Insufficient labels, customer coverage, or precision means no pass.” Arrival definitions, horizons and eligibility must be agreed before extraction, and deployment limits must also be agreed. These define the counted unit, repeats, denominator, census numerator, uncertain outcomes, statistical acceptance and separate customer acceptance on the company's own metric rather than relative model improvement."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps compare candidates “against current PassengerView using prediction-time information only” with “Separate tuning and later held-out periods by municipality”. Our inference explicitly states that “results from other networks and error metrics do not establish Romanian contractual performance”. Potential benefits say the experiment “could establish whether its existing data supports the contractual ETA benchmark” and “could provide multi-network AVL material to test transfer”. These support comparative predictive feasibility, without claiming that the design isolates architectural, topology, weather or congestion effects."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Verified facts name “topology-dependent transfer limits” and “weaker evening-peak performance on shared congested corridors”. Our inference says “Congestion remains a specific transfer risk”, flags the possible schedule conflict, and rejects “assuming that a research prototype is production-ready”. Proposed next steps require validated arrivals, independent door-event checks, historical timetable reconstruction, confirmed disruption/weather annotations and deployment profiling; “Insufficient labels, customer coverage, or precision means no pass.” Open questions ask which Romanian histories and verifiable records exist and what deployment limits apply. These identify transfer, labels, coverage, leakage, missing weather information, scale, deployment and scheduling risks while retaining unknowns as prerequisites or questions."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Novaković lists joint projects with urban-mobility software companies among her collaboration interests.” Our inference: “This joint-project proposal is conditional: current availability remains unconfirmed, and the stated 2026 capacity may conflict with the company's original implementation schedule.” Open questions ask whether she can “confirm current availability, start date and effort”. The joint-project format matches her stated openness, and the proposed modelling and handover roles remain conditional rather than assigning an unconfirmed commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could establish whether its existing data supports the contractual ETA benchmark for each Romanian customer and identify whether data quality, modelling or deployment is the main obstacle”; “Subject to agreement, the project could provide multi-network AVL material to test transfer of state-space and recurrent models under congestion and operational serving constraints.” These are appropriately conditional gains supported by the proposed arrival audit, customer-specific replay comparisons and integration profiling, not guaranteed contractual performance or guaranteed publication access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.93,
+        0.96,
+        0.94,
+        0.93,
+        0.95,
+        0.76,
+        0.97
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

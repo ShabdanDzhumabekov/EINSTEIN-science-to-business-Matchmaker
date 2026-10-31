@@ -1,0 +1,214 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a site-specific, unsupervised anomaly detector be built and calibrated on ArmaturaSec's unlabelled Modbus and BACnet traffic archives, and produce alerts accurate enough and explainable enough for plant operators while running on ProtoSense/on-device hardware? The work would test whether Kiss's statistical and one-class baseline methods transfer from Modbus/DNP3 evidence to BACnet and to ArmaturaSec's real deployments.",
+    "rationale": [
+      {
+        "text": "Kiss has directly built per-register statistical baselines and a one-class Modbus/TCP detector on a live substation testbed, matching ProtoSense's need to learn site-specific normal behaviour.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work includes post-hoc threshold calibration using unlabelled operational data, which targets the false-alarm problem ArmaturaSec describes.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed incremental Gaussian-mixture online detection for ICS traffic without periodic full retraining, relevant to baseline drift on long-running client sites.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She is open to joint projects and contract research on ICS anomaly detection deployment, so the collaboration format fits her stated interests.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "contract research on protocol traffic analysis and anomaly detection deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has practical validation experience with an energy distributor and water utility and has consulted on SCADA anomaly-detection requirements.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "industry_experience",
+            "quote": "providing practical validation of research methods on operational infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "industry_experience",
+            "quote": "paid consulting for a mid-size automation integrator on specifying anomaly detection requirements for a SCADA upgrade project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group operates an ICS testbed with Modbus/TCP and DNP3 traffic generators and long-term packet capture infrastructure.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "bio",
+            "quote": "dedicated ICS testbed equipped with Siemens-compatible PLCs, Modbus/TCP and DNP3 traffic generators, and packet capture infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must work without labelled attack examples and learn a site-specific normal baseline; evaluation cannot rely on supervised attack labels.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have nothing labelled as malicious",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "What we actually need is something that learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alert thresholds must be calibrated to avoid the false-positive overload that already caused clients to disable alerts.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Outputs must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on-device within the packet-forwarding latency budget, potentially on the planned security processor.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work depends on NDA access to traffic archives, hardware bench, and firmware codebase.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's testbed access is under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "BACnet/IP is not covered by the cited publications; transfer from Modbus/DNP3 and mixed-protocol evidence to BACnet must be tested before any performance claim.",
+      "ArmaturaSec has no confirmed malicious captures, so detection performance can only be estimated through controlled injection or red-team exercises, not real attack labels.",
+      "The explainability requirement is not directly evidenced in Kiss's publications; a plain-language alert rationale may need joint design and operator testing.",
+      "False-positive calibration may still fail on client sites with twenty years of unmonitored traffic and unusual but legitimate behaviour.",
+      "Kiss's availability is unknown, and the company can dedicate only one to two engineers part-time; scheduling and any PhD supervision capacity need confirmation.",
+      "NDA and data-sharing terms may limit publication, dataset release and reuse of the firmware codebase; the 2021 student project was not continued formally.",
+      "On-device deployment may depend on the planned fifth hardware variant and dedicated security processor, which is a late-2025 plan, not current evidence."
+    ],
+    "questions": [
+      "Which archives contain BACnet/IP versus Modbus TCP, how many sites and years do they span, and what metadata or consent restrictions apply?",
+      "Can ArmaturaSec provide controlled attack injection or red-team scenarios on a bench or consenting pilot site to evaluate detectors without real labels?",
+      "What are the target hardware, memory, CPU and latency budgets for ProtoSense inference, and will the fifth variant be available for the project?",
+      "What alert explanation must a plant manager see, in which language, and what false-alarm rate per site per day is acceptable?",
+      "Does Kiss have capacity to supervise an industrial PhD candidate, or should this be a joint project or contract research, and under what data-sharing agreement?",
+      "Which company engineers will be assigned, and can they work with Kiss's group under the NDA on firmware integration?",
+      "How will success be measured: AUROC or AUPRC on injected scenarios, alert precision at a fixed false-alarm budget, or operator acceptance?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

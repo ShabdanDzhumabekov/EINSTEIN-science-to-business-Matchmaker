@@ -1,0 +1,189 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0353",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0353",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Determine whether elevated manganese at AquaCikl’s coagulation outlet originates from coagulation chemistry, filter media, or manganese cycling in holding tanks, and identify a stage-specific process change that can meet the 0.10 mg/L Mn limit at existing installations without major equipment replacement. The first experiment would test manganese speciation and removal across process stages in real greywater and examine whether the researcher’s synthetic-water coagulation findings transfer to this low-manganese real effluent.",
+    "rationale": [
+      {
+        "text": "Prof. Žigić has direct expertise in manganese and iron speciation and redox transformations in aqueous systems, which is central to distinguishing dissolved, colloidal, and particulate manganese across AquaCikl’s process stages.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "bio",
+            "quote": "Her research group focuses on speciation analysis of transition metals—primarily iron, manganese, copper, and chromium—in aqueous systems, with emphasis on redox transformations under varying pH and dissolved oxygen conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group has a parallel line of work on coagulation–flocculation for dissolved and colloidal metal removal, matching AquaCikl’s coagulation-stage problem.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "bio",
+            "quote": "A parallel line of work addresses the optimisation of coagulation–flocculation processes for the removal of dissolved and colloidal metal species from industrial and municipal wastewaters.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has published jar-test work on polyaluminium chloride for iron and turbidity removal, a coagulant family AquaCikl uses, though the published matrix was lowland river intake water rather than laundry greywater.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04339",
+            "field": "abstract",
+            "quote": "PACl with 14 % Al₂O₃ at 20 mg/L reduced turbidity to below 1 NTU and total iron to below 0.1 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has pilot-scale experience with simultaneous iron and manganese removal in continuous-flow coagulation–sedimentation, relevant to AquaCikl’s continuous operating installations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04345",
+            "field": "abstract",
+            "quote": "A pilot-scale continuous-flow unit (30 L/h) was operated over fourteen weeks to examine the simultaneous removal of iron and manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her laboratory routinely uses ICP-OES, voltammetric stripping, UV-Vis, jar tests, and zeta-potential measurement, which can support stage-wise manganese speciation and treatability testing.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "bio",
+            "quote": "The group routinely uses ICP-OES, voltammetric stripping analysis, UV-Vis spectrophotometry, jar-test equipment, and zeta-potential measurement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She is open to contract research on water and wastewater treatment process optimisation, which fits a short joint project with an industrial operator.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "open_to",
+            "quote": "contract research on water and wastewater treatment process optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The work must address the real regulatory limits and timeline: manganese 0.10 mg/L, iron 0.30 mg/L, and a large laundry client’s reinspection in five months.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The root-cause investigation requires stage-wise sampling because the raw greywater manganese is far below the coagulation-outlet value, so inlet and outlet alone cannot locate the source.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any recommended change must be implementable at existing installations without replacing major equipment.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company can provide two senior process engineers, one lab technician, up to four months, and access to three operating installations for field testing.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months, with access to three operating installations for field testing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration should let the Faculty of Technology laboratory perform the analytical work rather than acting only as a subcontractor, consistent with Prof. Žigić’s stated preference.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "notes",
+            "quote": "preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: the published manganese coagulation evidence is from synthetic water containing 0.5–4.0 mg/L Mn(II) with alum and KMnO₄ pre-oxidation, whereas AquaCikl’s real greywater has much lower raw manganese and uses PACl/ferric coagulation; direct applicability must be tested, not assumed.",
+      "AquaCikl has already tried increasing coagulant dose by 30 percent and lowering pH from 7.4 to 6.9 without meaningful improvement, so a simple coagulation-dose optimisation is unlikely to be sufficient.",
+      "The company suspects filter media or manganese cycling in holding tanks but has not confirmed it; if the project only examines coagulation, the actual source may be missed.",
+      "Real laundry greywater contains client-specific detergents, chelators, oxidants and organic matter that could interfere with manganese speciation and with any analytical method transferred from cleaner synthetic or river-water matrices.",
+      "Prof. Žigić’s availability is unknown, and the five-month client deadline may be incompatible with academic scheduling unless confirmed early.",
+      "If the root cause requires replacing filter media or major equipment, the outcome would fall outside AquaCikl’s stated acceptable solution."
+    ],
+    "questions": [
+      "Can AquaCikl provide a process flow diagram with all sampling points and confirm access to stage-wise sampling at the three operating installations?",
+      "What filter media, holding-tank cleaning/backwash procedures and manganese accumulation history exist at the affected sites, and have filter-media or tank samples already been analysed?",
+      "What client-process chemicals enter the raw greywater, and could any upstream laundry or food-processing operation release manganese or manganese-complexing agents?",
+      "Can the Faculty of Technology laboratory perform ICP-OES and speciation analysis under the university service agreement, and what samples and preservation protocol would AquaCikl provide?",
+      "Is Prof. Žigić available for a joint project within the next five months, and what budget, data-sharing, IP and publication terms would apply?",
+      "Will results need to be confirmed by the accredited external laboratory in Zrenjanin for regulatory purposes, and what reporting format does the reinspection require?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0353",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0353",
+        "version": 1
+      }
+    ]
+  }
+}

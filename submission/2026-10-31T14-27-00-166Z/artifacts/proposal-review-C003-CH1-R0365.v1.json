@@ -1,0 +1,115 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 6,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: at least two of three confirmation specimens match field crack location and morphology, with repeatable factor contrasts exceeding measurement uncertainty.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "A good outcome would be understanding exactly what is causing the cracks so we can change our welding procedure, filler material, or joint design and stop the warranty replacements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The two-of-three count does not define what qualifies as a field match, and contrasts exceeding instrument uncertainty can still reflect specimen scatter, permitting false acceptance of meaningful failure reproduction. Add a compact prerequisite freezing a field-location/morphology scoring rubric and uncertain-reference handling before confirmation, plus a specified sampling-aware confidence-bound or equivalent acceptance rule for the factor contrasts; unresolved reference classifications or insufficient precision should remain inconclusive.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj reports cracking at main crossmember-to-stringer welds after about 18 months in cold stores typically operating at 2–6 °C.” and “The company reports that room-temperature load tests pass.” These identify the specific service failure and the workshop reproduction gap rather than a generic fatigue-testing goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Run a representative-joint factorial experiment using production-equivalent painted connections”; “Document both failed sections before agreeing destructive-sampling allocation”; “verify chamber wetness control”; and “Allocate named engineering time and agree specimen counts and costs before starting.” Open questions: “Can Erić confirm availability for this joint project, equipment dates and condensation-control capability, and can AutomVoj confirm engineering time, budget and decision deadline?” These preserve representative components and limited failure material, and make laboratory capability, shared-equipment access and limited company staffing explicit prerequisites rather than assumed resources."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s published work compared isothermal and thermo-mechanical fatigue in butt-welded S275JR plates. Out-of-phase thermo-mechanical loading produced shorter crack-initiation life than the room-temperature baseline.” Our inference: “sub-zero plate experiments do not validate mechanisms or life predictions for painted hollow-section joints at 2–6 °C.” These connect his demonstrated comparative fatigue method and loading-phase result to the proposed experiment while explicitly limiting transfer across temperature, geometry and coating."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj lacks low-temperature cyclic-testing equipment and know-how. Erić’s climate chamber and servo-hydraulic machine are shared with two other groups”; Proposed next steps: “Before testing, propose that AutomVoj supplies drawings, production records, representative joints and customer-site coordination, while Erić leads fracture examination, instrumentation and test design.” Our inference: “Equipment access, condensation-control capability and company engineering time also remain unconfirmed.” These distinguish documented resources and needs from proposed roles and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Independently define thermal history as stable chilled versus measured cycling, moisture as dry versus controlled condensation, and belt vibration as absent versus measured service vibration, retaining equal mean load”; “Test all eight combinations: baseline, each factor alone, every pair and all three; add the company’s room-temperature load-test benchmark”; and “Select the most field-representative configuration using tuning specimens, then check independence and evaluate separate held-out specimens at 2–6 °C.” These specify representative inputs, controls, a factorial comparison and separate selection and confirmation; remaining execution prerequisites are explicit, while the acceptance-rule deficiency is addressed under metric."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Proposed go/no-go: at least two of three confirmation specimens match field crack location and morphology, with repeatable factor contrasts exceeding measurement uncertainty.” This identifies specimens as the unit and three as the confirmation denominator, but does not define the field-match rubric, treatment of uncertain field classifications, or a sampling-aware statistical rule for accepting factor contrasts; subjective matches and noisy contrasts could therefore satisfy the stated gate."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Test all eight combinations: baseline, each factor alone, every pair and all three”; “Match geometry, welding, coating and specimen allocation across cells”; and “This tests mechanism transfer, not proof of an 18-month service life.” Our inference: “A factor showing no effect alone would narrow, not eliminate, interaction hypotheses.” These provide independent factor comparisons and comparable controls while limiting conclusions about interactions and service-life prediction."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Condensation, coating defects and manufacturing variability remain competing explanations; cold-induced embrittlement should not be assumed” and “Equipment access, condensation-control capability and company engineering time also remain unconfirmed.” Proposed next steps: “Missing confirmation data, inadequate controls or incompatible accelerated fractures mean inconclusive, not success” and “subject to achievable cycle exposure.” These identify transfer, alternative-cause, acceleration, capability and scheduling risks without presenting unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić lists joint projects involving low-temperature or combined-loading fatigue testing among his interests.” Our inference: “This joint-project proposal is conditional because Erić’s availability is unknown.” Open questions: “Can Erić confirm availability for this joint project, equipment dates and condensation-control capability, and can AutomVoj confirm engineering time, budget and decision deadline?” These respect his stated openness without assuming availability or assigning an agreed commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could identify which environmental and loading combinations reproduce the actual failure, providing a defensible basis for choosing manufacturing changes rather than relying on room-temperature passes” and “Subject to agreement, Erić could test the transfer of thermo-mechanical fatigue methods to painted conveyor connections”. These are conditional gains arising from the first experiment, not guarantees of a remedy, publication or validated service life."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.98,
+        0.95,
+        0.98,
+        0.98,
+        0.94
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

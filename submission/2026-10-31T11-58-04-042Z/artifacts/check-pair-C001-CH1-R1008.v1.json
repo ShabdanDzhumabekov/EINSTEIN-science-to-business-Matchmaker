@@ -1,0 +1,27 @@
+{
+  "ref": {
+    "artifactId": "check-pair-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "check",
+  "runId": "2026-10-31T11-58-04-042Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "assessment": {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    },
+    "jev": 0.91,
+    "isKept": true,
+    "threshold": 0.9,
+    "model": "typesafe/jev-1.14"
+  }
+}

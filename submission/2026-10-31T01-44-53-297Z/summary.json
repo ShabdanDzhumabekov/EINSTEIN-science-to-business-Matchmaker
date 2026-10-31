@@ -1,0 +1,858 @@
+{
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "results": [
+    {
+      "status": "screened_out",
+      "taskId": "C008-CH3",
+      "reason": "Jev rates the task as a research problem at 0.05"
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C013-CH2",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "proposal_needs_revision",
+      "taskId": "C017-CH1",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C026-CH3",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C026-CH3-R0240",
+          "version": 3
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T01-44-53-297Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C026-CH3",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C026-CH3-R0240",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C026-CH3-R0240",
+            "version": 1
+          }
+        ],
+        "content": {
+          "title": "Leachate plume delineation and monitoring-well design for Zelena Petlja's storage yard",
+          "facts": [
+            {
+              "text": "The company reports leachate from its temporary storage yard has started seeping toward the site boundary, and its sampling returned COD of 3,400 mg/L, well above the threshold triggering a formal response.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "text",
+                  "quote": "has started seeping toward the site boundary",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The inspectorate ordered four groundwater monitoring wells within 120 days and a remediation proposal, with the 120-day deadline running out in late June 2024.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "the 120-day deadline runs out in late June 2024",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Only a 1993 hydrogeological sketch exists; neither contamination extent nor seasonal groundwater flow direction is known.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The requested output is a leachate containment and treatment proposal acceptable to the inspectorate, not only monitoring.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "draft a leachate containment and treatment proposal that the inspectorate will accept",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company states it has no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+              "sources": [
+                {
+                  "recordId": "C026",
+                  "field": "rd_capacity",
+                  "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The researcher's industry experience includes advising on site characterisation methodology and monitoring network design.",
+              "sources": [
+                {
+                  "recordId": "R0240",
+                  "field": "industry_experience",
+                  "quote": "advising on site characterisation methodology and monitoring network design",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "His open_to record lists joint projects with companies working on water supply, environmental monitoring, or geospatial data services, and contract research on site-specific hydrogeological assessment or recharge studies.",
+              "sources": [
+                {
+                  "recordId": "R0240",
+                  "field": "open_to",
+                  "quote": "joint projects with companies working on water supply, environmental monitoring, or geospatial data services",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0240",
+                  "field": "open_to",
+                  "quote": "contract research on site-specific hydrogeological assessment or recharge studies",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "His published work used a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-03043",
+                  "field": "abstract",
+                  "quote": "a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests his monitoring-network experience can be adapted, but his documented sites are bank-filtration, recharge and canal settings, not waste-yard leachate; the transfer should be tested first.",
+            "Because the evidence is particle-tracking travel times rather than reactive transport, predicting COD attenuation is likely unproven here and should be treated as a hypothesis.",
+            "With only a 1993 sketch and unknown seasonal flow, siting wells before reconnaissance risks off-plume wells; the project is conditional until availability is confirmed."
+          ],
+          "proposedActions": [
+            "First experiment (proposed, 30 days): a reconnaissance campaign before final well siting, testing whether lowland alluvial monitoring methods transfer to a waste-yard leachate setting. Baseline: the 1993 sketch and the company's 3,400 mg/L COD result. The researcher designs temporary piezometer/water-level and boundary-sampling points; the company provides site access, existing data and in-house COD measurements. Measure hydraulic heads, depth to water and COD at the yard boundary and suspected flow paths, repeated after 3–4 weeks. Go/no-go: proceed to final four-well design only if a coherent head gradient and elevated-COD signal appear along at least two transects; otherwise revise the conceptual model and brief the inspectorate before drilling. Proposed targets: reconnaissance report by day 30, four wells by day 90, containment/treatment proposal by late June 2024; final-submission go/no-go: submit only after pre-submission review confirms the order's required elements are addressed; acceptance is a negotiation target, not a promise.",
+            "Final four-well design and installation: researcher specifies screen depths, siting and sampling/head schedule; company handles drilling procurement, permits and contractor access. Proposed check: four wells completed and surveyed by day 90, with confirmatory samples sent to an accredited laboratory if required.",
+            "Containment and treatment proposal: researcher and company prepare options from monitoring results and hold a pre-submission meeting with the inspectorate. Proposed criterion: written confirmation that the submission addresses the order's required elements before the late-June deadline.",
+            "After first sampling round, produce a concise conceptual site model and data package for management; decide whether to continue monitoring, add wells, or proceed to a treatment pilot. Proposed target: draft package within 10 working days of sample results."
+          ],
+          "questions": [
+            "Is the researcher available to start field work within the 120-day spring 2024 window, given availability is recorded as unknown?",
+            "Who will carry out and fund drilling and installation of the four wells, and which permits are required?",
+            "What site information exists beyond the 1993 sketch: depth to water table, liner construction, existing boreholes, nearby production or monitoring wells?",
+            "Which parameters and analytical standards will the Subotica Environmental Inspectorate require, and is an accredited laboratory available for confirmatory analyses?",
+            "What waste types and volumes were stored in the yard over twelve years, and were any hazardous items present that would change leachate composition?"
+          ],
+          "markdown": "# Leachate plume delineation and monitoring-well design for Zelena Petlja's storage yard\n\n## Verified facts\n- The company reports leachate from its temporary storage yard has started seeping toward the site boundary, and its sampling returned COD of 3,400 mg/L, well above the threshold triggering a formal response. [F1]\n- The inspectorate ordered four groundwater monitoring wells within 120 days and a remediation proposal, with the 120-day deadline running out in late June 2024. [F2]\n- Only a 1993 hydrogeological sketch exists; neither contamination extent nor seasonal groundwater flow direction is known. [F3]\n- The requested output is a leachate containment and treatment proposal acceptable to the inspectorate, not only monitoring. [F4]\n- The company states it has no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring. [F5]\n- The researcher's industry experience includes advising on site characterisation methodology and monitoring network design. [F6]\n- His open_to record lists joint projects with companies working on water supply, environmental monitoring, or geospatial data services, and contract research on site-specific hydrogeological assessment or recharge studies. [F7]\n- His published work used a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank. [F8]\n\n## Our inference\n- This suggests his monitoring-network experience can be adapted, but his documented sites are bank-filtration, recharge and canal settings, not waste-yard leachate; the transfer should be tested first.\n- Because the evidence is particle-tracking travel times rather than reactive transport, predicting COD attenuation is likely unproven here and should be treated as a hypothesis.\n- With only a 1993 sketch and unknown seasonal flow, siting wells before reconnaissance risks off-plume wells; the project is conditional until availability is confirmed.\n\n## Proposed next steps\n- First experiment (proposed, 30 days): a reconnaissance campaign before final well siting, testing whether lowland alluvial monitoring methods transfer to a waste-yard leachate setting. Baseline: the 1993 sketch and the company's 3,400 mg/L COD result. The researcher designs temporary piezometer/water-level and boundary-sampling points; the company provides site access, existing data and in-house COD measurements. Measure hydraulic heads, depth to water and COD at the yard boundary and suspected flow paths, repeated after 3–4 weeks. Go/no-go: proceed to final four-well design only if a coherent head gradient and elevated-COD signal appear along at least two transects; otherwise revise the conceptual model and brief the inspectorate before drilling. Proposed targets: reconnaissance report by day 30, four wells by day 90, containment/treatment proposal by late June 2024; final-submission go/no-go: submit only after pre-submission review confirms the order's required elements are addressed; acceptance is a negotiation target, not a promise.\n- Final four-well design and installation: researcher specifies screen depths, siting and sampling/head schedule; company handles drilling procurement, permits and contractor access. Proposed check: four wells completed and surveyed by day 90, with confirmatory samples sent to an accredited laboratory if required.\n- Containment and treatment proposal: researcher and company prepare options from monitoring results and hold a pre-submission meeting with the inspectorate. Proposed criterion: written confirmation that the submission addresses the order's required elements before the late-June deadline.\n- After first sampling round, produce a concise conceptual site model and data package for management; decide whether to continue monitoring, add wells, or proceed to a treatment pilot. Proposed target: draft package within 10 working days of sample results.\n\n## Open questions\n- Is the researcher available to start field work within the 120-day spring 2024 window, given availability is recorded as unknown?\n- Who will carry out and fund drilling and installation of the four wells, and which permits are required?\n- What site information exists beyond the 1993 sketch: depth to water table, liner construction, existing boreholes, nearby production or monitoring wells?\n- Which parameters and analytical standards will the Subotica Environmental Inspectorate require, and is an accredited laboratory available for confirmatory analyses?\n- What waste types and volumes were stored in the yard over twelve years, and were any hazardous items present that would change leachate composition?",
+          "taskId": "C026-CH3",
+          "researcherId": "R0240",
+          "format": "joint_project",
+          "isConditional": true,
+          "inputs": [
+            {
+              "artifactId": "business-C026-CH3",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C026-CH3-R0240",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C026-CH3-R0240",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C053-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C053-CH1-R0353",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T01-44-53-297Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C053-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C053-CH1-R0353",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C053-CH1-R0353",
+            "version": 1
+          }
+        ],
+        "content": {
+          "title": "Locating and controlling manganese release in AquaCikl greywater recycling",
+          "facts": [
+            {
+              "text": "AquaCikl's analysers read 0.18 mg/L manganese at the coagulation outlet across three client sites; SR-IED-2023 limits are 0.10 mg/L manganese and 0.30 mg/L iron.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "One large laundry client faces reinspection in five months.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "one large laundry client faces a reinspection in five months",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Raw greywater entering the plant contains 0.04-0.07 mg/L manganese, and the company can pull samples at every process stage with its on-site kit.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Increasing coagulant dose by 30% and dropping pH from 7.4 to 6.9 during coagulation gave no meaningful improvement.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "We have already tried increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's acceptable outcome is a root-cause finding and a specific process change implementable at existing installations without replacing major equipment.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company can dedicate two senior process engineers, one lab technician, up to four months, and access to three operating installations.",
+              "sources": [
+                {
+                  "recordId": "C053",
+                  "field": "rd_capacity",
+                  "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months, with access to three operating installations for field testing",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Prof. Žigić's group focuses on transition-metal speciation, including iron and manganese, and redox transformations in aqueous systems.",
+              "sources": [
+                {
+                  "recordId": "R0353",
+                  "field": "bio",
+                  "quote": "Her research group focuses on speciation analysis of transition metals—primarily iron, manganese, copper, and chromium—in aqueous systems, with emphasis on redox transformations under varying pH and dissolved oxygen conditions.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Prof. Žigić prefers collaborations where the Faculty of Technology laboratory performs analytical work rather than acting solely as a subcontractor.",
+              "sources": [
+                {
+                  "recordId": "R0353",
+                  "field": "notes",
+                  "quote": "preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "The raw-to-outlet gap and failed dose/pH trials suggest manganese is released or held in filters/tanks, so coagulation-only optimisation likely misses the source; stage-wise speciation is needed.",
+            "Her manganese/iron work likely transfers conceptually, but published manganese coagulation evidence is synthetic water with higher Mn and alum/KMnO4, not PACl/ferric laundry greywater, so transfer must be tested.",
+            "Her laboratory capability fits a joint project, but availability is unknown, making timing conditional against the five-month deadline."
+          ],
+          "proposedActions": [
+            "Proposed first experiment: at one affected laundry site, sample raw greywater, post-coagulation, post-filter and holding-tank outlet daily for four weeks, plus filter-media and tank-sediment cores. Baseline: current PACl/ferric operation. Proposed company contribution: process flow, site access and on-site kit readings; proposed researcher contribution: ICP-OES and voltammetric/spectrophotometric manganese speciation plus jar tests on real greywater. Run stage-isolated tests changing one factor per series: current versus prior dose/pH, filtered versus unfiltered, and tank-sediment contact. Measure dissolved, colloidal and particulate Mn, Fe, turbidity, pH and ORP. Go/no-go by month 3: identify one stage where Mn rises above the 0.04-0.07 mg/L raw range and a candidate adjustment keeping outlet Mn <=0.10 mg/L and Fe <=0.30 mg/L in bench/pilot tests without major equipment replacement; otherwise expand diagnosis.",
+            "Proposed timeline: weeks 1-2 sampling plan; weeks 3-8 stage sampling and speciation; weeks 9-14 jar/column tests isolating coagulation, filter media and tank cycling; weeks 15-16 report and options, targeting month 4 before the five-month reinspection.",
+            "Proposed success criteria, as targets not guarantees: one site verifies outlet Mn <=0.10 mg/L and Fe <=0.30 mg/L over two weeks under existing operation after one stage-specific change; two independent sample sets link the increase to a named stage; the change uses existing equipment; reinspection package ready before deadline.",
+            "Proposed second phase if filter media or tank cycling is implicated: column tests with current media and tank sediment under real greywater, one factor per run, Faculty lab analysis and company field support; stop if no stage-specific cause or major equipment replacement is required."
+          ],
+          "questions": [
+            "Can AquaCikl provide a process flow diagram with all sampling points, confirm stage-wise access at the three installations, and supply filter-media and holding-tank cleaning/backwash history plus any prior media/tank analyses?",
+            "What client-process chemicals enter the raw greywater, and could upstream laundry or food operations release manganese or manganese-complexing agents?",
+            "Can the Faculty of Technology laboratory perform ICP-OES and speciation under the university service agreement, and what sample volumes, preservation and turnaround would AquaCikl need?",
+            "Prof. Žigić's availability is unknown; can she confirm availability to start a joint project within five months, and what budget, data-sharing, IP and publication terms would both sides propose?",
+            "Will results need confirmation by the accredited external laboratory in Zrenjanin for reinspection, and what reporting format does the regulator require?"
+          ],
+          "markdown": "# Locating and controlling manganese release in AquaCikl greywater recycling\n\n## Verified facts\n- AquaCikl's analysers read 0.18 mg/L manganese at the coagulation outlet across three client sites; SR-IED-2023 limits are 0.10 mg/L manganese and 0.30 mg/L iron. [F1]\n- One large laundry client faces reinspection in five months. [F2]\n- Raw greywater entering the plant contains 0.04-0.07 mg/L manganese, and the company can pull samples at every process stage with its on-site kit. [F3]\n- Increasing coagulant dose by 30% and dropping pH from 7.4 to 6.9 during coagulation gave no meaningful improvement. [F4]\n- The company's acceptable outcome is a root-cause finding and a specific process change implementable at existing installations without replacing major equipment. [F5]\n- The company can dedicate two senior process engineers, one lab technician, up to four months, and access to three operating installations. [F6]\n- Prof. Žigić's group focuses on transition-metal speciation, including iron and manganese, and redox transformations in aqueous systems. [F7]\n- Prof. Žigić prefers collaborations where the Faculty of Technology laboratory performs analytical work rather than acting solely as a subcontractor. [F8]\n\n## Our inference\n- The raw-to-outlet gap and failed dose/pH trials suggest manganese is released or held in filters/tanks, so coagulation-only optimisation likely misses the source; stage-wise speciation is needed.\n- Her manganese/iron work likely transfers conceptually, but published manganese coagulation evidence is synthetic water with higher Mn and alum/KMnO4, not PACl/ferric laundry greywater, so transfer must be tested.\n- Her laboratory capability fits a joint project, but availability is unknown, making timing conditional against the five-month deadline.\n\n## Proposed next steps\n- Proposed first experiment: at one affected laundry site, sample raw greywater, post-coagulation, post-filter and holding-tank outlet daily for four weeks, plus filter-media and tank-sediment cores. Baseline: current PACl/ferric operation. Proposed company contribution: process flow, site access and on-site kit readings; proposed researcher contribution: ICP-OES and voltammetric/spectrophotometric manganese speciation plus jar tests on real greywater. Run stage-isolated tests changing one factor per series: current versus prior dose/pH, filtered versus unfiltered, and tank-sediment contact. Measure dissolved, colloidal and particulate Mn, Fe, turbidity, pH and ORP. Go/no-go by month 3: identify one stage where Mn rises above the 0.04-0.07 mg/L raw range and a candidate adjustment keeping outlet Mn <=0.10 mg/L and Fe <=0.30 mg/L in bench/pilot tests without major equipment replacement; otherwise expand diagnosis.\n- Proposed timeline: weeks 1-2 sampling plan; weeks 3-8 stage sampling and speciation; weeks 9-14 jar/column tests isolating coagulation, filter media and tank cycling; weeks 15-16 report and options, targeting month 4 before the five-month reinspection.\n- Proposed success criteria, as targets not guarantees: one site verifies outlet Mn <=0.10 mg/L and Fe <=0.30 mg/L over two weeks under existing operation after one stage-specific change; two independent sample sets link the increase to a named stage; the change uses existing equipment; reinspection package ready before deadline.\n- Proposed second phase if filter media or tank cycling is implicated: column tests with current media and tank sediment under real greywater, one factor per run, Faculty lab analysis and company field support; stop if no stage-specific cause or major equipment replacement is required.\n\n## Open questions\n- Can AquaCikl provide a process flow diagram with all sampling points, confirm stage-wise access at the three installations, and supply filter-media and holding-tank cleaning/backwash history plus any prior media/tank analyses?\n- What client-process chemicals enter the raw greywater, and could upstream laundry or food operations release manganese or manganese-complexing agents?\n- Can the Faculty of Technology laboratory perform ICP-OES and speciation under the university service agreement, and what sample volumes, preservation and turnaround would AquaCikl need?\n- Prof. Žigić's availability is unknown; can she confirm availability to start a joint project within five months, and what budget, data-sharing, IP and publication terms would both sides propose?\n- Will results need confirmation by the accredited external laboratory in Zrenjanin for reinspection, and what reporting format does the regulator require?",
+          "taskId": "C053-CH1",
+          "researcherId": "R0353",
+          "format": "joint_project",
+          "isConditional": true,
+          "inputs": [
+            {
+              "artifactId": "business-C053-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C053-CH1-R0353",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C053-CH1-R0353",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C060-CH2",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C060-CH2-R0146",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T01-44-53-297Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C060-CH2",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C060-CH2-R0146",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C060-CH2-R0146",
+            "version": 1
+          }
+        ],
+        "content": {
+          "title": "Stop-level ETA prediction for PassengerView on a 340-bus AVL archive",
+          "facts": [
+            {
+              "text": "The Romanian contracts require PassengerView ETAs within 90 seconds of actual arrival at least 85 percent of the time; the company says current timetable-plus-offset projection drifts badly in peak-hour traffic, roadworks or bad weather.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "Our current PassengerView simply projects the published timetable plus a crude offset based on the last known GPS position.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "In peak-hour traffic, roadworks or bad weather it drifts badly.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Contracts have a twelve-month implementation window from go-live approval, expected Q3 2024.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Work relies on full historical AVL data and timetable logs under a signed data-sharing agreement; the PostgreSQL time-series table has roughly 2.8 billion rows from 340 buses with ten-second pings and fields timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The AVL data includes timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The stack uses Java 17/Spring Boot, GTFS/GTFS-Realtime, and Docker/Kubernetes on an on-premise Subotica cluster; staffing is one senior backend engineer and one domain specialist part-time, one Python data engineer lacking time-series background, and no integrated weather data.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Java 17 backend with Spring Boot microservices",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "GTFS and GTFS-Realtime feed generation",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "one senior backend engineer and one domain specialist part-time",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We do not have weather data integrated yet.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Novaković's dissertation used Bayesian state-space models for bus travel time from archived AVL data; her work reports 18% segment-level MAE reduction and open-source preprocessing modules. Her workload is moderate; she can take one new collaboration in 2026 and prefers publishing anonymised results.",
+              "sources": [
+                {
+                  "recordId": "R0146",
+                  "field": "bio",
+                  "quote": "dissertation on Bayesian state-space models for bus travel time estimation using archived AVL data",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01892",
+                  "field": "abstract",
+                  "quote": "Segment-level mean absolute error (MAE) is reduced by 18% compared with a historic-average baseline.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01896",
+                  "field": "abstract",
+                  "quote": "Code is provided as open-source Python modules.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Risk from her work: a Novi Sad model fine-tuned on Subotica reached 52 seconds MAE per stop-to-stop segment, but topology differences limited gains beyond about 8 weeks of fine-tuning; conformal prediction held 90% coverage at the cost of wider intervals.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-01897",
+                  "field": "abstract",
+                  "quote": "GRU model pre-trained on five years of Novi Sad AVL data can be fine-tuned with limited data (4 weeks) from Subotica",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01897",
+                  "field": "abstract",
+                  "quote": "fine-tuned model achieves MAE of 52 seconds per stop-to-stop segment",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01897",
+                  "field": "abstract",
+                  "quote": "network topology differences limit gains beyond approximately 8 weeks of fine-tuning data",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01900",
+                  "field": "abstract",
+                  "quote": "Conformal prediction maintains nominal 90% coverage most consistently, at the cost of wider intervals.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "Her reported errors are segment-level or 15-minute-ahead, not the end-to-end 90-second/85% contract metric, so the SLA must be measured on company data.",
+            "Her filter assumes 30–90-second pings while the company logs every ten seconds; denser data likely changes preprocessing assumptions and needs revalidation.",
+            "Lightweight nightly-retrained models likely fit the company's limited Python maintenance capacity better than GPU-heavy models, suggesting state-space or fine-tuned GRU with a retraining runbook."
+          ],
+          "proposedActions": [
+            "First experiment (proposed): use 12 months of the 340-bus AVL archive; baselines are today's timetable-plus-offset PassengerView and a historic-average segment model. Re-run her preprocessing on the 10-second stream; compare a revalidated state-space model and a company-fine-tuned GRU. Measure the contract metric—share of displayed stop-level ETAs within 90 seconds—on held-out weeks, stratified by peak, off-peak, roadworks and bad weather, with actual arrival as door-open event plus a stop-line sensitivity check. Proposed go/no-go: at least 85% within 90 seconds overall and no scope stratum below a negotiated floor; otherwise stop. Researcher contributes modelling and evaluation design; company contributes data access, timetable logs and acceptance conditions.",
+            "Sign a data-sharing agreement and write a joint evaluation protocol defining actual arrival, scope, disruption strata, and the 90-second/85% computation. Proposed timeline as negotiation target: protocol month 1, experiment months 2–6, serving and handover months 7–12; success criteria are the SLA plus a reproducible retraining and monitoring runbook.",
+            "Isolate one suspected drift factor at a time: compare roadworks-only and bad-weather-only cases with and without integrated weather, so results say which factor matters. Test door-open events as a dwell proxy where passenger counters are absent, and report where load-aware gains do not transfer.",
+            "Plan serving and handover: expose the Python model behind a REST service consumed by the Java/Spring PassengerView path and GTFS-Realtime output on the Kubernetes cluster, with nightly retraining on a standard server and a data-engineer runbook."
+          ],
+          "questions": [
+            "What exactly counts as actual arrival for the 90-second/85% SLA—door-open event, stop-line crossing or another signal—and which lines, periods and disruption conditions are in scope?",
+            "Will the full historical AVL archive and timetable logs be available under a signed data-sharing agreement, and what known data-quality issues exist in the 2.8-billion-row table?",
+            "Can weather data be integrated, or should the first model be weather-blind; and are passenger counters available, or only door-open events and odometer?",
+            "The researcher's availability is not confirmed: can she confirm capacity and effort from 2026, and can the company accept her preference to publish anonymised results?",
+            "How will the Python model be served and owned inside the Java/Spring Kubernetes stack after the project, and are Q3 2024 go-live, the 12-month window, and any budget or compute allocation still operative?"
+          ],
+          "markdown": "# Stop-level ETA prediction for PassengerView on a 340-bus AVL archive\n\n## Verified facts\n- The Romanian contracts require PassengerView ETAs within 90 seconds of actual arrival at least 85 percent of the time; the company says current timetable-plus-offset projection drifts badly in peak-hour traffic, roadworks or bad weather. [F1]\n- Contracts have a twelve-month implementation window from go-live approval, expected Q3 2024. [F2]\n- Work relies on full historical AVL data and timetable logs under a signed data-sharing agreement; the PostgreSQL time-series table has roughly 2.8 billion rows from 340 buses with ten-second pings and fields timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer. [F3]\n- The stack uses Java 17/Spring Boot, GTFS/GTFS-Realtime, and Docker/Kubernetes on an on-premise Subotica cluster; staffing is one senior backend engineer and one domain specialist part-time, one Python data engineer lacking time-series background, and no integrated weather data. [F4]\n- Novaković's dissertation used Bayesian state-space models for bus travel time from archived AVL data; her work reports 18% segment-level MAE reduction and open-source preprocessing modules. Her workload is moderate; she can take one new collaboration in 2026 and prefers publishing anonymised results. [F5]\n- Risk from her work: a Novi Sad model fine-tuned on Subotica reached 52 seconds MAE per stop-to-stop segment, but topology differences limited gains beyond about 8 weeks of fine-tuning; conformal prediction held 90% coverage at the cost of wider intervals. [F6]\n\n## Our inference\n- Her reported errors are segment-level or 15-minute-ahead, not the end-to-end 90-second/85% contract metric, so the SLA must be measured on company data.\n- Her filter assumes 30–90-second pings while the company logs every ten seconds; denser data likely changes preprocessing assumptions and needs revalidation.\n- Lightweight nightly-retrained models likely fit the company's limited Python maintenance capacity better than GPU-heavy models, suggesting state-space or fine-tuned GRU with a retraining runbook.\n\n## Proposed next steps\n- First experiment (proposed): use 12 months of the 340-bus AVL archive; baselines are today's timetable-plus-offset PassengerView and a historic-average segment model. Re-run her preprocessing on the 10-second stream; compare a revalidated state-space model and a company-fine-tuned GRU. Measure the contract metric—share of displayed stop-level ETAs within 90 seconds—on held-out weeks, stratified by peak, off-peak, roadworks and bad weather, with actual arrival as door-open event plus a stop-line sensitivity check. Proposed go/no-go: at least 85% within 90 seconds overall and no scope stratum below a negotiated floor; otherwise stop. Researcher contributes modelling and evaluation design; company contributes data access, timetable logs and acceptance conditions.\n- Sign a data-sharing agreement and write a joint evaluation protocol defining actual arrival, scope, disruption strata, and the 90-second/85% computation. Proposed timeline as negotiation target: protocol month 1, experiment months 2–6, serving and handover months 7–12; success criteria are the SLA plus a reproducible retraining and monitoring runbook.\n- Isolate one suspected drift factor at a time: compare roadworks-only and bad-weather-only cases with and without integrated weather, so results say which factor matters. Test door-open events as a dwell proxy where passenger counters are absent, and report where load-aware gains do not transfer.\n- Plan serving and handover: expose the Python model behind a REST service consumed by the Java/Spring PassengerView path and GTFS-Realtime output on the Kubernetes cluster, with nightly retraining on a standard server and a data-engineer runbook.\n\n## Open questions\n- What exactly counts as actual arrival for the 90-second/85% SLA—door-open event, stop-line crossing or another signal—and which lines, periods and disruption conditions are in scope?\n- Will the full historical AVL archive and timetable logs be available under a signed data-sharing agreement, and what known data-quality issues exist in the 2.8-billion-row table?\n- Can weather data be integrated, or should the first model be weather-blind; and are passenger counters available, or only door-open events and odometer?\n- The researcher's availability is not confirmed: can she confirm capacity and effort from 2026, and can the company accept her preference to publish anonymised results?\n- How will the Python model be served and owned inside the Java/Spring Kubernetes stack after the project, and are Q3 2024 go-live, the 12-month window, and any budget or compute allocation still operative?",
+          "taskId": "C060-CH2",
+          "researcherId": "R0146",
+          "format": "joint_project",
+          "isConditional": true,
+          "inputs": [
+            {
+              "artifactId": "business-C060-CH2",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C060-CH2-R0146",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C060-CH2-R0146",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C065-CH2",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C065-CH2-R0816",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T01-44-53-297Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C065-CH2",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C065-CH2-R0816",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C065-CH2-R0816",
+            "version": 1
+          }
+        ],
+        "content": {
+          "title": "Hybrid Recommender Prototype for Small E-Commerce Catalogues",
+          "facts": [
+            {
+              "text": "The company's material states that with only 500–2,000 transactions per client its collaborative filtering models gave worse results than simple best-seller sorting, with the largest dataset at 1,900 completed orders over eighteen months and the smallest around 520, and that it cannot wait for larger datasets; it also reports the purchase co-occurrence matrix was too sparse to be useful.",
+              "sources": [
+                {
+                  "recordId": "C065-CH2",
+                  "field": "text",
+                  "quote": "with only 500–2,000 transactions per client the collaborative filtering models we tried give worse results than simple best-seller sorting",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "the purchase co-occurrence matrix was too sparse to be useful",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's material reports that simple best-seller sorting outperformed the model in its one client A/B test and that a working prototype for one client would be enough to start.",
+              "sources": [
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "A working prototype for one client would be enough to start.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company can give full read access to anonymised transaction and product catalogue data under a data-sharing agreement.",
+              "sources": [
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "rd_capacity",
+                  "quote": "access to anonymised client datasets under a data-sharing agreement",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company can allocate one mid-level developer for roughly one day per week and reports it has not done a structured collaboration with a university or research institution, while Erić is cautious about commitments requiring more than one day per week outside the faculty during the academic semester.",
+              "sources": [
+                {
+                  "recordId": "C065",
+                  "field": "rd_capacity",
+                  "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "past_collaborations",
+                  "quote": "we have not done a structured collaboration with a university or research institution",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0816",
+                  "field": "notes",
+                  "quote": "cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The client stack includes PHP/Laravel backend development, MySQL/MariaDB transactional data, and WooCommerce with custom REST API integrations.",
+              "sources": [
+                {
+                  "recordId": "C065",
+                  "field": "tech",
+                  "quote": "PHP (Laravel framework) for backend portal development",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "tech",
+                  "quote": "MySQL and MariaDB for transactional data",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "tech",
+                  "quote": "WooCommerce and custom REST API integrations",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić lists joint projects with retail technology companies as open; her dissertation concerned hybrid recommendation strategies for data-sparse retail environments, and her group combines content-based filtering with behavioural signals from sparse transaction logs typical of small and medium retail businesses.",
+              "sources": [
+                {
+                  "recordId": "R0816",
+                  "field": "open_to",
+                  "quote": "joint projects with retail technology companies",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0816",
+                  "field": "bio",
+                  "quote": "dissertation on hybrid recommendation strategies for data-sparse retail environments",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0816",
+                  "field": "bio",
+                  "quote": "combining content-based filtering with behavioural signals derived from sparse transactional logs typical of small and medium retail businesses",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić's work shows structured product attribute data can be encoded into feature vectors for new-item recommendation, but it notes limitations in attribute completeness and supplier data availability, and warns that content-based methods tend to over-specialise recommendations.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08868",
+                  "field": "abstract",
+                  "quote": "structured product attribute data—category hierarchy, price tier, packaging size, and supplier origin—can be encoded into feature vectors to support immediate recommendation of new items",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08868",
+                  "field": "abstract",
+                  "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-03666",
+                  "field": "abstract",
+                  "quote": "Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić's matrix-factorization study found hit rate drops below the non-personalised popularity baseline at 0.3% density.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08869",
+                  "field": "abstract",
+                  "quote": "hit rate drops below the non-personalised popularity baseline at 0.3% density",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "Because Erić's evaluations use grocery, clothing, pharmacy and home-goods retail data rather than Harmat's e-commerce catalogues, transfer to a Harmat client is plausible but unproven; the first test should therefore be a one-client transfer check.",
+            "A content-heavy hybrid is more likely to beat best-seller sorting on small catalogues if metadata is rich enough, but sparse co-occurrence and over-specialisation could erase the gain, so a one-factor-at-a-time comparison should show which signal matters.",
+            "The proposal is conditional because Erić's availability is unknown and semester-limited; joint-project willingness is open, but a one-day-per-week cadence still needs her confirmation."
+          ],
+          "proposedActions": [
+            "First experiment: select one Harmat client after a data-sharing agreement and use its anonymised completed orders, expected in the 500–2,000 range, plus product catalogue metadata, split by time into train/test; baseline is best-seller sorting. Build two variants: content-only attribute similarity and a content plus session/co-occurrence hybrid. Measure offline precision@5 and recall@5 against the baseline, then, if offline results justify it, run a small A/B test on product pages against best-seller. Researcher contribution: Erić designs and evaluates the recommender; company contribution: Harmat supplies data access and one developer for Laravel/MySQL/WooCommerce integration and logging. This tests transfer from Erić's published retail settings to one Harmat catalogue. Go/no-go: proceed only if the hybrid beats best-seller by an agreed relative margin (proposed ≥10% on precision@5) and metadata completeness passes an agreed threshold; stop if metadata is too incomplete or no variant beats popularity. Proposed timeline: 4 weeks data audit and offline test, 4–6 weeks integration/A/B if go.",
+            "Agree before start the A/B success criterion: metric (click-through or add-to-cart rate), minimum relative lift over best-seller, evaluation window and minimum traffic; treat these as negotiation targets, not guarantees, and confirm the one-client test has enough traffic for reliability.",
+            "Audit product metadata per client: descriptions, categories, attributes, price tier, supplier and languages; quantify completeness and flag fields needed for attribute vectors and explanations.",
+            "Run a one-factor-at-a-time comparison (best-seller, content-only, content+session, content+co-occurrence) on the same temporal split to identify which factor drives any gain, and document integration constraints for Laravel/MySQL/WooCommerce."
+          ],
+          "questions": [
+            "Which client and catalogue will be used for the prototype, and what are the exact transaction, user, SKU and time-span counts?",
+            "What product metadata fields are available (descriptions, categories, attributes, price tier, supplier), in which languages, and how complete are they?",
+            "What is the precise success criterion versus best-seller sorting: metric, minimum lift, evaluation window and available A/B traffic?",
+            "Can Harmat confirm the joint-project format, data-sharing agreement, anonymisation procedure and data access mechanism, and name who will do the PHP/Vue/MySQL/WooCommerce integration?",
+            "Can Branislava Erić confirm availability for the required one-day-per-week cadence during semester and summer flexibility, and is there interest in an industrial PhD track, which is currently unknown?"
+          ],
+          "markdown": "# Hybrid Recommender Prototype for Small E-Commerce Catalogues\n\n## Verified facts\n- The company's material states that with only 500–2,000 transactions per client its collaborative filtering models gave worse results than simple best-seller sorting, with the largest dataset at 1,900 completed orders over eighteen months and the smallest around 520, and that it cannot wait for larger datasets; it also reports the purchase co-occurrence matrix was too sparse to be useful. [F1]\n- The company's material reports that simple best-seller sorting outperformed the model in its one client A/B test and that a working prototype for one client would be enough to start. [F2]\n- The company can give full read access to anonymised transaction and product catalogue data under a data-sharing agreement. [F3]\n- The company can allocate one mid-level developer for roughly one day per week and reports it has not done a structured collaboration with a university or research institution, while Erić is cautious about commitments requiring more than one day per week outside the faculty during the academic semester. [F4]\n- The client stack includes PHP/Laravel backend development, MySQL/MariaDB transactional data, and WooCommerce with custom REST API integrations. [F5]\n- Erić lists joint projects with retail technology companies as open; her dissertation concerned hybrid recommendation strategies for data-sparse retail environments, and her group combines content-based filtering with behavioural signals from sparse transaction logs typical of small and medium retail businesses. [F6]\n- Erić's work shows structured product attribute data can be encoded into feature vectors for new-item recommendation, but it notes limitations in attribute completeness and supplier data availability, and warns that content-based methods tend to over-specialise recommendations. [F7]\n- Erić's matrix-factorization study found hit rate drops below the non-personalised popularity baseline at 0.3% density. [F8]\n\n## Our inference\n- Because Erić's evaluations use grocery, clothing, pharmacy and home-goods retail data rather than Harmat's e-commerce catalogues, transfer to a Harmat client is plausible but unproven; the first test should therefore be a one-client transfer check.\n- A content-heavy hybrid is more likely to beat best-seller sorting on small catalogues if metadata is rich enough, but sparse co-occurrence and over-specialisation could erase the gain, so a one-factor-at-a-time comparison should show which signal matters.\n- The proposal is conditional because Erić's availability is unknown and semester-limited; joint-project willingness is open, but a one-day-per-week cadence still needs her confirmation.\n\n## Proposed next steps\n- First experiment: select one Harmat client after a data-sharing agreement and use its anonymised completed orders, expected in the 500–2,000 range, plus product catalogue metadata, split by time into train/test; baseline is best-seller sorting. Build two variants: content-only attribute similarity and a content plus session/co-occurrence hybrid. Measure offline precision@5 and recall@5 against the baseline, then, if offline results justify it, run a small A/B test on product pages against best-seller. Researcher contribution: Erić designs and evaluates the recommender; company contribution: Harmat supplies data access and one developer for Laravel/MySQL/WooCommerce integration and logging. This tests transfer from Erić's published retail settings to one Harmat catalogue. Go/no-go: proceed only if the hybrid beats best-seller by an agreed relative margin (proposed ≥10% on precision@5) and metadata completeness passes an agreed threshold; stop if metadata is too incomplete or no variant beats popularity. Proposed timeline: 4 weeks data audit and offline test, 4–6 weeks integration/A/B if go.\n- Agree before start the A/B success criterion: metric (click-through or add-to-cart rate), minimum relative lift over best-seller, evaluation window and minimum traffic; treat these as negotiation targets, not guarantees, and confirm the one-client test has enough traffic for reliability.\n- Audit product metadata per client: descriptions, categories, attributes, price tier, supplier and languages; quantify completeness and flag fields needed for attribute vectors and explanations.\n- Run a one-factor-at-a-time comparison (best-seller, content-only, content+session, content+co-occurrence) on the same temporal split to identify which factor drives any gain, and document integration constraints for Laravel/MySQL/WooCommerce.\n\n## Open questions\n- Which client and catalogue will be used for the prototype, and what are the exact transaction, user, SKU and time-span counts?\n- What product metadata fields are available (descriptions, categories, attributes, price tier, supplier), in which languages, and how complete are they?\n- What is the precise success criterion versus best-seller sorting: metric, minimum lift, evaluation window and available A/B traffic?\n- Can Harmat confirm the joint-project format, data-sharing agreement, anonymisation procedure and data access mechanism, and name who will do the PHP/Vue/MySQL/WooCommerce integration?\n- Can Branislava Erić confirm availability for the required one-day-per-week cadence during semester and summer flexibility, and is there interest in an industrial PhD track, which is currently unknown?",
+          "taskId": "C065-CH2",
+          "researcherId": "R0816",
+          "format": "joint_project",
+          "isConditional": true,
+          "inputs": [
+            {
+              "artifactId": "business-C065-CH2",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C065-CH2-R0816",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C065-CH2-R0816",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C086-CH1",
+      "reason": "None of 2 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C105-CH2",
+      "reason": "None of 3 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C132-CH4",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    }
+  ]
+}

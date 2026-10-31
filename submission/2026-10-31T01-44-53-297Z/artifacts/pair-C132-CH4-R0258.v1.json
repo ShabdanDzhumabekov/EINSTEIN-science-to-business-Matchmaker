@@ -1,0 +1,194 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0258",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0258",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where in the PostgreSQL full-text search pipeline should script-aware normalization or transliteration be applied so that Latin-script queries retrieve Cyrillic-script contracts and vice versa, including mixed-script documents? The collaboration would test lexicon- and morphology-informed mappings, measure zero-hit and recall changes against relevance judgements, and check that search latency remains acceptable.",
+    "rationale": [
+      {
+        "text": "The researcher has a research line in cross-lingual information retrieval over professional corpora, which is the closest competence to matching equivalent terms across Serbian scripts.",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "bio",
+            "quote": "studying cross-lingual information retrieval in bilingual professional corpora where Serbian interacts with German or Hungarian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has demonstrated that morphology-aware query expansion and normalization can improve retrieval effectiveness over a bag-of-words baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03262",
+            "field": "abstract",
+            "quote": "Mean Average Precision improved from 0.41 for a baseline bag-of-words approach to 0.58 when using the expanded lexicon with morphological normalization on both sides.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built cross-lingual passage retrieval with BM25 and morphological normalization on both language sides for Serbian-Hungarian administrative portals.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03270",
+            "field": "abstract",
+            "quote": "The retrieval backbone uses BM25 with morphological normalization on both language sides",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked with legal-text corpora, which is relevant to contract search and legal terminology.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03265",
+            "field": "abstract",
+            "quote": "a 280,000-token Serbian–German parallel corpus of EU legal texts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has produced verified bilingual terminology resources with inflectional and domain metadata that could inform a controlled mapping lexicon.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0054",
+            "field": "summary",
+            "quote": "The final resource contains 34,000 verified term pairs with inflectional class and domain metadata.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior informal industry consulting experience on text search systems for Serbian document management.",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "industry_experience",
+            "quote": "He has provided informal consulting on text search systems to a Novi Sad-based software company developing document management tools for Serbian public institutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must fit the existing PostgreSQL full-text search index, where Cyrillic and Latin are currently treated as different character sets.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must handle mixed-script contracts, not only documents that are wholly Latin or wholly Cyrillic.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must not noticeably degrade search response time.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must decide whether normalization/transliteration belongs at indexing time, query time, or both, and must address ambiguous Latin-to-Cyrillic mappings under dialect conventions.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "it is not clear where the right place in the pipeline is — at indexing time, at query time, or both",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company engineering support is limited to one backend engineer for up to six weeks.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher availability is limited: a new collaboration can start in late 2025 or 2026, so scheduling must be confirmed.",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "notes",
+            "quote": "Vukelić is currently in the final year of CROSSLEX and has capacity for one new collaboration starting in late 2025 or 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The researcher's published retrieval work is on Serbian-German and Serbian-Hungarian cross-lingual retrieval, not Cyrillic-Latin script normalization inside PostgreSQL full-text search; this is a transfer gap that the first experiment must test on company data.",
+      "The company's estimate that about one in five searches returns zero hits comes from a January 2024 server-log sample, not from a labelled evaluation set, so the true baseline and success criteria are uncertain.",
+      "Ambiguous Latin sequences that map to different Cyrillic letters depending on dialect conventions could cause incorrect normalization if the mapping policy is not fixed before implementation.",
+      "The company can allocate only one backend engineer for up to six weeks, while the researcher's capacity begins in late 2025 or 2026; timeline mismatch could prevent a concrete joint experiment.",
+      "Real client contracts are sensitive, and the company's security policy is self-assessed; data access, anonymization, and legal agreements could delay or block researcher involvement.",
+      "The researcher prefers engagements where linguistic expertise is central rather than peripheral; if the company expects only a quick engineering patch, the collaboration may not fit his stated preference."
+    ],
+    "questions": [
+      "Can the company provide sanitized query logs, mixed-script contract samples, and relevance judgements so that zero-hit reduction and retrieval quality can be measured rather than only estimated?",
+      "What exact latency threshold does 'noticeably' mean for this platform (for example, p95 query latency before and after the change)?",
+      "Which transliteration table or standard should be used, and how should the ambiguous Latin sequences mentioned in the task be resolved for Serbian dialect conventions?",
+      "Which PostgreSQL version and full-text search extensions are in use, and is reindexing or a shadow index feasible within the six-week engineering window?",
+      "What data-protection and contractual conditions apply before the researcher can inspect real client contracts, given that the company describes its information security policy as self-assessed?",
+      "Does the researcher's late-2025/2026 availability fit the company's expected timeline, and are publication, IP, or confidentiality terms expected for a joint project?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0258",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0258",
+        "version": 1
+      }
+    ]
+  }
+}

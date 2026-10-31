@@ -1,0 +1,156 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Mixed-script, morphology-aware Serbian support search for LinguaBot",
+    "facts": [
+      {
+        "text": "The company measured that about 18% of 12,000 real support queries from one bank client returned no useful result, and traced more than half of those misses to morphological mismatch or script confusion.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "about 18% returned no useful result, and our analysis traced more than half of those misses directly to morphological mismatch or script confusion.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The current Elasticsearch setup uses a basic Croatian-oriented stemmer that misses a significant share of Serbian-specific forms.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must tolerate users switching between Latin and Cyrillic mid-sentence and be updateable when new vocabulary arrives without a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "users freely switch between Latin and Cyrillic script mid-sentence",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists can annotate or validate proposed solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The tooling or data budget is around 8,000 EUR, and the company wants something testable within six months.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's notes state that he currently has capacity for one smaller industrial contract or consultancy engagement.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's profile lists openness to joint projects with companies that manage large Serbian-language document collections.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "His published work on phoneme-based token canonicalization and on ordering stemming after script normalization suggests a combined pipeline could address both morphological mismatch and script confusion, but that evidence comes from news, legal and benchmark corpora, so transfer to bank support queries is the key test.",
+      "Cross-script query expansion and cascaded normalization may help mixed-script queries and limit neural overhead, but his own studies report index bloat, exception errors for loanwords and proper nouns, and transformer latency at the 99th percentile; these are risks to check against the company's production constraints.",
+      "His stated capacity for one smaller contract fits a modest six-month scope, but because his availability is unknown, this collaboration remains conditional on his confirmation."
+    ],
+    "proposedActions": [
+      "Run a first experiment on the company's labelled query-response pairs (around 85,000), subject to company approval and privacy clearance. Split them into separate tuning and evaluation samples, and have the company check their independence. Baseline: the current Elasticsearch setup with its Croatian-oriented stemmer and no script normalization. Proposed changes, run separately: phoneme-based canonicalization at indexing and query time; Serbian lemmatization or stemming before and after normalization; script-aware query expansion; and a cascaded normalizer with exception handling for loanwords and proper nouns. Measure the company's own 'no useful result' rate on the held-out evaluation sample, reporting script-mixed and morphology-heavy queries separately. Proposed go/no-go: proceed only if the held-out no-useful-result rate is below 5% under the company's definition, the update path avoids full re-indexing, and scoped data/tooling work fits the roughly 8,000 EUR budget; otherwise stop or rescope. Researcher proposes pipeline design and analysis; company provides data access, linguist validation and baseline measurements.",
+      "Test maintainability over a proposed four-week window: add a small set of new product terms in one script, then measure how many queries are affected, how long linguist validation takes, and whether the index can be updated incrementally without full re-index. Proposed success criterion: updates are completed incrementally with documented effort and no measured regression in the held-out no-useful-result rate.",
+      "Check integration and latency against constraints the company must confirm: insert normalization at indexing and query time in a staging Elasticsearch index, compare deterministic-only and cascaded deterministic-plus-neural-fallback configurations, and measure p95/p99 latency, index-size growth and deployment effort. Proposed timeline for the six-month scope: months 1–2 data and evaluation setup, months 3–4 first-experiment runs, month 5 integration and maintenance test, month 6 validation and handover; this is a negotiation target, not an agreed plan."
+    ],
+    "questions": [
+      "Can Stefan Dragić confirm his availability and capacity for a six-month joint project or contract research engagement, and whether industrial PhD supervision is also of interest?",
+      "What is the current Elasticsearch index mapping and Serbian analyzer chain, and can script normalization be inserted at both indexing and query time without a full re-index?",
+      "What privacy, licensing or client-consent terms apply to the 85,000 labelled query-response pairs and to any reuse of the 12,000-query bank sample?",
+      "How exactly is a 'no useful result' defined and measured today, what baseline and held-out evaluation set will be used, and what production latency and throughput constraints must the pipeline meet?"
+    ],
+    "benefits": {
+      "company": "The first experiment could show whether a script-normalizing, morphology-aware pipeline reduces LinguaBot's measured no-useful-result rate on real support queries and whether vocabulary updates can avoid a full re-index. It could also clarify whether the company's labelled pairs and linguists are sufficient for a maintainable six-month test.",
+      "researcher": "The first experiment could let Stefan Dragić test whether his phoneme-based canonicalization and script-normalization work transfers from news, legal and benchmark corpora to bank support queries, with labelled query-response pairs and linguist validation available if the company agrees. This is conditional on his confirmed availability and on agreed data access."
+    },
+    "markdown": "# Mixed-script, morphology-aware Serbian support search for LinguaBot\n\n## Verified facts\n- The company measured that about 18% of 12,000 real support queries from one bank client returned no useful result, and traced more than half of those misses to morphological mismatch or script confusion. [F1]\n- The current Elasticsearch setup uses a basic Croatian-oriented stemmer that misses a significant share of Serbian-specific forms. [F2]\n- The approach must tolerate users switching between Latin and Cyrillic mid-sentence and be updateable when new vocabulary arrives without a full re-index. [F3]\n- The company has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists can annotate or validate proposed solutions. [F4]\n- The tooling or data budget is around 8,000 EUR, and the company wants something testable within six months. [F5]\n- The researcher's notes state that he currently has capacity for one smaller industrial contract or consultancy engagement. [F6]\n- The researcher's profile lists openness to joint projects with companies that manage large Serbian-language document collections. [F7]\n\n## Potential benefits\n- For the company: The first experiment could show whether a script-normalizing, morphology-aware pipeline reduces LinguaBot's measured no-useful-result rate on real support queries and whether vocabulary updates can avoid a full re-index. It could also clarify whether the company's labelled pairs and linguists are sufficient for a maintainable six-month test.\n- For the researcher: The first experiment could let Stefan Dragić test whether his phoneme-based canonicalization and script-normalization work transfers from news, legal and benchmark corpora to bank support queries, with labelled query-response pairs and linguist validation available if the company agrees. This is conditional on his confirmed availability and on agreed data access.\n\n## Our inference\n- His published work on phoneme-based token canonicalization and on ordering stemming after script normalization suggests a combined pipeline could address both morphological mismatch and script confusion, but that evidence comes from news, legal and benchmark corpora, so transfer to bank support queries is the key test.\n- Cross-script query expansion and cascaded normalization may help mixed-script queries and limit neural overhead, but his own studies report index bloat, exception errors for loanwords and proper nouns, and transformer latency at the 99th percentile; these are risks to check against the company's production constraints.\n- His stated capacity for one smaller contract fits a modest six-month scope, but because his availability is unknown, this collaboration remains conditional on his confirmation.\n\n## Proposed next steps\n- Run a first experiment on the company's labelled query-response pairs (around 85,000), subject to company approval and privacy clearance. Split them into separate tuning and evaluation samples, and have the company check their independence. Baseline: the current Elasticsearch setup with its Croatian-oriented stemmer and no script normalization. Proposed changes, run separately: phoneme-based canonicalization at indexing and query time; Serbian lemmatization or stemming before and after normalization; script-aware query expansion; and a cascaded normalizer with exception handling for loanwords and proper nouns. Measure the company's own 'no useful result' rate on the held-out evaluation sample, reporting script-mixed and morphology-heavy queries separately. Proposed go/no-go: proceed only if the held-out no-useful-result rate is below 5% under the company's definition, the update path avoids full re-indexing, and scoped data/tooling work fits the roughly 8,000 EUR budget; otherwise stop or rescope. Researcher proposes pipeline design and analysis; company provides data access, linguist validation and baseline measurements.\n- Test maintainability over a proposed four-week window: add a small set of new product terms in one script, then measure how many queries are affected, how long linguist validation takes, and whether the index can be updated incrementally without full re-index. Proposed success criterion: updates are completed incrementally with documented effort and no measured regression in the held-out no-useful-result rate.\n- Check integration and latency against constraints the company must confirm: insert normalization at indexing and query time in a staging Elasticsearch index, compare deterministic-only and cascaded deterministic-plus-neural-fallback configurations, and measure p95/p99 latency, index-size growth and deployment effort. Proposed timeline for the six-month scope: months 1–2 data and evaluation setup, months 3–4 first-experiment runs, month 5 integration and maintenance test, month 6 validation and handover; this is a negotiation target, not an agreed plan.\n\n## Open questions\n- Can Stefan Dragić confirm his availability and capacity for a six-month joint project or contract research engagement, and whether industrial PhD supervision is also of interest?\n- What is the current Elasticsearch index mapping and Serbian analyzer chain, and can script normalization be inserted at both indexing and query time without a full re-index?\n- What privacy, licensing or client-consent terms apply to the 85,000 labelled query-response pairs and to any reuse of the 12,000-query bank sample?\n- How exactly is a 'no useful result' defined and measured today, what baseline and held-out evaluation set will be used, and what production latency and throughput constraints must the pipeline meet?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

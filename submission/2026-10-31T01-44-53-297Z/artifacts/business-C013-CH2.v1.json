@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C013-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C013-CH2",
+    "companyId": "C013",
+    "companyName": "Pannonia Osiguranje-Tech a.d.",
+    "sector": "Insurtech — usage-based motor and property insurance",
+    "location": "Subotica",
+    "challenge": {
+      "text": {
+        "recordId": "C013-CH2",
+        "field": "text",
+        "text": "Property claims for hail damage on Vojvodina farms are costing us about 18% more per claim than our pricing assumed; we believe we're underestimating exposure because we don't know how to map hail intensity at field level."
+      },
+      "detail": {
+        "recordId": "C013-CH2",
+        "field": "detail",
+        "text": "Hail claims on Vojvodina farm property have been running about 18% above our loss assumption for the past three summers. Our current approach is to rate by municipality and apply a single hail loading per municipality, but Vojvodina hailstorms are narrow and fast-moving — a storm can devastate one village and leave the farm two kilometres away untouched. We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution, but we have not been able to link that data reliably to individual policy locations because a large share of our farm addresses are stored only at the settlement level, not as coordinates. We have tried overlaying the MeteoVoj grid manually in QGIS for the worst claim years, and the patterns look promising, but turning that into something that feeds the pricing model automatically is beyond what our team can do alone. A good outcome would be a method that takes our policy locations, matches them to hail intensity estimates at field level, and tells us which parts of our portfolio are priced too low. We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C013",
+        "field": "about",
+        "text": "Pannonia Osiguranje-Tech a.d. was established in 2009 in Subotica, when a small group of insurance professionals decided that the Vojvodina market deserved a carrier built around data rather than paperwork. We started with straightforward motor and household policies for private customers in the northern Serbia corridor, then spent the following decade quietly replacing manual underwriting steps with sensor-driven and rules-based processes. Today our 187 staff serve roughly 41,000 active policyholders across Serbia, Bosnia-Herzegovina and North Macedonia, with a Romanian branch application under review. Our motor book covers private cars, light commercial vehicles and agricultural machinery; our property book covers urban apartments, rural households and, increasingly, farm buildings and standing crops in the Vojvodina plains. What sets us apart is the combination of a regional insurer's knowledge of local claim patterns with the tooling usually found in larger markets: telematics hardware fitted in about 9,400 vehicles, a smart-home sensor kit sold under our own label, and a pricing function that reruns rating factors every quarter rather than every renewal cycle. Our leadership team is led by Chief Executive Mirela Bogdanović and Chief Actuary Dragan Fekete, supported by product, claims and technology heads based in Subotica and a small Belgrade office."
+      },
+      "products": [
+        {
+          "recordId": "C013",
+          "field": "products",
+          "text": "Usage-based motor insurance with telematics black-box device"
+        },
+        {
+          "recordId": "C013",
+          "field": "products",
+          "text": "Smart-home property insurance with connected smoke, flood and motion sensors"
+        },
+        {
+          "recordId": "C013",
+          "field": "products",
+          "text": "Agricultural property insurance for farm buildings and standing crops"
+        },
+        {
+          "recordId": "C013",
+          "field": "products",
+          "text": "Group motor fleet policies for SME fleets up to 50 vehicles"
+        },
+        {
+          "recordId": "C013",
+          "field": "products",
+          "text": "Expat and short-stay property cover for Western Balkans cross-border residents"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "Proprietary telematics black-box hardware (PanTrack G2) transmitting via GPRS"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "PostgreSQL data warehouse for trip event storage"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "Python-based batch scoring pipeline for quarterly rating factor refresh"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "Guidewire PolicyCenter (legacy on-premise instance, version 9)"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "OpenStreetMap and QGIS for spatial claims analysis"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "REST API integration with regional weather data provider MeteoVoj d.o.o."
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "Power BI dashboards for claims and underwriting reporting"
+        },
+        {
+          "recordId": "C013",
+          "field": "tech",
+          "text": "Salesforce CRM for agent and broker channel management"
+        }
+      ],
+      "plans": {
+        "recordId": "C013",
+        "field": "plans",
+        "text": "Pannonia Osiguranje-Tech aims to complete its Romanian market entry by the end of 2025 and begin selling telematics motor policies there by mid-2026. Over the same period, the company plans to replace its on-premise Guidewire instance with a cloud-hosted version and extend the smart-home sensor kit to rental-property landlords."
+      },
+      "rdCapacity": {
+        "recordId": "C013",
+        "field": "rd_capacity",
+        "text": "The company has no dedicated research unit; applied development work is carried out by a four-person pricing team and a six-person IT team who split their time between operational support and new product build."
+      },
+      "pastCollaborations": {
+        "recordId": "C013",
+        "field": "past_collaborations",
+        "text": "Pannonia Osiguranje-Tech worked with Fakultet tehničkih nauka in Novi Sad on a small ERASMUS+ project in 2021 to prototype a flood-risk mapping tool for the Sava floodplain, which was completed but not yet integrated into the pricing system."
+      }
+    }
+  }
+}

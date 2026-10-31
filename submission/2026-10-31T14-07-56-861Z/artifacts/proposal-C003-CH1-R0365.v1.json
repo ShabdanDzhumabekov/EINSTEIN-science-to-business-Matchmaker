@@ -1,0 +1,186 @@
+{
+  "ref": {
+    "artifactId": "proposal-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Conditional joint project: explaining chilled conveyor-frame weld cracking",
+    "facts": [
+      {
+        "text": "AutomVoj reports painted mild-steel hollow-section frames cracking at crossmember-to-stringer welds after about 18 months of continuous use, with 14 complete assemblies replaced under warranty this year.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we are seeing weld joint cracking at the main crossmember-to-stringer connections after about 18 months of continuous use.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "This year alone we have replaced 14 complete frame assemblies under warranty",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company describes cold-store operation at 2–6 °C and suspects a combination of thermal cycling, condensation and loaded-belt vibration; it does not report these as established causes.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts is doing something",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has site photographs and measurements, plus two retained failed sections.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj reports lacking low-temperature cyclic-testing equipment and know-how. Erić’s chamber and fatigue machine are shared, with advance coordination needed for extended campaigns.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide development effort between live projects and improvements.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s research compared mechanical fatigue and thermal cycling in butt-welded S275JR plates between −30 °C and +20 °C. Out-of-phase loading shortened average crack-initiation life by 28% relative to the room-temperature baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "Crack initiation life, defined as a 5% stiffness drop, was shortest in the out-of-phase TMF condition, averaging 28% fewer cycles than the room-temperature baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s participation material expresses openness to joint projects involving low-temperature or combined-loading fatigue tests.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a credible method match, but participation remains conditional because Erić’s availability is unknown; openness to this format is not a commitment to this project.",
+      "The plate experiments do not validate a mechanism in painted conveyor hollow sections at 2–6 °C. Their shorter-life result highlights interaction risk, not evidence that AutomVoj’s cracks have the same cause.",
+      "The retained sections could guide reproduction criteria, but may not represent all replacements. Condensation or coating damage could require additional expertise, and chamber temperature capability alone does not establish fixture compatibility or humidity control."
+    ],
+    "proposedActions": [
+      "Propose a replicated experiment on matching painted production crossmember-to-stringer joints. Cross independently controlled thermal cycling, condensation and belt vibration on/off: baseline, each alone, all pairs and the full combination, plus the room-temperature workshop control. Thermal-off uses a fixed service-range temperature; thermal-on follows measured service excursions including 2–6 °C. Define wet/dry levels independently through dew-point control and vibration levels from site measurements; hold geometry, coating, mean load and inspection intervals comparable. AutomVoj would supply specimens and service information; Erić would propose fixtures, loading and analysis. Measure cycles to confirmed cracking, crack origin/path, fracture features and factor contrasts against replicate scatter. Proposed go/no-go: the best-supported configuration, whichever it is, must repeatedly reproduce field crack locations and fracture features, with contrasts distinguishable from scatter and service-relevant exposure justified against approximately 18 months. Insufficient exposure or unmatched fractures means inconclusive, not success. A null single-factor result does not exclude interactions; unresolved contrasts require further replication before causal conclusions.",
+      "Before testing, agree evidence preservation and destructive sampling for both retained sections and site records. Propose an initial six-week preparation phase after access and booking confirmation: inspect failures, document steel/weld/coating specifications, measure service strain, vibration, temperature and humidity, and verify fixture and condensation-control feasibility. Explicitly allocate company engineer time around live projects and reserve external laboratory capacity; revise the schedule if these prerequisites fail.",
+      "Use separate specimens for protocol tuning and held-out confirmation, checking batch and exposure independence. After mechanism testing, propose feasible welding, filler or geometry changes for a separately agreed validation campaign using the same field-matching failure measures. Accelerated cracking alone would not demonstrate prevention of warranty failures; service follow-up would remain necessary. Add corrosion/coating expertise if inspection indicates that gap."
+    ],
+    "questions": [
+      "Can Erić confirm availability, and can both parties agree staff allocations, laboratory booking, budget and a decision deadline for this joint project?",
+      "What steel, section, filler, welding, coating and inspection specifications—and production-change restrictions—define representative specimens?",
+      "What permissions are available for examining and destructively sampling the retained sections, obtaining matching new or service-aged controls, and instrumenting customer sites?",
+      "Can the shared equipment accommodate representative joints, measured cyclic loads and independently controlled condensation at 2–6 °C?"
+    ],
+    "benefits": {
+      "company": "The first experiment could distinguish individual and interacting service factors and show whether a laboratory test genuinely reproduces the field failure, informing subsequent production changes.",
+      "researcher": "Subject to agreement and access, Erić could test transfer of thermo-mechanical fatigue methods to painted hollow-section conveyor joints using retained failures, service measurements and representative specimens."
+    },
+    "markdown": "# Conditional joint project: explaining chilled conveyor-frame weld cracking\n\n## Verified facts\n- AutomVoj reports painted mild-steel hollow-section frames cracking at crossmember-to-stringer welds after about 18 months of continuous use, with 14 complete assemblies replaced under warranty this year. [F1]\n- The company describes cold-store operation at 2–6 °C and suspects a combination of thermal cycling, condensation and loaded-belt vibration; it does not report these as established causes. [F2]\n- AutomVoj has site photographs and measurements, plus two retained failed sections. [F3]\n- AutomVoj reports lacking low-temperature cyclic-testing equipment and know-how. Erić’s chamber and fatigue machine are shared, with advance coordination needed for extended campaigns. [F4]\n- AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide development effort between live projects and improvements. [F5]\n- Erić’s research compared mechanical fatigue and thermal cycling in butt-welded S275JR plates between −30 °C and +20 °C. Out-of-phase loading shortened average crack-initiation life by 28% relative to the room-temperature baseline. [F6]\n- Erić’s participation material expresses openness to joint projects involving low-temperature or combined-loading fatigue tests. [F7]\n\n## Potential benefits\n- For the company: The first experiment could distinguish individual and interacting service factors and show whether a laboratory test genuinely reproduces the field failure, informing subsequent production changes.\n- For the researcher: Subject to agreement and access, Erić could test transfer of thermo-mechanical fatigue methods to painted hollow-section conveyor joints using retained failures, service measurements and representative specimens.\n\n## Our inference\n- This suggests a credible method match, but participation remains conditional because Erić’s availability is unknown; openness to this format is not a commitment to this project.\n- The plate experiments do not validate a mechanism in painted conveyor hollow sections at 2–6 °C. Their shorter-life result highlights interaction risk, not evidence that AutomVoj’s cracks have the same cause.\n- The retained sections could guide reproduction criteria, but may not represent all replacements. Condensation or coating damage could require additional expertise, and chamber temperature capability alone does not establish fixture compatibility or humidity control.\n\n## Proposed next steps\n- Propose a replicated experiment on matching painted production crossmember-to-stringer joints. Cross independently controlled thermal cycling, condensation and belt vibration on/off: baseline, each alone, all pairs and the full combination, plus the room-temperature workshop control. Thermal-off uses a fixed service-range temperature; thermal-on follows measured service excursions including 2–6 °C. Define wet/dry levels independently through dew-point control and vibration levels from site measurements; hold geometry, coating, mean load and inspection intervals comparable. AutomVoj would supply specimens and service information; Erić would propose fixtures, loading and analysis. Measure cycles to confirmed cracking, crack origin/path, fracture features and factor contrasts against replicate scatter. Proposed go/no-go: the best-supported configuration, whichever it is, must repeatedly reproduce field crack locations and fracture features, with contrasts distinguishable from scatter and service-relevant exposure justified against approximately 18 months. Insufficient exposure or unmatched fractures means inconclusive, not success. A null single-factor result does not exclude interactions; unresolved contrasts require further replication before causal conclusions.\n- Before testing, agree evidence preservation and destructive sampling for both retained sections and site records. Propose an initial six-week preparation phase after access and booking confirmation: inspect failures, document steel/weld/coating specifications, measure service strain, vibration, temperature and humidity, and verify fixture and condensation-control feasibility. Explicitly allocate company engineer time around live projects and reserve external laboratory capacity; revise the schedule if these prerequisites fail.\n- Use separate specimens for protocol tuning and held-out confirmation, checking batch and exposure independence. After mechanism testing, propose feasible welding, filler or geometry changes for a separately agreed validation campaign using the same field-matching failure measures. Accelerated cracking alone would not demonstrate prevention of warranty failures; service follow-up would remain necessary. Add corrosion/coating expertise if inspection indicates that gap.\n\n## Open questions\n- Can Erić confirm availability, and can both parties agree staff allocations, laboratory booking, budget and a decision deadline for this joint project?\n- What steel, section, filler, welding, coating and inspection specifications—and production-change restrictions—define representative specimens?\n- What permissions are available for examining and destructively sampling the retained sections, obtaining matching new or service-aged controls, and instrumenting customer sites?\n- Can the shared equipment accommodate representative joints, measured cyclic loads and independently controlled condensation at 2–6 °C?",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

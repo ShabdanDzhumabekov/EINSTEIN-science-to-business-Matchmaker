@@ -1,0 +1,233 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R0071",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0071",
+    "name": "Olivera Rakić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning and Data Mining",
+      "Signal and Time-Series Analysis",
+      "Industrial Fault Detection and Diagnostics",
+      "Pattern Recognition"
+    ],
+    "keywords": [
+      "anomaly detection",
+      "imbalanced learning",
+      "semi-supervised classification",
+      "concept drift",
+      "time-series",
+      "high-dimensional data",
+      "oversampling",
+      "real-time inference",
+      "fault detection",
+      "ensemble methods"
+    ],
+    "openTo": [
+      "joint projects with companies on anomaly detection in industrial sensor data",
+      "contract research on imbalanced classification and concept drift adaptation",
+      "industrial PhD supervision (co-supervision with company mentor)",
+      "student internships for master students working on real company datasets",
+      "consulting on evaluation methodology and validation protocol design for ML-based monitoring systems"
+    ],
+    "bio": {
+      "recordId": "R0071",
+      "field": "bio",
+      "text": "Olivera Rakić received her B.Sc. and M.Sc. degrees in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2010 and 2012 respectively, and her Ph.D. from the same institution in 2018, with a dissertation on semi-supervised detection of rare fault events in industrial sensor streams. She held a postdoctoral fellowship at the University of Zagreb from 2018 to 2020 before returning to Novi Sad as an Assistant Professor. Her group focuses on anomaly detection and classification in high-dimensional, heavily imbalanced time-series data, including methods for handling concept drift and label scarcity. She teaches courses on machine learning and data mining at undergraduate and master level. The group makes regular use of the Faculty's data analytics cluster and has access to a small edge-computing testbed for real-time inference experiments."
+    },
+    "industryExperience": {
+      "recordId": "R0071",
+      "field": "industry_experience",
+      "text": "During her postdoctoral period at the University of Zagreb, Rakić participated in a six-month consulting engagement with a regional utility company to audit the evaluation practices of their existing predictive maintenance classifier, resulting in a revised validation protocol. She has no other formal industry employment."
+    },
+    "notes": {
+      "recordId": "R0071",
+      "field": "notes",
+      "text": "Rakić is currently co-supervising two PhD students under DRIFTGUARD and has limited capacity for new long-term commitments before mid-2025. She is particularly interested in partners who can provide access to real labelled or partially labelled sensor datasets, which are the main bottleneck for her research. She prefers collaborations where the company has an internal technical contact who can validate domain assumptions."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-00958",
+        "kind": "publication",
+        "title": "Threshold Selection Strategies for Binary Classifiers Trained on Severely Imbalanced Sensor Data",
+        "body": {
+          "recordId": "SYN-PUB-00958",
+          "field": "abstract",
+          "text": "Operational sensor logs from industrial machinery frequently exhibit class imbalance ratios exceeding 1:500 between fault and normal states. Standard classifiers trained on such data learn to minimise overall loss by almost entirely ignoring the minority class. This paper evaluates seven threshold-moving strategies—including cost-sensitive calibration, F-beta optimisation, and precision-recall break-even—on four publicly available and two proprietary vibration datasets with imbalance ratios between 1:200 and 1:1200. Experiments use three base classifiers: logistic regression, a gradient-boosted tree, and a one-dimensional convolutional network. Results show that threshold strategies interacting with the base classifier type produce large performance variation: no single strategy dominates across all settings. For the convolutional model, precision-recall break-even consistently achieves the best G-mean scores, while cost-sensitive calibration favours recall at an unacceptable precision cost on the most extreme imbalance cases. Recommendations are given as a decision guide indexed by imbalance ratio and acceptable false-positive rate."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00959",
+        "kind": "publication",
+        "title": "Comparative Evaluation of Oversampling Techniques for Multivariate Time-Series Fault Classification",
+        "body": {
+          "recordId": "SYN-PUB-00959",
+          "field": "abstract",
+          "text": "Synthetic minority oversampling (SMOTE) and its variants were originally designed for tabular data and do not respect temporal dependencies present in multivariate sensor streams. This paper compares six oversampling methods—SMOTE, Borderline-SMOTE, ADASYN, TimeGAN-based synthesis, DTW-barycentric averaging, and a simple window-jitter baseline—on three industrial datasets: hydraulic pump telemetry, CNC spindle vibration, and electrical substation load measurements. Each dataset is split chronologically to avoid leakage, and ten-fold cross-validation is applied within the training segment. Evaluation uses area under the precision-recall curve (AUPRC) and macro F1. DTW-barycentric averaging achieves the highest AUPRC on the two vibration datasets (0.84 and 0.79 respectively) but underperforms TimeGAN on the load dataset. Window jitter, despite its simplicity, ranks third overall and substantially outperforms standard SMOTE in all tested settings, suggesting that temporal coherence is more important than interpolation sophistication for most fault types."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00960",
+        "kind": "publication",
+        "title": "A Semi-Supervised One-Class SVM Framework for Rare-Event Detection with Partial Label Information",
+        "body": {
+          "recordId": "SYN-PUB-00960",
+          "field": "abstract",
+          "text": "In many industrial monitoring scenarios, operators can label a small fraction of anomalous events while the majority of the data stream remains unlabelled. Standard one-class SVM (OC-SVM) ignores partial labels entirely; this paper proposes a constrained OC-SVM variant that incorporates labelled anomalies as must-outside constraints during kernel optimisation. The method is evaluated on four datasets: bearing degradation signals, network intrusion logs, medical ECG records with annotated arrhythmia bursts, and a synthetic benchmark with controlled sparsity of positive labels (1%, 5%, 10%, 20%). At 5% label density, the constrained OC-SVM reduces false-negative rate by 18 percentage points relative to the unconstrained baseline without statistically significant change in false-positive rate. The framework adds a single hyperparameter controlling constraint weight and remains tractable for datasets up to 500,000 samples with an RBF kernel. Ablation studies confirm that gains diminish beyond 15% label density, at which point a supervised SVM becomes preferable."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00961",
+        "kind": "publication",
+        "title": "Detecting Concept Drift in Streaming Fault Data Using Adaptive Windowing and Classifier Ensemble Voting",
+        "body": {
+          "recordId": "SYN-PUB-00961",
+          "field": "abstract",
+          "text": "Industrial processes evolve over time due to wear, seasonal variation, and deliberate operational changes, causing the statistical properties of sensor streams to shift. Classifiers trained on historical data degrade silently when such drift occurs. This work applies ADWIN-based adaptive windowing to trigger retraining of a rotating ensemble of gradient-boosted classifiers on a gas compressor monitoring stream collected over 26 months. Three types of artificial concept drift—sudden, gradual, and recurrent—are injected into a held-out test segment and detection latency is measured. ADWIN combined with ensemble voting detects sudden drift with a median latency of 47 samples and gradual drift with a latency of 190 samples, compared to 620 samples for a non-adaptive baseline. Memory overhead is bounded by retaining at most five ensemble members. The study also documents four naturally occurring drifts identified in the real 26-month log, correlating two of them with documented maintenance events."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00962",
+        "kind": "publication",
+        "title": "Self-Training with Uncertainty Filtering for Semi-Supervised Anomaly Detection in High-Dimensional Process Data",
+        "body": {
+          "recordId": "SYN-PUB-00962",
+          "field": "abstract",
+          "text": "Self-training iteratively assigns pseudo-labels to unlabelled samples and retrains a classifier, but in highly imbalanced settings pseudo-label noise disproportionately corrupts the minority class. This paper introduces an uncertainty filter based on prediction entropy estimated through Monte Carlo dropout: only samples whose entropy falls below a calibrated threshold enter the pseudo-labelled pool. The method is tested on three high-dimensional datasets (128 to 512 features) derived from chemical reactor sensors, semiconductor fabrication metrology, and server performance counters, all with imbalance ratios above 1:300. Starting from 2% labelled data, the filtered self-training approach reaches 91% of fully supervised F1 performance on the chemical reactor dataset, compared to 74% for standard self-training. Runtime scales linearly in dataset size and does not require architectural changes beyond enabling dropout at inference time. A sensitivity analysis over the entropy threshold is provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00963",
+        "kind": "publication",
+        "title": "Benchmarking Real-Time Anomaly Detection Pipelines on Edge Hardware Under Memory and Latency Constraints",
+        "body": {
+          "recordId": "SYN-PUB-00963",
+          "field": "abstract",
+          "text": "Deploying anomaly detection at the network edge requires balancing model accuracy against strict memory budgets and latency targets. This paper profiles eight detection pipelines—including isolation forest, lightweight autoencoder, quantised convolutional network, and random forest with feature hashing—on three edge boards (an ARM Cortex-A72 single-board computer, a microcontroller-class device with 256 KB RAM, and an FPGA soft-processor). Workloads are drawn from wind turbine SCADA signals and smart meter load profiles sampled at 10 Hz and 1 Hz respectively. The quantised convolutional network fits within 200 KB and achieves 97% of its full-precision AUPRC while meeting a 5 ms per-window latency budget on the ARM board. On the microcontroller, only isolation forest and feature-hashed random forest are deployable; the latter achieves the better AUPRC (0.71 vs. 0.63). All profiling code and configuration files are released under an open licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00964",
+        "kind": "publication",
+        "title": "Imbalanced Learning for Industrial Time-Series: A Structured Review of Methods and Evaluation Practices",
+        "body": {
+          "recordId": "SYN-PUB-00964",
+          "field": "abstract",
+          "text": "This chapter surveys the literature on learning from imbalanced industrial time-series data published between 2010 and 2022, covering approximately 160 papers. The chapter is organised around five methodological families: resampling, cost-sensitive training, anomaly-detection-based approaches, threshold adjustment, and ensemble methods. For each family, representative algorithms are described, and reported evaluation metrics are tabulated. A recurring finding is that many papers report only accuracy or AUC-ROC despite these being insensitive to minority-class performance at high imbalance ratios; the chapter argues for systematic reporting of AUPRC and G-mean alongside domain-relevant cost measures. A taxonomy of evaluation pitfalls specific to temporal data—including label leakage across temporal folds and inappropriate use of stratified k-fold on non-stationary streams—is presented. The chapter concludes with a structured list of open problems, including the combination of concept drift adaptation with imbalanced learning and the lack of standardised public benchmarks for industrial fault streams."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00965",
+        "kind": "publication",
+        "title": "Active Learning with Query-by-Committee for Labelling Efficiency in Imbalanced Fault Streams",
+        "body": {
+          "recordId": "SYN-PUB-00965",
+          "field": "abstract",
+          "text": "Obtaining labelled fault examples is expensive in industrial settings because it requires expert inspection. Active learning selects the most informative unlabelled samples for expert annotation, potentially reducing labelling cost. This paper applies query-by-committee (QBC) using a committee of five classifiers—two gradient-boosted trees, two SVMs with different kernels, and a shallow neural network—to three simulated fault streams with imbalance ratios of 1:100, 1:500, and 1:2000. A disagreement-weighted sampling strategy biased toward minority-class candidates is introduced to counteract the tendency of standard QBC to query near the decision boundary in the majority class region. The biased strategy reaches 90% of fully labelled F1 using only 12% of available labels at 1:500 imbalance, compared to 21% for unbiased QBC and 31% for random sampling. Latency until the first useful model (F1 > 0.5) is reduced from 840 queries to 310 queries under the biased strategy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00967",
+        "kind": "publication",
+        "title": "Embedded Predictive Coding for Inertial Measurement Unit Streams in Vehicle Telematics",
+        "body": {
+          "recordId": "SYN-PUB-00967",
+          "field": "abstract",
+          "text": "Fleet telematics units generate high-volume 6-axis IMU data at 100 Hz used for driver behaviour scoring and road surface classification. This paper describes a predictive coder for IMU streams that uses second-order linear prediction with coefficients updated per frame via a recursive least-squares routine fitting within 2 kB of working memory on a Cortex-M7 at 216 MHz. Residuals are quantised with a non-uniform scalar quantiser whose levels are adapted to a Laplacian residual distribution. Across 480 km of mixed urban, motorway, and rural driving logged with an instrumented vehicle, the coder achieves a mean compression ratio of 5.2:1 at 3.1% root-mean-square normalised distortion. Hard braking and pothole events, identified by a reference classifier, were preserved with 96.4% event retention versus 78.1% for a non-adaptive arithmetic coder at the same bit rate. Computational load was 1.4% of CPU capacity, leaving ample headroom for concurrent GNSS and CAN processing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00968",
+        "kind": "publication",
+        "title": "Static Analysis of Notebook Smells",
+        "body": {
+          "recordId": "SYN-PUB-00968",
+          "field": "abstract",
+          "text": "The software-engineering concept of code smells has been adapted for Jupyter notebooks, where additional structural issues such as non-linear execution order, long chains of imports split across cells, and oversized cells with mixed concerns are common. This book chapter reviews the state of the art in notebook smell detection tools and taxonomies as of 2020, categorises fourteen proposed smell types from the literature, and evaluates four open-source detectors against a common benchmark of 400 annotated notebooks. Detection rates range from 41 % to 67 % for the smell types each tool targets. The chapter also presents guidelines for incorporating smell detection into continuous-integration workflows and discusses how certain smells, particularly those involving hidden execution state, overlap with reproducibility and correctness failures. Original contributions include a unified smell ontology and a mapping between smell types and the defect categories from earlier empirical studies by the authors. Intended audience includes practitioners designing data-science toolchains and researchers building analysis tools."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0118",
+        "kind": "project",
+        "title": "Drift-Aware Semi-Supervised Monitoring for Low-Label Industrial Environments",
+        "body": {
+          "recordId": "SYN-PRJ-0118",
+          "field": "summary",
+          "text": "DRIFTGUARD addresses the combined challenge of label scarcity and concept drift in industrial condition monitoring. The project develops a unified framework in which a semi-supervised classifier is coupled with a lightweight drift detector; when drift is flagged, the system selects a small targeted query set using active learning rather than retraining from scratch on all historical data. The framework is validated on sensor streams from two partner facilities: a food-processing conveyor line and a district heating pump station. Expected outcomes include an open benchmark dataset with documented drift events, a reference software implementation, and design guidelines for practitioners. The project funds one PhD student and two master student thesis positions at the Faculty of Technical Sciences, University of Novi Sad."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0119",
+        "kind": "project",
+        "title": "Edge-Deployable Streaming Analytics for Smart Manufacturing in the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0119",
+          "field": "summary",
+          "text": "STREAMWISE is a cross-border cooperation project targeting the deployment of data stream analytics in small and medium enterprises in the Hungarian–Serbian border region. Olivera Rakić leads the work package on model compression and edge deployment, responsible for adapting anomaly detection and classification pipelines to resource-constrained hardware installed in partner SME facilities. The work package produces deployment-ready software containers, an evaluation report comparing accuracy–latency trade-offs across hardware tiers, and a training curriculum for engineers at partner companies. The project is coordinated by the Hungarian partner and involves three Serbian and two Hungarian organisations."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0434",
+        "kind": "project",
+        "title": "Contract-Based Integration Testing for Multi-Supplier CAN Networks in Small-Series Manufacturing",
+        "body": {
+          "recordId": "SYN-PRJ-0434",
+          "field": "summary",
+          "text": "CONTRACE addressed the integration testing burden faced by small-series manufacturers who assemble CAN-based control systems from components sourced from multiple suppliers. The project produced the CAN-CL contract language, the AutoCL synthesis tool and the CovBench-CAN benchmark suite. It validated these artefacts with three Serbian industrial partners producing agricultural equipment controllers and building-automation gateways. The project also developed training material used in a graduate course module on contract-based testing. Total budget was approximately 28 million RSD over 36 months. The project employed two doctoral students, both of whom completed their theses within the project period."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0799",
+        "kind": "project",
+        "title": "Sparsity-Aware Intermediate Representations and Code Generation for Reconfigurable Compute Fabrics",
+        "body": {
+          "recordId": "SYN-PRJ-0799",
+          "field": "summary",
+          "text": "The project develops a compiler infrastructure centred on a typed intermediate representation that carries sparsity annotations as first-class attributes alongside standard SSA constructs. The main deliverables are: a formal semantics for the sparse-annotated IR, a suite of analysis and transformation passes implemented in LLVM, and an evaluation methodology based on reproducible benchmarks compiled to FPGA-emulated accelerator targets. The project involves three researchers from the Faculty of Technical Sciences and one from the Faculty of Electronic Engineering in Niš. Industrial relevance is validated through collaboration with a local FPGA design house that provides access to proprietary accelerator models under a non-disclosure agreement. Results are published in open access venues wherever journal policy permits."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "open_to",
+            "quote": "industrial PhD supervision (co-supervision with company mentor)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "open_to",
+            "quote": "joint projects with companies on anomaly detection in industrial sensor data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0071",
+            "field": "open_to",
+            "quote": "contract research on imbalanced classification and concept drift adaptation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

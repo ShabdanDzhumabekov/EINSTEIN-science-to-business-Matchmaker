@@ -1,0 +1,197 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0294",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0294",
+    "name": "Vesna Orlović",
+    "faculty": "Faculty of Economics in Subotica",
+    "department": "Department of Business Informatics",
+    "fields": [
+      "Business Informatics",
+      "Process Mining and Workflow Analysis",
+      "Information Systems",
+      "Higher Education Management"
+    ],
+    "keywords": [
+      "process mining",
+      "conformance checking",
+      "administrative workflows",
+      "higher education",
+      "bottleneck identification",
+      "event logs",
+      "business process re-engineering",
+      "performance analysis",
+      "PM4Py",
+      "ERP systems"
+    ],
+    "openTo": [
+      "joint projects",
+      "contract research",
+      "student internships",
+      "consulting"
+    ],
+    "bio": {
+      "recordId": "R0294",
+      "field": "bio",
+      "text": ""
+    },
+    "industryExperience": {
+      "recordId": "R0294",
+      "field": "industry_experience",
+      "text": "During her master's studies Orlović completed a three-month internship at a Novi Sad-based software company that develops document management solutions for public institutions, where she assisted with requirements analysis for a workflow tracking module."
+    },
+    "notes": {
+      "recordId": "R0294",
+      "field": "notes",
+      "text": "Orlović is in the early phase of her doctoral research and her availability for external collaborations is limited to projects that align directly with her dissertation topic. She is particularly interested in connecting with companies that maintain process or workflow logs and would benefit from an academic analysis partnership."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03663",
+        "kind": "publication",
+        "title": "Extracting and Pre-processing Event Logs from a University Student Services ERP: A Case Study at a Serbian Faculty",
+        "body": {
+          "recordId": "SYN-PUB-03663",
+          "field": "abstract",
+          "text": "Event log extraction from enterprise resource planning systems used in academic administration is rarely straightforward because these systems were not designed with process mining in mind. This paper reports on a systematic procedure for transforming raw database audit records from the student services module of a Serbian faculty into XES-compliant event logs suitable for process mining. The source data covered 14,847 student applications processed over three academic years (2018–2021). The procedure addresses four recurring data quality issues: missing case identifiers, overlapping timestamps caused by batch processing, inconsistent activity labels across module versions, and incomplete traces resulting from legacy migration. After cleaning, 91.3% of traces were retained as complete. A comparative evaluation using three filtering strategies—frequency-based, time-based, and hybrid—shows that the hybrid approach preserves the highest proportion of structurally meaningful traces while reducing noise. The resulting log and transformation scripts are described in sufficient detail to allow replication in comparable institutional settings. Lessons learned point to the need for standardised logging conventions in academic ERP procurement specifications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03665",
+        "kind": "publication",
+        "title": "Bottleneck Identification in Thesis Defence Administration Using Performance Spectrum Analysis",
+        "body": {
+          "recordId": "SYN-PUB-03665",
+          "field": "abstract",
+          "text": "Administrative workflows surrounding thesis submission and defence at Serbian faculties involve multiple offices, approval chains, and externally imposed deadlines, making them prone to queuing delays that affect graduation timelines. This paper applies performance spectrum analysis and dotted-chart visualisation to event logs covering 1,118 master's thesis defence cases from three academic years at one faculty. Waiting time distributions are computed per activity transition, and a Kaplan–Meier survival analysis is used to characterise time-to-completion across student cohorts stratified by study programme and submission month. Results identify two persistent bottlenecks: the commission nomination step, which accounts for a median wait of 11 working days, and the library archiving step following defence, which delays the formal completion record by a median of 6 days. Seasonal effects are pronounced, with June and September submissions showing 40% longer overall cycle times than other months. Simulation experiments using a simplified CPN model suggest that redistributing nomination authority to department coordinators could reduce median total duration by approximately 18%. The findings are presented to administrative staff at the host institution and reactions are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03666",
+        "kind": "publication",
+        "title": "A Comparative Review of Recommendation Approaches for Sparse Purchase Histories in Small Retail",
+        "body": {
+          "recordId": "SYN-PUB-03666",
+          "field": "abstract",
+          "text": "This paper surveys techniques applied to recommendation tasks where transaction logs contain fewer than twenty interactions per user on average, a condition common in independent and small-chain retail settings. The review covers memory-based collaborative filtering, content-based methods using product attribute vectors, and several hybrid architectures published between 2005 and 2013. Evaluation metrics across surveyed studies are standardised to precision at five and normalised discounted cumulative gain to allow comparison. The analysis identifies consistent shortcomings in purely collaborative approaches when item catalogues exceed a few hundred products but user bases remain small. Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations. The paper concludes by outlining criteria for selecting hybrid strategies depending on catalogue density, session length, and the availability of product metadata, offering a structured decision guide intended for practitioners in the regional retail sector."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01535",
+        "kind": "publication",
+        "title": "Incorporating Web Search Volume as an External Covariate in Short-Term E-Commerce Demand Forecasting",
+        "body": {
+          "recordId": "SYN-PUB-01535",
+          "field": "abstract",
+          "text": "Search query volume from public web indices is a publicly available, high-frequency signal that may lead observed retail demand by one to several days. This paper investigates whether adding weekly search index data as an external covariate improves 1-week-ahead demand forecasts for 45 consumer electronics products sold through a Serbian online retailer over 24 months. Cross-correlation analysis confirms a statistically significant lead relationship at lag 1 week for 28 of 45 products. A LightGBM model augmented with the lagged search index is compared to an identical model without it; augmentation reduces MAPE by 4.3% on average across the 28 correlated products and by a statistically insignificant 0.6% across the remaining 17. The paper also discusses practical obstacles including changes in search index methodology, inconsistent geographic coverage, and category-level aggregation in public data sources, and recommends a correlation screening step before routinely incorporating such covariates."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03427",
+        "kind": "publication",
+        "title": "Audience Behaviour Segmentation Using Recurrent Neural Networks on Longitudinal Engagement Logs",
+        "body": {
+          "recordId": "SYN-PUB-03427",
+          "field": "abstract",
+          "text": "Long short-term memory (LSTM) networks can capture audience behaviour patterns that fixed-window statistical models miss. This paper trains LSTM-based sequence encoders on 18 months of per-user engagement logs (reactions, comments, shares, view durations) from a regional streaming and content platform with 340,000 registered users in Serbia and Bosnia-Herzegovina. Encoded representations were fed into a k-means layer to derive behavioural segments. Six stable segments emerged from a sweep of k from 3 to 10, evaluated by silhouette score and external validation against self-reported survey preferences collected from 2,100 users. The LSTM-derived segments outperformed segments produced by aggregated frequency-recency-monetary (FRM) features on prediction of next-week content consumption category (macro-F1: 0.61 vs 0.48). Segment profiles—labelled binge viewers, topical dippers, passive scrollers, commenter-contributors, share-motivated readers, and lapsed returnees—are described and their implications for personalised push-notification scheduling are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03429",
+        "kind": "publication",
+        "title": "Predicting Optimal Posting Windows Using Gradient Boosting on Historical Engagement Features",
+        "body": {
+          "recordId": "SYN-PUB-03429",
+          "field": "abstract",
+          "text": "Predicting the best time to post requires combining temporal features, content attributes, and platform-level contextual signals. This paper builds gradient boosting (XGBoost) models to predict whether a given one-hour posting window will fall in the top quartile of engagement-rate outcomes, using a dataset of 210,000 posts from 95 brand and media accounts in the Western Balkans region, spanning 2019–2021. Features include hour-of-day, day-of-week, lag-one and lag-seven engagement values, post type, account size bin, and a rolling 28-day audience activity index derived from follower interactions. The model achieves an AUC of 0.79 on a held-out test set, compared to 0.63 for a logistic regression baseline. SHAP decomposition identifies hour-of-day and the rolling activity index as the dominant contributors. A simulated A/B scheduling experiment on 12 accounts over eight weeks shows a 14% average increase in median engagement rate when posts are timed using model predictions versus the accounts' historical default schedules."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01220",
+        "kind": "publication",
+        "title": "Blockchain-Anchored Audit Logs for Regulated Industries: A Critical Assessment of Practical Deployability",
+        "body": {
+          "recordId": "SYN-PUB-01220",
+          "field": "abstract",
+          "text": "Distributed ledger technologies have been proposed as a mechanism for providing externally verifiable, tamper-evident anchoring of enterprise audit logs. This paper assesses the practical deployability of such approaches for small and medium-sized financial institutions in Serbia, drawing on a literature review of 34 published proposals and a structured evaluation against five criteria: regulatory acceptance, operational cost, latency impact on audited systems, recoverability in case of ledger disruption, and compatibility with existing log management infrastructure. The assessment finds that public blockchain anchoring introduces confirmation latency of minutes to hours that is acceptable for daily batch log sealing but incompatible with real-time compliance monitoring requirements. Permissioned ledger approaches using a consortium of Serbian banks and the National Bank as nodes are technically more suitable but face governance and procurement obstacles. The paper concludes that Merkle-tree anchoring combined with periodic notarisation through an accredited timestamping authority remains the most deployable option under current Serbian legal and infrastructure conditions, and sketches a practical migration path for institutions already operating hash-chained logs."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03667",
+        "kind": "publication",
+        "title": "Evaluating Large Language Models for Semi-Automated Population of Procurement Ontologies from Unstructured Tender Documents",
+        "body": {
+          "recordId": "SYN-PUB-03667",
+          "field": "abstract",
+          "text": "A substantial proportion of procurement information in Western Balkan portals is embedded in free-text PDF attachments—technical specifications, terms of reference, evaluation criteria—rather than structured fields. This paper evaluates four large language models (two multilingual, two Serbian-language fine-tuned) for extracting ontology-conformant instances from 240 unstructured tender documents spanning four sectors: road construction, medical supplies, IT services, and school catering. Extraction performance is measured against a gold standard annotation produced by two domain experts. F1 scores across all entity types range from 0.53 to 0.79 depending on model and sector. Performance is highest for numeric quantity extraction (F1 0.82) and lowest for procedure type classification (F1 0.51). Post-processing with SHACL constraint validation catches a further 18 % of entity errors not penalised by F1. The paper discusses implications for ontology population workflows in low-resource Slavic language settings."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1591",
+        "kind": "project",
+        "title": "Process Mining Methods for Continuous Improvement of Administrative Services in Higher Education",
+        "body": {
+          "recordId": "SYN-PRJ-1591",
+          "field": "summary",
+          "text": "The project investigates the feasibility of deploying lightweight process mining pipelines as permanent monitoring tools within the administrative units of two faculties in Vojvodina. The work plan covers log extraction automation, the definition of institution-specific conformance reference models, and the design of a dashboard that presents key performance indicators—cycle time, deviation rate, rework frequency—to administrative managers without process mining expertise. Vesna Orlović is responsible for the conformance checking component and contributes to the dashboard specification. The expected outcome is a reusable methodological template and a pilot deployment at one participating faculty, with documentation sufficient for adoption by other institutions in the region."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1576",
+        "kind": "project",
+        "title": "Decision Support Frameworks for Strategic Investment Planning in South-East European Public Institutions",
+        "body": {
+          "recordId": "SYN-PRJ-1576",
+          "field": "summary",
+          "text": "The project developed and validated multi-criteria decision support frameworks specifically adapted to institutional, regulatory, and data-availability constraints of public organisations in South-East Europe. Activities included a cross-country survey of decision practices in 45 public institutions across Serbia, North Macedonia, and Montenegro; development of tailored AHP and fuzzy TOPSIS instruments; and delivery of three stakeholder workshops. The project produced a methodological guide for procurement committees and budget officers, piloted in four Serbian municipalities. Two journal articles and one conference paper were published. The project was hosted at the Faculty of Economics in Subotica, with research collaboration from partner universities in Niš and Skopje."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1584",
+        "kind": "project",
+        "title": "Cross-Border Agricultural Data Infrastructures for Regional Market Monitoring in the Hungary–Serbia Border Area",
+        "body": {
+          "recordId": "SYN-PRJ-1584",
+          "field": "summary",
+          "text": "AGRILINK builds a shared data reporting and market monitoring infrastructure connecting agricultural producers, warehouses, and exchange operators on both sides of the Hungarian-Serbian border. Fehér contributes the market simulation module, which uses aggregated price and volume feeds from the shared infrastructure as calibration inputs and generates quarterly market condition reports. The module flags anomalous price deviations and thin-market liquidity warnings for distribution to registered participants. The project involves three workshops per year and a joint pilot deployment at two border-region commodity warehouses. Fehér's role is approximately 20 percent of his working time over the project duration."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0294",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0294",
+            "field": "open_to",
+            "quote": "contract research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "missing_bio"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0068",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0068",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware linkage of insured farm locations to parcels, combined with weather and satellite observations, support field-level hail exposure estimates and identify potential underpricing relative to municipality-level ratings? A first experiment would test whether these inputs capture independently verified hail events and improve held-out claims predictions over the current baseline, explicitly distinguishing crop damage signals from hail intensity and building damage.",
+    "rationale": [
+      {
+        "text": "His research combines field-level satellite observations with meteorological data, providing a relevant methodological starting point for weather–parcel data fusion rather than an already validated hail model.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00921",
+            "field": "abstract",
+            "quote": "This paper presents a regression framework that combines seven Sentinel-2 derived spectral indices sampled at weekly intervals with ERA5-Land reanalysis variables",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His parcel delineation research addresses the fragmented agricultural landscapes relevant to locating insured fields in Vojvodina.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00922",
+            "field": "abstract",
+            "quote": "Accuracy was evaluated against 630 manually digitised parcels in a 5 000-hectare test region in the South Bačka district.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00922",
+            "field": "abstract",
+            "quote": "The method achieved an average boundary displacement error of 8.3 m and an over-segmentation rate of 14%",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has led agricultural data-fusion and modular prediction-pipeline development, with project outputs that include Python tooling.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1822",
+            "field": "summary",
+            "quote": "Branislav Lekić led the work package on data fusion and model development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-1822",
+            "field": "summary",
+            "quote": "The project produced open-source Python tooling for time series fusion, a calibrated yield model ensemble, and a set of validation reports",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical experience collecting agricultural ground truth with local cooperatives and translating research outputs for operational users.",
+        "sources": [
+          {
+            "recordId": "R0068",
+            "field": "industry_experience",
+            "quote": "worked directly with staff from three agricultural cooperatives to collect combine-harvester yield records and validate satellite-based estimates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0068",
+            "field": "industry_experience",
+            "quote": "gaining practical experience in translating research outputs into formats usable by field agronomists.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Policy-to-parcel linkage must resolve or explicitly represent settlement-level location uncertainty; field-level assignment cannot assume all insured sites have coordinates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The method must respect the weather feed's daily, five-kilometre resolution and demonstrate whether additional observations can support finer-scale estimates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a storm can devastate one village and leave the farm two kilometres away untouched.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must work within the available three-year, approximately 1,200-policy dataset, with storm- and time-separated testing to limit leakage.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must feed automated pricing rather than remain a manual GIS analysis, and fit the existing quarterly Python scoring workflow.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and maintenance must be scoped for shared operational teams rather than an assumed dedicated company research unit.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must establish a current institutional route and committed researcher capacity: his listed Novi Sad affiliation is stale, and BioSense must be contacted about ongoing collaboration or CROPSENSE access.",
+        "sources": [
+          {
+            "recordId": "R0068",
+            "field": "notes",
+            "quote": "Left the University of Novi Sad in March 2026; now a postdoctoral researcher at a university in Austria.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0068",
+            "field": "notes",
+            "quote": "Enquiries regarding ongoing collaboration or access to the CROPSENSE dataset should be directed to the Remote Sensing and GIS Group at BioSense Institute.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated methods concern crop classification, yield and parcel mapping, not hail intensity or insured losses. The first experiment must test this transfer on verified hail events before adopting the methods for pricing.",
+      "Daily five-kilometre weather inputs and uncertain policy locations may not contain enough information to reconstruct narrow hail tracks; finer output grids alone would create false precision.",
+      "Satellite crop responses may reflect drought, phenology or management rather than hail, and may not explain damage to farm buildings. Cloud cover and observation gaps could further obscure short-lived events.",
+      "Three claim years may contain too few independent storms for stable validation. Geo-tagged claims may also be more precisely located than the wider portfolio, biasing apparent performance.",
+      "Claims costs reflect insured values, coverage, vulnerability and settlement practices as well as hazard. Missing exposure or policy terms could make apparent underpricing misleading.",
+      "The researcher's availability is limited and his current institutional commitments, BioSense resource access and eligibility for a Novi Sad collaboration remain unresolved.",
+      "Budget, delivery deadline, data-use permissions and production ownership are unknown. Integration could stall, as the company's earlier flood-mapping prototype has not reached pricing."
+    ],
+    "questions": [
+      "Can Lekić and BioSense confirm the institutional contracting route, his available effort, a local collaborator if needed, and access to relevant computing resources or CROPSENSE assets?",
+      "What budget, delivery window and pricing/IT staff time are committed, and who will own production integration and maintenance?",
+      "Can the company provide coordinates or parcel identifiers for all insured assets, distinguish fields from farm buildings, and supply cadastral or other authoritative parcel boundaries?",
+      "Are policy-level insured values, coverage terms, deductibles, crop/building types, exposure periods and non-claim records available alongside event-dated, cause-verified losses?",
+      "What does MeteoVoj supply beyond daily grids, what hail variables and historical coverage exist, and do its licence terms permit research and pricing use? Are independent radar, hail-report or field-survey observations accessible?",
+      "Can the first experiment use independently verified hail events, compare weather-only and weather-plus-satellite approaches against municipality ratings, and hold out entire storms and years while reporting location uncertainty and performance separately for crops and buildings?",
+      "What actuarial validation, explanation, privacy and security requirements apply, and what evidence threshold would justify using a new exposure factor in quarterly pricing?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0068",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0068",
+        "version": 1
+      }
+    ]
+  }
+}

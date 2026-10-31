@@ -1,0 +1,195 @@
+{
+  "ref": {
+    "artifactId": "proposal-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Per-site unsupervised baselines and calibrated alerting for BACnet/IP on ProtoSense",
+    "facts": [
+      {
+        "text": "ArmaturaSec states it holds no capture containing a confirmed attack — none of its clients has ever provided one — but has several terabytes of captures from consenting clients collected over the past three years.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "none of our clients has ever given us a packet capture that contains a confirmed attack",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ProtoSense is the company's passive protocol inspection module for Modbus TCP and BACnet/IP traffic, so a detector for it must address both protocols.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Operational acceptance is the bar: an earlier supervised classifier flagged so many false positives in real deployments that clients started switching the alerts off, and alerts must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company needs on-device anomaly detection without affecting packet forwarding latency, and intends a fifth hardware variant in late 2025 with a dedicated security processor.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "fifth hardware variant in late 2025 with a dedicated security processor",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company-side capacity is one to two engineers part-time, with traffic archives, hardware bench and existing firmware codebase available under NDA.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's stated openness covers joint projects with companies deploying ICS monitoring solutions and contract research on protocol traffic analysis and anomaly detection deployment.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "contract research on protocol traffic analysis and anomaly detection deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her published work includes per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed and a post-hoc calibration procedure using a small set of unlabelled operational data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group also reports 0.9 ms per 10-second window on an ARM Cortex-A7 target and an incremental Gaussian mixture model for online detection without the need for periodic full retraining.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10239",
+            "field": "abstract",
+            "quote": "0.9 ms per 10-second window on an ARM Cortex-A7 target",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic without the need for periodic full retraining",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Kiss's interest in a joint project is documented, but her availability is not stated anywhere in the material, so this proposal is conditional on her confirming capacity; that likely sets the start date more than the technical scope.",
+      "Her supplied evidence covers Modbus/TCP, DNP3, PROFINET and OPC UA but not BACnet/IP; protocol-agnostic byte-level features suggest a route across, but they do not establish that BACnet detection will work.",
+      "Whether a calibrated false-alarm rate stays low enough to avoid the alert fatigue ArmaturaSec already met on client sites is the main operational risk, especially once site-specific baselines drift with seasonal load and planned process changes."
+    ],
+    "proposedActions": [
+      "First experiment (proposed, about four months): test whether Kiss's baseline-plus-calibration approach transfers to BACnet/IP. Sample: held-out normal BACnet/IP captures from at least two ArmaturaSec client sites plus her testbed, with anomalies injected one factor at a time — object/instance writes, timing offsets, payload substitution — so the result says which factor drives detection. Baselines: a fixed-threshold rule detector and her Modbus-trained detector applied unchanged. Measure false alarms per site per day, detection per anomaly type, and whether each alert renders as one plain-language sentence. Go/no-go: alarm volume a pilot client would keep enabled, at least one anomaly the rule baseline misses, and one explanation a plant manager accepts; otherwise stop and re-scope features. Kiss contributes method and testbed; ArmaturaSec contributes captures and engineer time.",
+      "Proposed second step: apply the unlabelled-data threshold calibration to a multi-site, twelve-month archive to test drift, proposing a target of nominal and observed false-alarm rates within one percentage point and a quarterly recalibration schedule as negotiation targets.",
+      "Proposed third step: run the chosen detector on the ProtoSense bench and measure per-window inference time against the forwarding cycle on both the current appliance and the planned security-processor variant, proposing a target of staying inside ten percent of the cycle.",
+      "Proposed fourth step: co-design the alert explanation with two client plant managers and measure whether they can judge an alert actionable unaided, proposing a target of four out of five alerts judged correctly."
+    ],
+    "questions": [
+      "Does Krisztina Kiss have availability and supervisory capacity for a joint project in the coming academic year, and can her group's testbed data-sharing agreement be applied to ArmaturaSec?",
+      "Which ArmaturaSec archives and BACnet/IP captures can be shared under NDA, for which sites and periods, and do any of them carry known incidents or operator annotations?",
+      "Should the first prototype target the existing ProtoSense/NetGuard appliances or the planned late-2025 security-processor variant, and what resource budget applies?",
+      "What false-alarm rate, alert volume and explanation format would ArmaturaSec's clients and plant managers accept in a pilot?",
+      "Should the first experiment prioritise Modbus TCP, where Kiss has direct published evidence, or BACnet/IP, where the company needs coverage but her material shows a gap?"
+    ],
+    "markdown": "# Per-site unsupervised baselines and calibrated alerting for BACnet/IP on ProtoSense\n\n## Verified facts\n- ArmaturaSec states it holds no capture containing a confirmed attack — none of its clients has ever provided one — but has several terabytes of captures from consenting clients collected over the past three years. [F1]\n- ProtoSense is the company's passive protocol inspection module for Modbus TCP and BACnet/IP traffic, so a detector for it must address both protocols. [F2]\n- Operational acceptance is the bar: an earlier supervised classifier flagged so many false positives in real deployments that clients started switching the alerts off, and alerts must be explainable to a plant manager in plain language. [F3]\n- The company needs on-device anomaly detection without affecting packet forwarding latency, and intends a fifth hardware variant in late 2025 with a dedicated security processor. [F4]\n- Company-side capacity is one to two engineers part-time, with traffic archives, hardware bench and existing firmware codebase available under NDA. [F5]\n- Kiss's stated openness covers joint projects with companies deploying ICS monitoring solutions and contract research on protocol traffic analysis and anomaly detection deployment. [F6]\n- Her published work includes per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed and a post-hoc calibration procedure using a small set of unlabelled operational data. [F7]\n- Her group also reports 0.9 ms per 10-second window on an ARM Cortex-A7 target and an incremental Gaussian mixture model for online detection without the need for periodic full retraining. [F8]\n\n## Our inference\n- Kiss's interest in a joint project is documented, but her availability is not stated anywhere in the material, so this proposal is conditional on her confirming capacity; that likely sets the start date more than the technical scope.\n- Her supplied evidence covers Modbus/TCP, DNP3, PROFINET and OPC UA but not BACnet/IP; protocol-agnostic byte-level features suggest a route across, but they do not establish that BACnet detection will work.\n- Whether a calibrated false-alarm rate stays low enough to avoid the alert fatigue ArmaturaSec already met on client sites is the main operational risk, especially once site-specific baselines drift with seasonal load and planned process changes.\n\n## Proposed next steps\n- First experiment (proposed, about four months): test whether Kiss's baseline-plus-calibration approach transfers to BACnet/IP. Sample: held-out normal BACnet/IP captures from at least two ArmaturaSec client sites plus her testbed, with anomalies injected one factor at a time — object/instance writes, timing offsets, payload substitution — so the result says which factor drives detection. Baselines: a fixed-threshold rule detector and her Modbus-trained detector applied unchanged. Measure false alarms per site per day, detection per anomaly type, and whether each alert renders as one plain-language sentence. Go/no-go: alarm volume a pilot client would keep enabled, at least one anomaly the rule baseline misses, and one explanation a plant manager accepts; otherwise stop and re-scope features. Kiss contributes method and testbed; ArmaturaSec contributes captures and engineer time.\n- Proposed second step: apply the unlabelled-data threshold calibration to a multi-site, twelve-month archive to test drift, proposing a target of nominal and observed false-alarm rates within one percentage point and a quarterly recalibration schedule as negotiation targets.\n- Proposed third step: run the chosen detector on the ProtoSense bench and measure per-window inference time against the forwarding cycle on both the current appliance and the planned security-processor variant, proposing a target of staying inside ten percent of the cycle.\n- Proposed fourth step: co-design the alert explanation with two client plant managers and measure whether they can judge an alert actionable unaided, proposing a target of four out of five alerts judged correctly.\n\n## Open questions\n- Does Krisztina Kiss have availability and supervisory capacity for a joint project in the coming academic year, and can her group's testbed data-sharing agreement be applied to ArmaturaSec?\n- Which ArmaturaSec archives and BACnet/IP captures can be shared under NDA, for which sites and periods, and do any of them carry known incidents or operator annotations?\n- Should the first prototype target the existing ProtoSense/NetGuard appliances or the planned late-2025 security-processor variant, and what resource budget applies?\n- What false-alarm rate, alert volume and explanation format would ArmaturaSec's clients and plant managers accept in a pilot?\n- Should the first experiment prioritise Modbus TCP, where Kiss has direct published evidence, or BACnet/IP, where the company needs coverage but her material shows a gap?",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

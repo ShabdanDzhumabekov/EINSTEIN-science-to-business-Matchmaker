@@ -1,0 +1,6322 @@
+{
+  "ref": {
+    "artifactId": "screening-C009-CH1",
+    "version": 1
+  },
+  "kind": "screening",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    }
+  ],
+  "content": {
+    "taskId": "C009-CH1",
+    "researchFit": 0.82,
+    "isResearchProblem": true,
+    "threshold": 0.5,
+    "pairs": [
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0349",
+        "jev": 0.96,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0288",
+        "jev": 0.95,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0925",
+        "jev": 0.95,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0767",
+        "jev": 0.93,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0160",
+        "jev": 0.92,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0258",
+        "jev": 0.89,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0431",
+        "jev": 0.89,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0292",
+        "jev": 0.87,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0900",
+        "jev": 0.82,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0534",
+        "jev": 0.74,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0957",
+        "jev": 0.74,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0741",
+        "jev": 0.73,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0931",
+        "jev": 0.73,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0524",
+        "jev": 0.71,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1031",
+        "jev": 0.67,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0552",
+        "jev": 0.61,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0043",
+        "jev": 0.54,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0025",
+        "jev": 0.51,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0181",
+        "jev": 0.51,
+        "isKept": true
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0484",
+        "jev": 0.49,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0987",
+        "jev": 0.45,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0979",
+        "jev": 0.44,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0960",
+        "jev": 0.42,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0383",
+        "jev": 0.39,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0083",
+        "jev": 0.36,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0483",
+        "jev": 0.35,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0980",
+        "jev": 0.35,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0127",
+        "jev": 0.34,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0131",
+        "jev": 0.34,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0528",
+        "jev": 0.32,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0333",
+        "jev": 0.31,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0638",
+        "jev": 0.3,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0138",
+        "jev": 0.29,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0309",
+        "jev": 0.28,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0990",
+        "jev": 0.28,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1004",
+        "jev": 0.25,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0006",
+        "jev": 0.24,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0415",
+        "jev": 0.24,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0416",
+        "jev": 0.24,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0628",
+        "jev": 0.24,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0387",
+        "jev": 0.23,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0912",
+        "jev": 0.23,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0302",
+        "jev": 0.22,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0955",
+        "jev": 0.22,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0959",
+        "jev": 0.22,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0112",
+        "jev": 0.21,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0137",
+        "jev": 0.2,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0257",
+        "jev": 0.2,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0265",
+        "jev": 0.2,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0723",
+        "jev": 0.2,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0421",
+        "jev": 0.19,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1002",
+        "jev": 0.19,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0074",
+        "jev": 0.18,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0226",
+        "jev": 0.17,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0268",
+        "jev": 0.17,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0565",
+        "jev": 0.17,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0709",
+        "jev": 0.17,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0213",
+        "jev": 0.16,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0460",
+        "jev": 0.16,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0039",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0263",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0476",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0491",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0595",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0702",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0732",
+        "jev": 0.15,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0094",
+        "jev": 0.14,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0158",
+        "jev": 0.14,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0559",
+        "jev": 0.14,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0165",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0195",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0294",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0341",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0519",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0544",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0571",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0624",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0694",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0735",
+        "jev": 0.13,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0019",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0071",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0080",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0251",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0319",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0573",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0817",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0890",
+        "jev": 0.12,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0022",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0162",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0305",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0402",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0676",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0982",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1009",
+        "jev": 0.11,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0116",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0117",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0207",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0218",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0322",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0406",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0408",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0511",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0512",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0541",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0627",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0739",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1020",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1035",
+        "jev": 0.1,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0030",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0053",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0087",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0099",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0101",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0109",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0217",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0228",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0261",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0385",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0430",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0521",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0717",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0816",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0929",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0943",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1006",
+        "jev": 0.09,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0014",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0027",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0057",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0068",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0077",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0123",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0244",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0271",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0316",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0363",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0371",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0443",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0663",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0781",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0833",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0849",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0853",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0856",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0949",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0965",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0995",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1033",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1045",
+        "jev": 0.08,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0033",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0041",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0049",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0090",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0114",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0146",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0203",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0205",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0273",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0318",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0375",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0422",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0437",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0461",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0479",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0481",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0494",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0496",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0497",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0542",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0572",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0575",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0600",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0636",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0641",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0652",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0703",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0728",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0738",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0750",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0765",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0801",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0802",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0831",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0847",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0877",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0895",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0923",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0948",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0961",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0983",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0986",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1012",
+        "jev": 0.07,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0028",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0045",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0050",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0064",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0100",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0108",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0110",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0147",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0148",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0152",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0154",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0179",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0196",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0197",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0206",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0233",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0241",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0259",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0287",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0312",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0352",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0367",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0370",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0377",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0386",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0389",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0395",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0397",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0414",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0472",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0474",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0480",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0492",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0493",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0501",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0514",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0532",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0537",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0548",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0613",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0617",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0622",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0625",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0626",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0634",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0648",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0651",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0673",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0675",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0677",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0699",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0726",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0730",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0737",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0749",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0755",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0761",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0762",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0773",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0785",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0790",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0795",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0832",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0844",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0871",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0894",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0919",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0935",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0966",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0971",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0977",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0993",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1008",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1013",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1019",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1027",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1030",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1038",
+        "jev": 0.06,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0001",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0007",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0021",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0026",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0044",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0058",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0067",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0082",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0104",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0106",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0113",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0161",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0214",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0215",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0219",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0237",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0238",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0245",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0253",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0255",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0282",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0286",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0297",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0324",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0337",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0355",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0356",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0366",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0369",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0372",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0380",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0413",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0428",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0433",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0435",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0438",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0441",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0446",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0449",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0456",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0489",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0498",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0499",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0500",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0513",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0539",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0547",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0555",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0560",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0564",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0584",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0589",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0592",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0603",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0630",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0632",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0633",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0645",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0653",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0664",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0668",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0670",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0671",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0678",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0687",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0700",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0701",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0724",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0727",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0742",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0746",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0748",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0763",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0778",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0797",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0804",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0810",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0812",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0837",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0841",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0842",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0850",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0867",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0886",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0887",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0911",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0950",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1015",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1021",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1022",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1023",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1029",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1039",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1043",
+        "jev": 0.05,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0004",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0016",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0018",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0048",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0051",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0073",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0075",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0086",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0091",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0092",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0093",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0095",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0119",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0120",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0121",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0125",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0132",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0133",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0135",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0136",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0143",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0164",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0166",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0177",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0186",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0188",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0192",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0193",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0202",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0209",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0216",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0224",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0229",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0230",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0235",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0242",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0247",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0248",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0266",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0267",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0270",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0272",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0277",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0290",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0293",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0303",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0306",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0314",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0317",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0320",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0323",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0325",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0327",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0332",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0338",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0340",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0345",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0347",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0350",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0358",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0360",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0364",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0374",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0379",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0388",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0394",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0403",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0409",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0417",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0424",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0436",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0442",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0448",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0454",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0463",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0471",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0477",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0503",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0504",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0505",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0509",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0510",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0516",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0517",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0525",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0530",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0531",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0538",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0545",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0563",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0570",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0577",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0583",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0585",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0591",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0596",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0602",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0606",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0623",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0635",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0640",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0642",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0646",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0674",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0680",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0681",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0684",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0685",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0690",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0691",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0693",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0698",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0704",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0706",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0707",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0710",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0713",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0720",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0722",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0729",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0734",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0740",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0754",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0764",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0769",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0771",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0772",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0775",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0779",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0780",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0783",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0784",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0787",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0791",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0798",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0819",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0820",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0822",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0825",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0828",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0834",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0835",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0843",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0872",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0873",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0876",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0882",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0891",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0893",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0898",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0903",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0904",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0906",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0910",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0916",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0917",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0918",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0921",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0937",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0944",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0945",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0946",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0962",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0963",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0964",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0968",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0978",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0981",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0989",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1011",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1014",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1018",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1036",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1042",
+        "jev": 0.04,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0005",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0008",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0009",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0010",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0013",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0015",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0020",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0023",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0024",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0029",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0031",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0034",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0035",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0036",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0037",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0038",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0040",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0046",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0052",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0054",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0055",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0056",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0059",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0060",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0061",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0062",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0063",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0065",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0066",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0070",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0072",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0076",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0078",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0079",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0081",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0084",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0085",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0088",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0096",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0097",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0098",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0102",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0103",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0105",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0107",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0111",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0115",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0118",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0124",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0126",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0128",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0129",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0130",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0139",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0140",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0141",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0142",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0144",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0145",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0149",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0150",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0155",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0159",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0167",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0169",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0170",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0171",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0173",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0174",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0176",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0178",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0180",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0183",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0184",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0187",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0190",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0191",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0194",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0198",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0199",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0201",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0204",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0211",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0212",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0220",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0221",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0225",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0227",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0231",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0232",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0234",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0239",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0240",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0243",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0246",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0249",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0252",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0256",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0260",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0262",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0269",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0278",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0280",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0281",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0284",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0285",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0289",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0291",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0296",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0298",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0304",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0307",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0311",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0315",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0326",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0328",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0329",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0330",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0331",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0335",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0336",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0342",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0343",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0344",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0346",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0348",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0351",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0353",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0354",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0359",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0361",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0368",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0373",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0376",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0378",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0381",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0384",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0390",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0391",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0392",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0393",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0396",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0398",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0399",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0401",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0404",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0405",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0410",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0412",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0418",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0420",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0423",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0425",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0426",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0427",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0429",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0432",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0434",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0440",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0444",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0447",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0458",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0459",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0464",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0465",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0466",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0467",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0468",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0469",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0470",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0473",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0475",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0486",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0488",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0495",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0502",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0506",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0507",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0508",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0518",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0522",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0523",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0526",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0527",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0529",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0535",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0540",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0543",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0550",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0553",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0556",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0557",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0558",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0561",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0562",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0566",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0567",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0568",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0569",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0574",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0576",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0578",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0579",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0581",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0586",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0587",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0588",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0590",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0594",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0597",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0598",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0599",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0604",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0607",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0608",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0609",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0610",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0611",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0614",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0615",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0618",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0620",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0621",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0629",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0637",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0639",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0643",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0644",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0647",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0649",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0654",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0655",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0657",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0658",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0659",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0661",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0662",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0665",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0666",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0669",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0679",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0682",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0683",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0686",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0689",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0696",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0697",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0705",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0708",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0712",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0715",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0716",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0718",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0725",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0731",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0736",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0743",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0744",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0745",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0752",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0756",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0757",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0758",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0759",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0768",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0770",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0777",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0782",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0788",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0799",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0800",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0803",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0805",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0806",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0808",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0809",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0811",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0813",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0815",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0821",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0824",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0826",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0827",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0829",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0830",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0838",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0839",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0840",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0845",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0846",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0851",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0854",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0855",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0857",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0858",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0859",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0860",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0862",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0863",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0865",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0866",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0868",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0869",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0870",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0878",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0879",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0880",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0883",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0884",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0885",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0888",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0896",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0899",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0901",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0905",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0908",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0913",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0914",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0915",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0926",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0927",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0928",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0930",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0932",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0933",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0934",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0936",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0940",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0941",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0942",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0947",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0951",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0953",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0954",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0958",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0967",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0969",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0970",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0974",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0975",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0976",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0984",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0985",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0988",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0992",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0994",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0996",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0997",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0999",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1003",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1005",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1010",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1016",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1024",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1025",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1026",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1028",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1034",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1037",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1041",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1044",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1046",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1047",
+        "jev": 0.03,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0002",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0003",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0011",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0012",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0017",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0032",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0042",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0047",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0069",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0089",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0122",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0134",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0151",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0153",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0156",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0157",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0163",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0168",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0172",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0175",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0182",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0185",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0189",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0200",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0208",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0210",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0222",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0223",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0236",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0250",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0254",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0264",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0274",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0275",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0276",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0279",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0283",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0295",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0299",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0300",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0301",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0308",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0310",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0313",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0321",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0334",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0339",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0357",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0362",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0365",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0382",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0400",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0407",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0411",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0419",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0439",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0445",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0450",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0451",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0453",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0455",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0457",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0462",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0478",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0482",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0485",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0487",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0490",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0515",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0520",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0533",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0536",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0546",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0549",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0551",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0554",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0580",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0582",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0593",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0601",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0605",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0612",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0616",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0619",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0631",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0650",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0656",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0660",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0667",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0672",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0688",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0692",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0695",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0711",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0714",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0719",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0721",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0733",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0747",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0751",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0753",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0760",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0766",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0774",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0776",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0786",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0789",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0792",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0793",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0794",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0796",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0807",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0814",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0818",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0823",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0836",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0848",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0852",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0861",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0864",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0874",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0875",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0881",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0889",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0892",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0897",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0902",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0907",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0909",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0920",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0922",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0924",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0938",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0939",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0952",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0956",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0972",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0973",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0991",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0998",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1000",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1001",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1007",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1017",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1032",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R1040",
+        "jev": 0.02,
+        "isKept": false
+      },
+      {
+        "taskId": "C009-CH1",
+        "researcherId": "R0452",
+        "jev": 0.01,
+        "isKept": false
+      }
+    ],
+    "model": "typesafe/jev-1.14",
+    "questions": {
+      "researchProblem": {
+        "instructions": "Is the company's need in `task` an open technical or scientific question that a university researcher could work on, rather than hiring, sales, fundraising, certification paperwork, training, buying an existing product or routine engineering?",
+        "whenTrue": "The need contains an open technical or scientific question",
+        "whenFalse": "The need is not a research problem"
+      },
+      "pairFit": {
+        "instructions": "Do the methods of researcher `<researcherId>` in `researchers` address the technical problem in `task`, so that a joint research project is plausible?",
+        "whenTrue": "The researcher's methods directly address the task's problem",
+        "whenFalse": "The methods are unrelated or only share a broad field"
+      }
+    },
+    "provenance": {
+      "screenedAt": "2026-10-31T13:11:37.927Z",
+      "isFromCache": true
+    }
+  }
+}

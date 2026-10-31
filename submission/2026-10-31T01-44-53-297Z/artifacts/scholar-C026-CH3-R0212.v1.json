@@ -1,0 +1,262 @@
+{
+  "ref": {
+    "artifactId": "scholar-C026-CH3-R0212",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0212",
+    "name": "Branislava Zorić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Environmental Engineering and Occupational Safety",
+    "fields": [
+      "Environmental Engineering",
+      "Hydrogeology and Groundwater Science",
+      "Waste Management and Landfill Engineering",
+      "Soil and Water Contamination"
+    ],
+    "keywords": [
+      "subsurface contaminant transport",
+      "leachate migration",
+      "alluvial aquifer",
+      "passive interceptor drain",
+      "landfill hydrogeology",
+      "numerical groundwater modelling",
+      "MODFLOW MT3DMS",
+      "reactive solute transport",
+      "Vojvodina lowland",
+      "transfer station leachate"
+    ],
+    "openTo": [
+      "contract research on site-specific leachate transport modelling and containment design",
+      "consulting on groundwater monitoring network design for waste facilities",
+      "joint project applications with companies working on landfill aftercare or groundwater remediation",
+      "industrial PhD supervision for candidates employed in environmental consultancy or waste management companies",
+      "student internships involving field sampling and numerical modelling tasks",
+      "equipment access – soil column apparatus and TDR moisture monitoring system available for short-term collaborative use"
+    ],
+    "bio": {
+      "recordId": "R0212",
+      "field": "bio",
+      "text": ""
+    },
+    "industryExperience": {
+      "recordId": "R0212",
+      "field": "industry_experience",
+      "text": "Zorić provided technical consulting to Ekološki Inženjering Panonija d.o.o. between 2016 and 2018 on groundwater monitoring programme design and interceptor drain performance assessment at two operational landfills in the Južna Bačka district. She has also reviewed environmental impact study chapters on leachate hydrogeology for several municipal waste facility permit applications in Vojvodina."
+    },
+    "notes": {
+      "recordId": "R0212",
+      "field": "notes",
+      "text": "Zorić is on a reduced teaching load in the 2025/26 academic year due to project finalisation commitments, which increases her availability for collaborative research activities. She prefers applied projects with a clear field component over purely computational work."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02714",
+        "kind": "publication",
+        "title": "Chloride and ammonium as leachate tracers in an unconfined gravel aquifer beneath a closed municipal landfill in northern Serbia",
+        "body": {
+          "recordId": "SYN-PUB-02714",
+          "field": "abstract",
+          "text": "A closed landfill in northern Vojvodina was monitored over a 30-month period using a network of 18 piezometers installed along three transects perpendicular to the predominant groundwater flow direction. Groundwater samples were collected quarterly and analysed for chloride, ammonium, COD, and electrical conductivity. Chloride concentrations in the proximal monitoring wells reached 1 840 mg/L in the wet season, declining to background levels (< 12 mg/L) at 210 m downgradient. Ammonium showed a more retarded plume, consistent with sorption to aquifer sediments characterised by a measured Kd of 0.31 L/kg. A calibrated MT3DMS transport model reproduced observed concentration profiles with a normalised root-mean-square error of 8.4 % for chloride and 14.1 % for ammonium. The study confirms that conservative tracer monitoring alone underestimates reactive species travel distances and recommends dual-tracer campaigns for compliance monitoring at comparable sites."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02715",
+        "kind": "publication",
+        "title": "Passive interceptor drain sizing for leachate containment in shallow alluvial aquifers: a design chart approach",
+        "body": {
+          "recordId": "SYN-PUB-02715",
+          "field": "abstract",
+          "text": "Passive interceptor drains placed perpendicular to groundwater flow are a cost-effective alternative to pump-and-treat systems at small municipal landfills where leachate concentrations are moderate. This paper develops dimensionless design charts for drain spacing, penetration depth, and gravel-pack hydraulic conductivity ratio, derived from 1 200 steady-state FEFLOW simulations spanning a range of aquifer thickness (4–18 m), regional gradient (0.001–0.015), and leachate source flux. Chart validation was performed against three field installations in Vojvodina, where measured drain capture efficiencies ranged from 84 to 97 %, compared with chart predictions of 88–99 %. Sensitivity analysis identified regional gradient and drain penetration ratio as the dominant controls on capture efficiency, together explaining 74 % of output variance. The charts are presented as a practical decision-support tool for environmental engineers without access to numerical modelling software."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02716",
+        "kind": "publication",
+        "title": "Seasonal fluctuation of the water table and its effect on leachate mounding beneath an active transfer station in Novi Sad",
+        "body": {
+          "recordId": "SYN-PUB-02716",
+          "field": "abstract",
+          "text": "Transfer stations present an often-overlooked source of diffuse leachate infiltration in urban hydrogeological settings. This study monitored water table levels at 15-minute intervals over 24 months using pressure transducers installed in six piezometers around a municipal transfer station in Novi Sad. Water table depths ranged from 0.4 m (spring snowmelt) to 3.1 m below ground (late summer), modulating the unsaturated travel time for leachate from the station floor by a factor of approximately 7. A variably saturated flow model (HYDRUS-2D) was calibrated to soil moisture profiles measured with TDR probes. Simulated annual leachate loads reaching the water table were 3.2–11.8 m³ per metre of station length depending on season. Results indicate that containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02717",
+        "kind": "publication",
+        "title": "Geochemical attenuation of heavy metals in the leachate-affected zone of a Vojvodina sanitary landfill",
+        "body": {
+          "recordId": "SYN-PUB-02717",
+          "field": "abstract",
+          "text": "Sorption, precipitation, and cation exchange control the mobility of heavy metals released from municipal solid waste leachate. Sediment cores collected from beneath the Tisa Valley landfill at depths of 1–12 m were analysed for Pb, Cd, Zn, and Ni content alongside sequential extraction to distinguish geochemical fractions. Total metal enrichment declined sharply below 4 m, with Zn showing the greatest attenuation factor (AF = 28) and Cd the least (AF = 6). Batch sorption experiments yielded Freundlich Kf values of 12.4, 3.1, 8.7, and 5.5 mg^(1−1/n) kg⁻¹ L^(1/n) for Zn, Cd, Pb, and Ni respectively. These parameters were incorporated into a reactive transport module in MT3DMS and increased predicted containment distances by 35–60 % relative to conservative assumptions. The findings support the practice of reporting geochemical attenuation factors as part of site-specific risk assessments for Serbian landfill permit applications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02719",
+        "kind": "publication",
+        "title": "Evaluation of permeable reactive barrier materials for ammonium removal from landfill leachate in column experiments",
+        "body": {
+          "recordId": "SYN-PUB-02719",
+          "field": "abstract",
+          "text": "Permeable reactive barriers (PRBs) using natural zeolite (clinoptilolite) represent an inexpensive passive remediation option for ammonium-laden leachate plumes in alluvial aquifers. Column experiments were conducted at 20 °C using landfill leachate from two Vojvodina sites (NH₄⁺ influent concentrations 480 and 1 120 mg/L) passed through 0.6 m zeolite columns at pore velocities of 0.5, 2, and 5 m/day. Breakthrough curves were fitted using the advection-dispersion equation with a linear retardation factor ranging from 14 to 31 depending on influent concentration and velocity. Regeneration experiments with 1 M NaCl solution recovered 91–96 % of sorbed ammonium within six pore volumes. A reactive transport model calibrated on column data predicted that a 1.2 m-thick field-scale PRB would maintain effluent NH₄⁺ below 10 mg/L for approximately 4.5 years before regeneration is required under median leachate flux conditions. Cost comparison with constructed wetland treatment is included."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02720",
+        "kind": "publication",
+        "title": "Three-dimensional transport modelling of a leachate plume at a decommissioned industrial landfill using time-domain electromagnetic survey data for aquifer characterisation",
+        "body": {
+          "recordId": "SYN-PUB-02720",
+          "field": "abstract",
+          "text": "A three-dimensional contaminant transport model was constructed for a decommissioned industrial landfill in the Srem sub-region, where legacy chlorinated solvents and inorganic leachate co-occur in a heterogeneous alluvial sequence. Aquifer geometry was derived from 22 km of time-domain electromagnetic (TDEM) profiles, supplemented by lithological logs from 14 boreholes, enabling interpolation of six hydrostratigraphic units without the cost of a dense drilling programme. MODFLOW-NWT with MT3DMS was used to simulate steady-state flow and transient transport over a 25-year period. Calibrated dispersivities (αL = 3.8 m, αT = 0.4 m) and retardation factors for tetrachloroethylene (PCE, R = 2.3) and trichloroethylene (TCE, R = 1.9) were obtained by pilot-point inversion against 34 monitoring well observations. Simulated plume extents matched observed 10 µg/L isoline positions within 18 m on average. The study demonstrates the feasibility of TDEM-assisted model setup for brownfield risk assessments in data-sparse environments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02722",
+        "kind": "publication",
+        "title": "Dissolved organic carbon as a co-transport vector for trace organic contaminants in landfill leachate plumes: batch and column evidence from alluvial sediments",
+        "body": {
+          "recordId": "SYN-PUB-02722",
+          "field": "abstract",
+          "text": "Dissolved organic carbon (DOC) present in landfill leachate can enhance the apparent mobility of hydrophobic trace organic compounds through colloidal facilitated transport. This laboratory study examined the effect of DOC concentrations representative of fresh leachate (380 mg/L) and aged leachate (85 mg/L) on the transport of four pharmaceutical compounds (carbamazepine, ibuprofen, diclofenac, sulfamethoxazole) through alluvial sand columns (L = 0.9 m, v = 1 m/day). Breakthrough curves showed that carbamazepine retardation decreased from R = 3.4 to R = 1.8 when DOC was increased from 85 to 380 mg/L, while ibuprofen retardation decreased from R = 2.1 to R = 1.1. Diclofenac and sulfamethoxazole were less affected (ΔR < 0.3). A two-site DOC-facilitated transport model reproduced breakthrough data with mean absolute errors below 5 %. Results suggest that risk assessments at landfills receiving mixed municipal and pharmaceutical waste should account for DOC-mediated mobility enhancement."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02723",
+        "kind": "publication",
+        "title": "Mapping leachate vulnerability of alluvial aquifers in the Vojvodina region using a modified DRASTIC index calibrated against field conductivity surveys",
+        "body": {
+          "recordId": "SYN-PUB-02723",
+          "field": "abstract",
+          "text": "Regional vulnerability mapping of shallow alluvial aquifers to leachate contamination supports strategic siting of waste facilities and remediation prioritisation. This study modified the standard DRASTIC index to include a waste-facility proximity factor and calibrated index weights against electrical conductivity anomalies measured in 312 monitoring wells across 22 000 km² of the Vojvodina alluvial plain. GIS layers for depth to water, recharge, aquifer media, soil texture, topography, vadose zone media, and hydraulic conductivity were compiled from existing borehole databases, soil maps, and published hydrogeological reports. Stepwise multiple regression against field-measured contamination indicators yielded revised DRASTIC weights that improved the area under the ROC curve from 0.61 (standard DRASTIC) to 0.79. High-vulnerability zones aligned well with known leachate-impacted sites and with areas of thin unsaturated zone and coarse vadose sediments. The resulting map is proposed as a planning tool for the Provincial Secretariat for Urban Planning and Environmental Protection."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02724",
+        "kind": "publication",
+        "title": "Coupling unsaturated and saturated zone models for leachate infiltration prediction beneath waste transfer stations: sensitivity to liner defect size and antecedent soil moisture",
+        "body": {
+          "recordId": "SYN-PUB-02724",
+          "field": "abstract",
+          "text": "Liner integrity at waste transfer stations is rarely monitored with the rigour applied to regulated landfill cells, creating uncertainty in leachate infiltration estimates. This study used a coupled HYDRUS-1D/MODFLOW model to simulate leachate infiltration through partially defective compacted clay liners (defect diameters 5–200 mm, equivalent liner hydraulic conductivity 10⁻⁹ to 10⁻⁷ m/s) for three antecedent soil moisture scenarios (field capacity, wilting point, and median observed). Simulations covered a 10-year operational horizon using measured daily leachate generation data from a transfer station in the Srem district. Results showed that a 50 mm circular defect increased cumulative groundwater loading by 340 % relative to an intact liner under wet antecedent conditions, but by only 62 % under dry antecedent conditions. Sensitivity analysis ranked defect hydraulic conductivity, antecedent moisture, and leachate head as the three most influential parameters. Practical liner inspection intervals are suggested based on simulated exceedance probabilities for a 1 mg/L chloride threshold at the water table."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02725",
+        "kind": "publication",
+        "title": "Occupational Exposure to Thermal Degradation Products During Purging Operations in Injection Moulding: A Measurement Campaign",
+        "body": {
+          "recordId": "SYN-PUB-02725",
+          "field": "abstract",
+          "text": "During material changeovers in injection moulding, purging of residual polymer from the barrel generates thermal degradation products including formaldehyde, acetaldehyde, acrolein, and particulate matter. This study reports personal and area air monitoring results from purging operations at four injection moulding facilities in Serbia, covering polystyrene, ABS, and polyamide 6 materials. Sampling was conducted using NIOSH-validated methods over forty-eight production shifts. Formaldehyde concentrations during ABS purging reached 0.24 mg/m³ as a shift average, exceeding the Serbian occupational exposure limit of 0.12 mg/m³ in two of twelve measured events. Acrolein peaks during PS purging reached 0.09 mg/m³. PM2.5 concentrations at the machine operator position ranged from 18 to 74 µg/m³ depending on ventilation conditions. The study identifies ventilation adequacy, purging temperature settings, and purge compound selection as primary determinants of worker exposure. Practical control measures are recommended, including local exhaust ventilation specifications and revised standard operating procedures."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02494",
+        "kind": "publication",
+        "title": "Characterisation and leaching behaviour of electrocoagulation sludge from chromium-bearing electroplating rinsewater",
+        "body": {
+          "recordId": "SYN-PUB-02494",
+          "field": "abstract",
+          "text": "Sludge generated during electrocoagulation treatment of Cr(VI)-containing rinsewater (80–250 mg/L) with iron electrodes was collected, dried, and characterised by XRD, FTIR, TGA, and scanning electron microscopy with energy-dispersive X-ray analysis. The dried sludge contained 12–18% Cr by mass, predominantly as Cr(III) hydroxide co-precipitated within an amorphous Fe(OH)₃ matrix. Toxicity Characteristic Leaching Procedure (TCLP) tests at pH 4.9 and 2.88 showed Cr leaching below 5 mg/L, the Serbian hazardous-waste threshold, under most conditions, though sludge produced at pH below 5.5 during EC failed the test. Thermal treatment at 600 °C reduced TCLP leachate Cr to below 0.3 mg/L. These data inform SME operators on sludge disposal classification and handling requirements under national waste regulations. Sludge volume index data are provided as a function of initial Cr concentration."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0329",
+        "kind": "project",
+        "title": "Alluvial Aquifer Protection from Waste Facility Leachate in the Pannonian Lowland: Monitoring Networks, Transport Models, and Passive Containment Design",
+        "body": {
+          "recordId": "SYN-PRJ-0329",
+          "field": "summary",
+          "text": "The project addresses the inadequate protection of shallow alluvial aquifers in Vojvodina from leachate originating at municipal solid waste landfills and transfer stations. Research activities include installation of a dense piezometer network at four representative sites, quarterly sampling and physico-chemical analysis, construction and calibration of coupled unsaturated-saturated transport models, and development of region-specific passive containment design guidelines. A secondary objective is the compilation of a geodatabase of waste-facility hydrogeological site investigations in the province to support regulatory decision-making by the Provincial Secretariat for Urban Planning and Environmental Protection. The project funds two PhD students and one postdoctoral researcher."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0330",
+        "kind": "project",
+        "title": "Cross-Border Assessment and Rehabilitation of Leachate Drainage Infrastructure at Legacy Landfills in the Hungary–Serbia Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-0330",
+          "field": "summary",
+          "text": "The project inventoried 17 legacy municipal landfills within 30 km of the Hungary–Serbia border, assessing the condition of existing leachate collection and drainage infrastructure, groundwater contamination status, and closure compliance. The Serbian team led the work package on groundwater monitoring and transport modelling. Four sites received remedial drainage improvements co-financed through the project. The team developed a bilingual (Serbian–Hungarian) technical manual for passive leachate interceptor drain design in alluvial settings, distributed to municipal authorities and environmental inspectorates on both sides of the border. Two master thesis projects and one journal publication resulted from this work."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0489",
+        "kind": "project",
+        "title": "Life-Cycle Inventory Data Infrastructure for the Building and Construction Sector in the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-0489",
+          "field": "summary",
+          "text": "LCIBAL is building a publicly accessible LCI dataset library for energy-intensive construction material production processes in Serbia, with an initial focus on cement, brick, and precast concrete. The project involves primary data collection at eight manufacturing facilities, critically reviewed by an independent expert panel following ISO 14048 documentation requirements. Datasets will be formatted in EcoSpold2 and integrated into the openLCA Nexus platform. A secondary objective is to develop a data collection guideline document suitable for adoption by the Serbian standardisation body as a national annex to EN 15804. The project employs one postdoctoral researcher and two PhD students at the Faculty of Technical Sciences."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0645",
+        "kind": "project",
+        "title": "Life Cycle Assessment Methodologies for Tourism Systems in the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0645",
+          "field": "summary",
+          "text": "This project developed harmonised LCA guidelines and a shared emission factor library for tourism service systems in the cross-border Danube region spanning Vojvodina and southern Hungary. The Faculty of Technical Sciences Novi Sad led the methodology work package, responsible for adapting ecoinvent background datasets to regional grid and supply chain conditions and for conducting pilot LCAs at six tourism facilities on both sides of the border. A joint capacity-building programme trained 34 hotel and travel agency representatives in simplified carbon footprinting. Project outputs include a bilingual (Serbian–Hungarian) LCA practitioner guide and an open-access dataset of 62 regionally calibrated emission factors for tourism activities."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0974",
+        "kind": "project",
+        "title": "Cross-Border Atmospheric Transport and Deposition of Organic Contaminants in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-0974",
+          "field": "summary",
+          "text": "PANAIR-CB linked monitoring infrastructure on both sides of the Hungary–Serbia border to investigate whether identified PAH and PCB deposition hotspots near Subotica and Baja share common source contributions from cross-border emission sectors. The project operated six paired stations (three per country) with identical wet-only collectors and active air samplers. Marija Stojanović led the work package on harmonised sampling protocols and analytical QA, and co-developed the shared LIMS-based data management system. Bilateral source apportionment using receptor modelling was carried out jointly with the Hungarian partner. The project produced a publicly available cross-border contamination atlas and trained four early-career researchers."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates employed in environmental consultancy or waste management companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "contract research on site-specific leachate transport modelling and containment design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "joint project applications with companies working on landfill aftercare or groundwater remediation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "equipment access – soil column apparatus and TDR moisture monitoring system available for short-term collaborative use",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "missing_bio"
+    ]
+  }
+}

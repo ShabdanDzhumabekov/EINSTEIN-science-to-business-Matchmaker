@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C008-CH3",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C008-CH3",
+    "companyId": "C008",
+    "companyName": "Elekron Sistemi a.d.",
+    "sector": "IoT and electronics hardware",
+    "location": "Subotica",
+    "challenge": {
+      "text": {
+        "recordId": "C008-CH3",
+        "field": "text",
+        "text": "We want to expand into Romania and Bulgaria but our sales team of five people has no experience with public procurement rules there — we have lost two tenders already because we submitted the wrong notarial documents and missed a local-content clause we did not know existed."
+      },
+      "detail": {
+        "recordId": "C008-CH3",
+        "field": "detail",
+        "text": "We want to sell our RTU and control panel products directly to municipal utilities in Romania and Bulgaria rather than through local resellers who take a large margin. Both countries run public tenders through their national e-procurement portals. We have a sales team of five, all experienced with Serbian and regional procurement under UNCITRAL-style rules, but Romanian and Bulgarian tender documents use different notarial certification formats, translated attestation requirements, and, in two tenders we entered, local-content or EU-origin documentation we were not aware of. We lost both tenders on administrative grounds before technical evaluation even started. We do not have a local legal partner in either country yet. We have budget for a short consultancy engagement and we are willing to pay a success fee on a first contract win. What we need is either a structured guide to the documentation requirements for each country, or a contact who can review our tender packs before submission. A realistic target is winning one contract in Romania or Bulgaria within 18 months."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C008",
+        "field": "about",
+        "text": "Elekron Sistemi a.d. was founded in 1987 in Subotica by the Vukičević family, who started by building custom relay control panels for local factories. Over the following decades the company grew into a recognised supplier of ruggedised electronic control panels and remote terminal units for municipal water, heating, and waste-water operators across Serbia, Bosnia and Herzegovina, North Macedonia, and Montenegro. In 2014 the founding family transferred ownership to an employee trust, and today the 117 people who work here are also the owners. That structure suits us: decisions are made by people who understand the hardware and stand behind every unit that leaves Subotica. Our sheet-metal workshop bends and welds roughly 2,400 panels a year entirely in-house. Our RTU product line communicates over licensed radio, GSM, and, since 2021, LoRaWAN — a direction we are pushing hard because municipal clients need affordable ways to connect meters that were installed before wireless was an option. We hold framework contracts with seven municipal utilities and work through regional integrators in Sarajevo and Skopje. Quality certification to IEC 61439 and a service team that can reach most Western Balkans sites within 24 hours are what clients mention most when they explain why they keep reordering."
+      },
+      "products": [
+        {
+          "recordId": "C008",
+          "field": "products",
+          "text": "Ruggedised electronic control panels for water and district-heating substations"
+        },
+        {
+          "recordId": "C008",
+          "field": "products",
+          "text": "Remote terminal units (RTUs) for SCADA integration over licensed radio and GSM"
+        },
+        {
+          "recordId": "C008",
+          "field": "products",
+          "text": "LoRaWAN collar retrofit kits for legacy water and heat meters"
+        },
+        {
+          "recordId": "C008",
+          "field": "products",
+          "text": "Custom sheet-metal enclosures and powder-coated housing fabricated in-house"
+        },
+        {
+          "recordId": "C008",
+          "field": "products",
+          "text": "Field maintenance and remote diagnostics service contracts"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "LoRaWAN (Class A and Class C devices, custom network server integration)"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "Embedded C firmware on STM32 and NXP Kinetis microcontrollers"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "IEC 61131-3 ladder logic for panel PLC configuration"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "Modbus RTU and DNP3 communication protocols"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "In-house MIG welding and CNC press-brake sheet-metal fabrication"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "Epoxy primer and polyester powder-coat finishing line"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "JTAG and SWD-based hardware debugging toolchains"
+        },
+        {
+          "recordId": "C008",
+          "field": "tech",
+          "text": "GIT-based firmware version control with Jenkins CI"
+        }
+      ],
+      "plans": {
+        "recordId": "C008",
+        "field": "plans",
+        "text": "Elekron Sistemi intends to release a second-generation LoRaWAN collar with an integrated signal-boost relay option and to qualify the product line for sale in Romania and Bulgaria by the end of 2026. We are also evaluating whether to bring a small electronics assembly line in-house to reduce dependence on contract PCB assemblers in Novi Sad."
+      },
+      "rdCapacity": {
+        "recordId": "C008",
+        "field": "rd_capacity",
+        "text": "We have four engineers who can dedicate part of their time to a development collaboration, plus access to our production hardware, field-test sites at three municipal utilities, and a small lab in Subotica with oscilloscopes, protocol analysers, and environmental test chambers."
+      },
+      "pastCollaborations": {
+        "recordId": "C008",
+        "field": "past_collaborations",
+        "text": "We completed a two-year product-development agreement with Integra Automatika d.o.o. from Novi Sad between 2019 and 2021 covering firmware portability across two RTU hardware revisions."
+      }
+    }
+  }
+}

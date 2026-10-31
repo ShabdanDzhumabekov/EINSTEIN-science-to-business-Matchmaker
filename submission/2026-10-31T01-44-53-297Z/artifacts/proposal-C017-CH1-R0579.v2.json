@@ -1,0 +1,219 @@
+{
+  "ref": {
+    "artifactId": "proposal-C017-CH1-R0579",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0579",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C017-CH1-R0579",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Predicting sub-hectare salinity pockets near the Tisa to guide adaptive sampling",
+    "facts": [
+      {
+        "text": "TloCare uses a 4-ha grid; Tisa-area clients report sunflower failure where maps look good; denser resampling found 0.3–0.8 ha saline pockets the grid skips; denser sampling means more field/lab cost and longer delivery, with service price already pressing the client's acceptability limit.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Radimo grid uzorkovanje sa jednom tačkom na četiri hektara",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "suncokret propadne na delovima parcele koji na mapi izgledaju dobro",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "videli smo da slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke — a cena usluge nam već pritiska granicu prihvatljivosti za klijenta",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "TloCare holds GPS and lab results for ~18,000 points over ten years; client-visible results are pH, phosphorus, potassium, humus and calcification need.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "about",
+            "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom, uz preporuku za đubrenje po parcelama.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Filipović's geostatistical survey found ESP >25% hotspots occupied 18% of the area in micro-depressions, and single-depth sampling underestimated subsurface alkalisation by 30–40%.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06703",
+            "field": "abstract",
+            "quote": "Hotspots of ESP > 25% occupied 18% of the surveyed area, concentrated in micro-depressions with restricted drainage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06703",
+            "field": "abstract",
+            "quote": "single-depth sampling protocols underestimate subsurface alkalisation extent by 30–40% in this landscape.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He mapped ECa with EM38/EM31 across 2,300 ha and produced ECe maps with three salinisation classes covering 8%, 31% and 61% of the area.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06711",
+            "field": "abstract",
+            "quote": "EM38 and EM31 electromagnetic induction instruments were used to map apparent soil electrical conductivity (ECa) across 2,300 ha",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06711",
+            "field": "abstract",
+            "quote": "Predicted ECe maps delineated three salinisation classes covering 8%, 31%, and 61% of the area.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He trained random forest and gradient boosting classifiers to predict 1-ha parcel reclamation readiness from Sentinel-2, EM38 and soil-map covariates, reaching 79–81% accuracy; misclassified parcels clustered at the solonetz–chernozem transition.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06716",
+            "field": "abstract",
+            "quote": "Random forest and gradient boosting classifiers were trained to predict whether individual 1-ha parcels in the Bačka lowland met agronomic criteria for immediate reclamation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06716",
+            "field": "abstract",
+            "quote": "Random forest achieved an overall accuracy of 79% and F1 score of 0.76 for the reclamation-ready class; gradient boosting reached 81% accuracy and F1 of 0.78.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06716",
+            "field": "abstract",
+            "quote": "misclassified parcels were disproportionately located at the solonetz–chernozem transition zone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "SALTMOD was calibrated and validated for solonetz sites in Bečej and Novi Bečej districts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06706",
+            "field": "abstract",
+            "quote": "calibrated and validated for two contrasting solonetz sites in Vojvodina (Bečej and Novi Bečej districts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "TloCare plans at least one field sensor (electrical conductivity or NIR) in two years for denser coverage without proportional sampling-cost growth; two developers and one GIS specialist can dedicate up to one-third time, with occasional field-team support.",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "plans",
+            "quote": "U naredne dve godine planiramo da uvedemo bar jednu vrstu terenskog senzorskog merenja (elektrokonduktivitet ili blisku infracrvenu spektroskopiju)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "plans",
+            "quote": "kako bismo ponudili gušće prostorno pokriće bez proporcionalnog rasta troškova uzorkovanja",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija, uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Filipović lists openness to joint projects with soil-monitoring-sensor or irrigation-software companies and is cautious about projects requiring >20% administrative time.",
+        "sources": [
+          {
+            "recordId": "R0579",
+            "field": "open_to",
+            "quote": "joint projects with companies developing soil monitoring sensors or irrigation scheduling software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0579",
+            "field": "notes",
+            "quote": "cautious about projects requiring more than 20% of working time on administrative tasks",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a strong method fit: his spatial salinity, EM induction and ML screening work addresses TloCare's need to predict variable zones before sending field teams.",
+      "The cited evidence comes from Bačka and Tamiš–Bega, not the Tisa floodplain parcels named by TloCare, so transfer to 0.3–0.8 ha Tisa pockets must be validated with held-out dense sampling.",
+      "The historical 4-ha grid may be too sparse to label small pockets; his classifiers reached 79–81% accuracy with boundary misclassification; single-depth sampling missed subsurface alkalisation by 30–40%, so surface-only prediction is a risk. His availability is unknown, making collaboration conditional."
+    ],
+    "proposedActions": [
+      "Proposed first experiment (hypothesis): audit analytes and depths in TloCare's ~18,000 records, especially ECe/ESP, and require usable salinity labels. Train a spatial salinity-risk model on non-Tisa parcels, hold out Tisa parcels such as Ravnica Agro near Novi Bečej, compare to the current 4-ha grid baseline, add covariate groups one at a time (Sentinel-2, soil/terrain maps, any EM38/EM31 or field-sensor data), and compare predicted risk zones with denser reference sampling. Measure detection of 0.3–0.8 ha saline pockets and false-alarm rate. Go/no-go after audit and held-out Tisa validation: proceed only if predictions beat baseline on agreed detection and false-alarm criteria and TloCare confirms budget/time for dense sampling; otherwise stop. Researcher proposes model design/validation; company proposes data access, GIS support and, if budget confirmed, dense sampling—not yet committed.",
+      "Draft a data-sharing agreement covering the 18,000 historical GPS/lab records, client parcel boundaries and new validation samples before modelling starts.",
+      "Keep administrative load below the researcher's 20% tolerance and confirm TloCare's one-third developer/GIS capacity in a short written work plan.",
+      "Propose a 12-month timeline (negotiation target): data audit and label check, model development on non-Tisa parcels, held-out Tisa validation over one field season; success is detection rate for 0.3–0.8 ha pockets and false-alarm rate against denser sampling, thresholds agreed before validation."
+    ],
+    "questions": [
+      "Confirm both sides intend a joint project and whether industrial PhD supervision is also of interest; the researcher's industrial PhD willingness and availability are unknown.",
+      "Can TloCare provide a data-sharing agreement covering the 18,000 historical GPS/lab records and client parcel data before work starts?",
+      "Which Tisa-area parcels, such as Ravnica Agro near Novi Bečej, can be densely sampled as validation sites, and what budget and time are available?",
+      "Which field sensor route is planned first, electrical conductivity or near-infrared spectroscopy, and when would it become available?",
+      "What spatial resolution and prediction accuracy must be reached before the workflow guides sampling, and can administration stay below 20% of the researcher's time while confirming one-third developer/GIS capacity?"
+    ],
+    "markdown": "# Predicting sub-hectare salinity pockets near the Tisa to guide adaptive sampling\n\n## Verified facts\n- TloCare uses a 4-ha grid; Tisa-area clients report sunflower failure where maps look good; denser resampling found 0.3–0.8 ha saline pockets the grid skips; denser sampling means more field/lab cost and longer delivery, with service price already pressing the client's acceptability limit. [F1]\n- TloCare holds GPS and lab results for ~18,000 points over ten years; client-visible results are pH, phosphorus, potassium, humus and calcification need. [F2]\n- Filipović's geostatistical survey found ESP >25% hotspots occupied 18% of the area in micro-depressions, and single-depth sampling underestimated subsurface alkalisation by 30–40%. [F3]\n- He mapped ECa with EM38/EM31 across 2,300 ha and produced ECe maps with three salinisation classes covering 8%, 31% and 61% of the area. [F4]\n- He trained random forest and gradient boosting classifiers to predict 1-ha parcel reclamation readiness from Sentinel-2, EM38 and soil-map covariates, reaching 79–81% accuracy; misclassified parcels clustered at the solonetz–chernozem transition. [F5]\n- SALTMOD was calibrated and validated for solonetz sites in Bečej and Novi Bečej districts. [F6]\n- TloCare plans at least one field sensor (electrical conductivity or NIR) in two years for denser coverage without proportional sampling-cost growth; two developers and one GIS specialist can dedicate up to one-third time, with occasional field-team support. [F7]\n- Filipović lists openness to joint projects with soil-monitoring-sensor or irrigation-software companies and is cautious about projects requiring >20% administrative time. [F8]\n\n## Our inference\n- This suggests a strong method fit: his spatial salinity, EM induction and ML screening work addresses TloCare's need to predict variable zones before sending field teams.\n- The cited evidence comes from Bačka and Tamiš–Bega, not the Tisa floodplain parcels named by TloCare, so transfer to 0.3–0.8 ha Tisa pockets must be validated with held-out dense sampling.\n- The historical 4-ha grid may be too sparse to label small pockets; his classifiers reached 79–81% accuracy with boundary misclassification; single-depth sampling missed subsurface alkalisation by 30–40%, so surface-only prediction is a risk. His availability is unknown, making collaboration conditional.\n\n## Proposed next steps\n- Proposed first experiment (hypothesis): audit analytes and depths in TloCare's ~18,000 records, especially ECe/ESP, and require usable salinity labels. Train a spatial salinity-risk model on non-Tisa parcels, hold out Tisa parcels such as Ravnica Agro near Novi Bečej, compare to the current 4-ha grid baseline, add covariate groups one at a time (Sentinel-2, soil/terrain maps, any EM38/EM31 or field-sensor data), and compare predicted risk zones with denser reference sampling. Measure detection of 0.3–0.8 ha saline pockets and false-alarm rate. Go/no-go after audit and held-out Tisa validation: proceed only if predictions beat baseline on agreed detection and false-alarm criteria and TloCare confirms budget/time for dense sampling; otherwise stop. Researcher proposes model design/validation; company proposes data access, GIS support and, if budget confirmed, dense sampling—not yet committed.\n- Draft a data-sharing agreement covering the 18,000 historical GPS/lab records, client parcel boundaries and new validation samples before modelling starts.\n- Keep administrative load below the researcher's 20% tolerance and confirm TloCare's one-third developer/GIS capacity in a short written work plan.\n- Propose a 12-month timeline (negotiation target): data audit and label check, model development on non-Tisa parcels, held-out Tisa validation over one field season; success is detection rate for 0.3–0.8 ha pockets and false-alarm rate against denser sampling, thresholds agreed before validation.\n\n## Open questions\n- Confirm both sides intend a joint project and whether industrial PhD supervision is also of interest; the researcher's industrial PhD willingness and availability are unknown.\n- Can TloCare provide a data-sharing agreement covering the 18,000 historical GPS/lab records and client parcel data before work starts?\n- Which Tisa-area parcels, such as Ravnica Agro near Novi Bečej, can be densely sampled as validation sites, and what budget and time are available?\n- Which field sensor route is planned first, electrical conductivity or near-infrared spectroscopy, and when would it become available?\n- What spatial resolution and prediction accuracy must be reached before the workflow guides sampling, and can administration stay below 20% of the researcher's time while confirming one-third developer/GIS capacity?",
+    "taskId": "C017-CH1",
+    "researcherId": "R0579",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0579",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C017-CH1-R0579",
+        "version": 1
+      }
+    ]
+  }
+}

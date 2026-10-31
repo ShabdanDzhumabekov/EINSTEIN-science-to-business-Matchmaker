@@ -1,0 +1,122 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0177",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0177",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can geostatistical and probabilistic spatial modelling of TloCare's historical soil sampling and laboratory data predict sub-hectare salinity pockets in Tisa floodplain sunflower fields well enough to guide adaptive denser sampling before field teams are sent out?",
+    "rationale": [
+      {
+        "text": "Bulatović has direct experience in kriging-based uncertainty quantification for alluvial deposits along the Danube–Tisa corridor, the same landscape as TloCare's salinity problem.",
+        "sources": [
+          {
+            "recordId": "R0177",
+            "field": "bio",
+            "quote": "Her dissertation examined kriging-based uncertainty quantification for alluvial deposit characterisation along the Danube–Tisa corridor.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She reconstructs subsurface profiles probabilistically from sparse point datasets and models spatial variability in heterogeneous alluvial sediments, which matches TloCare's sparse grid and variable floodplain soils.",
+        "sources": [
+          {
+            "recordId": "R0177",
+            "field": "bio",
+            "quote": "probabilistic soil profile reconstruction from sparse CPT and borehole datasets, and spatial variability modelling in heterogeneous alluvial sediments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her sequential Gaussian simulation workflow produces voxel-wise probability-of-occurrence maps for small subsurface features, a method that could be tested for salinity pocket delineation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02285",
+            "field": "abstract",
+            "quote": "frequency of Qt values below a threshold of 1.2—indicative of soft clay—was computed voxel-by-voxel to produce a probability-of-occurrence map",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her Bayesian updating work explicitly quantifies uncertainty reduction from each additional sounding, which is directly relevant to adaptive denser sampling only where needed.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02289",
+            "field": "abstract",
+            "quote": "quantifying how much uncertainty reduction is achieved by each additional sounding and informing decisions about when sampling is sufficient",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She prefers real field datasets and projects where geostatistics is central, which fits an applied TloCare pilot rather than a peripheral modelling exercise.",
+        "sources": [
+          {
+            "recordId": "R0177",
+            "field": "notes",
+            "quote": "She is particularly interested in collaborations that involve real field datasets rather than purely desk-based work, and prefers projects where the geostatistical component is central rather than peripheral.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has declared openness to joint projects with companies needing subsurface uncertainty quantification, supporting a joint-project format.",
+        "sources": [
+          {
+            "recordId": "R0177",
+            "field": "open_to",
+            "quote": "joint projects with companies needing subsurface uncertainty quantification for construction sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Transfer gap: Bulatović's evidence is mainly CPT, borehole and geotechnical property modelling, not soil salinity or agricultural laboratory chemistry; salinity variograms and prediction performance must be tested on TloCare data before any service claim.",
+      "The historical laboratory results may not contain direct salinity measurements such as electrical conductivity or exchangeable sodium, so a proxy or new field measurement may be required.",
+      "The target salinity pockets are only 0.3–0.8 ha while the historical grid is one point per 4 ha; the existing sampling may be too sparse to estimate reliable short-range variograms for those pockets.",
+      "TloCare's earlier attempt to use early-season satellite NDVI as an adaptive sampling guide did not show salinity clearly, so no remote-sensing covariate should be assumed to work without validation.",
+      "Bulatović is on parental leave from October 2025 through April 2026 with limited availability, which may constrain timeline and supervision capacity.",
+      "TloCare has no existing field conductivity or near-infrared sensor in routine use; the planned sensor measurement is a future plan, not an established data source."
+    ],
+    "questions": [
+      "Do the historical laboratory results include direct salinity indicators such as electrical conductivity, exchangeable sodium percentage or chloride, or only pH, phosphorus, potassium, humus and calcification need?",
+      "What threshold or combination of measurements defines a salinity pocket that kills sunflower establishment for TloCare and Ravnica Agro?",
+      "Can TloCare provide the full anonymised 18,000-point dataset with coordinates, sampling dates, laboratory methods, QA flags and parcel boundaries?",
+      "Are there denser-resampled parcels, such as those mentioned near Novi Bečej, that can serve as a blind validation set for predicted salinity zones?",
+      "What spatial resolution, prediction accuracy and cost per hectare would make the service acceptable to TloCare's clients?",
+      "What time can Nada Bulatović commit before and during her parental leave, and what joint-project scope is realistic in that period?",
+      "Can TloCare support a first field validation campaign with its planned electrical conductivity or near-infrared sensor and with GIS/developer time?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0177",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0177",
+        "version": 1
+      }
+    ]
+  }
+}

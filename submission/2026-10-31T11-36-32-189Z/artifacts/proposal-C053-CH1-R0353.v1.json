@@ -1,0 +1,186 @@
+{
+  "ref": {
+    "artifactId": "proposal-C053-CH1-R0353",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0353",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C053-CH1-R0353",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Tracing manganese increases and restoring iron–manganese compliance",
+    "facts": [
+      {
+        "text": "AquaCikl reports discharge limits of 0.10 mg/L manganese and 0.30 mg/L iron. These are reported limits, not independently verified legal acceptance criteria; the applicable sampling point and analytical definitions still require confirmation.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports inlet manganese of 0.04–0.07 mg/L but 0.18 mg/L at the coagulation outlet across three sites. Increasing coagulant dose and lowering pH produced no meaningful improvement. Comparable sampling is therefore needed before attributing the discrepancy to release rather than incomplete removal or measurement differences.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AquaCikl seeks a root-cause finding and an implementable change without major equipment replacement. One laundry client faces reinspection in five months.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company states it can dedicate two senior process engineers and one lab technician for up to four months, with three operating installations available for field testing.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "with access to three operating installations for field testing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Žigić prefers collaborations in which the Faculty laboratory performs analytical work. ICP-OES contract access is offered through the university service-centre agreement; this does not establish reserved project capacity.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "notes",
+            "quote": "a preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0353",
+            "field": "notes",
+            "quote": "The department's ICP-OES instrument is available for contract analytical work through the university's service centre agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Žigić’s manganese jar tests used synthetic water and pre-oxidation before coagulation. Her continuous-flow iron–manganese study also identified a tradeoff: at low Fe/Mn ratios, competition reduced iron removal by 12 percentage points. Manganese improvement therefore cannot substitute for checking iron.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Jar-test experiments were performed on synthetic water containing 0.5–4.0 mg/L dissolved Mn(II)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Pre-oxidation with KMnO₄ at stoichiometric doses converted Mn(II) to colloidal MnO₂ prior to coagulation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04345",
+            "field": "abstract",
+            "quote": "At low Fe/Mn ratios (1:1), competition for coagulant capacity reduced Fe removal by 12 percentage points.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Žigić lists openness to joint project proposals in water quality and treatment. This supports discussing a joint project, not assuming a project-specific commitment.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "open_to",
+            "quote": "joint project proposals in water quality and treatment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Speciation-led diagnosis could distinguish metal introduction, redox cycling and poor separation more effectively than repeating dose adjustments. Concentrations alone are unlikely to resolve causation without accounting for flows, recycling and residence times.",
+      "Synthetic-water treatment results are not validation for industrial greywater or the company’s lower manganese concentrations. Real-matrix recovery checks and controlled treatment tests would address that transfer gap.",
+      "This joint-project proposal is conditional because Žigić’s availability and laboratory turnaround capacity are unknown. Her stated openness does not establish availability within the company’s staffing window."
+    ],
+    "proposedActions": [
+      "Propose a four-month diagnostic-to-verification experiment. AquaCikl would supply residence-time- and flow-matched stage samples from three sites, operating records, reagents and media; Žigić would lead validated total/dissolved Fe–Mn analyses and controlled tests. On actual greywater, use matrix M/O/R, where M = media exposure, O = lowered oxygen, R = reagent exposure: 000, 100, 010, 001, 110, 101, 011, 111. Hold other conditions fixed; include blanks. Measure Fe/Mn, pH, oxygen and metal loads. Judge reproduction against the observed inlet-to-coagulation-outlet increase, not an assumed mechanism; null single-factor effects narrow rather than close investigation. Test operational remedies, including oxidation/coagulation only where feasible. Proposed go/no-go: by month four, the best configuration tested must demonstrate a reproducible causal explanation and, under confirmed compliance sampling at affected installations, Mn ≤0.10 and Fe ≤0.30 mg/L without major equipment replacement. Otherwise do not advance it as reinspection-ready before month five.",
+      "In the opening weeks, agree sample preservation, filtration, digestion, matrix-spike recovery and quantification requirements near both limits, with external confirmation. Allocate separate diagnostic/tuning and later evaluation sampling campaigns; check their independence rather than assume it. Confirm hydraulic comparability and investigate upstream variability alongside media, tanks and reagents.",
+      "Target diagnosis in month one, real-greywater remedy screening in month two, and controlled field verification in months three–four, subject to negotiated capacity. Reserve Faculty analytical work through the service centre, agree budget and permitted trials, and document an operating procedure and post-project monitoring owner before the staffing window closes."
+    ],
+    "questions": [
+      "Can Žigić confirm availability for this joint project and Faculty analytical capacity within the proposed four-month schedule?",
+      "What legally applicable sampling point, metal definitions, compliance protocol and current iron results should govern acceptance?",
+      "What budget and safe operational changes can AquaCikl authorise for sampling, analyses and controlled trials without major equipment replacement?",
+      "Can AquaCikl provide hydraulic and operating records, comparable samples and materials across all three sites, with an owner for verification after month four?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify where manganese increases and distinguish a correctable operating cause from a sampling or analytical discrepancy. It could also establish whether an equipment-light change meets both reported limits before reinspection.",
+      "researcher": "Subject to agreement, Žigić could test how greywater chemistry and process materials affect coupled iron–manganese behaviour, using stage samples and controlled real-matrix comparisons to examine transfer beyond synthetic-water studies."
+    },
+    "markdown": "# Tracing manganese increases and restoring iron–manganese compliance\n\n## Verified facts\n- AquaCikl reports discharge limits of 0.10 mg/L manganese and 0.30 mg/L iron. These are reported limits, not independently verified legal acceptance criteria; the applicable sampling point and analytical definitions still require confirmation. [F1]\n- The company reports inlet manganese of 0.04–0.07 mg/L but 0.18 mg/L at the coagulation outlet across three sites. Increasing coagulant dose and lowering pH produced no meaningful improvement. Comparable sampling is therefore needed before attributing the discrepancy to release rather than incomplete removal or measurement differences. [F2]\n- AquaCikl seeks a root-cause finding and an implementable change without major equipment replacement. One laundry client faces reinspection in five months. [F3]\n- The company states it can dedicate two senior process engineers and one lab technician for up to four months, with three operating installations available for field testing. [F4]\n- Žigić prefers collaborations in which the Faculty laboratory performs analytical work. ICP-OES contract access is offered through the university service-centre agreement; this does not establish reserved project capacity. [F5]\n- Žigić’s manganese jar tests used synthetic water and pre-oxidation before coagulation. Her continuous-flow iron–manganese study also identified a tradeoff: at low Fe/Mn ratios, competition reduced iron removal by 12 percentage points. Manganese improvement therefore cannot substitute for checking iron. [F6]\n- Žigić lists openness to joint project proposals in water quality and treatment. This supports discussing a joint project, not assuming a project-specific commitment. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify where manganese increases and distinguish a correctable operating cause from a sampling or analytical discrepancy. It could also establish whether an equipment-light change meets both reported limits before reinspection.\n- For the researcher: Subject to agreement, Žigić could test how greywater chemistry and process materials affect coupled iron–manganese behaviour, using stage samples and controlled real-matrix comparisons to examine transfer beyond synthetic-water studies.\n\n## Our inference\n- Speciation-led diagnosis could distinguish metal introduction, redox cycling and poor separation more effectively than repeating dose adjustments. Concentrations alone are unlikely to resolve causation without accounting for flows, recycling and residence times.\n- Synthetic-water treatment results are not validation for industrial greywater or the company’s lower manganese concentrations. Real-matrix recovery checks and controlled treatment tests would address that transfer gap.\n- This joint-project proposal is conditional because Žigić’s availability and laboratory turnaround capacity are unknown. Her stated openness does not establish availability within the company’s staffing window.\n\n## Proposed next steps\n- Propose a four-month diagnostic-to-verification experiment. AquaCikl would supply residence-time- and flow-matched stage samples from three sites, operating records, reagents and media; Žigić would lead validated total/dissolved Fe–Mn analyses and controlled tests. On actual greywater, use matrix M/O/R, where M = media exposure, O = lowered oxygen, R = reagent exposure: 000, 100, 010, 001, 110, 101, 011, 111. Hold other conditions fixed; include blanks. Measure Fe/Mn, pH, oxygen and metal loads. Judge reproduction against the observed inlet-to-coagulation-outlet increase, not an assumed mechanism; null single-factor effects narrow rather than close investigation. Test operational remedies, including oxidation/coagulation only where feasible. Proposed go/no-go: by month four, the best configuration tested must demonstrate a reproducible causal explanation and, under confirmed compliance sampling at affected installations, Mn ≤0.10 and Fe ≤0.30 mg/L without major equipment replacement. Otherwise do not advance it as reinspection-ready before month five.\n- In the opening weeks, agree sample preservation, filtration, digestion, matrix-spike recovery and quantification requirements near both limits, with external confirmation. Allocate separate diagnostic/tuning and later evaluation sampling campaigns; check their independence rather than assume it. Confirm hydraulic comparability and investigate upstream variability alongside media, tanks and reagents.\n- Target diagnosis in month one, real-greywater remedy screening in month two, and controlled field verification in months three–four, subject to negotiated capacity. Reserve Faculty analytical work through the service centre, agree budget and permitted trials, and document an operating procedure and post-project monitoring owner before the staffing window closes.\n\n## Open questions\n- Can Žigić confirm availability for this joint project and Faculty analytical capacity within the proposed four-month schedule?\n- What legally applicable sampling point, metal definitions, compliance protocol and current iron results should govern acceptance?\n- What budget and safe operational changes can AquaCikl authorise for sampling, analyses and controlled trials without major equipment replacement?\n- Can AquaCikl provide hydraulic and operating records, comparable samples and materials across all three sites, with an owner for verification after month four?",
+    "taskId": "C053-CH1",
+    "researcherId": "R0353",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0353",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C053-CH1-R0353",
+        "version": 1
+      }
+    ]
+  }
+}

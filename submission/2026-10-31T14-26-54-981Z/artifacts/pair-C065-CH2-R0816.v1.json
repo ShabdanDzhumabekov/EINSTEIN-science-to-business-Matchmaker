@@ -1,0 +1,209 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can product-attribute similarity, alone or blended with sparse basket co-occurrence, improve product-page recommendations over best-seller sorting with only 500–2,000 transactions per client? The first experiment would test transfer from Erić’s larger grocery and clothing datasets to one client’s catalogue using temporal holdouts, comparing popularity, content-only and lightweight hybrid baselines before considering a live widget trial.",
+    "rationale": [
+      {
+        "text": "Erić has directly studied recommendation based on structured product attributes when purchase history is absent.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "This study investigates how structured product attribute data—category hierarchy, price tier, packaging size, and supplier origin—can be encoded into feature vectors",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work provides a concrete candidate hybrid combining item-content similarity with within-basket co-occurrence, rather than relying solely on sparse collaborative signals.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has relevant evaluation experience covering temporal splits, single-purchase users, discontinued products and a popularity baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08872",
+            "field": "abstract",
+            "quote": "A preprocessing protocol is specified, including rules for temporal train-test split, treatment of single-purchase users, and handling of product discontinuations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08872",
+            "field": "abstract",
+            "quote": "Four baseline architectures are evaluated under this protocol: global popularity, pure content-based cosine similarity, item-based kNN collaborative filtering, and a simple linear hybrid",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has led algorithm development and evaluation in a regional small-retail collaboration explicitly addressing limited infrastructure.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "Erić led the work package responsible for algorithm development and evaluation, coordinating the construction of the shared benchmark dataset later published in 2022.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "The project aimed to produce recommendation methods and practical implementation guidelines suited to retailers with fewer than five hundred active customers and limited IT infrastructure.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must work with existing small datasets and cannot depend on collecting substantially more transactions; best-seller sorting must remain an explicit comparator.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Start with one client and restrict data access to the agreed anonymised transaction and catalogue datasets under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Content-based feasibility depends on product-attribute completeness; a metadata audit must precede choosing the representation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope integration and coordination around one company developer for approximately one day weekly and the researcher's caution about semester commitments exceeding one external day weekly.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any deployed prototype must accommodate the company's existing e-commerce integrations and containerised client-VPS deployment environment.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "User-facing widget strings must pass the company's three-language review before release.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer is unvalidated: the grocery attribute study used 412 SKUs and 3,840 customers, while the clothing hybrid study used 9,200 baskets. Neither establishes performance on this client's 520–1,900 orders or product-page recommendation setting; the first experiment must test that gap.",
+      "Product attributes may be incomplete or inconsistent, and description languages are not specified. Structured-attribute results do not establish that multilingual product-text similarity will work.",
+      "Low traffic may prevent a sufficiently informative live A/B test within the available budget. Offline purchase-ranking gains would not establish conversion or revenue gains.",
+      "Actual researcher availability, project funding, target dates, client VPS resources and serving-latency requirements remain unknown and could block implementation.",
+      "Read access to historical transactions does not establish access to live impression, click or session events. Instrumentation and permissions may require additional work.",
+      "Content similarity may over-specialise recommendations or favour substitutes when the client expects complementary products; relevance must be defined with the selected retailer."
+    ],
+    "questions": [
+      "Can Erić confirm availability, a start date and a feasible joint-project schedule within her semester limits, and what budget and completion window can the company support?",
+      "Which client will pilot the widget, how large is its active catalogue, and should recommendations prioritise substitutes, complements or another business objective?",
+      "Which category, brand, price, compatibility and description fields exist, in which languages, and how complete and historically timestamped are they?",
+      "Do anonymised records preserve basket membership, timestamps and stable identifiers, and can historical availability, discontinued products and repeat customers be identified without re-identification?",
+      "What data-sharing permissions, retention rules and security controls apply, and are live impressions, clicks and purchases available or permitted to be instrumented?",
+      "What constitutes a meaningful improvement over best-seller sorting, which offline ranking metrics and uncertainty checks will be agreed, and what traffic and duration are available for a subsequent live test?",
+      "What are the pilot store's integration interface, VPS resources, latency limits and responsibilities for deployment, monitoring and catalogue refreshes?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

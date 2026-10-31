@@ -1,0 +1,224 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a content-based or hybrid recommender using product descriptions/category metadata plus session and co-occurrence signals outperform a best-seller list for e-commerce clients with only 500–2,000 completed orders? The collaboration would build and evaluate a prototype for one client, with the first experiment testing whether the researcher's sparse-retail methods transfer to Harmat's catalogue and transaction data.",
+    "rationale": [
+      {
+        "text": "Erić has a direct doctoral and research focus on hybrid recommendation under data-sparse small-retail conditions.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "bio",
+            "quote": "dissertation on hybrid recommendation strategies for data-sparse retail environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work explicitly combines content-based filtering with behavioural signals from sparse transaction logs typical of SMEs.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "bio",
+            "quote": "combining content-based filtering with behavioural signals derived from sparse transactional logs typical of small and medium retail businesses",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has published on encoding structured product attributes for cold-start item recommendation, matching the company's proposed content-based direction.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "structured product attribute data—category hierarchy, price tier, packaging size, and supplier origin—can be encoded into feature vectors to support immediate recommendation of new items",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has tested a hybrid of content similarity and within-session co-occurrence on sparse transactional logs and reported improvement over a pure content baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "yielding a precision at three of 0.38 against a pure content baseline of 0.29",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She led algorithm development and evaluation in SPAREC, a project aimed at retailers with fewer than five hundred active customers and limited IT infrastructure.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "Erić led the work package responsible for algorithm development and evaluation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "retailers with fewer than five hundred active customers and limited IT infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has analysed when matrix factorization fails under extreme sparsity, which is directly relevant to the company's failed collaborative-filtering attempts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08869",
+            "field": "abstract",
+            "quote": "hit rate drops below the non-personalised popularity baseline at 0.3% density",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must work with 500–2,000 completed orders per client and cannot assume larger datasets or more traffic.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A prototype must be evaluated against best-seller sorting in a client A/B test, not only offline.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Content-based or hybrid work needs product metadata complete enough to build attribute vectors; incomplete attributes are a known limitation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be arranged through a data-sharing agreement covering anonymised transaction and product catalogue data.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must fit one mid-level company developer at roughly one day per week and the researcher's caution about more than one day per week outside the faculty during semester.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The prototype must fit the client e-commerce stack, including PHP/Laravel, MySQL/MariaDB and WooCommerce/REST integrations.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "PHP (Laravel framework) for backend portal development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "MySQL and MariaDB for transactional data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: Erić's published evaluations use grocery, clothing, pharmacy, home-goods and other retail datasets, not Harmat's e-commerce clients, so the first experiment must test whether the methods work on one client's catalogue.",
+      "The client catalogues may remain too sparse for useful co-occurrence signals; the company already found that the purchase co-occurrence matrix was too sparse to be useful.",
+      "Content-based methods can over-specialise recommendations, and product metadata completeness and multilingual description quality are unknown.",
+      "Willingness is only confirmed for joint projects; industrial PhD supervision is unknown, and the researcher's availability is unknown and limited during semester.",
+      "Harmat has no formal university collaboration experience, and only one mid-level developer at one day per week may be thin for integration and A/B testing.",
+      "A one-client A/B test may not give enough traffic for a reliable comparison against the best-seller baseline; success criteria and test duration must be agreed before starting."
+    ],
+    "questions": [
+      "Which client and catalogue will be used for the prototype, and what are the exact transaction, user, SKU and time-span counts?",
+      "What product metadata fields are available (descriptions, categories, attributes, price tier, supplier), in which languages, and how complete are they?",
+      "What is the precise success criterion versus best-seller sorting: metric, minimum lift, evaluation window and available A/B traffic?",
+      "Can Harmat confirm the joint-project format, data-sharing agreement, anonymisation procedure and data access mechanism?",
+      "What integration constraints apply for the prototype, and who from Harmat will do the PHP/Vue/MySQL/WooCommerce integration work?",
+      "Is Branislava Erić available for the required one-day-per-week cadence during the semester, and is there interest in an industrial PhD track, which is currently unknown?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

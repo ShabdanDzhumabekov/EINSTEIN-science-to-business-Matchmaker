@@ -1,0 +1,41 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.92,
+        0.97,
+        0.99,
+        0.97,
+        0.86,
+        0.89
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

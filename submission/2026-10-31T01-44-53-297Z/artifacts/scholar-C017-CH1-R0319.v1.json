@@ -1,0 +1,265 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0319",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0319",
+    "name": "Milan Gligorić",
+    "faculty": "Prirodno-matematički fakultet",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Evolutionary computation and genetic programming",
+      "Machine learning and data mining",
+      "Applied mathematics and mathematical modeling",
+      "Symbolic computation"
+    ],
+    "keywords": [
+      "symbolic regression",
+      "grammar-guided genetic programming",
+      "interpretable machine learning",
+      "mathematical model discovery",
+      "context-free grammars",
+      "tabular data",
+      "population-based optimization",
+      "equation learning",
+      "feature construction",
+      "model complexity control"
+    ],
+    "openTo": [
+      "joint projects with industry on interpretable model discovery from proprietary tabular data",
+      "contract research for companies needing white-box predictive formulas",
+      "industrial PhD supervision for candidates with a mathematics or computer science background",
+      "student internships on open-source symbolic regression tooling",
+      "consulting on replacing black-box models with auditable mathematical expressions"
+    ],
+    "bio": {
+      "recordId": "R0319",
+      "field": "bio",
+      "text": "Milan Gligorić diplomirao je matematiku na Prirodno-matematičkom fakultetu Univerziteta u Novom Sadu 1998. godine, a doktorirao na istom fakultetu 2006. godine s tezom o gramatički vođenom genetskom programiranju za automatsko otkrivanje matematičkih zakona. Nakon postdoktorskog boravka na Tehničkom univerzitetu u Grazu (2007–2009), vratio se na PMF gde je 2018. izabran za redovnog profesora. Rukovodi Laboratorijem za simboličku regresiju i evoluciono modelovanje, koji koristi klaster sa 12 GPU čvorova. Istraživanja grupe fokusirana su na automatsko otkrivanje interpretabilnih matematičkih modela iz tabelarnih podataka primenom simboličke regresije, gramatički vođenog genetskog programiranja i metoda zasnovanih na populacionoj optimizaciji. Predaje kurseve iz teorije algoritama, evolucione komputacije i mašinskog učenja na osnovnim i master studijama."
+    },
+    "industryExperience": {
+      "recordId": "R0319",
+      "field": "industry_experience",
+      "text": "Collaborated with a local manufacturing company (injection moulding sector) on a symbolic regression audit tool for quality control prediction models, resulting in a published case study. Provided consulting to a data analytics startup at NTP Novi Sad on interpretable pricing models."
+    },
+    "notes": {
+      "recordId": "R0319",
+      "field": "notes",
+      "text": "Prefers project collaborations where tabular datasets of at least moderate size (>200 rows) are available for shared analysis; not currently available for projects requiring real-time embedded system deployment. GPU cluster at the laboratory is accessible to external collaborators under a formal agreement with the Faculty of Sciences."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03942",
+        "kind": "publication",
+        "title": "Gramatički vođeno genetsko programiranje za otkrivanje algebarskih zakona u fizičkim merenjima",
+        "body": {
+          "recordId": "SYN-PUB-03942",
+          "field": "abstract",
+          "text": "U radu je predložen pristup simboličkoj regresiji zasnovan na bezkontekstnim gramatikama kojima se ograničava prostor pretrage kandidatskih izraza. Gramatika je definisana tako da garantuje dimenzionalnu konzistentnost generisanih formula u odnosu na ulazne fizičke veličine. Eksperimenti su sprovedeni na 14 skupova podataka iz klasične mehanike i termodinamike, pri čemu su skupovi sadržavali između 80 i 400 mernih tačaka sa različitim nivoima šuma. Predložena metoda pronašla je tačnu analitičku formulu u 11 od 14 slučajeva, dok je standardno genetsko programiranje bez gramatičkih ograničenja postiglo tačnost na samo 7 skupova. Prosečna veličina finalnih izraza smanjena je za 34% u poređenju sa referentnim algoritmom. Rezultati pokazuju da eksplicitno kodiranje dimenzionalne analize u gramatiku značajno ubrzava konvergenciju i smanjuje prekomerno prilagođavanje na male skupove podataka."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03943",
+        "kind": "publication",
+        "title": "Comparative Study of Tree Encoding Schemes for Symbolic Regression on Small Tabular Datasets",
+        "body": {
+          "recordId": "SYN-PUB-03943",
+          "field": "abstract",
+          "text": "This paper systematically compares five tree encoding strategies used in genetic programming for symbolic regression tasks where training sets contain fewer than 200 samples. The encodings evaluated are standard prefix-tree, linear genome with decoding, push-based stack representation, graph-based DAG encoding, and a grammar-constrained derivation tree. Benchmarks consist of 22 datasets drawn from material science, hydrology, and agricultural yield prediction, standardised to remove dimensional differences. Evaluation metrics include median relative error on held-out test sets, average expression depth, and frequency of bloat-induced fitness stagnation. The DAG and grammar-constrained representations show substantially lower bloat rates (12% and 9% stagnation events respectively, versus 38% for prefix-tree). Predictive accuracy differences are modest but consistent in favour of grammar-constrained derivation trees across datasets with fewer than 100 samples, suggesting that restricting syntax is more helpful when training data are sparse. Runtime overhead of grammar enforcement averages 18% per generation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03944",
+        "kind": "publication",
+        "title": "Simbolička regresija sa kontrolom složenosti putem kažnjavanja Kolmogorov-Čaitinovom aproksimacijom dužine opisa",
+        "body": {
+          "recordId": "SYN-PUB-03944",
+          "field": "abstract",
+          "text": "Prezentovana je metoda koja u funkciju dobrote simboličke regresije uvodi kazneni član zasnovan na aproksimativnoj Kolmogorov-Čaitinovoj složenosti kandidatskog izraza, procenjenoj kompresionim algoritmom primenjenim na serijalizovano sintaksičko stablo. Cilj je automatska ravnoteža između tačnosti prilagođavanja i parsimonioze modela bez ručnog podešavanja težinskog parametra. Metod je testiran na 30 sintetičkih skupova podataka generisanih iz poznatih jednačina iz literature, sa skupovima veličine 50 do 500 uzoraka i tri nivoa aditivnog Gausovog šuma (σ = 0.01, 0.05, 0.10). Na skupovima sa visokim šumom, predloženi pristup ostvaruje prosečnu grešku 12% manju od standardnog Pareto-frontovskog pristupa, uz prosečno kraće izraze za 2.3 čvora. Analiza osetljivosti pokazuje da kompresiona aproksimacija složenosti daje stabilnije rezultate od broja čvorova kao mere složenosti."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03305",
+        "kind": "publication",
+        "title": "Grammar Inference from Domain Equations to Bootstrap Symbolic Regression Constraints",
+        "body": {
+          "recordId": "SYN-PUB-03305",
+          "field": "abstract",
+          "text": "When domain equations are partially known, the information they contain can be used to infer a context-free grammar that guides symbolic regression toward physically meaningful solutions. This work proposes a two-stage pipeline: first, a small set of validated domain equations is used to extract production rules via a rule-mining procedure based on frequent subtree enumeration; second, the resulting grammar seeds the hypothesis space for grammar-guided genetic programming. The approach is evaluated on problems from process engineering and soil mechanics, where partial knowledge of governing equations exists. On six benchmark problems with 150–600 data points, the bootstrapped grammar recovers correct functional forms in 83% of runs compared with 51% for uninformed grammar-guided GP and 44% for standard GP. A sensitivity analysis shows performance degrades gracefully when the seed equations contain up to 30% incorrect terms, making the method robust to imperfect domain knowledge."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03945",
+        "kind": "publication",
+        "title": "Otkrivanje empirijskih formula za prinos useva primenom simboličke regresije na agronomskim tabelarnim podacima",
+        "body": {
+          "recordId": "SYN-PUB-03945",
+          "field": "abstract",
+          "text": "Istraživanje ispituje primenu simboličke regresije vođene gramatikom za pronalaženje analitičkih formula koje objašnjavaju varijacije prinosa kukuruza u Vojvodini u zavisnosti od agrotehničkih i meteoroloških faktora. Korišćeni skup podataka obuhvata 11 ulaznih promenljivih i 620 merenja prikupljenih tokom 18 vegetacionih sezona na eksperimentalnim parcelama Instituta za ratarstvo i povrtarstvo u Novom Sadu. Gramatikom su definisani algebarski operatori i elementarne funkcije; konačno rešenje testirano je na odvojenom skupu iz dve sezone koje nisu korišćene u treningu. Otkrivena formula sa četiri promenljive postiže R² = 0.81 na test skupu, što je uporedivo s rezultatima ansambla slučajnih šuma (R² = 0.84), ali uz znatno veću interpretabilnost. Formula identifikuje temperaturni deficit u fazi cvetanja i kumulativnu padavinu u junu kao dominantne prediktore, što je konzistentno sa agronomskim znanjem."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03946",
+        "kind": "publication",
+        "title": "Parallel Island-Model Genetic Programming for Symbolic Regression on Multi-Core Architectures",
+        "body": {
+          "recordId": "SYN-PUB-03946",
+          "field": "abstract",
+          "text": "Population-based symbolic regression methods are computationally expensive due to repeated fitness evaluation of large expression trees. This paper describes a parallel island-model implementation of grammar-guided genetic programming targeting shared-memory multicore systems with up to 32 cores and distributed GPU clusters. The island topology, migration interval, and migration rate are treated as tunable parameters and studied via a grid search across 108 configurations on six benchmark regression problems. Results show that a ring topology with migration every 15 generations and a 5% migration rate provides the best trade-off between exploration and convergence speed. On a 12-core workstation, wall-clock time per run decreases by a factor of 8.3 relative to the sequential baseline, with no statistically significant reduction in solution quality (Wilcoxon signed-rank test, p > 0.05). GPU acceleration of fitness evaluation yields an additional 2.1× speedup on problems with more than 1000 data points."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03947",
+        "kind": "publication",
+        "title": "Upotreba simboličke regresije za rekonstrukciju diferencijalnih jednačina iz vremenskih serija",
+        "body": {
+          "recordId": "SYN-PUB-03947",
+          "field": "abstract",
+          "text": "Predložena je metoda za otkrivanje oblika diferencijalnih jednačina koje opisuju dinamiku sistema isključivo iz merenih vremenskih serija, bez prethodnog poznavanja strukture modela. Numeričke derivacije potrebne za formiranje biblioteke kanditat-termova procenjene su regularizovanim diferencijalnim filtrom kako bi se smanjio uticaj šuma. Simbolička regresija zatim pretražuje prostor mogućih desnih strana obične diferencijalne jednačine prvog reda koristeći gramatiku ograničenu na polinome i trigonometrijske funkcije. Metoda je validirana na četiri sintetička primera: linearni oscilator, Van der Polov oscilator, Lotka-Volterra sistem i jedačina logističkog rasta. Korektna funkcionalna forma otkrivena je u svim slučajevima kada je odnos signal-šum bio iznad 20 dB. Ispod tog praga korektnost opada, a metoda otkriva aproksimativne forme koje zadržavaju kvalitativne dinamičke osobine originalnog sistema."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03948",
+        "kind": "publication",
+        "title": "Benchmarking Symbolic Regression Algorithms on Tabular Scientific Datasets: A Reproducibility Study",
+        "body": {
+          "recordId": "SYN-PUB-03948",
+          "field": "abstract",
+          "text": "Reproducibility problems in evolutionary computation benchmarks are well documented, yet symbolic regression comparisons frequently rely on heterogeneous evaluation protocols. This paper presents a controlled benchmarking study comparing eight symbolic regression methods, including three grammar-guided GP variants, two neural-network-based equation learners, a sparse regression baseline (LASSO on a fixed function library), and two commercial tools, across 40 tabular datasets collected from published scientific literature covering biology, chemistry, and geophysics. All methods are evaluated under identical train/test splits, computational budgets (10,000 fitness evaluations), and five random seeds. Results show that grammar-guided GP with a domain-informed grammar achieves the lowest median test error on 18 of 40 datasets, while neural-network approaches perform best on 12 datasets, predominantly those with more than 500 training points. Sparse regression dominates on 7 datasets where the true model lies within the pre-defined function library. Code and datasets are provided as a reproducible benchmark suite."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01688",
+        "kind": "publication",
+        "title": "Feature Construction via Symbolic Regression as a Preprocessing Step for Supervised Classification",
+        "body": {
+          "recordId": "SYN-PUB-01688",
+          "field": "abstract",
+          "text": "This paper investigates whether symbolic regression can be used to construct informative nonlinear features from raw tabular inputs before training a standard classification algorithm. The proposed pipeline runs a population of grammar-guided GP individuals to minimise a surrogate fitness based on mutual information between the candidate feature and the class label, independently of any downstream classifier. Constructed features are then appended to the original feature set and used to train a logistic regression model and a k-nearest-neighbour classifier. Experiments on 25 UCI-style binary classification datasets show that adding one GP-constructed feature improves average area under the ROC curve by 0.031 for logistic regression and 0.044 for k-NN compared to baselines without feature construction. The improvement is statistically significant (paired t-test, p < 0.01) on 18 of 25 datasets. The method is most effective on datasets with strong nonlinear interactions between predictors and the target."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03949",
+        "kind": "publication",
+        "title": "Primena simboličke regresije na modelovanje potrošnje energije u stambenim zgradama na osnovu podataka o merenjima",
+        "body": {
+          "recordId": "SYN-PUB-03949",
+          "field": "abstract",
+          "text": "Rad istražuje mogućnost automatskog otkrivanja analitičkih modela za predikciju mesečne potrošnje toplotne energije stambenih zgrada primenom gramatički vođenog genetskog programiranja. Podaci su prikupljeni iz 47 stambenih zgrada u Novom Sadu i Subotici tokom perioda od tri godine, obuhvatajući merenja spoljašnje temperature, solarnog zračenja, zauzetosti i karakteristika omotača zgrade — ukupno 9 ulaznih promenljivih i 1692 mesečnih mernih tačaka. Gramatika je konstruisana tako da dozvoljava racionalne funkcije i eksponencijalne termine, ali isključuje implicitne rekurzije. Pronađena formula postiže RMSE od 4.7 kWh/m² na test skupu, što odgovara performansama regresionog ansambla, ali pruža eksplicitnu zavisnost od tri dominantna faktora: temperaturnog deficita, površine ostakljenja i koeficijenta transmisije. Rezultati su relevantni za projektovanje sistema za upravljanje energijom u zgradama."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03950",
+        "kind": "publication",
+        "title": "Confidence Estimation for Symbolic Regression Solutions Using Ensemble Disagreement",
+        "body": {
+          "recordId": "SYN-PUB-03950",
+          "field": "abstract",
+          "text": "Symbolic regression algorithms typically return a single best expression without any indication of prediction uncertainty. This work proposes a post-hoc uncertainty quantification method based on disagreement among the top-k expressions retained from the final generation of a grammar-guided GP run. For each test point, the prediction interval is estimated from the empirical distribution of outputs produced by the k = 20 retained expressions, weighted by their training fitness. The method is evaluated on 15 regression datasets by comparing estimated 90% prediction intervals against bootstrap-based reference intervals. Coverage probabilities average 87.3% across datasets, compared to a nominal 90%, representing a modest but acceptable underestimation. Interval width is on average 1.4 times larger than bootstrap intervals. The computational overhead relative to a standard single-run symbolic regression is negligible since no additional GP runs are required. The approach is applicable to any population-based symbolic regression method."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03952",
+        "kind": "publication",
+        "title": "Multi-Objective Grammar-Guided Genetic Programming: Balancing Accuracy, Complexity, and Extrapolation Quality",
+        "body": {
+          "recordId": "SYN-PUB-03952",
+          "field": "abstract",
+          "text": "Standard single-objective symbolic regression optimises predictive accuracy within the training domain and uses complexity as a secondary criterion. This paper formulates the problem as a three-objective optimisation task, adding an explicit extrapolation quality objective measured by evaluating candidate expressions on a held-out extrapolation set drawn from outside the training input range. A NSGA-III selection mechanism is adapted for grammar-guided genetic programming populations of size 500, run for 300 generations on 20 benchmark problems. The resulting Pareto fronts contain expressions that dominate single-objective solutions in both complexity and extrapolation accuracy on 14 of 20 problems. An analysis of selected Pareto-front members shows that expressions with lower extrapolation error tend to contain fewer non-monotone sub-expressions, suggesting that structural regularity correlates with extrapolation reliability. The method is demonstrated on a materials hardness prediction dataset with 210 training points and an extrapolation test set drawn from a different temperature range."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03953",
+        "kind": "publication",
+        "title": "Symbolic Regression as an Audit Tool for Black-Box Regression Models in Industrial Quality Control",
+        "body": {
+          "recordId": "SYN-PUB-03953",
+          "field": "abstract",
+          "text": "When a trained black-box model is deployed in a manufacturing quality control pipeline, operators often need a human-readable approximation of its behaviour to satisfy regulatory or safety requirements. This paper investigates the use of symbolic regression to distill a gradient-boosted tree model into a concise mathematical expression by treating the black-box model's predictions on a dense synthetic grid as training targets. Grammar-guided genetic programming is applied with a grammar tailored to the physical variables of an injection moulding process. The resulting symbolic approximations are evaluated on a held-out set of 1,200 real production measurements. Across five process variables, the distilled expressions achieve a median relative error of 3.1% with respect to the black-box model's predictions, and 4.8% with respect to actual quality measurements. The approach is tested in collaboration with a manufacturing partner and reduces the average operator interpretation time from 18 minutes (reading model documentation) to under 2 minutes (reading a four-term formula)."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03954",
+        "kind": "publication",
+        "title": "Modelling Non-Stationarity in Small-Business Revenue Streams: A Local Level Model with Regime-Switching Drift",
+        "body": {
+          "recordId": "SYN-PUB-03954",
+          "field": "abstract",
+          "text": "Small-business revenue series frequently alternate between growth and contraction regimes driven by seasonal demand, credit conditions, and policy changes, making fixed-drift local level models inadequate. This paper introduces a hidden Markov switching extension of the standard local level DLM in which the drift term follows a two-state Markov chain with state-dependent Gaussian innovations. Parameters are estimated jointly using the EM algorithm combined with the forward–backward recursion. The model is fitted to monthly revenue records from 68 small retailers in Vojvodina spanning 2009–2014, obtained through an anonymised dataset provided by a regional chamber of commerce. Out-of-sample one-step-ahead log-scores improve by 0.31 nats relative to a fixed-drift local level model. The paper also investigates the identifiability of the switching parameters and provides conditions under which the EM solution is consistent under mild regularity assumptions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03955",
+        "kind": "publication",
+        "title": "Scheduling Inspection Drones in Industrial Facilities: A Variable Neighbourhood Search Approach",
+        "body": {
+          "recordId": "SYN-PUB-03955",
+          "field": "abstract",
+          "text": "Autonomous drone inspection of industrial facilities requires scheduling flight routes subject to battery endurance, no-fly zones, mandatory inspection windows, and charging station availability. This paper models the problem as a variant of the vehicle routing problem with time windows (VRPTW) incorporating energy constraints and formulates it for a heterogeneous fleet of two drone types with differing payloads and endurance. A variable neighbourhood search (VNS) metaheuristic with five neighbourhood structures is applied. The shaking procedure uses random segment reversal and inter-route swaps. Tests are performed on instances derived from floor plans of three anonymised manufacturing facilities with 80 to 220 inspection points and fleets of 4 to 12 drones. VNS closes 78% of the gap between the greedy initialisation and the LP relaxation bound on average, compared to 61% for a simulated-annealing benchmark, and runs in under 60 seconds for all instances."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03956",
+        "kind": "publication",
+        "title": "Automata-Theoretic Models in Formal Language Theory: A Pedagogical Survey",
+        "body": {
+          "recordId": "SYN-PUB-03956",
+          "field": "abstract",
+          "text": "This book chapter provides a structured introduction to automata-theoretic foundations of formal language theory intended for graduate students in mathematics and computer science. Topics covered include the Myhill–Nerode theorem, minimisation of DFAs, the Pumping Lemma for regular languages, closure properties, and the relationship between regular expressions and finite automata. Each section includes worked examples and a set of exercises graded by difficulty. The chapter also gives a brief account of learning-theoretic aspects, specifically the Gold limit-identification result for the class of regular languages from positive examples alone, motivating the use of negative examples or active query mechanisms. The exposition is self-contained, assuming only undergraduate-level discrete mathematics. The chapter is part of a regional collaborative textbook project involving universities from Serbia, Croatia, and Slovenia."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1037",
+        "kind": "project",
+        "title": "Symbolic Formula Recovery from Structured Scientific Data",
+        "body": {
+          "recordId": "SYN-PRJ-1037",
+          "field": "summary",
+          "text": "Projekat SYMFORM bavio se razvojem metoda za automatsko otkrivanje analitičkih matematičkih formula iz strukturiranih naučnih podataka u obliku tabela. Centralna tema bila je integracija ekspertskog znanja o domenu u gramatiku koja vodi prostor pretrage genetskog programiranja, sa ciljem pronalaženja interpretabilnih modela koji ne zahtevaju manuelnu izgradnju karakteristika. U okviru projekta razvijeni su: biblioteka otvorenog koda za gramatički vođenu simboličku regresiju, metodologija za automatsku inferenciju gramatike iz poznatih jednačina domena, i protokol za validaciju otkrivenih formula na ekstrapolacionim skupovima podataka. Rezultati su primenjeni na podatke iz agronomije, procesne hemije i biomedicinskih istraživanja u saradnji sa institucionalnim partnerima."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates with a mathematics or computer science background",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "open_to",
+            "quote": "joint projects with industry on interpretable model discovery from proprietary tabular data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0319",
+            "field": "open_to",
+            "quote": "contract research for companies needing white-box predictive formulas",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "non_english"
+    ]
+  }
+}

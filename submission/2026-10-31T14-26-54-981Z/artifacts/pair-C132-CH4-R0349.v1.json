@@ -1,0 +1,179 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should script normalization occur—during indexing, querying, or both—to reduce cross-script search failures in KlozuraPro without materially degrading relevance or response time? The first experiment would compare these configurations against the current PostgreSQL search on representative contracts and judged queries, explicitly testing mixed-script text and ambiguous transliterations to assess whether methods demonstrated on court decisions and other collections transfer to this platform.",
+    "rationale": [
+      {
+        "text": "Dragić has evaluated token canonicalization specifically for cross-script retrieval from Serbian legal documents.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His research directly addresses the company's architectural choice between query expansion and normalization at both indexing and query time.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "This paper studies the effect of automatically expanding queries with their transliteration variants before submission to an inverted index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04284",
+            "field": "abstract",
+            "quote": "the tokenizer applies script normalization before indexing and at query time.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied retrieval-quality and latency trade-offs for deterministic normalization and selective neural fallback, providing relevant experimental approaches rather than guaranteed production performance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "A cascaded configuration — deterministic normalizer with neural fallback triggered only for out-of-vocabulary tokens — reaches MRR of 0.66 with a 99th-percentile latency overhead of only 9 ms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His applied experience includes adapting a search module for Serbian court decisions in a legal-tech collaboration.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must integrate with the existing PostgreSQL full-text search and Python NLP pipeline; compatibility with the researcher's previous search frameworks must be verified.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Python-based NLP pipeline (spaCy, custom fine-tuned transformer models trained on Serbian-language contracts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation must cover mixed-script documents and ambiguous Latin-to-Cyrillic mappings, not only whole-document transliteration.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search latency is a deployment gate; the company must define a numerical acceptance threshold before experiments.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit one backend engineer's six-week contribution and the company's capacity for only one external project at a time.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's contribution must remain a small industrial engagement; he already has two active projects, and exact scheduling remains unknown.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Results from court decisions, news, and other retrieval frameworks do not establish performance on KlozuraPro contracts or PostgreSQL. The first experiment must test this transfer gap, including relevance and latency under representative load.",
+      "Canonicalization or expansion could merge distinct names, abbreviations, or legal terms and introduce false positives; exception handling may require ongoing maintenance.",
+      "The reported one-in-five failure estimate comes from January 2024 logs and may not represent current traffic or isolate script mismatch from parsing and other search failures.",
+      "Current corpus size, permission to access contracts and logs, relevance-label availability, deployment resources, and budget are unknown; these could prevent a meaningful six-week evaluation.",
+      "Joint-project willingness is open, but the researcher's actual start date and available hours are unknown. His existing commitments could conflict with the company's engineering window."
+    ],
+    "questions": [
+      "Can Dragić confirm a start date and weekly effort that fit the backend engineer's six-week window, and who will provide company-side relevance judgments?",
+      "What budget and concrete deliverables are available for a small joint project, including integration and post-pilot maintenance?",
+      "Can the company provide an authorized, representative contract sample and current query logs, and what confidentiality, anonymization, and access restrictions apply?",
+      "What are the current corpus size, PostgreSQL version, text-search configuration, indexing pipeline, and available test hardware?",
+      "What numerical limits should apply to p95/p99 latency, relevance regressions, index growth, and reindexing downtime, and under what query load?",
+      "Which dialect-dependent mappings, foreign names, abbreviations, and within-token script mixtures occur in real contracts, and can these be included in a judged test set?",
+      "Who owns and maintains exception rules and normalization code after the project, and what licensing or publication restrictions apply?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

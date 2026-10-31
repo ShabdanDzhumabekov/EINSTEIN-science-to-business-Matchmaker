@@ -1,0 +1,290 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0194",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0194",
+    "name": "Dimitrije Marković",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Environmental Engineering and Occupational Safety",
+    "fields": [
+      "Environmental Engineering",
+      "Electrochemical Water Treatment",
+      "Industrial Wastewater Management",
+      "Process Optimisation"
+    ],
+    "keywords": [
+      "electrocoagulation",
+      "electrooxidation",
+      "heavy metal removal",
+      "cyanide destruction",
+      "electroplating rinsewaters",
+      "iron and aluminium electrodes",
+      "response surface methodology",
+      "small-to-medium enterprises",
+      "sludge characterisation",
+      "energy consumption optimisation"
+    ],
+    "openTo": [
+      "contract research on electrochemical wastewater treatment system design and testing",
+      "consulting on compliance with Serbian discharge regulations for heavy metals and cyanide",
+      "joint projects with metal finishing or surface treatment companies",
+      "industrial PhD supervision for candidates employed at NTP or partner companies",
+      "student internships focused on reactor operation and water quality analysis",
+      "equipment access (pilot EC/EO reactors, AAS, TOC analyser) for collaborative measurement campaigns"
+    ],
+    "bio": {
+      "recordId": "R0194",
+      "field": "bio",
+      "text": "Dimitrije Marković received his B.Sc. (2000), M.Sc. (2003), and Ph.D. (2008) degrees in Environmental Engineering from the Faculty of Technical Sciences, University of Novi Sad. He joined the Department of Environmental Engineering and Occupational Safety as an Assistant Professor in 2009, was promoted to Associate Professor in 2014, and to Full Professor in 2019. His research group focuses on electrochemical treatment of industrial wastewaters, with particular emphasis on electrocoagulation and electrooxidation for removing heavy metals (Cr, Ni, Zn, Cu) and free and complex cyanides from electroplating rinsewaters at small-to-medium enterprises. The group operates a dedicated electrochemical reactor laboratory equipped with monopolar and bipolar pilot-scale cells, atomic absorption spectrometry, and TOC analysers. Marković teaches undergraduate courses in Industrial Wastewater Treatment and Occupational Hazards, and a postgraduate course in Advanced Oxidation Processes."
+    },
+    "industryExperience": {
+      "recordId": "R0194",
+      "field": "industry_experience",
+      "text": "Marković has worked under two industry contracts with electroplating firms in Vojvodina, providing on-site process audits and sizing calculations for EC unit installations. He also served as an expert witness in two administrative proceedings concerning discharge permit violations at metal finishing facilities."
+    },
+    "notes": {
+      "recordId": "R0194",
+      "field": "notes",
+      "text": "Marković is actively seeking an industry partner from the metal surface treatment or galvanotechnics sector at NTP Novi Sad to host the mobile EC–EO demonstration unit and co-develop it toward a commercial product. He is not on sabbatical and has capacity for one new project start in 2026."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02491",
+        "kind": "publication",
+        "title": "Removal of zinc and nickel from synthetic electroplating rinsewater by electrocoagulation with iron electrodes",
+        "body": {
+          "recordId": "SYN-PUB-02491",
+          "field": "abstract",
+          "text": "Electrocoagulation (EC) was applied to treat synthetic rinsewater containing 50–200 mg/L Zn(II) and 30–150 mg/L Ni(II) using mild-steel iron electrodes in a monopolar batch reactor. Operating variables included current density (5–30 mA/cm²), electrolysis time (10–60 min), initial pH (4–9), and NaCl concentration (0.5–3 g/L). Removal efficiencies exceeding 98% for Zn and 95% for Ni were achieved at a current density of 20 mA/cm², pH 7, and 40 min electrolysis time. Specific energy consumption at optimal conditions was 1.8 kWh/m³. Electrode dissolution followed Faraday's law within ±6%. The resulting sludge was characterised by XRD and SEM-EDX, revealing amorphous iron hydroxide phases co-precipitating with metal hydroxides. The study provides baseline data for scaling the process toward SME applications where batch treatment cycles of 1–2 m³ per shift are typical."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00736",
+        "kind": "publication",
+        "title": "Influence of electrode material on chromium(VI) reduction during electrocoagulation of tanning and plating wastewaters",
+        "body": {
+          "recordId": "SYN-PUB-00736",
+          "field": "abstract",
+          "text": "This study compared aluminium, iron, and stainless-steel electrodes for Cr(VI) removal from two industrial effluent matrices: a simulated tannery wastewater (Cr(VI) 20–80 mg/L) and a simulated electroplating rinsewater (Cr(VI) 50–200 mg/L). Experiments were conducted in a 5-litre batch EC cell at current densities of 10 and 25 mA/cm². Iron electrodes achieved complete Cr(VI) reduction to Cr(III) and subsequent co-precipitation within 30 min at 25 mA/cm² and pH 6, yielding final effluent concentrations below 0.05 mg/L. Aluminium electrodes were less effective for reduction but produced lower sludge volumes. Stainless-steel electrodes showed minimal Cr(VI) reduction. Operating cost analysis indicated that iron electrodes offered the lowest combined electrode and energy cost per cubic metre treated. Results suggest iron EC is preferable for plating SMEs already handling iron-rich process streams."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02492",
+        "kind": "publication",
+        "title": "Electrooxidation of free cyanide in alkaline rinsewater using dimensionally stable anode (DSA) cells",
+        "body": {
+          "recordId": "SYN-PUB-02492",
+          "field": "abstract",
+          "text": "The destruction of free cyanide (CN⁻) in alkaline electroplating rinsewater (pH 10–12, CN⁻ 50–500 mg/L) was investigated using dimensionally stable anodes (Ti/RuO₂-IrO₂) in a flow-through reactor. Experiments examined the effects of current density (20–100 mA/cm²), flow rate (0.5–3 L/min), and initial cyanide concentration on removal efficiency and by-product distribution. At 60 mA/cm² and a hydraulic retention time of 12 min, CN⁻ was reduced from 200 mg/L to below 0.1 mg/L, meeting Serbian discharge limits. Cyanate (CNO⁻) formed as an intermediate, peaking at approximately 8 min and subsequently declining. Chlorine-mediated oxidation was identified as the dominant pathway when Cl⁻ exceeded 1 g/L. Total organic carbon measurements confirmed mineralisation rather than simple conversion to CNO⁻. Energy demand was 4.3 kWh per gram CN⁻ destroyed at optimal conditions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02493",
+        "kind": "publication",
+        "title": "Response surface optimisation of electrocoagulation parameters for simultaneous removal of Cu(II) and CN⁻ from mixed electroplating effluent",
+        "body": {
+          "recordId": "SYN-PUB-02493",
+          "field": "abstract",
+          "text": "Mixed copper–cyanide effluents arising from copper cyanide plating baths present a dual treatment challenge because copper–cyanide complexes resist simple precipitation. A central composite design (CCD) with five factors—current density, pH, reaction time, NaCl concentration, and inter-electrode gap—was applied to a 2-litre batch EC reactor fitted with iron electrodes. Response surface methodology (RSM) identified optimal conditions at 22 mA/cm², pH 9.5, 45 min, 1.5 g/L NaCl, and 10 mm gap, yielding 99.4% Cu and 91.7% CN⁻ removal. The quadratic model showed good fit (R² = 0.964). Residual cyanide in the treated effluent was predominantly in the form of iron–cyanide complexes, suggesting that a polishing electrooxidation step would be required to meet discharge standards. The study demonstrates RSM as an efficient tool for multi-parameter EC optimisation in SME contexts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02494",
+        "kind": "publication",
+        "title": "Characterisation and leaching behaviour of electrocoagulation sludge from chromium-bearing electroplating rinsewater",
+        "body": {
+          "recordId": "SYN-PUB-02494",
+          "field": "abstract",
+          "text": "Sludge generated during electrocoagulation treatment of Cr(VI)-containing rinsewater (80–250 mg/L) with iron electrodes was collected, dried, and characterised by XRD, FTIR, TGA, and scanning electron microscopy with energy-dispersive X-ray analysis. The dried sludge contained 12–18% Cr by mass, predominantly as Cr(III) hydroxide co-precipitated within an amorphous Fe(OH)₃ matrix. Toxicity Characteristic Leaching Procedure (TCLP) tests at pH 4.9 and 2.88 showed Cr leaching below 5 mg/L, the Serbian hazardous-waste threshold, under most conditions, though sludge produced at pH below 5.5 during EC failed the test. Thermal treatment at 600 °C reduced TCLP leachate Cr to below 0.3 mg/L. These data inform SME operators on sludge disposal classification and handling requirements under national waste regulations. Sludge volume index data are provided as a function of initial Cr concentration."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02495",
+        "kind": "publication",
+        "title": "Pilot-scale continuous-flow electrocoagulation for nickel removal from rinsewaters of a job-shop plating operation",
+        "body": {
+          "recordId": "SYN-PUB-02495",
+          "field": "abstract",
+          "text": "A 50-litre per hour continuous-flow EC pilot unit was installed at a small job-shop electroplating facility in the Novi Sad industrial zone under a monitoring agreement. The unit used aluminium electrodes in a bipolar configuration. Influent Ni(II) varied from 18 to 210 mg/L across a 90-day operating period, reflecting batch-to-batch process variability typical of job-shop operations. Automatic pH adjustment to 7.5 and a current density set point of 15 mA/cm² maintained effluent Ni below 0.5 mg/L on 97% of sampling days. Electrode passivation was observed after 30 days of continuous operation and was mitigated by periodic polarity reversal. Energy consumption averaged 2.1 kWh/m³. Sludge production was 0.8 kg dry mass per m³ treated. The study documents operational parameters and failure modes relevant to SME-scale implementation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02496",
+        "kind": "publication",
+        "title": "Combined electrocoagulation–electrooxidation treatment of complex cyanide in spent copper–zinc plating bath dilutions",
+        "body": {
+          "recordId": "SYN-PUB-02496",
+          "field": "abstract",
+          "text": "Complex cyanides (tetracyanozincate and copper–cyanide complexes) in diluted spent bath solutions (CN_total 100–800 mg/L) were treated in a two-stage reactor: an EC stage with iron electrodes followed by an electrooxidation (EO) stage with boron-doped diamond (BDD) anodes. In the EC stage, copper was reduced to below 0.3 mg/L and free cyanide to below 5 mg/L, but complex cyanide persisted. The subsequent BDD–EO stage at 40 mA/cm² and 20 min reduced total cyanide to below 0.2 mg/L and total Zn to below 0.5 mg/L. TOC decreased by 88% overall. The combined process consumed 6.7 kWh/m³. Cost modelling suggested that electricity represents 62% of the total variable operating cost for a 10 m³/day SME system. The two-stage approach is compared against single-stage alkaline chlorination as the current regulatory default."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02497",
+        "kind": "publication",
+        "title": "Electrochemical treatment of heavy metals in industrial wastewater: fundamentals and SME-oriented applications",
+        "body": {
+          "recordId": "SYN-PUB-02497",
+          "field": "abstract",
+          "text": "This chapter reviews the electrochemical mechanisms underpinning electrocoagulation and electrooxidation for the removal of Cr, Ni, Cu, Zn, Cd, and Pb from industrial wastewaters, with emphasis on reactor design considerations applicable to small-to-medium enterprises. Electrode materials, cell configurations (monopolar vs. bipolar, batch vs. continuous), and the influence of key water quality parameters—conductivity, pH, competing anions, and organic complexing agents—are discussed in relation to treatment performance and operating economics. A section on sludge management addresses classification under EU and Serbian regulatory frameworks. Case examples drawn from electroplating, metal finishing, and printed circuit board manufacturing are included. The chapter is intended as a technical reference for environmental engineers and SME managers, and does not present original experimental data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02498",
+        "kind": "publication",
+        "title": "Effect of chloride and sulphate background electrolytes on electrooxidation efficiency for cyanide destruction at BDD anodes",
+        "body": {
+          "recordId": "SYN-PUB-02498",
+          "field": "abstract",
+          "text": "The influence of background anion composition on cyanide electrooxidation at boron-doped diamond (BDD) anodes was systematically examined. Synthetic solutions containing 200 mg/L CN⁻ were prepared with Cl⁻/SO₄²⁻ molar ratios ranging from 0.1 to 10 at total ionic strengths of 20 and 50 mM. At Cl⁻/SO₄²⁻ > 1, the active chlorine pathway dominated, reducing treatment time by up to 45% compared to sulphate-only systems, but generating chlorate as a secondary by-product at concentrations up to 12 mg/L. At Cl⁻/SO₄²⁻ < 0.5, hydroxyl radical-mediated oxidation prevailed with no detectable chlorate but slower kinetics. A practical operating window of Cl⁻/SO₄²⁻ 0.5–2 is proposed to balance kinetics with by-product formation. The findings are relevant to electroplating facilities where bath chemistry determines the Cl⁻/SO₄²⁻ ratio of rinsewaters without additional electrolyte dosing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02499",
+        "kind": "publication",
+        "title": "Energy benchmarking of electrocoagulation systems for Zn, Ni, and Cr removal at Serbian electroplating SMEs: field survey and modelling",
+        "body": {
+          "recordId": "SYN-PUB-02499",
+          "field": "abstract",
+          "text": "On-site measurements were conducted at seven electroplating SMEs in Vojvodina that had installed or were trialling EC units of varying design. Data collected over six months included influent and effluent metal concentrations, electrical energy meters, electrode mass loss records, and treated volume logs. Specific energy consumption ranged from 0.9 to 6.4 kWh/m³ across sites, with the widest variation attributable to incorrect pH management and oversizing. A simple empirical model based on current density and initial metal load predicted site-level energy use within ±20% for Zn and Ni systems but showed larger errors for Cr(VI) systems, likely due to variable organic complexing agent loads. Recommendations for reducing energy use at underperforming sites are presented. The dataset represents the first published field benchmark for EC at electroplating SMEs in Serbia."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02500",
+        "kind": "publication",
+        "title": "Modelling of Cr(VI) electroreduction kinetics in iron-anode electrocoagulation systems using mechanistic and data-driven approaches",
+        "body": {
+          "recordId": "SYN-PUB-02500",
+          "field": "abstract",
+          "text": "Chromium(VI) reduction kinetics during iron-anode EC were modelled using two approaches: a mechanistic model coupling Faradaic Fe²⁺ generation with Cr(VI) reduction stoichiometry, and a feed-forward artificial neural network (ANN) trained on 180 experimental runs. The mechanistic model fitted well at pH 5–7 (RMSE 2.1 mg/L Cr(VI)) but diverged at pH above 8, where Cr(VI)–Fe(II) reaction rates are suppressed. The ANN (three-layer, 12 hidden neurons) achieved RMSE of 1.3 mg/L across the full pH range. Sensitivity analysis of the ANN confirmed current density and pH as the two most influential variables, consistent with the mechanistic model. Both approaches were validated against an independent dataset from a continuous-flow pilot reactor. The study suggests that a hybrid mechanistic–ANN model could guide real-time control of EC reactors in SME settings."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02501",
+        "kind": "publication",
+        "title": "Compact modular EC–EO reactor design for mobile rinsewater treatment at electroplating SMEs: laboratory prototype evaluation",
+        "body": {
+          "recordId": "SYN-PUB-02501",
+          "field": "abstract",
+          "text": "A compact modular reactor combining an EC stage (iron bipolar electrodes, 8 L working volume) and an EO stage (BDD anodes, 5 L working volume) was designed, fabricated, and evaluated at laboratory scale. The design targets mobile deployment, allowing a single trailer-mounted unit to serve multiple SMEs on a scheduled rotation. Performance was assessed for three representative rinsewater compositions: Zn–CN, Ni–SO₄, and Cr(VI)–SO₄. All three streams were treated to below Serbian Regulation 67/2023 discharge limits in a single pass at throughputs of 20–40 L/h. Footprint is 1.8 × 0.6 × 1.2 m. Automated PLC-based control with pH and conductivity feedback reduced operator intervention to start-up and sludge removal. Projected capital cost for a full-scale 200 L/h unit is estimated at 28 000 EUR based on component quotations. Remaining challenges include automated sludge dewatering integration."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02502",
+        "kind": "publication",
+        "title": "Recovery of copper from electrocoagulation sludge of copper–cyanide plating rinsewater by selective leaching",
+        "body": {
+          "recordId": "SYN-PUB-02502",
+          "field": "abstract",
+          "text": "Sludge produced during EC treatment of copper–cyanide plating rinsewater (Cu 80–300 mg/L, CN⁻ 50–200 mg/L) was subjected to selective acid and ammoniacal leaching to evaluate copper recovery potential. Sulphuric acid leaching (0.5 M H₂SO₄, 60 min, 50 °C) dissolved 93% of Cu from dried sludge while co-dissolving 41% of Fe, necessitating a solvent extraction step with LIX 84-I for Cu/Fe separation. Ammoniacal leaching (3 M NH₃/NH₄⁺, pH 10, 60 min) recovered 87% of Cu with Fe co-dissolution below 2%, but required ammonia stripping from the spent leachate. Electrodeposition from the purified ammoniacal leachate at 200 A/m² yielded copper cathode of 99.1% purity. The recovered copper mass from 1 m³ of treated rinsewater averaged 0.18 kg. Results indicate a potential secondary-resource value that could partially offset EC operating costs."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02503",
+        "kind": "publication",
+        "title": "Life cycle assessment of electrocoagulation versus chemical precipitation for nickel removal from electroplating rinsewater at the SME scale",
+        "body": {
+          "recordId": "SYN-PUB-02503",
+          "field": "abstract",
+          "text": "A gate-to-gate life cycle assessment (LCA) was performed comparing electrocoagulation with lime-based chemical precipitation for Ni removal from electroplating rinsewater at a modelled 5 m³/day SME facility. Functional unit was 1 m³ of influent treated to Serbian discharge limit of 1 mg/L Ni. Inventory data for the EC scenario were drawn from the Vojvodina field survey published in 2021; chemical precipitation data were collected from three SMEs using this approach. EC showed lower global warming potential (1.8 vs. 3.2 kg CO₂-eq/m³) primarily because of avoided lime production and reduced sludge mass. However, EC had higher freshwater ecotoxicity impact due to electrode manufacturing. Sludge disposal contributed 35–48% of total impact in both scenarios. Uncertainty analysis using Monte Carlo simulation (1000 iterations) showed statistically significant differences in four of eight impact categories. The study supports EC as the preferable option under current Serbian energy and material prices."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02504",
+        "kind": "publication",
+        "title": "Regulatory Compliance Audit Methodology for Environmental Aspects in Polymer Film Manufacturing: Application to a Serbian Production Site",
+        "body": {
+          "recordId": "SYN-PUB-02504",
+          "field": "abstract",
+          "text": "Environmental compliance auditing in manufacturing requires a structured mapping of applicable legal obligations to measurable site conditions. This paper describes a step-by-step audit methodology developed and applied at a bi-axially oriented polypropylene film plant in Serbia with an annual output of approximately 18,000 tonnes. The methodology identifies legal requirements at four tiers: EU directives transposed into Serbian law, national environmental statutes, autonomous provincial regulations of Vojvodina, and facility-specific permit conditions. For each tier, measurable compliance indicators were defined and linked to monitoring data collected over a two-year period. The audit identified twelve non-conformances, of which four were classified as significant: two concerning VOC emissions from solvent-based coating units, one concerning stormwater runoff monitoring frequency, and one concerning hazardous waste labelling. Corrective action plans with target timescales were developed for each finding. The methodology is presented as a replicable framework applicable to other polymer processing sectors."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00375",
+        "kind": "publication",
+        "title": "Explosion protection measures in small-scale pellet production facilities: a gap analysis against ATEX Directive 2014/34/EU in Vojvodina SMEs",
+        "body": {
+          "recordId": "SYN-PUB-00375",
+          "field": "abstract",
+          "text": "Seventeen small and medium pellet production enterprises in the Autonomous Province of Vojvodina were audited against requirements of ATEX Directives 2014/34/EU and 1999/92/EC. Audits included document review, walkthroughs, and measurement of local dust concentrations. Thirteen facilities lacked an explosion protection document. Zone classification was absent in eleven cases. Only four facilities had conducted any systematic ignition source analysis. Equipment in ATEX Zone 21 that bore no ATEX certification was identified in twelve facilities. Common deficiencies included ungrounded metallic conveyor frames, missing vent panels on bucket elevators, and no housekeeping schedule for dust accumulations. A prioritised compliance checklist was developed from the findings and submitted to the Provincial Secretariat for Environment. The paper quantifies the compliance gap and estimates cost ranges for remediation categories, providing a practical basis for a sector-level improvement programme."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0968",
+        "kind": "project",
+        "title": "Electrochemical Treatment Technologies for Heavy Metal and Cyanide Removal in Small Electroplating Enterprises of the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0968",
+          "field": "summary",
+          "text": "The project addressed the practical gap between available electrochemical treatment knowledge and its uptake by electroplating SMEs in the Vojvodina–Southern Transdanubia cross-border region. Activities included a survey of 14 electroplating SMEs to characterise rinsewater compositions and existing treatment practices, laboratory development and pilot testing of optimised EC and EO protocols, preparation of a bilingual (Serbian–Hungarian) technical guideline for SME operators, and two training workshops hosted in Novi Sad and Pécs. The University of Novi Sad led the project with responsibility for laboratory work and pilot testing; the Hungarian partner contributed techno-economic analysis and dissemination. A mobile treatment demonstration unit was exhibited at three industrial fairs."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0969",
+        "kind": "project",
+        "title": "Resource Recovery from Electroplating Sludge: Closing the Loop for Critical Metals in Serbian SMEs",
+        "body": {
+          "recordId": "SYN-PRJ-0969",
+          "field": "summary",
+          "text": "RECYPLATE investigates the feasibility of recovering copper, nickel, and chromium from EC sludge generated at Serbian electroplating SMEs, treating the sludge as a secondary raw material rather than a hazardous waste for landfill. The project combines selective hydrometallurgical leaching, solvent extraction, and electrodeposition steps tested at bench and pilot scale. A techno-economic and life cycle assessment module evaluates which metal–recovery combinations are economically viable under current Serbian conditions. Partners include the Mining and Metallurgy Institute Bor for analytical support and a pilot smelting trial, and the Faculty of Sciences Novi Sad for LCA methodology. The project targets two peer-reviewed publications per year and one technology readiness level advancement for the integrated recovery process."
+        }
+      },
+      {
+        "recordId": "SYN-PAT-082",
+        "kind": "patent",
+        "title": "Modular bipolar electrocoagulation–electrooxidation cell assembly for batch and continuous treatment of heavy-metal-bearing industrial rinsewaters",
+        "body": {
+          "recordId": "SYN-PAT-082",
+          "field": "abstract",
+          "text": "The invention covers a modular cell assembly in which interchangeable bipolar electrode frames allow a single reactor housing to operate in EC mode (iron or aluminium frames) or EO mode (BDD-coated titanium frames) depending on the contaminant mix. Key features include integrated pH probes positioned between stages, a common DC power supply with individual stage current control, and a removable sludge collection tray allowing rapid in-situ removal without draining the reactor. The design reduces the footprint of two-stage EC–EO treatment to that of a single conventional unit. Granted by the Intellectual Property Office of the Republic of Serbia."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0194",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates employed at NTP or partner companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0194",
+            "field": "open_to",
+            "quote": "contract research on electrochemical wastewater treatment system design and testing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0194",
+            "field": "open_to",
+            "quote": "joint projects with metal finishing or surface treatment companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0194",
+            "field": "open_to",
+            "quote": "equipment access (pilot EC/EO reactors, AAS, TOC analyser) for collaborative measurement campaigns",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

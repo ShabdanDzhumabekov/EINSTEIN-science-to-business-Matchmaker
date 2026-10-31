@@ -1,0 +1,177 @@
+{
+  "ref": {
+    "artifactId": "scholar-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-31-02-552Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0288",
+    "name": "Katarina Nikolić",
+    "faculty": "Faculty of Philosophy",
+    "department": "Department of Serbian Language and Linguistics",
+    "fields": [
+      "corpus linguistics",
+      "morphology"
+    ],
+    "keywords": [
+      "Serbian morphology",
+      "lemmatization",
+      "corpora",
+      "inflection",
+      "spelling variants"
+    ],
+    "openTo": [
+      "industrial PhD supervision",
+      "joint projects"
+    ],
+    "bio": {
+      "recordId": "R0288",
+      "field": "bio",
+      "text": "Katarina Nikolić is an Associate Professor in the Department of Serbian Language and Linguistics at the Faculty of Philosophy, University of Novi Sad. Her research focuses on corpus linguistics and morphology, with particular emphasis on Serbian inflectional paradigms, lemmatization, spelling variants, and the construction of large-scale reference corpora. She is the principal investigator of KORPUS-NS, a flagship project aiming to build a comprehensive reference corpus of contemporary Serbian. Professor Nikolić has contributed extensively to the development of language processing tools tailored to the morphological complexity of Serbian, and her work bridges theoretical linguistics with practical computational applications relevant to industry and digital humanities."
+    },
+    "industryExperience": {
+      "recordId": "R0288",
+      "field": "industry_experience",
+      "text": ""
+    },
+    "notes": {
+      "recordId": "R0288",
+      "field": "notes",
+      "text": ""
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03588",
+        "kind": "publication",
+        "title": "A lemmatizer for Serbian that handles both scripts",
+        "body": {
+          "recordId": "SYN-PUB-03588",
+          "field": "abstract",
+          "text": "This paper presents a rule-based and machine-learning hybrid lemmatizer designed specifically for Serbian, a morphologically rich language written in two scripts — Cyrillic and Latin. A major challenge in Serbian natural language processing is that the same lexeme may appear in either script within a single corpus, leading to fragmented frequency counts and unreliable concordances. The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output. The lemmatizer was trained on data drawn from the KORPUS-NS reference corpus and evaluated against a manually annotated gold standard of 120,000 tokens. Results show a lemmatization accuracy of 94.7% across both scripts, outperforming existing monoscript baselines by 6.2 percentage points. The paper discusses error analysis, focusing on ambiguous noun–adjective forms and irregular verbal paradigms, and outlines future integration with part-of-speech tagging pipelines. All models and evaluation datasets are released under an open licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03589",
+        "kind": "publication",
+        "title": "Inflection and search: why Serbian queries miss relevant documents",
+        "body": {
+          "recordId": "SYN-PUB-03589",
+          "field": "abstract",
+          "text": "Users of Serbian-language search engines and document retrieval systems frequently fail to retrieve relevant documents because queries and indexed texts contain different inflected forms of the same lexeme. This paper investigates the scope of this problem through a systematic corpus study using data from the KORPUS-NS project, quantifying the proportion of query–document mismatches attributable to inflectional variation. Serbian nouns, adjectives and verbs exhibit up to seventeen distinct surface forms per lexeme, and the study demonstrates that naive string matching misses between 31% and 58% of relevant documents depending on the domain. The paper evaluates three mitigation strategies — stemming, full lemmatization, and paradigm-based query expansion — comparing their precision and recall on a purpose-built retrieval test collection of 4,800 queries. Full lemmatization combined with paradigm-aware indexing yields the highest F1 score. The authors argue that language-aware indexing should be considered a standard requirement for Serbian-language information retrieval systems and provide open-source reference implementations of the tested approaches."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03590",
+        "kind": "publication",
+        "title": "Designing KORPUS-NS: corpus architecture and annotation scheme for contemporary Serbian",
+        "body": {
+          "recordId": "SYN-PUB-03590",
+          "field": "abstract",
+          "text": "This paper describes the design decisions underlying KORPUS-NS, a 500-million-token reference corpus of contemporary Serbian covering written and transcribed spoken language from 2000 to the present. We discuss the selection of text domains — journalism, fiction, academic prose, legal documents, social media and broadcast transcripts — and justify the proportional representation of each. The annotation scheme covers tokenisation, sentence segmentation, lemmatisation, part-of-speech tagging and morphosyntactic description using a tagset derived from the MULTEXT-East standard and extended to capture Serbian-specific categories such as verbal aspect and clitic position. Special attention is given to the treatment of orthographic variants, including the coexistence of Cyrillic and Latin scripts, Ekavian and Ijekavian dialect norms, and borrowing-related spelling inconsistencies. The paper also details the metadata schema used to encode source, domain, date and register for each document. A preliminary version of the corpus containing 120 million tokens is available through a web concordancer for academic users."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03591",
+        "kind": "publication",
+        "title": "Spelling variants in Serbian corpora: typology, frequency and normalization strategies",
+        "body": {
+          "recordId": "SYN-PUB-03591",
+          "field": "abstract",
+          "text": "Serbian written language exhibits a wide range of spelling variants arising from script duality, competing orthographic norms, dialect influence and unconstrained digital writing practices. This paper presents the first large-scale typological study of spelling variation in Serbian, drawing on a 200-million-token sample from the KORPUS-NS corpus. We identify six major variant classes: script-switching (ćao/chao), norm-competing variants (vjerovatno/verovatno), foreign-word adaptation variants (menadžer/manager), phonetic spelling (dođi/dodji), cliticisation variants and typographic variants. Frequency analysis reveals that script-switching and norm-competing variants account for over 70% of all variant pairs and that their distribution differs markedly across domains, with social media showing the highest variant density. We evaluate three normalization strategies — lookup-table replacement, phonological rule application and neural sequence-to-sequence mapping — on a held-out test set of 15,000 variant instances. The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings. Practical implications for corpus building, lexicography and search are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03592",
+        "kind": "publication",
+        "title": "A morphological lexicon for Serbian derived from corpus evidence",
+        "body": {
+          "recordId": "SYN-PUB-03592",
+          "field": "abstract",
+          "text": "Morphological lexicons are foundational resources for natural language processing of inflectionally complex languages. Existing Serbian lexicons were largely constructed by hand and cover limited vocabulary, particularly in the domains of new borrowings and internet slang. This paper describes a semi-automatic method for building a broad-coverage morphological lexicon from the KORPUS-NS corpus using paradigm induction: candidate lemmas are identified through lemmatisation, and their full inflectional paradigms are hypothesised by a rule engine and then validated against corpus evidence. The resulting lexicon contains 187,000 lemmas with full or partial paradigm coverage across nouns, adjectives, verbs, numerals and pronouns. We evaluate quality through human expert judgement on a stratified sample of 2,000 entries, finding 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings. The lexicon is integrated into the KORPUS-NS toolchain and released under a Creative Commons licence. We discuss how corpus-driven derivation captures productive neologisms that manual lexicography consistently misses."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03593",
+        "kind": "publication",
+        "title": "Morphological complexity and readability in Serbian administrative texts: a corpus study",
+        "body": {
+          "recordId": "SYN-PUB-03593",
+          "field": "abstract",
+          "text": "Administrative language is frequently criticised for being inaccessible to general readers, but quantitative evidence for Serbian is scarce. This paper uses a 12-million-token subcorpus of administrative texts from KORPUS-NS to examine the relationship between morphological complexity and readability. We operationalise morphological complexity through three measures: mean paradigm depth (the average number of inflectional categories per word form), type-to-token ratio computed at lemma level, and the proportion of analytically ambiguous forms — word forms that are compatible with more than one morphosyntactic reading. Readability is approximated using human judgement scores collected from 200 participants with varying educational backgrounds. Regression analysis shows that paradigm depth is the strongest predictor of perceived difficulty, explaining 34% of variance, while lexical TTR adds a further 12%. Comparison with journalistic and literary subcorpora reveals that administrative texts have significantly higher ambiguity ratios. The paper proposes a morphology-sensitive readability index for Serbian and discusses applications in plain-language reform and automated text simplification."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03594",
+        "kind": "publication",
+        "title": "Cross-script tokenisation challenges in Serbian social media corpora",
+        "body": {
+          "recordId": "SYN-PUB-03594",
+          "field": "abstract",
+          "text": "Collecting and processing Serbian social media text presents tokenisation challenges that do not arise in standard corpus work: users freely mix Cyrillic and Latin scripts within a single sentence, use non-standard punctuation, employ emoji as discourse markers, and produce unconventional compounds through agglutinative typing conventions absent from the standard language. This paper reports on the construction of a 10-million-token Serbian social media subcorpus incorporated into KORPUS-NS and the tokenisation pipeline developed to handle it. We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing, a hashtag and mention segmenter, and a rule set for emoji handling. Intrinsic evaluation on a manually tokenised gold standard of 50,000 tokens shows a token boundary F1 of 98.1%, compared to 91.4% for an off-the-shelf tokeniser not adapted for social media. Extrinsic evaluation through part-of-speech tagging accuracy shows a 3.8-point improvement when the social media tokeniser is used upstream. The tools are released openly."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03595",
+        "kind": "publication",
+        "title": "Inflectional paradigms of Serbian verbs: gaps, defectiveness and corpus evidence",
+        "body": {
+          "recordId": "SYN-PUB-03595",
+          "field": "abstract",
+          "text": "Serbian verbal morphology is characterised by a complex interaction of conjugation class, aspect, transitivity and reflexivity that generates paradigms of up to forty distinct synthetic forms per lemma. Theoretical grammars acknowledge paradigm gaps — cells in the paradigm that lack an attested form — but systematic empirical data on their distribution is lacking. This paper uses corpus evidence from KORPUS-NS to map gap distributions across 8,200 verbal lemmas, distinguishing absolute gaps (no attestation in 500 million tokens) from near-gaps (fewer than five attestations). We find that first and second person forms of weather verbs and cognition verbs show the highest gap rates, consistent with semantic defectiveness, while motion verbs and communication verbs exhibit near-complete paradigms. The paper also examines inter-speaker variation in defective paradigms, using regional subcorpus splits to test whether gaps are uniform across dialect regions. Findings have implications for the completeness requirements of morphological lexicons and for training data coverage in NLP applications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03596",
+        "kind": "publication",
+        "title": "Using KORPUS-NS for automated spelling error detection in educational contexts",
+        "body": {
+          "recordId": "SYN-PUB-03596",
+          "field": "abstract",
+          "text": "Automated spelling feedback tools for Serbian are hindered by the language's morphological richness: a correctly inflected form that is unusual in frequency may be flagged as an error, while a plausible but morphologically impossible form may pass undetected. This paper proposes a corpus-informed spelling checker that combines a statistical language model trained on KORPUS-NS with the morphological lexicon derived from the same corpus, enabling the system to distinguish unlikely-but-correct forms from genuinely erroneous ones. We evaluate the system on a corpus of 4,500 student essays from secondary schools in Vojvodina, annotated by trained linguists for spelling errors. The proposed system achieves a precision of 88.4% and recall of 83.7% on real-word errors, substantially outperforming both a commercial Serbian spell-checker and a frequency-only baseline. Error analysis highlights persistent difficulties with homograph resolution and Ekavian–Ijekavian alternations. The paper discusses deployment considerations for integration into learning management systems used at Serbian secondary schools."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0013",
+        "kind": "project",
+        "title": "KORPUS-NS: a reference corpus of contemporary Serbian",
+        "body": {
+          "recordId": "SYN-PRJ-0013",
+          "field": "summary",
+          "text": "KORPUS-NS aims to create a 500-million-token reference corpus of contemporary Serbian serving as the primary large-scale resource for linguistic research, lexicography and natural language processing in Serbia. Led by Professor Nikolić as principal investigator, the project encompasses text collection from journalism, literature, academic writing, legal texts, social media and transcribed speech, as well as the development of a full annotation pipeline covering tokenisation, lemmatisation, part-of-speech tagging and morphosyntactic description. A custom morphological lexicon, a web concordancer, and open-source processing tools are being released progressively throughout the project period. KORPUS-NS is expected to become the standard empirical reference for Serbian linguistics and to supply training and evaluation data for downstream computational applications in industry and academia."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0288",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0288",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

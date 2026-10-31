@@ -1,0 +1,264 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0087",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0087",
+    "name": "Dejan Lalić",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Geography, Tourism and Hotel Management",
+    "fields": [
+      "Geographic Information Science",
+      "Spatial Databases and Data Engineering",
+      "Web Cartography and Visualisation",
+      "Land Management and Cadastral Systems"
+    ],
+    "keywords": [
+      "spatial database optimisation",
+      "vector tiles",
+      "web GIS",
+      "cadastral data",
+      "PostGIS",
+      "tile pyramid",
+      "large-scale vector rendering",
+      "R-tree indexing",
+      "map generalisation",
+      "GeoServer"
+    ],
+    "openTo": [
+      "contract research on spatial database performance tuning",
+      "consulting on web GIS architecture and tile serving infrastructure",
+      "joint projects on INSPIRE-compliant cadastral data publication",
+      "industrial PhD supervision",
+      "student internships in GIS backend development",
+      "equipment access (GIS server cluster, PostGIS, GeoServer environment)"
+    ],
+    "bio": {
+      "recordId": "R0087",
+      "field": "bio",
+      "text": "Dejan Lalić completed his undergraduate and master's studies in geography and geoinformatics at the Faculty of Sciences, University of Novi Sad, and received his PhD from the same institution in 2008 with a dissertation on indexing strategies for large cadastral vector datasets in PostGIS environments. After a postdoctoral stay at the University of Ljubljana (2009–2010), he returned to Novi Sad where he advanced to Full Professor in 2019. His group focuses on spatial database query optimisation, tile pyramid generation for web map delivery, and the performance benchmarking of vector tile rendering pipelines across cadastral and land-use datasets. He teaches Geographic Information Systems, Web Cartography, and Spatial Databases at undergraduate and postgraduate levels. The group uses a dedicated GIS server cluster running PostGIS, GeoServer, and Mapbox GL JS, as well as tile generation toolchains based on Tippecanoe and custom Python scripts."
+    },
+    "industryExperience": {
+      "recordId": "R0087",
+      "field": "industry_experience",
+      "text": "Lalić provided technical consulting to a Novi Sad-based surveying software company, GeoNS d.o.o., on PostGIS schema redesign for their cadastral data management product between 2016 and 2018. He has also reviewed tile infrastructure designs for two municipal GIS departments in Vojvodina under short-term service contracts."
+    },
+    "notes": {
+      "recordId": "R0087",
+      "field": "notes",
+      "text": "Lalić is interested primarily in collaborations that involve real production cadastral or land-use datasets rather than purely synthetic benchmarks. He prefers industry partners who can share anonymised but authentic data under NDA. His group has capacity to take on one additional contract research engagement from mid-2026 onward."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01176",
+        "kind": "publication",
+        "title": "Comparative evaluation of spatial indexing strategies for polygon-heavy cadastral datasets in PostgreSQL/PostGIS",
+        "body": {
+          "recordId": "SYN-PUB-01176",
+          "field": "abstract",
+          "text": "Cadastral databases in Serbian municipalities routinely contain several million polygon features with highly irregular geometries. This paper benchmarks four spatial indexing approaches—standard GiST R-tree, BRIN spatial indexing, space-partitioning grids, and a hybrid block-clustered GiST—against a 4.2-million-parcel extract from the Republic Geodetic Authority. Query response times were measured across six spatial query types (bounding-box, point-in-polygon, distance, k-nearest-neighbour, clip, and overlay) at three database server configurations ranging from 32 GB to 128 GB RAM. The hybrid block-clustered GiST reduced median bounding-box query time by 38 % relative to default GiST on the largest configuration, while BRIN performed poorly for non-sequential polygon data. Results suggest that clustering geometry storage to match the dominant tile access pattern yields the most consistent gains across query types. The experimental dataset and SQL scripts are made publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01177",
+        "kind": "publication",
+        "title": "Tile generation throughput for national-scale land-parcel vector data: a pipeline comparison",
+        "body": {
+          "recordId": "SYN-PUB-01177",
+          "field": "abstract",
+          "text": "Delivering cadastral vector data over the web at scales from 1:500 000 down to 1:500 requires efficient pre-rendering or on-the-fly tile generation. This study compares three pipeline architectures—pre-rendered MVT tiles generated by Tippecanoe, on-the-fly GeoServer WMS with PNG delivery, and a hybrid partial-prerender approach—using a 6.8-million-feature land-parcel dataset covering the Autonomous Province of Vojvodina. Tile request latency, server CPU load, and storage footprint were logged over 72-hour simulated usage sessions with concurrent request loads of 10, 50, and 200 users. Pre-rendered MVT tiles achieved the lowest latency (median 42 ms at 200 concurrent users) but consumed 18 GB of storage per zoom level range, while the hybrid approach reduced storage by 61 % with a latency penalty of 120 ms at peak load. Recommendations for cache invalidation frequency are derived from the empirical data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01178",
+        "kind": "publication",
+        "title": "Geometry simplification thresholds for cadastral polygons across zoom levels in web map delivery",
+        "body": {
+          "recordId": "SYN-PUB-01178",
+          "field": "abstract",
+          "text": "Automatic geometry simplification is central to multi-scale web map delivery, yet inappropriate tolerance settings introduce topological errors and visible artefacts in cadastral data where shared parcel boundaries must remain coincident after simplification. This paper tests five simplification algorithms—Douglas–Peucker, Visvalingam–Whyatt, topology-preserving Visvalingam, Rapson–Lang, and a custom skeleton-guided approach—applied to 340 000 parcels from two Vojvodina municipalities at zoom levels 10 through 18. Correctness metrics include sliver polygon count, T-intersection break count, and parcel area deviation. The topology-preserving Visvalingam algorithm produced the fewest sliver polygons (fewer than 0.3 % of features affected) across all tested zoom levels and is recommended as a baseline for cadastral tilesets. A lookup table of tolerance values per zoom level per algorithm is provided as supplementary data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01179",
+        "kind": "publication",
+        "title": "Partitioning strategies for distributed PostGIS clusters serving high-concurrency cadastral tile requests",
+        "body": {
+          "recordId": "SYN-PUB-01179",
+          "field": "abstract",
+          "text": "As public cadastral web portals in the Western Balkans experience growing concurrent user loads, single-node PostGIS deployments reach performance ceilings. This work investigates three table partitioning strategies—range partitioning by municipality code, hash partitioning by parcel identifier, and spatial grid partitioning using a fixed 10 km × 10 km tile grid—on a Citus-managed distributed PostGIS cluster with four worker nodes. A synthetic workload of 500 concurrent tile requests, derived from real access logs of a Serbian cadastral portal, was replayed against each configuration. Spatial grid partitioning achieved the highest throughput (1 340 tiles/s) and lowest 95th-percentile latency (310 ms) under peak load, owing to colocation of spatially adjacent parcels on the same worker node. Range partitioning by municipality performed well for administrative boundary queries but poorly for cross-boundary tile fetches. Practical guidelines for re-partitioning live databases are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01180",
+        "kind": "publication",
+        "title": "Encoding efficiency and decode performance of Mapbox Vector Tiles versus GeoJSON for large cadastral feature collections",
+        "body": {
+          "recordId": "SYN-PUB-01180",
+          "field": "abstract",
+          "text": "The choice of vector tile encoding format affects both network payload size and client-side rendering speed in browser-based web GIS applications. This study compares Mapbox Vector Tile (MVT) protocol buffer encoding against GeoJSON for datasets of 10 000, 100 000, and 1 000 000 cadastral features at zoom levels 12–17. Payload sizes, client decode times on three hardware profiles, and frame rates during pan and zoom operations were recorded using instrumented Mapbox GL JS and Leaflet clients. MVT encoding reduced payload size by 74–81 % relative to GeoJSON across all dataset sizes. Decode time on a mid-range laptop CPU averaged 18 ms per tile for MVT versus 67 ms for GeoJSON at the 100 000-feature scale. The paper also analyses precision loss introduced by MVT's integer coordinate encoding at high zoom levels and its implications for sub-metre cadastral accuracy requirements."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01181",
+        "kind": "publication",
+        "title": "Automated detection of topological inconsistencies in cadastral vector datasets prior to tile publication",
+        "body": {
+          "recordId": "SYN-PUB-01181",
+          "field": "abstract",
+          "text": "Cadastral datasets exported from legacy land information systems frequently contain topological errors—gaps, overlaps, and duplicate geometries—that produce visible artefacts in rendered tiles and corrupt spatial query results. This paper presents a preprocessing workflow implemented in Python using Shapely and PostGIS that automatically detects and classifies four error types across an input dataset, then proposes deterministic repair operations for each class. The workflow was validated on datasets from three municipalities in Vojvodina totalling 1.1 million parcels. Detection recall reached 97.2 % for gaps wider than 0.05 m and 94.8 % for overlapping polygons, measured against a manually labelled ground truth of 4 800 known errors. Automated repair reduced residual error count by 88 % without manual intervention. Processing time scaled roughly linearly with feature count at 2.1 million features per hour on a 16-core server. Integration with a GeoServer publication pipeline is demonstrated."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01182",
+        "kind": "publication",
+        "title": "Cache invalidation policies for dynamic cadastral tile servers: frequency, scope, and consistency trade-offs",
+        "body": {
+          "recordId": "SYN-PUB-01182",
+          "field": "abstract",
+          "text": "Cadastral data changes continuously as parcels are split, merged, and reattributed. Tile caches that are not invalidated promptly deliver stale geometry to end users, while over-aggressive invalidation negates the performance benefit of caching. This paper analyses three cache invalidation strategies—time-to-live (TTL) expiry, event-driven invalidation triggered by database write operations, and a spatial-scope invalidation that purges only tiles intersecting the changed geometry—using a simulated change stream derived from six months of real update logs from a Vojvodina cadastral office. Spatial-scope invalidation reduced unnecessary tile regeneration by 64 % compared with full-cache TTL while maintaining geometric freshness within one hour of the triggering update for 98.4 % of changes. Implementation details for GeoWebCache and a custom NOTIFY-based PostgreSQL trigger mechanism are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01183",
+        "kind": "publication",
+        "title": "Spatial data infrastructures for cadastral web services in the Western Balkans: status, interoperability gaps, and alignment with INSPIRE",
+        "body": {
+          "recordId": "SYN-PUB-01183",
+          "field": "abstract",
+          "text": "The INSPIRE directive mandates interoperable spatial data services across EU member states, yet Western Balkan countries preparing for accession maintain heterogeneous cadastral SDIs that vary widely in OGC compliance, coordinate reference system handling, and metadata completeness. This book chapter surveys the cadastral web service landscapes of Serbia, North Macedonia, Bosnia and Herzegovina, and Montenegro through structured questionnaires sent to national geodetic authorities and hands-on testing of published WMS and WFS endpoints against OGC compliance test suites. Nineteen of 31 tested endpoints failed at least one mandatory conformance class. Common issues include absent GetFeatureInfo implementations, inconsistent EPSG code declarations, and missing INSPIRE metadata elements. The chapter maps identified gaps to the INSPIRE Technical Guidance for Cadastral Parcels and outlines a prioritised remediation roadmap suitable for pre-accession technical assistance programmes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01185",
+        "kind": "publication",
+        "title": "Benchmarking vector tile rendering latency across three JavaScript mapping libraries for cadastral polygon layers",
+        "body": {
+          "recordId": "SYN-PUB-01185",
+          "field": "abstract",
+          "text": "Browser-based rendering of dense cadastral polygon layers in MVT format places different demands on client-side JavaScript mapping libraries. This paper benchmarks Mapbox GL JS 2.x, MapLibre GL JS 3.x, and OpenLayers 7 for rendering cadastral tile layers at zoom levels 12–17 using a standardised test dataset of 50 000, 200 000, and 800 000 parcels, delivered from an identical GeoServer backend. Metrics include first-tile-render latency, time-to-full-tile-coverage, pan animation frame rate, and memory consumption, measured on four browser/OS combinations. MapLibre GL JS produced the highest sustained frame rate (58 fps median at 200 000 features on Chrome/Windows) and lowest memory usage. OpenLayers exhibited lower initial latency for small feature counts but degraded sharply beyond 200 000 simultaneous visible features. Practical styling considerations for cadastral label placement are also discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01186",
+        "kind": "publication",
+        "title": "Incremental tile pyramid update strategies for near-real-time cadastral change publication",
+        "body": {
+          "recordId": "SYN-PUB-01186",
+          "field": "abstract",
+          "text": "Pre-rendered tile pyramids for cadastral datasets must be updated whenever parcel boundaries or attributes change, but full pyramid regeneration is computationally prohibitive for national-scale datasets updated multiple times daily. This paper presents and evaluates three incremental update strategies: bounding-box-scoped re-render, affected-tile-graph propagation, and a dirty-tile queue fed by PostGIS triggers. Experiments used a simulated change stream of 3 000 daily updates applied to a 5-million-feature Vojvodina cadastral dataset across zoom levels 10–18. The dirty-tile queue strategy processed 3 000 daily changes with a mean update latency of 4.2 minutes and a peak server load of 34 % on a four-core tile rendering worker, compared with 47 minutes and 91 % load for full regeneration. The paper also quantifies the trade-off between queue flush frequency and visual freshness."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01187",
+        "kind": "publication",
+        "title": "Combining road-network constraints and parcel shape descriptors for zoom-adaptive label placement on cadastral web maps",
+        "body": {
+          "recordId": "SYN-PUB-01187",
+          "field": "abstract",
+          "text": "Automatic label placement for cadastral parcel identifiers on web maps must adapt to changing parcel visibility, label density, and competing road-network annotations across zoom levels. This paper proposes a placement algorithm that uses parcel pole-of-inaccessibility positions, elongation ratio, and proximity to road centrelines to assign label anchors stored as pre-computed attributes in the PostGIS tile source. The algorithm was applied to 780 000 parcels in a three-municipality test area and evaluated against 14 000 manually assessed label placements by domain experts. Agreement rate reached 83 % at zoom level 15 and 76 % at zoom level 13 where parcel–road conflicts are most common. Label density management through cluster suppression at small scales is also detailed, with SVG rendering examples generated via MapLibre GL JS style specifications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01188",
+        "kind": "publication",
+        "title": "PostgreSQL 15 parallel query execution for spatial aggregate operations on cadastral datasets: measured gains and edge cases",
+        "body": {
+          "recordId": "SYN-PUB-01188",
+          "field": "abstract",
+          "text": "PostgreSQL 15 expanded parallel query support for several spatial aggregate functions when used with PostGIS 3.3. This paper measures the performance impact of parallel execution on six spatial aggregate query types—area sum, unary union, convex hull, centroid array, spatial join count, and spatial clip aggregate—applied to a 6.1-million-parcel cadastral dataset at different parallelism degrees (1, 2, 4, and 8 workers). Area sum and centroid array showed near-linear scaling up to 8 workers (7.4× speedup). Unary union and spatial clip aggregate showed super-linear overhead beyond 4 workers due to geometry merge costs. Edge cases involving degenerate geometries that caused worker crashes in early test runs are documented along with mitigation patches. Recommendations for max_parallel_workers_per_gather settings specific to cadastral workloads are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01189",
+        "kind": "publication",
+        "title": "Serving cadastral vector tiles from columnar storage: DuckDB-spatial as a read-optimised tile backend",
+        "body": {
+          "recordId": "SYN-PUB-01189",
+          "field": "abstract",
+          "text": "Traditional PostGIS deployments are row-oriented, which limits scan throughput for the full-table reads required during tile generation. This preprint investigates DuckDB with its spatial extension as a read-optimised backend for generating MVT tiles from cadastral datasets. A 7.2-million-feature Vojvodina cadastral table was loaded into DuckDB Parquet files partitioned by a spatial grid. Tile generation throughput was measured for cold and warm runs across zoom levels 10–17 and compared with equivalent PostGIS 3.4 pipelines. DuckDB achieved 2.1–3.8× higher throughput for full-zoom-level batch generation due to columnar projection pushdown, but showed 40 % higher latency for single-tile on-the-fly requests owing to Parquet file open overhead. The findings suggest DuckDB-spatial is well-suited for overnight full-pyramid rebuilds but not for interactive tile serving. A hybrid architecture using DuckDB for batch regeneration and PostGIS for on-the-fly requests is proposed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01190",
+        "kind": "publication",
+        "title": "First U-Th dated speleothem record from Risovača Cave, Serbia: oxygen and carbon isotope variability during MIS 5",
+        "body": {
+          "recordId": "SYN-PUB-01190",
+          "field": "abstract",
+          "text": "Two stalagmites collected from Risovača Cave (central Serbia, 44.1°N, 20.6°E) were subjected to uranium-thorium (U-Th) thermal ionisation mass spectrometry dating and stable oxygen and carbon isotope analysis. Twelve U-Th age determinations constrain deposition to 128–71 ka, encompassing Marine Isotope Stage 5 (MIS 5). Stable isotope measurements (δ¹⁸O, δ¹³C) were performed at 0.5 mm resolution, generating approximately 900 data points per stalagmite. δ¹⁸O values range from −8.4‰ to −5.1‰ VPDB, with the most negative values recorded during MIS 5e (128–116 ka), interpreted as warmer and/or more humid conditions. A prominent δ¹³C excursion (+2.3‰) at approximately 107 ka correlates with a brief vegetation reduction possibly linked to a cooling episode. Initial henley tests suggest equilibrium deposition for the majority of the record. These results represent the first isotopically characterised speleothem record from this cave system and expand the spatial coverage of MIS 5 climate archives in the central Balkans."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0494",
+        "kind": "project",
+        "title": "Optimised Cadastral Data Publishing Infrastructures for Western Balkan Pre-Accession Countries",
+        "body": {
+          "recordId": "SYN-PRJ-0494",
+          "field": "summary",
+          "text": "CADOPT addressed the technical gap between legacy cadastral land information systems in Serbia and Hungary's border region and modern INSPIRE-compliant web tile services. The project developed a reference pipeline covering topological error correction, coordinate precision normalisation, spatial grid partitioning, and incremental tile cache management. A shared test environment was established at the Faculty of Sciences in Novi Sad, hosting production-scale datasets from two Hungarian and three Serbian municipalities. Project outputs include open-source pipeline components, operator training materials, and a technical handbook for cadastral SDI administrators. The Serbian partner municipalities achieved full OGC WFS 2.0 compliance by project end."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0495",
+        "kind": "project",
+        "title": "Vector Tile Rendering Performance Benchmarks for Serbian National Spatial Data Infrastructure",
+        "body": {
+          "recordId": "SYN-PRJ-0495",
+          "field": "summary",
+          "text": "VEKTOR-RS investigates rendering pipeline performance across the full national cadastral dataset of Serbia, comprising approximately 20 million parcels. The project benchmarks tile generation throughput, cache strategies, and client-side rendering across three JavaScript libraries, producing publicly available benchmark datasets and a methodology transferable to other national SDIs. A secondary focus is on incremental update latency for near-real-time cadastral change publication. Results are being integrated into a white paper submitted to the Republic Geodetic Authority to inform technology selection for the next generation of the national cadastral web portal. Two PhD students are funded under this project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1157",
+        "kind": "project",
+        "title": "Thermal Comfort Monitoring and Mapping in Vojvodina Urban Centres",
+        "body": {
+          "recordId": "SYN-PRJ-1157",
+          "field": "summary",
+          "text": "The project established a coordinated microclimate measurement network across five cities in Vojvodina (Novi Sad, Subotica, Zrenjanin, Sombor, Vršac), deploying fixed monitoring stations and conducting seasonal mobile traverse campaigns. Data were used to compile a regional outdoor thermal comfort database and to produce UTCI maps for each city centre. The project trained four junior researchers in field measurement protocols and ENVI-met simulation workflows. Outputs included a technical report delivered to each participating municipal urban planning department, summarising the thermal comfort conditions in their city centres and identifying priority zones for adaptation interventions such as tree planting and pavement material replacement."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "open_to",
+            "quote": "contract research on spatial database performance tuning",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0087",
+            "field": "open_to",
+            "quote": "joint projects on INSPIRE-compliant cadastral data publication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

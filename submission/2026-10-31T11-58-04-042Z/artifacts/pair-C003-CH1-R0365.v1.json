@@ -1,0 +1,209 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-58-04-042Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What combination of weld condition, cyclic loading, temperature history and moisture exposure explains cracking in AutomVoj’s painted mild-steel conveyor joints, and which manufacturing or design changes could reduce it? The first experiment should compare representative production joints under measured service loading at room temperature and at 2–6 °C, with controlled condensation where feasible, to test whether Erić’s thermo-mechanical fatigue methods transfer to this application.",
+    "rationale": [
+      {
+        "text": "Erić has experimentally investigated the interaction of mechanical fatigue and thermal cycling in welded structural steel, directly relevant to testing AutomVoj’s suspected combined-loading mechanism.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "Four loading programmes were applied: isothermal fatigue at 20 °C, isothermal fatigue at −30 °C, in-phase thermo-mechanical fatigue (TMF), and out-of-phase TMF, with twelve specimens per programme.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His field-assessment experience provides a basis for constructing tests from operational load and temperature histories rather than relying only on workshop loading.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has combined residual-stress measurements with finite-element modelling of welded joints, relevant to investigating whether weld-induced stresses contribute to the failures.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Residual stress relaxation in S355 cruciform fillet-welded joints was tracked over 10, 100, 1000, and 10 000 fatigue cycles",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "A cyclic plasticity FE model employing a Chaboche kinematic hardening rule reproduced the surface relaxation trend within 12% across all conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group routinely uses fatigue-testing, climate-control and simulation resources relevant to addressing the company’s current testing gap.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project is consistent with his stated interest in company collaboration on low-temperature and combined-loading fatigue testing.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The experimental baseline must represent the actual chilled service environment and distinguish measured conditions from the company’s unverified thermal-cycling, condensation and vibration hypothesis.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts is doing something",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Failure analysis and test specimens must represent the painted mild-steel hollow-section construction and the crossmember-to-stringer detail; access to the retained failed sections and site records must be arranged.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "weld joint cracking at the main crossmember-to-stringer connections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The test plan must address the approximately 18-month service failure rather than treating passage of a room-temperature load test as evidence of durability.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "after about 18 months of continuous use.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We test frames under load at room temperature and they pass without any problem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Combined environmental fatigue testing requires external facilities and advance equipment booking; chamber, fixture and humidity-control suitability must be confirmed before committing to a campaign.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company engineering effort must be explicitly allocated around live-project commitments because there is no dedicated R&D team.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest thermal-fatigue evidence concerns other steel grades, joint geometries and substantially colder conditions. Its relevance to painted mild-steel hollow sections at 2–6 °C is unvalidated and must be tested in the first comparative experiment.",
+      "Condensation-assisted damage and coating effects are not demonstrated in the supplied researcher evidence. Additional corrosion expertise or environmental-test capability may be needed if initial failure analysis implicates them.",
+      "The company’s proposed mechanism may be incomplete or incorrect; fabrication defects, local stress concentration or unmeasured operating loads could dominate.",
+      "Accelerating an approximately 18-month failure could change the damage mechanism, so short laboratory tests may not establish service-life improvement.",
+      "Researcher availability is unknown, and shared equipment could delay testing. Company staff also divide improvement work with live projects.",
+      "Budget, delivery deadline, customer-site access and the availability of production and operational records are unknown; these could limit failure reproduction and validation."
+    ],
+    "questions": [
+      "What is Erić’s availability, and when can the shared fatigue machine and climate chamber be reserved?",
+      "Can the laboratory accommodate the required joint dimensions and loads while controlling and measuring temperature, humidity and condensation at 2–6 °C?",
+      "Can AutomVoj provide the two failed sections, unfailed comparison joints, drawings, steel and filler specifications, welding procedures, inspection records and coating details?",
+      "Can customer sites be instrumented to record joint strains, vibration, belt loading, start-stop events, temperature and humidity, including cleaning or defrost cycles?",
+      "What do the fracture surfaces and crack locations indicate, and is specialist corrosion analysis needed before defining the fatigue programme?",
+      "What budget, deadline and company engineering time are available, and who will approve and manufacture trial changes?",
+      "What evidence will be required to accept a proposed change, including replication, preservation of the field failure mechanism and follow-up in service?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

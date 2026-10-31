@@ -1,0 +1,128 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a combined Serbian morphological normalisation/lemmatisation and automatic script-canonicalisation layer, integrated into LinguaBot's Elasticsearch pipeline, reduce the measured 18% no-useful-result rate while allowing new client vocabulary to be added without a full re-index? The first experiment would test whether the researcher's phoneme-canonical and stem-after-normalisation methods transfer from news/legal corpora to the company's 85,000 labelled support query-response pairs and the 12,000-query miss sample.",
+    "rationale": [
+      {
+        "text": "He leads a group working directly on retrieval in mixed Cyrillic-Latin Serbian documents, script normalization, transliteration preprocessing and script-robust inverted indexes.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "bio",
+            "quote": "Njegova istraživačka grupa bavi se pronalaženjem informacija u dokumentima koji sadrže mešovito ćirilično-latinično srpsko pismo, normalizacijom skripte, transliteracijom kao korakom u pretprocesiranju i izgradnjom invertovanih indeksa otpornih na varijacije pisma.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published methodology builds an inverted index for mixed-script Serbian by generating a phoneme-based canonical token form as the primary index identifier, evaluated on 120,000 news articles with F1 0.81.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji, a zatim se fonemski ključevi koriste kao primarni identifikatori u indeksu.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi sistem postiže F1 vrednost od 0,81 u zadatku ad-hoc pretrage, što je povećanje od 14 procentnih poena u odnosu na bolji od dva bazična sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work explicitly studies the interaction of stemming/lemmatisation with script normalization and finds stemming after normalization consistently better, which maps to the company's morphological-mismatch problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "pri čemu stemovanje posle normalizacije daje konzistentno bolje rezultate za sve tri kombinacije",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has cross-script query-expansion evidence with named-entity expansion reducing index bloat while keeping retrieval latency low.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "Strategy 3 achieved the best mean average precision of 0.497, versus 0.431 for no expansion, while reducing index bloat to 6% over the baseline index size.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has industry contract experience adapting a search module for Serbian court decisions over 18 months.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "U periodu 2022–2023. sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke, u okviru ugovornog istraživanja trajanja 18 meseci.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He reports capacity for one smaller industrial contract or consulting engagement.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Formal availability is unknown; the notes only state capacity for one smaller industrial contract or consulting engagement, so scheduling must be confirmed.",
+      "The core evidence comes from news, legal, encyclopedia-style and web corpora, while the company's support queries include mid-word script typos; transfer to this query distribution is untested and must be a first experiment.",
+      "Maintenance may fail if new client terminology requires manual dictionary updates; both the company's synonym-list experience and the researcher's pilot limitation point to this.",
+      "A neural normalizer can add latency at production percentiles, so any neural component should be limited to out-of-vocabulary fallback unless SLOs allow otherwise.",
+      "The researcher's stemming evidence was evaluated on a CLEF 2012 subset, not on the company's bank support queries, so morphological gains may not transfer directly.",
+      "The modest budget and six-month window may limit data annotation and tooling scope, especially if the company's 85,000-pair dataset needs re-labelling for the target metric."
+    ],
+    "questions": [
+      "Can you confirm your availability for a six-month joint project within the company's modest budget, given the note that you have capacity for one smaller industrial contract or consulting engagement?",
+      "Will LinguaBot provide access to the 85,000 labelled query-response pairs and the 12,000-query sample, and will the two in-house linguists be available for annotation and validation?",
+      "What is the exact definition and per-client breakdown of 'no useful result', and how should the below-5% target be measured?",
+      "Which Elasticsearch version and indexing/query pipeline must the solution fit, and what re-indexing or downtime is allowed when new vocabulary arrives?",
+      "What latency and throughput SLOs apply to production search, and can a neural fallback be limited to out-of-vocabulary tokens?",
+      "How should new product terminology be maintained operationally, and who owns updates to override rules and synonym lists after the project?",
+      "Can you share examples of mid-word script mixing and the current Croatian stemmer's failure cases for the first experiment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

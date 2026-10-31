@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "proposal-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Testing Small-Catalogue Recommendations Against Best-Seller Sorting",
+    "facts": [
+      {
+        "text": "Harmat reports trials using three clients’ transaction logs: the largest contained 1,900 completed orders over eighteen months and the smallest around 520. Best-seller sorting outperformed its model in one client A/B test. The company reports insufficient budget and traffic to wait for larger datasets.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat describes a one-client prototype as sufficient to start and offers read access to anonymised transactions and catalogues. Its research-capacity statement places anonymised dataset access under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat offers one mid-level developer for roughly one day weekly. Erić’s notes describe caution about commitments exceeding one external day weekly during the academic semester.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat’s technology includes WooCommerce, custom REST integrations and Docker deployments on client VPS environments.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat describes testing every user-facing string in three languages before shipping.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s clothing-retail research combines cosine attribute similarity with within-session co-occurrence. Its evidence comes from two retailers providing 9,200 baskets, rather than this client’s product-page setting.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "Data come from two small clothing retailers operating in Serbia, collectively yielding 9,200 baskets over 18 months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s attribute study discusses limitations involving attribute completeness and supplier data. Her review reports that content-based methods can over-specialise recommendations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03666",
+            "field": "abstract",
+            "quote": "Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "A lightweight attribute model, optionally blended with basket evidence, looks better aligned with this problem than another unconstrained collaborative model. However, larger grocery and clothing studies do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.",
+      "Basket-ranking results would provide a screening signal, not evidence of conversion gains. Similarity may also favour substitutes when the retailer wants complements; this makes the retailer’s relevance definition important.",
+      "This joint-project proposal is conditional on Erić’s availability, which remains unknown. Her stated participation category is open to joint projects, but that does not establish a commitment to this project or schedule."
+    ],
+    "proposedActions": [
+      "Propose a six-week offline pilot using one client’s existing anonymised orders and catalogue only. First audit metadata and agree relevance; compare best-sellers, attribute-only similarity and lightweight hybrids. Create chronological training, tuning and untouched evaluation partitions; check leakage and dependence from repeated customers and products. Tune configurations only on tuning data. For eligible multi-item evaluation baskets, reveal one anchor and rank remaining purchased items; average NDCG@5 per basket, reporting singleton exclusions and catalogue coverage. Propose a 10% relative improvement target over best-sellers, with a paired, dependence-aware 95% confidence interval above zero. Go/no-go concerns the best tuning-selected configuration, regardless of method, using existing data; inadequate evaluation evidence means unresolved, not pass. Require feasible integration and language-review gates before release. Offline success authorises only a proposed live test, whose go/no-go must use the company’s agreed business metric. Erić could lead evaluation; Harmat could prepare exports and integration.",
+      "Propose weeks one–two for agreement, permissions and metadata audit; weeks three–four for modelling; and weeks five–six for held-out evaluation and a prototype decision. Confirm that this scope fits both weekly limits and the available budget before starting; otherwise reduce scope rather than assume additional staffing.",
+      "Before deployment, test the selected prototype through the pilot’s WooCommerce or REST interface in its Docker/VPS environment against agreed latency and refresh limits. Require successful company review of all widget strings in three languages. Separately establish live-event permissions and instrumentation; do not assume historical read access includes impressions, clicks or sessions."
+    ],
+    "questions": [
+      "Can Erić confirm availability and interest in this specific joint project, and can both parties support the proposed schedule and budget?",
+      "Which client will pilot, should recommendations favour substitutes or complements, and which metadata, languages, timestamps and basket identifiers are available?",
+      "What metric defined the earlier A/B result, what improvement is meaningful, and what traffic and evaluation duration could support a conclusive live comparison?",
+      "What data-sharing, retention and security terms, VPS resources, latency limits, catalogue-refresh responsibilities and three-language reviewers can be agreed?"
+    ],
+    "benefits": {
+      "company": "The pilot could establish whether existing data supports a useful alternative to best-sellers, or justify retaining the simpler baseline without waiting for more transactions.",
+      "researcher": "Subject to agreement, Erić could test the boundary between attribute-only and hybrid recommendation under smaller-data, multilingual e-commerce conditions using an anonymised client case."
+    },
+    "markdown": "# Testing Small-Catalogue Recommendations Against Best-Seller Sorting\n\n## Verified facts\n- Harmat reports trials using three clients’ transaction logs: the largest contained 1,900 completed orders over eighteen months and the smallest around 520. Best-seller sorting outperformed its model in one client A/B test. The company reports insufficient budget and traffic to wait for larger datasets. [F1]\n- Harmat describes a one-client prototype as sufficient to start and offers read access to anonymised transactions and catalogues. Its research-capacity statement places anonymised dataset access under a data-sharing agreement. [F2]\n- Harmat offers one mid-level developer for roughly one day weekly. Erić’s notes describe caution about commitments exceeding one external day weekly during the academic semester. [F3]\n- Harmat’s technology includes WooCommerce, custom REST integrations and Docker deployments on client VPS environments. [F4]\n- Harmat describes testing every user-facing string in three languages before shipping. [F5]\n- Erić’s clothing-retail research combines cosine attribute similarity with within-session co-occurrence. Its evidence comes from two retailers providing 9,200 baskets, rather than this client’s product-page setting. [F6]\n- Erić’s attribute study discusses limitations involving attribute completeness and supplier data. Her review reports that content-based methods can over-specialise recommendations. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether existing data supports a useful alternative to best-sellers, or justify retaining the simpler baseline without waiting for more transactions.\n- For the researcher: Subject to agreement, Erić could test the boundary between attribute-only and hybrid recommendation under smaller-data, multilingual e-commerce conditions using an anonymised client case.\n\n## Our inference\n- A lightweight attribute model, optionally blended with basket evidence, looks better aligned with this problem than another unconstrained collaborative model. However, larger grocery and clothing studies do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.\n- Basket-ranking results would provide a screening signal, not evidence of conversion gains. Similarity may also favour substitutes when the retailer wants complements; this makes the retailer’s relevance definition important.\n- This joint-project proposal is conditional on Erić’s availability, which remains unknown. Her stated participation category is open to joint projects, but that does not establish a commitment to this project or schedule.\n\n## Proposed next steps\n- Propose a six-week offline pilot using one client’s existing anonymised orders and catalogue only. First audit metadata and agree relevance; compare best-sellers, attribute-only similarity and lightweight hybrids. Create chronological training, tuning and untouched evaluation partitions; check leakage and dependence from repeated customers and products. Tune configurations only on tuning data. For eligible multi-item evaluation baskets, reveal one anchor and rank remaining purchased items; average NDCG@5 per basket, reporting singleton exclusions and catalogue coverage. Propose a 10% relative improvement target over best-sellers, with a paired, dependence-aware 95% confidence interval above zero. Go/no-go concerns the best tuning-selected configuration, regardless of method, using existing data; inadequate evaluation evidence means unresolved, not pass. Require feasible integration and language-review gates before release. Offline success authorises only a proposed live test, whose go/no-go must use the company’s agreed business metric. Erić could lead evaluation; Harmat could prepare exports and integration.\n- Propose weeks one–two for agreement, permissions and metadata audit; weeks three–four for modelling; and weeks five–six for held-out evaluation and a prototype decision. Confirm that this scope fits both weekly limits and the available budget before starting; otherwise reduce scope rather than assume additional staffing.\n- Before deployment, test the selected prototype through the pilot’s WooCommerce or REST interface in its Docker/VPS environment against agreed latency and refresh limits. Require successful company review of all widget strings in three languages. Separately establish live-event permissions and instrumentation; do not assume historical read access includes impressions, clicks or sessions.\n\n## Open questions\n- Can Erić confirm availability and interest in this specific joint project, and can both parties support the proposed schedule and budget?\n- Which client will pilot, should recommendations favour substitutes or complements, and which metadata, languages, timestamps and basket identifiers are available?\n- What metric defined the earlier A/B result, what improvement is meaningful, and what traffic and evaluation duration could support a conclusive live comparison?\n- What data-sharing, retention and security terms, VPS resources, latency limits, catalogue-refresh responsibilities and three-language reviewers can be agreed?",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

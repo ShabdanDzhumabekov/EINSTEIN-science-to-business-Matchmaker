@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C068-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C068-CH2",
+    "companyId": "C068",
+    "companyName": "OrtoPrint Solutions a.d.",
+    "sector": "Medtech and digital health",
+    "location": "Zrenjanin",
+    "challenge": {
+      "text": {
+        "recordId": "C068-CH2",
+        "field": "text",
+        "text": "We print in PA12 nylon and the finished parts look fine visually, but we're failing fatigue tests at around 180,000 cycles when the spec requires 500,000 — we've tried adjusting infill density from 60% to 80% with no consistent improvement and we don't understand why."
+      },
+      "detail": {
+        "recordId": "C068-CH2",
+        "field": "detail",
+        "text": "We print load-bearing components in PA12 nylon on four FDM machines and we run every batch through a fatigue test on our in-house servo rig before shipping. The test protocol calls for 500,000 cycles at the relevant load. We are consistently failing somewhere around 180,000 cycles, and the fractures almost always initiate at layer boundaries rather than in the bulk material. We increased infill density from 60% to 80% and saw no reliable improvement — some batches got marginally better, some got worse. We have tried adjusting print temperature by plus or minus 10°C and slowing the print speed on the final outer perimeters, again with no consistent result. We keep print logs for every job — temperature, speed, layer height, humidity in the print room — but we do not have the materials science background to know which parameters actually drive inter-layer bonding strength in PA12 specifically. We also don't know whether the problem is in the filament storage (we keep it in a drying cabinet at 65°C), the machine calibration or the geometry of the test piece itself. We need someone to look at our process data and our test results and tell us what is actually driving the failures, then work with us on a fix. Budget is modest — we are not buying new machines — but we are open to process changes."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C068",
+        "field": "about",
+        "text": "OrtoPrint Solutions a.d. has been making orthopaedic aids in Zrenjanin since 1993, when Dragan Molnar and two certified orthotists set up a small workshop to serve the rehabilitation units of Vojvodina's public hospitals. For more than two decades we built every brace, splint and prosthetic socket by hand, accumulating the kind of practical knowledge that only comes from thousands of fittings. In 2016 we made a deliberate shift: we brought in structured-light scanning, CAD modelling and polymer additive manufacturing, retaining all of our senior orthotists so that clinical judgment and digital production could work side by side.\n\nToday our 142 employees — roughly a third of them trained orthotists or prosthetists — produce custom orthoses, prosthetic sockets and rigid protective components for hospitals, rehabilitation centres and private orthopaedic clinics in Serbia, Bosnia-Herzegovina, Croatia, North Macedonia and Montenegro. Our main manufacturing facility is in Zrenjanin with a fitting and aftercare office in Novi Sad.\n\nWhat sets us apart is the combination of in-house clinical staff and our own print floor. When a device comes back for rework, the same person who fitted it can observe the correction and feed that information back into the next job. We are not a print bureau that happens to make medical parts — we are orthotists who also run printers."
+      },
+      "products": [
+        {
+          "recordId": "C068",
+          "field": "products",
+          "text": "Custom lower-limb ankle-foot orthoses (AFO) printed in PA12"
+        },
+        {
+          "recordId": "C068",
+          "field": "products",
+          "text": "Transtibial and transfemoral prosthetic sockets"
+        },
+        {
+          "recordId": "C068",
+          "field": "products",
+          "text": "Rigid thoraco-lumbar spinal orthoses"
+        },
+        {
+          "recordId": "C068",
+          "field": "products",
+          "text": "Paediatric corrective upper-limb splints"
+        },
+        {
+          "recordId": "C068",
+          "field": "products",
+          "text": "Post-operative protective shells for hip and knee joints"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "Structured-light 3D scanning (Artec Leo and a fixed-frame in-house rig)"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "CAD/CAM orthopaedic design software (OrthoFlow Studio)"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "FDM additive manufacturing — four Creality Industrial CF-Pro units"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "PA12 nylon and TPU filament materials"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "Basic webcam-based visual monitoring on print machines"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "ERP system (local Serbian vendor, Poslovni Softver d.o.o. — Zrenjanin module)"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "ISO 13485-compliant quality management system"
+        },
+        {
+          "recordId": "C068",
+          "field": "tech",
+          "text": "Fatigue testing rig (custom-built, servo-actuated, in-house)"
+        }
+      ],
+      "plans": {
+        "recordId": "C068",
+        "field": "plans",
+        "text": "OrtoPrint Solutions intends to open a sales and fitting office in Vienna by late 2026 to support the planned German and Austrian market entry, and to certify two additional product lines under EU MDR class I requirements within the same period."
+      },
+      "rdCapacity": {
+        "recordId": "C068",
+        "field": "rd_capacity",
+        "text": "We have two senior orthotists who contribute about 20% of their working time to product development and process improvement, supported by one mechanical technician who manages the print floor and test rig."
+      },
+      "pastCollaborations": {
+        "recordId": "C068",
+        "field": "past_collaborations",
+        "text": "Between 2019 and 2021 we ran a small joint project with the Clinical Centre of Vojvodina's physical medicine department to validate our paediatric AFO fitting protocol on a cohort of thirty patients, co-authoring an internal clinical report; no formal university or research institute collaboration since then."
+      }
+    }
+  }
+}

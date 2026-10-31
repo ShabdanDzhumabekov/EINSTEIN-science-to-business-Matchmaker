@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0349",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company describes an Elasticsearch baseline using a Croatian-built stemmer, within-word script mixing, and manual synonym maintenance that does not scale with quarterly terminology changes.” Also: “about 18% of 12,000 real support queries from one bank client returned no useful result”. Proposed next steps: “Replay terminology updates against existing indexed documents”. These identify the concrete retrieval failures and terminology-maintenance problem rather than a generic Serbian NLP objective."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps makes acceptance conditional on “no full re-index; agreed maintenance and latency caps under production load; prototype testable within six months and approximately EUR 8,000 tooling/data expenditure” and specifies “recording operations, retrieval changes, maintenance hours and latency.” It also requires “Establish corpus access and usable judgments” and “Validate Elasticsearch compatibility and update behavior rather than assuming prior implementations transfer.” Open questions asks “what maintenance-hours cap is acceptable, and how are researcher fees and annotation effort funded beyond the tooling/data allocation?” and requests a “named company engineering counterpart”. These preserve the budget, deadline, existing-system, update and resource constraints, with verification or explicit prerequisites rather than assumed access or staffing."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Dragić’s research maps tokens to phoneme sequences for script canonicalization. His morphological-reduction study investigates interactions between stemming, lemmatization and script normalization.” The reported trade-off is explicit: “regular-token character error was higher for the transformer than deterministic rules, despite improvement on exceptions.” Our inference limits transfer: “Legal and benchmark evidence does not validate short banking or telecom queries, within-word typos, or vocabulary-rule changes without re-indexing.” Proposed next steps ties these methods to “canonicalization, morphological comparisons and error analysis”. This connects his documented methods to the actual failure sources while preserving the reported trade-off and domain-transfer limits."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts distinguishes available material and capacity: “around 85,000 labelled query-response pairs across all clients and two in-house linguists able to annotate or validate solutions” and “capacity for one smaller industrial contract or consultancy”. Proposed next steps assigns proposed roles: “LinguaBot would supply engineering and linguist validation; Dragić would guide canonicalization, morphological comparisons and error analysis, subject to his allocation.” Open questions requests confirmation of “availability, start timing and allocation” and authorization of the data and documents. These identify the necessary contributions without treating proposed allocations or data access as confirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps specifies “eight configurations: existing Elasticsearch baseline; script canonicalization, Serbian morphological normalization and incremental vocabulary handling individually; every pair; and all three”, with “independent on/off factor levels” and “hold corpus, ranking and queries constant”. It separates selection and evaluation: “Split the 85,000 pairs into tuning and held-out evaluation samples; verify independence, preventing query, answer-template and client leakage. Select the best configuration on tuning data.” It also specifies update replay against existing indexed documents and makes corpus access, usable judgments and protocol agreement prerequisites. These define inputs, baseline, factorial comparisons, tuning separation and update testing sufficiently for design agreement."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps defines the counted unit and denominator: “Miss rate counts occurrences with no useful result divided by all evaluated occurrences, without deduplication; unresolved judgments count as misses.” Label acquisition is explicit: “Linguists would judge every evaluation occurrence at an agreed cutoff.” The proposed statistical gate is “upper 95% confidence bound below 5% separately for the original bank-client population, initially and after updates”. Other populations require “separate miss-rate ceilings and upper-95%-bound acceptance rules for representative held-out telecom queries and real within-word-mixing/new-vocabulary strata, initially and after updates; pooled success cannot substitute.” Constructed probes remain separate. Operational acceptance additionally requires no full re-index, agreed maintenance and latency caps, and the time and expenditure limits; “Unavailable evaluation data or unresolved acceptance rules block a pass.” Thus acceptance uses the company's miss metric, not relative method performance, and unresolved thresholds cannot silently count as success."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps requires all individual components, “every pair; and all three”, with “independent on/off factor levels” while holding “corpus, ranking and queries constant”. It explicitly states: “A factor’s isolated null effect does not end interaction testing.” Potential benefits only says the experiment “could identify which components reduce actual support-search misses”. These comparisons permit component and interaction analysis without claiming that a bundled improvement identifies a single cause."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference states that prior evidence “does not validate short banking or telecom queries, within-word typos, or vocabulary-rule changes without re-indexing”, that “Incremental document insertion is not equivalent to updating rules against existing content”, and that “Normalization may address only part of the miss rate.” It also warns: “Exception handling could introduce errors or maintenance burdens”. Verified facts reports the neural model's regular-token error trade-off. Proposed next steps explicitly tests “foreign names, abbreviations and alphanumeric identifiers”, while Open questions leaves access, hardware, load, latency, funding and availability unresolved. These name the principal transfer, accuracy, update, maintenance and execution risks without presenting unknown feasibility as fact."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference states: “Participation is conditional: joint-project willingness is open, but Dragić’s actual availability and allocation remain unconfirmed and limited in scope.” Proposed next steps makes his proposed role “subject to his allocation”, and Open questions asks him to confirm availability and timing for “this small research-focused joint project”. Verified facts preserves his lack of interest in “general software development lacking a research component”. The proposed format and role respect his stated interest and limited capacity without assuming availability."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits states that the company experiment “could identify which components reduce actual support-search misses and whether terminology updates remain practical without rebuilding the index.” For the researcher: “Subject to agreement and authorized access, Dragić could test normalization interactions on industrial support queries and study transfer beyond legal and benchmark retrieval.” Both are conditional gains directly supported by the planned factorial evaluation and update replay, not guarantees of deployment success or research access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.87,
+        0.98,
+        0.92,
+        0.95,
+        0.82,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "proposal-C026-CH3-R0212",
+    "version": 3
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0212",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Site-specific monitoring and leachate containment for Zelena Petlja",
+    "facts": [
+      {
+        "text": "The company reports an inspectorate order requiring four groundwater monitoring wells within 120 days and a remediation proposal, with a stated deadline in late June 2024. This is the supplied historical timetable, not a confirmed current deadline.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's latest hydrogeological sketch dates from 1993. It reports that contamination extent and seasonal groundwater-flow directions are unknown.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports a liner not designed for liquid retention and an in-house COD result of 3,400 mg/L. It seeks an inspectorate-acceptable containment and treatment proposal, not monitoring alone.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "help us draft a leachate containment and treatment proposal that the inspectorate will accept",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company states that it has two technicians with process-engineering backgrounds, no dedicated research budget, and no laboratory beyond its basic wet-chemistry bench for leachate monitoring.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "We have two technicians with process engineering backgrounds",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Zorić lists openness to joint company projects on groundwater remediation. Her availability-related note concerns reduced teaching in 2025/26; it does not establish capacity for the company's stated 2024 deadline.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "joint project applications with companies working on landfill aftercare or groundwater remediation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0212",
+            "field": "notes",
+            "quote": "Zorić is on a reduced teaching load in the 2025/26 academic year due to project finalisation commitments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Zorić's research supports multi-indicator groundwater monitoring and moisture-calibrated infiltration modelling. Her transfer-station study warns that mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "Groundwater samples were collected quarterly and analysed for chloride, ammonium, COD, and electrical conductivity.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "A variably saturated flow model (HYDRUS-2D) was calibrated to soil moisture profiles measured with TDR probes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her passive-drain research reports field capture efficiencies of 84–97% at three Vojvodina installations. Her zeolite research concerns ammonium removal in laboratory columns using leachate from two Vojvodina sites.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02715",
+            "field": "abstract",
+            "quote": "Chart validation was performed against three field installations in Vojvodina, where measured drain capture efficiencies ranged from 84 to 97 %",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02719",
+            "field": "abstract",
+            "quote": "Column experiments were conducted at 20 °C using landfill leachate from two Vojvodina sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02719",
+            "field": "title",
+            "quote": "Evaluation of permeable reactive barrier materials for ammonium removal from landfill leachate in column experiments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a useful joint project linking field investigation to regulatory design, conditional on confirming Zorić's availability for the actual delivery period.",
+      "The site's sediments, aquifer geometry and seasonal gradients may differ from the research sites. Four wells may leave plume boundaries unresolved; one campaign cannot establish seasonal reversals. Transferring published parameters or drain charts without local checks would therefore be risky.",
+      "Interception would not itself demonstrate treatment of the COD burden, and ammonium-column results do not establish COD removal or field performance here. A funded investigation and separate source-control and treatability work are likely necessary."
+    ],
+    "proposedActions": [
+      "Propose an initial four-week field-to-model test, subject to the current legal timetable and procurement feasibility. The company would supply records and coordinate access; Zorić would propose survey, sampling and model protocols. Compare the 1993-sketch conceptual baseline with surveyed groundwater heads, borehole sediments and quality-assured leachate/groundwater COD, chloride, ammonium and conductivity. Use separate tuning and later evaluation rounds, checking their independence. Test local hydraulic properties rather than importing published values. A negotiable screening target is head error below 10% of surveyed head range on withheld observations, reporting measurement uncertainty and unresolved plume boundaries. Go/no-go would concern the best configuration tested, not a named model: proceed only if evidence supports defensible well placement, resources and authorised delivery are available, and four installed wells plus an inspectorate-accepted containment/treatment proposal remain achievable by the verified deadline. Otherwise escalate immediately for regulatory agreement and additional investigation rather than claim compliance.",
+      "Propose source-leakage controls alongside investigation, with safety and regulatory review. Compare site-leachate treatment candidates against an untreated control using separate tuning and evaluation aliquots. If ammonium warrants zeolite testing, measure breakthrough, hydraulic performance, COD and residual-management needs; negotiate concentration and capacity targets from inspectorate requirements before testing. Do not select treatment on ammonium removal alone.",
+      "Propose a funded scope covering drilling, surveys, external analyses, monitoring and documentation, with named authorised contractors and signatories. Agree seasonal follow-up and any additional investigation with the inspectorate. Assign operation, maintenance and collected-leachate responsibilities before recommending implementation."
+    ],
+    "questions": [
+      "What is the current order and compliance status, including the four wells, submission, applicable deadline and inspectorate acceptance criteria?",
+      "Can Zorić confirm availability for this joint project's actual delivery window?",
+      "Can the company supply the order, sketch, site and utility plans, liner and waste records, original analytical quality-control records, and permissions for boundary-area investigation?",
+      "What funding, procurement arrangements and authorised delivery team can cover investigation, immediate containment, treatment trials and continuing operation?"
+    ],
+    "benefits": {
+      "company": "The first experiment could establish whether available evidence supports defensible well placement and identify the investigation or treatment gaps preventing an acceptable remediation proposal.",
+      "researcher": "Subject to agreement and access, the project could provide site measurements, sediments and leachate for testing how transferable alluvial-aquifer monitoring and containment methods are to this storage yard."
+    },
+    "markdown": "# Site-specific monitoring and leachate containment for Zelena Petlja\n\n## Verified facts\n- The company reports an inspectorate order requiring four groundwater monitoring wells within 120 days and a remediation proposal, with a stated deadline in late June 2024. This is the supplied historical timetable, not a confirmed current deadline. [F1]\n- The company's latest hydrogeological sketch dates from 1993. It reports that contamination extent and seasonal groundwater-flow directions are unknown. [F2]\n- The company reports a liner not designed for liquid retention and an in-house COD result of 3,400 mg/L. It seeks an inspectorate-acceptable containment and treatment proposal, not monitoring alone. [F3]\n- The company states that it has two technicians with process-engineering backgrounds, no dedicated research budget, and no laboratory beyond its basic wet-chemistry bench for leachate monitoring. [F4]\n- Zorić lists openness to joint company projects on groundwater remediation. Her availability-related note concerns reduced teaching in 2025/26; it does not establish capacity for the company's stated 2024 deadline. [F5]\n- Zorić's research supports multi-indicator groundwater monitoring and moisture-calibrated infiltration modelling. Her transfer-station study warns that mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting. [F6]\n- Her passive-drain research reports field capture efficiencies of 84–97% at three Vojvodina installations. Her zeolite research concerns ammonium removal in laboratory columns using leachate from two Vojvodina sites. [F7]\n\n## Potential benefits\n- For the company: The first experiment could establish whether available evidence supports defensible well placement and identify the investigation or treatment gaps preventing an acceptable remediation proposal.\n- For the researcher: Subject to agreement and access, the project could provide site measurements, sediments and leachate for testing how transferable alluvial-aquifer monitoring and containment methods are to this storage yard.\n\n## Our inference\n- This suggests a useful joint project linking field investigation to regulatory design, conditional on confirming Zorić's availability for the actual delivery period.\n- The site's sediments, aquifer geometry and seasonal gradients may differ from the research sites. Four wells may leave plume boundaries unresolved; one campaign cannot establish seasonal reversals. Transferring published parameters or drain charts without local checks would therefore be risky.\n- Interception would not itself demonstrate treatment of the COD burden, and ammonium-column results do not establish COD removal or field performance here. A funded investigation and separate source-control and treatability work are likely necessary.\n\n## Proposed next steps\n- Propose an initial four-week field-to-model test, subject to the current legal timetable and procurement feasibility. The company would supply records and coordinate access; Zorić would propose survey, sampling and model protocols. Compare the 1993-sketch conceptual baseline with surveyed groundwater heads, borehole sediments and quality-assured leachate/groundwater COD, chloride, ammonium and conductivity. Use separate tuning and later evaluation rounds, checking their independence. Test local hydraulic properties rather than importing published values. A negotiable screening target is head error below 10% of surveyed head range on withheld observations, reporting measurement uncertainty and unresolved plume boundaries. Go/no-go would concern the best configuration tested, not a named model: proceed only if evidence supports defensible well placement, resources and authorised delivery are available, and four installed wells plus an inspectorate-accepted containment/treatment proposal remain achievable by the verified deadline. Otherwise escalate immediately for regulatory agreement and additional investigation rather than claim compliance.\n- Propose source-leakage controls alongside investigation, with safety and regulatory review. Compare site-leachate treatment candidates against an untreated control using separate tuning and evaluation aliquots. If ammonium warrants zeolite testing, measure breakthrough, hydraulic performance, COD and residual-management needs; negotiate concentration and capacity targets from inspectorate requirements before testing. Do not select treatment on ammonium removal alone.\n- Propose a funded scope covering drilling, surveys, external analyses, monitoring and documentation, with named authorised contractors and signatories. Agree seasonal follow-up and any additional investigation with the inspectorate. Assign operation, maintenance and collected-leachate responsibilities before recommending implementation.\n\n## Open questions\n- What is the current order and compliance status, including the four wells, submission, applicable deadline and inspectorate acceptance criteria?\n- Can Zorić confirm availability for this joint project's actual delivery window?\n- Can the company supply the order, sketch, site and utility plans, liner and waste records, original analytical quality-control records, and permissions for boundary-area investigation?\n- What funding, procurement arrangements and authorised delivery team can cover investigation, immediate containment, treatment trials and continuing operation?",
+    "taskId": "C026-CH3",
+    "researcherId": "R0212",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0212",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C026-CH3-R0212",
+        "version": 1
+      }
+    ]
+  }
+}

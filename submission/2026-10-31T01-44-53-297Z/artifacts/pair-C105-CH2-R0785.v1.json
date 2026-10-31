@@ -1,0 +1,206 @@
+{
+  "ref": {
+    "artifactId": "pair-C105-CH2-R0785",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C105-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C105-CH2-R0785",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can stochastic performance modelling, scheduling and spot-instance policies reduce GenovaMed's short-read star-allele pipeline compute cost below 3 EUR per sample and total runtime under 90 minutes while preserving clinical allele calls? The pair would profile the existing Python/Snakemake workflow and test candidate queueing, provisioning or bidding policies in a controlled replay against the current pipeline.",
+    "rationale": [
+      {
+        "text": "Đukić directly models the cloud cost-versus-latency trade-off through Markov decision process VM provisioning, which matches GenovaMed's combined compute-cost and runtime target.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08600",
+            "field": "abstract",
+            "quote": "The paper formulates virtual machine (VM) provisioning in an Infrastructure-as-a-Service (IaaS) environment as a discrete-time Markov decision process (MDP).",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has modelled batch workloads on a mix of on-demand and preemptible instances, which is relevant to GenovaMed's interest in spot instances for cutting hourly cloud cost.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06871",
+            "field": "abstract",
+            "quote": "This paper models a batch-processing workload that uses a mix of on-demand and preemptible instances as an M[X]/M/c queue with unreliable servers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her auto-scaling and workload-prediction work has been evaluated on private-cloud traces from the Science and Technology Park Novi Sad testbed, a context close to GenovaMed's Novi Sad operations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08603",
+            "field": "abstract",
+            "quote": "Evaluation is performed on four one-month traces collected from a private cloud operated at the Science and Technology Park Novi Sad testbed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has analytical tools for long-running workflow scheduling and checkpointing, useful for reasoning about stage bottlenecks, retries and recomputation in a Snakemake DAG.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06162",
+            "field": "abstract",
+            "quote": "Long-running scientific workflow tasks benefit from periodic checkpointing to limit recomputation after node failures, but frequent checkpointing imposes I/O overhead.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her research group focuses on stochastic modelling of distributed computing infrastructures, including task scheduling and auto-scaling under uncertain workloads.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "bio",
+            "quote": "Her research group focuses on stochastic modelling of distributed computing infrastructures, covering task-scheduling policies, auto-scaling mechanisms, and energy-aware resource allocation under uncertain workloads.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has declared openness to joint projects with companies on cloud resource optimisation and to contract research on performance modelling and capacity planning.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "open_to",
+            "quote": "joint projects with companies on cloud resource optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0785",
+            "field": "open_to",
+            "quote": "contract research on performance modelling and capacity planning",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Any optimisation must preserve the current star-allele call accuracy and remain inside the ISO 15189 accredited review process.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "without touching the clinical accuracy of the calls",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "about",
+            "quote": "Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The success criteria to test are compute cost below 3 EUR per sample and total run time under 90 minutes, treated as hypotheses rather than guarantees.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "A good outcome would be getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The existing Python/Snakemake pipeline is correct but unoptimised, so the work must begin with profiling rather than assuming alignment or star-allele calling are the bottlenecks.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We wrote the pipeline ourselves in Python using Snakemake, and it works correctly; the issue is that we have not optimised it for cost or speed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We think alignment and the star-allele calling step are the heavy consumers, but we are not certain.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "GenovaMed can provide access to its in-house sequencer, retained clinical samples under ethics approval, and a small discretionary R&D budget of about 8,000 EUR per year; data use must respect that ethics approval.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "access to the in-house sequencer, a set of retained clinical samples held under ethics approval, and a small discretionary R&D budget of approximately 8,000 EUR per year.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company team capacity is limited to roughly two days per week each for two bioinformaticians and two senior molecular biologists.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher reports capacity for one new collaboration under reduced administrative load, but actual availability is not confirmed in the participation record.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "notes",
+            "quote": "She is on a reduced administrative load in 2025–2026 due to her role as project PI and would be able to take on one new collaboration without difficulty.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: Đukić's models are validated on synthetic or public cloud traces and private web/container testbeds, not on a Snakemake bioinformatics sequencing pipeline; the first experiment must replay GenovaMed's actual workflow and compare predicted bottlenecks with measured timings.",
+      "Bottleneck uncertainty: GenovaMed believes alignment and star-allele calling are heavy but is not certain, so optimising the wrong stage could miss the cost and runtime targets.",
+      "Spot-instance use introduces preemption risk that may conflict with clinical turnaround and batch deadlines; Đukić's spot-market work uses synthetic price series, so real preemption and deadline data would be needed.",
+      "Clinical non-inferiority of star-allele calls after any pipeline change is not yet established and must be tested against the current validated calls.",
+      "The researcher's availability is listed as unknown in the participation record and must be confirmed before planning.",
+      "The company R&D budget of about 8,000 EUR per year and two days per week from key staff may be tight for profiling, replay experiments, and clinical concordance validation."
+    ],
+    "questions": [
+      "Can Sofija Đukić confirm her availability and preferred start date for one new joint project in 2025–2026, given that the participation record lists availability as unknown?",
+      "Can GenovaMed share anonymised production pipeline traces, cloud billing breakdowns, and a representative 24-sample batch for profiling and replay experiments?",
+      "What exact clinical validation criterion — sample set, concordance threshold, and clinical-pharmacist sign-off — will define 'without touching clinical accuracy'?",
+      "Which pipeline steps and cloud services may be changed, and what spot-instance interruption rate or deadline risk is acceptable for clinical batches?",
+      "What data governance and ethics approvals are required to use retained clinical samples and any shared logs outside GenovaMed's ISO 15189 environment?",
+      "Are the stated two days per week of team time and approximately 8,000 EUR per year R&D budget sufficient, or would additional budget or student time be needed?"
+    ],
+    "outcome": "pair",
+    "taskId": "C105-CH2",
+    "researcherId": "R0785",
+    "inputs": [
+      {
+        "artifactId": "business-C105-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C105-CH2-R0785",
+        "version": 1
+      }
+    ]
+  }
+}

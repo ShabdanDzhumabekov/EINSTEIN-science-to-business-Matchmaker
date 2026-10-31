@@ -1,0 +1,230 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0773",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0773",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Develop and test an unsupervised baseline-and-drift detector for Modbus/BACnet traffic that learns site-specific normal behaviour and raises explainable alerts; the first experiment will test whether SPC/change-point methods validated on sensor streams transfer to protocol-level traffic features without labelled attacks.",
+    "rationale": [
+      {
+        "text": "Ostojić has a directly relevant body of work on unsupervised and adaptive statistical monitoring for non-stationary industrial data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08489",
+            "field": "abstract",
+            "quote": "Special attention is given to the interaction between control-chart theory and machine-learning approaches, including isolation forest, autoencoders, and one-class SVMs as anomaly scorers whose output feeds threshold-based alarms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has methods for online change-point detection in multivariate non-stationary streams, matching the need to learn a site-specific normal baseline that drifts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08487",
+            "field": "abstract",
+            "quote": "This paper formulates a Bayesian online change-point detection model (BOCPD) extended to multivariate observations under a Normal-Inverse-Wishart conjugate prior.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work addresses calibration and threshold setting for one-class anomaly scores, which is central to controlling false alarms without labelled attacks.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08490",
+            "field": "abstract",
+            "quote": "Using a Platt-scaling calibration step and a bootstrap-based limit-setting procedure, the method achieves in-control ARLs within 5% of nominal across six simulated drift scenarios.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has explicitly studied drift monitoring and recalibration of deployed anomaly detectors, which is needed for long-lived OT appliances.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08494",
+            "field": "abstract",
+            "quote": "proposes a two-level monitoring architecture in which a primary anomaly detector (isolation forest trained offline) is supervised by a secondary drift monitor based on the Page–Hinkley test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The group has taken drift-robust anomaly scoring into embedded deployment, relevant to ProtoSense on-device inference.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0671",
+            "field": "summary",
+            "quote": "contributing drift-robust anomaly scoring modules certified to run on Cortex-M class microcontrollers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She is open to joint projects and contract research with companies on anomaly detection and SPC system design.",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "joint research projects with companies operating sensor-instrumented production equipment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "contract research on anomaly detection and SPC system design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her published work links nonlinear anomaly detection to interpretable run-rule and average-run-length guarantees, which supports explaining alerts to a plant manager.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08490",
+            "field": "abstract",
+            "quote": "enabling the combination of nonlinear pattern recognition with the interpretability of run rules and average-run-length guarantees.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The detector must work without labelled malicious traffic and must not rely on supervised classifiers trained on public ICS datasets.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "none of our clients has ever given us a packet capture that contains a confirmed attack.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration needs access to the client traffic archives and time-stamped operational data under NDA, because the researcher's group relies on real operational data.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0773",
+            "field": "notes",
+            "quote": "particularly interested in collaborators who can provide access to labelled or time-stamped operational data from real production systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The method must cover Modbus TCP and BACnet/IP traffic, not generic sensor streams.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language and must avoid the false-alarm problem that caused clients to disable alerts.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "flagged so many false positives in real deployments that clients started switching the alerts off.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Deployment must be lightweight on-device inference without affecting packet forwarding latency; the researcher can support only lightweight deployment of pre-trained models, not extensive embedded firmware development.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0773",
+            "field": "notes",
+            "quote": "She is not in a position to take on projects requiring extensive hardware integration or embedded firmware development beyond lightweight deployment of pre-trained models.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company can dedicate only one to two engineers part-time, so the project plan must fit limited engineering capacity.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      ". Transfer gap: Ostojić's empirical validations are on process/sensor time series, not Modbus/BACnet network traffic; the first experiment must test whether SPC/change-point features transfer to protocol traffic. Sources: SYN-PUB-08483.abstract quote \"simulated batch reactor (50 process variables, 1 000 batches) as well as on data collected from a plastics-extrusion line\"; SYN-PUB-08494.abstract quote \"air-compressor units at a manufacturing plant\".",
+      "No confirmed attacks means detection performance on real malicious Modbus/BACnet behaviour cannot be measured directly; evaluation will depend on synthetic, injected or maintenance-event proxies and may not generalise. Sources: C001-CH1.detail quotes \"if they were compromised they would not know\"; \"but we have nothing labelled as malicious\".",
+      "False-alarm tolerance is low because past supervised alerts were switched off; an unsupervised method may produce too many unexplained alerts in real sites. Source: C001-CH1.detail quote \"clients started switching the alerts off\".",
+      "Embedded integration risk: company firmware is C/Rust/Yocto and the researcher cannot take on extensive hardware/firmware work; a prototype may not reach ProtoSense without company engineering effort. Sources: C001.tech quotes \"Embedded Linux (custom Yocto build)\"; \"C and Rust for firmware components\"; R0773.notes quote about lightweight deployment only.",
+      "Researcher availability is unknown, and the company has only one engineer with six months of anomaly-detection reading and 1–2 part-time engineers, which may slow model development and evaluation. Sources: C001-CH1.detail quote \"we have one engineer who has been reading about anomaly detection for six months\"; C001.rd_capacity quote \"We can dedicate one to two engineers part-time to a collaborative project\"."
+    ],
+    "questions": [
+      "Can Prof. Ostojić confirm her availability and time commitment for a joint project, given that availability is currently unknown?",
+      "Would the company prefer a joint project or an industrial PhD track for one of its engineers, and is there a suitable candidate?",
+      "What NDA, client-consent and data-sharing terms apply to the traffic archives, and can the researcher access time-stamped captures from multiple sites?",
+      "Are there any maintenance logs, known incidents or operator annotations that can serve as retrospective validation events, even without confirmed attacks?",
+      "What are the deployment constraints on the planned fifth hardware variant: CPU/memory, allowed languages, inference latency budget and whether a Python/R prototype is acceptable before porting?",
+      "What false-alarm rate and alert-explainability format would plant managers and support staff accept?",
+      "Can the company provide hardware-in-the-loop PLC simulators and controlled Modbus/BACnet traffic for injecting synthetic anomalies?",
+      "Which Modbus/BACnet features or packet fields may be used, and are there privacy or regulatory limits on retaining or moving client traffic?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0773",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0773",
+        "version": 1
+      }
+    ]
+  }
+}

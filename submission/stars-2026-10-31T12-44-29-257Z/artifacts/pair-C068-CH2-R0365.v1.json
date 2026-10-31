@@ -1,0 +1,196 @@
+{
+  "ref": {
+    "artifactId": "pair-C068-CH2-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C068-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C068-CH2-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Which combinations of moisture conditioning, machine condition, print settings and specimen geometry explain layer-boundary fatigue failures in OrtoPrint's PA12 components, and can affordable process changes reproducibly move fatigue life toward the required 500,000 cycles? The first experiment would test whether Erić's steel-focused fatigue and fracture-analysis approach transfers to PA12 by reproducing the baseline under a verified loading protocol and comparing matched, replicated specimens with controlled conditioning and documented machine and build histories.",
+    "rationale": [
+      {
+        "text": "Erić brings experimental fatigue-testing experience relevant to investigating cyclic failure, although the documented specimens were welded steel rather than printed PA12.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04474",
+            "field": "abstract",
+            "quote": "A total of 32 specimens were cycled at total strain amplitudes of 0.25%, 0.50%, 0.75%, and 1.00% using a servo-hydraulic machine",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work includes fracture-surface examination to distinguish failure modes, supporting investigation beyond visual inspection of finished parts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04480",
+            "field": "abstract",
+            "quote": "Specimens failed either at the weld toe or in the weld metal, and failure locations were identified post-fracture by SEM.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience linking industrial loading records to fatigue assessments, relevant to structuring the analysis of production and test histories.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published work combines local finite-element stress analysis with experimental fatigue validation, providing a basis for investigating geometry-related stress concentrations without assuming the existing models apply to PA12.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00821",
+            "field": "abstract",
+            "quote": "Finite-element-based stress analysis provides local stress amplitudes at the hinge throat for each counted cycle.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00821",
+            "field": "abstract",
+            "quote": "Experimental fatigue tests were conducted on twelve specimens; predicted lives agreed with measured lives within a factor of 2.1 in all cases",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Validation must address the specified 500,000-cycle requirement at the relevant load and explicitly examine layer-boundary initiation; improved appearance or infill alone is not an acceptance criterion.",
+        "sources": [
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "The test protocol calls for 500,000 cycles at the relevant load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "the fractures almost always initiate at layer boundaries rather than in the bulk material.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The intervention must remain compatible with the existing four-machine PA12 FDM process and a modest budget, without relying on replacement printers.",
+        "sources": [
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "We print load-bearing components in PA12 nylon on four FDM machines",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "Budget is modest — we are not buying new machines — but we are open to process changes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Process-data analysis requires access to the existing job logs and fatigue results, with specimen-to-job linkage established before attributing failures to process variables.",
+        "sources": [
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "We keep print logs for every job — temperature, speed, layer height, humidity in the print room",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C068-CH2",
+            "field": "detail",
+            "quote": "We need someone to look at our process data and our test results and tell us what is actually driving the failures",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any production changes must be handled within the company's existing medical-device quality system; applicable revalidation obligations must be established before implementation.",
+        "sources": [
+          {
+            "recordId": "C068",
+            "field": "tech",
+            "quote": "ISO 13485-compliant quality management system",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Experimental workload must fit the company's limited development staffing and avoid assuming a dedicated full-time industrial research team.",
+        "sources": [
+          {
+            "recordId": "C068",
+            "field": "rd_capacity",
+            "quote": "We have two senior orthotists who contribute about 20% of their working time to product development and process improvement",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C068",
+            "field": "rd_capacity",
+            "quote": "supported by one mechanical technician who manages the print floor and test rig.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any extended university test campaign requires advance equipment scheduling.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest evidence concerns welded steels, not PA12 inter-layer bonding, moisture sensitivity or polymer fatigue. The initial replicated PA12 experiment must test the transfer before adopting fracture models or life-prediction assumptions; polymer-processing support may be necessary.",
+      "Existing parameter changes produced inconsistent outcomes. Uncontrolled filament condition, machine differences, geometry or test-rig effects could confound historical correlations and prevent causal diagnosis.",
+      "Reaching 500,000 cycles is unvalidated and may not be achievable through affordable process changes alone.",
+      "Researcher availability is unknown. Although joint-project participation is open, the stated interests emphasize steel structures, so commitment to this polymer-medtech scope remains unconfirmed.",
+      "The numerical budget, deadline, test throughput and applicable device revalidation requirements are unknown; these could prevent sufficient replication or delay production implementation."
+    ],
+    "questions": [
+      "Will Erić undertake a PA12-focused joint project, what time can he commit, and is a polymer additive-manufacturing collaborator needed?",
+      "What are the exact load waveform, amplitude, load ratio, frequency, fixture geometry, environment, failure definition and acceptance sampling requirements? When was the servo rig last calibrated?",
+      "Can each fatigue result and retained fracture specimen be linked to its CAD/build file, orientation, machine, filament lot, conditioning history and complete print log?",
+      "What PA12 grade is used, what drying procedure does its supplier specify, and are actual filament moisture, cabinet conditions and exposure between drying and printing measured?",
+      "Can the first campaign reproduce the baseline and compare controlled conditioning across matched specimens and machines, with enough replication to distinguish process effects from scatter?",
+      "What budget, deadline, specimen allowance and rig time are available, and which university characterization facilities can be scheduled within those limits?",
+      "Who approves process changes under the quality system, and what device-specific verification, revalidation and regulatory documentation will be required before release?"
+    ],
+    "outcome": "pair",
+    "taskId": "C068-CH2",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C068-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C068-CH2-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

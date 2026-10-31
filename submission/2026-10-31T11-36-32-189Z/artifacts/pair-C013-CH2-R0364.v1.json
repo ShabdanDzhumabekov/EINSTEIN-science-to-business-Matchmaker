@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0364",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0364",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware policy geolocation and spatial weather modelling identify hail-related underpricing more reliably than municipality-level loadings for Pannonia’s Vojvodina farm portfolio? The first experiment would test whether rainfall-based downscaling methods transfer to independently observed hail events, comparing spatial estimates and held-out loss predictions against municipality-level and unmodified five-kilometre-grid baselines before considering pricing integration.",
+    "rationale": [
+      {
+        "text": "Pejić has directly relevant experience developing field-scale weather-data pipelines for agricultural insurance in Vojvodina, providing a starting point rather than a validated hail solution.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0112",
+            "field": "summary",
+            "quote": "RAINFIELD developed and validated a production-grade geostatistical downscaling pipeline for converting coarse-resolution satellite precipitation products into field-scale (1 km) daily rainfall grids",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His research tests geostatistical downscaling against simpler interpolation baselines, including performance during spatially heterogeneous convective periods.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04461",
+            "field": "abstract",
+            "quote": "Leave-one-out cross-validation showed that KED reduced RMSE by 21% relative to ordinary kriging and by 34% relative to IDW, averaged across the study period.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04461",
+            "field": "abstract",
+            "quote": "Performance gains were most pronounced during spatially heterogeneous convective periods in June and July.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience designing independent field-level validation rather than treating finer grid spacing as proof of accuracy.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04465",
+            "field": "abstract",
+            "quote": "These measurements were withheld from the downscaling model and used exclusively for validation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work connects spatial weather products to insurance analysis, including historical payout simulations and reproducible analysis resources.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04014",
+            "field": "abstract",
+            "quote": "A burn analysis was performed for three parametric products—sowing-period deficit, flowering-period excess, and grain-filling deficit—for maize and sunflower across 1,214 cadastral municipalities.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04014",
+            "field": "abstract",
+            "quote": "The archive and analysis scripts are made publicly available.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The selected joint-project format matches his stated interest in spatial weather products for agricultural insurance.",
+        "sources": [
+          {
+            "recordId": "R0364",
+            "field": "open_to",
+            "quote": "joint projects on spatial weather data products for agri-insurance or precision agriculture",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level assignment requires resolving policy locations beyond settlement names, or explicitly retaining location uncertainty; geo-tagged claims alone must not be assumed to locate the entire insured portfolio.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The available daily, five-kilometre weather feed cannot be treated as validated field-level hail intensity. Any finer estimates require independent hail validation, not merely resampling or reliance on rainfall-validation results.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04465",
+            "field": "abstract",
+            "quote": "Validating precipitation downscaling products at the field level requires ground truth at sub-kilometre spacing, which standard meteorological networks cannot provide.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must respect the limited three-year, approximately 1,200-policy dataset, with storm- or year-held-out testing and uncertainty reporting rather than treating nearby claims from the same storm as independent evidence.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must support automated pricing input through the existing Python batch workflow, not stop at exploratory GIS maps.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Delivery must fit limited shared company capacity, with explicit ownership for integration and maintenance; a previous mapping prototype has not reached pricing integration.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "past_collaborations",
+            "quote": "which was completed but not yet integrated into the pricing system.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated methods concern rainfall accumulation and rainfall-deficit insurance, not hail intensity or indemnity property claims. Transfer may fail; independent hail-event validation must be the first experimental gate.",
+      "Daily five-kilometre inputs may not contain enough information to recover narrow, fast-moving hail footprints. Producing a finer grid could create false precision.",
+      "Settlement-level addresses may prevent defensible field-level attribution, and geo-tagged losses may not represent the spatial distribution of all insured exposure.",
+      "Three summers may contain too few independent hailstorms for stable pricing conclusions. The reported 18% excess could also reflect insured values, vulnerability, repair costs or claims handling rather than exposure alone.",
+      "Researcher availability, access rights to suitable hail observations and station data, budget, delivery dates and data-sharing conditions remain unknown.",
+      "Limited company implementation capacity could leave another research prototype outside the production pricing workflow."
+    ],
+    "questions": [
+      "What time can Pejić commit, when could the project start, and who would implement and maintain the pipeline on each side?",
+      "What budget, delivery window and acceptance criteria can the company support, including any purchase of observations or geocoding work?",
+      "Which independent hail observations are available, such as radar-derived hail products, verified event reports or hail sensors, and what are their coverage, timestamps and licensing conditions?",
+      "What variables does MeteoVoj actually supply, and does the agreement permit historical access, derived products and operational pricing use?",
+      "Can policy records be linked to cadastral parcels or insured-building coordinates, and how accurate are existing claim geotags?",
+      "Are complete historical exposure records available, including non-claiming policies, coverage periods, insured values, premiums, deductibles, crop or building characteristics, and cause-coded dated losses?",
+      "Can enough independent storms be identified for held-out evaluation, and what minimum improvement and uncertainty limits would justify proceeding beyond the pilot?",
+      "What privacy, security, actuarial review and regulatory requirements apply, and what interface must the quarterly pricing pipeline consume?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0364",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0364",
+        "version": 1
+      }
+    ]
+  }
+}

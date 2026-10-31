@@ -1,0 +1,200 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1015",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1015",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a site-specific, benign-trained anomaly detector for Modbus TCP and BACnet/IP flag behavioural drift in ArmaturaSec's unlabelled client traffic at a false-positive rate plant operators tolerate, while producing explanations a plant manager can understand and running on ProtoSense hardware? The first study would test whether the researcher's Modbus autoencoder transfers from its synthetic PLC testbed to real multi-site captures and to BACnet/IP.",
+    "rationale": [
+      {
+        "text": "Đukić has published an unsupervised anomaly-detection framework specifically for Modbus traffic.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10523",
+            "field": "abstract",
+            "quote": "This paper presents an unsupervised anomaly detection framework specifically designed for Modbus traffic analysis.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His Modbus framework operates without labelled attack data by scoring reconstruction error against learned normal patterns.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10523",
+            "field": "abstract",
+            "quote": "Anomalies are identified by measuring reconstruction error against learned normal patterns, without requiring labelled attack data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has threat-modelling experience for smart-building controllers, which is adjacent to ArmaturaSec's BACnet/IP building-automation context.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10524",
+            "field": "abstract",
+            "quote": "This paper applies a structured threat modelling methodology—adapted from STRIDE and augmented with ICS-specific threat categories—to a representative smart building controller architecture.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has compared SCADA intrusion-detection architectures and highlighted hybrid rules-plus-neural scoring as the best overall balance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10525",
+            "field": "abstract",
+            "quote": "hybrid architectures combining specification-based rules with neural anomaly scoring achieve the best overall balance",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has investigated lightweight recurrent models for on-device intrusion detection on constrained IoT devices.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10531",
+            "field": "abstract",
+            "quote": "truncated LSTM and GRU variants—on devices with fewer than 256 KB of RAM.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His University of Novi Sad team contributes ICS intrusion-detection algorithm design, threat modelling and evaluation methodology to the SECURE-ICS monitoring project.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0017",
+            "field": "summary",
+            "quote": "As academic partner, the University of Novi Sad team led by Professor Đukić contributes expertise in intrusion detection algorithm design, threat modelling for ICS environments, and evaluation methodology.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He is open to joint research projects with technology companies.",
+        "sources": [
+          {
+            "recordId": "R1015",
+            "field": "bio",
+            "quote": "He is open to supervising industrial PhD students and engaging in joint research projects with technology companies seeking expertise in operational technology security and advanced threat analysis.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must work without labelled attack examples; the company has zero examples of malicious traffic.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The detector must learn a site-specific normal baseline and flag behavioural drift from it.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on-device without affecting packet forwarding latency; the planned fifth hardware variant is intended to carry a dedicated security processor.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must use client traffic archives, the hardware bench and firmware codebase under NDA, with one to two company engineers part-time.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project, with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The joint work must be scheduled around SECURE-ICS, which runs 2023-2025.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0017",
+            "field": "summary",
+            "quote": "The project runs from 2023 to 2025 under the Innovation Fund programme.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      ">Transfer gap: the Modbus autoencoder evidence is from a synthetic PLC testbed, not from ArmaturaSec's real multi-site captures.",
+      "No direct BACnet/IP anomaly-detection evidence is present; the building-automation publication is threat modelling, not BACnet traffic detection.",
+      "False positives were severe enough in a previous supervised deployment that clients switched alerts off; the no-label drift detector may still be unacceptable in real plant operations.",
+      "On-device evidence is for microcontroller-class IoT devices, not ArmaturaSec's planned security processor or ProtoSense forwarding path; memory and latency need bench testing.",
+      "Researcher availability is unknown, and SECURE-ICS runs to 2025, so scheduling capacity may be limited.",
+      "Client captures are under NDA, so data access, training location and evaluation protocol may delay work."
+    ],
+    "questions": [
+      "Can Professor Đukić confirm his availability and capacity for a joint project, and how would it fit with SECURE-ICS?",
+      "What volume, site diversity and protocol-version coverage exist for BACnet/IP and Modbus captures in the archives?",
+      "What explanation format do plant managers and ProtoSense operators need, and who validates that explanations are understandable?",
+      "What compute, memory and latency budget applies to ProtoSense and the planned fifth hardware variant?",
+      "What NDA-compliant data-sharing and evaluation protocol will allow use of client captures without moving raw data off-site?",
+      "What no-label evaluation protocol is acceptable: bench red-team injections, held-out public attack traffic, expert review, or a combination?",
+      "How should per-site normal behaviour and drift thresholds be defined and updated over time?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1015",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1015",
+        "version": 1
+      }
+    ]
+  }
+}

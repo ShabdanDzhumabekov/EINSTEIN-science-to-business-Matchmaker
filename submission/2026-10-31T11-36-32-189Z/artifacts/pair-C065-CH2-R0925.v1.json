@@ -1,0 +1,184 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0925",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0925",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can product-description embeddings and category metadata, optionally combined with sparse purchase signals, produce more useful product-page recommendations than best-seller sorting for one Harmat client with only 500–2,000 transactions? The first experiment would test transfer from text retrieval to product recommendation by comparing content-based and lightweight hybrid methods against best-seller and category-based baselines using time-separated purchase data and a small, human-reviewed relevance set.",
+    "rationale": [
+      {
+        "text": "Petrović has demonstrated sentence-embedding development and comparative evaluation expertise relevant to testing semantic similarity between product descriptions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-09811",
+            "field": "abstract",
+            "quote": "we perform a systematic comparison of twelve sentence encoder variants",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-09811",
+            "field": "abstract",
+            "quote": "We release the benchmark, trained models, and evaluation toolkit.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His retrieval research provides experience comparing dense retrieval with lexical and multilingual baselines, useful for designing a controlled recommendation prototype rather than assuming embeddings will help.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-09805",
+            "field": "abstract",
+            "quote": "We fine-tune a bi-encoder retrieval model initialised from a Serbian transformer checkpoint and compare it against BM25, a multilingual DPR baseline, and a cross-encoder re-ranker.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His cross-script embedding work is relevant if the selected catalogue contains Serbian descriptions in both Latin and Cyrillic scripts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-09806",
+            "field": "abstract",
+            "quote": "This paper proposes a script-unified embedding approach that maps Latin-script and Cyrillic-script Serbian sentences to a shared vector space.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project is consistent with his stated participation preferences.",
+        "sources": [
+          {
+            "recordId": "R0925",
+            "field": "bio",
+            "quote": "He is open to industrial PhD supervision and joint research projects with companies seeking NLP solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The approach must work with the existing sparse transaction history rather than depend on collecting a substantially larger dataset.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Best-seller sorting must remain an explicit evaluation baseline, and the initial deliverable should be limited to a prototype for one client.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must use anonymised transaction and catalogue data under an agreed data-sharing arrangement; the actual fields and permitted uses need confirmation.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company-side implementation and review must fit roughly one developer-day per week.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The prototype integration should accommodate the company's existing e-commerce and deployment environment; available serving resources and latency limits remain to be established.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The supplied research demonstrates text similarity, retrieval and other NLP tasks, not transaction-sparse recommendation. Similar descriptions may identify substitutes rather than useful complementary purchases; the first experiment must explicitly test that transfer gap.",
+      "The strongest evidence concerns Serbian. Catalogue languages are unknown, and performance on Hungarian or Slovak product text is not established by the supplied material.",
+      "Sparse purchases and low traffic may make both offline estimates and online uplift inconclusive. Human relevance judgments can diagnose errors but cannot establish increased sales.",
+      "Catalogue description quality, category consistency, impression logging and historical inventory availability are unknown; missing information could undermine either content-based recommendations or unbiased evaluation.",
+      "Researcher availability, project duration, total budget and deployment resources are unknown. Limited company engineering capacity could delay integration even if offline results are promising."
+    ],
+    "questions": [
+      "Can Petrović confirm availability, proposed effort and a feasible timetable for a joint project, and what budget can Harmat commit?",
+      "Which client will supply the first dataset, and what are its catalogue size, languages, scripts, description coverage and category quality?",
+      "Do the anonymised exports retain order timestamps and line items, and are product-view, recommendation-impression, click and historical availability records accessible under the data-sharing agreement?",
+      "Should the widget recommend substitutes, complementary products or both? What relevance criteria, offline metrics and minimum commercially meaningful improvement over best-seller sorting should be agreed before testing?",
+      "Can the first experiment compare lexical/category matching, multilingual and Serbian embeddings where applicable, and a lightweight hybrid on time-separated data, with human review specifically checking whether semantic similarity transfers to useful recommendations?",
+      "What VPS resources, response-time limits, integration responsibilities, model licensing requirements and online testing window apply to the selected client?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0925",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0925",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "ref": {
+    "artifactId": "proposal-C026-CH3-R0658",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0658",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C026-CH3-R0658",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Groundwater monitoring and leachate containment at Zelena Petlja",
+    "facts": [
+      {
+        "text": "The company reports leachate seeping toward its boundary, a liner not designed for liquid retention, and an in-house leachate COD measurement of 3,400 mg/L. This is a company bench result, not a complete contaminant characterisation.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "we took leachate samples ourselves using our in-house bench: COD came back at 3,400 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports an inspectorate order following a February visit and identifies late June 2024 as the end of its 120-day period.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's hydrogeological sketch dates from 1993. It reports neither the extent of contamination nor seasonal groundwater-flow directions as known.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports no dedicated research budget and no laboratory beyond its basic leachate wet-chemistry bench.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kovač's group combines tracer experiments, piezometer networks and numerical flow modelling. Her published Danube model was calibrated against observed heads; its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty.",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "bio",
+            "quote": "combining field tracer experiments, multilevel piezometer networks, and numerical flow modelling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07454",
+            "field": "abstract",
+            "quote": "calibrated against 18 months of observed heads in 11 piezometers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07454",
+            "field": "abstract",
+            "quote": "Sensitivity analyses indicated that uncertainty in hydraulic conductivity of the alluvial gravel unit is the dominant source of prediction uncertainty.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kovač lists openness to joint project proposals on aquifer management. Her notes report limited capacity for large new commitments before mid-2025.",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "open_to",
+            "quote": "joint project proposals on water supply security and alluvial aquifer management",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0658",
+            "field": "notes",
+            "quote": "has limited capacity for large new commitments before mid-2025.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a useful joint project centred on hydrogeological characterisation rather than an immediate treatment solution. Participation remains conditional because Kovač's present availability is unknown.",
+      "Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer. Local stratigraphy, hydraulic properties and repeat groundwater levels would test that transfer; four wells and a short campaign may leave plume extent and seasonal reversals unresolved.",
+      "The supplied research does not establish municipal-leachate treatment or containment-design capability. A specialist would likely be needed, and neither natural attenuation nor inspectorate acceptance should be assumed."
+    ],
+    "proposedActions": [
+      "Propose a first investigation comparing the 1993-sketch interpretation with site-derived interpretations. The company would supply records, access and procurement; Kovač would lead interpretation if available. Survey four agreed wells, log strata, conduct slug tests, and sample leachate and groundwater using an agreed analytical suite, blanks and duplicates. Use initial levels for interpretation and a separate repeat round for verification, checking measurement independence. Measure head-prediction error, gradient uncertainty, hydraulic conductivity and contaminant concentrations. Select the best-supported interpretation using initial data; proposed technical go/no-go is verification head error within pre-agreed survey/model tolerances, gradients distinguishable from measurement uncertainty, and laboratory quality-control acceptance. Insufficient evidence means further investigation, not a pass. Regulatory go/no-go additionally requires four compliant wells installed and an acceptable remediation proposal submitted by the confirmed applicable deadline, with acceptance checked directly with the inspectorate.",
+      "Propose a mobilisation review in week one, layout and analytical-protocol review in week two, and an initial field-and-reporting phase over the following four weeks, subject to drilling access and procurement. First verify the historical order's current status; reject or revise this schedule if it cannot meet the applicable deadline. Agree construction standards, authorised sign-off and inspectorate review before drilling.",
+      "Prepare a funded, narrowly scoped work plan covering drilling, surveying, external analyses and additional personnel. Include specialist review of interim source containment and treatment options, with any treatment performance tested separately against agreed discharge or disposal criteria. Plan seasonal follow-up and possible additional wells or off-site investigation; do not describe the initial campaign as complete plume delineation."
+    ],
+    "questions": [
+      "Can the company provide the complete order and subsequent correspondence establishing the current deadline, four-well specifications, analytical requirements and remediation-acceptance process?",
+      "Can Kovač confirm present availability for this narrowly scoped joint project and identify who could lead urgent field mobilisation?",
+      "What funding and procurement arrangements could cover drilling, external laboratory work, monitoring and containment/treatment specialist support?",
+      "Can the company provide the 1993 sketch, permits, utility plans, storage and sampling records, quality-control information, and permissions for necessary on-site and boundary access?"
+    ],
+    "benefits": {
+      "company": "The first investigation could distinguish defensible monitoring locations from assumptions and identify evidence still needed for containment decisions and a regulatory submission.",
+      "researcher": "Subject to agreement and access, Kovač could test how alluvial-aquifer characterisation methods transfer to a waste-yard setting using new stratigraphic, hydraulic and water-quality observations."
+    },
+    "markdown": "# Groundwater monitoring and leachate containment at Zelena Petlja\n\n## Verified facts\n- The company reports leachate seeping toward its boundary, a liner not designed for liquid retention, and an in-house leachate COD measurement of 3,400 mg/L. This is a company bench result, not a complete contaminant characterisation. [F1]\n- The company reports an inspectorate order following a February visit and identifies late June 2024 as the end of its 120-day period. [F2]\n- The company's hydrogeological sketch dates from 1993. It reports neither the extent of contamination nor seasonal groundwater-flow directions as known. [F3]\n- The company reports no dedicated research budget and no laboratory beyond its basic leachate wet-chemistry bench. [F4]\n- Kovač's group combines tracer experiments, piezometer networks and numerical flow modelling. Her published Danube model was calibrated against observed heads; its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty. [F5]\n- Kovač lists openness to joint project proposals on aquifer management. Her notes report limited capacity for large new commitments before mid-2025. [F6]\n\n## Potential benefits\n- For the company: The first investigation could distinguish defensible monitoring locations from assumptions and identify evidence still needed for containment decisions and a regulatory submission.\n- For the researcher: Subject to agreement and access, Kovač could test how alluvial-aquifer characterisation methods transfer to a waste-yard setting using new stratigraphic, hydraulic and water-quality observations.\n\n## Our inference\n- This suggests a useful joint project centred on hydrogeological characterisation rather than an immediate treatment solution. Participation remains conditional because Kovač's present availability is unknown.\n- Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer. Local stratigraphy, hydraulic properties and repeat groundwater levels would test that transfer; four wells and a short campaign may leave plume extent and seasonal reversals unresolved.\n- The supplied research does not establish municipal-leachate treatment or containment-design capability. A specialist would likely be needed, and neither natural attenuation nor inspectorate acceptance should be assumed.\n\n## Proposed next steps\n- Propose a first investigation comparing the 1993-sketch interpretation with site-derived interpretations. The company would supply records, access and procurement; Kovač would lead interpretation if available. Survey four agreed wells, log strata, conduct slug tests, and sample leachate and groundwater using an agreed analytical suite, blanks and duplicates. Use initial levels for interpretation and a separate repeat round for verification, checking measurement independence. Measure head-prediction error, gradient uncertainty, hydraulic conductivity and contaminant concentrations. Select the best-supported interpretation using initial data; proposed technical go/no-go is verification head error within pre-agreed survey/model tolerances, gradients distinguishable from measurement uncertainty, and laboratory quality-control acceptance. Insufficient evidence means further investigation, not a pass. Regulatory go/no-go additionally requires four compliant wells installed and an acceptable remediation proposal submitted by the confirmed applicable deadline, with acceptance checked directly with the inspectorate.\n- Propose a mobilisation review in week one, layout and analytical-protocol review in week two, and an initial field-and-reporting phase over the following four weeks, subject to drilling access and procurement. First verify the historical order's current status; reject or revise this schedule if it cannot meet the applicable deadline. Agree construction standards, authorised sign-off and inspectorate review before drilling.\n- Prepare a funded, narrowly scoped work plan covering drilling, surveying, external analyses and additional personnel. Include specialist review of interim source containment and treatment options, with any treatment performance tested separately against agreed discharge or disposal criteria. Plan seasonal follow-up and possible additional wells or off-site investigation; do not describe the initial campaign as complete plume delineation.\n\n## Open questions\n- Can the company provide the complete order and subsequent correspondence establishing the current deadline, four-well specifications, analytical requirements and remediation-acceptance process?\n- Can Kovač confirm present availability for this narrowly scoped joint project and identify who could lead urgent field mobilisation?\n- What funding and procurement arrangements could cover drilling, external laboratory work, monitoring and containment/treatment specialist support?\n- Can the company provide the 1993 sketch, permits, utility plans, storage and sampling records, quality-control information, and permissions for necessary on-site and boundary access?",
+    "taskId": "C026-CH3",
+    "researcherId": "R0658",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0658",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C026-CH3-R0658",
+        "version": 1
+      }
+    ]
+  }
+}

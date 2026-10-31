@@ -1,0 +1,123 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0493",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0493",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can probabilistic geocoding and Bayesian small-area modelling, adapted from Vojvodina cancer-registry work, match Pannonia's farm policy locations, including settlement-only addresses, to field-level hail intensity estimates from MeteoVoj's five-kilometre grid and identify portfolio segments whose hail loading is too low? The first test would compare modelled field-level hail exposure against the three available claim years to see whether it explains the 18% loss-assumption gap.",
+    "rationale": [
+      {
+        "text": "Pejić's group specializes in incomplete and imprecise address geocoding for sub-municipal mapping in Vojvodina, which matches Pannonia's settlement-only farm-address problem.",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "bio",
+            "quote": "particularly addressing incomplete or imprecise address geocoding that limits reliable incidence mapping at sub-municipal level",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has developed Bayesian hierarchical models that explicitly handle partially geocoded records rather than discarding them.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04133",
+            "field": "abstract",
+            "quote": "This paper presents a Bayesian hierarchical Poisson model that treats the stratum of incompletely geocoded cases as a latent allocation problem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has compared geocoding strategies for Serbian residential addresses and quantified rural positional error, which is directly relevant to farm-location uncertainty.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05812",
+            "field": "abstract",
+            "quote": "The ensemble approach also produced positional accuracy estimates; median offset from field-verified coordinates was 148 m for urban addresses and 540 m for rural addresses.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built hierarchical multiple-imputation procedures for address data where only settlement or municipality is known.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05817",
+            "field": "abstract",
+            "quote": "This paper develops a sequential MI procedure that first draws a settlement conditional on municipality using population-weighted multinomial sampling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied spatial-scale sensitivity in Vojvodina and shown that rural estimates are especially scale-dependent, a key issue for field-level hail mapping.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05814",
+            "field": "abstract",
+            "quote": "Correlation between scale-specific estimates was 0.74 for urban areas and 0.52 for rural areas, indicating meaningful scale dependence in sparsely populated zones.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior experience adapting spatial smoothing methods to administrative claims data with incomplete address fields for a regional health insurance fund.",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "industry_experience",
+            "quote": "adapting registry-based spatial smoothing approaches to the fund's incomplete address fields",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Transfer gap: the cited models and geocoding work were developed for colorectal cancer registry data, not hail intensity or property insurance claims; the first experiment must test whether the same allocation and smoothing assumptions hold for farm hail losses.",
+      "The MeteoVoj grid is at five-kilometre resolution while Vojvodina hailstorms are described as narrow and fast-moving, so field-level hail intensity may not be identifiable without additional radar, station or damage data.",
+      "Many farm addresses are settlement-only, so geocoding uncertainty may remain large even with Pejić's methods; validation may be limited if field-verified coordinates are unavailable.",
+      "Researcher capacity is limited before mid-2027 according to his notes, and his availability is otherwise unknown.",
+      "Pannonia has no dedicated research unit and its pricing and IT teams split time between operational support and new product build, which could slow integration and data preparation.",
+      "Data-sharing, licensing and privacy arrangements for policy addresses and MeteoVoj grids are not evidenced and could block the work."
+    ],
+    "questions": [
+      "Can you confirm Prof. Pejić's availability and the earliest feasible start date, given the stated capacity limit before mid-2027?",
+      "What location fields exist for the ~1,200 farm policies: settlement centroids, cadastral parcels, farm boundaries, or coordinates for any subset?",
+      "Can Pannonia supply field-verified farm locations for validation, and if so, for how many policies and over which claim years?",
+      "What exactly does the MeteoVoj five-kilometre product contain for hail: radar-derived intensity, station interpolation, reanalysis, or modelled probability, and is historical data available for all three claim years?",
+      "Are there licensing or contractual restrictions on using MeteoVoj data and Pannonia policy/claims data in a joint research project?",
+      "What anonymisation and data-protection arrangements are required before policy addresses and claim records can be shared with the university team?",
+      "What is the target integration point: the Python batch scoring pipeline, QGIS/OpenStreetMap analysis, Power BI reporting, or the quarterly rating-factor refresh?",
+      "What would count as a successful first deliverable: a validated field-level hail exposure layer, a list of under-priced portfolio segments, or an automatic pricing-model feed?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0493",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0493",
+        "version": 1
+      }
+    ]
+  }
+}

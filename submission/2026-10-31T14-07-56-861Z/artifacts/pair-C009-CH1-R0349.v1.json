@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can Serbian morphological reduction combined with script-aware token canonicalization and query expansion reduce LinguaBot's useful-result miss rate from 18% toward its below-5% target while supporting vocabulary updates without full re-indexing? The first experiment would compare the current Elasticsearch pipeline with normalization and morphology ablations on held-out support queries, explicitly testing transfer to banking terminology, short queries and within-word script mixing, while measuring retrieval quality, latency and update effort.",
+    "rationale": [
+      {
+        "text": "His research directly examines how Serbian morphological reduction interacts with script normalization, providing a grounded starting point for testing pipeline order.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "U ovom radu ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has evaluated phoneme-based canonicalization for Serbian retrieval against script-specific baselines, addressing the company's cross-script mismatch problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "The phoneme-based canonical form reduced the out-of-vocabulary rate from 9.3% to 2.1% compared with a Latin-only baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His transliteration research offers a candidate strategy for exceptional tokens rather than relying solely on deterministic normalization.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01686",
+            "field": "abstract",
+            "quote": "The paper concludes that a cascaded system — deterministic rules followed by the neural model for detected exceptions — outperforms either component alone",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work includes incremental mixed-script indexing, relevant to investigating vocabulary and content updates, although it does not establish update compatibility with LinguaBot's existing index.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Kada tok vesti dolazi iz više izvora koji koriste različita pisma, inkrementalni indekser mora da normalizuje pismo svake pristigle stavke pre umetanja.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience integrating script normalization into company search systems as an add-on rather than replacing the entire system.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "Administrativni troškovi uvođenja bili su niski jer je modul integrisan kao dodatak bez izmene ostatka sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must address Serbian inflection and mixed scripts, including within-word mixing; cross-script normalization alone would leave part of the stated failure mechanism unresolved.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Integration must accommodate the existing Elasticsearch retrieval system and vocabulary updates without a full re-index; ongoing manual synonym-list maintenance is not an acceptable primary solution.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation must use the company's labelled support data and linguist validation, with an agreed definition of a useful result. The below-5% miss rate is a target to test, not an established outcome.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A testable prototype must fit the six-month window and approximately EUR 8,000 tooling/data-work budget; research fees, engineering effort and infrastructure coverage require clarification.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope the collaboration as a small research-led engagement: the researcher reports capacity for one smaller industrial contract or consultancy, not unrestricted software development.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Results on legal, news and benchmark collections do not validate performance on banking/telecom support queries or within-word script typos. The first experiment must test these transfer gaps separately.",
+      "More than half of the observed misses were attributed to morphology or script confusion, not all misses. Resolving these mechanisms alone may be insufficient to reach the below-5% target.",
+      "The researcher's company pilots still required terminology updates. Automatic adaptation without manual list maintenance or full re-indexing remains unvalidated, and changed canonical forms may be incompatible with existing indexed tokens.",
+      "Foreign loanwords, abbreviations, alphanumeric strings and proper nouns are documented normalization challenges; aggressive normalization or stemming could conflate distinct product terms and reduce precision.",
+      "Researcher start date and weekly availability remain unknown despite stated capacity for a small engagement. Company engineering allocation, production hardware, latency limits and full project funding are also unknown.",
+      "Permission to access and process bank/telecom query data, privacy controls and permitted external-service use are unknown and could delay evaluation or restrict implementation."
+    ],
+    "questions": [
+      "Can the researcher commit to the six-month window, and what start date, weekly effort and deliverables fit his existing commitments?",
+      "Does the EUR 8,000 cover only tooling and data work, or also research fees, infrastructure and engineering? Which company engineers and linguists will be allocated?",
+      "Can a de-identified query set, historical knowledge-base snapshots and relevance labels be accessed under client-approved terms? What restrictions apply to external APIs and model training?",
+      "How was 'no useful result' defined in the 12,000-query bank sample, and should the below-5% target apply to that bank, each client or pooled traffic?",
+      "Which Elasticsearch version, analyzers, index mappings and custom spaCy components are deployed? Does 'without a full re-index' also prohibit an initial migration or a small auxiliary index?",
+      "What latency, throughput, memory and infrastructure limits must the prototype meet, and what production-like environment is available for testing?",
+      "Can the first experiment reserve client- and time-separated test data, including new product terms, within-word mixed-script typos and exceptional tokens, with linguists judging both recovered answers and false matches?",
+      "What level of ongoing annotation or exception review counts as manageable maintenance, and who will own vocabulary updates and regression testing after the project?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

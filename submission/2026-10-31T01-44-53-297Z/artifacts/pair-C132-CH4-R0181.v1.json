@@ -1,0 +1,109 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0181",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0181",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How can a Serbian Cyrillic–Latin transliteration and normalization layer be placed in a PostgreSQL full-text-search pipeline — at index time, at query time, or both — so that mixed-script contract documents return correct hits without noticeably increasing response times?",
+    "rationale": [
+      {
+        "text": "Has a directly relevant Cyrillic–Latin normalisation and diacritic-robust comparison method for Serbian data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02346",
+            "field": "abstract",
+            "quote": "incorporating a rule-based Cyrillic–Latin normaliser, a diacritic-robust string distance metric derived from Jaro–Winkler",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Works with PostgreSQL and Python-based matching frameworks, matching the company stack.",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "bio",
+            "quote": "The group works with PostgreSQL, Python-based matching frameworks, and RDF triple stores",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Has led schema harmonisation and ontology-construction work in a cross-platform data-linkage project.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0673",
+            "field": "summary",
+            "quote": "Slađana Ranković led the work package on schema harmonisation and ontology construction",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Has applied industry consultancy experience integrating legacy system exports with an ERP platform.",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "industry_experience",
+            "quote": "provided consultancy to a regional logistics company during 2020–2021 on the integration of legacy warehouse management system exports with a new ERP platform",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Is open to joint research projects and contract research on data integration and data quality assessment.",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "open_to",
+            "quote": "joint research projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0181",
+            "field": "open_to",
+            "quote": "contract research on data integration and data quality assessment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "The Cyrillic–Latin normaliser was evaluated on voter-registration record pairs, not on PostgreSQL full-text search over contract documents; transfer to this task is unproven and should be the first experiment.",
+      "Dialect conventions create ambiguous transliteration cases that a rule-based normaliser may not resolve without a policy.",
+      "The six-week, one-engineer company capacity may be too short for robust mixed-script handling plus latency benchmarking.",
+      "Researcher availability is unknown and notes indicate moderate capacity, so scheduling and scope may fail.",
+      "No evidence in the researcher material shows prior implementation of transliteration inside PostgreSQL FTS or performance tuning for search latency.",
+      "Contract document access and anonymization for testing are not specified."
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0181",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0181",
+        "version": 1
+      }
+    ]
+  }
+}

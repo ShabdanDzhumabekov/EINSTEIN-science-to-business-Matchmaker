@@ -1,0 +1,111 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Select the best configuration on tuning data, then evaluate Modbus and BACnet separately using held-out client traffic and isolated-bench injections, including persistent anomalies and process changes.",
+        "sources": [],
+        "explanation": "“Best” has no selection criterion, so the design does not establish how configurations will be chosen without attack labels or how the selection will remain separate from held-out results. Add a brief prerequisite to freeze a label-free tuning objective, constraints and tie-break rule before held-out evaluation.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go targets are at least 80% of injected episodes detected within 60 seconds, a 95% upper confidence bound no greater than one false episode per observed site-day, and at least 80% correct plant-manager interpretation tasks.",
+        "sources": [],
+        "explanation": "Recall and comprehension can pass on small or favourable samples without a stated statistical acceptance rule; recall also lacks an injection-to-alert matching rule, and comprehension could pass trivial tasks without testing useful alert understanding. Make acceptance conditional on predefining injection matching and timing, representative interpretation tasks with a correctness rubric and denominator, and confidence-bound or equivalent evidence rules for both 80% targets separately by protocol.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec reports several terabytes of client captures collected over three years, but no confirmed malicious examples.” and “ArmaturaSec reports that excessive false positives caused clients to disable alerts and identifies plant managers as the audience for plain-language explanations.” Proposed next steps: “Train and calibrate without attack labels.” These identify the concrete need for site-specific Modbus/BACnet detection without attack-labelled training, with usable alerts rather than generic anomaly-detection accuracy."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec offers one to two part-time engineers.” Proposed next steps: “Train and calibrate without attack labels.”; “Require each protocol to pass separately, hardware-budget compliance and no forwarding-latency regression beyond an agreed measurement tolerance under representative load.”; “Propose six weeks after permissions and staffing confirmation”; and “Establish NDA, research-sharing permission and testbed agreements first; collection consent alone is insufficient.” Open questions: “Which appliance and security processor are available, and what CPU, memory, traffic-load and forwarding-latency budgets should govern acceptance?” These respect the available staffing, label-free training, on-device operation and access restrictions, making execution conditional on confirming resources and measurable hardware limits."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss's Modbus work estimates register-level timing, payload and command-sequence distributions. Her incremental modelling work reports planned process reconfiguration as a persistent anomaly episode.” and “Her Isolation Forest study reports a calibration risk: a tenfold contamination-estimate mismatch reduced average precision from 0.91 to 0.63.” Our inference: “BACnet behaviour, actual appliance contention and plant-manager understanding remain transfer gaps. Modbus/DNP3 results and previous processor measurements do not establish performance on ProtoSense.” These connect her documented methods to site baselines and guarded updates while retaining the reported calibration limitation and boundaries of protocol and hardware transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company's collaboration-access statement names its archives, hardware bench, firmware and an NDA. Kiss's testbed-access statement names a data-sharing agreement.” Proposed next steps: “Kiss would lead features, calibration and analysis; company engineers would support parsing, bench integration and operator review.” Open questions: “Can Kiss confirm availability for this joint project, and can both sides confirm staffing, funding and the proposed schedule?” These distinguish documented resources from proposed responsibilities and unconfirmed staffing commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Propose an initial comparison using separate training, tuning and held-out evaluation periods from client archives, checking temporal independence and operating-mode coverage.”; “Compare fixed rules, statistical site baselines and an incremental detector; vary contamination and update safeguards individually.”; and “Select the best configuration on tuning data, then evaluate Modbus and BACnet separately using held-out client traffic and isolated-bench injections, including persistent anomalies and process changes.” Inputs, comparators and separate evaluation are identified, but the rule defining the best configuration on unlabelled tuning data is missing."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Proposed go/no-go targets are at least 80% of injected episodes detected within 60 seconds, a 95% upper confidence bound no greater than one false episode per observed site-day, and at least 80% correct plant-manager interpretation tasks.”; “Require each protocol to pass separately”; “Propose merging alerts for the same site, asset and anomaly type separated by at most five minutes into one episode.”; and “Experts would review every episode; unresolved episodes count as false. Divide false episodes by fully monitored site-days, accounting for temporal clustering in confidence bounds.” The false-alert target has an event rule, reviewed numerator, exposure and confidence requirement, but recall lacks injection-to-alert matching and an uncertainty rule, while interpretation lacks a defined task population, correctness rubric and uncertainty rule."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “vary contamination and update safeguards individually.” Our inference: “Modbus/DNP3 results and previous processor measurements do not establish performance on ProtoSense.” Potential benefits: “The experiment could identify whether a site-specific detector offers manageable, understandable alerts on both protocols without compromising appliance operation, before a wider deployment commitment.” These frame the result as a conditional feasibility assessment rather than claiming that a particular component causes improvement or that bench detection establishes real-world attack coverage."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “The archives should be treated as presumed normal, not ground truth. Undetected compromise, maintenance and seasonality could distort baselines; adaptation could absorb persistent attacks unless operator-approved updates and rollback are tested.” and “BACnet behaviour, actual appliance contention and plant-manager understanding remain transfer gaps.” Verified facts: “a tenfold contamination-estimate mismatch reduced average precision from 0.91 to 0.63.” Open questions: “Do permissions cover research sharing and replay, and are representative BACnet captures, operating logs and safely reproducible scenarios available?” These identify contamination, drift, calibration, transfer and execution risks without presenting unresolved conditions as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “The proposal is conditional because Kiss's availability is unknown; openness to joint projects does not establish a time commitment.” Proposed next steps: “Propose six weeks after permissions and staffing confirmation”. Open questions: “Can Kiss confirm availability for this joint project, and can both sides confirm staffing, funding and the proposed schedule?” These keep proposed joint-project roles and timing conditional on actual agreement and availability."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could identify whether a site-specific detector offers manageable, understandable alerts on both protocols without compromising appliance operation, before a wider deployment commitment.” and “Subject to agreement and permissions, Kiss could test how calibration and guarded adaptation transfer to BACnet and heterogeneous client operations, using operational captures alongside controlled bench evidence.” Both benefits follow from the proposed feasibility experiment and are expressed as possibilities rather than guarantees."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.97,
+        0.69,
+        0.62,
+        0.94,
+        0.95,
+        0.96,
+        0.76
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

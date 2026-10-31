@@ -1,0 +1,245 @@
+{
+  "ref": {
+    "artifactId": "scholar-C026-CH3-R0658",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0658",
+    "name": "Ivona Kovač",
+    "faculty": "Faculty of Civil Engineering Subotica",
+    "department": "Department of Hydraulic Engineering",
+    "fields": [
+      "Hydraulic Engineering",
+      "Hydrogeology",
+      "Environmental Engineering"
+    ],
+    "keywords": [
+      "bank filtration",
+      "alluvial aquifer",
+      "groundwater–surface water interaction",
+      "regulated rivers",
+      "riverbank seepage",
+      "hyporheic zone",
+      "numerical groundwater modelling",
+      "tracer tests",
+      "Danube",
+      "water quality"
+    ],
+    "openTo": [
+      "contract research on groundwater monitoring and aquifer characterisation",
+      "consulting on bank filtration system assessment and travel time analysis",
+      "joint project proposals on water supply security and alluvial aquifer management",
+      "student internships for civil or environmental engineering students",
+      "equipment access for field hydraulic conductivity testing and piezometer installation"
+    ],
+    "bio": {
+      "recordId": "R0658",
+      "field": "bio",
+      "text": "Ivona Kovač earned her BSc and MSc in Civil Engineering at the Faculty of Civil Engineering Subotica, University of Novi Sad, graduating at MSc level in 2011. She completed her PhD at the same faculty in 2018, with a dissertation on bank filtration efficiency along the regulated Middle Danube reach. She has held a Research Associate position since 2019. Her group investigates hydraulic connectivity between the Danube, Tisa, and their adjacent alluvial aquifers, combining field tracer experiments, multilevel piezometer networks, and numerical flow modelling. She teaches undergraduate modules in groundwater hydraulics and river engineering. The group operates a field hydrogeology laboratory in Subotica equipped with portable multi-parameter sondes, slug-test apparatus, and data loggers for continuous head and temperature monitoring."
+    },
+    "industryExperience": {
+      "recordId": "R0658",
+      "field": "industry_experience",
+      "text": "Ivona Kovač provided a technical assessment of a proposed gravel extraction licence for a private aggregate company operating adjacent to a Danube bank filtration zone in 2020, with findings that directly influenced licence conditions. She has ongoing informal contact with the engineering department of a regional water utility regarding long-term monitoring protocol design."
+    },
+    "notes": {
+      "recordId": "R0658",
+      "field": "notes",
+      "text": "Kovač is currently in the active data-collection phase of the ALLUVTRACK project and has limited capacity for large new commitments before mid-2025. She is particularly interested in partnerships involving water treatment technology companies or environmental monitoring equipment providers that could bring instrumentation or co-funding to collaborative proposals."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07451",
+        "kind": "publication",
+        "title": "Hydraulic gradients and exchange fluxes along a channelized reach of the Middle Danube: a piezometer network study",
+        "body": {
+          "recordId": "SYN-PUB-07451",
+          "field": "abstract",
+          "text": "This study presents two years of continuous hydraulic head data collected from a 14-piezometer transect installed along a 3.2 km regulated section of the Middle Danube upstream of Novi Sad. Measurements were taken at 15-minute intervals using pressure transducers calibrated against manual readings. River stage fluctuations of up to 4.7 m induced clearly identifiable losing and gaining phases in the aquifer, with lag times ranging from 6 to 41 hours depending on distance from the riverbank and local sediment heterogeneity. Specific exchange fluxes were estimated using Darcy calculations based on measured hydraulic gradients and grain-size-derived hydraulic conductivity values between 8 × 10⁻⁴ and 3 × 10⁻³ m/s. Results show that the regulated embankments suppress lateral connectivity during average flow conditions but enhance it during flood recession. The dataset provides baseline exchange flux estimates for this reach that are suitable for calibrating regional groundwater models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07452",
+        "kind": "publication",
+        "title": "Temperature as a natural tracer of vertical seepage through streambed sediments: field evidence from the Tisa alluvial plain",
+        "body": {
+          "recordId": "SYN-PUB-07452",
+          "field": "abstract",
+          "text": "Vertical temperature profiles measured at seven streambed locations along a 9 km stretch of the Tisa River were used to quantify downward seepage fluxes during a prolonged low-flow period in summer 2012. Profiles were recorded with 1 cm resolution using a portable temperature lance at fortnightly intervals over 14 weeks. Flux magnitudes were derived by fitting analytical solutions for one-dimensional vertical heat transport to the observed temperature envelopes. Estimated downward fluxes ranged from 0.4 to 2.1 × 10⁻⁵ m/s, consistent with independent grain-size analyses of cored sediment samples. Spatial variability correlated strongly with the thickness of a fine-grained surface layer identified in cores, suggesting that clogging exerts primary control on seepage rates in this reach. The approach is low-cost and reproducible, making it suitable for baseline characterisation of ungauged alluvial systems in the Pannonian lowland."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07453",
+        "kind": "publication",
+        "title": "Clogging dynamics of a riverbank filtration site: observations over a four-year operational period",
+        "body": {
+          "recordId": "SYN-PUB-07453",
+          "field": "abstract",
+          "text": "A municipal bank filtration gallery on the left bank of the Danube near Bačka Palanka was monitored over 48 consecutive months to characterise changes in hydraulic conductivity and travel time between the river and abstraction wells located 55 m inland. Monthly slug tests conducted in three observation wells showed a statistically significant decline in hydraulic conductivity in the top 0.3 m of the aquifer, decreasing from a median of 2.1 × 10⁻³ m/s to 6.4 × 10⁻⁴ m/s over the study period, with partial seasonal recovery during high-discharge events. Particle-size analyses of sediment cores taken annually confirmed progressive accumulation of fine material in the uppermost layer. Fluorescent dye tracer experiments performed at the beginning and end of the period showed that median travel time from river to well increased from 18 to 34 days. These findings have direct implications for managing the pathogen attenuation capacity of the filtration system."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07454",
+        "kind": "publication",
+        "title": "MODFLOW-based simulation of bank filtration response to flood embankment realignment on the Danube floodplain",
+        "body": {
+          "recordId": "SYN-PUB-07454",
+          "field": "abstract",
+          "text": "This contribution describes a MODFLOW-NWT groundwater flow model built for a 12 km² domain on the right bank of the Danube near Apatin, calibrated against 18 months of observed heads in 11 piezometers. The model was used to evaluate three embankment realignment scenarios proposed within a floodplain restoration programme. Removing a 1.4 km section of the secondary embankment in scenario 3 increased calculated groundwater recharge from the river by 38% compared to the current configuration during the modelled median flood event. Scenario 1, involving only minor berm lowering, yielded a 9% increase. Simulated travel times from the river to existing abstraction points were shortened by 6 to 12 days under the most permissive scenario, which would require revision of wellhead protection zones. Sensitivity analyses indicated that uncertainty in hydraulic conductivity of the alluvial gravel unit is the dominant source of prediction uncertainty."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07455",
+        "kind": "publication",
+        "title": "Hydrochemical evolution of bank filtrate along a transect from the Danube to inland production wells",
+        "body": {
+          "recordId": "SYN-PUB-07455",
+          "field": "abstract",
+          "text": "Water samples collected monthly over one year at the Danube riverbank, at three observation wells positioned 20, 55, and 90 m from the river, and at two production wells were analysed for major ions, dissolved oxygen, dissolved organic carbon, nitrate, ammonium, iron, and manganese. The dataset encompasses 168 samples. A clear redox sequence was observed: oxic riverbank conditions transitioned to anoxic conditions by 20 m, accompanied by DOC reduction from a median of 4.8 mg/L at the bank to 1.1 mg/L at 90 m. Iron concentrations peaked at 55 m at a median of 1.4 mg/L, exceeding drinking water guidelines at this intermediate point. Principal component analysis identified two dominant hydrochemical gradients corresponding to an organic matter degradation axis and a dilution axis driven by seasonal river chemistry variability. Results suggest that aquifer residence time, rather than distance, is the controlling variable for iron mobilisation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07456",
+        "kind": "publication",
+        "title": "Effect of gravel extraction from an active floodplain on bank filtration travel times: a combined tracer and modelling approach",
+        "body": {
+          "recordId": "SYN-PUB-07456",
+          "field": "abstract",
+          "text": "Aggregate extraction from a licensed gravel pit located 80 m from the Danube bank created a hydraulic shortcut between the river and downstream abstraction wells documented by this investigation. Before and after tracer tests using sodium bromide were conducted across two extraction phases during 2019 and 2020. Pre-extraction breakthrough curves at the nearest well (150 m from the river) showed a median travel time of 22 days. After a 1.2 m deepening of the extraction pit, this decreased to 11 days, with peak bromide concentrations arriving 35% earlier. A particle-tracking analysis using the calibrated MODFLOW model confirmed that flow paths had been diverted through the pit, bypassing 40–60 m of filtration pathway. The findings were submitted to the relevant water management authority and informed a revision of the extraction licence conditions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07457",
+        "kind": "publication",
+        "title": "Seasonal variability of the hyporheic exchange zone thickness in a gravel-bed section of the Tisa River",
+        "body": {
+          "recordId": "SYN-PUB-07457",
+          "field": "abstract",
+          "text": "Hyporheic zone extent was characterised at four cross-sections of the Tisa River using vertical temperature gradient analysis and porewater electrical conductivity profiling over four seasons in 2021–2022. At each cross-section, a 1 m long drive-point sampler was deployed at 0.1 m depth increments to extract porewater for conductivity and dissolved oxygen measurement. The depth at which river water influence became undetectable ranged from 0.25 m during summer low flow to 0.65 m during spring snowmelt-driven high flow, with intermediate depths during autumn baseflow. Vertical Darcy flux estimates derived from paired temperature profiles ranged from −3.0 × 10⁻⁶ m/s (upwelling) to +8.5 × 10⁻⁶ m/s (downwelling). Temporal variability within seasons exceeded spatial variability across cross-sections, pointing to stage fluctuation as the primary driver of hyporheic exchange in this lowland reach. Data were deposited in the Serbian National Hydrological Data Repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07458",
+        "kind": "publication",
+        "title": "Long-term trends in riverbed hydraulic conductivity at a Danube bank filtration site: 1995–2023",
+        "body": {
+          "recordId": "SYN-PUB-07458",
+          "field": "abstract",
+          "text": "Slug test records from a monitoring network at a bank filtration facility near Novi Sad were compiled and reanalysed to assess multi-decadal changes in streambed and near-bank hydraulic conductivity. The dataset includes 312 slug tests performed in 8 wells between 1995 and 2023, supplemented by annual turbidity records from the river gauge station and engineering logs of periodic riverbed rehabilitation works. Analysis using the Bouwer-Rice method showed no statistically significant trend in wells located more than 30 m from the bank, while the two wells closest to the river exhibited a decreasing trend of approximately 15% per decade. Periods of accelerated conductivity decline corresponded with years of elevated suspended sediment load measured at the upstream gauge. Two rehabilitation events involving mechanical riverbed loosening temporarily restored conductivity to near-initial values. The record provides empirical evidence relevant to long-term operation planning for lowland bank filtration systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07459",
+        "kind": "publication",
+        "title": "Detecting non-stationarity in annual maximum rainfall series at selected stations in Vojvodina using Mann–Kendall and GAMLSS approaches",
+        "body": {
+          "recordId": "SYN-PUB-07459",
+          "field": "abstract",
+          "text": "Rainfall records from 14 synoptic and climatological stations across Vojvodina spanning 1961–2021 were examined for monotonic trends and distributional shifts in annual maximum 1-hour, 6-hour, and 24-hour totals. The Mann–Kendall test identified statistically significant upward trends (p < 0.05) in 1-hour maxima at six stations, predominantly in the northwestern part of the region. Generalised Additive Models for Location, Scale and Shape (GAMLSS) with a GEV response distribution and time as a covariate were then fitted to quantify changes in the location and scale parameters. At the Subotica station, the estimated 100-year return-period 1-hour rainfall increased by approximately 12% between the sub-period 1961–1990 and 1991–2021 when a time-varying location parameter was used rather than a stationary GEV fit. These results suggest that design intensities derived under stationarity assumptions may underestimate current and future extremes for Vojvodina, with direct implications for drainage infrastructure sizing. The findings are discussed in the context of available regional climate projections."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04164",
+        "kind": "publication",
+        "title": "Scour protection using riprap collars at bridge piers in gravel-bed streams: size criteria from flume tests",
+        "body": {
+          "recordId": "SYN-PUB-04164",
+          "field": "abstract",
+          "text": "Riprap collars placed around bridge piers are among the most common scour countermeasures, yet sizing criteria derived from sand-bed research may not transfer directly to gravel-bed conditions. This paper reports 52 flume experiments in which circular piers of diameter 0.05 m were protected by circular riprap collars of varying outer diameter (2–5 pier diameters) and stone size (D50 of 14–32 mm) at approach flow velocities of 0.40–0.75 m/s in a gravel bed with D50 of 9 mm. Collar performance was assessed by the degree to which equilibrium scour depth was reduced relative to unprotected pier conditions. A collar outer diameter of three pier diameters with stone D50 approximately 3.5 times the bed material D50 eliminated measureable scour in 44 out of 52 runs. Partial failure occurred in eight runs characterised by high Froude number and thinner collars. A design envelope based on the Shields parameter and collar geometry ratio is proposed. Results agree well with an independent dataset from a Slovak laboratory."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04165",
+        "kind": "publication",
+        "title": "Influence of skew angle on scour depth at single circular piers in gravel beds",
+        "body": {
+          "recordId": "SYN-PUB-04165",
+          "field": "abstract",
+          "text": "Bridge piers are frequently skewed relative to the approach flow direction due to geometric constraints, yet most scour prediction formulas assume alignment. This experimental study examines pier skew angles of 0°, 10°, 20°, and 30° for a circular pier of diameter 0.05 m in a 12 m × 0.8 m flume with a gravel bed of D50 equal to 10 mm. Thirty-two runs were conducted across four approach flow depths and two bulk velocities. Maximum scour depth, measured with the laser bed profiler, increased by 12%, 24%, and 41% relative to the aligned case at 10°, 20°, and 30° skew respectively. High-speed camera recordings of dye injections at the pier base confirm that skew displaces the horseshoe vortex laterally and creates a secondary scour hole on the downstream flank at angles above 20°. The skew correction factor recommended in existing bridge design standards underestimates observed depth increases for angles above 15° in gravel-bed conditions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04171",
+        "kind": "publication",
+        "title": "Vulnerability of road bridges to scour during extreme floods on Pannonian Plain tributaries: inspection data synthesis",
+        "body": {
+          "recordId": "SYN-PUB-04171",
+          "field": "abstract",
+          "text": "This paper synthesises post-flood inspection records from 73 road bridges on gravel-bed tributaries of the Tisa and Danube rivers in Vojvodina and the Bačka region, collected after flood events between 2006 and 2021. Inspection reports were obtained from the Roads Directorate of Serbia and municipal engineering departments. For each bridge, pier geometry, foundation depth, observed scour category (none, moderate, severe), and peak discharge estimates were recorded. Logistic regression analysis identifies relative pier width, foundation embedment depth below the theoretical scour line, and presence of woody debris in post-flood photographs as significant predictors of scour severity classification. Bridges with foundation embedment below 2.0 m over the HEC-18 predicted scour depth had a 64% probability of receiving a severe classification at peak flows exceeding a 50-year return period. The paper highlights data gaps in existing inspection programmes and proposes a standardised recording protocol for future surveys."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1643",
+        "kind": "project",
+        "title": "Bank Filtration as a Sustainable Drinking Water Source in the Pannonian Alluvial Zone under Changing Hydrological Conditions",
+        "body": {
+          "recordId": "SYN-PRJ-1643",
+          "field": "summary",
+          "text": "The project assessed the capacity of existing and potential bank filtration sites along the Danube and Tisa rivers in the cross-border region to provide reliable drinking water as river flow regimes shift. Ivona Kovač led the work package on field characterisation of exchange fluxes, coordinating monitoring campaigns at four sites. Partners collected comparable data on the Hungarian side. Joint modelling scenarios examined how projected low-flow periods of increased duration would affect travel times and filtrate quality. Outputs included a technical guideline document for municipal water operators and a shared data repository accessible to both national water authorities."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1644",
+        "kind": "project",
+        "title": "Quantifying Contaminant Transport Pathways through Alluvial Aquifers Adjacent to the Regulated Danube",
+        "body": {
+          "recordId": "SYN-PRJ-1644",
+          "field": "summary",
+          "text": "ALLUVTRACK focuses on identifying the dominant transport pathways through which dissolved contaminants migrating from industrial sites on the Danube floodplain reach drinking water abstraction points. The project combines multi-tracer experiments using fluorescent dyes and stable water isotopes with reactive transport modelling in FEFLOW. Field campaigns are conducted at two contrasting sites: a heavily regulated embankment reach near Novi Sad and a semi-natural reach downstream. The project will produce calibrated reactive transport model configurations and probabilistic estimates of contaminant breakthrough times that can be used directly by water utility operators for risk assessment. One PhD student and two MSc students are supported by the project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1642",
+        "kind": "project",
+        "title": "Vegetation resistance parameterisation for flood hazard assessment in Vojvodina lowland canals",
+        "body": {
+          "recordId": "SYN-PRJ-1642",
+          "field": "summary",
+          "text": "The project investigates how seasonal variation in aquatic and riparian vegetation affects flow resistance and flood inundation extent in the drainage canal network of Vojvodina. Field campaigns are conducted at six canal reaches during low- and high-growth seasons, measuring vegetation density, stem flexibility, and water surface profiles. Laboratory flume experiments replicate representative vegetation configurations and provide drag coefficient data for use in 2D shallow-water models. Nedić contributes to flume experiments and numerical model calibration. Results are intended to improve flood hazard maps used by the Provincial Water Directorate. The project team includes researchers from the Faculty of Civil Engineering Subotica and the Jaroslav Černi Water Institute."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1645",
+        "kind": "project",
+        "title": "Non-stationary Rainfall Design Standards for Urban Drainage Infrastructure in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-1645",
+          "field": "summary",
+          "text": "NORDRAIN brings together hydraulic engineers and hydrologists from two Serbian and two Hungarian institutions to revise urban drainage design guidelines for the Pannonian Plain, where trends in short-duration rainfall extremes have been documented but are not yet reflected in national technical regulations. The project collects sub-hourly rainfall data from an expanded monitoring network, performs regional frequency analysis under both stationary and non-stationary assumptions, and produces guidance documents for practitioners. Lidija Todić contributes to the Serbian data harmonisation task and to the SWMM-based case studies that underpin the revised design tables. Project outputs include a bilingual (Serbian–Hungarian) practitioner handbook and an open dataset of updated IDF curves."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "open_to",
+            "quote": "contract research on groundwater monitoring and aquifer characterisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0658",
+            "field": "open_to",
+            "quote": "joint project proposals on water supply security and alluvial aquifer management",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

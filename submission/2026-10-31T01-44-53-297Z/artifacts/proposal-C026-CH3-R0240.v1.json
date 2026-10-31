@@ -1,0 +1,183 @@
+{
+  "ref": {
+    "artifactId": "proposal-C026-CH3-R0240",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0240",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C026-CH3-R0240",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Leachate flow and monitoring network for Zelena Petlja’s temporary storage yard",
+    "facts": [
+      {
+        "text": "The Subotica Environmental Inspectorate ordered four groundwater monitoring wells installed and a remediation proposal submitted within 120 days, with the deadline in late June 2024.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Only a 1993 hydrogeological sketch exists, and the company does not know the contamination extent or seasonal groundwater-flow direction.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company needs a leachate containment and treatment proposal acceptable to the inspectorate, not only a monitoring exercise.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "draft a leachate containment and treatment proposal that the inspectorate will accept",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The yard liner was never designed for liquid retention, and the company’s own COD sample was 3,400 mg/L, well above the threshold that triggers a formal response.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher’s industry experience includes advising on site characterisation methodology and monitoring network design.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "industry_experience",
+            "quote": "advising on site characterisation methodology and monitoring network design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His field work includes a dense multi-level piezometer network and particle-tracking transport simulation at a production well field.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03043",
+            "field": "abstract",
+            "quote": "a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "MT3DMS particle tracking indicated median travel times of 18–42 days at the production well field",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He is open to joint projects with companies in environmental monitoring and to contract research on site-specific hydrogeological assessment.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "joint projects with companies working on water supply, environmental monitoring, or geospatial data services",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "contract research on site-specific hydrogeological assessment or recharge studies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The documented field sites are bank-filtration, agricultural-recharge and canal settings, not waste-yard leachate; this suggests the monitoring and modelling methods are likely transferable in principle but must be tested here before being relied on for the inspectorate proposal.",
+      "The researcher’s availability in spring 2024 is recorded as unknown, so the schedule and this joint project are conditional on early confirmation.",
+      "The 3,400 mg/L COD comes from the company’s bench, so the inspectorate may require accredited confirmation; the first sampling should pair bench measurements with an external laboratory check."
+    ],
+    "proposedActions": [
+      "First experiment (weeks 1–6): use the 1993 sketch, yard records and the company’s 3,400 mg/L COD result as baseline. Before final well siting, the researcher proposes a short transect of four temporary shallow piezometers across the eastern fence line; the company provides yard history, liner details and bench COD/heavy-metal data. Measure hydraulic head, depth to water, COD and specific conductance at each point, then repeat once after a rainfall/recharge event, changing one suspected factor—groundwater level—while holding locations fixed. Go/no-go: proceed to final four-well design and containment options only if a consistent hydraulic gradient and COD decrease away from the yard are observed; if gradients contradict the sketch or the plume misses the transect, re-site before drilling; if boundary COD stays above the trigger threshold, containment must be in the proposal. Success would be a defensible flow-direction estimate from two rounds.",
+      "Proposed timeline: weeks 1–2 data review and regulator requirements; weeks 3–6 reconnaissance; weeks 7–12 final four-well installation and two sampling rounds; weeks 13–17 draft containment/treatment proposal. Proposed success criteria: a flow-direction estimate, a COD plume bounded at the yard boundary with at least one downgradient well, and an inspectorate-ready proposal.",
+      "After the first field results, the researcher would draft containment and treatment options; the company would supply cost and site-operation constraints. This is a proposal for negotiation, not an agreed design or budget.",
+      "Before drilling, agree in writing who funds drilling, permits and accredited laboratory analyses; the company’s material shows no dedicated research budget, so external funding or cost-sharing is a precondition, not a commitment."
+    ],
+    "questions": [
+      "Can the researcher confirm availability to start field work within the 120-day window in spring 2024, since availability is recorded as unknown?",
+      "Who will carry out and fund drilling and installation of the four wells, and which permits are required?",
+      "What site information exists beyond the 1993 sketch: depth to water table, liner details, existing boreholes, and nearby production or monitoring wells?",
+      "Which parameters and analytical standards will the Subotica Environmental Inspectorate require, and is an accredited laboratory available for confirmatory analyses?",
+      "What waste types and volumes were stored in the yard over twelve years, and were hazardous items present that could change leachate composition?"
+    ],
+    "markdown": "# Leachate flow and monitoring network for Zelena Petlja’s temporary storage yard\n\n## Verified facts\n- The Subotica Environmental Inspectorate ordered four groundwater monitoring wells installed and a remediation proposal submitted within 120 days, with the deadline in late June 2024. [F1]\n- Only a 1993 hydrogeological sketch exists, and the company does not know the contamination extent or seasonal groundwater-flow direction. [F2]\n- The company needs a leachate containment and treatment proposal acceptable to the inspectorate, not only a monitoring exercise. [F3]\n- The yard liner was never designed for liquid retention, and the company’s own COD sample was 3,400 mg/L, well above the threshold that triggers a formal response. [F4]\n- The company reports no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring. [F5]\n- The researcher’s industry experience includes advising on site characterisation methodology and monitoring network design. [F6]\n- His field work includes a dense multi-level piezometer network and particle-tracking transport simulation at a production well field. [F7]\n- He is open to joint projects with companies in environmental monitoring and to contract research on site-specific hydrogeological assessment. [F8]\n\n## Our inference\n- The documented field sites are bank-filtration, agricultural-recharge and canal settings, not waste-yard leachate; this suggests the monitoring and modelling methods are likely transferable in principle but must be tested here before being relied on for the inspectorate proposal.\n- The researcher’s availability in spring 2024 is recorded as unknown, so the schedule and this joint project are conditional on early confirmation.\n- The 3,400 mg/L COD comes from the company’s bench, so the inspectorate may require accredited confirmation; the first sampling should pair bench measurements with an external laboratory check.\n\n## Proposed next steps\n- First experiment (weeks 1–6): use the 1993 sketch, yard records and the company’s 3,400 mg/L COD result as baseline. Before final well siting, the researcher proposes a short transect of four temporary shallow piezometers across the eastern fence line; the company provides yard history, liner details and bench COD/heavy-metal data. Measure hydraulic head, depth to water, COD and specific conductance at each point, then repeat once after a rainfall/recharge event, changing one suspected factor—groundwater level—while holding locations fixed. Go/no-go: proceed to final four-well design and containment options only if a consistent hydraulic gradient and COD decrease away from the yard are observed; if gradients contradict the sketch or the plume misses the transect, re-site before drilling; if boundary COD stays above the trigger threshold, containment must be in the proposal. Success would be a defensible flow-direction estimate from two rounds.\n- Proposed timeline: weeks 1–2 data review and regulator requirements; weeks 3–6 reconnaissance; weeks 7–12 final four-well installation and two sampling rounds; weeks 13–17 draft containment/treatment proposal. Proposed success criteria: a flow-direction estimate, a COD plume bounded at the yard boundary with at least one downgradient well, and an inspectorate-ready proposal.\n- After the first field results, the researcher would draft containment and treatment options; the company would supply cost and site-operation constraints. This is a proposal for negotiation, not an agreed design or budget.\n- Before drilling, agree in writing who funds drilling, permits and accredited laboratory analyses; the company’s material shows no dedicated research budget, so external funding or cost-sharing is a precondition, not a commitment.\n\n## Open questions\n- Can the researcher confirm availability to start field work within the 120-day window in spring 2024, since availability is recorded as unknown?\n- Who will carry out and fund drilling and installation of the four wells, and which permits are required?\n- What site information exists beyond the 1993 sketch: depth to water table, liner details, existing boreholes, and nearby production or monitoring wells?\n- Which parameters and analytical standards will the Subotica Environmental Inspectorate require, and is an accredited laboratory available for confirmatory analyses?\n- What waste types and volumes were stored in the yard over twelve years, and were hazardous items present that could change leachate composition?",
+    "taskId": "C026-CH3",
+    "researcherId": "R0240",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0240",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C026-CH3-R0240",
+        "version": 1
+      }
+    ]
+  }
+}

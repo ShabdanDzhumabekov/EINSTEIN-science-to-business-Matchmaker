@@ -1,0 +1,40 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0349",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Baseline: the current Elasticsearch setup with its Croatian-oriented stemmer and no script normalization.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have tried adding synonym lists and a simple script-normalisation step, but maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The original challenge says the company has tried adding synonym lists and a simple script-normalisation step; it does not say the current baseline has no script normalization. Presenting 'no script normalization' as the current baseline risks comparing against an artificially weak system. The baseline should reflect the actual current analyzer chain, or the no-normalization condition should be labelled as a separate ablation.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

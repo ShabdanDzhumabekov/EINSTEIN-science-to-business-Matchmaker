@@ -1,0 +1,213 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0261",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0261",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a Bayesian/extreme-value spatial model link Pannonia's settlement-level farm policies and MeteoVoj daily 5-km grids to field-level hail intensity estimates, and then test whether those estimates explain the 18% claims excess and identify underpriced portfolio segments? The first experiment would validate the transferred model on held-out claim years and compare it against municipality-level hail loadings.",
+    "rationale": [
+      {
+        "text": "Struhár is open to joint projects and contract research on probabilistic risk and pricing models.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "open_to",
+            "quote": "joint projects with companies generating high-frequency sensor or telematics data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0261",
+            "field": "open_to",
+            "quote": "contract research on probabilistic risk and pricing models",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has spatial extreme-value modelling experience with max-stable processes, which is relevant to testing field-level hail intensity surfaces and spatial dependence.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03298",
+            "field": "abstract",
+            "quote": "A spatial analysis using a max-stable process model reveals a correlation range of approximately 2.1 km",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built credibility-weighted actuarial pricing models and measured claim-cost prediction gains, relevant to identifying mispriced portfolio segments.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03299",
+            "field": "abstract",
+            "quote": "The credibility-weighted premium estimator reduced the mean squared prediction error of claim costs by 14.2%",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He leads probabilistic modelling and uncertainty quantification in a Pannonian precision-agriculture network across 28 farms, giving familiarity with Vojvodina farm settings and sparse environmental data.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0101",
+            "field": "summary",
+            "quote": "Struhár leads the work package on probabilistic modelling and uncertainty quantification, contributing Gaussian process and Bayesian hierarchical methods tailored to irregular and energy-constrained sampling schedules",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0101",
+            "field": "summary",
+            "quote": "deploys sensor networks across 28 partner farms and two experimental stations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior consulting experience with a regional property insurer on sensor-based premium adjustment and regulatory documentation.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "industry_experience",
+            "quote": "provided statistical consulting to a regional property insurer on the design of a sensor-based premium adjustment scheme for commercial fire risk",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level matching must handle settlement-only policy addresses and daily 5-km weather grids, because hailstorms are narrow and fast-moving.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "Vojvodina hailstorms are narrow and fast-moving",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The method must be automated into the quarterly pricing pipeline, not left as manual QGIS analysis.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Only three claim years for about 1,200 farm policies are available, so rare-hail validation will be limited.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "three full claim years with geo-tagged loss data for about 1,200 farm policies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Model features and quarterly updates must satisfy Serbian/EU insurance law and be interpretable to regulators.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03299",
+            "field": "abstract",
+            "quote": "discusses regulatory constraints on feature selection under Serbian and EU insurance law",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03303",
+            "field": "abstract",
+            "quote": "regulatory interpretability requirements",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has no dedicated research unit; delivery depends on a small pricing team with operational duties.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit; applied development work is carried out by a four-person pricing team",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A formal data-sharing agreement is required before policy or claim data can be used.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "notes",
+            "quote": "prefers collaborations where data-sharing agreements can be established formally; his department has a standard template for this",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The spatial extreme-value evidence comes from water-distribution pressure spikes, not hail; the 2.1 km correlation range may not transfer to hail swaths.",
+      "Settlement-level addresses and daily 5-km grids may be too coarse for narrow hailstorms, so geocoding and interpolation uncertainty could dominate the claimed field-level signal.",
+      "The researcher's availability for a joint project is unknown; his notes only state capacity for one further industrial PhD candidate from 2025–2026.",
+      "Pannonia has no dedicated research unit and its pricing/IT staff split time with operations, so model integration and iterative validation could stall.",
+      "Three claim years and about 1,200 farm policies may not support robust out-of-sample validation of rare hail events.",
+      "Regulatory interpretability and feature-selection constraints may limit the use of complex spatial or Bayesian models in pricing."
+    ],
+    "questions": [
+      "Should this be a joint project or an industrial PhD, and what is the researcher's actual availability and start date?",
+      "Can Pannonia provide a geocoded subset of farm policies, and what geocoding precision can be achieved for the remaining settlement-level addresses?",
+      "Can MeteoVoj provide historical daily 5-km grids for all three claim years, plus any radar, hail-swath or higher-resolution data under a research licence?",
+      "Which pricing model, rating factors and integration points should the method connect to: the Python batch scoring pipeline, PostgreSQL warehouse, or Guidewire?",
+      "What regulatory documentation and interpretability tests are required before a new hail factor can enter pricing?",
+      "What anonymisation/security rules, data-sharing template and ownership terms will apply to derived hail intensity surfaces?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0261",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0261",
+        "version": 1
+      }
+    ]
+  }
+}

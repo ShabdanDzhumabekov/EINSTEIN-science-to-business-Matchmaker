@@ -1,0 +1,186 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can Serbian-specific lemmatization, within-token script normalization and paradigm-aware retrieval reduce LinguaBot’s no-useful-result rate toward its below-5% target while supporting new vocabulary without full re-indexing? The first experiment would compare these components against the current Elasticsearch baseline on held-out support queries, testing transfer to banking and telecom terminology, mixed-script typos, retrieval precision and vocabulary-update costs.",
+    "rationale": [
+      {
+        "text": "Nikolić’s work directly addresses Serbian lemmatization across Cyrillic and Latin scripts using a hybrid approach.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "This paper presents a rule-based and machine-learning hybrid lemmatizer designed specifically for Serbian, a morphologically rich language written in two scripts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her retrieval research compares the principal alternatives relevant to LinguaBot’s morphological mismatch problem, providing a basis for experimental method selection.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "The paper evaluates three mitigation strategies — stemming, full lemmatization, and paradigm-based query expansion — comparing their precision and recall",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her cross-script tokenization work addresses script boundaries inside tokens, directly relevant to LinguaBot’s within-word script mixing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her corpus-driven paradigm induction offers a candidate approach to extending vocabulary coverage with less manual lexicon construction.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03592",
+            "field": "abstract",
+            "quote": "candidate lemmas are identified through lemmatisation, and their full inflectional paradigms are hypothesised by a rule engine and then validated against corpus evidence.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her evaluation of spelling-normalization methods provides evidence for choosing between precision-oriented lookup rules and approaches intended to generalize to unfamiliar borrowings.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must work with the existing Elasticsearch retrieval setup and address Serbian morphology and mixed-script input rather than relying solely on Croatian stemming.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Vocabulary updates must avoid full re-indexing and must not depend on continually expanding manually maintained synonym lists.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A testable prototype must fit the six-month window and approximately EUR 8,000 tooling/data-work budget; researcher compensation and other project costs remain to be clarified.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation must measure no-useful-result rate and ongoing maintenance effort; below 5% is the company's target, not an established result.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must establish usable access to the stated labelled data and schedule linguistic validation rather than assume unlimited annotation capacity.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The published evaluations concern reference corpora, social media and a separate retrieval collection—not LinguaBot’s support retrieval. The first experiment must test this domain and task transfer, especially product terminology and within-word script typos.",
+      "Lemmatization or expansion can merge distinct meanings or retrieve irrelevant documents. Better token-level accuracy does not establish a lower no-useful-result rate or preserved retrieval precision.",
+      "Borrowing coverage is a specific weakness: the morphological lexicon study reports 78.6% paradigm correctness for borrowings versus 91.3% for common vocabulary. New product names may therefore require substantial validation.",
+      "The evidence does not establish that the published methods support incremental Elasticsearch updates without full re-indexing; an architecture feasibility test is needed early.",
+      "Researcher availability and committed company engineering and annotation time are unknown. The tooling/data budget does not establish the total collaboration budget.",
+      "Client-data access permissions, privacy requirements, deployment resources and commercial reuse terms for candidate resources remain unconfirmed and could restrict experimentation."
+    ],
+    "questions": [
+      "Can Nikolić commit to a six-month joint project, and what researcher time, company engineering time and linguist hours can be reserved?",
+      "Can the team access appropriately protected query-response data, relevant knowledge-base documents and query logs under each client's permissions? What anonymization, retention and external-service restrictions apply?",
+      "How was 'no useful result' labelled, and can the 12,000-query baseline sample be reproduced? How do miss rates vary by client, morphology, script mixing and new terminology?",
+      "Can the first experiment use client-separated and time-held-out support queries, with dedicated within-word script-mixing and unseen-vocabulary subsets, to compare the baseline, lemmatization, normalization and paradigm expansion while checking false matches?",
+      "What Elasticsearch version, mappings and analyzers are deployed, and does the no-full-re-index requirement permit an initial migration, auxiliary lexicon or query-time expansion?",
+      "What latency, throughput, hardware and deployment limits apply, and how should vocabulary-update cost and maintenance effort be measured?",
+      "Which published tools, models and lexicons are available in usable versions, and do their exact licences permit the intended commercial deployment?",
+      "Does the EUR 8,000 cover only tooling and data work, or also research and integration? Who will own and maintain the resulting components?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0288",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

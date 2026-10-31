@@ -1,0 +1,178 @@
+{
+  "ref": {
+    "artifactId": "proposal-C086-CH1-R0503",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C086-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C086-CH1-R0503",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C086-CH1-R0503",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Joint project: a tested post-quantum migration path for KL-HSM",
+    "facts": [
+      {
+        "text": "Kriptolog describes constrained KL-HSM flash and RAM, ruling out an assumed drop-in replacement. Its cryptographic firmware uses C on ARM Cortex-M; feasibility therefore concerns the actual product configuration.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has not adapted its architecture for larger keys or different signature flows. It wants a roadmap identifying supporting firmware versions, performance trade-offs and hybrid classical/post-quantum transition behaviour.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "we have not touched the firmware architecture to accommodate larger key material or different signature flows.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "which firmware version will support post-quantum algorithms, what the performance trade-offs are, and how hybrid classical/post-quantum operation will work during transition.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kriptolog seeks a documented roadmap and at least one working integration proof of concept inside twelve months. Its collaborative engineering capacity is modest and depends on a well-defined, practically applicable scope.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company lists PKCS#11 integration and a Common Criteria EAL4+ target. Architecture changes need assessment against these interfaces and evaluation requirements; a research prototype is not certification.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "Common Criteria evaluation methodology (targeting EAL4+)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić prefers real-hardware collaboration with measurable deliverables. If an SLE97 route is explored, her laboratory has only two evaluation kits; her notes identify additional partner hardware as helpful.",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić’s work implements Dilithium and Falcon signatures in C. Her separate Dilithium study reports compiler-dependent timing leakage, making optimisation-related leakage a concrete risk rather than assuming constant-time source code suffices.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "We implement the NIST post-quantum signature finalists CRYSTALS-Dilithium (security levels 2 and 3) and Falcon-512 in C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05922",
+            "field": "abstract",
+            "quote": "Leakage detection using Welch's t-test and TVLA methodology crosses the threshold of |t| = 4.5 in three of eight compiler/architecture combinations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her published hybrid HSM uses classical ECDH and FPGA-assisted Kyber key encapsulation. That evidence concerns key exchange, not hybrid firmware signing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05920",
+            "field": "abstract",
+            "quote": "The HSM combines an Infineon SLE97 secure microcontroller for classical ECDH key agreement with a separate FPGA fabric (Lattice iCE40UP5K) dedicated to Kyber-768 key encapsulation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a practical joint project combining target-specific benchmarking with migration design. Finalist-era Dilithium measurements do not validate standardised ML-DSA on KL-HSM, and hybrid key-exchange results do not establish hybrid signing; both transfers need direct testing.",
+      "Joint-project participation is open, but Nikolić’s current availability is unknown. This proposal is conditional on confirming her capacity and agreeing company staffing, hardware access and scope."
+    ],
+    "proposedActions": [
+      "Propose a six-week first experiment on one agreed KL-HSM configuration using production tooling and non-production keys. Kriptolog would supply hardware, firmware support and representative signing workloads; Nikolić would lead porting and measurement. Compare existing RSA/ECDSA signing, standardised ML-DSA and end-to-end hybrid signing/verification. Use known-answer tests and separate tuning/evaluation message sets, checking their independence. Measure correctness, peak RAM, flash, signing latency, throughput, signature/key storage, verifier compatibility and timing leakage. Before testing, negotiate numerical resource/performance limits and a leakage-screening protocol. Go/no-go should assess the best tested configuration against those limits, zero correctness failures, agreed hybrid acceptance/downgrade tests, PKCS#11 compatibility and certification-impact review—not require one method to beat another. Continuation should also require a credible, staffed path to a working integration and an approved versioned roadmap within twelve months, covering larger keys, changed flows and measured trade-offs.",
+      "If the initial gate passes, propose staged integration and regression testing through the twelve-month window. Draft the roadmap alongside implementation, distinguishing experimental support, production-readiness work and certification milestones. Recheck timing and memory after toolchain changes; plan separate side-channel and fault-injection work because initial timing screening cannot establish complete implementation security."
+    ],
+    "questions": [
+      "Can Nikolić confirm availability, a start date and time allocation for this joint project, and can Kriptolog confirm engineering support and budget?",
+      "Which KL-HSM configuration, signing use case, ML-DSA parameters and client verifiers should be covered, and what numerical memory, latency and throughput limits must apply?",
+      "Can Kriptolog provide representative hardware, source/build access, prototype code and a safe non-production-key setup under agreed confidentiality and intellectual-property terms?",
+      "What hybrid acceptance, downgrade-prevention and key-lifecycle rules are required, what is the current Common Criteria status, and who will approve security acceptance criteria and the versioned roadmap?"
+    ],
+    "benefits": {
+      "company": "The experiment could establish whether a firmware-based migration is feasible on the selected KL-HSM and provide measured evidence for client-facing version and transition decisions.",
+      "researcher": "Subject to agreement and access, Nikolić could test how standardised ML-DSA and hybrid signing behave under real HSM memory, toolchain and interoperability constraints."
+    },
+    "markdown": "# Joint project: a tested post-quantum migration path for KL-HSM\n\n## Verified facts\n- Kriptolog describes constrained KL-HSM flash and RAM, ruling out an assumed drop-in replacement. Its cryptographic firmware uses C on ARM Cortex-M; feasibility therefore concerns the actual product configuration. [F1]\n- The company has not adapted its architecture for larger keys or different signature flows. It wants a roadmap identifying supporting firmware versions, performance trade-offs and hybrid classical/post-quantum transition behaviour. [F2]\n- Kriptolog seeks a documented roadmap and at least one working integration proof of concept inside twelve months. Its collaborative engineering capacity is modest and depends on a well-defined, practically applicable scope. [F3]\n- The company lists PKCS#11 integration and a Common Criteria EAL4+ target. Architecture changes need assessment against these interfaces and evaluation requirements; a research prototype is not certification. [F4]\n- Nikolić prefers real-hardware collaboration with measurable deliverables. If an SLE97 route is explored, her laboratory has only two evaluation kits; her notes identify additional partner hardware as helpful. [F5]\n- Nikolić’s work implements Dilithium and Falcon signatures in C. Her separate Dilithium study reports compiler-dependent timing leakage, making optimisation-related leakage a concrete risk rather than assuming constant-time source code suffices. [F6]\n- Her published hybrid HSM uses classical ECDH and FPGA-assisted Kyber key encapsulation. That evidence concerns key exchange, not hybrid firmware signing. [F7]\n\n## Potential benefits\n- For the company: The experiment could establish whether a firmware-based migration is feasible on the selected KL-HSM and provide measured evidence for client-facing version and transition decisions.\n- For the researcher: Subject to agreement and access, Nikolić could test how standardised ML-DSA and hybrid signing behave under real HSM memory, toolchain and interoperability constraints.\n\n## Our inference\n- This suggests a practical joint project combining target-specific benchmarking with migration design. Finalist-era Dilithium measurements do not validate standardised ML-DSA on KL-HSM, and hybrid key-exchange results do not establish hybrid signing; both transfers need direct testing.\n- Joint-project participation is open, but Nikolić’s current availability is unknown. This proposal is conditional on confirming her capacity and agreeing company staffing, hardware access and scope.\n\n## Proposed next steps\n- Propose a six-week first experiment on one agreed KL-HSM configuration using production tooling and non-production keys. Kriptolog would supply hardware, firmware support and representative signing workloads; Nikolić would lead porting and measurement. Compare existing RSA/ECDSA signing, standardised ML-DSA and end-to-end hybrid signing/verification. Use known-answer tests and separate tuning/evaluation message sets, checking their independence. Measure correctness, peak RAM, flash, signing latency, throughput, signature/key storage, verifier compatibility and timing leakage. Before testing, negotiate numerical resource/performance limits and a leakage-screening protocol. Go/no-go should assess the best tested configuration against those limits, zero correctness failures, agreed hybrid acceptance/downgrade tests, PKCS#11 compatibility and certification-impact review—not require one method to beat another. Continuation should also require a credible, staffed path to a working integration and an approved versioned roadmap within twelve months, covering larger keys, changed flows and measured trade-offs.\n- If the initial gate passes, propose staged integration and regression testing through the twelve-month window. Draft the roadmap alongside implementation, distinguishing experimental support, production-readiness work and certification milestones. Recheck timing and memory after toolchain changes; plan separate side-channel and fault-injection work because initial timing screening cannot establish complete implementation security.\n\n## Open questions\n- Can Nikolić confirm availability, a start date and time allocation for this joint project, and can Kriptolog confirm engineering support and budget?\n- Which KL-HSM configuration, signing use case, ML-DSA parameters and client verifiers should be covered, and what numerical memory, latency and throughput limits must apply?\n- Can Kriptolog provide representative hardware, source/build access, prototype code and a safe non-production-key setup under agreed confidentiality and intellectual-property terms?\n- What hybrid acceptance, downgrade-prevention and key-lifecycle rules are required, what is the current Common Criteria status, and who will approve security acceptance criteria and the versioned roadmap?",
+    "taskId": "C086-CH1",
+    "researcherId": "R0503",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C086-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C086-CH1-R0503",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C086-CH1-R0503",
+        "version": 1
+      }
+    ]
+  }
+}

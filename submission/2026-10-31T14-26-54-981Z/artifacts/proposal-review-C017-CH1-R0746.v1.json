@@ -1,0 +1,103 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C017-CH1-R0746",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C017-CH1-R0746",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C017-CH1-R0746",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Require uncertainty bounds supporting improvement; unresolved reference areas or insufficient pockets prevent a pass.",
+        "sources": [],
+        "explanation": "This does not define a statistical pass condition for the detection improvement or the accompanying no-increase requirement on false positives, permitting acceptance based on favorable point estimates despite uncertainty consistent with worse performance. Add a brief prerequisite to pre-agree the confidence level and require the lower bound on the detection difference to exceed the agreed improvement threshold and the upper bound on the false-positive difference to satisfy the agreed tolerance, alongside the stated cost and turnaround caps.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares.” Proposed next steps: “higher detection of confirmed 0.3–0.8-hectare pockets than the grid, with no greater false-positive area, routine cost per hectare or turnaround.” These identify the missed small pockets and the economic limitation rather than merely proposing better mapping."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Include advance sensing, consumables and repeat visits in recurring costs, while reporting independent validation costs separately”; “Deliver zone and uncertainty layers before the soil-sampling crew’s dispatch”; “if predictions must precede every field visit, treat advance-data availability as a prerequisite”; and “Keep implementation within the stated staffing allocation”. Together with “confirm instrument bookings, consumables funding and field support before starting” and the open question about “cost ceiling and turnaround limit”, these make affordability, timing, staffing and access conditions to resolve and verify, rather than assuming unrestricted resources."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements” and “His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights.” Our inference: “published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow.” Proposed next steps: “Test local conductivity–salinity calibration rather than importing published spacing.” These connect his documented methods and sampling trade-offs to the task while explicitly limiting transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “TloCare would nominate fields and supply records; Kosanović would design calibration and sensing.” Verified facts document company staffing and conditional instrument access; Open questions asks “Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?” These distinguish available capabilities from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging”; “Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze configuration selection before evaluation”; and “audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund reference sampling; then conduct fieldwork and analysis.” These identify inputs, baseline, alternatives and independent evaluation, with execution prerequisites left explicit; the acceptance-rule gap is addressed separately under metric."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps defines the event and denominator: “Count a pocket as detected when predictions cover at least half its reference polygon; divide by all confirmed target-size pockets.” It also states “Measure false-positive hectares over reference-confirmed non-saline hectares” and “unresolved reference areas or insufficient pockets prevent a pass.” However, “Require uncertainty bounds supporting improvement” does not specify which bound must cross which threshold, its confidence level, or an uncertainty rule for the accompanying no-increase requirement on false positives; statistical acceptance remains undefined."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps compares “the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging”; Potential benefits says the pilot “could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround”. These are workflow-level comparisons and conditional benefits, not claims that independently attribute an effect to sensing, sampling design or regression-kriging."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives”; “Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits”; and “archive size alone does not establish usable reference labels.” Verified facts adds instability “below 30 cores”, while Proposed next steps calls for “repeat measurements across changing moisture conditions, especially transitions, before reusing surveys.” These cover the principal transfer, calibration, temporal, archive and economic risks without treating unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format.” Open questions: “Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?” These preserve the distinction between openness to joint projects and an actual commitment, and assign no declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround” and “Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale.” Both benefits follow from the proposed field comparison and are framed as potential outcomes, not guarantees."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.96,
+        0.57,
+        0.96,
+        0.96,
+        0.95,
+        0.94,
+        0.71
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

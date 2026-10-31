@@ -1,0 +1,201 @@
+{
+  "ref": {
+    "artifactId": "proposal-C003-CH1-R0365",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Root cause and fatigue-life improvement of welded conveyor frames in cold stores",
+    "facts": [
+      {
+        "text": "AutomVoj reports that it does not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Cold-store conveyors typically operate at 2–6 °C, with suspected thermal cycling, condensation and loaded-belt vibration; the company tests frames under load at room temperature.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "the combination of thermal cycling, condensation, and the vibration load from loaded belts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we test frames under load at room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has photos and measurements of cracked joints from site visits and still has two failed sections in storage.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we still have two of the failed sections in storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The frames are mild-steel hollow sections, painted for corrosion resistance, MIG/MAG welded, with cracking reported at main crossmember-to-stringer connections.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "tech",
+            "quote": "Mild steel and stainless steel MIG/MAG welded frame fabrication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "weld joint cracking at the main crossmember-to-stringer connections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić's group routinely uses servo-hydraulic fatigue machines, a climate chamber to −60 °C and Abaqus FE models; the chamber and machine are shared, so extended campaigns need advance coordination.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj states it has no dedicated R&D department and that technical development happens informally through project work.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department; technical development happens informally through project work",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić is open to contract research on fatigue and fracture testing of welded steel components and to joint projects involving low-temperature or combined loading fatigue testing.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "contract research on fatigue and fracture testing of welded steel components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "In Erić's low-temperature study, cruciform fillet-welded S355J2+N specimens tested at −40 °C showed a 22% decrease in fatigue ductility coefficient relative to room temperature.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04474",
+            "field": "abstract",
+            "quote": "At −40 °C, the fatigue ductility coefficient εf′ decreased by 22% relative to room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04474",
+            "field": "abstract",
+            "quote": "cruciform fillet-welded joints machined from S355J2+N plate and tested at both room temperature (20 °C) and −40 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Erić's combination of low-temperature fatigue testing, residual-stress measurement and FE analysis appears well matched to a root-cause study, but his published low-temperature data are on other steels and specimen types, so transfer to AutomVoj's mild-steel hollow-section detail at 2–6 °C must be tested rather than assumed.",
+      "The 22% fatigue-ductility drop at −40 °C is a possible cold-service risk, not evidence about AutomVoj's frames at 2–6 °C; the first experiment should treat it as a hypothesis and check the transfer gap.",
+      "Erić's residual-stress and post-weld heat-treatment work suggests welding procedure, filler or joint-design changes may lower weld-toe crack driving force, but the benefit for this production detail is unproven."
+    ],
+    "proposedActions": [
+      "Proposed first experiment: machine fatigue specimens from the two failed sections and from new production crossmember-to-stringer details in mild-steel hollow section, MIG/MAG welded and painted. Run a common mechanical load spectrum at room-temperature dry baseline, 2–6 °C isothermal, and 2–6 °C with slow thermal cycling; add condensation as a separate condition if humidity control is available, changing one suspected factor at a time. Measure cycles to 5% stiffness drop, crack initiation at the weld toe and post-test crack location. Company contribution proposed: supply failed and new sections, weld procedure, filler, paint and any site vibration or load records; researcher contribution proposed: specimen design, shared climate-chamber/servo-hydraulic testing and fracture analysis. Go/no-go: proceed to mechanism study only if a cold or thermal condition shows a statistically significant life reduction versus the room-temperature baseline; if not, stop the thermal hypothesis and test vibration or condensation separately. Proposed duration: six-month feasibility phase.",
+      "If the first experiment passes, compare welding procedure, filler material and joint-design variants, including post-weld heat treatment where applicable, under the worst condition identified. Proposed success criterion: a measurable increase in cycles to crack initiation versus the current production detail, with the target agreed after baseline results.",
+      "Use FE and residual-stress measurements to rank the likely crack drivers and draft a revised joint detail or welding change. Proposed deliverable: a cause ranking and draft procedure change reviewed with AutomVoj's chief engineer.",
+      "Proposed timeline as negotiation target: months 1–2 specimen preparation and shared chamber scheduling; months 3–6 first experiment; months 7–9 variant comparison if go; month 10 review and draft procedure change."
+    ],
+    "questions": [
+      "Can Professor Erić confirm availability and a scheduling window for the shared climate chamber and servo-hydraulic machine, since current availability is unknown?",
+      "Can AutomVoj name an engineering owner and allocate company time for the project despite having no dedicated R&D department?",
+      "Can AutomVoj provide the two failed sections, photos and measurements, weld procedure, filler specification, paint system and any site vibration or load records?",
+      "What exact crossmember-to-stringer geometry, hollow-section size, plate thickness and welding parameters should be replicated in test specimens?",
+      "What cycle-life improvement or reduction in warranty replacements would AutomVoj accept as a go decision after the first experiment?"
+    ],
+    "markdown": "# Root cause and fatigue-life improvement of welded conveyor frames in cold stores\n\n## Verified facts\n- AutomVoj reports that it does not currently have the equipment or know-how to test at low temperatures under cyclic load. [F1]\n- Cold-store conveyors typically operate at 2–6 °C, with suspected thermal cycling, condensation and loaded-belt vibration; the company tests frames under load at room temperature. [F2]\n- AutomVoj has photos and measurements of cracked joints from site visits and still has two failed sections in storage. [F3]\n- The frames are mild-steel hollow sections, painted for corrosion resistance, MIG/MAG welded, with cracking reported at main crossmember-to-stringer connections. [F4]\n- Erić's group routinely uses servo-hydraulic fatigue machines, a climate chamber to −60 °C and Abaqus FE models; the chamber and machine are shared, so extended campaigns need advance coordination. [F5]\n- AutomVoj states it has no dedicated R&D department and that technical development happens informally through project work. [F6]\n- Erić is open to contract research on fatigue and fracture testing of welded steel components and to joint projects involving low-temperature or combined loading fatigue testing. [F7]\n- In Erić's low-temperature study, cruciform fillet-welded S355J2+N specimens tested at −40 °C showed a 22% decrease in fatigue ductility coefficient relative to room temperature. [F8]\n\n## Our inference\n- Erić's combination of low-temperature fatigue testing, residual-stress measurement and FE analysis appears well matched to a root-cause study, but his published low-temperature data are on other steels and specimen types, so transfer to AutomVoj's mild-steel hollow-section detail at 2–6 °C must be tested rather than assumed.\n- The 22% fatigue-ductility drop at −40 °C is a possible cold-service risk, not evidence about AutomVoj's frames at 2–6 °C; the first experiment should treat it as a hypothesis and check the transfer gap.\n- Erić's residual-stress and post-weld heat-treatment work suggests welding procedure, filler or joint-design changes may lower weld-toe crack driving force, but the benefit for this production detail is unproven.\n\n## Proposed next steps\n- Proposed first experiment: machine fatigue specimens from the two failed sections and from new production crossmember-to-stringer details in mild-steel hollow section, MIG/MAG welded and painted. Run a common mechanical load spectrum at room-temperature dry baseline, 2–6 °C isothermal, and 2–6 °C with slow thermal cycling; add condensation as a separate condition if humidity control is available, changing one suspected factor at a time. Measure cycles to 5% stiffness drop, crack initiation at the weld toe and post-test crack location. Company contribution proposed: supply failed and new sections, weld procedure, filler, paint and any site vibration or load records; researcher contribution proposed: specimen design, shared climate-chamber/servo-hydraulic testing and fracture analysis. Go/no-go: proceed to mechanism study only if a cold or thermal condition shows a statistically significant life reduction versus the room-temperature baseline; if not, stop the thermal hypothesis and test vibration or condensation separately. Proposed duration: six-month feasibility phase.\n- If the first experiment passes, compare welding procedure, filler material and joint-design variants, including post-weld heat treatment where applicable, under the worst condition identified. Proposed success criterion: a measurable increase in cycles to crack initiation versus the current production detail, with the target agreed after baseline results.\n- Use FE and residual-stress measurements to rank the likely crack drivers and draft a revised joint detail or welding change. Proposed deliverable: a cause ranking and draft procedure change reviewed with AutomVoj's chief engineer.\n- Proposed timeline as negotiation target: months 1–2 specimen preparation and shared chamber scheduling; months 3–6 first experiment; months 7–9 variant comparison if go; month 10 review and draft procedure change.\n\n## Open questions\n- Can Professor Erić confirm availability and a scheduling window for the shared climate chamber and servo-hydraulic machine, since current availability is unknown?\n- Can AutomVoj name an engineering owner and allocate company time for the project despite having no dedicated R&D department?\n- Can AutomVoj provide the two failed sections, photos and measurements, weld procedure, filler specification, paint system and any site vibration or load records?\n- What exact crossmember-to-stringer geometry, hollow-section size, plate thickness and welding parameters should be replicated in test specimens?\n- What cycle-life improvement or reduction in warranty replacements would AutomVoj accept as a go decision after the first experiment?",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

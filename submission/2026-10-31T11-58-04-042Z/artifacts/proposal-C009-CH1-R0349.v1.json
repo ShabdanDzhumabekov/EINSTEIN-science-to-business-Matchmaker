@@ -1,0 +1,197 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-58-04-042Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Reducing Serbian support-search misses without full re-indexing",
+    "facts": [
+      {
+        "text": "LinguaBot attributes retrieval misses to Serbian inflection and Latin–Cyrillic mixing, including within-word typos. Both problems therefore belong in the proposed evaluation.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "text",
+            "quote": "Our search misses answers because Serbian words change form (e.g. 'kartica', 'karticu', 'karticom') and users mix Latin and Cyrillic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company uses Elasticsearch with a Croatian-oriented stemmer. It needs manageable terminology updates without a full re-index; manually maintained synonym lists have not scaled with quarterly product terminology.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot reports about 18% without useful results among 12,000 real support queries from one bank, not across all clients. Separately, it has around 85,000 labelled query-response pairs across clients and two linguists available for annotation or validation.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company seeks a miss rate below 5% that remains there with manageable maintenance. Its tooling/data-work budget is around EUR 8,000, and it wants something testable within six months; this does not establish a total collaboration budget.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić is open to relevant company joint projects, but his notes limit capacity to a small industrial or consulting engagement alongside two active projects. He is not interested in general software development without a research component.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić’s work explicitly studies how stemming and lemmatisation interact with script normalization. His phoneme-canonicalization study evaluated legal-corpus query–document pairs, providing a candidate method rather than validation for support queries.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "U ovom radu ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher’s evidence identifies relevant risks: deterministic transliteration fails on some loanwords, abbreviations and alphanumeric strings, while earlier enterprise normalization modules still required terminology-related updates.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01686",
+            "field": "abstract",
+            "quote": "Deterministic rule-based transliteration between Serbian Cyrillic and Latin scripts handles the majority of tokens correctly, but fails on foreign loanwords, abbreviations, and alphanumeric strings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "module treba ažurirati kada kompanija uvede novu terminologiju u jednom pismu, jer inicijalni rečnik sinonima nije potpun.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a bounded joint research project could fit: Dragić could investigate normalization–morphology interactions while LinguaBot leads integration. The proposal remains conditional because his availability, start date and committed effort are unconfirmed.",
+      "Transfer from legal and other document retrieval to short support queries remains unvalidated. Script normalization alone likely cannot resolve inflection, missing knowledge-base answers or all product-name ambiguities; incremental document insertion also does not establish compatibility with vocabulary-rule changes."
+    ],
+    "proposedActions": [
+      "Propose a six-month first experiment using permitted support queries and knowledge-base snapshots. Compare current Elasticsearch against added phoneme normalization alone, Serbian morphology alone, and both together, keeping ranking and content fixed; define factor settings independently and test both processing orders. Select the best configuration on tuning data, then evaluate independently. LinguaBot would supply integration and linguist judgments; Dragić would propose methods and error analysis. Go only if that configuration achieves below 5% “no useful result” on held-out queries from the original bank, using the agreed original metric, both before and after a reserved terminology update; pooled client results cannot substitute. Also require successful inflection and within-word-mixing tests, no full re-index during updates, precision non-regression, and maintenance effort, latency and tooling/data cost within pre-agreed limits around the stated EUR 8,000 scope. Define numerical robustness, maintenance and latency limits before testing. Missing evaluation data or an untestable prototype by month six means no-go, not success.",
+      "Propose month one for permissions, metric reconstruction and sample design, months two–four for controlled comparisons, and months five–six for held-out and update tests. Separate tuning from evaluation and check independence across repeated queries, customers and time. Have linguists judge a random sample of all evaluation queries, including apparent successes; record uncertain judgments separately and distinguish missing content from retrieval errors.",
+      "Reserve unfamiliar product terms and real within-word mixed-script examples before tuning. Test old and new queries against an unchanged index after terminology-rule updates; report miss rate, precision, tail latency and maintenance hours by failure category and client. Examine product-term collisions and unresolved interactions even when one factor has no isolated effect. Treat deployment and maintenance thresholds as negotiation targets, not established performance."
+    ],
+    "questions": [
+      "Can Dragić confirm availability, start date and effort for this small research-focused joint project, with a named LinguaBot implementation owner?",
+      "What permissions and storage restrictions govern university use of client queries, labels and knowledge-base content?",
+      "Can LinguaBot specify the original “no useful result” definition and retrieval depth, and provide a suitable independent held-out sample from that bank?",
+      "What joint acceptance specification will cover permitted Elasticsearch changes, production load, latency, precision, robustness, maintenance ownership and hours, and funding beyond tooling/data work?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify which processing changes reduce support-search misses and whether terminology updates can preserve quality without rebuilding the index.",
+      "researcher": "Subject to agreement and data permissions, Dragić could test morphology–script interactions on support queries and obtain validated error analyses of terminology changes and within-word script mixing."
+    },
+    "markdown": "# Reducing Serbian support-search misses without full re-indexing\n\n## Verified facts\n- LinguaBot attributes retrieval misses to Serbian inflection and Latin–Cyrillic mixing, including within-word typos. Both problems therefore belong in the proposed evaluation. [F1]\n- The company uses Elasticsearch with a Croatian-oriented stemmer. It needs manageable terminology updates without a full re-index; manually maintained synonym lists have not scaled with quarterly product terminology. [F2]\n- LinguaBot reports about 18% without useful results among 12,000 real support queries from one bank, not across all clients. Separately, it has around 85,000 labelled query-response pairs across clients and two linguists available for annotation or validation. [F3]\n- The company seeks a miss rate below 5% that remains there with manageable maintenance. Its tooling/data-work budget is around EUR 8,000, and it wants something testable within six months; this does not establish a total collaboration budget. [F4]\n- Dragić is open to relevant company joint projects, but his notes limit capacity to a small industrial or consulting engagement alongside two active projects. He is not interested in general software development without a research component. [F5]\n- Dragić’s work explicitly studies how stemming and lemmatisation interact with script normalization. His phoneme-canonicalization study evaluated legal-corpus query–document pairs, providing a candidate method rather than validation for support queries. [F6]\n- The researcher’s evidence identifies relevant risks: deterministic transliteration fails on some loanwords, abbreviations and alphanumeric strings, while earlier enterprise normalization modules still required terminology-related updates. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify which processing changes reduce support-search misses and whether terminology updates can preserve quality without rebuilding the index.\n- For the researcher: Subject to agreement and data permissions, Dragić could test morphology–script interactions on support queries and obtain validated error analyses of terminology changes and within-word script mixing.\n\n## Our inference\n- This suggests a bounded joint research project could fit: Dragić could investigate normalization–morphology interactions while LinguaBot leads integration. The proposal remains conditional because his availability, start date and committed effort are unconfirmed.\n- Transfer from legal and other document retrieval to short support queries remains unvalidated. Script normalization alone likely cannot resolve inflection, missing knowledge-base answers or all product-name ambiguities; incremental document insertion also does not establish compatibility with vocabulary-rule changes.\n\n## Proposed next steps\n- Propose a six-month first experiment using permitted support queries and knowledge-base snapshots. Compare current Elasticsearch against added phoneme normalization alone, Serbian morphology alone, and both together, keeping ranking and content fixed; define factor settings independently and test both processing orders. Select the best configuration on tuning data, then evaluate independently. LinguaBot would supply integration and linguist judgments; Dragić would propose methods and error analysis. Go only if that configuration achieves below 5% “no useful result” on held-out queries from the original bank, using the agreed original metric, both before and after a reserved terminology update; pooled client results cannot substitute. Also require successful inflection and within-word-mixing tests, no full re-index during updates, precision non-regression, and maintenance effort, latency and tooling/data cost within pre-agreed limits around the stated EUR 8,000 scope. Define numerical robustness, maintenance and latency limits before testing. Missing evaluation data or an untestable prototype by month six means no-go, not success.\n- Propose month one for permissions, metric reconstruction and sample design, months two–four for controlled comparisons, and months five–six for held-out and update tests. Separate tuning from evaluation and check independence across repeated queries, customers and time. Have linguists judge a random sample of all evaluation queries, including apparent successes; record uncertain judgments separately and distinguish missing content from retrieval errors.\n- Reserve unfamiliar product terms and real within-word mixed-script examples before tuning. Test old and new queries against an unchanged index after terminology-rule updates; report miss rate, precision, tail latency and maintenance hours by failure category and client. Examine product-term collisions and unresolved interactions even when one factor has no isolated effect. Treat deployment and maintenance thresholds as negotiation targets, not established performance.\n\n## Open questions\n- Can Dragić confirm availability, start date and effort for this small research-focused joint project, with a named LinguaBot implementation owner?\n- What permissions and storage restrictions govern university use of client queries, labels and knowledge-base content?\n- Can LinguaBot specify the original “no useful result” definition and retrieval depth, and provide a suitable independent held-out sample from that bank?\n- What joint acceptance specification will cover permitted Elasticsearch changes, production load, latency, precision, robustness, maintenance ownership and hours, and funding beyond tooling/data work?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

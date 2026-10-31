@@ -1,0 +1,175 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0105",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0105",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What causes the apparent manganese increase between AquaCikl’s greywater inlet and coagulation outlet, and what explains the concurrent iron noncompliance? Begin with time-aligned, flow-informed stage sampling, dissolved/total metal measurements, reagent blanks and media-leaching controls to test release, accumulation and sampling effects, then test whether a targeted operational change can meet discharge limits without major equipment replacement.",
+    "rationale": [
+      {
+        "text": "Lazić has experimentally investigated how iron impurities affect polyaluminium chloride chemistry and coagulation performance, providing a relevant basis for testing reagent-related explanations rather than assuming insufficient coagulant dose.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01398",
+            "field": "abstract",
+            "quote": "Iron residuals above 1.2 wt% in the final product reduced Al13 fraction by roughly 12 percentage points and decreased turbidity removal by 8–11% in jar tests",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group has experience combining elemental analysis, solid-phase characterisation and leaching tests, relevant to investigating deposits, sludge and suspect filter media.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01391",
+            "field": "abstract",
+            "quote": "were characterised by ICP-OES, XRD, FTIR, and toxicity characteristic leaching procedure (TCLP).",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has tested coagulation on both synthetic wastewater and actual wastewater effluent, supporting controlled comparisons of treatment chemistry using company samples.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01393",
+            "field": "abstract",
+            "quote": "Coagulation–flocculation jar tests were performed on a synthetic reactive-blue dye solution (100 mg/L) and on a settled municipal wastewater effluent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience includes investigation of coupled biological and chemical problems in operating water-treatment systems, relevant to structuring an investigation of the holding-tank hypothesis.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0335",
+            "field": "summary",
+            "quote": "The project investigated the biological and chemical mechanisms by which sulphate-reducing bacteria generate hydrogen sulphide in sulphonate cation exchange resins under intermittent service conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0335",
+            "field": "summary",
+            "quote": "Field validation was conducted at two municipal water-treatment plants in Vojvodina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Validation must address both company-reported discharge limits, not manganese alone; confirm the applicable compliance sampling and analytical requirements before defining acceptance.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Diagnosis and field testing must fit within four months of company staffing, leaving time before the five-month reinspection.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The intervention must be implementable at existing installations without replacing major equipment.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The analytical plan must coordinate stage-sample access with confirmed laboratory instrument access; the researcher's analytical infrastructure is partly shared.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0105",
+            "field": "bio",
+            "quote": "The group regularly uses XRD, FTIR, SEM-EDS, BET surface analysis, and ICP-OES, much of which is housed in shared departmental infrastructure.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Publication and confidentiality terms need agreement before starting, given the researcher's stated preference for publication freedom.",
+        "sources": [
+          {
+            "recordId": "R0105",
+            "field": "notes",
+            "quote": "Prefers project roles where the group retains freedom to publish results.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The supplied evidence does not establish manganese removal or manganese-cycling expertise in industrial laundry greywater. Coagulant, leaching and biological findings involve different matrices or mechanisms; the first controlled experiments must test their relevance to actual site water and materials.",
+      "The inlet–outlet concentration difference alone does not prove manganese release: recycle flows, residence-time mismatch, solids partitioning or analytical matrix effects could produce an apparent increase.",
+      "Increasing dose and lowering pH have already failed to improve performance meaningfully; repeating generic coagulation optimisation could consume the short investigation window.",
+      "Researcher availability is unknown. Shared instrument scheduling and the company's four-month staffing limit could delay field validation before reinspection.",
+      "The project budget, current iron concentrations and site-specific operating histories are unknown, limiting confidence in scope and achievable validation.",
+      "The researcher's stated industrial interests emphasise sludge valorisation and coagulant production; commitment to a short diagnostic project and acceptable publication terms remain to be confirmed."
+    ],
+    "questions": [
+      "Can Lazić commit to the four-month diagnostic and field-validation window, and who will perform sampling, analysis and interpretation?",
+      "What budget covers researcher time, analytical quality assurance, accredited confirmation and limited operational trials?",
+      "What are the measured iron concentrations, applicable discharge sampling point, required metal fractions and official compliance sampling rules?",
+      "Were inlet and outlet samples matched for hydraulic residence time, recycle flows and operating state, and what preservation, digestion, detection limits and matrix-recovery checks were used?",
+      "Can AquaCikl provide process diagrams, flow and tank-level histories, reagent batches and certificates, media composition and age, backwash records, sludge handling and client chemical-use histories?",
+      "Can the first campaign include paired total/dissolved Mn and Fe measurements, flow-informed mass balances, reagent blanks, media-leaching controls, and tank pH, redox and dissolved-oxygen measurements?",
+      "Which installation can host controlled trials, what operational changes and downtime are permitted, and how will any promising change be checked across the other sites?",
+      "Are shared laboratory instruments available on the required schedule, and can both parties agree on confidentiality, publication review and ownership of findings?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0105",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0105",
+        "version": 1
+      }
+    ]
+  }
+}

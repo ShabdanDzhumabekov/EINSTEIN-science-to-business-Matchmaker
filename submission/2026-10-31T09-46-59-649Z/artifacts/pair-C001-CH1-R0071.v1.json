@@ -1,0 +1,206 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0071",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0071",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a site-specific baseline learned from normal Modbus TCP and BACnet/IP traffic detect behavioural drift without labelled attacks, while remaining explainable to plant managers and deployable on ProtoSense-class hardware within latency and memory limits? The first experiment should test whether the researcher's one-class/drift-aware methods transfer from published sensor and edge benchmarks to consented OT network captures.",
+    "rationale": [
+      {
+        "text": "Rakić is open to joint projects with companies on anomaly detection in industrial sensor data.",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "open_to",
+            "quote": "joint projects with companies on anomaly detection in industrial sensor data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group focuses on anomaly detection and classification in high-dimensional, heavily imbalanced time-series data, including concept drift and label scarcity.",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "bio",
+            "quote": "Her group focuses on anomaly detection and classification in high-dimensional, heavily imbalanced time-series data, including methods for handling concept drift and label scarcity.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has published a constrained one-class SVM variant for rare-event detection that incorporates labelled anomalies as must-outside constraints.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00960",
+            "field": "abstract",
+            "quote": "this paper proposes a constrained OC-SVM variant that incorporates labelled anomalies as must-outside constraints during kernel optimisation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has worked on ADWIN-based adaptive windowing with ensemble voting to detect concept drift in streaming fault data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00961",
+            "field": "abstract",
+            "quote": "This work applies ADWIN-based adaptive windowing to trigger retraining of a rotating ensemble of gradient-boosted classifiers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She leads a work package on model compression and edge deployment for adapting anomaly detection pipelines to resource-constrained hardware.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0119",
+            "field": "summary",
+            "quote": "Olivera Rakić leads the work package on model compression and edge deployment, responsible for adapting anomaly detection and classification pipelines to resource-constrained hardware",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has reviewed evaluation pitfalls for imbalanced industrial time-series, including temporal label leakage.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00964",
+            "field": "abstract",
+            "quote": "A taxonomy of evaluation pitfalls specific to temporal data—including label leakage across temporal folds",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The primary method must work without labelled malicious traffic; supervised classifiers trained on public ICS data are not an acceptable baseline.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "It must learn site-specific normal behaviour and alert when behaviour drifts from that baseline.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on-device on ArmaturaSec hardware.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have the hardware to run inference on-device",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must use consented Modbus TCP/BACnet/IP traffic archives under NDA, including several TB of normal captures.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Modbus TCP and BACnet/IP protocol parsing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Staffing is constrained: ArmaturaSec can provide one to two part-time engineers, and Rakić has limited capacity for new long-term commitments before mid-2025.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0071",
+            "field": "notes",
+            "quote": "has limited capacity for new long-term commitments before mid-2025.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: the cited methods are evaluated on vibration, hydraulic, CNC, chemical, semiconductor, server-counter, gas-compressor, wind SCADA, smart-meter or network-intrusion logs, not Modbus/BACnet OT traffic; the first experiment must test them on consented Modbus/BACnet captures.",
+      "Zero labelled malicious traffic means detection accuracy cannot be validated directly; success must be framed as a hypothesis using held-out normal traffic, synthetic drift or red-team injections, or later incident labels.",
+      "ArmaturaSec's previous supervised classifier produced excessive false positives and clients switched alerts off, so alert volume, false-positive tolerance and explainability are deployment-critical.",
+      "Explainability to a plant manager is not demonstrated in the researcher's publications; explanation design and domain validation need joint work.",
+      "Edge evidence is on ARM/MCU/FPGA boards, not ArmaturaSec's custom hardware or planned security-processor variant; latency and memory fit remain unknown.",
+      "Rakić's availability is unknown and limited before mid-2025; the company's ML engineering depth is one engineer reading about anomaly detection for six months, so joint technical contact capacity is unknown."
+    ],
+    "questions": [
+      "Confirm Rakić's availability and capacity for a joint project before mid-2025, and whether joint_project or industrial_phd supervision is preferred.",
+      "Confirm access to the several-TB traffic archives under NDA and client consent for ML research, including whether captures can leave client sites.",
+      "Which ArmaturaSec hardware target (ProtoSense/NetGuard variant, planned fifth variant) and what latency, memory and throughput budgets must be met?",
+      "What false-positive rate and alert volume per site are acceptable, given clients previously switched alerts off?",
+      "How should a plant manager-facing explanation look, and who validates that explanations match domain assumptions?",
+      "With zero attack labels, what proxy evaluation is acceptable (held-out normal, synthetic drift, red-team injections) and who signs off on detections?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0071",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0071",
+        "version": 1
+      }
+    ]
+  }
+}

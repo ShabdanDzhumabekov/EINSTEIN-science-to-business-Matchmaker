@@ -1,0 +1,274 @@
+{
+  "ref": {
+    "artifactId": "scholar-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0365",
+    "name": "Bojan Erić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Mechanical Engineering (Machine Design and Mechanics)",
+    "fields": [
+      "Mechanical Engineering",
+      "Materials Science and Structural Integrity",
+      "Computational Mechanics",
+      "Manufacturing and Joining Technology"
+    ],
+    "keywords": [
+      "fatigue crack growth",
+      "fracture mechanics",
+      "welded steel joints",
+      "residual stress",
+      "finite element simulation",
+      "low-temperature fatigue",
+      "thermal cycling",
+      "stress intensity factor",
+      "structural steel",
+      "variable-amplitude loading"
+    ],
+    "openTo": [
+      "contract research on fatigue and fracture testing of welded steel components",
+      "consulting on structural integrity assessment and fitness-for-service evaluation",
+      "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+      "industrial PhD supervision for companies dealing with steel structures, cranes, or pressure equipment",
+      "equipment access (servo-hydraulic fatigue machine, climate chamber to −60 °C, DIC setup)",
+      "student internships related to experimental mechanics or FE simulation of welds"
+    ],
+    "bio": {
+      "recordId": "R0365",
+      "field": "bio",
+      "text": "Bojan Erić received his Dipl.Ing. degree in Mechanical Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2003, and his PhD from the same institution in 2010, with a dissertation on fatigue crack propagation in multipass fillet welds under variable-amplitude loading. He joined the Department of Mechanical Engineering as an assistant in 2004 and was promoted to Associate Professor in 2018. His research group focuses on fatigue and fracture mechanics of welded structural steel joints subjected to combined cyclic mechanical loading and low-temperature thermal excursions, residual-stress redistribution, and finite-element simulation of crack driving forces. He teaches courses in Machine Elements, Fracture Mechanics, and Welded Structures. The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus for residual-stress and fracture-mechanics analyses."
+    },
+    "industryExperience": {
+      "recordId": "R0365",
+      "field": "industry_experience",
+      "text": "Erić has carried out two consultancy engagements for regional steel fabricators on fatigue assessment of crane runway girders and has collaborated informally with a Vojvodina-based metalworking company during the crane girder monitoring campaign reported in his 2020 conference paper."
+    },
+    "notes": {
+      "recordId": "R0365",
+      "field": "notes",
+      "text": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination. He is particularly interested in partnering with companies that manufacture steel structures operating outdoors in cold environments, such as cranes, storage tanks, or pipeline supports."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-04473",
+        "kind": "publication",
+        "title": "Effect of Post-Weld Heat Treatment on Residual Stress Distribution in T-Joint Welds of Low-Alloy Steel",
+        "body": {
+          "recordId": "SYN-PUB-04473",
+          "field": "abstract",
+          "text": "Residual stresses in as-welded and post-weld heat-treated (PWHT) T-joint specimens of S460M low-alloy steel were measured by hole-drilling with strain-gauge rosettes and compared with sequentially coupled thermal–mechanical FE simulations. Six as-welded and six PWHT specimens (650 °C for 1 h, furnace-cooled) were examined. The FE model employed a double-ellipsoid heat source and temperature-dependent material data derived from dilatometry. Peak tensile residual stresses at the weld toe in the as-welded condition reached 312 MPa in the longitudinal direction and 187 MPa transversally. After PWHT, peak values fell to 74 MPa and 41 MPa, respectively. Agreement between hole-drilling measurements and simulation was within 15% at all measurement points. The study quantified how PWHT redistribution of residual stress affected predicted fatigue lives using a linear-elastic fracture-mechanics assessment: estimated endurance at the design stress range of 90 MPa increased from 1.2 × 10⁶ to 3.8 × 10⁶ cycles following PWHT."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04474",
+        "kind": "publication",
+        "title": "Low-Cycle Fatigue Behaviour of Cruciform Welded Joints at −40 °C: An Experimental Study",
+        "body": {
+          "recordId": "SYN-PUB-04474",
+          "field": "abstract",
+          "text": "The paper reports strain-controlled low-cycle fatigue (LCF) tests on cruciform fillet-welded joints machined from S355J2+N plate and tested at both room temperature (20 °C) and −40 °C. A total of 32 specimens were cycled at total strain amplitudes of 0.25%, 0.50%, 0.75%, and 1.00% using a servo-hydraulic machine equipped with a liquid-nitrogen climate chamber. Cyclic stress–strain curves, Coffin–Manson parameters, and fatigue ductility exponents were extracted from the hysteresis data. At −40 °C, the fatigue ductility coefficient εf′ decreased by 22% relative to room temperature, whereas the fatigue strength coefficient σf′ increased by 11%, resulting in a crossover in life predictions near 3 × 10³ reversals. Fractographic examination by SEM confirmed transgranular cleavage facets in low-temperature specimens at strain amplitudes above 0.75%, indicating a mixed ductile–brittle fracture mode not observed at room temperature. The Morrow mean-stress correction improved life predictions in the −40 °C dataset."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04475",
+        "kind": "publication",
+        "title": "Interaction of Mechanical Cyclic Loading and Thermal Cycling on Fatigue Life of Butt-Welded Structural Steel Plates",
+        "body": {
+          "recordId": "SYN-PUB-04475",
+          "field": "abstract",
+          "text": "This work examined whether superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates. Four loading programmes were applied: isothermal fatigue at 20 °C, isothermal fatigue at −30 °C, in-phase thermo-mechanical fatigue (TMF), and out-of-phase TMF, with twelve specimens per programme. Crack initiation life, defined as a 5% stiffness drop, was shortest in the out-of-phase TMF condition, averaging 28% fewer cycles than the room-temperature baseline. Crack growth rates in both TMF programmes exceeded predictions based on simple superposition of mechanical and thermal stress intensities, suggesting a synergistic damage mechanism tentatively linked to accelerated oxidation at crack flanks during temperature excursions. FE simulations using temperature-dependent elastic–plastic material models reproduced the crack-tip opening displacement within 8% of experimental digital image correlation measurements. Design implications are discussed in the context of the IIW fatigue assessment recommendations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04476",
+        "kind": "publication",
+        "title": "Fracture Toughness of Heat-Affected Zone Microstructures in S690QL High-Strength Steel Welds at Sub-Zero Temperatures",
+        "body": {
+          "recordId": "SYN-PUB-04476",
+          "field": "abstract",
+          "text": "Charpy impact and CTOD (crack-tip opening displacement) tests were performed on specimens extracted from the coarse-grained heat-affected zone (CGHAZ) of single-pass submerged-arc welds in 20 mm S690QL plate at temperatures of +20, 0, −20, −40, and −60 °C. The CGHAZ was reproduced by Gleeble thermal simulation at peak temperatures of 1350 °C and cooling times t8/5 of 8 s and 20 s to replicate low and high heat-input conditions. At −40 °C, mean CTOD values dropped from 0.18 mm (t8/5 = 8 s) to 0.07 mm (t8/5 = 20 s), confirming sensitivity of toughness to heat input. A Weibull statistical analysis of CTOD scatter, using the master-curve approach per EN ISO 27306, yielded reference temperatures T0 of −62 °C and −38 °C for the two thermal cycles. These values were incorporated into a fracture-mechanics fitness-for-service assessment of a hypothetical pressure vessel nozzle weld, defining the tolerable flaw size at operating temperature."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04477",
+        "kind": "publication",
+        "title": "Finite-Element Estimation of Stress Intensity Factors for Surface Cracks at Weld Toes Under Combined Bending and Torsion",
+        "body": {
+          "recordId": "SYN-PUB-04477",
+          "field": "abstract",
+          "text": "Semi-elliptical surface cracks at the toe of transverse attachment welds were modelled in Abaqus using the extended finite element method (XFEM) to compute stress intensity factors KI and KIII under proportional and non-proportional combinations of four-point bending and torsion. Weld-toe geometry was parameterised by toe radius ρ (0.5–2.5 mm) and flank angle θ (30°–60°), yielding a factorial design of 25 configurations. Stress intensity factors normalised as geometric correction functions F(a/c, a/t) were tabulated for aspect ratios a/c from 0.2 to 1.0 and relative depths a/t from 0.05 to 0.6. Under non-proportional loading (90° phase shift between bending and torsion), effective ΔKeq computed via the Richard criterion exceeded the proportional-loading values by up to 34% at shallow crack depths, highlighting the inadequacy of simple scalar superposition. The resulting correction-factor tables are formatted to be compatible with the BS 7910:2013 Level 2 assessment procedure."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04478",
+        "kind": "publication",
+        "title": "Weld Residual Stress Relaxation Under Cyclic Loading: Measurements and Modelling for S355 Cruciform Joints",
+        "body": {
+          "recordId": "SYN-PUB-04478",
+          "field": "abstract",
+          "text": "Residual stress relaxation in S355 cruciform fillet-welded joints was tracked over 10, 100, 1000, and 10 000 fatigue cycles at three nominal stress ranges (60, 120, and 180 MPa) using X-ray diffraction (XRD) on polished surfaces at the weld toe. Initial peak longitudinal residual stress averaged +287 MPa in the as-welded state. After 1000 cycles at 180 MPa, surface residual stresses had relaxed to +61 MPa, while deeper stresses (measured by sequential electropolishing to 1.2 mm depth) retained 40–60% of their initial values. A cyclic plasticity FE model employing a Chaboche kinematic hardening rule reproduced the surface relaxation trend within 12% across all conditions. A semi-empirical relaxation factor was derived and incorporated into a fatigue life calculation, reducing the unconservative error in life prediction from 42% to 11% compared with assuming fixed residual stresses. Practical guidance for applying the relaxation factor in design is summarised."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04479",
+        "kind": "publication",
+        "title": "Fatigue Assessment of Welded Joints in Crane Runway Girders Subjected to Operational Temperature Variations: A Case Study",
+        "body": {
+          "recordId": "SYN-PUB-04479",
+          "field": "abstract",
+          "text": "A fatigue assessment was performed for the welded runway girder of an outdoor overhead crane operating in a continental climate where ambient temperature ranges from −28 °C to +38 °C over a calendar year. Operational load spectra were recorded by a data logger over an eight-month measurement campaign using strain gauges at twelve positions on two girders at a metalworking plant in the Vojvodina region. Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment. Fatigue life estimates were computed following the IIW recommendations, both with and without temperature-dependent fracture-mechanics corrections derived from the authors' earlier low-temperature CTOD dataset. Ignoring temperature dependence overestimated fatigue life at the weld toe by factors of 1.3–1.7 depending on detail category. The study recommends that crane structures in cold continental climates should apply a temperature knock-down factor on the fatigue strength class."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04480",
+        "kind": "publication",
+        "title": "Comparative Evaluation of Fatigue Life Prediction Models for Welded S355 and S460 Steels Under Multiaxial Proportional Loading at Low Temperatures",
+        "body": {
+          "recordId": "SYN-PUB-04480",
+          "field": "abstract",
+          "text": "Five multiaxial fatigue models — Findley, Fatemi–Socie, Smith–Watson–Topper, Liu, and a critical-plane von Mises variant — were evaluated against an experimental dataset of 84 fatigue tests on tubular welded specimens of S355J2 and S460NL steels tested under combined axial–torsional proportional loading at 20 °C, 0 °C, −20 °C, and −40 °C. Specimens failed either at the weld toe or in the weld metal, and failure locations were identified post-fracture by SEM. All five models were calibrated using room-temperature fatigue data and then applied predictively at sub-zero temperatures. The Fatemi–Socie model, when modified to incorporate temperature-dependent shear modulus and yield strength, produced the lowest scatter band (factor of 2.1 on life) across the full temperature range. The Liu model was accurate at room temperature but increasingly non-conservative below −20 °C. A correction procedure for the low-temperature regime is proposed and validated against the experimental data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04481",
+        "kind": "publication",
+        "title": "Thermal Gradient-Induced Residual Stress in Welded Box Sections: A Parametric Finite-Element Study",
+        "body": {
+          "recordId": "SYN-PUB-04481",
+          "field": "abstract",
+          "text": "Welded box-section columns fabricated from 10 mm S355 plate were analysed by sequentially coupled thermal–structural FE simulations in Abaqus to evaluate how diurnal and seasonal thermal gradients (ΔT = 20–60 K through the wall thickness) modify as-welded residual stress fields. The parametric study varied four weld sequences (one-sided, two-sided symmetric, and two asymmetric sequences) and three wall thicknesses (8, 12, and 16 mm). Thermal gradients were imposed as boundary conditions representing solar irradiation on one face of the section. Results showed that a steady 40 K gradient reduced peak tensile weld-toe residual stresses by 8–14% on the heated face while increasing compressive stresses on the opposite face by a comparable margin, with the effects being most pronounced in one-sided welding sequences. At 60 K, bending stresses induced by the gradient were of the same order as the fatigue-relevant residual stress range, justifying their inclusion in fitness-for-service assessments of outdoor structures. A simplified formula, calibrated against the FE results, is provided for quick engineering estimation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04482",
+        "kind": "publication",
+        "title": "Crack Closure and Effective Stress Intensity Under Superimposed Mechanical and Thermal Cycling: Measurements by Digital Image Correlation",
+        "body": {
+          "recordId": "SYN-PUB-04482",
+          "field": "abstract",
+          "text": "Crack closure behaviour was quantified experimentally in centre-cracked tension specimens of butt-welded S355JR plate subjected to mechanical fatigue (R = 0.05, ΔP = 18 kN) combined with slow thermal cycling between −25 °C and +15 °C. Full-field displacement maps were acquired by two-camera stereo DIC at six points within each mechanical load cycle and at five points within each thermal half-cycle. The crack opening load Pop was identified as the load at which DIC-detected displacements became linear over a 2 mm gauge length straddling the crack tip. Pop was 12–19% higher in the thermal-cycling condition than in the isothermal baseline, and the effective stress ratio Reff was reduced accordingly. Plasticity-induced closure, measured as the reversed plastic zone size from DIC strain fields, was 0.18 mm at room temperature and increased to 0.27 mm at −20 °C, consistent with reduced crack-tip plasticity at lower temperature. Incorporating the measured Reff into a modified Paris-law prediction reduced the mean life-prediction error from −31% to −7%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01831",
+        "kind": "publication",
+        "title": "Effect of nitriding duration on surface hardness and case depth in AISI H13 steel for aluminium extrusion tooling",
+        "body": {
+          "recordId": "SYN-PUB-01831",
+          "field": "abstract",
+          "text": "Gas nitriding of AISI H13 tool steel specimens was performed at 520 °C for durations of 8, 16, 24, and 36 hours in a dissociated ammonia atmosphere with a fixed nitriding potential of 0.40. Surface hardness was measured by Vickers microindentation at loads of 0.1 kgf and 0.3 kgf; compound layer thickness and diffusion zone depth were quantified on metallographic cross-sections etched with 3% Nital. At 36 hours, surface hardness reached 1180 HV0.1 and the total case depth extended to 0.42 mm, but the compound layer exhibited significant porosity in the outer 3–4 µm. X-ray diffraction identified γ′-Fe4N and ε-Fe2–3N phases; the ratio shifted progressively toward ε phase with increasing duration. Fatigue specimens subjected to four-point bending at 650 MPa after 24-hour nitriding showed a 38% increase in cycles to crack initiation compared with the unnitrided condition. The results indicate that 24 hours represents an engineering optimum for the tested steel grade and geometry."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01849",
+        "kind": "publication",
+        "title": "Estimating cumulative shoulder load from wrist-worn inertial measurement units using a regression model trained on motion-capture data",
+        "body": {
+          "recordId": "SYN-PUB-01849",
+          "field": "abstract",
+          "text": "Full-body motion capture is impractical for routine occupational monitoring. This study investigated whether cumulative shoulder moment estimates derived from two wrist-worn inertial measurement units (IMUs) could serve as a surrogate for camera-based inverse-dynamics values. A regression model was trained on a labelled dataset of 680 assembly task repetitions from 22 participants, with simultaneous IMU and motion-capture recordings. Features extracted from IMU signals included mean and peak wrist acceleration, jerk, and orientation pitch and roll, calculated over a 2-second sliding window. A random-forest regressor predicted the per-window shoulder moment integral with a mean absolute error of 1.8 Nm·s and an R² of 0.81 on the held-out test set. When aggregated to shift-level cumulative loading, IMU-predicted values differed from motion-capture references by a median of 7%. The model was tested in a brief field deployment at an electronics assembly facility involving four workers over four-hour shifts. Results indicate that wrist IMUs can provide useful cumulative shoulder load estimates without restricting worker movement."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00821",
+        "kind": "publication",
+        "title": "Fatigue Life Estimation of Thin-Web Flexure Hinges Under Variable-Amplitude Cyclic Bending",
+        "body": {
+          "recordId": "SYN-PUB-00821",
+          "field": "abstract",
+          "text": "Flexure hinges in precision mechanisms are routinely subjected to cyclic loading over millions of cycles, yet most published life estimates rely on constant-amplitude S–N data without accounting for variable-amplitude spectra. This paper applies the rainflow cycle-counting method together with Miner's linear damage rule to estimate the fatigue life of thin-web circular flexure hinges made from two spring steels (X10CrNi18-8 and 42CrMo4) under three representative variable-amplitude bending spectra derived from experimental measurements on a laboratory micro-positioning stage. Finite-element-based stress analysis provides local stress amplitudes at the hinge throat for each counted cycle. Predicted lives ranged from 1.2 × 10⁶ to 8.7 × 10⁷ cycles depending on material and spectrum, with 42CrMo4 outperforming X10CrNi18-8 under the high-mean-stress spectrum by a factor of approximately 3.4. Experimental fatigue tests were conducted on twelve specimens; predicted lives agreed with measured lives within a factor of 2.1 in all cases, consistent with standard engineering fatigue scatter. The study provides a practical workflow for life estimation in the early design stage without requiring dedicated component-level fatigue testing."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0388",
+        "kind": "project",
+        "title": "Fatigue Reliability of Welded Steel Structures Under Combined Mechanical and Thermal Cyclic Loads in Cold Continental Climates",
+        "body": {
+          "recordId": "SYN-PRJ-0388",
+          "field": "summary",
+          "text": "The project addressed the gap in design codes regarding fatigue assessment of welded structural steel exposed simultaneously to mechanical service loads and seasonal thermal cycling in climates where ambient temperatures regularly fall below −20 °C. The work combined fatigue testing at controlled sub-zero temperatures, X-ray diffraction residual stress measurements, digital image correlation, and sequentially coupled FE simulations. Key deliverables included a dataset of fatigue curves at four temperatures for S355 and S460NL welded details, a validated residual-stress relaxation model under thermo-mechanical loading, and draft provisions for a temperature correction factor compatible with the IIW fatigue design recommendations. The project supported one doctoral student and two master's theses."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0389",
+        "kind": "project",
+        "title": "Structural Integrity Assessment Methods for Welded Components in Adriatic–Pannonian Infrastructure",
+        "body": {
+          "recordId": "SYN-PRJ-0389",
+          "field": "summary",
+          "text": "A bilateral cooperation project between the Faculty of Technical Sciences in Novi Sad and the Faculty of Mechanical Engineering and Naval Architecture in Zagreb. The Serbian team was responsible for the work package on fracture mechanics testing and FE-based fitness-for-service assessment of welded joints in high-strength steels, while the Croatian partners contributed expertise in non-destructive evaluation and probabilistic life assessment. Joint workshops were held in Novi Sad and Zagreb; two joint journal papers were produced. Erić led the experimental testing and simulation activities on the Serbian side and co-supervised a doctoral student enrolled at Zagreb."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0090",
+        "kind": "project",
+        "title": "Dynamic Stability Assessment Methods for Automated Lifting Equipment in Smart Warehouses",
+        "body": {
+          "recordId": "SYN-PRJ-0090",
+          "field": "summary",
+          "text": "DYNLIFT investigates dynamic stability limits of automated forklifts and stacker cranes operating in smart warehouse environments where floor conditions, payload configurations, and travel speeds vary continuously. The project develops a library of parameterised simulation models covering three vehicle classes—counterbalance forklifts, reach trucks, and unit-load AGVs—validated against measurements from an instrumented laboratory vehicle and industrial data provided by a Vojvodina logistics operator. A central deliverable is a stability-monitoring algorithm that estimates the tip-over risk index in real time using onboard IMU and wheel-load sensor data. The project involves two graduate students and one postdoctoral researcher and produces open-access simulation datasets."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0929",
+        "kind": "project",
+        "title": "Orientation-Constrained Topology Optimisation for Load-Bearing Metallic Lattice Structures in Laser Powder-Bed Fusion",
+        "body": {
+          "recordId": "SYN-PRJ-0929",
+          "field": "summary",
+          "text": "LATOPT addresses the gap between topology optimisation theory and the printability constraints of LPBF manufacturing for structural metallic lattice parts. The project develops a computationally tractable optimisation framework that simultaneously minimises structural compliance, restricts overhanging features below 45°, and accounts for orientation-dependent material properties using a database of experimentally measured anisotropy knockdown factors for 316L and Ti-6Al-4V. Deliverables include an open-source Python-based optimisation toolkit, a validated anisotropy database released under a Creative Commons licence, and design guidelines targeted at mechanical engineering practitioners. Experimental validation is conducted on the in-house LPBF platform at the Faculty of Technical Sciences, with fatigue and compression testing at the Faculty's materials testing laboratory."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0939",
+        "kind": "project",
+        "title": "Thermoelastic Degradation and Life Prediction of Bolted Flanged Connections in District Heating Networks",
+        "body": {
+          "recordId": "SYN-PRJ-0939",
+          "field": "summary",
+          "text": "The project investigated creep-fatigue degradation of bolted flange assemblies in the district heating networks of Vojvodina, where operating temperatures between 130 °C and 180 °C are lower than those in power plant but thermal cycling frequency is much higher due to daily demand variation. The research combined laboratory relaxation tests on EN 1.4301 stainless-steel spiral-wound gaskets, thermocouple-instrumented in-service measurements at two pump stations in Novi Sad, and finite element life prediction calculations. Deliverables included a maintenance prioritisation procedure for flange inspection intervals and a dataset of material parameters for district-heating-grade gasket materials. The project supported one doctoral student."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for companies dealing with steel structures, cranes, or pressure equipment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "contract research on fatigue and fracture testing of welded steel components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

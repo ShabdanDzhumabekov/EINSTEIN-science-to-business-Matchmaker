@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C053-CH1",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C053-CH1",
+    "companyId": "C053",
+    "companyName": "AquaCikl d.o.o.",
+    "sector": "Cleantech, recycling and water",
+    "location": "Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C053-CH1",
+        "field": "text",
+        "text": "Our treated greywater consistently fails the manganese and iron limits set by the new Serbian industrial discharge regulation — we're seeing 0.18 mg/L manganese where the limit is 0.10 mg/L — and we don't know whether the problem is in our coagulation step or something upstream in the client's process."
+      },
+      "detail": {
+        "recordId": "C053-CH1",
+        "field": "detail",
+        "text": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L. Our own analysers, confirmed by an accredited external lab in Zrenjanin, are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites. We have already tried increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement. We have inlet samples showing that the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese, so something in the process is either releasing additional manganese or preventing its removal. We suspect the issue may be connected to our filter media or to manganese cycling in our holding tanks, but we have not been able to confirm this. We have on-site analytical kit and can pull samples at every process stage. The deadline is real: one large laundry client faces a reinspection in five months. A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C053",
+        "field": "about",
+        "text": "AquaCikl d.o.o. was founded in 2011 by a small group of process engineers who believed that industrial water could be treated as a resource rather than a cost. Based in Novi Sad, we design, install, and operate closed-loop greywater recycling systems for industrial laundries and food-processing facilities across Vojvodina and the wider region. Over thirteen years we have commissioned more than forty installations, typically achieving 60 to 80 percent water reuse per site and cutting clients' municipal water bills by a measurable amount from the first billing cycle.\n\nOur clients include mid-size laundry operators, poultry processing plants, and vegetable-washing lines that face tightening discharge limits and rising water tariffs. Each system is designed around the client's actual effluent profile: we sample, we model, and we build to fit.\n\nThe company employs 47 people, roughly half of whom work on-site as commissioning and service technicians. Our in-house team covers process chemistry, mechanical and electrical installation, and compliance documentation. Day-to-day operations are led by director Miroslav Čobanović and technical manager Dragana Feješ, who joined in 2016 from a municipal water utility.\n\nWhat makes us different is that we stay involved after handover. Every system we operate is monitored remotely, and we carry out quarterly physical audits. When something drifts out of spec, we find out before the client does."
+      },
+      "products": [
+        {
+          "recordId": "C053",
+          "field": "products",
+          "text": "Closed-loop greywater recycling systems for industrial laundries"
+        },
+        {
+          "recordId": "C053",
+          "field": "products",
+          "text": "Process-water treatment and reuse units for food-processing plants"
+        },
+        {
+          "recordId": "C053",
+          "field": "products",
+          "text": "Remote monitoring and compliance reporting service"
+        },
+        {
+          "recordId": "C053",
+          "field": "products",
+          "text": "Annual maintenance and reagent supply contracts"
+        },
+        {
+          "recordId": "C053",
+          "field": "products",
+          "text": "Feasibility and water-audit studies for greenfield industrial sites"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "Coagulation and flocculation with polyaluminium chloride and ferric sulphate"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "Multimedia sand and anthracite filtration"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "Activated carbon adsorption"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "Spiral-wound reverse-osmosis membranes"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "UV disinfection units"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "SCADA-based remote monitoring via OPC-UA"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "Sludge dewatering with belt-press equipment"
+        },
+        {
+          "recordId": "C053",
+          "field": "tech",
+          "text": "On-site photometric water quality analysers for turbidity, pH, and conductivity"
+        }
+      ],
+      "plans": {
+        "recordId": "C053",
+        "field": "plans",
+        "text": "AquaCikl intends to expand its service territory into northern Serbia and Bosnia-Herzegovina over the next three years, targeting industrial parks that are preparing for stricter EU-alignment discharge standards. In parallel, the company is evaluating a small pilot of constructed wetland post-treatment as a low-energy polishing step for manganese and nutrients."
+      },
+      "rdCapacity": {
+        "recordId": "C053",
+        "field": "rd_capacity",
+        "text": "The company has no formal R&D department but can dedicate two senior process engineers and one lab technician to a defined project for up to four months, with access to three operating installations for field testing."
+      },
+      "pastCollaborations": {
+        "recordId": "C053",
+        "field": "past_collaborations",
+        "text": "AquaCikl completed a six-month applied project with a Novi Sad-based engineering consultancy, Fluidex inženjering d.o.o., in 2020 to evaluate alternative filter media for iron removal, resulting in a revised filter specification used in subsequent builds."
+      }
+    }
+  }
+}

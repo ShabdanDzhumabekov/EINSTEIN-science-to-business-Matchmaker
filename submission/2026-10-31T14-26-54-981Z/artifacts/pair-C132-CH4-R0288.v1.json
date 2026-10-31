@@ -1,0 +1,160 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0288",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should Serbian cross-script normalization be applied in KlozuraPro’s PostgreSQL search pipeline—during indexing, querying, or both—to reduce missed contract matches without unacceptable precision or latency regressions? The first experiment would compare these alternatives against the current baseline on annotated contract–query pairs, including mixed-script tokens and ambiguous Latin sequences, to test whether the researcher’s corpus-based methods transfer to legal-document retrieval.",
+    "rationale": [
+      {
+        "text": "Nikolić has demonstrated a unified internal representation for processing both Serbian scripts, providing a concrete normalization approach to investigate rather than assuming separate script-specific search pipelines.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her research directly addresses Serbian retrieval failures and compares linguistic indexing and query-expansion approaches using precision and recall.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "The paper evaluates three mitigation strategies — stemming, full lemmatization, and paradigm-based query expansion — comparing their precision and recall",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed token-level mixed-script normalization, relevant to the company's requirement to handle more than uniformly Cyrillic or Latin documents.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her corpus work explicitly covers script coexistence, dialect norms and spelling inconsistencies, providing linguistic expertise for defining normalization exceptions and test cases.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03590",
+            "field": "abstract",
+            "quote": "including the coexistence of Cyrillic and Latin scripts, Ekavian and Ijekavian dialect norms, and borrowing-related spelling inconsistencies.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The implementation must integrate with the existing PostgreSQL full-text index; indexing-time, query-time and combined approaches must be compared within that architecture.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "The root cause is that our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "at indexing time, at query time, or both",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Normalization must handle mixed-script documents and ambiguous Latin sequences, with explicit tests for incorrect conflation as well as recovered matches.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search latency must remain within an agreed acceptable regression threshold; the company has not yet quantified what counts as noticeable slowdown.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit the task-specific limit of one backend engineer for six weeks and the company's capacity for only one external project alongside product development.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The reported dual-script lemmatization results are not PostgreSQL retrieval results, and the mixed-script tokenizer was evaluated on social media rather than contracts. Their transfer to contract terminology, parsing artifacts and production latency is unvalidated; the first experiment must test these gaps.",
+      "Aggressive normalization or optional lemmatization could merge distinct terms and increase false positives. Morphological expansion could also exceed the six-week scope without being necessary to fix the script mismatch.",
+      "The estimated failure rate comes from a January 2024 log sample; its current prevalence and the proportion caused solely by script mismatch remain unverified.",
+      "Researcher availability is explicitly unknown. Budget, permitted contract-data access and company-approved evaluation arrangements are also unknown and could prevent timely execution."
+    ],
+    "questions": [
+      "Can Nikolić commit time during the six-week implementation window, and who will own linguistic annotation, engineering integration and acceptance testing?",
+      "Can the company provide approved access to representative contracts, queries and relevance judgments, including mixed-script tokens, ambiguous Latin sequences and negative examples? What confidentiality, anonymization and access restrictions apply?",
+      "What are the current retrieval baseline, document volume, query load and p95/p99 latency, and what precision, missed-match and latency thresholds would define acceptance?",
+      "Which PostgreSQL version, text-search configuration, dictionaries and indexes are deployed, and what reindexing, storage and rollout constraints apply?",
+      "Which dialect conventions, foreign names and legally distinct terms must remain distinguishable, and should inflection handling be deferred unless the baseline experiment shows it is necessary?",
+      "What project budget is available, which ML-engineering support is actually committed, and are the relevant tools and resource licences suitable for commercial deployment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0288",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

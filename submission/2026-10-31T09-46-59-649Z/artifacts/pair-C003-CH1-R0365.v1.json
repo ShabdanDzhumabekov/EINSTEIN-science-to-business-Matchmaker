@@ -1,0 +1,199 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Determine the mechanism by which combined cold-store thermal cycling, condensation and belt vibration drives fatigue cracking at crossmember-to-stringer weld joints in mild-steel hollow-section conveyor frames, and test whether changes to welding procedure, filler material or joint design reduce crack initiation and growth under representative low-temperature cyclic loading.",
+    "rationale": [
+      {
+        "text": "Erić's group directly studies fatigue and fracture of welded structural steel under combined mechanical cyclic loading and low-temperature thermal excursions.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "His research group focuses on fatigue and fracture mechanics of welded structural steel joints subjected to combined cyclic mechanical loading and low-temperature thermal excursions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The group has the low-temperature fatigue testing infrastructure needed to move the company's problem out of room-temperature workshop testing.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experimental evidence that superimposed thermal cycling during mechanical fatigue changes crack initiation and growth in welded plates.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has measured and modelled weld-toe residual-stress relaxation under cyclic loading, which is relevant to explaining why as-welded frames may pass at room temperature but crack in service.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Initial peak longitudinal residual stress averaged +287 MPa in the as-welded state. After 1000 cycles at 180 MPa, surface residual stresses had relaxed to +61 MPa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior industry consultancy experience on fatigue assessment of welded crane runway girders for regional steel fabricators.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "industry_experience",
+            "quote": "Erić has carried out two consultancy engagements for regional steel fabricators on fatigue assessment of crane runway girders",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His prior project combined sub-zero fatigue testing, residual-stress measurement, digital image correlation and finite-element simulation, matching the kind of integrated failure investigation AutomVoj needs.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0388",
+            "field": "summary",
+            "quote": "The work combined fatigue testing at controlled sub-zero temperatures, X-ray diffraction residual stress measurements, digital image correlation, and sequentially coupled FE simulations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Testing must represent the cold-store operating range, typically 2 °C to 6 °C, not only ambient workshop conditions.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must supply low-temperature cyclic-load testing because AutomVoj cannot do it in-house.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The two failed sections in storage and the site photos/measurements should be examined as part of the failure investigation.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we still have two of the failed sections in storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Specimens and test welds must match the company's mild-steel hollow-section MIG/MAG welded and painted frame construction.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "tech",
+            "quote": "Mild steel and stainless steel MIG/MAG welded frame fabrication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "welded from mild steel hollow section and painted for corrosion resistance before delivery",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Extended low-temperature testing must be scheduled around shared climate-chamber and servo-hydraulic machine access.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has no dedicated R&D department, so the collaboration needs a clear technical lead and work plan rather than assuming internal research capacity.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department; technical development happens informally through project work",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: Erić's low-temperature fatigue evidence includes tests at −40 °C and on structural steels such as S355/S460/S275, while AutomVoj's problem is mild-steel hollow-section conveyor frames at 2 °C to 6 °C; the 2 °C to 6 °C condensation regime must be tested, not assumed.",
+      "The company suspects a combined thermal-cycling, condensation and vibration mechanism, but the published thermal-cycling work cited here does not establish that condensation or wet cold-store conditions are reproduced.",
+      "The failure cannot currently be reproduced in the company's room-temperature workshop, so a first experiment may still miss the actual service mechanism if load, temperature and condensation histories are not representative.",
+      "Shared access to Erić's climate chamber and servo-hydraulic machine could delay an extended test campaign.",
+      "AutomVoj's lack of a dedicated R&D department may slow specimen preparation, instrumentation, data collection and implementation of findings.",
+      "Erić's availability is unknown and must be confirmed before committing to a schedule."
+    ],
+    "questions": [
+      "Can Erić confirm availability and scheduling capacity for an extended low-temperature cyclic test campaign on the shared climate chamber and servo-hydraulic machine?",
+      "What service temperature, vibration/load and condensation histories can AutomVoj provide from cold-store sites, and can loggers be installed on operating conveyors?",
+      "Can the two failed sections be released for destructive metallurgical and fractographic examination, and what weld procedure, filler metal, joint geometry and paint system records exist for them?",
+      "What budget, timeline and decision criteria would AutomVoj use to judge whether a changed welding procedure, filler material or joint design is successful?",
+      "Would AutomVoj also consider an industrial PhD route if the work needed a longer programme, or is a focused joint project the preferred format?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

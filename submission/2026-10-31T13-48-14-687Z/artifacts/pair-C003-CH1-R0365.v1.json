@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What mechanisms cause fatigue cracking at AutomVoj’s painted mild-steel conveyor welds in 2–6 °C cold stores, and could changes to welding procedure, filler material or joint geometry reduce crack initiation and growth? The first experiment would compare representative production joints under measured service-like cyclic loads at room temperature and 2–6 °C, with controlled condensation and thermal cycling, to test whether Erić’s methods transfer to these components and help distinguish competing failure mechanisms.",
+    "rationale": [
+      {
+        "text": "Erić has directly investigated the interaction of thermal cycling and mechanical fatigue in welded structural steel, matching the company’s suspected combined-loading mechanism.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "This work examined whether superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group has fatigue-testing, climate-chamber and finite-element resources relevant to investigating failures that the company cannot reproduce at room temperature.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience using operational strain and temperature measurements to construct fatigue-loading conditions, supporting a service-informed rather than purely laboratory-defined investigation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work combines residual-stress measurements with simulation, providing a basis for testing whether weld residual stresses contribute to the conveyor failures.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Residual stress relaxation in S355 cruciform fillet-welded joints was tracked over 10, 100, 1000, and 10 000 fatigue cycles",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "A cyclic plasticity FE model employing a Chaboche kinematic hardening rule reproduced the surface relaxation trend within 12% across all conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Testing must represent the actual painted mild-steel hollow-section connections and the 2–6 °C operating environment; room-temperature results alone cannot establish the cause.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We test frames under load at room temperature and they pass without any problem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The investigation must use the available failure evidence and establish representative mechanical and environmental histories before treating accelerated tests as service-relevant.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts is doing something",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "An external combined-environment test setup is necessary, and access to the researcher’s shared equipment must be booked before committing to an extended campaign.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must accommodate limited company engineering capacity rather than assume a dedicated industrial research team.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The investigation must connect its findings to manufacturable welding, filler or joint-design changes, with any proposed improvement subjected to comparative testing.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "so we can change our welding procedure, filler material, or joint design and stop the warranty replacements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer is unproven: the cited studies principally concern specified structural steels, plate or cruciform details, and much colder temperatures or larger thermal excursions. Their results do not establish the mechanism in painted hollow sections at 2–6 °C; the first experiment must test that transfer.",
+      "Condensation and coating-related corrosion may interact with fatigue, but the supplied material does not demonstrate validated testing capability for painted joints under controlled condensation. Additional equipment or expertise may be needed.",
+      "Two stored failed sections may not capture manufacturing variability, and post-failure damage could obscure crack origins. Representative production controls and documented specimen handling will be important.",
+      "Accelerating an approximately 18-month service failure could change the mechanism; a short laboratory test may not reproduce field damage or justify a service-life prediction.",
+      "Researcher availability remains unknown, shared-equipment access requires coordination, and company engineers divide their time between live projects and improvement work.",
+      "Project budget, deadline, customer-site access and company commitment to the joint-project format are unknown."
+    ],
+    "questions": [
+      "Can Erić confirm his availability and reserve shared-equipment time, and will AutomVoj commit an engineering lead and funding to a joint project?",
+      "What budget, reporting deadline and decision criteria should govern the initial diagnostic phase and any subsequent redesign validation?",
+      "Can the team examine the two failed sections before destructive preparation, and obtain unfailed comparison joints, drawings, steel certificates, welding procedures, filler specifications and coating records?",
+      "Can customer-site measurements establish stress and vibration spectra, belt loading, starts and stops, temperature excursions, humidity and condensation exposure?",
+      "Can the available chamber control 2–6 °C and condensation while applying representative cyclic loads, and what specimen sizes, fixtures or supplementary environmental equipment would be needed?",
+      "Do failures correlate with particular production batches, welders, sites, coating damage, cleaning practices or installation conditions?",
+      "Which production changes are feasible, and what evidence would AutomVoj require before releasing a revised frame design or welding procedure?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

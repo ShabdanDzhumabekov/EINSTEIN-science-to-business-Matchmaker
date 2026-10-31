@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "his own low-temperature paper reports a 22% lower fatigue-ductility coefficient at −40 °C, a cold-service risk.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04474",
+            "field": "abstract",
+            "quote": "At −40 °C, the fatigue ductility coefficient εf′ decreased by 22% relative to room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The 22% drop was measured on S355J2+N cruciform fillet-welded specimens at −40 °C, not on AutomVoj’s mild-steel hollow-section frames at 2–6 °C. The “cold-service risk” conclusion should be presented as a hypothesis requiring transfer testing, not as a verified fact.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

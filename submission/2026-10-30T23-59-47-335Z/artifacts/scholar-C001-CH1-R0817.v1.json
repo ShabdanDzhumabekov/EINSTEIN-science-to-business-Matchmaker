@@ -1,0 +1,273 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R0817",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0817",
+    "name": "Marija Ognjanov",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning and Representation Learning",
+      "Industrial Data Science",
+      "Signal Processing",
+      "Intelligent Control Systems"
+    ],
+    "keywords": [
+      "self-supervised learning",
+      "contrastive learning",
+      "tabular data",
+      "sensor data",
+      "irregular time series",
+      "sparse sampling",
+      "representation learning",
+      "anomaly detection",
+      "industrial IoT",
+      "data augmentation"
+    ],
+    "openTo": [
+      "joint projects with companies generating sparse tabular sensor data",
+      "contract research on self-supervised or contrastive learning pipelines for industrial data",
+      "industrial PhD supervision",
+      "student internships (thesis projects with real industrial datasets)",
+      "consulting on data preprocessing and representation learning architecture selection"
+    ],
+    "bio": {
+      "recordId": "R0817",
+      "field": "bio",
+      "text": "Marija Ognjanov received her Dipl.Ing. degree in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2003, followed by an M.Sc. in 2006 and a Ph.D. in 2012 from the same institution, with a doctoral thesis on kernel methods for heterogeneous industrial time-series. She was promoted to Associate Professor in 2018 and Full Professor in 2024. Her research group focuses on self-supervised and contrastive learning methods tailored to tabular sensor data, with particular attention to irregular and sparse temporal sampling conditions common in legacy manufacturing and process-control environments. She teaches courses on machine learning, data engineering, and signal processing at both undergraduate and graduate levels. The group uses an in-house data acquisition testbed with PLCs and edge computing nodes, and has access to a GPU cluster shared across the faculty."
+    },
+    "industryExperience": {
+      "recordId": "R0817",
+      "field": "industry_experience",
+      "text": "Ognjanov has collaborated with three manufacturing companies in Vojvodina as research partners under the SENSREP project, contributing to dataset design and feasibility assessment for ML-based condition monitoring. She has provided consulting input to one energy utility in Serbia on sensor data quality and preprocessing strategy."
+    },
+    "notes": {
+      "recordId": "R0817",
+      "field": "notes",
+      "text": "She prefers collaborative arrangements where the industrial partner can share at least six months of historical sensor logs; projects requiring purely proprietary black-box solutions are not a good fit. One doctoral student funded through ADAPT-ICS is available for secondment to an NTP company for up to three months from mid-2025."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08875",
+        "kind": "publication",
+        "title": "Kernel-Based Alignment of Heterogeneous Sensor Streams for Fault Classification in Continuous Casting",
+        "body": {
+          "recordId": "SYN-PUB-08875",
+          "field": "abstract",
+          "text": "This work addresses the challenge of combining measurements from sensors with fundamentally different sampling rates in a continuous steel-casting environment. A composite kernel constructed from radial basis functions and string kernels over event logs was used to embed synchronized and asynchronous streams into a shared feature space. Experiments were conducted on a dataset of 14 months of operation from a plant in Vojvodina, comprising 37 sensors and 1,840 labelled fault episodes across six fault categories. A support vector machine trained on the composite kernel representation achieved a macro-averaged F1 of 0.81 on held-out data, compared with 0.67 for a baseline that simply forward-filled missing values before training a linear classifier. The study also evaluated sensitivity to kernel bandwidth hyperparameters and found the composite approach substantially more robust. Results suggest that explicit modelling of stream asynchrony at the representation stage is preferable to imputation-then-classify pipelines for industrial fault classification tasks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08876",
+        "kind": "publication",
+        "title": "Missing-Data Patterns in Wireless Sensor Networks on Production Floors: A Taxonomy and Statistical Characterisation",
+        "body": {
+          "recordId": "SYN-PUB-08876",
+          "field": "abstract",
+          "text": "Wireless sensor deployments in manufacturing environments exhibit missing data that is structurally different from the missing-at-random assumption common in the statistical literature. This paper analyses logs from three production floor deployments in Serbia and one in Hungary, totalling 22 sensor nodes monitored over periods between four and eighteen months. Missing observations were categorised into six pattern types based on their temporal autocorrelation, burst length distribution, and correlation with operating-mode transitions. For each type, parametric families—including zero-inflated negative binomial and Markov-modulated Bernoulli processes—were fitted and assessed by Akaike information criterion. The resulting taxonomy provides a principled basis for selecting simulation models in benchmark studies and for designing imputation or masking strategies in downstream learning algorithms. Annotated datasets for two of the four deployments are released alongside the paper. The work does not propose a new imputation method but provides empirical grounding for future method development."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08877",
+        "kind": "publication",
+        "title": "Comparative Evaluation of Interpolation Strategies for Irregularly Sampled Process Variables Prior to Neural Network Training",
+        "body": {
+          "recordId": "SYN-PUB-08877",
+          "field": "abstract",
+          "text": "Training feedforward and recurrent neural networks on process sensor data typically requires a regular time grid, making the interpolation step a significant preprocessing decision. This paper benchmarks seven interpolation strategies—linear, cubic spline, Gaussian process regression with a squared-exponential kernel, shape-preserving piecewise Hermite interpolation, zero-order hold, and two data-adaptive methods—across six industrial datasets with irregular sampling ratios ranging from 8 % to 61 % missing per channel per day. Downstream task performance is measured by mean absolute error on a temperature prediction task and by F1 on a binary shutdown-prediction task. Results show that Gaussian process regression consistently provides the best downstream performance when irregularity is above 30 % but incurs a runtime cost two to three orders of magnitude higher than linear interpolation. Practical guidance for selecting interpolation strategy as a function of irregularity ratio and available compute budget is distilled into a decision flowchart."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08878",
+        "kind": "publication",
+        "title": "Sparse Autoencoders for Unsupervised Feature Extraction from Low-Rate Industrial Sensor Logs",
+        "body": {
+          "recordId": "SYN-PUB-08878",
+          "field": "abstract",
+          "text": "Many small and medium-sized manufacturers operate legacy SCADA systems that log process variables at intervals of one minute or longer, producing sparse, low-dimensional tabular snapshots rather than dense time series. This paper investigates whether sparse autoencoders, originally developed for natural-image data, can learn meaningful latent representations from such logs without any labelled examples. Experiments use six months of data from a food-processing line and eight months from a plastics extrusion facility, both in Serbia. Learned representations are evaluated by measuring the separation of known operational modes in the latent space using a Davies–Bouldin index and by the accuracy of a k-nearest-neighbour classifier trained with 1 % labelled samples. Sparsity penalties between 0.01 and 0.1 were swept; penalty 0.05 gave the best trade-off in both settings. The method outperformed PCA and raw-feature baselines on every metric, with a Davies–Bouldin improvement of 34 % on the extrusion dataset."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08880",
+        "kind": "publication",
+        "title": "Augmentation Strategies for Contrastive Learning on Tabular Sensor Data: What Transfers from Vision?",
+        "body": {
+          "recordId": "SYN-PUB-08880",
+          "field": "abstract",
+          "text": "Contrastive self-supervised methods in computer vision rely on image augmentations such as cropping and colour jitter to generate positive pairs. For tabular industrial sensor data, the appropriate analogues are not obvious. This paper systematically evaluates eleven candidate augmentation operations—including Gaussian noise injection, random channel dropout, temporal jitter, segment permutation, magnitude scaling, and mixup with temporal neighbours—using SimCLR-style training on three tabular datasets from chemical processing and machining environments. Representations are assessed by linear probing accuracy and by clustering quality on held-out operational-mode labels. Channel dropout and temporal jitter applied jointly produced the strongest representations across all three datasets, while segment permutation consistently degraded quality. The paper also examines how augmentation choice interacts with the degree of temporal irregularity, finding that datasets with higher irregularity benefit more from noise-based augmentations than from structural ones."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08881",
+        "kind": "publication",
+        "title": "Temporal Contrastive Learning with Non-Uniform Sampling Windows for Multivariate Sensor Streams",
+        "body": {
+          "recordId": "SYN-PUB-08881",
+          "field": "abstract",
+          "text": "Standard contrastive learning assumes that positive pairs can be drawn from a fixed temporal window around an anchor point. In industrial sensor streams where sampling is irregular, the semantic similarity between two snapshots depends on the actual elapsed time rather than on a fixed number of steps. This paper proposes a time-aware contrastive objective in which the target similarity between an anchor and a candidate positive is modulated by the inverse of the elapsed time between them, interpolating smoothly between strong positives and informative negatives. The method is implemented on top of a shallow MLP encoder and evaluated on four datasets spanning hydraulic systems, conveyor-belt drives, and HVAC units, all characterised by non-uniform sampling caused by event-driven logging. The time-aware objective improved downstream anomaly detection AUROC by an average of 4.3 percentage points over a standard fixed-window contrastive baseline and by 9.1 points over a non-contrastive autoencoder."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08883",
+        "kind": "publication",
+        "title": "Evaluating Contrastive Representations for Cross-Domain Transfer Between Industrial Sensor Datasets",
+        "body": {
+          "recordId": "SYN-PUB-08883",
+          "field": "abstract",
+          "text": "A key motivation for self-supervised pretraining is the ability to transfer representations across tasks and domains with minimal labelled data. This paper conducts a controlled transfer study using contrastive representations pretrained on one industrial domain—water treatment—and fine-tuned on three target domains: grain drying, compressed-air distribution, and injection moulding. All datasets share a tabular format with 8 to 24 channels but differ in process physics and sampling rates. Transfer is evaluated at five labelled-sample budgets from 10 to 500. The study finds that transfer is positive in all conditions relative to random initialisation at budgets below 100 labels, but that at budgets of 500 labels the gap narrows and sometimes reverses, suggesting that domain-specific structure eventually dominates general sensor statistics. Feature-space alignment using centred kernel alignment scores correlates moderately (r = 0.61) with transfer performance, offering a cheap proxy for estimating transferability without running the full fine-tuning pipeline."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08884",
+        "kind": "publication",
+        "title": "Hard Negative Mining in Sensor Space: Selecting Informative Negatives for Contrastive Training on Process Data",
+        "body": {
+          "recordId": "SYN-PUB-08884",
+          "field": "abstract",
+          "text": "Contrastive learning performance depends critically on the informativeness of negative pairs. In industrial sensor data, naive random negative sampling frequently selects negatives from operating regimes that are easily distinguishable from the anchor, reducing the gradient signal during training. This paper proposes a hard-negative mining strategy based on approximate nearest-neighbour search in a running estimate of the current embedding space, retrieving negatives that are close in representation but drawn from a different temporal neighbourhood. The approach is evaluated against uniform negative sampling and semi-hard mining (adapted from the metric-learning literature) on five tabular sensor datasets. Hard negatives constructed by the proposed strategy improved linear probe accuracy by 3.1 to 6.8 percentage points depending on dataset, and reduced the number of pretraining epochs required to reach a target accuracy by approximately 35 % on average. The computational overhead of the approximate nearest-neighbour index was less than 8 % of total training time."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08885",
+        "kind": "publication",
+        "title": "TabSCL: A Contrastive Self-Supervised Framework for Sparse and Irregular Tabular Sensor Logs",
+        "body": {
+          "recordId": "SYN-PUB-08885",
+          "field": "abstract",
+          "text": "This paper presents TabSCL, a contrastive self-supervised framework designed specifically for tabular industrial sensor data characterised by sparse and irregular temporal sampling. The framework combines three components: a missingness-aware feature tokeniser that encodes observed/unobserved status as part of the token embedding, a time-gap encoding that injects elapsed-time information into a shallow transformer, and a curriculum-based augmentation scheduler that increases augmentation strength as training progresses. TabSCL is evaluated on seven datasets from manufacturing and utilities sectors, with missing rates between 12 % and 58 % per channel, covering fault detection, anomaly scoring, and mode classification downstream tasks. Across 21 dataset–task combinations, TabSCL improves mean AUROC by 5.7 points and macro-F1 by 4.2 points relative to the strongest prior contrastive baseline. An ablation study shows that missingness encoding contributes the largest individual gain (2.9 AUROC points on average), followed by time-gap encoding (1.8 points) and the curriculum scheduler (1.0 points). Code and datasets are publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08887",
+        "kind": "publication",
+        "title": "Sensor Dropout as a Structured Augmentation: Theoretical Grounding and Empirical Validation for Contrastive Tabular Pretraining",
+        "body": {
+          "recordId": "SYN-PUB-08887",
+          "field": "abstract",
+          "text": "Channel dropout—randomly zeroing out entire sensor channels during contrastive pretraining—has been observed to improve representation quality in tabular sensor data, but the mechanism has not been formally analysed. This paper provides a theoretical perspective by framing sensor dropout as an approximation to marginalisation over missing-channel distributions, and derives conditions under which dropout-augmented contrastive training recovers representations that are predictive of downstream labels. The theoretical claims are validated on five industrial tabular datasets by comparing representations learned with sensor dropout, Gaussian noise, and no augmentation, using both linear probing and mutual information estimation between representations and labels. Sensor dropout consistently produced representations with higher estimated mutual information (average gain 0.31 nats) and better linear probing accuracy (average gain 3.8 percentage points) relative to the no-augmentation baseline. The theoretical analysis additionally reveals why the dropout probability interacts with the native missingness rate of the data, suggesting dataset-adaptive probability selection."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08147",
+        "kind": "publication",
+        "title": "Effect of Aging and Temperature Cycling on Diagnostic Coverage of On-Chip Flash Memory Self-Tests in Automotive MCUs",
+        "body": {
+          "recordId": "SYN-PUB-08147",
+          "field": "abstract",
+          "text": "Self-test routines for on-chip Flash memory are a primary diagnostic mechanism in automotive microcontrollers targeting ISO 26262 ASIL-B and above, but their effectiveness under aged and thermally stressed conditions is rarely characterised experimentally. This study subjects 60 automotive-grade microcontroller units to accelerated aging through 1,000 thermal cycles between −40 °C and +125 °C and 500 h of high-temperature operation at 150 °C. After each aging stage, fault injection at the Flash array level is performed and the detection rate of the manufacturer-provided self-test is recorded. Diagnostic coverage decreases from an initial 91.3 % to 84.6 % after full aging exposure, a statistically significant reduction confirmed by a two-sample t-test (p < 0.01). The failure modes responsible for coverage degradation are predominantly read-disturb and cell retention faults that the tested self-test routine does not exercise. The findings have direct implications for safe-life arguments in automotive ECU safety cases."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04583",
+        "kind": "publication",
+        "title": "Model-Based Test Suite Generation from UML State Machines Using SMT-Guided Path Selection",
+        "body": {
+          "recordId": "SYN-PUB-04583",
+          "field": "abstract",
+          "text": "We describe a test suite generation method for safety-critical software specified as UML state machines. The method translates state machines into transition systems and uses an SMT solver to select execution paths that satisfy user-specified coverage targets, including all-transitions, all-pairs, and a new metric we call fault-boundary coverage (FBC) designed to exercise guard conditions at their boundary values. Test cases are generated as concrete C test vectors using symbolic execution over the extracted paths. We evaluated the approach on a medical-device alarm management component (5 concurrent state machines, 78 transitions) and a railway interlocking subsystem specification (4 state machines, 112 transitions). FBC-guided selection achieved 100% mutation score on arithmetic guard faults with 23% fewer test cases than random path selection. The paper includes a formal definition of FBC and a proof that it subsumes branch coverage on guard conditions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04446",
+        "kind": "publication",
+        "title": "A Broker Federation Model for Multi-Site Industrial Sensor Deployments",
+        "body": {
+          "recordId": "SYN-PUB-04446",
+          "field": "abstract",
+          "text": "Large industrial sites often require sensor data to traverse organisational boundaries, yet existing MQTT broker configurations provide no standardised federation mechanism. This paper presents a hierarchical broker federation model in which site-level brokers forward filtered topic subtrees to a central aggregation broker using persistent bridge connections. We implemented the model on three open-source broker platforms and evaluated it on a synthetic topology of five sites, each emitting between 200 and 800 events per second across 60 topic paths. Message loss under normal operation stayed below 0.03 percent; recovery after a simulated WAN link outage restored full throughput within 4 seconds using the proposed reconnect-and-replay procedure. Configuration complexity is addressed through a declarative YAML descriptor that generates broker bridge definitions automatically. The approach was validated in a pilot deployment at a food-processing facility in Vojvodina operating 17 monitoring stations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07256",
+        "kind": "publication",
+        "title": "Adaptive EWMA Charts for Monitoring Autocorrelated Process Outputs: Simulation Study and Factory Trial",
+        "body": {
+          "recordId": "SYN-PUB-07256",
+          "field": "abstract",
+          "text": "Autocorrelation in process outputs is common when sampling is faster than the process time constant. Standard EWMA charts applied to autocorrelated data produce elevated false-alarm rates. This paper proposes an adaptive EWMA scheme in which the smoothing parameter λ is updated at each time step using a gradient-descent rule that minimises the one-step-ahead prediction error over a forgetting-factor-weighted window of past residuals. The scheme is compared with three baselines—fixed-λ EWMA on raw observations, fixed-λ EWMA on residuals from a fitted ARIMA model, and a T² chart on ARIMA residuals—across an AR(1) process with ρ ∈ {0.3, 0.6, 0.9} and mean shifts of 0.5 to 2.5σ. The adaptive scheme matched or exceeded ARIMA-residual EWMA in all tested conditions and was substantially easier to implement in a production PLC environment. A six-week trial on a bottling line confirmed an 11% reduction in false alarms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06236",
+        "kind": "publication",
+        "title": "MaxSMT-Driven Optimisation of Worst-Case Response Times in Fixed-Priority Mixed-Criticality Scheduling",
+        "body": {
+          "recordId": "SYN-PUB-06236",
+          "field": "abstract",
+          "text": "Beyond feasibility checking, system designers often want to minimise the maximum worst-case response time across a task set subject to schedulability constraints. This paper formulates that objective as a maximum satisfiability modulo theories (MaxSMT) problem, using soft clauses to encode the minimisation target alongside hard schedulability constraints in QF-LIA. The Z3 MaxSMT interface is used as the backend solver. On a benchmark of 400 mixed-criticality task sets generated at utilisation levels between 0.6 and 0.9, the MaxSMT approach reduces the maximum worst-case response time by 11 % on average compared to deadline-monotonic priority assignment, with solving times under 10 seconds for 25-task instances. The paper also evaluates partial MaxSMT relaxations that trade solution optimality for speed, obtaining near-optimal results in under 1 second for 80 % of instances. A case study on a simulated flight management data concentrator illustrates applicability."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04542",
+        "kind": "publication",
+        "title": "Comparison of Interval Newton and Krawczyk Operators for Parameter Bounds in a Lorenz-Type System",
+        "body": {
+          "recordId": "SYN-PUB-04542",
+          "field": "abstract",
+          "text": "The Lorenz-type ordinary differential equation system is widely used as a testbed for nonlinear parameter estimation because its sensitivity to initial conditions and parameter values makes classical gradient-based methods unreliable. This conference paper presents a systematic numerical comparison of the interval Newton operator and the Krawczyk operator for computing guaranteed enclosures of equilibrium-consistent parameter sets in a three-dimensional Lorenz-type system. Six parameter configurations are studied, covering both chaotic and non-chaotic regimes. Integration of the state equations is performed using a validated Runge–Kutta scheme with step-size control based on interval extensions. Results show that the Krawczyk operator converges to tighter boxes in four of the six cases but incurs a 22% higher per-iteration cost due to the matrix–vector product with the interval remainder term. Both operators are embedded within the same branch-and-bound framework, and wall-clock times for achieving a relative box diameter below 10^-3 are reported. The study finds no single operator that dominates across all tested regimes, motivating a hybrid switching strategy for future work."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0778",
+        "kind": "project",
+        "title": "Self-Supervised Representation Learning for Sparse Industrial Sensor Data in Smart Manufacturing",
+        "body": {
+          "recordId": "SYN-PRJ-0778",
+          "field": "summary",
+          "text": "SENSREP investigated contrastive and masked-reconstruction pretraining methods adapted to the statistical properties of industrial tabular sensor data with irregular temporal sampling. The project developed benchmark datasets in partnership with three manufacturing companies in Vojvodina, designed augmentation strategies suited to the sparse tabular domain, and produced open-source tooling for evaluating self-supervised representations on downstream industrial tasks. A secondary objective was the development of lightweight deployment-time drift monitors for tracking representation quality after model handover. The project supported two doctoral students and produced eight peer-reviewed publications."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0779",
+        "kind": "project",
+        "title": "Adaptive Contrastive Pretraining for Industrial Control Systems Across Manufacturing SMEs",
+        "body": {
+          "recordId": "SYN-PRJ-0779",
+          "field": "summary",
+          "text": "ADAPT-ICS is a Horizon Europe collaborative project involving seven partners across Serbia, Germany, Romania, and the Czech Republic. The project targets self-supervised pretraining methods that can be shared across industrial SMEs with heterogeneous sensor configurations, enabling cross-company transfer without sharing raw process data. The Novi Sad team leads Work Package 3, which covers contrastive representation design for non-uniform tabular sensor data, including the TabSCL framework and its deployment onto edge hardware. The project also includes a standardisation activity aimed at proposing a common benchmark suite for evaluating industrial representation learning methods."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0817",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0817",
+            "field": "open_to",
+            "quote": "joint projects with companies generating sparse tabular sensor data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0817",
+            "field": "open_to",
+            "quote": "contract research on self-supervised or contrastive learning pipelines for industrial data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

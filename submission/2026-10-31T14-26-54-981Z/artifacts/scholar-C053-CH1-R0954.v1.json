@@ -1,0 +1,284 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0954",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0954",
+    "name": "Jasna Ljubojević",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Chemistry, Biochemistry and Environmental Protection",
+    "fields": [
+      "Microbial Ecology",
+      "Environmental Microbiology",
+      "Water Science and Technology",
+      "Genomics and Metagenomics"
+    ],
+    "keywords": [
+      "drinking water distribution systems",
+      "biofilm communities",
+      "metagenomics",
+      "nitrification",
+      "iron oxidation",
+      "chloramine disinfection",
+      "microbial diversity",
+      "16S rRNA amplicon sequencing",
+      "water quality",
+      "disinfection by-products"
+    ],
+    "openTo": [
+      "joint research projects with water utilities on microbiological monitoring",
+      "contract research: metagenomic profiling of industrial water systems",
+      "consulting on nitrification risk assessment and chloramine management",
+      "equipment access (MiSeq sequencing, qPCR, anaerobic cultivation)",
+      "student internships for chemistry and biology undergraduates",
+      "industrial PhD supervision in water microbiology"
+    ],
+    "bio": {
+      "recordId": "R0954",
+      "field": "bio",
+      "text": "Jasna Ljubojević graduated in Chemistry from the University of Novi Sad in 1997 and completed her PhD in Microbial Ecology at the same institution in 2004, with a dissertation on biofilm formation in model distribution pipe systems. She joined the Faculty of Sciences as an Assistant Professor in 2006 and was promoted to Full Professor in 2018. Her group focuses on the microbial ecology of drinking water distribution systems, combining culture-independent metagenomic and metatranscriptomic approaches with classical cultivation and analytical chemistry to characterise nitrifier and iron-oxidiser communities under varying disinfection regimes, particularly chloramine treatment. She teaches undergraduate courses in Environmental Microbiology and Analytical Chemistry, and a graduate seminar in Metagenomics. The group operates a dedicated water microbiology laboratory equipped with a BioRad CFX96 real-time PCR system, an Illumina MiSeq platform, anaerobic and micro-aerophilic cultivation chambers, and a range of electrochemical water quality sensors."
+    },
+    "industryExperience": {
+      "recordId": "R0954",
+      "field": "industry_experience",
+      "text": "Prof. Ljubojević has conducted paid technical assessments for two Vojvodina water utilities (Novi Sad and Sremska Mitrovica) on nitrification episodes and has served as an expert witness in a regulatory review concerning nitrite exceedances in a regional network."
+    },
+    "notes": {
+      "recordId": "R0954",
+      "field": "notes",
+      "text": "Prof. Ljubojević is on the editorial board of the journal Water Microbiology and Treatment and reviews regularly for Environmental Microbiology and Water Research; review requests during manuscript preparation phases may delay response times. She is open to collaboration with companies developing sensor technologies or data platforms for water quality monitoring but prefers that any engagement is structured through a formal agreement with the University to ensure IP clarity."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-10022",
+        "kind": "publication",
+        "title": "Cultivable heterotrophic bacteria isolated from corroded cast-iron pipes in the Novi Sad distribution network",
+        "body": {
+          "recordId": "SYN-PUB-10022",
+          "field": "abstract",
+          "text": "Pipe wall scrapings were collected from six sections of cast-iron mains (diameter 100–200 mm, age 30–55 years) in the Novi Sad municipal distribution network during planned maintenance shutdowns. Surface-spread and pour-plate methods on R2A, nutrient agar and iron-amended minimal media yielded 214 isolates. Representative strains were identified by partial 16S rRNA gene sequencing. Pseudomonas and Sphingomonas species dominated on R2A (combined 38% of isolates), whereas iron-amended plates enriched for Gallionella-like and Sideroxydans-like morphotypes that could not be maintained in pure culture beyond two transfers. Resistance to free chlorine (0.2 mg/L) was tested using suspension assays; 61 isolates (28.5%) survived a 30-minute contact time. Pipe corrosion products (goethite, magnetite confirmed by XRD) appeared to afford partial protection. Results establish a baseline cultivable community profile and highlight the numerical underrepresentation of obligate iron oxidisers on standard media."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10023",
+        "kind": "publication",
+        "title": "Seasonal variation in Nitrospira population density in a chloraminated distribution system inferred from quantitative PCR",
+        "body": {
+          "recordId": "SYN-PUB-10023",
+          "field": "abstract",
+          "text": "Quantitative PCR targeting the Nitrospira-specific nxrB gene was applied to DNA extracted from bulk water (2 L grab samples) and loose pipe deposits collected monthly over 18 months from a chloraminated zone of the Subotica municipal network. Water temperature ranged from 7 °C in winter to 22 °C in summer. Nitrospira gene copy numbers in bulk water showed a significant positive correlation with temperature (Spearman r = 0.71, p < 0.001), peaking at 3.4 × 10³ copies/mL in July. Pipe deposit fractions consistently carried two to three orders of magnitude higher copy numbers than the corresponding bulk water samples, confirming that the distribution system interior surface rather than the bulk phase is the primary Nitrospira reservoir. Nitrite concentrations in the network correlated inversely with Nitrospira abundance, consistent with active nitrite oxidation. Free ammonia released by chloramine decay was identified as the principal driver of summer population growth using multiple linear regression."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04823",
+        "kind": "publication",
+        "title": "FISH-based localisation of ammonia-oxidising bacteria within drinking water pipe biofilms",
+        "body": {
+          "recordId": "SYN-PUB-04823",
+          "field": "abstract",
+          "text": "Fluorescence in situ hybridisation (FISH) with probe Nso1225 targeting betaproteobacterial ammonia-oxidising bacteria (AOB) was combined with DAPI staining to examine the spatial distribution of AOB within intact biofilm sections recovered from polyvinyl chloride (PVC) and ductile iron pipe coupons deployed for 90 days in a pilot-scale distribution loop operating at chloramine residuals between 1.0 and 2.5 mg/L as Cl₂. Confocal laser scanning microscopy revealed that AOB-positive cells were more abundant in the deeper, DAPI-dense microcolonies (mean depth 8–15 µm from the pipe surface) than in the biofilm–water interface layer, suggesting that the biofilm matrix attenuates chloramine penetration sufficiently to permit AOB survival. On iron coupons, corrosion tubercles harboured higher FISH signal intensities compared with PVC. Quantification of Nso1225-positive cells relative to DAPI yielded AOB fractions of 4.2 ± 1.1% (iron) and 1.9 ± 0.6% (PVC), with the difference being statistically significant (p = 0.018, Wilcoxon test)."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01406",
+        "kind": "publication",
+        "title": "Metagenomic survey of iron-cycling guilds in tuberculated main sections: a pilot 454-pyrosequencing study",
+        "body": {
+          "recordId": "SYN-PUB-01406",
+          "field": "abstract",
+          "text": "DNA was extracted from corrosion tubercle material removed from three sections of a 60-year-old cast-iron main in Novi Sad and subjected to 454 pyrosequencing of the V3–V5 region of the 16S rRNA gene. A total of 47,320 quality-filtered reads were binned into OTUs at 97% identity. Taxonomic profiling indicated that iron-oxidising Betaproteobacteria related to Sideroxydans lithotrophicus (12.3–18.7% relative abundance across sites) and iron-reducing Geobacter-affiliated phylotypes (5.1–9.8%) co-dominated the tubercle communities, together with sulphate-reducing Deltaproteobacteria (3.2–6.4%). Alphaproteobacteria, Bacteroidetes and Firmicutes comprised the remaining diversity. Functional annotation of a 3.2 Mbp assembled metagenome fragment using the MG-RAST pipeline identified genes for cyc2 outer-membrane cytochrome, mtoA and mtr operons, consistent with extracellular electron transfer coupled to iron cycling. This represented the first metagenomic characterisation of Vojvodina distribution system tubercles."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05972",
+        "kind": "publication",
+        "title": "Effect of monochloramine concentration on nitrification onset kinetics in pilot-scale pipe loops: a mesocosm approach",
+        "body": {
+          "recordId": "SYN-PUB-05972",
+          "field": "abstract",
+          "text": "Four parallel closed-loop pipe mesocosms (total pipe volume 120 L each, PVC and ductile iron variants) were operated for 280 days at four monochloramine residuals: 0.5, 1.0, 2.0 and 3.0 mg/L as Cl₂. Bulk water was sampled twice weekly for nitrite, nitrate, ammonia, heterotrophic plate count and qPCR-based enumeration of Nitrosomonas-related amoA gene copies. Nitrification onset, defined as nitrite accumulation exceeding 0.05 mg/L for three consecutive samples, occurred at days 114, 87, 61 and did not occur in the 3.0 mg/L arm by day 280. Total inorganic nitrogen mass balance confirmed that the observed nitrite originated from ammonia released by chloramine autodecomposition. Biofilm on iron pipe coupons established nitrification 12–18 days earlier than the PVC equivalent at the same residual, attributable to higher biofilm biomass as measured by ATP luminometry. These results quantify the threshold chloramine residual required to prevent biological nitrification in Vojvodina source water chemistry."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10024",
+        "kind": "publication",
+        "title": "Haloacetic acid formation potential in chloraminated systems undergoing nitrification: laboratory batch tests with biofilm leachate",
+        "body": {
+          "recordId": "SYN-PUB-10024",
+          "field": "abstract",
+          "text": "Nitrification in chloramine-treated networks can alter the organic carbon pool and thereby affect disinfection by-product (DBP) formation. Biofilm leachate was collected from pilot-loop coupons after 120 days of nitrifying conditions (confirmed by nitrite accumulation) and subjected to chlorine and chloramine demand tests followed by headspace GC-ECD analysis of trihalomethanes (THMs) and ion chromatographic quantification of haloacetic acids (HAAs). Leachate from nitrifying biofilms showed a 23% higher HAA5 formation potential compared with non-nitrifying controls, while THM formation potential did not differ significantly between conditions. Dissolved organic nitrogen (DON) in nitrifying leachate was elevated (0.8 vs. 0.3 mg/L), and the increase in HAA yield correlated with DON concentration (r² = 0.84). Parallel LC-OCD fractionation identified hydrophilic acids and low-molecular-weight neutrals as the fractions contributing most to excess HAA formation. Findings suggest that nitrification suppression confers a co-benefit of reduced HAA precursor release."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05973",
+        "kind": "publication",
+        "title": "Microbial community dynamics following a chloramine-to-chlorine conversion event in a medium-sized distribution network",
+        "body": {
+          "recordId": "SYN-PUB-05973",
+          "field": "abstract",
+          "text": "A controlled disinfectant conversion from monochloramine (average residual 1.4 mg/L) to free chlorine (0.5 mg/L) was carried out in a district metering area of the Sremska Mitrovica network serving approximately 18,000 people. Biofilm coupon devices and bulk water samplers were deployed at eight network nodes. 16S rRNA gene amplicon sequencing (Illumina MiSeq, V4 region) was performed on samples collected 2 weeks before, and 2, 4, 8 and 16 weeks after conversion. Shannon diversity in bulk water decreased from 3.8 ± 0.2 to 2.7 ± 0.3 within four weeks of conversion, driven by collapse of chloramine-tolerant Sphingomonadales. Nitrospira and Nitrosomonas relative abundances dropped below detection (< 0.1%) by week 8. Heterotrophic plate counts temporarily increased during week 2, consistent with biofilm sloughing triggered by the disinfectant shift. By week 16, community composition had not returned to pre-conversion structure, indicating a persistent reorganisation. Water quality parameters remained within regulatory limits throughout."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10025",
+        "kind": "publication",
+        "title": "Functional gene catalogue of nitrifying biofilm communities in Vojvodina drinking water networks derived from shotgun metagenomics",
+        "body": {
+          "recordId": "SYN-PUB-10025",
+          "field": "abstract",
+          "text": "Shotgun metagenomes (Illumina HiSeq 2500, 2 × 150 bp paired-end) were generated from biofilm DNA pooled from 24 coupon devices deployed at six sites across three Vojvodina drinking water utilities operating under chloramine disinfection. Total sequencing yield was 312 Gbp after quality trimming. Assembly with MEGAHIT produced 2.1 million contigs; binning with MetaBAT2 recovered 38 metagenome-assembled genomes (MAGs) with completeness > 70% and contamination < 5%. MAGs affiliated with Nitrospira (n = 6), Nitrosomonas (n = 4) and Sideroxydans (n = 3) were reconstructed. The Nitrospira MAGs encoded complete pathways for nitrite oxidation and carbon fixation via the reductive tricarboxylic acid cycle; two also harboured amoA genes, providing genomic evidence for complete ammonia oxidation (comammox) in this system. Functional annotations revealed high prevalence of chloramine tolerance determinants including glutathione S-transferase and methionine sulphoxide reductase genes across multiple lineages. This catalogue provides a reference for future monitoring studies in the region."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10026",
+        "kind": "publication",
+        "title": "Spatial heterogeneity of biofilm community composition along a chloramine gradient in a branched distribution network",
+        "body": {
+          "recordId": "SYN-PUB-10026",
+          "field": "abstract",
+          "text": "Chloramine residual in the Novi Sad network decays from approximately 2.1 mg/L at the reservoir outlet to < 0.3 mg/L at distal dead-end nodes. We exploited this natural gradient by deploying 48 biofilm coupon devices at 12 network locations stratified by chloramine residual class (high: > 1.5 mg/L; medium: 0.5–1.5 mg/L; low: < 0.5 mg/L). After 60 days of exposure, coupon biofilms were profiled by 16S rRNA amplicon sequencing and ATP measurements. Total biofilm ATP increased 3.1-fold from high to low residual zones. Ordination analysis (NMDS, Bray–Curtis distances) showed significant separation of community composition among residual classes (PERMANOVA R² = 0.41, p = 0.001). Comammox Nitrospira and Sideroxydans-related phylotypes were significantly enriched in low-residual sites; Methylobacterium and Sphingomonas dominated high-residual biofilms. Co-occurrence network analysis identified a Nitrospira–Sideroxydans positive association suggesting metabolic coupling between nitrogen and iron cycling at low disinfectant levels."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10027",
+        "kind": "publication",
+        "title": "Metatranscriptomic evidence for active nitrification in low-biomass bulk water of a chloraminated network",
+        "body": {
+          "recordId": "SYN-PUB-10027",
+          "field": "abstract",
+          "text": "Whether nitrification in drinking water distribution systems is primarily a biofilm-associated or bulk water process has been debated. We addressed this by applying metatranscriptomics to RNA extracted directly from 10 L bulk water samples collected at night (minimal hydraulic disturbance) from three chloraminated network zones in Novi Sad. RNA was stabilised with RNAlater, ribosomal RNA was depleted using a Ribo-Zero kit, and sequencing was performed on a NovaSeq 6000 (2 × 100 bp). Mapping against the reference gene catalogue from the 2020 Vojvodina metagenome revealed active transcription of amoA, amoB and hao genes (Nitrosomonas-affiliated) and nxrA, nxrB (Nitrospira-affiliated) in all three bulk water samples, with transcript abundances 18–42 times lower than in matched biofilm RNA. Transcripts for Sideroxydans cyc2 were also detected. Results confirm that bulk water harbours metabolically active nitrifiers, albeit at much lower activity than biofilm, with implications for chloramine demand modelling."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01259",
+        "kind": "publication",
+        "title": "Phosphorus limitation as a biofilm control strategy in chloramine-treated systems: mesocosm experiments with amended source water",
+        "body": {
+          "recordId": "SYN-PUB-01259",
+          "field": "abstract",
+          "text": "Phosphate concentrations in Vojvodina groundwater used for drinking supply range from 0.04 to 0.18 mg P/L. We conducted mesocosm experiments to evaluate whether reducing bioavailable phosphorus to < 0.01 mg P/L, achieved by dosing iron coagulant upstream of the distribution loop, suppresses nitrifying biofilm development. Four pipe-loop mesocosms were operated at ambient and reduced phosphorus under two chloramine residuals (1.0 and 2.0 mg/L as Cl₂) for 240 days. Biofilm ATP, 16S rRNA amplicon sequencing and qPCR of nxrB were measured at 60-day intervals. Phosphorus limitation reduced total biofilm ATP by 55% and nxrB gene copy numbers by 1.8 orders of magnitude at 1.0 mg/L chloramine, but differences were attenuated at 2.0 mg/L. Community structure in phosphorus-limited biofilms shifted toward oligotrophic Alphaproteobacteria with reduced Nitrospira abundance. The combination of moderate phosphorus limitation and a maintained chloramine residual of 1.5 mg/L effectively prevented nitrification onset throughout the 240-day trial."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10028",
+        "kind": "publication",
+        "title": "Long-read metagenomic assembly resolves complete genomes of comammox Nitrospira from drinking water biofilm",
+        "body": {
+          "recordId": "SYN-PUB-10028",
+          "field": "abstract",
+          "text": "Short-read metagenomic assemblies commonly fragment genomic regions encoding repeat-containing operons, including the amo gene cluster in comammox Nitrospira. We applied Oxford Nanopore Technologies (ONT) PromethION long-read sequencing to high-molecular-weight DNA extracted from pooled biofilm material from six low-residual network sites in Novi Sad. After Guppy basecalling and quality filtering, 28.4 Gbp of reads were available. Hybrid assembly using Flye followed by Illumina short-read polishing yielded three circularised comammox Nitrospira genomes (3.4–4.1 Mbp, completeness > 98%, contamination < 1%). Comparison with reference Nitrospira inopinata revealed expansions in transporter gene families (ABC-type phosphate and sulphate transporters), a full ure operon suggesting urea utilisation as an alternative ammonia source, and a type IV pili locus potentially involved in biofilm attachment. Phylogenomic placement confirmed all three genomes belong to comammox Nitrospira clade A. These are the first complete comammox genomes recovered from a Balkan drinking water system."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10029",
+        "kind": "publication",
+        "title": "Distribution system microbiome and regulatory compliance: bridging metagenomic data and drinking water quality indicators",
+        "body": {
+          "recordId": "SYN-PUB-10029",
+          "field": "abstract",
+          "text": "Chapter reviews the relationship between metagenomic community descriptors—alpha diversity indices, relative abundance of nitrifier guilds, iron-oxidiser guild richness—and conventional regulatory water quality indicators prescribed under EU Drinking Water Directive 2020/2184 (total coliforms, E. coli, colony counts at 22 °C and 37 °C, nitrite). Drawing on data from six Balkan utilities and a literature survey of 31 published distribution system metagenome datasets, the chapter evaluates whether any metagenomic metric can serve as an early warning indicator for regulatory threshold exceedances. Nitrospira relative abundance above 2% of the 16S rRNA community profile preceded nitrite exceedance events (> 0.1 mg/L) by a median of 23 days across the six utilities examined. Iron-oxidiser richness correlated with colour complaints (r = 0.62) but not with coliform counts. The chapter concludes with recommended sampling protocols for integrating sequence-based monitoring into utility operational practice, noting data infrastructure requirements and cost per sample in Vojvodina context."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00461",
+        "kind": "publication",
+        "title": "Viromes of drinking water distribution biofilms: phage predation on nitrifying bacteria under chloramine selection",
+        "body": {
+          "recordId": "SYN-PUB-00461",
+          "field": "abstract",
+          "text": "Despite the ecological importance of phage–host dynamics in shaping nitrifier populations, virome data from drinking water distribution biofilms remain scarce. We isolated the viral fraction from 18 biofilm samples collected across three Vojvodina networks by sequential filtration (0.45 µm then 0.1 µm) and ultracentrifugation, and sequenced DNA with Illumina NextSeq (2 × 150 bp). After assembly with VIBRANT and taxonomy assignment using vConTACT2, we identified 1,247 viral operational taxonomic units. Phages with predicted Nitrospira and Nitrosomonas hosts constituted 4.1 and 2.7% of viral OTUs respectively. Comparative analysis between high-chloramine (> 1.5 mg/L) and low-chloramine (< 0.5 mg/L) sites showed significantly higher nitrifier-phage richness at low-residual sites (Mann–Whitney U, p = 0.003), consistent with higher host abundance enabling phage propagation. Two phage contigs encoding auxiliary metabolic genes homologous to nxrB were identified, suggesting potential for metabolic manipulation of the Nitrospira host. These results indicate that phage predation may contribute to regulating nitrifier guild dynamics in chloramine-maintained biofilms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01402",
+        "kind": "publication",
+        "title": "Comparative life cycle assessment of three valorisation routes for anodising aluminium sludge: coagulant production, zeolite synthesis, and landfill disposal",
+        "body": {
+          "recordId": "SYN-PUB-01402",
+          "field": "abstract",
+          "text": "A cradle-to-gate life cycle assessment (LCA) was conducted for two valorisation scenarios — production of polyaluminium sulphate (PAS) and synthesis of zeolite NaA — and compared against the baseline of stabilisation and landfill disposal, using primary inventory data from laboratory and pilot experiments. The functional unit was 1 tonne of dry anodising sludge processed. Global warming potential (GWP100), cumulative energy demand, and three water-related impact categories were calculated using the ReCiPe 2016 midpoint method. PAS production showed a net avoided GWP of 142 kg CO2-eq per functional unit relative to landfill, primarily through substitution of virgin aluminium sulphate. Zeolite NaA synthesis showed a higher energy demand (+38%) than PAS production but a larger avoided impact in the eutrophication category. Data quality limitations and allocation choices are discussed in detail. The results are intended to guide process selection rather than provide definitive environmental benchmarks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09586",
+        "kind": "publication",
+        "title": "Pressure effects on nucleophilic aromatic substitution: volumes of activation for reactions of amines with nitropyridines and nitropyrimidines",
+        "body": {
+          "recordId": "SYN-PUB-09586",
+          "field": "abstract",
+          "text": "Volumes of activation (ΔV‡) for seven SNAr reactions between aliphatic amines and electron-deficient nitroheteroarenes were measured in acetonitrile and aqueous ethanol using a high-pressure stopped-flow apparatus (5–150 MPa) at 25 °C, in collaboration with the kinetics laboratory at the University of Pécs. ΔV‡ values ranged from −12.4 to −21.7 cm³ mol⁻¹ across the series. The most negative ΔV‡ values were associated with reactions in which Meisenheimer complex accumulation had independently been confirmed, consistent with a large electrostriction contribution upon charge localisation in the σ-complex. Reactions proceeding without detectable intermediates gave less negative ΔV‡ (−12 to −14 cm³ mol⁻¹), suggesting a more dispersed charge in the transition state. A linear correlation was found between ΔV‡ and the previously reported ΔS‡ values (r² = 0.93), implying that both quantities reflect the same physical change in solvent structure. The results are compared with literature ΔV‡ data for aliphatic SN2 reactions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10030",
+        "kind": "publication",
+        "title": "Multiple linear regression QSAR models for triazole antifungal activity against Candida albicans: descriptor selection and cross-validation",
+        "body": {
+          "recordId": "SYN-PUB-10030",
+          "field": "abstract",
+          "text": "A dataset of 48 triazole derivatives with experimentally determined MIC values against Candida albicans was compiled from the literature. Constitutional, topological, and geometrical descriptors were calculated using Dragon 5.5, yielding an initial pool of 412 variables. Forward stepwise multiple linear regression combined with leave-one-out cross-validation identified a four-descriptor model (R² = 0.87, Q²LOO = 0.83) in which the Wiener index, the molecular electronegativity distance vector MEDV-13, and two Randić connectivity indices carried the dominant predictive weight. An external test set of 12 compounds not used during model building gave R²ext = 0.81. Residual analysis revealed two structural outliers attributable to bulky halogenated substituents at the 4-position of the phenyl ring. The study emphasises that LOO cross-validation alone overstates model robustness and that a separate test set drawn before any descriptor selection is mandatory for reliable performance assessment."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1115",
+        "kind": "project",
+        "title": "Metagenomic Monitoring of Nitrification Risk in Vojvodina Drinking Water Systems",
+        "body": {
+          "recordId": "SYN-PRJ-1115",
+          "field": "summary",
+          "text": "The project developed sequence-based tools for early detection of nitrification risk in chloramine-disinfected distribution networks supplying Vojvodina municipalities. Core activities included deployment of standardised biofilm coupon networks across four utilities, construction of the regional metagenomic reference catalogue, and development of a qPCR-based three-marker panel (amoA, nxrB, cyc2) benchmarked against water quality records. A risk-scoring algorithm was calibrated on 36 months of paired molecular and regulatory data. Deliverables included an open-access reference sequence database, field sampling protocol documentation, and a training workshop for utility technicians held in Novi Sad in November 2022."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1116",
+        "kind": "project",
+        "title": "Iron-Oxidising Biofilm Communities in Danube Basin Drinking Water Infrastructure: Ecology, Corrosion and Treatment Interactions",
+        "body": {
+          "recordId": "SYN-PRJ-1116",
+          "field": "summary",
+          "text": "Cross-border project examining the ecology of iron-oxidising microbial communities in drinking water distribution infrastructure in the Hungarian–Serbian Danube corridor. Prof. Ljubojević leads Work Package 3, which covers metagenomic and metatranscriptomic profiling of iron-oxidiser guilds in Serbian network sections and comparative analysis with Hungarian partner data. The work package addresses the relationship between Gallionella and Sideroxydans population dynamics, corrosion tubercle chemistry and discolouration events. Sampling campaigns involve 11 utilities in Vojvodina and three in Bács-Kiskun county. A joint protocol for microbiological corrosion assessment applicable to both regulatory environments is being developed as a key output."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0954",
+            "field": "open_to",
+            "quote": "industrial PhD supervision in water microbiology",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0954",
+            "field": "open_to",
+            "quote": "joint research projects with water utilities on microbiological monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0954",
+            "field": "open_to",
+            "quote": "contract research: metagenomic profiling of industrial water systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

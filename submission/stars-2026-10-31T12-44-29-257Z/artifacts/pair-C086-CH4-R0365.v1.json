@@ -1,0 +1,163 @@
+{
+  "ref": {
+    "artifactId": "pair-C086-CH4-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C086-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C086-CH4-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can thermo-mechanical stress analysis and targeted changes to potting materials, interfaces or enclosure geometry reduce KL-HSM epoxy cracking while preserving tamper evidence? The first experiment would characterize the actual epoxy and reproduce baseline cracking under the company's thermal-cycle protocol to test whether Erić's steel-based experimental and modelling methods transfer to this assembly, before testing candidate changes against the proposed 200-cycle target.",
+    "rationale": [
+      {
+        "text": "Erić has directly relevant experience investigating interactions between thermal cycling, mechanical loading and crack development, although demonstrated on welded steel rather than epoxy assemblies.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "Crack growth rates in both TMF programmes exceeded predictions based on simple superposition of mechanical and thermal stress intensities",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work combines temperature-dependent finite-element models with experimental deformation measurements, providing a methodological basis for investigating local stress concentrations in the enclosure.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "FE simulations using temperature-dependent elastic–plastic material models reproduced the crack-tip opening displacement within 8% of experimental digital image correlation measurements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has led experimental testing and simulation within a collaborative structural-integrity project.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0389",
+            "field": "summary",
+            "quote": "Erić led the experimental testing and simulation activities on the Serbian side and co-supervised a doctoral student enrolled at Zagreb.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Candidate assemblies must be tested across −10°C to 60°C against the company's proposed target of 200 cycles without visible fracturing; this is an acceptance target to investigate, not an assured result.",
+        "sources": [
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "Our target operating range for the certified product is -10°C to 60°C.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "A good outcome is an enclosure that passes 200 thermal cycles without visible fracturing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Changes must preserve the required tamper evidence and fit the seven-month window before scheduled physical evaluation; fracture resistance alone is not the certification objective.",
+        "sources": [
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "Common Criteria EAL4+ requires that our KL-HSM enclosure demonstrate tamper evidence under physical stress, including thermal cycling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "the physical testing phase is scheduled to begin in seven months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Diagnosis must use the available samples, four test runs and enclosure drawings, and explicitly represent the PCB corners and metal–potting interfaces where cracking occurs.",
+        "sources": [
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "We have physical samples, test data from the last four test runs, and the enclosure drawings available.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH4",
+            "field": "detail",
+            "quote": "The fractures appear near the corners of the PCB substrate and at points where metallic fasteners meet the potting compound.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The project must have a tightly defined, practically applicable scope compatible with the company's modest collaboration capacity.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Extended testing requires advance reservation of the researcher's shared climate chamber and fatigue equipment.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The documented fracture and thermal-cycling methods concern steel, not cured epoxy, PCB substrates or polymer–metal adhesion. Their transfer is unvalidated; the first experiment must establish actual epoxy behaviour and baseline assembly cracking before relying on model predictions.",
+      "No polymer-specific expertise or Common Criteria evaluation experience is established in the researcher's material. A polymer specialist and the accredited laboratory may need to participate.",
+      "A formulation or geometry change could suppress visible cracking while weakening tamper evidence; passing 200 thermal cycles alone would not establish certification readiness.",
+      "Researcher availability is explicitly unknown. Shared equipment access, unconfirmed chamber suitability for the complete −10°C to 60°C protocol, and material-characterization work could compromise the seven-month schedule.",
+      "Project budget, sample quantities, supplier material-data access and permission to change formulations or enclosure features are unknown.",
+      "The company gives both a relative seven-month testing window and an end-of-2025 certification plan; the current evaluation dates need confirmation."
+    ],
+    "questions": [
+      "Can Erić commit time to this epoxy-focused joint project, and can a polymer/adhesion specialist join if required?",
+      "What are the current laboratory dates, intermediate design-freeze deadlines and agreed tamper-evidence acceptance criteria?",
+      "What thermal ramp rates, dwell times, humidity, assembly constraints and inspection methods produced the existing failures, and how is 'visible fracturing' defined?",
+      "Can the supplier provide formulation and cured-material property data, and are retained samples and process records available for both tested epoxies?",
+      "How many representative enclosures and test coupons can be supplied, and which changes to potting, fasteners, PCB corners or interfaces are permitted?",
+      "Can suitable thermal-cycling and polymer-characterization equipment be booked early enough, including confirmed operation at 60°C and space for representative assemblies?",
+      "What budget and company engineering time are available, and what confidentiality and data-access arrangements apply to enclosure drawings and security-sensitive samples?"
+    ],
+    "outcome": "pair",
+    "taskId": "C086-CH4",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C086-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C086-CH4-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

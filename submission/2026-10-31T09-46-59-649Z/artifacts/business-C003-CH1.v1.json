@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C003-CH1",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C003-CH1",
+    "companyId": "C003",
+    "companyName": "AutomVoj a.d.",
+    "sector": "Robotics and industrial automation",
+    "location": "Zrenjanin",
+    "challenge": {
+      "text": {
+        "recordId": "C003-CH1",
+        "field": "text",
+        "text": "Our conveyor frames crack at the weld joints after roughly 18 months of operation in chilled environments; we've replaced 14 assemblies under warranty this year and we can't reproduce the failure in our workshop because we test at room temperature."
+      },
+      "detail": {
+        "recordId": "C003-CH1",
+        "field": "detail",
+        "text": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery. When these systems run in customer cold stores — typically operating between 2 °C and 6 °C — we are seeing weld joint cracking at the main crossmember-to-stringer connections after about 18 months of continuous use. This year alone we have replaced 14 complete frame assemblies under warranty, which is costing us in material, travel, and lost engineer time. The frustrating part is that we have tried to reproduce the failure in our workshop and cannot do it. We test frames under load at room temperature and they pass without any problem. Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts is doing something we are not seeing at ambient conditions. We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage. We do not currently have the equipment or know-how to test at low temperatures under cyclic load. A good outcome would be understanding exactly what is causing the cracks so we can change our welding procedure, filler material, or joint design and stop the warranty replacements."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C003",
+        "field": "about",
+        "text": "AutomVoj a.d. has been building conveyor and sorting automation systems from its base in Zrenjanin since 1983. What started as a small workshop supplying domestic food processing plants has grown into a team of 212 engineers, electricians, and technicians shipping systems to customers in Serbia, Hungary, Romania, Austria, Slovenia, Croatia, and Slovakia. Our core business is straightforward: we design, manufacture, and commission PLC-based conveyor lines and automated sorting equipment for food and beverage producers who need reliable throughput in demanding environments — cold stores, wet wash areas, high-dust packaging halls. We do not chase every sector; we know food and beverage and we do it well. Our fabrication shop, electrical assembly area, and in-house testing floor are all under one roof on our Zrenjanin site. Most of our project managers started as commissioning engineers, so they understand what a line stoppage costs a customer at three in the morning. We have long-term supply relationships with component makers in Germany and Italy and we carry enough spares stock to respond within 48 hours on any system we have installed. Roughly 60 percent of our revenue now comes from repeat customers or referrals."
+      },
+      "products": [
+        {
+          "recordId": "C003",
+          "field": "products",
+          "text": "PLC-controlled conveyor systems for chilled and ambient food production lines"
+        },
+        {
+          "recordId": "C003",
+          "field": "products",
+          "text": "Automated sorting and grading equipment for fruit, vegetable, and packaged goods"
+        },
+        {
+          "recordId": "C003",
+          "field": "products",
+          "text": "Electrical control panels and drive cabinets for industrial automation"
+        },
+        {
+          "recordId": "C003",
+          "field": "products",
+          "text": "On-site commissioning, maintenance contracts, and spare-parts supply"
+        },
+        {
+          "recordId": "C003",
+          "field": "products",
+          "text": "System retrofits and capacity upgrades on legacy conveyor installations"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "Siemens S7-1500 and S7-300 PLC platforms"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "Ladder logic and structured text programming in TIA Portal"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "Siemens SINAMICS and SEW-EURODRIVE servo and frequency drive systems"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "Mild steel and stainless steel MIG/MAG welded frame fabrication"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "EPLAN Electric P8 for electrical schematic design"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "Profibus and Profinet industrial networking"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "HMI development with Siemens WinCC and Weintek panels"
+        },
+        {
+          "recordId": "C003",
+          "field": "tech",
+          "text": "AutoCAD Mechanical for conveyor layout and structural drawings"
+        }
+      ],
+      "plans": {
+        "recordId": "C003",
+        "field": "plans",
+        "text": "AutomVoj intends to increase its export share to 55 percent of revenue within three years, targeting food logistics customers in Central Europe, and is evaluating an entry into automated poultry processing lines as a second vertical. The second assembly hall, once financed, is expected to be operational by mid-2026."
+      },
+      "rdCapacity": {
+        "recordId": "C003",
+        "field": "rd_capacity",
+        "text": "We have no dedicated R&D department; technical development happens informally through project work, led by our chief engineer and two senior automation engineers who allocate time between live projects and improvement work."
+      },
+      "pastCollaborations": {
+        "recordId": "C003",
+        "field": "past_collaborations",
+        "text": "AutomVoj completed a one-year joint development project with Fakultet tehničkih nauka in Novi Sad in 2019 on drive energy monitoring, which resulted in an internal measurement tool but was not published or commercialised."
+      }
+    }
+  }
+}

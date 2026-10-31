@@ -1,0 +1,256 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0679",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0679",
+    "name": "Goran Radulović",
+    "faculty": "Faculty of Technology",
+    "department": "Department of Applied and Engineering Chemistry",
+    "fields": [
+      "Analytical Chemistry",
+      "Environmental Chemistry",
+      "Water Quality Monitoring",
+      "Field Analysis and Portable Instrumentation"
+    ],
+    "keywords": [
+      "matrix interference correction",
+      "colorimetric analysis",
+      "photometric field methods",
+      "high-ionic-strength groundwater",
+      "alkalinity effects",
+      "divalent cation interference",
+      "portable spectrophotometry",
+      "iron determination",
+      "phosphate determination",
+      "groundwater monitoring"
+    ],
+    "openTo": [
+      "contract research for water utilities and environmental monitoring companies",
+      "consulting on field analytical method validation and interference correction",
+      "equipment access (portable spectrophotometers, ICP-OES, ion chromatography) for companies without in-house analytical capacity",
+      "student internships for analytical chemistry or environmental engineering students",
+      "joint project applications related to portable water quality monitoring or aquifer characterisation"
+    ],
+    "bio": {
+      "recordId": "R0679",
+      "field": "bio",
+      "text": "Goran Radulović received his BSc and MSc degrees in Applied Chemistry from the Faculty of Technology, University of Novi Sad, in 2003 and 2006 respectively, and completed his PhD at the same institution in 2011, with a dissertation on interference suppression in field-deployable colorimetric methods for groundwater monitoring. He was appointed Assistant Professor in 2012 and promoted to Associate Professor in 2018. His group focuses on matrix effects in portable and low-cost photometric analysis of groundwater samples characterised by high ionic strength, elevated bicarbonate and carbonate alkalinity, and significant concentrations of calcium and magnesium. He teaches undergraduate courses in Analytical Chemistry and Environmental Monitoring Methods, and doctoral courses on trace-level field analysis. The group operates a small field-analytical laboratory equipped with portable spectrophotometers, ion chromatography, ICP-OES, and a titration workstation."
+    },
+    "industryExperience": {
+      "recordId": "R0679",
+      "field": "industry_experience",
+      "text": "Radulović has provided analytical consulting to two Vojvodina water supply utilities during the MATRIKS project, assisting them in adapting portable photometric methods for their routine monitoring programmes. He has also reviewed field analytical protocols for a regional environmental monitoring company on a short-term contract basis."
+    },
+    "notes": {
+      "recordId": "R0679",
+      "field": "notes",
+      "text": "Radulović is primarily interested in applied collaborations where his interference correction models and groundwater matrix expertise can solve a specific measurement problem for a company working in water quality, environmental monitoring, or portable sensor development. He is not seeking to expand into unrelated analytical areas. Availability for new projects is reasonable from 2025 onward; he has no planned sabbatical."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07641",
+        "kind": "publication",
+        "title": "Effect of Carbonate Alkalinity on Absorbance Readings in the 1,10-Phenanthroline Iron(II) Method at Elevated pH",
+        "body": {
+          "recordId": "SYN-PUB-07641",
+          "field": "abstract",
+          "text": "The 1,10-phenanthroline colorimetric procedure for dissolved iron(II) is routinely applied in field settings, yet its sensitivity to background alkalinity is poorly documented for samples from carbonate-rich aquifers. This study examined absorbance readings at 510 nm in synthetic solutions containing 0–600 mg/L total alkalinity (as CaCO3) with iron(II) concentrations between 0.05 and 2.0 mg/L. At alkalinity above 300 mg/L, apparent absorbance increased by 4–11% relative to low-alkalinity blanks, attributable to colloidal carbonate scattering forming within seconds of reagent addition. Three correction approaches were tested: matched-matrix blanks, a turbidity-subtraction step at 700 nm, and acidification pre-treatment to pH 2.0. Acidification reduced the bias to below 0.3% but introduced partial oxidation of Fe(II) to Fe(III) during transport when samples were not preserved immediately. The turbidity subtraction at 700 nm offered a practical compromise, reducing the alkalinity-related error to under 1.5% across the tested range without requiring pre-acidification. Limits of detection under corrected conditions were 0.018 mg/L. The findings are directly applicable to monitoring wells in the Vojvodina region, where groundwater alkalinity commonly exceeds 400 mg/L."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07642",
+        "kind": "publication",
+        "title": "Calcium and Magnesium Cross-Sensitivity in the Molybdenum Blue Phosphate Method: A Systematic Evaluation",
+        "body": {
+          "recordId": "SYN-PUB-07642",
+          "field": "abstract",
+          "text": "The molybdenum blue method for dissolved reactive phosphate (DRP) is widely used in portable water-quality kits, but interference from divalent cations at concentrations typical of hard groundwater has not been systematically quantified. Solutions containing 0–400 mg/L Ca2+ and 0–150 mg/L Mg2+ were prepared at three DRP levels (0.05, 0.50, and 2.00 mg/L) and analysed using the ammonium molybdate–ascorbic acid procedure at 880 nm. Calcium at 300 mg/L caused a suppression of 6–8% in absorbance relative to deionised water blanks, while magnesium at 120 mg/L caused 3–4% suppression. When both ions were present at levels representative of Pannonian Basin shallow aquifers (260 mg/L Ca2+, 85 mg/L Mg2+), total suppression reached 9.5% at low DRP concentrations. A simple correction factor derived from total hardness, measurable in the field with EDTA titration, reduced the combined error to below 2%. The approach was validated against ICP-OES measurements on 22 groundwater samples collected from monitoring wells in Bačka and Banat. The method is suitable for routine deployment without laboratory pre-treatment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07643",
+        "kind": "publication",
+        "title": "Field-Portable Photometric Determination of Ammonium in Groundwater Using the Indophenol Blue Reaction Under High-Salinity Conditions",
+        "body": {
+          "recordId": "SYN-PUB-07643",
+          "field": "abstract",
+          "text": "The indophenol blue reaction is the standard colorimetric route to ammonium in natural waters, but its applicability in high-ionic-strength groundwater (electrical conductivity above 1500 µS/cm) has been questioned due to ionic-strength effects on reaction kinetics and dye stability. This work evaluated the method across a conductivity range of 200–3500 µS/cm using synthetic NaCl, Na2SO4, and NaHCO3 matrices at ammonium concentrations of 0.1–5.0 mg/L NH4-N. Ionic strength alone (controlled by NaCl) caused less than 2% deviation at conductivities up to 2500 µS/cm. However, bicarbonate at concentrations above 500 mg/L slowed colour development by approximately 18% at 20 min reaction time, requiring an extended 45-minute development period or mild acidification before reagent addition. Temperature during colour development (15–30 °C) interacted significantly with bicarbonate effects; a correction equation incorporating both temperature and alkalinity is presented and validated on 18 real groundwater samples from the Srem sub-region. Detection limit under optimised conditions was 0.04 mg/L NH4-N."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07644",
+        "kind": "publication",
+        "title": "Turbidity Compensation Strategies for Portable Spectrophotometers Operating in Optically Complex Groundwater",
+        "body": {
+          "recordId": "SYN-PUB-07644",
+          "field": "abstract",
+          "text": "Optically complex groundwater — containing suspended iron oxyhydroxides, colloidal silica, or humic substances — presents a persistent challenge for portable single-wavelength photometers. This study compared four turbidity compensation strategies across 12 field instruments from four manufacturers: (i) dual-wavelength subtraction using a non-absorbing reference wavelength, (ii) centrifugation of a field sub-sample, (iii) 0.45 µm syringe filtration, and (iv) mathematical blank correction using a reagent-free aliquot. Tests used synthetic suspensions of ferrihydrite (5–80 NTU) and humic acid (2–25 mg/L) added to certified standard solutions of iron, phosphate, and nitrite. Filtration and centrifugation removed turbidity effectively but altered analyte concentrations for iron by 15–40% depending on redox conditions. Dual-wavelength subtraction performed well for humic backgrounds (bias < 3%) but underperformed for ferrihydrite (bias 5–12%) due to wavelength-dependent scattering. Reagent-free blank correction was the most universally applicable approach, reducing error to below 2% in all tested matrices. Practical guidance for field use is provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07645",
+        "kind": "publication",
+        "title": "Nitrite Determination by the Griess Reaction in Groundwater Containing Elevated Sulfate and Chloride: Matrix Matching or Standard Addition?",
+        "body": {
+          "recordId": "SYN-PUB-07645",
+          "field": "abstract",
+          "text": "The Griess diazotisation reaction is among the most sensitive colorimetric methods available for nitrite, yet anion matrix effects at elevated ionic strength are insufficiently characterised for practical guidance. Synthetic groundwater solutions were prepared to represent three ionic-strength scenarios encountered in Vojvodina wells: low (IS ≈ 8 mmol/L), moderate (IS ≈ 25 mmol/L), and high (IS ≈ 60 mmol/L), with sulfate ranging from 50 to 600 mg/L and chloride from 30 to 400 mg/L. Nitrite concentrations tested were 0.01–1.0 mg/L NO2-N. Sulfate at 600 mg/L caused no statistically significant bias (<1%). Chloride had a slight suppressive effect (2–4%) at 400 mg/L attributed to competition in the diazotisation step. Matrix matching using a synthetic background electrolyte reduced the chloride-related bias to below 0.5%. Standard addition gave equivalent accuracy but required three times the reagent volume and analysis time. Based on reproducibility and speed, matrix matching with a single representative synthetic blank is recommended for routine field campaigns in high-chloride groundwater."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07646",
+        "kind": "publication",
+        "title": "Comparative Assessment of Absorbance-Based and Reflectance-Based Portable Platforms for Manganese Determination in Drinking Water Sources",
+        "body": {
+          "recordId": "SYN-PUB-07646",
+          "field": "abstract",
+          "text": "Portable manganese detection is important in regions where reducing aquifer conditions mobilise Mn(II) above drinking-water limits. This study compared three commercially available portable platforms — two absorbance-mode photometers and one reflectance-mode test-strip reader — for the determination of total dissolved manganese using the formaldoxime and periodate oxidation procedures. Calibrations were constructed in deionised water and in two synthetic groundwater matrices (low hardness: 150 mg/L as CaCO3; high hardness: 550 mg/L as CaCO3). In high-hardness matrix, the periodate procedure showed a positive bias of 7–13% on the absorbance platforms that was absent in low-hardness conditions, associated with partial precipitation of calcium periodate scattering at 525 nm. The formaldoxime procedure was unaffected by hardness up to 550 mg/L. The reflectance-based strip reader showed higher variability (RSD 8–15%) but was unaffected by solution turbidity. Thirty-two real samples from municipal well fields in the southern Bačka District were analysed; results from the formaldoxime absorbance method agreed with ICP-OES reference values within 4.5%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04737",
+        "kind": "publication",
+        "title": "Reagent Stability Under Field Conditions: Degradation of Colorimetric Reagents for Iron, Phosphate, and Nitrite at 5–40 °C in High-Alkalinity Water",
+        "body": {
+          "recordId": "SYN-PUB-04737",
+          "field": "abstract",
+          "text": "Colorimetric reagent kits intended for field deployment are typically characterised under laboratory conditions; their stability during extended field operations at variable temperatures is rarely reported. This study tracked the performance of prepared reagent solutions for iron (1,10-phenanthroline), phosphate (molybdate-ascorbic acid), and nitrite (Griess) over 30-day storage periods at 5, 20, and 40 °C in brown glass vials and low-density polyethylene (LDPE) bottles. Reagents were tested weekly against certified reference solutions and against two high-alkalinity groundwater matrices (400 and 600 mg/L alkalinity as CaCO3). The 1,10-phenanthroline reagent was the most stable, retaining >97% of initial sensitivity after 30 days at all temperatures in both vessel types. The ascorbic acid reducing agent for phosphate degraded significantly at 40 °C (sensitivity loss 22% in LDPE after 14 days). The Griess reagent showed accelerated degradation above 30 °C in high-alkalinity matrix, with sensitivity loss reaching 15% after 21 days. Recommendations on storage temperature, vessel choice, and preparation frequency are provided for each reagent."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07647",
+        "kind": "publication",
+        "title": "Simultaneous Correction for Turbidity, Alkalinity, and Hardness in a Multi-Analyte Portable Photometric Protocol for Groundwater Quality Surveys",
+        "body": {
+          "recordId": "SYN-PUB-07647",
+          "field": "abstract",
+          "text": "Field surveys requiring simultaneous measurement of iron, manganese, phosphate, and ammonium in a single sampling event are constrained by limited time and reagent volume. This work presents a sequential analytical protocol optimised for a single-operator field campaign using one portable eight-wavelength spectrophotometer. The protocol incorporates a unified pre-measurement correction step: (1) a 700 nm turbidity reading on each sample before reagent addition, (2) a rapid EDTA titration for total hardness, and (3) an alkalinity estimate from field pH and conductivity using an empirical calibration model developed for Vojvodina aquifer chemistry. Correction factors for each of the four analytes were parameterised using 144 synthetic matrices covering the relevant ranges of all three interferents. The corrected protocol was validated against laboratory ICP-OES and ion chromatography results for 46 groundwater samples from 12 monitoring well clusters. Median absolute percentage errors were 3.1% (Fe), 4.0% (Mn), 3.8% (PO4-P), and 2.9% (NH4-N). The protocol requires approximately 22 minutes per sample, a reasonable field rate for four-analyte work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07648",
+        "kind": "publication",
+        "title": "Influence of Dissolved Organic Carbon Character on the Molybdenum Blue Reaction: Humic Versus Fulvic Acid Fractions in Deep Alluvial Aquifer Samples",
+        "body": {
+          "recordId": "SYN-PUB-07648",
+          "field": "abstract",
+          "text": "Deep alluvial aquifers in the Pannonian Basin frequently contain elevated dissolved organic carbon (DOC) of natural origin, primarily humic substances. The influence of humic versus fulvic acid fractions on the molybdenum blue phosphate determination has not been distinguished in prior work. Humic acid (HA) and fulvic acid (FA) standards were added at 1, 5, 10, and 25 mg/L DOC to synthetic matrices at two phosphate levels (0.1 and 1.0 mg/L PO4-P) with background alkalinity of 450 mg/L and hardness of 380 mg/L as CaCO3. HA at 10 mg/L suppressed the molybdenum blue signal by 11% at 880 nm, while FA at the same concentration suppressed it by only 4%. The suppression was partially reversed by UV-photooxidation (30-minute UV irradiation at 254 nm) before reagent addition, reducing HA interference to 2.5%. Sixty-three samples from deep monitoring wells (80–220 m depth) in the Banat region were analysed with and without UV pre-treatment; the pre-treatment affected results in 34% of samples by more than 5%, indicating meaningful DOC interference in that subset."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01375",
+        "kind": "publication",
+        "title": "Ionic Strength Correction Models for Portable Photometric Iron Analysis: Comparison of Pitzer, Davies, and Empirical Regression Approaches",
+        "body": {
+          "recordId": "SYN-PUB-01375",
+          "field": "abstract",
+          "text": "Activity coefficient corrections are rarely applied in field analytical chemistry, yet theoretical frameworks such as the Pitzer and Davies equations predict non-trivial deviations in reaction equilibria at the ionic strengths common in mineral-rich groundwaters. This study applied the Pitzer and Davies models to the 1,10-phenanthroline iron(II) system and compared their predictive power against empirical polynomial regression models fitted to experimental absorbance data collected across ionic strengths from 0.01 to 0.15 mol/L. Synthetic matrices were prepared using NaCl, MgCl2, CaCl2, and NaHCO3 in proportions approximating four regional aquifer types. The Davies equation predicted trends correctly but underestimated corrections by 30–50% relative to observed data. The Pitzer model performed better (15–25% underestimate) but requires ion-specific interaction parameters not always available for complex mixtures. Empirical polynomial regression with ionic strength and dominant cation identity as inputs achieved residuals below 1.5% across the calibration dataset and 2.1% on an independent validation set of 28 real samples. A lookup-table implementation suitable for non-specialist field users is provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07649",
+        "kind": "publication",
+        "title": "Arsenic Field Screening in High-Bicarbonate Groundwater: Evaluation of Four Portable Colorimetric Methods Against Hydride-Generation AAS Reference Values",
+        "body": {
+          "recordId": "SYN-PUB-07649",
+          "field": "abstract",
+          "text": "Arsenic contamination in drinking water drawn from reducing alluvial aquifers is a documented public-health issue in southern Pannonia. Field screening methods for arsenic must function reliably in the same high-bicarbonate, high-hardness matrices that challenge other colorimetric procedures. This study evaluated four commercially marketed portable arsenic test kits — all based on variants of the silver diethyldithiocarbamate (SDDC) or arsine-generation colorimetric approaches — against reference measurements by hydride-generation atomic absorption spectrometry (HG-AAS) in 55 groundwater samples from arsenic-affected well fields in the Banat Plain. Samples were grouped by alkalinity (<300, 300–500, >500 mg/L CaCO3) and hardness (<200, 200–400, >400 mg/L CaCO3). At alkalinity above 500 mg/L, two of four kits showed false-negative rates exceeding 20% at 10 µg/L As, the WHO guideline value. Hydrogen sulfide co-interference, generated in reducing samples, caused additional positive bias in two kits. Recommendations for pre-treatment and result interpretation specific to the regional matrix are provided, including a bicarbonate pre-removal step using acidification and degassing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07650",
+        "kind": "publication",
+        "title": "Speciation-Aware Correction for Iron in Field Photometric Analysis: Accounting for Fe(II)/Fe(III) Partitioning Under Varying Redox and pH in High-Alkalinity Groundwater",
+        "body": {
+          "recordId": "SYN-PUB-07650",
+          "field": "abstract",
+          "text": "Dissolved iron in groundwater is distributed between Fe(II) and Fe(III) in proportions governed by redox potential and pH. The 1,10-phenanthroline method measures only Fe(II); total iron requires prior reduction. In high-alkalinity samples, partial precipitation of Fe(III) as colloidal iron hydroxide occurs before and during analysis, causing negative bias in total iron results unless samples are immediately acidified. This study combined field Eh and pH measurements with laboratory Fe(II), Fe(III), and total iron determinations by ICP-OES and spectrophotometry to characterise the Fe speciation in 80 samples from 20 monitoring wells in the Bačka Palanka and Apatin areas. At pH above 7.5 and alkalinity above 350 mg/L, Fe(III) precipitation within 5 minutes of sampling accounted for losses of 12–38% of total iron from the dissolved fraction. A speciation correction algorithm taking field Eh, pH, alkalinity, and immediate Fe(II) measurement as inputs was developed; median agreement with ICP-OES total iron improved from 18.4% error to 4.7% error after correction. Practical implications for well-head sampling protocols are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0337",
+        "kind": "project",
+        "title": "Matrix Interference Mapping and Correction for Portable Water Quality Analysis in Vojvodina Aquifer Systems",
+        "body": {
+          "recordId": "SYN-PRJ-0337",
+          "field": "summary",
+          "text": "The project systematically characterised the chemical matrix variability of shallow and intermediate-depth aquifers across Vojvodina, with an emphasis on parameters that affect portable colorimetric and photometric measurements: alkalinity, hardness, ionic strength, dissolved organic carbon, and redox-sensitive speciation. A dataset of 350 groundwater samples from 70 monitoring locations was assembled over three field campaigns. Based on the dataset, analyte-specific interference correction models were developed for iron, manganese, phosphate, ammonium, and nitrite. The models were implemented in a freely downloadable spreadsheet calculator and in a printed field reference card distributed to water utility technicians in three municipalities. The project involved collaboration with two Vojvodina water utilities and the Jaroslav Černi Institute in Belgrade."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0338",
+        "kind": "project",
+        "title": "Danube Region Aquifer Quality Assessment Using Harmonised Portable Analytical Protocols",
+        "body": {
+          "recordId": "SYN-PRJ-0338",
+          "field": "summary",
+          "text": "A cross-border project aimed at harmonising field measurement practices for groundwater quality monitoring in the shared alluvial aquifer system of the Danube corridor between Serbia and Romania. The project produced a joint sampling and field analysis protocol document adopted by partner water authorities in both countries. Radulović led the work package on matrix interference assessment, contributing the iron, manganese, and phosphate correction procedures developed in his laboratory. Approximately 200 cross-border samples were analysed in parallel by partner laboratories using portable and fixed instruments; proficiency testing results and round-robin exercises were coordinated between the two institutions. Training workshops for municipal water authority staff were held in Novi Sad and Timișoara."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0264",
+        "kind": "project",
+        "title": "Speciation Analysis and Safety Assessment of Trace Elements in Microalgal Phycobiliprotein Products",
+        "body": {
+          "recordId": "SYN-PRJ-0264",
+          "field": "summary",
+          "text": "The project addressed the gap in validated analytical methods for trace element speciation in food-grade phycobiliprotein preparations derived from Arthrospira platensis and Porphyridium purpureum. Work included development and in-house validation of HPLC-ICP-MS procedures for arsenic, selenium, and chromium species, application to commercially sourced biomass lots, and assessment of how preparative chromatographic purification affects element speciation profiles. Deliverables included two peer-reviewed articles, a set of validated standard operating procedures, and a summary report submitted to the relevant national food safety working group. The project employed one doctoral researcher and supported two master's thesis projects. Total budget was approximately 4.8 million RSD."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0612",
+        "kind": "project",
+        "title": "Quantitative Solvent Substitution Maps for Priority Reaction Classes in Serbian Fine Chemical Manufacturing",
+        "body": {
+          "recordId": "SYN-PRJ-0612",
+          "field": "summary",
+          "text": "The project developed and validated HSP-based solvent substitution protocols for three reaction classes—reductive amination, esterification, and cross-coupling—prioritised through a survey of nine fine-chemical producers in Vojvodina. For each class, a structured workflow combining HSP sphere mapping, LCA screening, and bench-scale yield verification was tested and compiled into a freely accessible decision-support tool distributed as a web application hosted at the Faculty of Technology. Fourteen solvent substitution recommendations were validated at bench scale; six were further tested at 1–10 kg scale at partner companies. The project also funded the construction of the automated HSP mapping station described in the 2024 instrumentation publication."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1389",
+        "kind": "project",
+        "title": "Flexible Polymer-Based Electrochemical Storage Elements for Printed Electronics",
+        "body": {
+          "recordId": "SYN-PRJ-1389",
+          "field": "summary",
+          "text": "This cross-border project brought together electrochemistry and printed electronics groups from Serbia and Hungary to develop flexible supercapacitor electrodes compatible with roll-to-roll processing. The Novi Sad team was responsible for electrodeposition of conducting polymer composites on ITO-PET substrates and for electrochemical characterisation of assembled cells. Bending durability protocols were developed and standardised across partner laboratories. The project produced demonstrator cells with energy densities above 18 Wh kg⁻¹ in gel electrolyte and contributed to joint patent filing discussions, though no formal application was submitted. Two student internship exchanges were completed under the programme."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0679",
+            "field": "open_to",
+            "quote": "contract research for water utilities and environmental monitoring companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0679",
+            "field": "open_to",
+            "quote": "joint project applications related to portable water quality monitoring or aquifer characterisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

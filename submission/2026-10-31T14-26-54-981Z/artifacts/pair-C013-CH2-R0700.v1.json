@@ -1,0 +1,208 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0700",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0700",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware policy geolocation combined with radar-derived hail estimates identify underpriced parts of Pannonia's Vojvodina farm portfolio more reliably than municipality-level rating? A first retrospective experiment would test transfer of the researcher's parcel-level crop-hail methods to this portfolio, comparing the existing weather-grid baseline with finer hail estimates on held-out storms or seasons while measuring sensitivity to uncertain locations and differences between crop and building losses.",
+    "rationale": [
+      {
+        "text": "The researcher has directly relevant experience using radar products for parcel-level hail-insurance premium zoning with an insurer.",
+        "sources": [
+          {
+            "recordId": "R0700",
+            "field": "industry_experience",
+            "quote": "сарађивао је са осигуравајућом кућом Агропрот д.о.о. из Новог Сада на пројекту зонирања премија за градобитно осигурање усева",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0700",
+            "field": "industry_experience",
+            "quote": "коришћени радарски производи за процену учесталости и интензитета туче на нивоу катастарских парцела.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published Vojvodina hail-mapping work provides a directly relevant starting method, including parcel-level insurance-loss validation, rather than only general precipitation expertise.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07841",
+            "field": "abstract",
+            "quote": "This study develops probabilistic hail hazard maps at 1 km resolution using a 15-year (2005–2019) archive of dual-polarisation radar data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07841",
+            "field": "abstract",
+            "quote": "The maps were validated against parcel-level crop loss reports provided by the insurance cooperative Vojvodina Agro-Protect covering 14,000 parcels over 2015–2019.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has demonstrated methods for detecting and tracking hail-bearing storm cells using radar and satellite observations, relevant to the company's narrow, moving hail footprints.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07836",
+            "field": "abstract",
+            "quote": "This study presents a cell-tracking algorithm that fuses dual-polarisation C-band radar parameters with Meteosat Second Generation SEVIRI brightness temperatures to identify hail-bearing convective cells",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07836",
+            "field": "abstract",
+            "quote": "Detected cells were tracked using a modified TITAN algorithm over a 400 × 400 km domain.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project record includes a documented Python processing chain and a spatial-service interface, providing a relevant implementation starting point, although insurer-system integration remains unproven.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0124",
+            "field": "summary",
+            "quote": "Core deliverables included the benchmark dataset of 18 agroclimatic indices (2001–2020), a Web Map Service interface, and a documented open-source Python processing chain.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level exposure assignment must resolve or explicitly retain location uncertainty; settlement-level addresses cannot be treated as precise insured-field coordinates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Fine-scale hail estimation requires a data-resolution feasibility gate: the available daily five-kilometre weather grid differs materially from the dual-polarisation radar archive used in the researcher's hail method.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07841",
+            "field": "abstract",
+            "quote": "This study develops probabilistic hail hazard maps at 1 km resolution using a 15-year (2005–2019) archive of dual-polarisation radar data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Portfolio validation must be designed around the stated three claim years and approximately 1,200 policies; any proposed holdout design must first establish sufficient independent storms and usable records.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must feed the existing Python quarterly pricing workflow rather than stop at manually generated GIS maps.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and handover must fit limited company delivery capacity, with explicit operational ownership rather than reliance on a dedicated research team.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the researcher's stated earliest start of September 2025 and reconfirm current capacity given his field-campaign leadership commitments.",
+        "sources": [
+          {
+            "recordId": "R0700",
+            "field": "notes",
+            "quote": "доступан је за нове сарадње, али са почетком рада не пре септембра 2025.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0700",
+            "field": "notes",
+            "quote": "због руковођења теренским мерним кампањама у оквиру пројекта FLOODWISE-IPA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Settlement-only policy locations may prevent defensible field-level matching even when claim locations are geotagged; claims alone may not locate the full insured exposure portfolio.",
+      "Access, licensing, historical coverage and cost of suitable radar or other hail-specific observations are unknown. Interpolating the daily five-kilometre grid alone may not recover narrow hail tracks.",
+      "The strongest prior validation concerns crop losses and one-kilometre hazard maps, not all farm-property assets or exact field-level damage intensity. The first retrospective experiment must test this transfer separately for crops and buildings where data permit.",
+      "Three claim years may contain too few independent severe storms to support stable fine-scale pricing conclusions. Loss inflation, asset values, coverage terms or vulnerability differences could explain part of the reported 18% excess independently of hail exposure.",
+      "Operational adoption could fail despite useful maps: the company's earlier flood-risk mapping prototype was completed but not integrated into pricing.",
+      "Current researcher availability, committed company staff time, project budget and delivery deadline remain unknown."
+    ],
+    "questions": [
+      "Can the company provide parcel identifiers, field boundaries or verified coordinates for all insured assets, including policies without claims, and clarify whether existing loss geotags locate the damaged asset or only the settlement?",
+      "What variables and hail indicators does MeteoVoj supply, and can historical radar, MESH or comparable hail-specific observations be licensed for all three claim years and the relevant territory?",
+      "Are event dates, crop/building classifications, premiums, sums insured, deductibles, coverage changes and loss-development information available to distinguish exposure mispricing from other drivers of higher claims?",
+      "Which storms or seasons can be reserved for independent testing, and what improvement over municipality rating would justify adoption? Can evaluation include location-error sensitivity and separate crop/building calibration?",
+      "Who will own data access, actuarial validation, Python-pipeline integration and maintenance, and what budget, staff allocation, deadline and data-protection approvals are available?",
+      "What is the researcher's current availability and committed project capacity, given the field-campaign obligations and the previously stated September 2025 earliest start?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0700",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0700",
+        "version": 1
+      }
+    ]
+  }
+}

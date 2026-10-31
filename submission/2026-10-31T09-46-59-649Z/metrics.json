@@ -1,0 +1,9 @@
+{
+  "dispatchedRequests": 48,
+  "reportedCostUSD": 0.10027125800000002,
+  "requestsWithoutKnownBill": 0,
+  "criticInterventions": 4,
+  "models": [
+    "deepseek/deepseek-v4.1-flash-1017"
+  ]
+}

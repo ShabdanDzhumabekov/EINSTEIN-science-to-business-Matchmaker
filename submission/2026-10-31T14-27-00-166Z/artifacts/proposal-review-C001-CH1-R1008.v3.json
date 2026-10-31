@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 3
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 3
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 3
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"ProtoSense inspects Modbus TCP and BACnet/IP. ArmaturaSec reports that excessive false positives caused clients to disable alerts.\" Proposed next steps: \"Train/calibrate without attack labels.\" and \"Compare fixed rules, statistical site baselines and an incremental detector\"; these address site-specific detection on both company protocols without labelled attacks, rather than generic classifier improvement."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Train/calibrate without attack labels.\"; \"Require hardware-budget compliance and no forwarding-latency regression beyond agreed measurement tolerance under representative load.\"; \"company engineers support parsing, integration and operator review within part-time capacity.\"; and \"Establish NDA, research-sharing permission and testbed agreements first; collection consent alone is insufficient.\" Open questions: \"Which appliance and security processor are available, and what CPU, memory, traffic-load and forwarding-latency budgets should govern acceptance?\" These respect attack-label, on-device, staffing and access constraints, with unresolved budgets, staffing and permissions made prerequisites rather than assumed resources."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Kiss's Modbus work estimates register-level timing, payload and command-sequence distributions. Her incremental modelling work reports planned process reconfiguration as a persistent anomaly episode.\" and \"Her Isolation Forest study reports a calibration risk: a tenfold contamination-estimate mismatch reduced average precision from 0.91 to 0.63.\" Our inference: \"BACnet behaviour, actual appliance contention and plant-manager understanding remain transfer gaps. Modbus/DNP3 results and previous processor measurements do not establish performance on ProtoSense.\" Proposed next steps: \"Compare fixed rules, statistical site baselines and an incremental detector\"; these connect her documented methods and calibration/adaptation limitations to the experiment while explicitly limiting protocol and hardware transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company's collaboration-access statement names archives, hardware bench, firmware and an NDA. Kiss's testbed-access statement names a data-sharing agreement.\" and \"ArmaturaSec offers one to two part-time engineers. Kiss lists openness to joint projects with companies deploying ICS monitoring solutions.\" Proposed next steps: \"Kiss would lead features, calibration and analysis; company engineers support parsing, integration and operator review within part-time capacity.\" Open questions: \"Can Kiss confirm availability for this joint project, and can both sides confirm staffing, funding and the proposed schedule?\" These distinguish documented resources from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Propose separate training, tuning and held-out client periods; verify temporal independence and operating-mode coverage.\"; \"Compare fixed rules, statistical site baselines and an incremental detector; vary contamination and update safeguards individually.\"; \"Freeze label-free tuning: lowest alert-episode rate subject to agreed resource and baseline-sensitivity constraints, ties favouring simplicity.\"; and \"Evaluate the selected configuration separately for Modbus and BACnet on held-out traffic and isolated-bench injections, including persistent anomalies and process changes.\" Open questions require approval of \"protocol-specific sample sizes and confidence procedures\" and \"tuning constraints\" before testing; inputs, controls, selection and held-out evaluation are specified, with remaining execution details explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Proposed go/no-go, separately for each protocol: at least 80% of injected episodes detected within 60 seconds; 95% upper confidence bound at most one false episode per fully monitored site-day with that protocol present; at least 80% correct plant-manager interpretation tasks.\"; \"Require protocol-specific 95% lower confidence bounds of at least 80% for timely recall and comprehension\"; \"Propose merging same-site, asset, anomaly-type alerts separated by at most five minutes into one episode. Experts review every episode; unresolved episodes count as false.\"; \"Separately per protocol, divide false episodes by fully monitored site-days with that protocol present; account for temporal clustering in confidence bounds.\"; and \"Window labels assess contamination, not episode-rate numerators; detection claims use only injected or confirmed cases.\" Open questions require \"one-to-one injection-to-alert matching by asset/type from injection onset\" and interpretation tasks \"with a correctness rubric and all assigned tasks as denominator\" before testing. Together with \"Require hardware-budget compliance and no forwarding-latency regression beyond agreed measurement tolerance under representative load\" and \"Missing data, insufficient evidence or unsafe testing means no pass, regardless of selected method\", these define proposed company-relevant acceptance, repeat handling, exposure, complete episode adjudication, uncertainty rules and separate protocol gates rather than accepting merely the best-performing method."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Compare fixed rules, statistical site baselines and an incremental detector; vary contamination and update safeguards individually.\" and \"Freeze updates during evaluation, separately test operator-approved resets\". Our inference: \"Modbus/DNP3 results and previous processor measurements do not establish performance on ProtoSense.\" Potential benefits: \"The experiment could establish whether site-specific detection offers manageable, understandable alerts on both protocols without compromising appliance operation, before wider deployment.\" These limit conclusions to measured configuration performance and separately tested changes, without claiming independently established mechanisms, combined-factor interactions or real-world attack coverage."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"The archives should be treated as presumed normal, not ground truth. Undetected compromise, maintenance and seasonality could distort baselines; adaptation could absorb persistent attacks unless operator-approved updates and rollback are tested.\" and \"BACnet behaviour, actual appliance contention and plant-manager understanding remain transfer gaps.\" Verified facts identify the reported contamination-estimate precision loss and process-reconfiguration anomaly. Open questions ask whether \"representative BACnet captures, operating logs, safely reproducible scenarios and plant-manager participants\" are available; these identify the main contamination, drift, calibration, transfer, deployment and evaluation risks without presenting unknown availability or effectiveness as fact."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"The proposal is conditional because Kiss's availability is unknown; openness to joint projects does not establish a time commitment.\" Proposed next steps: \"Propose six weeks after permissions and staffing confirmation\" and \"Kiss would lead features, calibration and analysis\". Open questions: \"Can Kiss confirm availability for this joint project, and can both sides confirm staffing, funding and the proposed schedule?\" These keep the joint-project role and schedule conditional on agreement and do not assign a declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could establish whether site-specific detection offers manageable, understandable alerts on both protocols without compromising appliance operation, before wider deployment.\" and \"Subject to agreement and permissions, Kiss could test how calibration and guarded adaptation transfer to BACnet and heterogeneous client operations, using operational captures alongside controlled bench evidence.\" These describe potential company decision evidence and researcher transfer findings that follow from the proposed measurements, without guaranteeing deployment success or participant commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.77,
+        0.77,
+        0.94,
+        0.84,
+        0.94,
+        0.81
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

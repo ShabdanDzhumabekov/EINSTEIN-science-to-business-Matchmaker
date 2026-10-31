@@ -1,0 +1,111 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0212",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Compare untreated leachate with individually applied candidate treatments using split batches",
+        "sources": [],
+        "explanation": "No candidate treatment or operating-condition range is identified, so the company and researcher cannot assess the actual bench comparison or its required process expertise. Briefly name the initial candidates and conditions, or explicitly require agreement of that screening matrix before the experiment starts.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: held-out effluent meets confirmed regulatory limits, including COD, accounting for uncertainty; containment predicts zero outward contaminant mass flux across the eastern boundary under agreed seasonal scenarios",
+        "sources": [],
+        "explanation": "The effluent criterion does not define the acceptance unit, handling of repeated measurements or a statistical decision rule, while the flux criterion could pass on an inadequately validated model merely predicting zero. Make acceptance conditional on a pre-agreed batch/repeat aggregation and confidence rule, plus held-out model-validation tolerances and an uncertainty-based flux criterion for every agreed seasonal scenario.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company reports seepage toward its boundary and says the yard liner was not designed for liquid retention.\" and \"The company reports leachate COD of 3,400 mg/L.\" Proposed next steps: \"Compare immediate source-control options with interceptor drainage and treatment\"; these identify the actual leaking source and COD burden and connect the investigation to containment, treatment and the ordered four-well network."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company reports no dedicated research budget and no laboratory beyond its basic leachate-monitoring wet-chemistry bench.\" Proposed next steps: \"Confirm compatibility with the current order before starting\", \"Develop a costed implementation route covering external laboratory work, drilling, professional sign-off and treatment engineering\", and \"agree operating responsibilities, residual disposal and funding before procurement\"; these make the historical deadline, limited resources and external execution capacity matters to verify before proceeding rather than assumed capabilities."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Zorić's research combines groundwater sampling for chloride, ammonium, COD and conductivity with transport modelling\" and \"mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting.\" Our inference: \"Published alluvial-aquifer parameters and ammonium-removal results are not validation for this yard.\" Proposed next steps: \"testing drain-chart applicability against local stratigraphy and gradients\"; these tie her documented methods to site investigation while identifying seasonal and pollutant-specific limits on transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"the company would supply records, access and actual yard leachate; Zorić would lead surveyed water-level measurements, borehole-log interpretation, quality-controlled groundwater sampling and modelling\" and \"Develop a costed implementation route covering external laboratory work, drilling, professional sign-off and treatment engineering.\" Our inference: \"Openness to joint work does not constitute acceptance of this project.\" These distinguish proposed participant roles from external capabilities still to be arranged and do not represent them as confirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Compare untreated leachate with individually applied candidate treatments using split batches\" and \"Use separate tuning batches and held-out collection batches, checking independence.\" These specify the input, untreated control and evaluation separation, but the candidate treatments and their compared operating conditions are not identified or made an explicit design prerequisite, so the experiment is not yet specific enough to assess or agree."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Proposed go/no-go: held-out effluent meets confirmed regulatory limits, including COD, accounting for uncertainty; containment predicts zero outward contaminant mass flux across the eastern boundary under agreed seasonal scenarios\" and \"Missing limits, insufficient seasonal evidence or unresolved feasibility mean no pass and a revised investigation plan.\" Limits and feasibility are appropriately prerequisites, but \"accounting for uncertainty\" supplies no statistical acceptance rule or treatment of repeated samples, and predicted zero flux has no stated held-out validation or uncertainty acceptance rule; favorable samples or an inadequately validated model could therefore pass without demonstrating effective treatment and containment."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Compare untreated leachate with individually applied candidate treatments using split batches\" and \"Test published hydrogeological assumptions against site observations\"; these propose controlled individual-treatment comparisons and site-specific testing, without claiming to identify treatment interactions or establish year-round causal effects from the initial campaign."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Four wells and one campaign would likely leave seasonal reversals or complex plume pathways unresolved.\" Proposed next steps: \"Continue seasonal monitoring afterward; an initial campaign would not establish year-round performance.\" Open questions: \"What funding and procurement route could cover investigation, independent analysis, drilling, treatment engineering and implementation?\" Together with the stated ammonium-versus-COD transfer limitation and unknown availability, these identify the main scientific and execution risks as unresolved rather than established site facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"This proposal is conditional: current researcher availability is unknown\" and \"Openness to joint work does not constitute acceptance of this project.\" Open questions: \"Can Zorić confirm availability, field-team capacity and interest in this joint project for the actual delivery period?\" These preserve the distinction between documented openness and unconfirmed willingness and availability for this project."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could distinguish viable containment and COD-treatment options from unsuitable transfers of published methods, while identifying evidence gaps in a regulator-facing remediation package\" and \"Conditional on agreement and access, Zorić could test how seasonal gradients and site stratigraphy affect containment design, using yard observations and actual-leachate treatment results.\" These are plausible, conditional benefits of the proposed investigation rather than guarantees of performance or regulatory acceptance."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.95,
+        0.98,
+        0.5,
+        0.99,
+        0.93,
+        0.81
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

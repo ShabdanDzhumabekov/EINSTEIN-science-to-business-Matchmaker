@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ProtoSense passively inspects Modbus TCP and BACnet/IP. ArmaturaSec reports alert disabling after excessive false positives; its stated problem concerns site-specific behaviour and plant-manager-facing communication.” Proposed next steps: “Compare fixed rules with site-specific statistical baselines, training and calibrating without attack examples.” These address the concrete protocol coverage, absence of attack labels, site-specific learning, alert fatigue and explanation needs rather than merely proposing generic anomaly detection."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “training and calibrating without attack examples”; “Passing also requires passive operation, agreed current-device resource limits and no forwarding-latency increase within agreed measurement resolution”; “Missing exposure, scenarios, permissions or evidence means no pass.” Open questions: “can both parties agree a six-week scope, budget and integration responsibilities compatible with one to two part-time company engineers?”; “Which current appliance, CPU/RAM limits, peak traffic loads and forwarding-latency measurement resolution will define acceptance, without assuming the planned processor is available?”; “Can the parties approve NDA and data-sharing arrangements, client permissions, independent evaluation captures, BACnet bench capability, representative managers and operator-controlled baseline-update safeguards before starting?” These make label-free operation, current-device feasibility, limited staffing and authorised access either measured acceptance conditions or explicit prerequisites; the six-week duration is proposed, not represented as an existing commitment."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss's Modbus research estimated register-level timing, payload, and command-sequence distributions. Her long-term traffic study highlights the risk of training on short captures.” Our inference: “Modbus evidence suggests a starting method, not validation for BACnet, ArmaturaSec sites, or ProtoSense hardware.” Proposed next steps: “Compare fixed rules with site-specific statistical baselines” and “check independence and operating-mode coverage.” These connect her documented statistical profiling work to the proposed detector while carrying forward the capture-coverage limitation and explicitly limiting claims of transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company describes NDA-governed access to archives, its bench, and firmware. Kiss describes university testbed access under a data-sharing agreement”; “ArmaturaSec states a collaboration capacity of one to two part-time engineers.” Proposed next steps: “ArmaturaSec would supply authorised captures, parser outputs, current hardware and integration effort; Kiss would lead features, calibration and evaluation.” Open questions: “Can Kiss confirm availability and staffing for this joint project” and “can both parties agree a six-week scope, budget and integration responsibilities”. These distinguish existing assets and capacity from proposed work assignments and commitments still requiring agreement."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose a six-week passive-replay and bench experiment”; “Compare fixed rules with site-specific statistical baselines”; “Use separate chronological training, tuning and held-out periods; check independence and operating-mode coverage. Freeze the tuning-selected configuration before evaluation; evaluation injections cannot inform selection.” The scenario prerequisite is explicit: “Before evaluation, agree and freeze a per-protocol scenario inventory: scans, replay, unauthorised writes and timing deviations where applicable, alongside legitimate maintenance and load changes. Define independent repetitions, counts, intensity levels and equal scenario weighting.” These identify inputs, baseline, compared methods, evaluation conditions and selection separation, with unresolved execution details gated before evaluation."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Proposed go/no-go for the best configuration, whichever wins: separately for each protocol, at least 90% detection within 60 seconds in every agreed scenario, at most one alert episode per observed site-day, and at least 80% successful managers under the rubric below”; “Merge alerts for the same site, protocol and entity separated by at most 60 seconds; divide episode counts by fully observed monitoring hours/24”; “Define each injected episode as one bounded execution, onset as its first injected packet, and a match as an alert identifying the affected entity and deviation within 60 seconds.” For comprehension: “every manager assesses the same sample”, “Score each paraphrase correct only if it identifies the affected entity, changed behaviour and uncertainty without asserting an unsupported attack diagnosis”, and “Define manager success as at least 80% correct in each protocol stratum.” Open questions specify “a simple random 10% sample of all evaluation windows, including non-alert windows, treating unresolved labels conservatively as potentially missed anomalies and never using sampled windows to estimate episode counts”. Together with frozen repetition counts, sample sizes and resource limits as prerequisites, these define proposed company-facing acceptance measures, event matching, repeat merging, exposure, sampling and uncertainty without treating unlabelled traffic as ground truth."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare fixed rules with site-specific statistical baselines” and “Use separate chronological training, tuning and held-out periods”; “Initially freeze baseline updates to avoid silently absorbing suspicious activity.” Our inference: “operational usefulness remains unproven” and “Modbus evidence suggests a starting method, not validation for BACnet, ArmaturaSec sites, or ProtoSense hardware.” These support a bounded comparison of detector configurations and transfer feasibility, not claims isolating calibration, feature choice or adaptation as independent causes; no such component-level causal attribution is made."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Contaminated archives and adaptation could conceal suspicious activity; benign changes could recreate alert fatigue”; “Modbus evidence suggests a starting method, not validation for BACnet, ArmaturaSec sites, or ProtoSense hardware.” Verified facts: “Her long-term traffic study highlights the risk of training on short captures.” Proposed next steps: “unavailable BACnet scenarios remain an unresolved transfer prerequisite” and “insufficient participation prevents acceptance.” Open questions additionally ask about hardware limits, permissions, representative managers and staffing; the principal methodological, transfer and execution risks are acknowledged rather than assumed resolved."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss lists openness to joint projects with ICS monitoring companies.” Our inference: “This joint-project proposal is conditional because Kiss's availability and staffing commitment are unknown, despite stated openness to this format.” Open questions: “Can Kiss confirm availability and staffing for this joint project”. These use a supported collaboration format while making the proposed leadership role conditional on confirmation."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could establish whether site-specific detection reduces operational alert burden while remaining understandable and feasible on current ProtoSense hardware, with separate evidence for BACnet”; “Subject to agreement, Kiss could test how statistical baselines transfer across protocols and operating regimes using authorised operational captures, controlled scenarios and appliance measurements.” These are conditional gains directly supported by the planned alert, explanation, transfer and hardware measurements, not promises of deployment success."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.85,
+        0.81,
+        0.81,
+        0.96,
+        0.99,
+        0.83,
+        0.91
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

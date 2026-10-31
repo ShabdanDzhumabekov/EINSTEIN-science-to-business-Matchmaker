@@ -1,0 +1,92 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0727",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0727",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can the researcher's downscaling and geostatistical interpolation methods be adapted to MeteoVoj's 5 km daily weather grids to produce field-level hail-intensity proxies that link to policy locations and reveal farm-property segments priced too low? The first test would compare candidate proxies against the three years of geo-tagged hail claims and quantify whether the spatial signal is strong enough to justify integration into the quarterly pricing pipeline.",
+    "rationale": [
+      {
+        "text": "Has produced 1 km climate fields for the Vojvodina plain by combining satellite land-surface temperature with station observations, directly relevant to downscaling coarse weather grids.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08093",
+            "field": "abstract",
+            "quote": "Monthly mean air temperature fields at 1 km resolution were produced for the Vojvodina plain by combining MODIS Terra LST composites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Has evaluated kriging variants for daily precipitation, including external-drift kriging that improved on ordinary kriging, relevant to spatial interpolation of storm-related fields.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08096",
+            "field": "abstract",
+            "quote": "KED using terrain-exposed elevation as the external drift variable outperformed OK in 73 % of daily cases",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Has built parcel-scale hazard maps by combining downscaled temperature grids with topographic indices, a transferable template for field-level hazard mapping.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05667",
+            "field": "abstract",
+            "quote": "A spatial frost risk index (FRI) was developed by combining downscaled minimum temperature grids at 250 m resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Has delivered an open-source Python processing chain and Web Map Service, relevant to automating a pricing-model feed.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0124",
+            "field": "summary",
+            "quote": "a Web Map Service interface, and a documented open-source Python processing chain",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Hail-specific transfer is unproven: the nearest evidence covers temperature downscaling, daily precipitation kriging, frost risk and drought, not hail intensity.",
+      "Narrow, fast-moving hailstorms may be under-resolved by 5 km daily grids, even after downscaling.",
+      "Settlement-level farm addresses may introduce location error larger than field-level hail gradients.",
+      "MeteoVoj variables, licensing and whether any hail or convective diagnostics exist are unknown.",
+      "Integration with the legacy on-premise Guidewire instance and a small split-capacity IT team may delay deployment.",
+      "Publication/IP disagreements could block start, and the researcher's availability is unknown."
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0727",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0727",
+        "version": 1
+      }
+    ]
+  }
+}

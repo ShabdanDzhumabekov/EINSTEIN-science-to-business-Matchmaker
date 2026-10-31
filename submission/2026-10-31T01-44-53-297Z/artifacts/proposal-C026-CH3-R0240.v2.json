@@ -1,0 +1,213 @@
+{
+  "ref": {
+    "artifactId": "proposal-C026-CH3-R0240",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0240",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C026-CH3-R0240",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Leachate plume characterisation and monitoring-well design for Zelena Petlja's temporary storage yard",
+    "facts": [
+      {
+        "text": "Leachate is seeping toward the site boundary; COD is 3,400 mg/L, well above the formal-response threshold; the Subotica Environmental Inspectorate ordered four groundwater monitoring wells within 120 days and a remediation proposal by late June 2024.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Baseline data are almost absent: only a 1993 hydrogeological sketch exists, and contamination extent and seasonal groundwater-flow direction are unknown.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The output must be a leachate containment and treatment proposal acceptable to the inspectorate, not only monitoring.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "draft a leachate containment and treatment proposal that the inspectorate will accept",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has no dedicated research budget and only a basic wet-chemistry bench; its COD value came from its in-house bench.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "we took leachate samples ourselves using our in-house bench",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's consulting experience includes advising a provincial water utility on site characterisation methodology and monitoring network design.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "industry_experience",
+            "quote": "advising on site characterisation methodology and monitoring network design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has field experience with 18 multi-level piezometers at three riverbank transects at a bank-filtration site, and monitoring-network installation at two BF sites and two recharge transects.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03043",
+            "field": "abstract",
+            "quote": "a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-1271",
+            "field": "summary",
+            "quote": "monitoring network installation and data collection at two BF sites on the Danube and two recharge transects in Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His transport evidence is a calibrated groundwater-flow and MT3DMS particle-tracking numerical study; particle tracking indicated median travel times of 18–42 days at a production well field.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "The model was calibrated against 14 months of observed heads (RMSE = 0.18 m)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "MT3DMS particle tracking indicated median travel times of 18–42 days at the production well field",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He is open to joint projects and contract research on site-specific hydrogeological assessment, prefers field measurement, and has industrial-PhD co-supervision capacity starting autumn 2026.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "joint projects with companies working on water supply, environmental monitoring, or geospatial data services",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "contract research on site-specific hydrogeological assessment or recharge studies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "notes",
+            "quote": "Prefers projects with a clear field measurement component rather than purely modelling-focused work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "notes",
+            "quote": "Has capacity to co-supervise an industrial PhD student starting autumn 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The documented field sites are riverbank bank-filtration, agricultural recharge transects and canals; this suggests the monitoring and modelling methods must be tested for a waste-yard leachate setting rather than assumed transferable.",
+      "His transport modelling is particle tracking at a well field, not reactive leachate transport; predicting COD behaviour in the subsurface is therefore an unproven extension for this site.",
+      "The proposal is conditional: his availability in the 120-day window is not confirmed, and the industrial-PhD route starting autumn 2026 cannot meet a late-June 2024 deadline, so a joint project is the only feasible format if he is available."
+    ],
+    "proposedActions": [
+      "Proposed first experiment: reconnaissance and siting test before drilling the four ordered wells. Dataset: 1993 sketch, company leachate/COD records, four candidate locations around the eastern yard. Baseline: 1993 conceptual model and single in-house COD value. Change: install temporary piezometers/soil borings (company arranges access and staff; researcher designs locations and sampling), measure water level, COD, EC and chloride in leachate and shallow groundwater, and take a split sample for independent COD confirmation. Researcher compares two flow-direction scenarios with a simple MODFLOW/MT3DMS model; company supplies site records. Measure: head residuals, COD gradient, inferred flow direction. Go/no-go: proceed to permanent siting only if split-sample COD confirms the 3,400 mg/L order of magnitude, at least two locations show a consistent COD gradient, and head residuals are <0.5 m; otherwise revise the model and re-site. Overall gate: four wells installed and containment/treatment proposal accepted by the inspectorate by late June 2024.",
+      "Proposed timeline: weeks 1–2 desk review and sampling plan; weeks 3–4 access, permits and contractor quotes; weeks 5–8 reconnaissance and temporary piezometers; weeks 9–12 final siting, drilling and sampling; weeks 13–16 modelling and draft proposal before late June 2024.",
+      "Proposed success criteria: flow direction identified from at least two independent head measurements; COD gradient detected in at least two wells; final network reproduces observed heads within 0.5 m; draft proposal addresses all inspectorate-required parameters. These are negotiation targets, not guaranteed outcomes.",
+      "Proposed containment/treatment screening: compare at least two options, such as hydraulic containment by pumping and a low-permeability surface barrier, against measured COD and site conditions; company supplies cost and operational constraints; researcher supplies design basis and regulator-facing rationale."
+    ],
+    "questions": [
+      "Can the researcher confirm availability to start field work within the 120-day window (spring 2024) and agree to a joint project rather than an industrial PhD?",
+      "Who will fund and carry out drilling, well installation and any accredited laboratory analyses, and which drilling permits are required?",
+      "What site information exists beyond the 1993 sketch: depth to water table, liner details, existing boreholes, and nearby production or monitoring wells?",
+      "Which parameters and analytical standards will the inspectorate require, and is an accredited laboratory available for confirmatory COD and leachate analyses?",
+      "What waste types and volumes were stored in the yard over twelve years, and were hazardous items present that would change leachate composition?"
+    ],
+    "markdown": "# Leachate plume characterisation and monitoring-well design for Zelena Petlja's temporary storage yard\n\n## Verified facts\n- Leachate is seeping toward the site boundary; COD is 3,400 mg/L, well above the formal-response threshold; the Subotica Environmental Inspectorate ordered four groundwater monitoring wells within 120 days and a remediation proposal by late June 2024. [F1]\n- Baseline data are almost absent: only a 1993 hydrogeological sketch exists, and contamination extent and seasonal groundwater-flow direction are unknown. [F2]\n- The output must be a leachate containment and treatment proposal acceptable to the inspectorate, not only monitoring. [F3]\n- The company has no dedicated research budget and only a basic wet-chemistry bench; its COD value came from its in-house bench. [F4]\n- The researcher's consulting experience includes advising a provincial water utility on site characterisation methodology and monitoring network design. [F5]\n- He has field experience with 18 multi-level piezometers at three riverbank transects at a bank-filtration site, and monitoring-network installation at two BF sites and two recharge transects. [F6]\n- His transport evidence is a calibrated groundwater-flow and MT3DMS particle-tracking numerical study; particle tracking indicated median travel times of 18–42 days at a production well field. [F7]\n- He is open to joint projects and contract research on site-specific hydrogeological assessment, prefers field measurement, and has industrial-PhD co-supervision capacity starting autumn 2026. [F8]\n\n## Our inference\n- The documented field sites are riverbank bank-filtration, agricultural recharge transects and canals; this suggests the monitoring and modelling methods must be tested for a waste-yard leachate setting rather than assumed transferable.\n- His transport modelling is particle tracking at a well field, not reactive leachate transport; predicting COD behaviour in the subsurface is therefore an unproven extension for this site.\n- The proposal is conditional: his availability in the 120-day window is not confirmed, and the industrial-PhD route starting autumn 2026 cannot meet a late-June 2024 deadline, so a joint project is the only feasible format if he is available.\n\n## Proposed next steps\n- Proposed first experiment: reconnaissance and siting test before drilling the four ordered wells. Dataset: 1993 sketch, company leachate/COD records, four candidate locations around the eastern yard. Baseline: 1993 conceptual model and single in-house COD value. Change: install temporary piezometers/soil borings (company arranges access and staff; researcher designs locations and sampling), measure water level, COD, EC and chloride in leachate and shallow groundwater, and take a split sample for independent COD confirmation. Researcher compares two flow-direction scenarios with a simple MODFLOW/MT3DMS model; company supplies site records. Measure: head residuals, COD gradient, inferred flow direction. Go/no-go: proceed to permanent siting only if split-sample COD confirms the 3,400 mg/L order of magnitude, at least two locations show a consistent COD gradient, and head residuals are <0.5 m; otherwise revise the model and re-site. Overall gate: four wells installed and containment/treatment proposal accepted by the inspectorate by late June 2024.\n- Proposed timeline: weeks 1–2 desk review and sampling plan; weeks 3–4 access, permits and contractor quotes; weeks 5–8 reconnaissance and temporary piezometers; weeks 9–12 final siting, drilling and sampling; weeks 13–16 modelling and draft proposal before late June 2024.\n- Proposed success criteria: flow direction identified from at least two independent head measurements; COD gradient detected in at least two wells; final network reproduces observed heads within 0.5 m; draft proposal addresses all inspectorate-required parameters. These are negotiation targets, not guaranteed outcomes.\n- Proposed containment/treatment screening: compare at least two options, such as hydraulic containment by pumping and a low-permeability surface barrier, against measured COD and site conditions; company supplies cost and operational constraints; researcher supplies design basis and regulator-facing rationale.\n\n## Open questions\n- Can the researcher confirm availability to start field work within the 120-day window (spring 2024) and agree to a joint project rather than an industrial PhD?\n- Who will fund and carry out drilling, well installation and any accredited laboratory analyses, and which drilling permits are required?\n- What site information exists beyond the 1993 sketch: depth to water table, liner details, existing boreholes, and nearby production or monitoring wells?\n- Which parameters and analytical standards will the inspectorate require, and is an accredited laboratory available for confirmatory COD and leachate analyses?\n- What waste types and volumes were stored in the yard over twelve years, and were hazardous items present that would change leachate composition?",
+    "taskId": "C026-CH3",
+    "researcherId": "R0240",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0240",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C026-CH3-R0240",
+        "version": 1
+      }
+    ]
+  }
+}

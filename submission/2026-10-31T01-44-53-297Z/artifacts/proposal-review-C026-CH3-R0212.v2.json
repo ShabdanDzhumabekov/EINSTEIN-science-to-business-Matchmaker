@@ -1,0 +1,40 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0212",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 2
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Site-specific geochemical attenuation factors are expected in Serbian landfill permit risk assessments.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02717",
+            "field": "abstract",
+            "quote": "The findings support the practice of reporting geochemical attenuation factors as part of site-specific risk assessments for Serbian landfill permit applications.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The cited abstract says the findings support the practice of reporting attenuation factors in site-specific risk assessments; it does not establish that Serbian permit assessments expect or require them. Rephrase as a recommendation or mark it as an open question.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

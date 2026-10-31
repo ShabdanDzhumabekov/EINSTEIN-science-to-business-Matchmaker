@@ -1,0 +1,166 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0160",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0160",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should Serbian Cyrillic/Latin transliteration and normalization be applied in the KlozuraPro search pipeline — at indexing time, at query time, or both — so that PostgreSQL full-text search returns contract documents for cross-script and mixed-script queries without noticeably increasing response time? The first study would test retrieval effectiveness and latency on representative contract search logs and documents, including ambiguous Latin-to-Cyrillic mappings.",
+    "rationale": [
+      {
+        "text": "Rajić has direct experience building rule-based normalization layers for non-standard Serbian orthography before downstream language processing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02079",
+            "field": "abstract",
+            "quote": "The paper describes a post-processing layer that applies rule-based normalization to the most frequent respelling patterns before tagging.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built a manually curated Serbian lexical resource for mapping orthographic variants to standard forms, relevant to handling script and spelling variability.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02080",
+            "field": "abstract",
+            "quote": "manually curated lexicon mapping 8,740 informal orthographic variants of Serbian word forms to their standard dictionary entries",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His cross-domain Serbian morpho-syntactic work includes legal short text as a target domain, giving evidence of Serbian legal-text processing experience.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02087",
+            "field": "abstract",
+            "quote": "automotive-to-legal transfer retains 91.2% of in-domain F1",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical experience coordinating company data-sharing agreements for pseudonymised text, which fits a study requiring access to contract search logs and documents.",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "industry_experience",
+            "quote": "coordinated data-sharing agreements with four domestic companies to obtain pseudonymised customer communication text",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must handle mixed-script contracts, not only fully-Cyrillic or fully-Latin documents.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search latency must not increase noticeably.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must address PostgreSQL full-text search treating Cyrillic and Latin as different character sets.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "full-text search index in PostgreSQL treats the two scripts as completely different character sets",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must account for ambiguous Latin-to-Cyrillic mappings where dialect conventions produce different Cyrillic letters.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "same Latin sequence maps to different Cyrillic letters depending on dialect conventions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company engineering capacity is one backend engineer for at most six weeks.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must separate research outputs from production deployment, because the researcher's group is described as producing corpora, models and reports rather than production-ready applications.",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "notes",
+            "quote": "his group produces annotated corpora, trained models, and technical reports rather than production-ready applications",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The researcher's documented normalization work concerns informal respelling and orthographic variants, not Cyrillic-Latin transliteration or PostgreSQL full-text search; this transfer gap should be tested in the first experiment.",
+      "Cross-domain evidence covers morpho-syntactic tagging on legal advice forum excerpts, not contract search or transliteration, so legal contract language may still behave differently.",
+      "The researcher's group is described as producing annotated corpora, trained models and technical reports rather than production-ready applications, while the company needs a deployable search improvement.",
+      "The collaboration depends on the company sharing text data for annotation and evaluation, which matches the researcher's stated preference but may be constrained by client confidentiality.",
+      "Srđan Rajić's availability is unknown, so scheduling and supervision capacity are unresolved.",
+      "The company's one-backend-engineer, six-week capacity may be too short for annotation, evaluation and integration if the first experiment reveals substantial edge cases."
+    ],
+    "questions": [
+      "Can Lex Automatika provide representative pseudonymised contract documents and search logs covering Latin, Cyrillic and mixed-script queries for evaluation?",
+      "What latency threshold defines 'not noticeably' slower search for the company?",
+      "Which Latin-to-Cyrillic mapping conventions and dialect edge cases should be treated as correct for the company's contracts?",
+      "Is Srđan Rajić available for this collaboration, and at what capacity? His availability is currently unknown.",
+      "Who will implement and maintain the production search change after the research prototype, given the six-week backend engineering limit?",
+      "What data governance and pseudonymisation constraints apply to using client contract text in the study?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0160",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0160",
+        "version": 1
+      }
+    ]
+  }
+}

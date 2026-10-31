@@ -1,0 +1,110 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C132-CH4-R0349",
+    "version": 3
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 3
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 3
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "95% upper confidence bound ≤5% for zero hits despite an accessible relevant document; 95% lower bound on P@10 change ≥−2 percentage points versus baseline",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "When a user types a search term in Latin script and the stored document uses Cyrillic — or the other way around — our search returns no results even though the document is there.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Returning irrelevant hits for previously zero-hit searches eliminates the counted failure while preserving their baseline P@10 of zero, so the proposal could accept without making the existing relevant contracts findable. Add a confidence-bound gate for retrieving an adjudicated relevant document at an agreed cutoff on confirmed baseline cross-script failures, including the separately named populations, while retaining the company's zero-hit metric.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company estimates that script mismatch affects roughly one in five searches, based on a January 2024 server-log sample.\" Proposed next steps: \"zero hits despite an accessible relevant document\" and \"Compare unchanged PostgreSQL, indexing-only, query-only and both normalization\"; together these identify the concrete cross-script retrieval failure and the company's unresolved pipeline-placement choice."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company reports one backend engineer available for up to six weeks and capacity for roughly one external project alongside product development.\" Proposed next steps: \"requires verified PostgreSQL/Python compatibility and delivery within six weeks\", \"95% upper confidence bounds on each p95/p99 relative latency increase ≤5% under company-approved representative load\", and \"Apply gates overall and separately to held-out cross-script, Latin-query/Cyrillic-document, Cyrillic-query/Latin-document, mixed-script and ambiguous-mapping populations\"; these make integration, the engineering window, response time and required script coverage explicit verification conditions within one focused project."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Dragić's work maps tokens to phoneme-based canonical forms for retrieval and evaluates this approach on manually annotated relevance pairs from Serbian court decisions\" and \"transformer normalization achieved MRR 0.68 but added 47 ms at the 99th percentile on its tested workload.\" Our inference: \"Court-decision results suggest methodological relevance, not validation for contracts or PostgreSQL.\" Proposed next steps: \"Keep the initial prototype deterministic to limit integration scope\"; these connect his documented retrieval method to the problem while limiting transfer claims and accounting for the reported accuracy–latency trade-off."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"The company engineer would implement integration and workload replay; company reviewers would judge relevance. Dragić would propose normalization rules, experimental controls and error analysis, subject to confirmed hours.\" Open questions: \"What authorized contract corpus, current logs and company relevance reviewers can support independent tuning and evaluation under the applicable confidentiality restrictions?\" Verified facts also document the engineer's capacity and Dragić's smaller-engagement limit; these distinguish proposed work from documented capacity and leave reviewer provision, access and researcher hours unconfirmed."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"On authorized contracts and random current query occurrences, separate tuning/evaluation; verify document/query-family independence. Compare unchanged PostgreSQL, indexing-only, query-only and both normalization; hold parsing, ranking and load constant. Judge every evaluation occurrence, including nonzero results. Select the best configuration on tuning only.\" Also: \"weeks two–three for prototypes and tuning; weeks four–five for frozen evaluation and load tests\"; these specify inputs, baseline, comparison conditions and independent selection/evaluation, with execution resources left as explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"95% upper confidence bound ≤5% for zero hits despite an accessible relevant document; 95% lower bound on P@10 change ≥−2 percentage points versus baseline\" and \"Count each occurrence once, without deduplication; failures/all evaluated occurrences defines each population's failure rate. Count unresolved relevance as failures; use conservative precision bounds.\" The proposal defines units, denominators, uncertainty rules and separate population gates, but lacks a requirement that formerly failing searches actually retrieve a relevant document: irrelevant nonzero results can satisfy both quoted gates."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Compare unchanged PostgreSQL, indexing-only, query-only and both normalization; hold parsing, ranking and load constant\" and \"A null result for either normalization location alone would not rule out a joint effect.\" Our inference: \"Reviewing successful and unsuccessful searches should help distinguish these explanations rather than assuming every zero-hit query has the same cause\"; these provide controlled placement comparisons, acknowledge interaction and avoid attributing all historical failures to script mismatch."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Canonicalization could conflate names, abbreviations or legal terms\", \"The reported neural accuracy–latency tradeoff is a deployment risk\", and \"The historical failure estimate may combine script mismatch with parsing or other failures.\" Proposed next steps: \"test ambiguous mappings, foreign names, abbreviations and within-token mixtures explicitly\" and \"Record index growth, rebuild time and maintenance effort; agree exception-rule ownership and rollback procedures.\" Open questions ask about access, reviewers, budget and test environment; these identify the principal transfer, exception, operational and feasibility risks without treating unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"The proposal is conditional because Dragić's availability is unconfirmed and his stated capacity is limited to a small engagement.\" Proposed next steps: \"Dragić would propose normalization rules, experimental controls and error analysis, subject to confirmed hours.\" Open questions: \"Can Dragić confirm a start date and weekly contribution for a small joint project within the company's six-week engineering window?\"; these preserve the stated small-engagement limit and do not assume availability or assign a declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could identify where normalization belongs and whether it reduces confirmed cross-script failures in both directions without unacceptable relevance or latency costs\" and \"Subject to agreement and authorized access, Dragić could test how phoneme-based normalization transfers from court decisions to contract retrieval, using judged queries and controlled PostgreSQL comparisons\"; these describe conditional practical and research gains available from the proposed comparisons, rather than guaranteed improvements or commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.89,
+        0.91,
+        0.86,
+        0.94,
+        0.93,
+        0.97
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

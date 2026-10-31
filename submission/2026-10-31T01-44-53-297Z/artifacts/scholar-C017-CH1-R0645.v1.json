@@ -1,0 +1,212 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0645",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0645",
+    "name": "Filip Vučković",
+    "faculty": "BioSense Institute",
+    "department": "Data Science and Bioinformatics Group",
+    "fields": [
+      "Bioinformatics",
+      "Spatial Statistics",
+      "Soil Ecology",
+      "Agricultural Data Science"
+    ],
+    "keywords": [
+      "soil microbiome",
+      "geostatistical kriging",
+      "Dirichlet-multinomial regression",
+      "compositional data analysis",
+      "16S rRNA amplicon sequencing",
+      "agricultural transects",
+      "alpha and beta diversity",
+      "variogram modelling",
+      "microbial spatial gradients",
+      "Vojvodina soils"
+    ],
+    "openTo": [
+      "joint projects with agri-tech or precision agriculture companies",
+      "contract research on soil health monitoring or microbiome profiling",
+      "consulting on spatial statistical analysis of environmental datasets",
+      "student internships in data science or bioinformatics",
+      "access to the BioSense HPC cluster for collaborative data analysis"
+    ],
+    "bio": {
+      "recordId": "R0645",
+      "field": "bio",
+      "text": "Filip Vučković completed his BSc in Mathematics at the University of Novi Sad (2011) and his MSc in Applied Statistics at the same institution (2013). He received his PhD in Bioinformatics from the University of Novi Sad in 2019, with a dissertation on geostatistical modelling of soil microbiome gradients in the Vojvodina region. Since 2020 he has been a Research Associate in the Data Science and Bioinformatics Group at BioSense Institute, where the group focuses on computational analysis of environmental and agricultural data. He has contributed to undergraduate statistics courses at the Faculty of Sciences. His laboratory work relies on the Institute's high-performance computing cluster and shared 16S rRNA amplicon sequencing pipelines, and he regularly uses R and Python for spatial and compositional data analysis."
+    },
+    "industryExperience": {
+      "recordId": "R0645",
+      "field": "industry_experience",
+      "text": "Filip Vučković completed a short consulting engagement in 2023 with an agricultural input company to assess spatial variability of microbial indicators in their field trial data. He has no other formal industry roles."
+    },
+    "notes": {
+      "recordId": "R0645",
+      "field": "notes",
+      "text": "Vučković is available for new collaborations from mid-2025 onward. He prefers projects where statistical methodology plays a central role rather than purely service sequencing contracts. He has expressed interest in working with companies developing soil sensor hardware, where his spatial modelling expertise could help with calibration and validation datasets."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07332",
+        "kind": "publication",
+        "title": "Spatial autocorrelation of bacterial community composition along a crop rotation transect in northern Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-07332",
+          "field": "abstract",
+          "text": "We investigated whether bacterial community composition in agricultural topsoil exhibits detectable spatial autocorrelation along a 12-km transect crossing four rotation systems in northern Vojvodina. Soil cores were collected at 48 evenly spaced points in spring 2014. After DNA extraction and 16S rRNA amplicon sequencing (V3–V4 region, Illumina MiSeq, mean depth 28 400 reads per sample), OTU tables were constructed using QIIME 1.9. Empirical variograms were computed for three alpha-diversity indices (Shannon, Chao1, Faith's PD) and for the first two axes of a Bray–Curtis PCoA. Spherical variogram models fitted the Shannon and Chao1 series well, with range estimates of 1.8 km and 2.3 km respectively. Ordinary kriging maps showed a consistent diversity depression in a zone associated with intensive maize monoculture. Mantel tests confirmed significant isolation-by-distance effects (r = 0.41, p < 0.001). These results indicate that microbial diversity in Vojvodina croplands is structured at sub-kilometre scales relevant to precision agriculture management."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07333",
+        "kind": "publication",
+        "title": "Comparison of kriging interpolators for predicting soil fungal richness from sparse sampling grids",
+        "body": {
+          "recordId": "SYN-PUB-07333",
+          "field": "abstract",
+          "text": "Soil fungal richness is highly variable at field scales, and choosing an appropriate interpolation method strongly influences map quality when sampling density is limited. We used a dataset of 96 ITS1 amplicon samples collected on a 200 × 200 m grid across a 4 ha experimental wheat field at the Rimski Šančevi research station to benchmark four kriging variants: ordinary kriging, simple kriging, indicator kriging, and universal kriging with elevation as an external drift variable. Leave-one-out cross-validation was performed for each method using root mean squared error (RMSE) and mean absolute error (MAE) as criteria. Universal kriging with elevation drift achieved the lowest RMSE (14.2 OTUs) compared to ordinary kriging (18.7 OTUs). Indicator kriging performed best for mapping the probability that richness exceeded a threshold of 120 OTUs. The study also assessed the sensitivity of results to variogram model choice (spherical, exponential, Matérn). Results suggest that even simple topographic covariates substantially improve fungal diversity maps and that variogram model choice matters more for fungi than for bacteria in this soil type."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07334",
+        "kind": "publication",
+        "title": "Dirichlet-multinomial regression for modelling phylum-level microbiome shifts along a salinity gradient in Pannonian solonetz soils",
+        "body": {
+          "recordId": "SYN-PUB-07334",
+          "field": "abstract",
+          "text": "Solonetz soils in the Pannonian Plain present pronounced salinity gradients over short distances, providing a natural laboratory for studying microbiome composition change. We collected 72 samples across a 6-km transect in the Deliblato area, measured soil electrical conductivity (EC) and pH at each point, and performed 16S rRNA sequencing (mean 32 100 reads per sample). Because compositional data violate ordinary regression assumptions, we fitted Dirichlet-multinomial (DM) regression models with EC and pH as continuous predictors and geographic coordinates as spatial random effects implemented via a Gaussian process prior. The DM model identified significant negative associations between EC and the relative abundance of Acidobacteria (posterior mean β = −0.38, 95% CrI: −0.51 to −0.25) and a positive association with Proteobacteria. Spatial random effects explained approximately 22% of residual variance after accounting for the measured covariates, indicating unmeasured soil properties cluster spatially. These findings suggest that salinity-driven compositional shifts are detectable even at the phylum level and that ignoring spatial dependence inflates false-positive rates in microbiome–environment association studies."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07335",
+        "kind": "publication",
+        "title": "Sensitivity of microbiome spatial models to sequencing depth rarefaction: a simulation study using Vojvodina soil data",
+        "body": {
+          "recordId": "SYN-PUB-07335",
+          "field": "abstract",
+          "text": "Rarefaction to a common sequencing depth is a standard preprocessing step in microbiome studies, yet its effect on downstream spatial models has not been systematically evaluated. We used a real dataset of 120 soil samples from Vojvodina croplands (mean depth 41 500 reads, range 9 800–68 200) to construct a simulation framework in which reads were downsampled to five target depths (5 000, 10 000, 20 000, 30 000, and 40 000 reads) with 50 replicates each. For each replicate we fitted ordinary kriging to Shannon diversity and DM regression to phylum compositions. Variogram range estimates were stable (coefficient of variation < 8%) across depths above 10 000 reads but deteriorated sharply at 5 000. DM regression coefficients for the dominant phyla were recoverable at all depths tested, but credible intervals widened approximately 35% at 5 000 reads compared to 40 000. We conclude that for spatial modelling applications a minimum depth of around 15 000 reads per sample provides a reasonable balance between statistical reliability and sequencing cost."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07336",
+        "kind": "publication",
+        "title": "Spatial modelling of microbiome beta-diversity along sunflower–soybean intercrop boundaries using multivariate geostatistics",
+        "body": {
+          "recordId": "SYN-PUB-07336",
+          "field": "abstract",
+          "text": "Intercropping creates sharp edaphic transitions at crop boundaries that may influence local microbiome assembly. We sampled soils at 88 points along five replicated transects crossing sunflower–soybean intercrop interfaces at a commercial farm in Bačka Palanka, collecting samples at 0–10 cm and 10–30 cm depths. 16S rRNA amplicon sequencing yielded a mean of 35 200 reads per sample. Beta-diversity was quantified by Aitchison distance and the first three PCoA axes were treated as co-regionalised variables in a linear model of coregionalisation (LMC) framework. Fitted LMC models revealed two spatial structures: a nugget component attributable to micro-scale variability and a spherical structure with range approximately 3.1 m centred on the crop interface. Co-kriging of the three PCoA axes improved prediction accuracy by 14% over independent kriging of each axis. Depth had a stronger effect on composition than proximity to the interface, but interface effects remained significant after depth was controlled. Results have practical implications for precision placement of soil amendments in intercropping systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02786",
+        "kind": "publication",
+        "title": "Integrating satellite-derived soil moisture indices as external drift variables in microbiome kriging models",
+        "body": {
+          "recordId": "SYN-PUB-02786",
+          "field": "abstract",
+          "text": "Soil moisture is a primary driver of microbial community structure, yet it is seldom measured exhaustively at field scale. Satellite remote sensing offers spatially dense moisture proxies that could serve as external drift variables in kriging. We evaluated this idea using a dataset of 64 soil samples from an organic wheat farm near Sremska Mitrovica. Sentinel-1 SAR backscatter and a derived surface soil moisture index were extracted for each sampling date and location. Universal kriging with SAR-derived moisture as drift variable was compared to ordinary kriging for predicting Shannon diversity and three indicator taxa. The external drift reduced RMSE for Shannon diversity from 0.31 to 0.22 nats and improved spatial maps visually by resolving a low-diversity patch aligned with a slight topographic depression. Variogram parameters estimated with and without the drift variable differed substantially, highlighting the importance of removing large-scale trends before estimating spatial dependence. Practical constraints related to temporal mismatch between SAR acquisition and soil sampling are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02160",
+        "kind": "publication",
+        "title": "Bayesian hierarchical Dirichlet-multinomial models for multi-site microbiome surveys: pooling strength across Vojvodina agricultural districts",
+        "body": {
+          "recordId": "SYN-PUB-02160",
+          "field": "abstract",
+          "text": "Multi-site microbiome surveys are common in regional agricultural monitoring but sites often differ in sample size and environmental heterogeneity, leading to unstable site-level estimates. We developed a Bayesian hierarchical extension of the Dirichlet-multinomial model in which site-level concentration parameters are drawn from a common hyperprior, enabling partial pooling across six districts of Vojvodina surveyed between 2018 and 2021 (total n = 312 samples, 19 sites). The model was implemented in Stan and fitted via NUTS sampling. Posterior predictive checks confirmed adequate fit at both the site and district levels. Partial pooling reduced the mean width of 95% credible intervals for phylum-level relative abundances by 28% compared to independent site models, with the largest gains for sites with fewer than 12 samples. District-level estimates identified consistent Acidobacteria enrichment in the northern sandy soils relative to southern chernozem sites (posterior probability of difference > 0.97). Code and anonymised data are archived on the Zenodo platform."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07337",
+        "kind": "publication",
+        "title": "A geostatistical workflow for microbiome diversity mapping in precision agriculture: a practical guide with R code",
+        "body": {
+          "recordId": "SYN-PUB-07337",
+          "field": "abstract",
+          "text": "Applying geostatistical methods to microbiome datasets requires bridging methodological traditions in spatial statistics and microbial ecology that have largely developed independently. This book chapter outlines a step-by-step analytical workflow covering: sample design for spatial surveys (including variogram-informed minimum sample sizes), compositional data preprocessing (centred log-ratio and Aitchison isometric transforms), empirical variogram estimation and model fitting in R using the gstat package, ordinary and universal kriging prediction, and cross-validation. Supplementary sections address the Dirichlet-multinomial regression with spatial random effects using the INLA-SPDE approach. All steps are illustrated with a worked example from a 96-point survey of a maize field near Zrenjanin. Annotated R scripts are provided throughout. The chapter concludes with a discussion of common pitfalls, including pseudo-replication from dense sampling, the choice between kriging and spline-based interpolation, and the handling of zero-inflated taxa. The material is aimed at microbial ecologists with basic R literacy who wish to incorporate spatial structure into their analyses."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06318",
+        "kind": "publication",
+        "title": "Regularised Cause-Specific Cox Models with Missing Omics Blocks: Multiple Imputation Versus Available-Case Analysis",
+        "body": {
+          "recordId": "SYN-PUB-06318",
+          "field": "abstract",
+          "text": "Incomplete multi-omics data are common in retrospective cancer studies when not all assays were ordered for every patient. This paper compared multiple imputation by chained equations (MICE), single-block available-case analysis, and a missing-indicator approach within competing-risks Cox models penalised by elastic net, using a colorectal cancer cohort (n = 394) in which 22% of patients lacked methylation data and 31% lacked proteomic measurements. The estimands of interest were cause-specific cumulative incidence functions for cancer-specific death and cardiovascular death. MICE followed by elastic net Cox fitting under Rubin's rules produced the lowest Monte Carlo prediction error (integrated Brier score 0.148 vs. 0.167 for available-case), but required careful pooling of penalty parameters across imputed datasets. An R workflow is described and made available as a GitHub repository. Bootstrapped confidence intervals for C-index differences are reported."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1772",
+        "kind": "project",
+        "title": "Spatial Microbiome Mapping for Sustainable Arable Land Management in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-1772",
+          "field": "summary",
+          "text": "SOILMAP aimed to produce harmonised microbiome diversity maps for paired Hungarian and Serbian agricultural sites to support cross-border soil health monitoring. The project collected over 400 samples across eight sites in Vojvodina and Baranya counties. Filip Vučković led the work package on spatial statistical modelling, overseeing variogram analysis, kriging-based map production, and uncertainty quantification. The project also developed a shared open data repository for Pannonian microbiome surveys. Outputs include four peer-reviewed publications, a freely accessible map viewer for project partners, and a joint methodological protocol for cross-border soil sampling adopted by extension services in both countries."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1773",
+        "kind": "project",
+        "title": "Statistical Foundations for Compositional Microbiome Data in Environmental Monitoring",
+        "body": {
+          "recordId": "SYN-PRJ-1773",
+          "field": "summary",
+          "text": "MICROSTAT addressed methodological gaps in the statistical treatment of compositional microbiome data in environmental contexts, including agricultural soils, freshwater sediments, and forest litter. Filip Vučković contributed to the soil-focused tasks, specifically the development and benchmarking of spatially aware Dirichlet-multinomial regression models. The project involved collaboration with a statistician at the University of Belgrade and a bioinformatician at the University of Kragujevac. Deliverables include an R package (deposited on CRAN) providing functions for spatial DM regression, a simulation-based benchmark paper, and training materials used in two postgraduate workshops at the Faculty of Sciences in Novi Sad."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1768",
+        "kind": "project",
+        "title": "Causal Methods for Environmental Exposure Assessment in Cross-Border Cohorts",
+        "body": {
+          "recordId": "SYN-PRJ-1768",
+          "field": "summary",
+          "text": "ENVICAUSE brings together researchers from Serbia and Romania to build harmonised cohort datasets linking environmental monitoring records to chronic disease registries across six cross-border counties and municipalities. Čolić contributes to the statistical analysis work package, specifically developing and validating quasi-experimental identification strategies for exposures where randomisation is infeasible. His tasks include constructing instrument candidates from meteorological and policy variation data, assessing parallel trend assumptions in DiD designs, and drafting the joint analysis protocol. The project involves approximately 18,000 cohort participants on the Serbian side and 22,000 on the Romanian side, with follow-up data spanning 2005 to 2023."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0645",
+            "field": "open_to",
+            "quote": "joint projects with agri-tech or precision agriculture companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0645",
+            "field": "open_to",
+            "quote": "contract research on soil health monitoring or microbiome profiling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0645",
+            "field": "open_to",
+            "quote": "access to the BioSense HPC cluster for collaborative data analysis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

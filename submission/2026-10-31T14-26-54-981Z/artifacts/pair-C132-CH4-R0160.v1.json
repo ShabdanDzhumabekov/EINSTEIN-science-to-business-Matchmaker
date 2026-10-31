@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0160",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0160",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Which combination of indexing-time and query-time Serbian script normalization can improve cross-script contract retrieval without unacceptable false matches or latency overhead? The first experiment would compare the existing PostgreSQL search with indexing-only, query-only, and combined normalization on an annotated sample of Latin, Cyrillic, mixed-script, and ambiguous contract queries, testing retrieval quality and response-time changes.",
+    "rationale": [
+      {
+        "text": "Rajić has evaluated rule-based normalization for Serbian orthographic variation, providing a relevant methodological starting point rather than a validated contract-search solution.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02079",
+            "field": "abstract",
+            "quote": "The paper describes a post-processing layer that applies rule-based normalization to the most frequent respelling patterns before tagging.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work on regional lexical variants is relevant to investigating the company's dialect-related mapping ambiguities.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0111",
+            "field": "summary",
+            "quote": "Rajić leads the work package on informal variant coverage, contributing the informal morphological variant lexicon developed in earlier work and coordinating its extension with Ijekavian and Bosnian lexical variants.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His corpus annotation and normalization project experience supports building a representative evaluation set and documenting difficult cases.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0110",
+            "field": "summary",
+            "quote": "development of normalisation rules for 12 recurring orthographic variability patterns",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0110",
+            "field": "summary",
+            "quote": "The project also produced annotation guidelines revised through four internal calibration rounds",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior exposure to Serbian preprocessing for search relevance and to company text-data governance.",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "industry_experience",
+            "quote": "He has also provided informal consulting to one IT company in Novi Sad on preprocessing Serbian user-generated content for a search relevance task.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0160",
+            "field": "industry_experience",
+            "quote": "Rajić coordinated data-sharing agreements with four domestic companies to obtain pseudonymised customer communication text",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Evaluation must cover both script directions, mixed-script documents, and ambiguous mappings; handling only uniformly scripted documents would not meet the task.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "text",
+            "quote": "users type a term in Latin script but the stored document uses Cyrillic, or vice versa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The prototype must be evaluated within the PostgreSQL full-text search workflow, with an agreed latency limit rather than an assumed performance improvement.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit the backend engineer's six-week contribution and the company's single-project capacity.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Text access and evaluation arrangements must respect the company's private-cloud environment and internal security policy; permitted researcher access needs agreement.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on a private cloud hosted in Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "ISO 27001-aligned internal information security policy (self-assessed)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must provide text for annotation and evaluation and assign production integration explicitly: the researcher's stated delivery model is research artifacts, not a production-ready application.",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "notes",
+            "quote": "Rajić has a clear preference for collaborations where the company shares text data for annotation and evaluation rather than expecting a fully deployed software product",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0160",
+            "field": "notes",
+            "quote": "his group produces annotated corpora, trained models, and technical reports rather than production-ready applications.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The evidence demonstrates normalization and morphological analysis mainly on informal Serbian, not bidirectional transliteration for contract retrieval or PostgreSQL integration. The first experiment must test this transfer on actual contract-query pairs before selecting an approach.",
+      "Normalization may conflate distinct terms, names, or ambiguous Latin sequences, increasing false matches even if zero-hit searches decline.",
+      "The reported one-in-five failure estimate comes from a January 2024 log sample; its current prevalence and attribution specifically to script mismatch remain unverified.",
+      "Researcher availability is unknown. Limited backend time and the researcher's non-production delivery model could leave integration, reindexing, or rollout unfinished.",
+      "Access to representative contracts and search logs, annotation permissions, and collaboration budget are unknown; any of these could block evaluation.",
+      "Latency and index-size overhead may make an otherwise linguistically effective approach unsuitable for the deployed search workload."
+    ],
+    "questions": [
+      "Can Rajić commit time within the backend engineer's six-week window, and who will perform annotation and error adjudication?",
+      "What budget and deliverables are agreed, and who owns production implementation, reindexing, testing, and rollout?",
+      "Can representative contracts, queries, and known matching documents be made available for evaluation, under what access, pseudonymisation, retention, and publication conditions?",
+      "What are the current PostgreSQL configuration, tokenization rules, corpus size, query load, and search-latency baseline? What numerical latency and retrieval-quality thresholds define acceptance?",
+      "Which concrete Latin–Cyrillic ambiguities occur in the contracts, and how should names, foreign words, diacritics, and mixed-script tokens be treated?",
+      "Can the January 2024 finding be rechecked on recent logs, distinguishing script mismatch from parsing, tokenization, and other causes of zero hits?",
+      "Can the company support a controlled reindexing and rollback experiment within its private-cloud environment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0160",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0160",
+        "version": 1
+      }
+    ]
+  }
+}

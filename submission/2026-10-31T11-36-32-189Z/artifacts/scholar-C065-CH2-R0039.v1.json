@@ -1,0 +1,282 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0039",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0039",
+    "name": "Aleksandar Ivković",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning and Data Mining",
+      "Information Retrieval and Recommender Systems",
+      "Deep Learning",
+      "Human-Computer Interaction Data Analysis"
+    ],
+    "keywords": [
+      "collaborative filtering",
+      "matrix factorisation",
+      "neural embeddings",
+      "recommender systems",
+      "deep learning",
+      "session-based recommendation",
+      "implicit feedback",
+      "knowledge graph embeddings",
+      "cold-start problem",
+      "large-scale user-item interaction"
+    ],
+    "openTo": [
+      "joint projects with companies developing personalisation or search features",
+      "contract research on recommender system design, evaluation, and deployment",
+      "industrial PhD supervision for candidates employed at NTP Novi Sad companies",
+      "student internships (BSc and MSc level) on data engineering and ML tasks",
+      "consulting on recommendation pipeline architecture and A/B testing design",
+      "short-term GPU cluster access for collaborative experiments"
+    ],
+    "bio": {
+      "recordId": "R0039",
+      "field": "bio",
+      "text": ""
+    },
+    "industryExperience": {
+      "recordId": "R0039",
+      "field": "industry_experience",
+      "text": "Between 2016 and 2018 Ivković worked as a part-time machine learning consultant for a Novi Sad-based e-commerce startup, designing and evaluating their first collaborative filtering pipeline. He has subsequently maintained informal advisory relationships with two regional digital media companies whose anonymised datasets appear in several publications."
+    },
+    "notes": {
+      "recordId": "R0039",
+      "field": "notes",
+      "text": "Ivković prefers industry collaborations that can produce publishable results or student thesis topics alongside commercial deliverables. He is particularly interested in partners who can provide longitudinal interaction logs, as most of his current datasets are limited in temporal depth. He has no planned sabbatical in the next two years."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-00479",
+        "kind": "publication",
+        "title": "Regularised Non-Negative Matrix Factorisation for Sparse Implicit Feedback in Movie Recommendation",
+        "body": {
+          "recordId": "SYN-PUB-00479",
+          "field": "abstract",
+          "text": "This paper addresses the problem of learning latent user and item representations from implicit feedback signals—click counts and view durations—where observed interactions constitute less than 0.1% of the full user-item matrix. We apply non-negative matrix factorisation with L2 regularisation and a confidence-weighted loss that treats unobserved entries as negative evidence with down-weighted certainty. Experiments are conducted on two datasets: a crawled Serbian film portal log containing 340,000 users and 12,000 titles, and the publicly available MovieLens-10M benchmark. Factorisation rank is varied from 10 to 200; optimal rank of 50 achieves an NDCG@10 of 0.314 on the portal dataset versus 0.289 for a popularity baseline. We analyse how regularisation strength interacts with dataset sparsity and show that confidence scaling on unobserved entries consistently outperforms uniform negative weighting. Runtime on a single 16-core server scales approximately linearly with the number of observed interactions up to 5 million events."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00480",
+        "kind": "publication",
+        "title": "Comparative Evaluation of Neighbourhood-Based and Model-Based Collaborative Filtering on E-Commerce Data from the Western Balkans",
+        "body": {
+          "recordId": "SYN-PUB-00480",
+          "field": "abstract",
+          "text": "We compare user-based k-nearest-neighbour collaborative filtering, item-based kNN, and singular value decomposition-based matrix factorisation on a proprietary dataset provided by a mid-size Novi Sad online retailer, comprising 91,000 users and 6,400 products over 18 months of purchase history. Similarity metrics tested include cosine, adjusted cosine, and Pearson correlation. SVD with rank-40 decomposition achieves Precision@5 of 0.187 and Recall@5 of 0.143, outperforming item-based kNN (0.161 / 0.129) and user-based kNN (0.148 / 0.118) at the same cut-off. We document practical challenges specific to the dataset: extreme popularity skew, infrequent rebuying behaviour, and seasonal drift. The paper provides a replication guide so that practitioners with similarly sized datasets can reproduce the evaluation pipeline using open-source tools. All experiments run on commodity hardware within two hours."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00481",
+        "kind": "publication",
+        "title": "Temporal Dynamics in Matrix Factorisation: Modelling User Preference Drift with Time-Decayed Interaction Weights",
+        "body": {
+          "recordId": "SYN-PUB-00481",
+          "field": "abstract",
+          "text": "User tastes evolve over time, yet most matrix factorisation models treat all historical interactions as equally informative. We propose a straightforward extension to standard alternating least squares factorisation in which each interaction is multiplied by an exponential decay factor parametrised by its age relative to the query timestamp. The decay rate is treated as a per-user hyperparameter estimated from a held-out validation window. We evaluate on three datasets—a news portal clickstream (2.1 million events), the Movielens-20M benchmark, and a music streaming log from a regional provider—using a temporal train/test split that simulates online recommendation. Time-decay factorisation improves NDCG@10 by 4–7% over a static model across all three datasets, with the largest gains on the news dataset where interest shifts rapidly. We also show that a single global decay rate recovers about 80% of the gain from per-user rates at substantially lower tuning cost."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00482",
+        "kind": "publication",
+        "title": "Autoencoders for Collaborative Filtering: A Study of Denoising and Variational Variants",
+        "body": {
+          "recordId": "SYN-PUB-00482",
+          "field": "abstract",
+          "text": "We systematically compare denoising autoencoders (DAE) and variational autoencoders (VAE) as alternatives to matrix factorisation for top-N recommendation from implicit feedback. Both architectures take a user's full interaction history as input and are trained to reconstruct it under random masking noise at drop rates of 0.1, 0.3, and 0.5. We test four hidden-layer configurations (one to three layers, width 128 to 512) on the Netflix Prize subset and on an internal dataset from a Serbian IPTV operator (480,000 users, 3,200 titles). The VAE variant with a single 256-unit hidden layer and KL-annealing achieves the best NDCG@10 on both datasets, outperforming our baseline SVD by 11.3% and 9.8% respectively. We analyse the latent space geometry and find that the variational bottleneck produces more uniformly distributed user representations, which correlates with reduced popularity bias in the top-10 lists. Compute requirements and sensitivity to hyperparameter choices are documented in detail."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00483",
+        "kind": "publication",
+        "title": "Knowledge Graph Embeddings as Side Information for Item Cold-Start Recommendation",
+        "body": {
+          "recordId": "SYN-PUB-00483",
+          "field": "abstract",
+          "text": "When new items enter a catalogue they have no interaction history, and pure collaborative filtering fails. We use knowledge graph (KG) embeddings—specifically TransE and RotatE trained on a product attribute graph—to initialise item latent vectors before any interactions are observed. The KG is constructed from product metadata (category hierarchy, brand relations, material attributes) for a fashion retail domain, containing 41,000 entities and 210,000 triples. These embeddings are injected into a standard matrix factorisation model as a regularisation prior on the item factor matrix. On a cold-start evaluation protocol where test items have zero training interactions, our method achieves Recall@20 of 0.073 versus 0.031 for a content-based baseline and near-zero for pure CF. For warm items the KG prior adds a small but consistent improvement of 1–2% on NDCG@10. We provide ablations over embedding dimensionality and the weighting of the KG regularisation term."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00484",
+        "kind": "publication",
+        "title": "Recommender Systems in Practice: Methods, Architectures, and Evaluation",
+        "body": {
+          "recordId": "SYN-PUB-00484",
+          "field": "abstract",
+          "text": "This book chapter surveys the landscape of recommender system methods from neighbourhood-based approaches through matrix factorisation to deep learning models, with emphasis on practical deployment considerations. We cover data preprocessing for implicit versus explicit feedback, offline evaluation pitfalls including popularity bias in ranking metrics, and the gap between offline and online A/B test outcomes. A section on serving architectures discusses two-stage retrieval-ranking pipelines and approximate nearest-neighbour indexes for embedding-based retrieval. The chapter includes worked examples using synthetic data and references to open-source implementations. It is aimed at graduate students and practitioners who wish to implement and evaluate recommender systems without requiring prior exposure to the research literature. The treatment is self-contained with respect to linear algebra and basic probability."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00485",
+        "kind": "publication",
+        "title": "Graph Neural Networks for Session-Based Recommendation: An Empirical Comparison of GCN, GAT, and SR-GNN on Short-Session Data",
+        "body": {
+          "recordId": "SYN-PUB-00485",
+          "field": "abstract",
+          "text": "Session-based recommendation models the next-click prediction problem using only the items observed within the current anonymous session, without access to long-term user history. We re-implement and evaluate three graph neural network approaches—Graph Convolutional Network (GCN), Graph Attention Network (GAT), and the gated SR-GNN model—on two public benchmarks (Diginetica, RetailRocket) and a proprietary dataset of supermarket browsing sessions collected by a Novi Sad-based grocery chain, containing 820,000 sessions with median length 4. We use a strict temporal split and report MRR@20 and HR@20. SR-GNN outperforms the others on Diginetica (MRR@20: 0.502) but all three models perform within noise on the grocery dataset, likely due to very short session lengths. We identify session length as a critical moderator of GNN advantage over simpler GRU baselines and provide guidance on when the added complexity is justified."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00486",
+        "kind": "publication",
+        "title": "Fairness Metrics in Recommender Systems: Measuring and Mitigating Popularity Bias in Top-N Lists",
+        "body": {
+          "recordId": "SYN-PUB-00486",
+          "field": "abstract",
+          "text": "Popular items dominate top-N recommendation lists produced by most collaborative filtering models due to their over-representation in training data. We define and operationalise four group-fairness metrics for items: coverage, aggregate diversity, long-tail coverage, and Gini coefficient of recommendation frequency. We then compare three post-processing debiasing strategies—reranking by inverse popularity, calibration to target genre distributions, and maximum marginal relevance—against an unmodified VAE-based recommender on two datasets: a music streaming log and a book recommendation dataset scraped from a regional literary portal. Reranking by inverse popularity improves long-tail coverage from 12% to 34% with only a 3.1% reduction in NDCG@10 on the music dataset. We discuss trade-offs between accuracy and diversity metrics and provide a decision guide for practitioners choosing among the three strategies."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00487",
+        "kind": "publication",
+        "title": "Contrastive Self-Supervised Pre-Training of User Embeddings for Cross-Domain Recommendation",
+        "body": {
+          "recordId": "SYN-PUB-00487",
+          "field": "abstract",
+          "text": "We investigate whether user embeddings pre-trained on a source domain (music streaming) using a contrastive self-supervised objective can improve recommendation quality in a sparse target domain (podcast listening) when only a fraction of users overlap. The pre-training task constructs positive pairs by splitting a user's interaction sequence at a random cut and treating both halves as views of the same user; negatives are drawn from other users in the same mini-batch. Pre-trained embeddings are then fine-tuned with a matrix factorisation objective on the target domain. On a dataset of 210,000 overlapping users shared by a regional media platform, fine-tuned embeddings improve NDCG@10 by 8.4% over training from scratch and by 5.1% over a transfer approach using direct embedding copying. Gains are concentrated in users with fewer than 15 target-domain interactions, confirming that the benefit is primarily in the sparse-data regime."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00488",
+        "kind": "publication",
+        "title": "Efficient Approximate Nearest Neighbour Retrieval for Embedding-Based Recommenders: A Benchmark on Commodity Hardware",
+        "body": {
+          "recordId": "SYN-PUB-00488",
+          "field": "abstract",
+          "text": "Two-stage recommenders use approximate nearest-neighbour (ANN) search to retrieve candidate items from a learned embedding space before a more expensive ranking model re-scores them. We benchmark five ANN index structures—HNSW, IVF-Flat, IVF-PQ, ScaNN, and a flat exact baseline—on three embedding spaces of different dimensionalities (64, 128, 256) and catalogue sizes (50K, 500K, 5M items) using recall@100 and query latency at fixed memory budgets on a single server with 64 GB RAM and no GPU. HNSW achieves the best recall–latency trade-off for catalogues up to 500K items; IVF-PQ becomes competitive at 5M items under 16 GB memory constraints. We also measure how ANN retrieval recall translates to end-to-end NDCG@10 degradation and find that recall@100 above 0.92 causes less than 1% NDCG loss relative to exact retrieval. A practical configuration guide is included."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00489",
+        "kind": "publication",
+        "title": "Large Language Model Representations as Item Features in Hybrid Recommender Systems",
+        "body": {
+          "recordId": "SYN-PUB-00489",
+          "field": "abstract",
+          "text": "We examine whether dense text representations extracted from a frozen large language model (a 7-billion-parameter decoder-only model) can serve as item feature vectors in a hybrid collaborative filtering framework, replacing or complementing manually engineered metadata features. Item descriptions from a job advertisement portal (340,000 postings) are encoded with mean pooling over final-layer token embeddings to produce 4096-dimensional vectors, then projected to lower-dimensional spaces (64, 128) via a learned linear layer jointly trained with the CF objective. On a held-out evaluation set, the LLM-feature hybrid achieves NDCG@10 of 0.381 versus 0.354 for a metadata-feature hybrid and 0.369 for pure CF, with the largest gain for items posted within the last 7 days (effectively cold-start). We also test freezing versus fine-tuning the projection layer and find that even the frozen projection recovers most of the benefit. Inference latency for encoding new items is 140 ms per item on a single A4000 GPU."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00491",
+        "kind": "publication",
+        "title": "Automated Adapter Generation from Mismatched Interface Specifications",
+        "body": {
+          "recordId": "SYN-PUB-00491",
+          "field": "abstract",
+          "text": "When two systems must be integrated but their interface specifications describe incompatible message structures or interaction protocols, a protocol adapter is required. Manual adapter coding is error-prone and difficult to maintain. This paper presents a model-driven method in which both interfaces are described as finite-state machines annotated with typed message vocabularies; the mismatch is characterised as a set of transformation rules derived automatically by a constraint solver, and ATL templates then generate executable Apache Camel routes that implement the adapter. The method was applied to 22 real interface pairs collected from three companies in the manufacturing sector in Vojvodina. Fully automated generation succeeded in 16 cases; the remaining six required on average 2.3 hours of manual refinement. Generated adapters passed all supplied regression tests."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00492",
+        "kind": "publication",
+        "title": "Incremental Gaussian Mixture Models for Online Anomaly Detection in Continuous ICS Traffic Streams",
+        "body": {
+          "recordId": "SYN-PUB-00492",
+          "field": "abstract",
+          "text": "This paper proposes an incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic without the need for periodic full retraining. The algorithm maintains a fixed number of Gaussian components (K = 5 to 20 evaluated) and uses a Bayesian update rule to adjust component means, covariances, and weights with each arriving window of observations. Feature vectors are 32-dimensional, derived from 10-second traffic windows. The method was evaluated on a 180-day Modbus/TCP capture from a district heating control network and compared with a static GMM retrained every 24 hours. The iGMM maintained an F1 score within 0.03 of the periodically retrained model while reducing retraining compute cost by 94%. Concept drift induced by a planned process reconfiguration was detected as a persistent anomaly episode; a supervised reset mechanism based on operator acknowledgement was proposed and tested. Memory footprint per detector instance was under 120 KB."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00493",
+        "kind": "publication",
+        "title": "Out-of-Distribution Detection for Legal Document Classifiers: A Study on Serbian Administrative Text",
+        "body": {
+          "recordId": "SYN-PUB-00493",
+          "field": "abstract",
+          "text": "Classifiers deployed in production legal systems regularly encounter documents that belong to no category in the training taxonomy—newly enacted law types, atypical procedural forms, or documents from adjacent domains. This paper studies out-of-distribution (OOD) detection as a complement to standard closed-set classification in the context of Serbian administrative law. Seven OOD detection methods are evaluated: maximum softmax probability, ODIN, Mahalanobis distance, energy-based scoring, a Monte Carlo dropout ensemble, a deep ensemble, and a one-class neural baseline. Evaluation uses an in-distribution set of 6,400 administrative decisions across 16 categories and four OOD sets of increasing distance from the in-distribution. At a 95% true-positive rate threshold, energy-based scoring and the Mahalanobis method perform best, achieving AUROC values of 0.91 and 0.89 respectively. The paper discusses calibration of classifier confidence scores as a prerequisite for reliable OOD thresholding in production deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00494",
+        "kind": "publication",
+        "title": "Overhead Characterisation of Label-Propagation Mechanisms Across Five Microservice Frameworks",
+        "body": {
+          "recordId": "SYN-PUB-00494",
+          "field": "abstract",
+          "text": "Label propagation for information-flow monitoring can be implemented at multiple abstraction levels in modern microservice frameworks. This paper compares five implementation strategies across five popular frameworks: context propagation via W3C TraceContext headers (Spring Boot, Quarkus), middleware interception (gRPC interceptors), service mesh header injection (Istio/Envoy), a shared sidecar IPC channel, and kernel-level socket tagging via eBPF. Each strategy is benchmarked on a chain of ten services with varying payload sizes (1 KB–1 MB) and request rates (10–5,000 req/s). Metrics collected are end-to-end latency, CPU overhead on the service host, and label accuracy (fraction of requests carrying a correct label). The eBPF approach and TraceContext header approach tie on accuracy (99.7% and 99.4% respectively) while differing substantially on CPU overhead (0.8% vs. 0.2% at 1,000 req/s). The paper provides selection guidance based on framework constraints and accuracy requirements."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0062",
+        "kind": "project",
+        "title": "Personalised Recommendation for Sparse and Evolving Data in Digital Services",
+        "body": {
+          "recordId": "SYN-PRJ-0062",
+          "field": "summary",
+          "text": "PERSEDA addresses the degradation of recommendation quality under extreme data sparsity and rapid catalogue change, conditions typical of regional digital platforms with limited user bases. The project investigates three complementary directions: temporal matrix factorisation with adaptive decay, knowledge graph priors for item cold-start, and contrastive pre-training for cross-domain user representation transfer. Datasets are collected under data-sharing agreements with two Vojvodina-based digital service operators. The team consists of the PI, two PhD students, and one postdoctoral researcher. Deliverables include open-source implementations, two datasets deposited in a national repository, and a technical guideline document for SMEs seeking to deploy recommender systems on modest computational budgets."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0063",
+        "kind": "project",
+        "title": "Fairness-Aware Recommender Systems for European Digital Media Platforms",
+        "body": {
+          "recordId": "SYN-PRJ-0063",
+          "field": "summary",
+          "text": "RecFair is a collaborative Horizon Europe project examining how popularity bias and demographic skew in recommendation algorithms affect content diversity and user experience across European digital media markets. The University of Novi Sad team leads the work package on measurement and benchmarking, responsible for defining and implementing a standardised fairness evaluation suite covering item-side, user-side, and provider-side metrics. The suite is validated on datasets contributed by project partners from four countries. Ivković's group also contributes to the work package on mitigation methods, testing post-processing debiasing strategies within the shared evaluation framework. The project targets outputs including a public benchmark dataset, an open-source evaluation library, and policy recommendations for platform operators."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0554",
+        "kind": "project",
+        "title": "Legal Text Classification for Under-Resourced Balkan Languages",
+        "body": {
+          "recordId": "SYN-PRJ-0554",
+          "field": "summary",
+          "text": "LEXICO addressed the absence of annotated legal corpora and pretrained language models tailored to Balkan languages with limited digital legal resources. The project assembled a multilingual corpus covering Serbian, Macedonian, and Bosnian court decisions (approximately 18,000 documents in total), established annotation guidelines for outcome and procedural-stage labels, and trained lightweight transformer models suitable for deployment on modest hardware. Deliverables included two publicly released datasets, three peer-reviewed publications, and a prototype web interface for case outcome screening used in a demonstration with a Belgrade-based legal aid organisation. The project was carried out entirely within Serbian institutions, with informal advisory input from collaborators at Masaryk University."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0039",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates employed at NTP Novi Sad companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0039",
+            "field": "open_to",
+            "quote": "joint projects with companies developing personalisation or search features",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0039",
+            "field": "open_to",
+            "quote": "contract research on recommender system design, evaluation, and deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0039",
+            "field": "open_to",
+            "quote": "short-term GPU cluster access for collaborative experiments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "missing_bio"
+    ]
+  }
+}

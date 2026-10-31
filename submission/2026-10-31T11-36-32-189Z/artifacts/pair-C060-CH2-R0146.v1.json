@@ -1,0 +1,251 @@
+{
+  "ref": {
+    "artifactId": "pair-C060-CH2-R0146",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C060-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C060-CH2-R0146",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an AVL-based stop-arrival predictor, integrated into PassengerView, achieve absolute ETA errors of at most 90 seconds for at least 85% of displayed predictions across the three Romanian networks? The first experiment would audit a representative target-city extract and compare timetable-offset, state-space and GRU baselines on temporally held-out trips, explicitly testing transfer to DataBridge’s 10-second telemetry and peak-hour or disruption conditions.",
+    "rationale": [
+      {
+        "text": "Novaković has directly relevant experience estimating bus travel times from archived AVL using latent-state models.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01892",
+            "field": "abstract",
+            "quote": "This study develops a Kalman filter formulation that treats segment-level travel time as a latent state evolving according to a random-walk process",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her stop-level arrival prediction research provides a relevant neural baseline and identifies congestion-related weaknesses that this project must test.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01895",
+            "field": "abstract",
+            "quote": "Long short-term memory (LSTM) and gated recurrent unit (GRU) networks are evaluated for predicting bus arrival times at individual stops 1 to 5 stops ahead",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01895",
+            "field": "abstract",
+            "quote": "both models underperform during the evening peak on lines sharing a congested corridor",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed and cross-city validated AVL preprocessing methods, with Python implementations relevant to preparing the company's archive.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01896",
+            "field": "abstract",
+            "quote": "validated against a comparable archive from a partner city in Hungary.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01896",
+            "field": "abstract",
+            "quote": "The pipeline consists of six sequential stages: deduplication, map matching, speed filtering, stop-event reconstruction, trip identification, and running-time segmentation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01896",
+            "field": "abstract",
+            "quote": "Code is provided as open-source Python modules.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her cross-network transfer study offers a concrete starting point for testing adaptation, rather than assuming Novi Sad models generalise to Romanian operations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01897",
+            "field": "abstract",
+            "quote": "This study investigates whether a GRU model pre-trained on five years of Novi Sad AVL data can be fine-tuned with limited data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01897",
+            "field": "abstract",
+            "quote": "network topology differences limit gains beyond approximately 8 weeks of fine-tuning data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her deployment-oriented project addresses lightweight retraining without GPUs, although its planned pilots do not establish production readiness.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0420",
+            "field": "summary",
+            "quote": "The project develops lightweight Bayesian and neural network models that can be retrained nightly on a standard server",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0420",
+            "field": "summary",
+            "quote": "without requiring GPU hardware. Pilot deployments are planned in Novi Sad and one partner city.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Acceptance must use the contractual displayed-arrival accuracy criterion; segment MAE, RMSE or MAPE alone cannot establish compliance.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "their contracts require displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data preparation and evaluation must handle the PostgreSQL archive's scale and 10-second telemetry; weather-dependent features cannot assume an existing weather integration.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We do not have weather data integrated yet.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Serving and feed integration must fit the company's Java/Spring, on-premise container infrastructure and GTFS-Realtime interfaces; research code alone is insufficient.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Java 17 backend with Spring Boot microservices",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "GTFS and GTFS-Realtime feed generation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work plan must fit limited company staffing and include modelling knowledge transfer rather than relying on an existing in-house forecasting team.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one senior backend engineer and one domain specialist part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Historical-data access requires a signed agreement, and publication terms must reconcile company restrictions with the researcher's preference to publish anonymised results.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "with access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The implementation schedule must be reconciled before commitment: the company's stated approval expectation is in 2024, while the researcher notes capacity for one new collaboration in 2026.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Published results concern other networks, telemetry conditions and metrics. Neither segment errors nor stop-level MAPE demonstrate the Romanian display-level contractual target; the first target-city benchmark must test this transfer explicitly.",
+      "Peak congestion is a documented weakness of the researcher's recurrent models, and her extreme-weather study reports degraded coverage early in snow events. Missing weather integration and unconfirmed disruption labels could limit robustness.",
+      "The approximately 2.8-billion-row company archive is substantially larger than the cited preprocessing validation archives. Extraction, reconstruction and retraining throughput remain unvalidated at this scale.",
+      "The historical company timetable may not align with the researcher's 2026 capacity. Joint-project willingness is open, but current availability and whether the single collaboration slot remains free are unknown.",
+      "Romanian-city historical coverage, arrival-ground-truth quality, serving hardware capacity, budget and operational ownership are unspecified. Gaps could prevent a valid benchmark or maintainable deployment.",
+      "Data-sharing or publication restrictions could block access or conflict with the researcher's publication preference."
+    ],
+    "questions": [
+      "What are the actual approval date, current contractual deadline and status of the mid-2025 PassengerView release? Is Novaković's 2026 collaboration slot still available, and with what staffing and time commitment?",
+      "How is the 85% requirement calculated: prediction horizon, sampling frequency, per-city or pooled aggregation, exclusions, and treatment of cancellations, missing telemetry and stale displays?",
+      "Does the archive contain sufficient historical data for each Romanian network, including route variants, timetable versions and reliable stop-arrival ground truth from door events or another source?",
+      "Can the first experiment use representative peak, off-peak, roadworks and adverse-weather periods with chronological holdouts, city-specific results and comparison against the current PassengerView baseline?",
+      "What on-premise CPU, memory and storage resources, serving latency, refresh rate and outage-fallback requirements must the predictor meet?",
+      "Can weather and disruption data be obtained and time-aligned, and which inputs will be available reliably at inference time?",
+      "What budget and engineering allocation cover extraction, model development, deployment, monitoring and post-project maintenance, and who owns each responsibility?",
+      "What data-access, retention, anonymisation, cross-border processing, IP and publication terms can the company and participating municipalities approve?"
+    ],
+    "outcome": "pair",
+    "taskId": "C060-CH2",
+    "researcherId": "R0146",
+    "inputs": [
+      {
+        "artifactId": "business-C060-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C060-CH2-R0146",
+        "version": 1
+      }
+    ]
+  }
+}

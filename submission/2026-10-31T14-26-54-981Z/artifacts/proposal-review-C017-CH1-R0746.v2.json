@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C017-CH1-R0746",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C017-CH1-R0746",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C017-CH1-R0746",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares.” Proposed next steps: “Deliver guidance before soil-sampling dispatch, explicitly scheduling and costing earlier sensing.” These identify the concrete missed-pocket problem and the required pre-dispatch workflow rather than merely proposing better maps."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Also require cost and turnaround within agreed caps”; “Include advance sensing, consumables and repeat visits in recurring costs; report independent validation costs separately”; “Keep implementation within stated staffing”; and “Confirm instrument bookings, consumables funding and field support before starting.” Open questions: “Is a separately costed advance sensor visit acceptable before soil-sampling dispatch, and can the parties agree pilot funding, staff allocation and data-use terms?” Together these make recurring affordability, delivery time, limited staffing, advance-survey acceptability and resource access explicit acceptance conditions or prerequisites rather than assumed resources."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements”; “His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights”; and “His flooded-field study found lower temporal stability in transitions between microrelief elements.” Our inference: “published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow.” Proposed next steps: “Test local conductivity–salinity calibration, not imported spacing.” These connect his documented methods to the problem while explicitly limiting transfer and identifying calibration-density and temporal-stability trade-offs."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts document the company’s limited development capacity and the researcher’s conditional instrument access. Proposed next steps: “TloCare would nominate fields and supply records; Kosanović would design calibration and sensing”; “agree evaluation precision and fund independent reference sampling”; and “initially export PostGIS-compatible zone and uncertainty layers for Leaflet review.” Open questions: “Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?” These distinguish documented capacity from proposed responsibilities and commitments that still require agreement."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging”; “Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze selection before evaluation”; and “Audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund independent reference sampling.” These specify the baseline, sensor conditions, locally checked inputs and independent evaluation, with configuration selection separated from held-out testing and execution resources left as explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Define reference pockets using an agreed laboratory salinity threshold. Count each confirmed 0.3–0.8-hectare pocket once, detected when predictions cover at least half its polygon; divide by all confirmed target-size pockets. Measure false-positive hectares over reference-confirmed non-saline hectares.” Acceptance is explicitly proposed: “require the detection-difference lower confidence bound to exceed that improvement threshold and the false-positive-difference upper bound to satisfy an agreed nonpositive tolerance”; “Also require cost and turnaround within agreed caps”; and “Unresolved reference areas or insufficient pockets prevent a pass.” These define pocket-level counting, reference-derived numerators and denominators, area-based false positives, uncertainty handling and statistical acceptance for the company’s target pocket population; confidence settings and improvement thresholds must be agreed before evaluation."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Our inference: “published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow.” Proposed next steps compare “the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging” and apply acceptance to “the best tuning-selected configuration.” Potential benefits describe testing “whether small salinity pockets can be located more reliably without increasing routine cost or turnaround.” These limit conclusions to evaluated workflow performance and do not claim independently identified effects of sensor choice, sampling density or moisture."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives”; “Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits”; and “archive size alone does not establish usable reference labels.” Verified facts identify unstable nugget estimates below 30 cores and lower temporal stability in microrelief transitions. Proposed next steps: “Propose repeat measurements across moisture conditions, especially transitions, before reusing surveys.” These identify the main local-transfer, sparse-calibration, temporal, historical-label and economic risks without presenting unresolved conditions as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format.” Open questions: “Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?” Proposed next steps use conditional roles—“TloCare would nominate fields and supply records; Kosanović would design calibration and sensing”—and require bookings and funding before starting; participation therefore matches documented openness without assuming sustained availability or assigning a declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround, and identify when advance sensing is economical”; and “Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale.” Both gains follow directly from the proposed field comparisons and are framed as conditional possibilities, not guaranteed outcomes or commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.63,
+        0.97,
+        0.96,
+        0.96,
+        0.98,
+        0.86
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

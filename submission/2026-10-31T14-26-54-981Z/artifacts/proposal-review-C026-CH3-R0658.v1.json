@@ -1,0 +1,109 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0658",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0658",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0658",
+      "version": 1
+    },
+    "checkedClaimCount": 6,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "proposed technical go/no-go is verification head error within pre-agreed survey/model tolerances, gradients distinguishable from measurement uncertainty, and laboratory quality-control acceptance.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The head-error acceptance unit and aggregation are unspecified: an average over wells or observations could pass despite a boundary-well error that changes the inferred migration direction. Add a short prerequisite fixing the held-out error statistic, treatment of repeats and per-well or worst-case acceptance with measurement uncertainty before verification; numerical tolerances may remain to be agreed.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company reports leachate seeping toward its boundary, a liner not designed for liquid retention, and an in-house leachate COD measurement of 3,400 mg/L.\" Proposed next steps: \"Regulatory go/no-go additionally requires four compliant wells installed and an acceptable remediation proposal submitted by the confirmed applicable deadline, with acceptance checked directly with the inspectorate.\" These identify the actual source, groundwater concern and ordered deliverables rather than substituting a generic research objective."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"The company reports no dedicated research budget and no laboratory beyond its basic leachate wet-chemistry bench.\" Proposed next steps: \"Prepare a funded, narrowly scoped work plan covering drilling, surveying, external analyses and additional personnel\" and \"First verify the historical order's current status; reject or revise this schedule if it cannot meet the applicable deadline.\" Open questions: \"Can Kovač confirm present availability for this narrowly scoped joint project and identify who could lead urgent field mobilisation?\" Funding, laboratory capacity, staffing and the historical deadline remain explicit prerequisites rather than assumed resources; construction standards and regulatory review are also to be agreed before drilling."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Her published Danube model was calibrated against observed heads; its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty.\" Our inference: \"Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer. Local stratigraphy, hydraulic properties and repeat groundwater levels would test that transfer\"; Proposed next steps: \"Survey four agreed wells, log strata, conduct slug tests\". This connects her documented modelling and field methods to the site's unknown hydraulics while retaining the published uncertainty and transfer limitation."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Kovač's group combines tracer experiments, piezometer networks and numerical flow modelling.\" Proposed next steps: \"The company would supply records, access and procurement; Kovač would lead interpretation if available\" and \"Include specialist review of interim source containment and treatment options\". Our inference: \"The supplied research does not establish municipal-leachate treatment or containment-design capability.\" These distinguish documented hydrogeological capacity from proposed company inputs, conditional researcher work and specialist capacity still to be arranged."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Propose a first investigation comparing the 1993-sketch interpretation with site-derived interpretations\"; \"Survey four agreed wells, log strata, conduct slug tests, and sample leachate and groundwater using an agreed analytical suite, blanks and duplicates\"; \"Use initial levels for interpretation and a separate repeat round for verification, checking measurement independence\"; and \"Select the best-supported interpretation using initial data\". These specify baseline, new inputs, compared interpretations and separate selection and verification data; access, construction and analytical details are explicit prerequisites. The acceptance-metric ambiguity is addressed separately below."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"proposed technical go/no-go is verification head error within pre-agreed survey/model tolerances, gradients distinguishable from measurement uncertainty, and laboratory quality-control acceptance.\" Also: \"Insufficient evidence means further investigation, not a pass.\" The proposal makes the targets conditional and includes a separate inspectorate decision, but does not define whether head error is assessed at every well or aggregated across wells and repeat observations; an aggregate could pass while concealing a consequential boundary-well error."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Our inference: \"Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer\" and \"neither natural attenuation nor inspectorate acceptance should be assumed.\" Proposed next steps: \"with any treatment performance tested separately against agreed discharge or disposal criteria.\" These restrict the first comparison to hydrogeological interpretation and predictive verification, without attributing treatment effectiveness, attenuation or regulatory approval to that comparison."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty.\" Our inference: \"four wells and a short campaign may leave plume extent and seasonal reversals unresolved\" and \"A specialist would likely be needed\". Proposed next steps: \"Plan seasonal follow-up and possible additional wells or off-site investigation; do not describe the initial campaign as complete plume delineation.\" Together with the funding, access, deadline and availability questions, these name the material scientific and mobilisation risks without presenting unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Kovač lists openness to joint project proposals on aquifer management. Her notes report limited capacity for large new commitments before mid-2025.\" Our inference: \"Participation remains conditional because Kovač's present availability is unknown.\" Proposed next steps: \"Kovač would lead interpretation if available.\" The joint-project format matches documented openness and does not presume availability or assign a declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The first investigation could distinguish defensible monitoring locations from assumptions and identify evidence still needed for containment decisions and a regulatory submission\" and \"Subject to agreement and access, Kovač could test how alluvial-aquifer characterisation methods transfer to a waste-yard setting using new stratigraphic, hydraulic and water-quality observations.\" These are conditional benefits supported by the proposed field investigation, not guarantees of plume delineation, treatment success or approval."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.92,
+        0.88,
+        0.96,
+        0.98,
+        0.95,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

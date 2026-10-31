@@ -1,0 +1,54 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Sample: held-out normal BACnet/IP captures from at least two ArmaturaSec client sites plus her testbed, with anomalies injected one factor at a time",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "bio",
+            "quote": "dedicated ICS testbed equipped with Siemens-compatible PLCs, Modbus/TCP and DNP3 traffic generators, and packet capture infrastructure for long-term dataset collection",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10482",
+            "field": "abstract",
+            "quote": "A testbed with all three protocol stacks was operated for 45 days",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Kiss's testbed is documented with Modbus/TCP and DNP3 (and EtherNet/IP) traffic generators, not BACnet/IP, so the plan cannot assume her testbed can supply BACnet experiment traffic; list it explicitly as a capability to be confirmed or built, and note that BACnet samples must come from ArmaturaSec (or a new generator).",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Proposed fourth step: co-design the alert explanation with two client plant managers and measure whether they can judge an alert actionable unaided",
+        "sources": [],
+        "explanation": "Nothing in the company material states that client plant managers are willing or available to take part; the step should be phrased as conditional on ArmaturaSec securing two consenting pilot clients (the archives are explicitly shared under consent/NDA), otherwise it reads as an arranged commitment.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T12-43-03-800Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Reducing Serbian Support-Search Misses Without Full Re-indexing",
+    "facts": [
+      {
+        "text": "LinguaBot reports that about 18% of a sample of 12,000 real support queries from one bank returned no useful result. Its Elasticsearch setup uses a Croatian-oriented stemmer, and users sometimes mix scripts within words.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports around 85,000 labelled query-response pairs across clients and two in-house linguists.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot describes quarterly additions to product terminology and manual synonym-list maintenance that does not scale.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company describes a tooling or data-work budget of around EUR 8,000.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić is open to company joint projects. His notes report two active projects and capacity for one smaller industrial contract or consulting engagement; his interests exclude general software development without a research component.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's work examines interactions between morphological processing and script normalization. His phoneme-canonicalization study evaluated legal-corpus retrieval, reporting lower out-of-vocabulary rates than a Latin-only baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "U ovom radu ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "The phoneme-based canonical form reduced the out-of-vocabulary rate from 9.3% to 2.1% compared with a Latin-only baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published production-load study reports an accuracy–latency tradeoff: the transformer normalizer achieved MRR 0.68 but added 47 ms at the 99th percentile. His company-pilot work also identifies incomplete initial synonym dictionaries.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "The transformer-based normalizer achieves MRR of 0.68 but adds 47 ms at the 99th percentile.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "jer inicijalni rečnik sinonima nije potpun.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a focused joint research project on whether morphology and script handling independently or jointly explain support-search misses, rather than a general chatbot-development engagement.",
+      "Legal-corpus results do not validate short banking queries, within-word typos or product identifiers. Canonicalization could also merge distinct terms, while neural fallback could introduce latency costs.",
+      "This proposal is conditional: participation is open, but the researcher's start date and actual allocation remain unconfirmed, and his stated capacity is limited."
+    ],
+    "proposedActions": [
+      "Run a held-out retrieval experiment using approved query-response pairs and knowledge-base snapshots, with separate tuning and evaluation samples whose independence is checked. Include a random held-out sample from the original bank population and separate cross-client diagnostics. Linguists would judge every evaluation query at an agreed retrieval depth. Count each query occurrence once, without deduplication; miss rate is queries with no useful result divided by all evaluated queries. Treat unresolved judgments as misses. Select the best configuration on tuning data, then freeze it. Proposed go/no-go: its bank miss rate has a 95% upper confidence bound below 5%, both before and after a new-terminology update; insufficient evidence means no pass. Also require demonstrated updates without full re-indexing, measured maintenance effort within an agreed cap without expanding manual synonym dependence, and compliance with agreed latency limits. Gate feasibility on tooling/data spending around EUR 8,000, clarified research fees, and a prototype testable within six months. These are proposed acceptance procedures, not promised outcomes.",
+      "For comparable controls, retain the current Elasticsearch pipeline and test Serbian morphology alone, enhanced script handling alone, and both together, with independently fixed factor settings. Compare phoneme canonicalization and query-time expansion as tuning alternatives, including preprocessing order. Evaluate inflection, within-word mixing, unseen banking vocabulary and ambiguous identifiers separately. A null single-factor result would narrow, not settle, the mechanism; synthetic typo tests would supplement, not replace, real-query evaluation.",
+      "Propose company ownership of integration, approved data preparation and linguistic review, with Dragić advising experimental design and error analysis. Negotiate month one for permissions and metric definitions, months two–three for tuning, and months four–six for frozen evaluation and a terminology-update replay. Log index operations, maintenance hours, latency and identifier errors; test rule changes against existing documents rather than assuming incremental ingestion proves update compatibility."
+    ],
+    "questions": [
+      "Can Dragić confirm a start date and limited allocation for this six-month joint project, with a named company implementation owner?",
+      "What approved data environment, client permissions, anonymization and retention rules would allow access to queries, relevance labels and matching knowledge-base snapshots?",
+      "How should useful results and retrieval depth be defined, and what maintenance-effort cap, latency limits and additional client-specific acceptance checks should apply?",
+      "What Elasticsearch version and deployment restrictions apply, does the no-full-re-index condition permit initial migration, and what research-fee and integration budget exists beyond tooling/data work?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify which processing changes reduce actual banking-query misses and whether vocabulary updates remain practical without rebuilding the full index.",
+      "researcher": "Subject to agreement and approved access, the project could provide support-query material for testing morphology–script interactions and their transfer beyond legal and news retrieval."
+    },
+    "markdown": "# Reducing Serbian Support-Search Misses Without Full Re-indexing\n\n## Verified facts\n- LinguaBot reports that about 18% of a sample of 12,000 real support queries from one bank returned no useful result. Its Elasticsearch setup uses a Croatian-oriented stemmer, and users sometimes mix scripts within words. [F1]\n- The company reports around 85,000 labelled query-response pairs across clients and two in-house linguists. [F2]\n- LinguaBot describes quarterly additions to product terminology and manual synonym-list maintenance that does not scale. [F3]\n- The company describes a tooling or data-work budget of around EUR 8,000. [F4]\n- Dragić is open to company joint projects. His notes report two active projects and capacity for one smaller industrial contract or consulting engagement; his interests exclude general software development without a research component. [F5]\n- The researcher's work examines interactions between morphological processing and script normalization. His phoneme-canonicalization study evaluated legal-corpus retrieval, reporting lower out-of-vocabulary rates than a Latin-only baseline. [F6]\n- His published production-load study reports an accuracy–latency tradeoff: the transformer normalizer achieved MRR 0.68 but added 47 ms at the 99th percentile. His company-pilot work also identifies incomplete initial synonym dictionaries. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify which processing changes reduce actual banking-query misses and whether vocabulary updates remain practical without rebuilding the full index.\n- For the researcher: Subject to agreement and approved access, the project could provide support-query material for testing morphology–script interactions and their transfer beyond legal and news retrieval.\n\n## Our inference\n- This suggests a focused joint research project on whether morphology and script handling independently or jointly explain support-search misses, rather than a general chatbot-development engagement.\n- Legal-corpus results do not validate short banking queries, within-word typos or product identifiers. Canonicalization could also merge distinct terms, while neural fallback could introduce latency costs.\n- This proposal is conditional: participation is open, but the researcher's start date and actual allocation remain unconfirmed, and his stated capacity is limited.\n\n## Proposed next steps\n- Run a held-out retrieval experiment using approved query-response pairs and knowledge-base snapshots, with separate tuning and evaluation samples whose independence is checked. Include a random held-out sample from the original bank population and separate cross-client diagnostics. Linguists would judge every evaluation query at an agreed retrieval depth. Count each query occurrence once, without deduplication; miss rate is queries with no useful result divided by all evaluated queries. Treat unresolved judgments as misses. Select the best configuration on tuning data, then freeze it. Proposed go/no-go: its bank miss rate has a 95% upper confidence bound below 5%, both before and after a new-terminology update; insufficient evidence means no pass. Also require demonstrated updates without full re-indexing, measured maintenance effort within an agreed cap without expanding manual synonym dependence, and compliance with agreed latency limits. Gate feasibility on tooling/data spending around EUR 8,000, clarified research fees, and a prototype testable within six months. These are proposed acceptance procedures, not promised outcomes.\n- For comparable controls, retain the current Elasticsearch pipeline and test Serbian morphology alone, enhanced script handling alone, and both together, with independently fixed factor settings. Compare phoneme canonicalization and query-time expansion as tuning alternatives, including preprocessing order. Evaluate inflection, within-word mixing, unseen banking vocabulary and ambiguous identifiers separately. A null single-factor result would narrow, not settle, the mechanism; synthetic typo tests would supplement, not replace, real-query evaluation.\n- Propose company ownership of integration, approved data preparation and linguistic review, with Dragić advising experimental design and error analysis. Negotiate month one for permissions and metric definitions, months two–three for tuning, and months four–six for frozen evaluation and a terminology-update replay. Log index operations, maintenance hours, latency and identifier errors; test rule changes against existing documents rather than assuming incremental ingestion proves update compatibility.\n\n## Open questions\n- Can Dragić confirm a start date and limited allocation for this six-month joint project, with a named company implementation owner?\n- What approved data environment, client permissions, anonymization and retention rules would allow access to queries, relevance labels and matching knowledge-base snapshots?\n- How should useful results and retrieval depth be defined, and what maintenance-effort cap, latency limits and additional client-specific acceptance checks should apply?\n- What Elasticsearch version and deployment restrictions apply, does the no-full-re-index condition permit initial migration, and what research-fee and integration budget exists beyond tooling/data work?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

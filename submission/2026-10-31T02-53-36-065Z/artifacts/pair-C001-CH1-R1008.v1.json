@@ -1,0 +1,235 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can per-site unsupervised baselines and threshold calibration for ICS traffic be transferred to BACnet/IP and deployed on ArmaturaSec's embedded ProtoSense module to flag behavioural drift without labelled attacks? The first experiment would test whether such detectors can maintain operational false-alarm rates on held-out normal captures and controlled anomalies while producing explanations a plant manager can understand.",
+    "rationale": [
+      {
+        "text": "Kiss is open to joint projects with companies deploying ICS monitoring solutions and to contract research on anomaly-detection deployment.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "contract research on protocol traffic analysis and anomaly detection deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss has built per-register statistical baselines and a one-class detector for Modbus/TCP traffic on a substation automation testbed.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "one-class detector based on Mahalanobis distance thresholding over a 20-feature vector",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has worked on post-hoc threshold calibration using unlabelled operational data, which matches ArmaturaSec's need to set alert thresholds without attack labels.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work includes incremental online models for concept drift in ICS traffic, relevant to site-specific baseline drift and seasonal changes.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic without the need for periodic full retraining",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has evaluated lightweight detector deployment on ARM-class industrial gateways, relevant to ProtoSense's embedded inference constraints.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10239",
+            "field": "abstract",
+            "quote": "0.9 ms per 10-second window on an ARM Cortex-A7 target",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group operates an ICS testbed and long-term capture infrastructure that can support controlled experiments and validation.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "bio",
+            "quote": "dedicated ICS testbed equipped with Siemens-compatible PLCs, Modbus/TCP and DNP3 traffic generators, and packet capture infrastructure for long-term dataset collection",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience with mixed-protocol and proprietary traffic, which is useful for extending detection beyond a single parsed protocol.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10483",
+            "field": "abstract",
+            "quote": "A one-class SVM and an Isolation Forest were trained on mixed-protocol captures",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She prefers applied deployment collaborations rather than purely synthetic experiments, aligning with ArmaturaSec's operational product context.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "prefers applied collaborations that result in deployment on real infrastructure rather than purely synthetic experiments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must learn normal behaviour without confirmed malicious examples; ArmaturaSec has no confirmed attack captures and only normal traffic archives.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "none of our clients has ever given us a packet capture that contains a confirmed attack",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The detector must cover Modbus TCP and BACnet/IP, because ProtoSense is specified for both protocols.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must control false positives enough that clients do not disable alerts; a previous classifier was disabled in real deployments.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The detector must run on-device without affecting packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company resources and IP access are limited to one to two part-time engineers and archives, bench and firmware codebase under NDA.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "BACnet/IP is not evidenced in Kiss's supplied publications or project summaries; the closest protocol-agnostic work was evaluated on other protocols, so transfer to BACnet must be tested in the first experiment.",
+      "Kiss's availability is unknown; no source in the material confirms her capacity, which could delay a joint project.",
+      "Evaluation without real labelled attacks depends on injected or replayed anomalies and held-out normal captures; these may not represent stealthy or unknown attacks.",
+      "Site-specific baselines may drift with seasonal load and process changes; recalibration schedules validated on testbeds need revalidation on ArmaturaSec's multi-site archives.",
+      "Client traffic is sensitive and shared under consent and NDA; data-sharing and privacy constraints could limit access to BACnet and multi-site captures.",
+      "ArmaturaSec's previous supervised classifier caused alert fatigue; a new unsupervised detector could fail the same operational acceptance test if false alarms are not calibrated."
+    ],
+    "questions": [
+      "Does Krisztina Kiss have the availability and supervisory capacity for a joint project in the coming academic year, and can her group's testbed data-sharing agreement be applied to ArmaturaSec?",
+      "Which ArmaturaSec traffic archives and BACnet/IP captures can be shared under NDA, for which sites and time periods, and do they include any known incidents or operator annotations?",
+      "What target hardware and resource budget should the first prototype meet: existing ProtoSense/NetGuard appliances or the planned late-2025 security-processor variant?",
+      "What false-positive rate, alert volume and explanation format would be acceptable to ArmaturaSec's clients and plant managers?",
+      "Can controlled anomalies be injected on a testbed or mirrored network for evaluation, and what ethical, customer-consent or regulatory approvals are needed?",
+      "Should the first experiment prioritise Modbus TCP, where Kiss has direct evidence, or BACnet/IP, where ArmaturaSec needs coverage but the researcher's material shows a gap?",
+      "How will jointly developed detector code and models be licensed and integrated into ArmaturaSec's proprietary firmware?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

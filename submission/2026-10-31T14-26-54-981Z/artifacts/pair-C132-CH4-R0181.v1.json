@@ -1,0 +1,179 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0181",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0181",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should Serbian Cyrillic–Latin normalisation be applied in KlozuraPro’s PostgreSQL search pipeline—at indexing, query time, or both—to reduce script-related missed results without unacceptable false matches or latency? The first experiment would test transfer of the researcher’s tabular-record normaliser to labelled contract-search cases, including mixed-script text and ambiguous Latin sequences, and compare these pipeline variants against current search.",
+    "rationale": [
+      {
+        "text": "Ranković has directly relevant experience developing Serbian Cyrillic–Latin normalisation and diacritic-tolerant comparison for entity resolution, providing a concrete starting point rather than a validated contract-search solution.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02346",
+            "field": "abstract",
+            "quote": "incorporating a rule-based Cyrillic–Latin normaliser, a diacritic-robust string distance metric derived from Jaro–Winkler",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group works with PostgreSQL and Python-based matching frameworks, aligning with the company’s database and NLP implementation environment.",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "bio",
+            "quote": "The group works with PostgreSQL, Python-based matching frameworks, and RDF triple stores",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her benchmark-construction experience supports designing an annotated evaluation set that distinguishes script-related retrieval failures from other search errors.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02341",
+            "field": "abstract",
+            "quote": "A benchmark comprising 22 schema pairs derived from Serbian and Croatian administrative sources was assembled and manually annotated by three independent experts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The implementation must integrate with the existing PostgreSQL full-text search and Python NLP pipeline; the project must explicitly compare indexing-time and query-time placement.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Python-based NLP pipeline (spaCy, custom fine-tuned transformer models trained on Serbian-language contracts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "at indexing time, at query time, or both",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Correctness testing must cover mixed-script documents and ambiguous Latin-to-Cyrillic mappings, not only whole-document transliteration.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "the same Latin sequence maps to different Cyrillic letters depending on dialect conventions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search latency is a deployment acceptance requirement; the company must define a measurable threshold for what counts as a noticeable slowdown.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit a backend engineer’s six-week contribution and the company’s capacity for only one external project alongside product development.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher’s moderate capacity favours a tightly scoped short-term engagement with a concrete dataset rather than a large coordination role.",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "notes",
+            "quote": "Currently co-supervising two PhD students, so capacity for new commitments is moderate",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0181",
+            "field": "notes",
+            "quote": "shorter-term contract research or clearly scoped consulting arrangements are more feasible than new large project coordination roles in the near term.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0181",
+            "field": "notes",
+            "quote": "Prefers projects where there is a concrete dataset to work with rather than purely theoretical engagements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The published normaliser was evaluated on voter-registration record pairs, not contract full-text retrieval. Mixed-script tokenisation, legal terminology and PostgreSQL ranking may behave differently; the first experiment must establish whether transfer is useful.",
+      "Normalisation may introduce false matches or alter ranking when ambiguous sequences or diacritic distinctions are collapsed; fewer zero-hit searches alone would not establish better retrieval.",
+      "The reported one-in-five failure estimate comes from a January 2024 log sample and may not represent current traffic or isolate script mismatch from other causes.",
+      "Researcher availability for the proposed six-week window is unknown despite openness to joint projects and the stated moderate capacity.",
+      "Access to representative contracts, queries and relevance labels, permission to use them, and project budget are unknown; delays could consume the limited engineering window."
+    ],
+    "questions": [
+      "Can Ranković commit to a scoped joint project during the company’s six-week engineering window, and how much supervision or implementation time can she provide?",
+      "Can the company provide representative parsed contracts and query logs, including mixed-script and ambiguous cases, with relevance judgements and appropriate confidentiality and access arrangements?",
+      "What are the current PostgreSQL version, text-search configuration, tokenisation rules, index size, query volume and latency distribution?",
+      "What thresholds should govern retrieval quality, false matches, ranking changes and p95 search latency, and who will validate ambiguous legal-search cases?",
+      "Can the existing normalisation implementation be reused, and under what licence or intellectual-property terms?",
+      "What budget, ML-engineer support, reindexing window and deployment or rollback arrangements are available?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0181",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0181",
+        "version": 1
+      }
+    ]
+  }
+}

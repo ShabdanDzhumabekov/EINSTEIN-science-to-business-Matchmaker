@@ -1,0 +1,294 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0353",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0353",
+    "name": "Andrea Žigić",
+    "faculty": "Faculty of Technology",
+    "department": "Department of Applied and Engineering Chemistry",
+    "fields": [
+      "Analytical and Environmental Chemistry",
+      "Water and Wastewater Treatment",
+      "Inorganic and Redox Chemistry",
+      "Chemical Engineering Unit Operations"
+    ],
+    "keywords": [
+      "speciation analysis",
+      "transition metals",
+      "redox chemistry",
+      "coagulation–flocculation",
+      "iron chemistry",
+      "manganese oxidation",
+      "chromium speciation",
+      "aqueous matrices",
+      "ICP-OES",
+      "metal ion removal"
+    ],
+    "openTo": [
+      "contract research on water and wastewater treatment process optimisation",
+      "consulting on coagulation–flocculation system design and troubleshooting",
+      "analytical services for metal speciation in water, wastewater, and sludge matrices",
+      "joint project proposals in water quality and treatment",
+      "student internships for chemistry and environmental engineering students",
+      "industrial PhD supervision on metal removal from industrial effluents"
+    ],
+    "bio": {
+      "recordId": "R0353",
+      "field": "bio",
+      "text": "Andrea Žigić completed her undergraduate and master's studies in Chemical Engineering at the Faculty of Technology, University of Novi Sad, and received her PhD in Applied Chemistry from the same institution in 2004, with a dissertation on iron speciation in natural surface waters of the Vojvodina region. She joined the Department of Applied and Engineering Chemistry as an assistant in 2005 and was promoted to Full Professor in 2018. Her research group focuses on speciation analysis of transition metals—primarily iron, manganese, copper, and chromium—in aqueous systems, with emphasis on redox transformations under varying pH and dissolved oxygen conditions. A parallel line of work addresses the optimisation of coagulation–flocculation processes for the removal of dissolved and colloidal metal species from industrial and municipal wastewaters. The group routinely uses ICP-OES, voltammetric stripping analysis, UV-Vis spectrophotometry, jar-test equipment, and zeta-potential measurement. She teaches Analytical Chemistry and Water Treatment Technology at undergraduate and graduate levels."
+    },
+    "industryExperience": {
+      "recordId": "R0353",
+      "field": "industry_experience",
+      "text": "Prof. Žigić has carried out short-term technical consultancies for two municipal water utility companies in Vojvodina, advising on coagulant selection and dosing strategy during high-turbidity events. She also participated in a direct industry contract with a surface treatment company in Novi Sad focused on chromate wastewater characterisation and treatment feasibility."
+    },
+    "notes": {
+      "recordId": "R0353",
+      "field": "notes",
+      "text": "Prof. Žigić has indicated a preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor. The department's ICP-OES instrument is available for contract analytical work through the university's service centre agreement. She is not planning a sabbatical in the near term."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01960",
+        "kind": "publication",
+        "title": "Distribution of dissolved iron species in the Tisa River tributaries of Vojvodina during seasonal low-flow periods",
+        "body": {
+          "recordId": "SYN-PUB-01960",
+          "field": "abstract",
+          "text": "Iron speciation was investigated in twelve surface water sampling points along three tributaries of the Tisa River in northern Serbia during summer and early autumn low-flow conditions over two consecutive years. Total dissolved iron, Fe(II), and Fe(III) concentrations were determined by ferrozine spectrophotometry combined with 0.45 µm membrane filtration. Fe(II) fractions ranged from 18 to 64 % of total dissolved iron depending on sampling site and season, with the highest Fe(II) proportions observed in hyporheic exchange zones downstream of drainage channels. Dissolved oxygen, pH (6.8–8.1), and temperature (14–24 °C) were recorded in situ. A positive correlation between Fe(II)/Fe(total) ratio and turbidity was noted at two sites, indicating particle-associated reductive dissolution. The dataset provides a seasonal baseline for redox-driven iron cycling in lowland river systems receiving agricultural drainage. Implications for drinking water treatment intakes drawing from these tributaries are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04335",
+        "kind": "publication",
+        "title": "Effect of pH and dissolved oxygen on Fe(II) oxidation kinetics in synthetic groundwater matrices",
+        "body": {
+          "recordId": "SYN-PUB-04335",
+          "field": "abstract",
+          "text": "Laboratory kinetic experiments were conducted to quantify the rate of Fe(II) oxidation to Fe(III) in synthetic groundwater over a pH range of 6.0–8.5 and dissolved oxygen concentrations of 1.0–8.5 mg/L. Initial Fe(II) concentrations of 0.5, 2.0, and 5.0 mg/L were tested in buffered solutions at 20 °C and ionic strength adjusted to 0.01 M with NaClO₄. Pseudo-first-order rate constants increased by approximately one order of magnitude per pH unit increase above pH 7, consistent with the empirical rate law reported in earlier literature. The half-life of Fe(II) at pH 6.5 and 2 mg/L dissolved oxygen was approximately 180 minutes, dropping to under 4 minutes at pH 8.0. Bicarbonate alkalinity at 250 mg/L as CaCO₃ accelerated the oxidation relative to phosphate-buffered controls, suggesting carbonate complex participation. Results are relevant to aeration–oxidation sequences in iron removal plants in Vojvodina where groundwater alkalinity is high."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04336",
+        "kind": "publication",
+        "title": "Cr(VI) and Cr(III) speciation in electroplating effluents using differential pulse cathodic stripping voltammetry",
+        "body": {
+          "recordId": "SYN-PUB-04336",
+          "field": "abstract",
+          "text": "A differential pulse cathodic stripping voltammetric (DPCSV) method was adapted for simultaneous determination of Cr(VI) and Cr(III) in effluents from three electroplating facilities in the Novi Sad industrial zone. Sample pre-treatment involved complexation with diethylenetriaminepentaacetic acid (DTPA) at controlled pH prior to adsorptive accumulation on a hanging mercury drop electrode. Calibration was linear between 0.5 and 120 µg/L for both species, with detection limits of 0.18 µg/L for Cr(VI) and 0.24 µg/L for Cr(III). Matrix interference from Fe(III) was suppressed by 1,10-phenanthroline masking. Analysis of twenty-three effluent samples showed Cr(VI) concentrations between 1.2 and 87 mg/L, substantially exceeding current Serbian discharge limits in eleven cases. Results were cross-validated against ICP-OES after speciation-preserving ion exchange separation. The method provides a practical analytical tool for routine industrial monitoring without requiring expensive instrumentation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04337",
+        "kind": "publication",
+        "title": "Coagulation of synthetic manganese-bearing water with aluminium sulfate: jar-test optimisation and floc characterisation",
+        "body": {
+          "recordId": "SYN-PUB-04337",
+          "field": "abstract",
+          "text": "Jar-test experiments were performed on synthetic water containing 0.5–4.0 mg/L dissolved Mn(II) at pH values between 6.5 and 8.5 to optimise aluminium sulfate (alum) dosing for manganese removal. Pre-oxidation with KMnO₄ at stoichiometric doses converted Mn(II) to colloidal MnO₂ prior to coagulation. Optimal alum dose was 25 mg/L at pH 7.8, achieving residual total manganese below 0.05 mg/L and turbidity below 0.5 NTU after 20-minute sedimentation. Floc size distribution was measured by laser diffraction; mean volume-weighted diameter increased from 18 µm at sub-optimal doses to 112 µm at optimal conditions. Zeta potential shifted from −22 mV at under-dosing to near-zero at optimal conditions, consistent with charge neutralisation as the dominant destabilisation mechanism. Alum dose requirements increased linearly with initial Mn concentration. The results support design guidelines for small water treatment plants in communities relying on Mn-rich aquifer sources."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04338",
+        "kind": "publication",
+        "title": "Influence of natural organic matter fractions on copper speciation in drinking water distribution systems",
+        "body": {
+          "recordId": "SYN-PUB-04338",
+          "field": "abstract",
+          "text": "Copper speciation in water samples collected from fourteen points along a municipal distribution network in Vojvodina was examined as a function of dissolved organic carbon (DOC) fractions separated by size exclusion chromatography. Total copper, dissolved copper (<0.45 µm), and electrochemically labile copper were quantified by ICP-OES and anodic stripping voltammetry (ASV). DOC fractions ranged from 1.8 to 6.4 mg/L with hydrophilic acids constituting 55–70 % of total DOC. Labile Cu(II) correlated inversely with the high-molecular-mass humic fraction (r = −0.81), indicating preferential complexation by humic substances. At sites with longer hydraulic residence time, total copper increased by up to 0.12 mg/L relative to the treatment plant outlet, attributed to pipe corrosion under locally low pH conditions (6.9–7.1). The findings suggest that DOC management at source could reduce copper complexation capacity and hence corrosion-derived copper accumulation in distribution."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04339",
+        "kind": "publication",
+        "title": "Optimisation of polyaluminium chloride dosing for removal of iron and turbidity from lowland river intakes",
+        "body": {
+          "recordId": "SYN-PUB-04339",
+          "field": "abstract",
+          "text": "A systematic jar-test study examined polyaluminium chloride (PACl) as an alternative to conventional alum for treating Tisa River intake water during high-turbidity flood periods. Seven PACl basicity levels (Al₂O₃ content 9–18 %) and doses of 5–50 mg/L were tested against raw water turbidity of 30–280 NTU, total iron 0.8–5.6 mg/L, and temperature ranging from 5 to 22 °C. At 12 °C, PACl with 14 % Al₂O₃ at 20 mg/L reduced turbidity to below 1 NTU and total iron to below 0.1 mg/L with a shorter flocculation time (12 min) compared to alum (20 min). Response surface methodology (Box–Behnken design) was applied to model residual turbidity as a function of dose, basicity, and temperature; the fitted model had R² = 0.94. PACl performed better than alum at water temperatures below 10 °C. Sludge volume index was 20 % lower for PACl-generated flocs, reducing sludge handling costs. Practical implications for seasonal treatment strategy are outlined."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01961",
+        "kind": "publication",
+        "title": "Redox speciation of iron in constructed wetland outflows treating acid mine drainage",
+        "body": {
+          "recordId": "SYN-PUB-01961",
+          "field": "abstract",
+          "text": "Iron speciation was characterised at the inflow, mid-zone, and outflow of two pilot-scale constructed wetlands built to treat low-pH drainage (pH 3.2–4.5) from an abandoned pyrite extraction site in eastern Serbia. Total Fe, Fe(II), and Fe(III) were determined at 48-hour intervals over six weeks by ferrozine photometry and ICP-OES. Fe(II) at the inflow averaged 48 mg/L and decreased to 3.1 mg/L at the outflow, while pH rose to 6.1–6.8 through bacterial sulfate reduction and alkalinity generation. Fe(III) accumulated transiently as schwertmannite-type precipitates in the mid-zone as confirmed by XRD analysis. Fe removal efficiency averaged 93.5 % across the six-week period but dropped to 81 % during a cold spell (air temperature below −3 °C) in week four, coinciding with reduced microbial activity. The dataset supports mechanistic modelling of coupled iron oxidation–precipitation–reduction in passive treatment systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04340",
+        "kind": "publication",
+        "title": "Chromium(VI) reduction kinetics by dissolved Fe(II) in the presence of phosphate and silicate ligands at circumneutral pH",
+        "body": {
+          "recordId": "SYN-PUB-04340",
+          "field": "abstract",
+          "text": "Batch experiments quantified the rate of Cr(VI) reduction by Fe(II) under conditions relevant to subsurface remediation: pH 6.5–8.0, Fe(II) 0.1–5.0 mM, Cr(VI) 0.05–0.5 mM, and background electrolyte containing 0, 1, and 5 mM orthophosphate or orthosilicate. Second-order rate constants were derived from initial-rate data at 25 °C. Phosphate at 1 mM decreased the apparent rate constant by 35–48 % across all pH values tested, attributed to Fe(II)-phosphate complexation reducing the reactive free Fe²⁺ fraction. Silicate at equivalent concentration had negligible effect below pH 7.5 but caused a 22 % rate reduction at pH 8.0. The reduction product was characterised by XPS as a mixed Cr(III)/Fe(III) oxy-hydroxide with a Cr:Fe molar ratio of approximately 1:4. Ionic strength (0.01–0.1 M NaClO₄) had no significant effect. Results constrain the range of Fe(II) doses required for in situ Cr(VI) remediation in phosphate-rich alluvial aquifers."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04341",
+        "kind": "publication",
+        "title": "Speciation and mobility of trace copper in sediment pore water from agricultural drainage channels: a sequential extraction study",
+        "body": {
+          "recordId": "SYN-PUB-04341",
+          "field": "abstract",
+          "text": "Copper speciation and mobility were investigated in sediment and overlying pore water from six agricultural drainage channels in Vojvodina, areas receiving effluent from orchards treated with copper-based fungicides. Sequential extraction (Tessier scheme, five fractions) was applied to surface sediment (0–5 cm) and two deeper layers (5–10 and 10–20 cm) at each site. Total copper in surface sediments ranged from 42 to 318 mg/kg dry weight. The exchangeable plus carbonate-bound fraction accounted for 8–21 % of total copper in surface layers, indicating moderate potential mobility. Pore water Cu concentrations determined by DPASV ranged from 12 to 180 µg/L and correlated positively with the exchangeable fraction (r = 0.88). Organic-matter-bound fraction dominated (38–55 %) in the upper horizon. Seasonal redox fluctuations, inferred from dissolved Fe/Mn ratios in pore water, influenced the partitioning between reducible and residual fractions. The data support risk assessment under European Water Framework Directive criteria."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04342",
+        "kind": "publication",
+        "title": "Electrocoagulation as a pretreatment for chromate-bearing industrial rinse water: effect of current density and electrolysis time",
+        "body": {
+          "recordId": "SYN-PUB-04342",
+          "field": "abstract",
+          "text": "Electrocoagulation (EC) with iron sacrificial electrodes was evaluated for Cr(VI) removal from rinse water collected at a surface finishing plant in Novi Sad. Experiments were carried out in a batch EC reactor (2-litre working volume, two parallel Fe electrode pairs) at current densities of 5, 10, 20, and 40 mA/cm², electrolysis times of 5–60 minutes, and initial Cr(VI) concentrations of 5–50 mg/L. At 20 mA/cm² and 30 minutes, Cr(VI) removal exceeded 99 % for initial concentrations up to 20 mg/L at pH 7.0. Mechanism analysis using Fe:Cr molar ratios in the sludge confirmed simultaneous Cr(VI) reduction by electrogenerated Fe(II) and co-precipitation of Cr(III) with Fe(III) hydroxide. Energy consumption was 1.8 kWh/m³ at optimal conditions. Electrode passivation was observed above 40 mA/cm² after 20 minutes, reducing removal efficiency by up to 15 %. Scale-up implications and comparison with chemical reduction–precipitation are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00477",
+        "kind": "publication",
+        "title": "Manganese oxidation states in drinking water treatment plant sludges: implications for sludge dewatering and disposal",
+        "body": {
+          "recordId": "SYN-PUB-00477",
+          "field": "abstract",
+          "text": "Sludges from four drinking water treatment plants in Vojvodina relying on oxidation–filtration for Mn removal were characterised for Mn oxidation state distribution using X-ray absorption near edge structure (XANES) spectroscopy and chemical extraction. Total Mn in dried sludges ranged from 1.2 to 6.8 % by weight. XANES analysis revealed that Mn(IV) as birnessite-type phases constituted 60–80 % of total Mn, with the remainder distributed between Mn(III) (predominantly as manganite) and residual Mn(II) co-precipitated with Fe-hydroxide. Sludge dewatering performance (assessed by specific resistance to filtration, SRF) worsened significantly when Mn(II) fractions exceeded 25 %, attributed to lower density and higher surface charge of amorphous Mn(OH)₂ particles. Disposal scenarios under Serbian and EU hazardous waste thresholds are evaluated; none of the tested sludges exceeded the Mn leachate limit at neutral pH, but two exceeded the limit under acidic leachate conditions. Recommendations for conditioning prior to landfill disposal are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04343",
+        "kind": "publication",
+        "title": "Speciation of vanadium in petrochemical wastewater using solvent extraction coupled with ICP-OES",
+        "body": {
+          "recordId": "SYN-PUB-04343",
+          "field": "abstract",
+          "text": "A sequential solvent extraction procedure was developed and validated for the determination of V(IV) (vanadyl) and V(V) (vanadate) in complex petrochemical process water with high sulfate and chloride backgrounds. V(V) was selectively extracted into 0.1 M Aliquat 336 in toluene at pH 2.0, while V(IV) was determined in the raffinate after oxidative back-extraction. Method validation was performed on certified reference material (synthetic multi-element water standard) and spiked petrochemical samples. Recovery ranged from 94 to 103 % for both species. The procedure was applied to effluent samples from a refinery in the Pannonian region collected across four seasons; V(V) ranged from 0.08 to 1.34 mg/L and V(IV) from 0.02 to 0.47 mg/L, with V(V) dominating in aerobic process streams and V(IV) in anaerobic equalization basins. Implications for catalytic vanadium recovery and discharge compliance are briefly discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04344",
+        "kind": "publication",
+        "title": "Coagulation–flocculation of nickel-bearing electroplating wastewater with ferric chloride: response surface optimisation and residual speciation",
+        "body": {
+          "recordId": "SYN-PUB-04344",
+          "field": "abstract",
+          "text": "Response surface methodology (central composite design) was applied to optimise ferric chloride coagulation for nickel removal from synthetic and real electroplating rinse water. Factors studied were FeCl₃ dose (10–150 mg/L), pH (7.0–10.5), and rapid-mix intensity (G = 40–150 s⁻¹). Residual total Ni, dissolved Ni, and dissolved Fe in the clarified effluent were measured by ICP-OES. The empirical model for residual Ni showed R² = 0.96; optimal conditions were pH 9.8, FeCl₃ dose 80 mg/L, and G = 80 s⁻¹, yielding residual dissolved Ni below 0.1 mg/L from an initial concentration of 12 mg/L. At pH values above 10.2, Ni removal declined due to anionic nickelate complex formation. DPASV analysis of clarified water indicated that the residual Ni was predominantly in a labile free-ion or weakly complexed form, not adsorbed to colloidal Fe-hydroxide. Sludge Ni content averaged 3.8 % by mass under optimal conditions, relevant for recovery decisions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04345",
+        "kind": "publication",
+        "title": "Iron and manganese co-removal in a pilot-scale continuous-flow coagulation–sedimentation unit: interactions and treatment efficiency at varying Fe/Mn ratios",
+        "body": {
+          "recordId": "SYN-PUB-04345",
+          "field": "abstract",
+          "text": "A pilot-scale continuous-flow unit (30 L/h) was operated over fourteen weeks to examine the simultaneous removal of iron and manganese from synthetic water at Fe/Mn mass ratios of 1:1, 5:1, and 20:1, representing conditions encountered at different groundwater sources in Vojvodina. Pre-oxidation with ozone (1.0 mg/L) was followed by coagulation with polyaluminium chloride at a fixed dose of 18 mg/L. Effluent total Fe and Mn were measured daily by ICP-OES; Mn speciation in the clarified effluent was assessed weekly by DPCSV. At Fe/Mn = 20:1, Mn removal was enhanced (96 %) compared to single-solute tests (88 %), consistent with autocatalytic Mn(II) oxidation on freshly formed Fe-hydroxide surface sites. At low Fe/Mn ratios (1:1), competition for coagulant capacity reduced Fe removal by 12 percentage points. Floc settling velocity data fitted a modified Stokes relation with a density correction term for mixed Fe/Mn oxide composition. These results inform simultaneous Fe and Mn removal strategies in rural water supply systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04346",
+        "kind": "publication",
+        "title": "Effect of humectant type and concentration on water activity and microbial challenge performance in oil-in-water facial emulsions",
+        "body": {
+          "recordId": "SYN-PUB-04346",
+          "field": "abstract",
+          "text": "Three humectants—glycerol, propylene glycol, and sorbitol—were evaluated at four concentrations (5, 10, 15, and 20% w/w) in a standardised oil-in-water facial emulsion containing 0.8% phenoxyethanol as the sole preservative. Water activity (aw) was measured using a capacitance-based dew-point meter at 25 °C. A modified challenge test following ISO 11930:2019 criteria was performed with Staphylococcus aureus, Pseudomonas aeruginosa, Candida albicans, Aspergillus brasiliensis, and Escherichia coli inocula of approximately 106 CFU/g. Glycerol reduced aw from 0.992 to 0.961 at 20%, whereas sorbitol achieved 0.953 at the same level. Challenge test category A criteria were met only when aw ≤ 0.970 regardless of humectant type, suggesting that aw reduction rather than humectant identity is the controlling factor. Rheological measurements confirmed that sorbitol at 15% produced a yield stress of 8.4 Pa, which may independently limit microbial motility. The results allow formulation of adequate preservation with reduced preservative concentrations when humectant selection is guided by aw targets."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00471",
+        "kind": "publication",
+        "title": "Polypyrrole–MnO₂ composite electrodes deposited on laser-perforated stainless-steel mesh: capacitance and rate performance",
+        "body": {
+          "recordId": "SYN-PUB-00471",
+          "field": "abstract",
+          "text": "Laser perforation was used to introduce a regular array of 120 µm diameter holes in type-316 stainless-steel mesh current collectors, increasing the geometric surface area by 34% as verified by profilometry. Polypyrrole–MnO₂ composites were then deposited on both perforated and unperforated meshes under identical potentiostatic conditions. Mass loading was controlled gravimetrically and held constant at 1.8 mg cm⁻² for all samples. Cyclic voltammetry in 0.5 M Na₂SO₄ at scan rates from 2 to 100 mV s⁻¹ showed that perforated-mesh electrodes retained 71% of their 5 mV s⁻¹ capacitance (440 F g⁻¹) at 100 mV s⁻¹, compared with 52% retention for unperforated counterparts. EIS-derived ion diffusion coefficients were 1.8× higher for perforated electrodes, consistent with improved electrolyte access through the holes. After 3000 charge–discharge cycles at 3 A g⁻¹, the perforated electrodes retained 83% of initial capacitance versus 74% for the reference. The laser-perforation approach is simple, scalable, and compatible with existing roll-to-roll processing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04347",
+        "kind": "publication",
+        "title": "Low-molecular-weight organic acid concentrations in soil pore water of sunflower and maize rhizospheres in calcareous Chernozem: field measurements over a growing season",
+        "body": {
+          "recordId": "SYN-PUB-04347",
+          "field": "abstract",
+          "text": "Input concentrations of organic acids for speciation models are often taken from pot experiments or single-time-point measurements, which may not reflect field variability. This study measured citrate, malate, oxalate, succinate and acetate by ion chromatography in pore-water centrifuge extracts from rhizosphere and bulk soil of sunflower (Helianthus annuus) and maize (Zea mays) grown on a calcareous Chernozem near Srbobran, Vojvodina. Samples were collected at five growth stages (V4, V8, flowering, grain fill, maturity) in 2018. Citrate ranged 0.8–18.4 µM (rhizosphere) and 0.3–3.1 µM (bulk); malate ranged 1.2–22.7 µM and 0.5–4.0 µM. Oxalate was consistently the most abundant acid (8–52 µM rhizosphere). Maize rhizosphere citrate concentrations at flowering were 2.3-fold higher than sunflower. These seasonal and crop-specific ranges define realistic boundary conditions for speciation model scenarios rather than single assumed values."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0344",
+        "kind": "project",
+        "title": "Iron and Manganese Speciation Dynamics in Vojvodina Groundwater: Treatment and Risk Assessment",
+        "body": {
+          "recordId": "SYN-PRJ-0344",
+          "field": "summary",
+          "text": "The project characterised the speciation and seasonal variability of dissolved iron and manganese in twelve representative groundwater sources across Vojvodina and correlated speciation data with the performance of existing waterworks using oxidation–filtration technology. Field sampling campaigns were conducted quarterly over three years. Laboratory kinetic studies provided rate parameters for Fe(II) oxidation and Mn(II) catalytic oxidation as functions of pH, alkalinity, and organic matter content specific to Vojvodina aquifer chemistries. Outcomes included a database of speciation measurements and a decision-support spreadsheet tool for treatment plant operators to estimate required aeration and coagulant doses. Two journal papers and one conference contribution resulted from the project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0345",
+        "kind": "project",
+        "title": "Transition Metal Speciation and Removal in Cross-Border Watercourses: Tisa and Danube Sub-Basins",
+        "body": {
+          "recordId": "SYN-PRJ-0345",
+          "field": "summary",
+          "text": "This cross-border cooperation project addressed the speciation, transport, and removal of iron, manganese, copper, and chromium in shared watercourses. The Serbian team led by Prof. Žigić was responsible for the analytical work package, coordinating field sampling and laboratory speciation analysis at Serbian monitoring stations while partner laboratories in Hungary performed parallel measurements under identical protocols. Joint calibration exercises ensured inter-laboratory comparability; z-scores were within ±2 for all analytes. The project produced a harmonised sampling and analysis protocol for metal speciation in cross-border surface waters and a joint report submitted to the International Sava River Basin Commission. Serbian co-financing was provided by the Provincial Secretariat for Higher Education and Scientific Research."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0264",
+        "kind": "project",
+        "title": "Speciation Analysis and Safety Assessment of Trace Elements in Microalgal Phycobiliprotein Products",
+        "body": {
+          "recordId": "SYN-PRJ-0264",
+          "field": "summary",
+          "text": "The project addressed the gap in validated analytical methods for trace element speciation in food-grade phycobiliprotein preparations derived from Arthrospira platensis and Porphyridium purpureum. Work included development and in-house validation of HPLC-ICP-MS procedures for arsenic, selenium, and chromium species, application to commercially sourced biomass lots, and assessment of how preparative chromatographic purification affects element speciation profiles. Deliverables included two peer-reviewed articles, a set of validated standard operating procedures, and a summary report submitted to the relevant national food safety working group. The project employed one doctoral researcher and supported two master's thesis projects. Total budget was approximately 4.8 million RSD."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "open_to",
+            "quote": "industrial PhD supervision on metal removal from industrial effluents",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "open_to",
+            "quote": "contract research on water and wastewater treatment process optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0353",
+            "field": "open_to",
+            "quote": "joint project proposals in water quality and treatment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

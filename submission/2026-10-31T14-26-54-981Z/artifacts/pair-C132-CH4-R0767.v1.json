@@ -1,0 +1,180 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0767",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0767",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should script normalisation be applied in KlozuraPro’s PostgreSQL search pipeline—during indexing, querying, or both—to reduce cross-script missed matches without unacceptable false matches or latency? The first experiment would compare these alternatives against the current search on an annotated contract-query benchmark covering both script directions, mixed-script text and ambiguous Latin sequences, testing whether transliteration-based methods transfer to contract retrieval.",
+    "rationale": [
+      {
+        "text": "He has direct advisory experience with Serbian contract normalisation, relevant to defining linguistic rules and exceptions for this task.",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "industry_experience",
+            "quote": "advising on morphological normalisation and entity detection for Serbian contract documents.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published work uses romanised transliteration in a shared South Slavic NLP representation, providing relevant methodological experience, although not validation for search.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00294",
+            "field": "abstract",
+            "quote": "using a shared feature representation built from romanised transliteration, language-independent character embeddings, and shared morphological clusters derived from multilingual Wiktionary.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience constructing and manually verifying legal-Serbian lexical resources, useful for building a testable inventory of contract terms and script-normalisation exceptions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08428",
+            "field": "abstract",
+            "quote": "This paper describes the construction of a domain-specific morphological lexicon targeting legal Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08428",
+            "field": "abstract",
+            "quote": "followed by manual verification by two trained annotators.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A collaboration centred on an evaluation resource and reusable linguistic rules aligns with his stated preference for resource-building rather than pure application development.",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "notes",
+            "quote": "He is best approached for collaborations that have a clear resource-building component rather than pure application development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must integrate with PostgreSQL full-text search and explicitly compare indexing-time, query-time and combined normalisation rather than assuming a pipeline location.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "at indexing time, at query time, or both",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation must cover mixed-script documents and ambiguous Latin-to-Cyrillic mappings, not only uniform-script conversion.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search-response overhead must remain within an agreed measurable interpretation of the company's requirement for no noticeable slowdown.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation scope must fit one backend engineer working for at most six weeks, with the collaboration occupying the company's limited external-project capacity.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access and output licensing must be agreed before corpus construction: exclusive data-transfer arrangements concern the researcher, and publicly funded corpus outputs must remain openly licensed.",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "notes",
+            "quote": "Dragišić is cautious about projects that require exclusive data transfer arrangements; all corpus outputs from publicly funded work must remain openly licensed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The transliteration evidence concerns cross-lingual named-entity recognition, not mixed-script Serbian contract retrieval or PostgreSQL integration. The first benchmark experiment must test this transfer rather than assume it.",
+      "Normalisation may conflate distinct terms or names and increase false matches; ambiguous mappings require relevance judgments alongside missed-match measurements.",
+      "The reported one-in-five failure estimate comes from a January 2024 log sample and may not represent current queries or isolate script mismatch from other retrieval problems.",
+      "Researcher availability is explicitly unknown; company data access, collaboration budget and acceptable latency overhead are also unspecified.",
+      "Contract confidentiality could conflict with open corpus-output requirements, depending on funding and the proposed release contents.",
+      "Reindexing, deployment and exception handling could exceed the six-week engineering window if the prototype is not tightly scoped."
+    ],
+    "questions": [
+      "Can Dragišić commit to the six-week implementation window, and what supervision, annotation and review time can he provide?",
+      "Can the company provide permitted access to representative contracts, failed queries and relevance judgments, including mixed-script and ambiguous-sequence examples? Can a de-identified or synthetic benchmark be released if required?",
+      "What are the current PostgreSQL text-search configuration, tokenisation rules, query construction, document volume and typical concurrent search load?",
+      "What numerical thresholds should define acceptable retrieval precision, reduction in script-related zero-hit searches, and p95/p99 latency overhead?",
+      "Does a fresh log sample confirm the January 2024 estimate, and which failure cases are attributable specifically to script mismatch?",
+      "What budget, funding arrangement and ownership/licensing terms are available, and who will maintain the rules and benchmark after the project?",
+      "What deployment, reindexing and rollback constraints apply, and which company engineers beyond the backend engineer can support evaluation?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0767",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0767",
+        "version": 1
+      }
+    ]
+  }
+}

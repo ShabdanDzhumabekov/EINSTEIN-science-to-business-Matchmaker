@@ -1,0 +1,124 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C086-CH1-R0503",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C086-CH1-R0503",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C086-CH1-R0503",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "advisory",
+        "claim": "Her signature benchmarking experience suggests a strong methodological fit, but earlier Dilithium results cannot establish final ML-DSA correctness, memory fit or security on KL-HSM hardware.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Falcon-512 verification takes 2.11 ms but requires only 7.4 kB of stack, making it preferable for devices with less than 10 kB SRAM.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Signing is substantially more expensive for Falcon due to the discrete Gaussian sampler: 14.8 ms versus 3.2 ms for Dilithium-2.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The fit rationale names the implementation work and its transfer limits but omits its reported trade-offs, particularly the distinction between verification memory and signing cost. Add one short sentence explaining that these published trade-offs motivate separate signing-latency and memory measurements, without treating the published numbers as KL-HSM forecasts.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go requires all correctness and interoperability tests passing, measured resource use and performance within pre-agreed numerical limits, and no detected leakage under an agreed adequately powered screen. Insufficient evidence means unresolved, not pass.",
+        "sources": [],
+        "explanation": "Numerical ceilings and an unspecified 'adequately powered' screen do not define when sampled p99 latency, throughput or a negative leakage result constitute sufficient evidence, allowing false acceptance from favourable samples or an insensitive screen. Require a frozen pre-evaluation acceptance specification defining workloads and repeats, confidence-bound rules for sampled performance, and the leakage screen's test threshold, sample size and sensitivity criterion; unresolved specifications must block go/no-go.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows.\" Proposed next steps: \"Compare current RSA/ECDSA operation with standards-conformant ML-DSA and a defined hybrid flow\" and \"a bounded integration proof of concept and versioned roadmap covering key storage, signature flows, hybrid policy, client compatibility and measured trade-offs.\" These identify the concrete KL-HSM signing migration and architecture problem rather than merely proposing generic PQC research."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage\"; \"measured resource use and performance within pre-agreed numerical limits\"; \"Propose months three through twelve for a bounded integration proof of concept and versioned roadmap\"; and \"Agree a small, practically applicable work package with named company and researcher effort, budget, hardware access and confidentiality/licensing terms.\" Open questions: \"What initial KL-HSM variant, hardware/build access, company engineering allocation and budget can support the pilot?\" These respect the memory, hardware, twelve-month and modest-staff-capacity constraints through target measurements, scheduled deliverables and explicit allocation prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "fail",
+        "evidence": "Verified facts: \"Nikolić's work implements Dilithium and Falcon signatures on an STM32F407 Cortex-M4. Separate Dilithium research reports compiler-dependent leakage.\" Our inference: \"earlier Dilithium results cannot establish final ML-DSA correctness, memory fit or security on KL-HSM hardware.\" These tie her implementation and leakage methods to the problem and delimit transfer, but omit the published signing-latency versus verification-memory trade-offs needed to substantiate the methodological fit fully."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts document signature implementation, compiler-leakage work and joint-project interest. Proposed next steps: \"Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement\" and \"Agree a small, practically applicable work package with named company and researcher effort, budget, hardware access and confidentiality/licensing terms.\" Open questions: \"Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?\" These distinguish documented capacity from proposed roles and unconfirmed resource commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Propose an initial eight-week experiment on one agreed KL-HSM variant using its production toolchain\"; \"Compare current RSA/ECDSA operation with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads\"; and \"Separate tuning and held-out evaluation workloads and verify independence before selecting the best configuration.\" Open questions request the \"signing scope, ML-DSA parameters, resource and performance ceilings, hybrid policy, PKCS#11 consumers and client verifiers.\" These identify inputs, baseline, compared conditions and separate evaluation workloads, while leaving execution-specific choices as explicit agreement prerequisites; the acceptance-rule deficiency is assessed under metric."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Proposed go/no-go requires all correctness and interoperability tests passing, measured resource use and performance within pre-agreed numerical limits, and no detected leakage under an agreed adequately powered screen. Insufficient evidence means unresolved, not pass.\" This proposes company-relevant acceptance rather than algorithm superiority, but supplies no statistical rule for p99 latency, throughput or leakage-screen adequacy, and no explicit requirement to agree those rules before evaluation; a favourable finite sample could therefore satisfy the wording without establishing the intended performance or detection sensitivity."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Assess the best configuration against these criteria, not against a preferred algorithm\" and \"functional success would not establish production security or certification.\" Our inference: \"signing policy, PKCS#11 integration and client verifier compatibility need separate validation.\" These limit conclusions to configuration-level feasibility and separately tested compatibility, without attributing differences to independently untested algorithm, compiler or architecture factors."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"earlier Dilithium results cannot establish final ML-DSA correctness, memory fit or security on KL-HSM hardware\" and \"Compiler-dependent leakage is a material implementation risk.\" Proposed next steps: \"unresolved security or evaluator requirements would block production-readiness claims.\" Open questions ask about availability, hardware/build access, allocation, acceptance requirements and current certification status. These identify the principal transfer, implementation-security, interoperability, access and certification risks without presenting unknowns as settled facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: \"This joint-project proposal is conditional because Nikolić's current availability is unknown.\" Open questions: \"Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?\" Proposed next steps: \"schedule within the two-kit availability limit if SLE97 comparisons are justified, or negotiate partner-supplied units.\" These preserve conditional participation and hardware availability, and assign no declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The first experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies\" and \"Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware.\" These are qualified potential benefits grounded in the proposed target-hardware measurements, not guarantees of product readiness or researcher access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.79,
+        0.73,
+        0.98,
+        0.84,
+        0.97,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

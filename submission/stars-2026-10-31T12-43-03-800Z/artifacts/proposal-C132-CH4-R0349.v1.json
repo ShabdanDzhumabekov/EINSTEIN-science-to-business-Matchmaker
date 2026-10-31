@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "proposal-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T12-43-03-800Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Joint project: reliable cross-script Serbian contract search",
+    "facts": [
+      {
+        "text": "The company estimates that roughly one in five searches was affected by cross-script misses in a January 2024 server-log sample. It attributes the problem to its PostgreSQL full-text index treating Cyrillic and Latin as different character sets.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We estimated this affects roughly one in five searches based on a sample we pulled from server logs in January 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "The root cause is that our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's brief identifies mixed-script documents, dialect-dependent Latin-to-Cyrillic ambiguity and response-time sensitivity as concerns.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports one backend engineer available for up to six weeks. Dragić's notes describe two active projects and capacity for one small industrial contract or consultancy.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić states a preference for clearly defined, sufficiently large Serbian-language corpora and research-oriented collaboration rather than general software development.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Dragić preferira saradnju s kompanijama koje imaju jasno definisan i dovoljno veliki tekstualni korpus na srpskom jeziku",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's technology inventory lists PostgreSQL full-text search, Docker and Kubernetes in a Serbian private cloud, and a self-assessed ISO 27001-aligned internal security policy.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on a private cloud hosted in Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "ISO 27001-aligned internal information security policy (self-assessed)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić's work evaluates phoneme-based canonicalization on court decisions. His separate latency study reports a tradeoff: transformer normalization improved retrieval quality but added 47 ms at the 99th percentile.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "The transformer-based normalizer achieves MRR of 0.68 but adds 47 ms at the 99th percentile.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić lists openness to joint projects with companies managing large Serbian-language document collections.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a focused joint project could resolve normalization placement rather than merely implement transliteration. Court-decision evidence does not validate contract retrieval, PostgreSQL compatibility or latency under this company's workload.",
+      "Canonicalization could conflate distinct legal terms; ambiguous digraphs, names and identifiers could remain failure sources. Neural fallback could add latency, while new terminology would likely require exception maintenance.",
+      "The proposal is conditional: joint-project openness is stated, but Dragić's start-date availability is unknown and his capacity is limited. The historical failure estimate may not describe current traffic or isolate script mismatch from parsing and morphology."
+    ],
+    "proposedActions": [
+      "Propose a PostgreSQL sandbox experiment using company contracts and representative queries, with separate tuning and held-out evaluation samples whose independence is checked by grouping duplicate queries and related contracts. Compare unchanged search, index-only normalization, query-only normalization and both, holding parsing, morphology and ranking fixed. Propose Dragić designs canonicalization and exception tests; the company engineer integrates and replays representative load, with legal reviewers judging every evaluation query and candidate result. Include both cross-script directions, mixed-script documents, ambiguous mappings, names and identifiers. Select the best configuration on tuning data. Proposed go/no-go on held-out data: halve the zero-hit rate among queries with reviewer-confirmed existing relevant contracts, lose at most one percentage point in P@10, and add at most 5% to p95/p99 latency under matched load. Count each query execution once, without merging; use all confirmed-answerable executions as the failure-rate denominator. Require these criteria separately for mixed-script documents and cross-script directions. Unresolved cases count conservatively against acceptance; insufficient confidence or missing population data means no pass.",
+      "Propose week 1 for corpus sizing, access approval, current-failure reproduction and threshold negotiation; weeks 2–4 for the controlled comparison and tuning; weeks 5–6 for frozen evaluation and integration review. Agree sample sizes and confidence procedures before testing. Audit parsing failures separately, establish PostgreSQL tokenizer/index compatibility, and retain the placement comparison even if one configuration shows no benefit.",
+      "Keep experiments within approved private-cloud and security arrangements. Before proceeding, agree corpus sufficiency, reviewer capacity, tool licensing, budget, researcher hours, reindexing/storage limits and rollback. Measure actual integration effort and resource use; feasibility within the engineer's six-week allocation is an additional go/no-go gate. These are proposed procedures and targets, not agreed commitments."
+    ],
+    "questions": [
+      "Can Dragić confirm availability, start date and time allocation for this small joint project within the company's six-week engineering window?",
+      "What corpus and query volumes, independent held-out mixed-script cases, legal reviewers and permitted contract/log access are available?",
+      "Which PostgreSQL configuration, production load and numerical interpretation of 'not noticeably slower' should govern acceptance?",
+      "Can both parties agree budget, responsibilities, security permissions, licensing, reindexing/storage limits and rollback before starting?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify a practical normalization placement and quantify remaining missed matches, relevance losses and latency costs before deployment.",
+      "researcher": "Subject to agreement and permitted access, Dragić could test how canonicalization placement transfers from prior retrieval settings to mixed-script contracts in PostgreSQL, using company-specific relevance judgments and workload measurements."
+    },
+    "markdown": "# Joint project: reliable cross-script Serbian contract search\n\n## Verified facts\n- The company estimates that roughly one in five searches was affected by cross-script misses in a January 2024 server-log sample. It attributes the problem to its PostgreSQL full-text index treating Cyrillic and Latin as different character sets. [F1]\n- The company's brief identifies mixed-script documents, dialect-dependent Latin-to-Cyrillic ambiguity and response-time sensitivity as concerns. [F2]\n- The company reports one backend engineer available for up to six weeks. Dragić's notes describe two active projects and capacity for one small industrial contract or consultancy. [F3]\n- Dragić states a preference for clearly defined, sufficiently large Serbian-language corpora and research-oriented collaboration rather than general software development. [F4]\n- The company's technology inventory lists PostgreSQL full-text search, Docker and Kubernetes in a Serbian private cloud, and a self-assessed ISO 27001-aligned internal security policy. [F5]\n- Dragić's work evaluates phoneme-based canonicalization on court decisions. His separate latency study reports a tradeoff: transformer normalization improved retrieval quality but added 47 ms at the 99th percentile. [F6]\n- Dragić lists openness to joint projects with companies managing large Serbian-language document collections. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify a practical normalization placement and quantify remaining missed matches, relevance losses and latency costs before deployment.\n- For the researcher: Subject to agreement and permitted access, Dragić could test how canonicalization placement transfers from prior retrieval settings to mixed-script contracts in PostgreSQL, using company-specific relevance judgments and workload measurements.\n\n## Our inference\n- This suggests a focused joint project could resolve normalization placement rather than merely implement transliteration. Court-decision evidence does not validate contract retrieval, PostgreSQL compatibility or latency under this company's workload.\n- Canonicalization could conflate distinct legal terms; ambiguous digraphs, names and identifiers could remain failure sources. Neural fallback could add latency, while new terminology would likely require exception maintenance.\n- The proposal is conditional: joint-project openness is stated, but Dragić's start-date availability is unknown and his capacity is limited. The historical failure estimate may not describe current traffic or isolate script mismatch from parsing and morphology.\n\n## Proposed next steps\n- Propose a PostgreSQL sandbox experiment using company contracts and representative queries, with separate tuning and held-out evaluation samples whose independence is checked by grouping duplicate queries and related contracts. Compare unchanged search, index-only normalization, query-only normalization and both, holding parsing, morphology and ranking fixed. Propose Dragić designs canonicalization and exception tests; the company engineer integrates and replays representative load, with legal reviewers judging every evaluation query and candidate result. Include both cross-script directions, mixed-script documents, ambiguous mappings, names and identifiers. Select the best configuration on tuning data. Proposed go/no-go on held-out data: halve the zero-hit rate among queries with reviewer-confirmed existing relevant contracts, lose at most one percentage point in P@10, and add at most 5% to p95/p99 latency under matched load. Count each query execution once, without merging; use all confirmed-answerable executions as the failure-rate denominator. Require these criteria separately for mixed-script documents and cross-script directions. Unresolved cases count conservatively against acceptance; insufficient confidence or missing population data means no pass.\n- Propose week 1 for corpus sizing, access approval, current-failure reproduction and threshold negotiation; weeks 2–4 for the controlled comparison and tuning; weeks 5–6 for frozen evaluation and integration review. Agree sample sizes and confidence procedures before testing. Audit parsing failures separately, establish PostgreSQL tokenizer/index compatibility, and retain the placement comparison even if one configuration shows no benefit.\n- Keep experiments within approved private-cloud and security arrangements. Before proceeding, agree corpus sufficiency, reviewer capacity, tool licensing, budget, researcher hours, reindexing/storage limits and rollback. Measure actual integration effort and resource use; feasibility within the engineer's six-week allocation is an additional go/no-go gate. These are proposed procedures and targets, not agreed commitments.\n\n## Open questions\n- Can Dragić confirm availability, start date and time allocation for this small joint project within the company's six-week engineering window?\n- What corpus and query volumes, independent held-out mixed-script cases, legal reviewers and permitted contract/log access are available?\n- Which PostgreSQL configuration, production load and numerical interpretation of 'not noticeably slower' should govern acceptance?\n- Can both parties agree budget, responsibilities, security permissions, licensing, reindexing/storage limits and rollback before starting?",
+    "taskId": "C132-CH4",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C132-CH4-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

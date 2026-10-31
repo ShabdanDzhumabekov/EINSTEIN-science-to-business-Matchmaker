@@ -1,0 +1,243 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0727",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0727",
+    "name": "Milutin Đukić",
+    "faculty": "BioSense Institute",
+    "department": "Remote Sensing and GIS Group",
+    "fields": [
+      "Remote Sensing and Earth Observation",
+      "Climatology and Agroclimatology",
+      "Geographic Information Science",
+      "Environmental Modelling"
+    ],
+    "keywords": [
+      "spatial downscaling",
+      "geostatistical interpolation",
+      "agroclimatic indices",
+      "land surface temperature",
+      "MODIS",
+      "Sentinel-2",
+      "kriging",
+      "vegetation phenology",
+      "crop stress mapping",
+      "high-resolution climate grids"
+    ],
+    "openTo": [
+      "joint projects with agri-tech or precision agriculture companies needing high-resolution climate data products",
+      "contract research for spatial downscaling and agroclimatic index derivation",
+      "consulting on geostatistical interpolation workflows and sensor network design",
+      "student internships (MSc and doctoral level) in remote sensing data processing",
+      "equipment and data infrastructure access for external researchers requiring Copernicus-based processing"
+    ],
+    "bio": {
+      "recordId": "R0727",
+      "field": "bio",
+      "text": "Milutin Đukić received his BSc in Geography (2003) and MSc in Climatology (2006) from the University of Novi Sad, Faculty of Sciences, followed by a PhD in Remote Sensing and Environmental Modelling from the same institution in 2012. He joined the BioSense Institute in 2013 as a research associate and was promoted to Principal Research Fellow in 2020. His group focuses on satellite-derived land surface variables, spatial interpolation of climate data, and precision agriculture applications. Đukić teaches a doctoral course on geostatistical methods at the Faculty of Sciences and supervises MSc students. His laboratory work relies on workstations running ENVI and QGIS pipelines, access to Copernicus data infrastructure, and a small cluster used for Monte Carlo cross-validation runs."
+    },
+    "industryExperience": {
+      "recordId": "R0727",
+      "field": "industry_experience",
+      "text": "Đukić provided a short consultancy engagement in 2021 to a regional irrigation management company advising on the suitability of satellite-derived ET₀ grids as input to their field-level water scheduling tool. He has no extended industry employment history."
+    },
+    "notes": {
+      "recordId": "R0727",
+      "field": "notes",
+      "text": "Đukić is open to collaboration involving agronomic end-users but prefers that methodological rigour and publication rights be explicitly agreed before project start. He is not seeking additional administrative coordination roles in the near term, having completed two consecutive coordinator positions."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08093",
+        "kind": "publication",
+        "title": "Downscaling Monthly Air Temperature Over the Vojvodina Plain Using MODIS Land Surface Temperature and Regression-Kriging",
+        "body": {
+          "recordId": "SYN-PUB-08093",
+          "field": "abstract",
+          "text": "Monthly mean air temperature fields at 1 km resolution were produced for the Vojvodina plain by combining MODIS Terra LST composites (MOD11A2, 2003–2008) with ground observations from 34 meteorological stations operated by the Republic Hydrometeorological Service of Serbia. A regression-kriging framework was adopted in which daytime and night-time LST, elevation, and distance to water bodies served as covariates in an ordinary least-squares pre-regression step, with residuals subsequently interpolated by ordinary kriging. Leave-one-out cross-validation yielded a mean absolute error of 0.62 °C averaged across all months, improving on straight inverse-distance weighting by 31 %. Spatial patterns of cold air pooling in topographic depressions and urban heat islands around Novi Sad and Subotica were captured more faithfully than in the national 10 km gridded product. Seasonal decomposition showed the strongest LST-to-air-temperature coupling in July and weakest in December, a result attributed to soil moisture and snow cover masking effects."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08094",
+        "kind": "publication",
+        "title": "Mapping Growing Degree Days at Sub-Kilometre Scale Across the Middle Danube Basin",
+        "body": {
+          "recordId": "SYN-PUB-08094",
+          "field": "abstract",
+          "text": "Growing degree days (GDD, base 10 °C) were computed at 500 m resolution for the 2005–2010 growing seasons across a 180 000 km² domain spanning Hungary, Serbia, Croatia and Romania. Temperature surfaces were produced by spatially downscaling ERA-Interim reanalysis fields using a statistical transfer function fitted to surface station data and MODIS LST anomalies. The transfer function was a geographically weighted regression model, separately calibrated for spring and summer sub-periods to account for differing advection regimes. Validation against 51 held-out stations showed RMSE in cumulative GDD below 120 GDD-days for the April–September period. The resulting maps revealed consistent positive anomalies along the Fruška Gora slopes relative to flat Vojvodina, with implications for early-harvest crop variety selection. The dataset was made available as a 12-band GeoTIFF archive through a regional agrometeorological data portal."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08095",
+        "kind": "publication",
+        "title": "Estimating Reference Evapotranspiration in Data-Sparse Regions by Fusing SEVIRI and MODIS Thermal Imagery",
+        "body": {
+          "recordId": "SYN-PUB-08095",
+          "field": "abstract",
+          "text": "Reference evapotranspiration (ET₀, Penman–Monteith FAO-56) requires net radiation and humidity inputs that are often measured only at sparse synoptic stations. This study fused instantaneous surface radiation estimates from the MSG/SEVIRI satellite (3 km, 15-minute) with daytime MODIS LST (1 km, daily) to reconstruct diurnal temperature and radiation cycles at 1 km resolution over Serbia for 2008–2011. A temporal interpolation scheme based on sinusoidal fitting between two daily MODIS overpasses was applied to fill the radiometric gap left by SEVIRI's coarser spatial detail. Daily ET₀ estimated from the downscaled inputs agreed with FAO Penman–Monteith computed from station data to within 0.38 mm day⁻¹ (RMSE, n = 28 stations). Spatial maps revealed a systematic ET₀ gradient from the Pannonian lowland to the Šar Mountains exceeding 1.1 mm day⁻¹ in July, consistent with independent eddy covariance records at two sites."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08096",
+        "kind": "publication",
+        "title": "Kriging Interpolation Variants for Daily Precipitation in Complex Terrain: A Comparative Assessment Over the Dinaric Alps Fringe",
+        "body": {
+          "recordId": "SYN-PUB-08096",
+          "field": "abstract",
+          "text": "Four kriging variants — ordinary kriging (OK), kriging with external drift (KED), co-kriging with elevation, and indicator kriging of wet-day occurrence — were evaluated for daily precipitation interpolation using a 62-station network across a 55 000 km² domain covering the Dinaric fringe of Bosnia-Herzegovina and Montenegro. The 2009–2013 wet-season record was used, with 15 % of stations withheld for validation in each of 200 bootstrap iterations. KED using terrain-exposed elevation as the external drift variable outperformed OK in 73 % of daily cases, with mean RMSE reductions of 12 % in autumn and 8 % in spring. Indicator kriging proved most accurate for binary wet-day mapping, reducing false wet-cell fractions by 18 percentage points compared with deterministic methods. Variogram range parameters varied seasonally between 28 km in convective summer and 110 km in frontal winter regimes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05667",
+        "kind": "publication",
+        "title": "High-Resolution Frost Risk Index for Vineyards in the Srem and Fruška Gora Wine Region",
+        "body": {
+          "recordId": "SYN-PUB-05667",
+          "field": "abstract",
+          "text": "Late spring frost events (April–May) are a primary yield-limiting factor for viticulture in the Srem and Fruška Gora region. A spatial frost risk index (FRI) was developed by combining downscaled minimum temperature grids at 250 m resolution, topographic cold-air drainage indices derived from a 25 m DEM, and 22 years of phenological records from 14 commercial vineyards. Minimum temperature was downscaled from a 2 km gridded product using a local lapse-rate correction and a cold-air-pooling factor estimated from nighttime MODIS LST anomalies. FRI was defined as the probability that minimum temperature falls below −1 °C during the period 15 April–20 May. Maps produced at the parcel scale (0.5 ha) showed risk differentiation of up to 35 percentage points across elevation bands as narrow as 40 m, consistent with growers' empirical observations. The index was validated against three independent frost event records with an accuracy of 81 %."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08097",
+        "kind": "publication",
+        "title": "Spatiotemporal Drought Monitoring Over the Pannonian Basin Using the SPEI at Multiple Time Scales Derived from Downscaled Gridded Climate Data",
+        "body": {
+          "recordId": "SYN-PUB-08097",
+          "field": "abstract",
+          "text": "The Standardised Precipitation–Evapotranspiration Index (SPEI) at 1-, 3-, 6- and 12-month accumulation periods was computed at 1 km resolution over the Pannonian Basin for 1991–2015 using monthly precipitation and ET₀ grids produced by the author's regression-kriging pipeline. The resulting 25-year, 288-layer dataset allowed continuous spatial tracking of drought onset, intensity and recovery without relying on station interpolation alone. Trend analysis using the Mann–Kendall test identified statistically significant (p < 0.05) drying trends in 34 % of the study area at the 12-month SPEI, concentrated in the eastern Hungarian and western Romanian sectors. Correlation of 3-month SPEI with satellite NDVI composites (MODIS MOD13Q1) reached 0.71 for rainfed maize areas, confirming utility for near-real-time agricultural drought early warning. Comparison with the European Drought Observatory CCI SM product showed spatial agreement of 78 % for severe drought flags."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04706",
+        "kind": "publication",
+        "title": "Sentinel-2 Red-Edge Bands as Auxiliary Variables for Spatial Interpolation of Canopy Temperature: A Case Study in Sunflower Fields of Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-04706",
+          "field": "abstract",
+          "text": "Thermal infrared sensors aboard Landsat-8 and Sentinel-3 provide land surface temperature at resolutions too coarse for field-scale crop stress assessment. This study tested whether Sentinel-2 red-edge and near-infrared reflectance bands, sampled in July–August 2017 during cloud-free overpasses over 4 200 ha of commercial sunflower in Vojvodina, could serve as auxiliary predictors in a kriging-with-external-drift model for canopy temperature. Canopy temperature was measured with 22 handheld infrared thermometers installed at 10-minute intervals across three farms. KED using a linear combination of the 705 nm and 740 nm Sentinel-2 bands reduced interpolation RMSE from 1.8 °C (OK) to 1.1 °C at 10 m resolution, a 39 % improvement. Spatial maps produced daily from the KED surface correlated with manually scouted water-stress incidence zones at r = 0.74. The method requires no additional satellite acquisitions beyond the freely available Sentinel-2 archive."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08098",
+        "kind": "publication",
+        "title": "Comparison of Machine Learning Regressors and Geostatistical Models for 1 km Daily Minimum Temperature Mapping Over Serbia",
+        "body": {
+          "recordId": "SYN-PUB-08098",
+          "field": "abstract",
+          "text": "Random forest (RF), gradient-boosted trees (XGBoost), and artificial neural networks were compared against regression-kriging and co-kriging for the task of producing daily minimum temperature grids at 1 km over Serbia. Inputs common to all methods included MODIS LST, DEM-derived topographic variables, distance to major water bodies, and calendar-day encoding. Training used station data from 67 automatic weather stations for 2013–2017; testing was performed on 2018–2019 withheld data. Random forest achieved the lowest test RMSE (0.88 °C) compared with regression-kriging (0.97 °C), XGBoost (0.91 °C), and co-kriging (1.03 °C). However, regression-kriging produced better-calibrated prediction intervals and smoother spatial fields in data-sparse mountain regions. An ensemble blending RF predictions with kriging residuals achieved RMSE of 0.81 °C while retaining spatial coherence. Computational cost for the ensemble was approximately 4× that of standalone RF."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08099",
+        "kind": "publication",
+        "title": "Reconstructing Pre-Satellite Agroclimatic Grids for the Carpathian–Pannonian Region Using Historical Station Records and Spatial Reanalysis",
+        "body": {
+          "recordId": "SYN-PUB-08099",
+          "field": "abstract",
+          "text": "High-resolution gridded records of growing season length, heat accumulation, and aridity index were reconstructed for the 1961–2000 period over the Carpathian–Pannonian region by downscaling the ERA-20C centennial reanalysis to 2 km using transfer functions calibrated on the 2001–2015 overlap period with MODIS LST data. Station data from 148 surface synoptic stations in five countries were used to bias-correct the ERA-20C baseline. Trend testing showed a 14-day advance in start-of-growing-season dates between 1961 and 2000 in the lowland zone, consistent with independent phenological records for winter wheat. The reconstruction fills a critical gap for long-term impact assessments that require spatial data prior to the MODIS era. Uncertainty was quantified by propagating station observation errors and ERA-20C ensemble spread through the downscaling chain, yielding 90 % confidence intervals of ±3 days for growing season start."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08100",
+        "kind": "publication",
+        "title": "Agroclimatic Zoning of Soybean Cultivation Potential in the Western Balkans Under Present and Near-Term (2030–2040) Climate Projections",
+        "body": {
+          "recordId": "SYN-PUB-08100",
+          "field": "abstract",
+          "text": "Soybean cultivation in the Western Balkans is expanding but spatially under-characterised. This study applied a set of agroclimatic indices — growing season length, sum of active temperatures above 10 °C, number of dry spells exceeding 10 days in July–August, and mean diurnal temperature range during pod fill — computed from high-resolution (1 km) historical grids and from dynamically downscaled EURO-CORDEX RCP4.5 and RCP8.5 projections for 2030–2040. Under RCP4.5, the area classified as highly suitable for soybean is projected to increase by 11 % relative to the 1991–2020 baseline, driven primarily by warming in the mountainous interior of Bosnia-Herzegovina and Montenegro. Under RCP8.5, suitability decreases in the Vojvodina core zone due to increased drought stress frequency. Results were delivered as Web Map Service layers and as 1 km GeoTIFF products."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08102",
+        "kind": "publication",
+        "title": "Sensitivity of Spatial Downscaling Performance to Variogram Estimation Sample Size in Sparse Station Networks",
+        "body": {
+          "recordId": "SYN-PUB-08102",
+          "field": "abstract",
+          "text": "Variogram estimation is a fundamental step in geostatistical downscaling, but its reliability degrades when fewer than 30–40 stations are available — a common situation in developing countries. Using a sub-sampling simulation study on the 72-station Serbian agrometeorological network, this work examined how kriging interpolation error grows as the estimation sample is reduced from 72 to 8 stations for monthly mean temperature, total precipitation, and reference ET₀. Variograms were estimated by the method-of-moments and by restricted maximum likelihood (REML). REML maintained acceptable nugget-to-sill ratios down to 15 stations where the method-of-moments failed, yielding 18 % lower RMSE on average. Below 12 stations, both estimators produced unreliable range parameters. The study provides practical guidance for selecting estimation method and minimum station density thresholds for each variable type, expressed as a function of spatial autocorrelation range."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08103",
+        "kind": "publication",
+        "title": "Detecting inter-annual change in softwood floodplain forest extent using dense Sentinel-2 time-series and a change vector approach",
+        "body": {
+          "recordId": "SYN-PUB-08103",
+          "field": "abstract",
+          "text": "Softwood gallery forests dominated by Salix alba and Populus nigra are among the most flood-disturbance-adapted habitats in Pannonian river floodplains, but their spatial extent can fluctuate substantially between years in response to flood frequency and timber harvesting. This study applied a change vector analysis framework to annual phenological composites derived from Sentinel-2 MSI 10 m imagery for the period 2016–2021 across a 210 km reach of the Sava River floodplain in Serbia. Annual composites were constructed using the 20th percentile NIR and the maximum NDRE over a 60-day spring window. Change magnitudes exceeding one standard deviation above the multi-year mean were flagged and attributed to four process categories (flood disturbance, harvest clearance, natural regeneration, encroachment) using auxiliary topographic wetness index and forest management registry data. Over the six-year period, 2,140 ha of softwood forest underwent detectable canopy-layer change, with flood-related losses concentrated in the 2019 and 2021 high-water years. Accuracy of change attribution reached 82% against independent field verification of 160 change patches. The approach requires no training data beyond the composite stack and is applicable at the scale of an entire national river network."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0124",
+        "kind": "project",
+        "title": "High-Resolution Agroclimatic Downscaling for Sustainable Agriculture in the Pannonian and Dinaric Zones",
+        "body": {
+          "recordId": "SYN-PRJ-0124",
+          "field": "summary",
+          "text": "The project developed and validated a multi-source satellite downscaling pipeline producing 500 m agroclimatic grids for Serbia. Core deliverables included the benchmark dataset of 18 agroclimatic indices (2001–2020), a Web Map Service interface, and a documented open-source Python processing chain. Field validation campaigns were conducted across three growing seasons in Vojvodina and the Mačva basin. The project also assessed the utility of the derived grids as forcing data for DSSAT and AquaCrop crop simulation models, finding that spatially disaggregated inputs reduced maize yield simulation error by 9–14 % relative to nearest-station forcing. Three researchers from BioSense and two doctoral students were involved."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0125",
+        "kind": "project",
+        "title": "Harmonised Gridded Climate Products for the Middle Danube Agricultural Region",
+        "body": {
+          "recordId": "SYN-PRJ-0125",
+          "field": "summary",
+          "text": "A cross-border collaboration producing harmonised agroclimatic grids for the Hungary–Serbia transboundary region at 1 km resolution. Đukić led Work Package 3 (spatial downscaling and grid production) and coordinated exchange of station data under a bilateral data-sharing agreement between the Hungarian Meteorological Service and the Republic Hydrometeorological Service of Serbia. The project delivered 30-year climatological normal grids, a drought monitoring prototype, and a joint training workshop for 22 operational forecasters. Outputs were incorporated into both national agrometeorological advisory systems."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1742",
+        "kind": "project",
+        "title": "Cross-Border Inventory and Early Warning Concepts for Danube Corridor Landslides",
+        "body": {
+          "recordId": "SYN-PRJ-1742",
+          "field": "summary",
+          "text": "DANGERSLOPE is a cross-border project addressing landslide hazard along the Romanian and Serbian banks of the Danube, where loess and loess-like deposits create similar geomorphological and geotechnical conditions on both sides. Vranješ leads the work package on SAR-based displacement monitoring and joint inventory development, coordinating Sentinel-1 processing for approximately 3 800 km² of loess terrain. The project will produce a harmonised bilateral landslide geodatabase, bilingual public-facing hazard maps at 1:50 000 scale, and a prototype near-real-time alert system based on Sentinel-1 12-day coherence thresholds. Training workshops for local civil protection agencies in both countries are planned in the final project year."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0727",
+            "field": "open_to",
+            "quote": "student internships (MSc and doctoral level) in remote sensing data processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0727",
+            "field": "open_to",
+            "quote": "joint projects with agri-tech or precision agriculture companies needing high-resolution climate data products",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0727",
+            "field": "open_to",
+            "quote": "contract research for spatial downscaling and agroclimatic index derivation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

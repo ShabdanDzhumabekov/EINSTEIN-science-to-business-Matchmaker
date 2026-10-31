@@ -1,0 +1,150 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 3
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Script-normalizing, morphology-aware Serbian support search for LinguaBot",
+    "facts": [
+      {
+        "text": "LinguaBot reports that in a sample of 12,000 real support queries from one bank client about 18% returned no useful result, and more than half of those misses were traced to morphological mismatch or script confusion.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "about 18% returned no useful result, and our analysis traced more than half of those misses directly to morphological mismatch or script confusion.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot needs an approach that tolerates script mixing automatically and can be updated when new vocabulary arrives without a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "tolerates script mixing automatically",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot states a modest tooling/data budget of around 8,000 EUR and wants something testable within six months.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists can annotate or validate proposed solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot's current Elasticsearch setup uses a basic stemmer built for Croatian and misses a significant share of Serbian-specific forms.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's work proposes token normalization to a canonical form based on phonemic representation for Serbian mixed-script indexing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's notes state capacity for one smaller industrial contract or consultancy engagement.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Much of the researcher's evidence comes from news, legal, benchmark or pilot corpora, so transfer to LinguaBot's bank support queries is not established; the first experiment should treat this as a test, not an assumption.",
+      "Manual synonym maintenance is a known weakness, and the researcher's work notes incomplete initial dictionaries and foreign-loanword or proper-noun failures, so an exception and vocabulary-update process is likely to be a risk that must stay in scope.",
+      "The researcher's stated capacity is one smaller engagement and availability is not confirmed, while his latency studies suggest neural normalization can add tens of milliseconds at p99, so this joint project should stay conditional and tightly scoped with latency measured."
+    ],
+    "proposedActions": [
+      "First experiment (proposed, months 1–3): using LinguaBot's labelled query-response pairs, define a held-out evaluation sample and a separate tuning sample; the company must check their independence. Baseline is the current deployed Elasticsearch analyzer chain, including its Croatian-oriented stemmer and any existing synonym or script-normalisation steps; also run a no-normalisation ablation to make that condition explicit. Test one suspected factor at a time: (a) add phoneme-based canonicalization only, (b) add Serbian lemmatization/stemming only, (c) combine both with cross-script expansion. Measure the company's no-useful-result rate on the held-out evaluation queries, with miss cases confirmed by linguist review and uncertain cases counted separately, plus latency, index size and whether a vocabulary addition can be applied without full re-index. Proceed only if the measured no-useful-result rate falls below 5% under the combined condition and the update-without-full-reindex check succeeds; if no single factor moves the rate, report the combined result to guide mechanism.",
+      "Proposed six-month plan and success criteria (negotiation targets): months 1–2 audit data, mapping and label policy; months 3–4 implement candidate conditions in a test index; months 5–6 evaluate, measure latency and index size, and hand over a maintenance process. Targets: held-out no-useful-result rate below 5%; a documented vocabulary-update path without full re-index; latency budget agreed before testing; scope confirmed within the stated ~8,000 EUR tooling/data budget. These are targets, not guarantees.",
+      "Maintenance and exception handling: propose a small lexicon and exception-rule update workflow owned by LinguaBot linguists, with the researcher defining when rules or neural fallback are triggered for loanwords, abbreviations and proper nouns. Test on new product terminology supplied by the company; this addresses the risk that manual synonym lists do not scale."
+    ],
+    "questions": [
+      "Can Stefan Dragić confirm his availability and capacity for a six-month joint project or contract research engagement?",
+      "What is the current Elasticsearch index mapping and Serbian analyzer chain, and can script normalization be inserted at both indexing and query time without a full re-index?",
+      "What privacy, licensing or client-consent terms apply to the 85,000 labelled query-response pairs and the 12,000-query bank sample?",
+      "How exactly is a 'no useful result' defined and measured today, and which held-out evaluation set will be used to test the below-5% target?"
+    ],
+    "benefits": {
+      "company": "The first experiment could show whether phoneme-based canonicalization plus Serbian lemmatization/stemming, with cross-script expansion, reduces the measured no-useful-result rate on LinguaBot's own support queries, and whether it can sit in the Elasticsearch chain without full re-indexing.",
+      "researcher": "The experiment would let the researcher test whether his phoneme canonicalization and stemming-order findings transfer from news, legal and benchmark corpora to real bank support queries, and give him a labelled mixed-script support-query sample to work with, conditional on agreement."
+    },
+    "markdown": "# Script-normalizing, morphology-aware Serbian support search for LinguaBot\n\n## Verified facts\n- LinguaBot reports that in a sample of 12,000 real support queries from one bank client about 18% returned no useful result, and more than half of those misses were traced to morphological mismatch or script confusion. [F1]\n- LinguaBot needs an approach that tolerates script mixing automatically and can be updated when new vocabulary arrives without a full re-index. [F2]\n- LinguaBot states a modest tooling/data budget of around 8,000 EUR and wants something testable within six months. [F3]\n- LinguaBot has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists can annotate or validate proposed solutions. [F4]\n- LinguaBot's current Elasticsearch setup uses a basic stemmer built for Croatian and misses a significant share of Serbian-specific forms. [F5]\n- The researcher's work proposes token normalization to a canonical form based on phonemic representation for Serbian mixed-script indexing. [F6]\n- The researcher's notes state capacity for one smaller industrial contract or consultancy engagement. [F7]\n\n## Potential benefits\n- For the company: The first experiment could show whether phoneme-based canonicalization plus Serbian lemmatization/stemming, with cross-script expansion, reduces the measured no-useful-result rate on LinguaBot's own support queries, and whether it can sit in the Elasticsearch chain without full re-indexing.\n- For the researcher: The experiment would let the researcher test whether his phoneme canonicalization and stemming-order findings transfer from news, legal and benchmark corpora to real bank support queries, and give him a labelled mixed-script support-query sample to work with, conditional on agreement.\n\n## Our inference\n- Much of the researcher's evidence comes from news, legal, benchmark or pilot corpora, so transfer to LinguaBot's bank support queries is not established; the first experiment should treat this as a test, not an assumption.\n- Manual synonym maintenance is a known weakness, and the researcher's work notes incomplete initial dictionaries and foreign-loanword or proper-noun failures, so an exception and vocabulary-update process is likely to be a risk that must stay in scope.\n- The researcher's stated capacity is one smaller engagement and availability is not confirmed, while his latency studies suggest neural normalization can add tens of milliseconds at p99, so this joint project should stay conditional and tightly scoped with latency measured.\n\n## Proposed next steps\n- First experiment (proposed, months 1–3): using LinguaBot's labelled query-response pairs, define a held-out evaluation sample and a separate tuning sample; the company must check their independence. Baseline is the current deployed Elasticsearch analyzer chain, including its Croatian-oriented stemmer and any existing synonym or script-normalisation steps; also run a no-normalisation ablation to make that condition explicit. Test one suspected factor at a time: (a) add phoneme-based canonicalization only, (b) add Serbian lemmatization/stemming only, (c) combine both with cross-script expansion. Measure the company's no-useful-result rate on the held-out evaluation queries, with miss cases confirmed by linguist review and uncertain cases counted separately, plus latency, index size and whether a vocabulary addition can be applied without full re-index. Proceed only if the measured no-useful-result rate falls below 5% under the combined condition and the update-without-full-reindex check succeeds; if no single factor moves the rate, report the combined result to guide mechanism.\n- Proposed six-month plan and success criteria (negotiation targets): months 1–2 audit data, mapping and label policy; months 3–4 implement candidate conditions in a test index; months 5–6 evaluate, measure latency and index size, and hand over a maintenance process. Targets: held-out no-useful-result rate below 5%; a documented vocabulary-update path without full re-index; latency budget agreed before testing; scope confirmed within the stated ~8,000 EUR tooling/data budget. These are targets, not guarantees.\n- Maintenance and exception handling: propose a small lexicon and exception-rule update workflow owned by LinguaBot linguists, with the researcher defining when rules or neural fallback are triggered for loanwords, abbreviations and proper nouns. Test on new product terminology supplied by the company; this addresses the risk that manual synonym lists do not scale.\n\n## Open questions\n- Can Stefan Dragić confirm his availability and capacity for a six-month joint project or contract research engagement?\n- What is the current Elasticsearch index mapping and Serbian analyzer chain, and can script normalization be inserted at both indexing and query time without a full re-index?\n- What privacy, licensing or client-consent terms apply to the 85,000 labelled query-response pairs and the 12,000-query bank sample?\n- How exactly is a 'no useful result' defined and measured today, and which held-out evaluation set will be used to test the below-5% target?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

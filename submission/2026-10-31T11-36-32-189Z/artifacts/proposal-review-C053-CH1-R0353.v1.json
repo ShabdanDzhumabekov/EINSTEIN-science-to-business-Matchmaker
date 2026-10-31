@@ -1,0 +1,67 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C053-CH1-R0353",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C053-CH1-R0353",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C053-CH1-R0353",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "AquaCikl reports discharge limits of 0.10 mg/L manganese and 0.30 mg/L iron. These are reported limits, not independently verified legal acceptance criteria; the applicable sampling point and analytical definitions still require confirmation.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.37; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Žigić’s manganese jar tests used synthetic water and pre-oxidation before coagulation. Her continuous-flow iron–manganese study also identified a tradeoff: at low Fe/Mn ratios, competition reduced iron removal by 12 percentage points. Manganese improvement therefore cannot substitute for checking iron.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Jar-test experiments were performed on synthetic water containing 0.5–4.0 mg/L dissolved Mn(II)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Pre-oxidation with KMnO₄ at stoichiometric doses converted Mn(II) to colloidal MnO₂ prior to coagulation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04345",
+            "field": "abstract",
+            "quote": "At low Fe/Mn ratios (1:1), competition for coagulant capacity reduced Fe removal by 12 percentage points.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.42; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

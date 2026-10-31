@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0746",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0746",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a regression-kriging workflow using existing grid samples and proximal sensing predict small saline-sodic pockets near the Tisa before field sampling, so that denser sampling is targeted only to variable zones?",
+    "rationale": [
+      {
+        "text": "Kosanović has direct geostatistical mapping expertise for saline-sodic soils in Vojvodina.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "bio",
+            "quote": "focusing on geostatistical mapping of saline-sodic soils in the Vojvodina plain",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He combines EM38, pXRF and soil sampling into spatial models of EC, pH, ESP and texture, matching TloCare's need to map salinity pockets.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "bio",
+            "quote": "combining electromagnetic induction surveys, portable XRF measurements, and soil sampling to build spatial models of physico-chemical properties",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His regression-kriging work with EM38 and pXRF shows proximal sensing can reduce expensive laboratory analyses for saline-sodic soil unit mapping.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "combining two proximal sensing methods as regression covariates reduces the number of expensive laboratory analyses needed for reliable soil unit mapping",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has published guidance on sample-size reduction and conditioned Latin hypercube designs, which fits the company's need to sample only variable zones.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08252",
+            "field": "abstract",
+            "quote": "conditioned Latin hypercube designs with 40–50 soil cores are a reasonable compromise between cost and mapping accuracy",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has delivered ECe and ESP mapping products for practical variable-rate amendment decisions.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "industry_experience",
+            "quote": "delivering ECe and ESP maps used for variable-rate gypsum application",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He prefers genuine field data collection, which aligns with TloCare's field-sampling service model.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "He prefers collaborations that involve genuine field data collection rather than purely computational work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group has day-to-day access to EM38, pXRF and open-source geostatistical software.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "bio",
+            "quote": "regularly uses a Geonics EM38 terrain conductivity meter, a portable XRF analyser, and open-source geostatistical software environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "..."
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0746",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0746",
+        "version": 1
+      }
+    ]
+  }
+}

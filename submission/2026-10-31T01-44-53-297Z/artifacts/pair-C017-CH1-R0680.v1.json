@@ -1,0 +1,194 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0680",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0680",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can the company's historical grid samples be combined with proximal soil sensing and geostatistical or management-zone models to predict small salinity pockets in Tisa floodplain fields well enough to guide densified sampling only where needed? The first experiment would test model transfer from chernozem/prescription settings to alluvial and saline soils against denser reference sampling.",
+    "rationale": [
+      {
+        "text": "The researcher has directly studied whether ECa covariates can improve soil spatial estimates at the company's current 4 ha sampling density.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07651",
+            "field": "abstract",
+            "quote": "Co-kriging with ECa reduced MAE by 18–31% relative to ordinary kriging at the 4 ha per sample density",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His management-zone work shows an approach for concentrating sampling where spatial variance is higher rather than densifying uniformly.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05468",
+            "field": "abstract",
+            "quote": "zone-based sampling captured 23% more variance in organic matter at 30% fewer samples",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has characterised ECa spatial structure in heterogeneous Vojvodina fields, which is relevant to detecting small-scale soil variation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07654",
+            "field": "abstract",
+            "quote": "Range parameters varied from 54 m to 312 m across fields.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has quantified how prescription algorithms transfer across farm holdings and linked transfer error to sensing-based soil dissimilarity.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02669",
+            "field": "abstract",
+            "quote": "Transfer error in prescribed N rate correlated strongly with ECa dissimilarity (Pearson r = 0.71)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience with rapid sensing in salt-affected soil profiles, which is relevant to the Tisa salinity problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05388",
+            "field": "abstract",
+            "quote": "The findings support the use of pXRF as a screening tool for profile characterisation in salt-affected soil surveys",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked on fusing multiple proximal and remote sensing streams into prescription workflows, matching the company's plan to add field sensing.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0143",
+            "field": "summary",
+            "quote": "A key output was a Bayesian data-fusion framework that weights sensor contributions according to their field-specific predictive performance",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher has explicitly opened participation to joint projects with agri-tech companies.",
+        "sources": [
+          {
+            "recordId": "R0680",
+            "field": "open_to",
+            "quote": "joint projects with agri-tech companies developing variable-rate application hardware or farm management software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The plan depends on verified access to the company's historical archive of georeferenced samples and laboratory results; extraction, harmonisation and quality control of this archive must be part of the work.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must reduce or avoid additional dense grid sampling, because more field work, laboratory costs and longer delivery times conflict with the service price the company can charge.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Problem je što gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke — a cena usluge nam već pritiska granicu prihvatljivosti za klijenta.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any predictive layer must resolve salinity pockets much smaller than the current 4 ha grid, otherwise the company's standard map will continue to miss them.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration requires field access to commercial Tisa-area farms and a joint data-use agreement covering soil sampling and yield monitor data.",
+        "sources": [
+          {
+            "recordId": "R0680",
+            "field": "notes",
+            "quote": "Prefers collaborations where field access to commercial farms is part of the arrangement",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0680",
+            "field": "notes",
+            "quote": "Most receptive to industry partners willing to share yield monitor and soil sampling data under a joint data-use agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company development capacity is limited to two developers and one GIS specialist at up to one-third time, with occasional field-team support, so the work plan must fit that capacity.",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija, uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The researcher's spatial modelling evidence is largely from chernozem and nitrogen prescription contexts, while the company's problem is small salinity pockets in alluvial/floodplain soils near the Tisa; this transfer gap must be tested in the first experiment, not assumed.",
+      "The company previously found that satellite NDVI did not clearly reveal salinity in early spring, so vegetation-index-only prediction may fail for this target.",
+      "It is unknown whether the 18,000-point historical laboratory archive contains salinity-relevant measurements, consistent depths and sufficient positional accuracy for small-pocket prediction.",
+      "Researcher availability is unknown and could limit fieldwork and modelling capacity.",
+      "The company's price pressure and delivery-time constraints may conflict with the field validation needed to prove that adaptive sampling is reliable.",
+      "The company's limited development capacity could slow integration of any predictive layer into its portal."
+    ],
+    "questions": [
+      "Does the researcher have availability and capacity for a joint project in the company's timeline, and what would the first 6–12 month work plan be?",
+      "Which salinity-relevant variables, depths, analytical methods and positional accuracy are present in the 18,000-point historical laboratory archive?",
+      "Can the company provide field access to Ravnica Agro or comparable Tisa-area fields, plus yield monitor and sampling data, under a joint data-use agreement?",
+      "What accuracy, minimum detectable pocket size, false-positive tolerance, sample budget and delivery time would make the adaptive sampling service operationally acceptable?",
+      "Which sensing route should be tested first: EM38/ECa, drone multispectral, pXRF, vis-NIR, or a fusion, and what equipment is already available?",
+      "Is the company also interested in an industrial PhD format, given that willingness for industrial PhD supervision is currently unknown?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0680",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0680",
+        "version": 1
+      }
+    ]
+  }
+}

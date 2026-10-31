@@ -1,0 +1,187 @@
+{
+  "ref": {
+    "artifactId": "scholar-C132-CH4-R0925",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0925",
+    "name": "Milan Petrović",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "natural language processing",
+      "machine learning"
+    ],
+    "keywords": [
+      "transformer models",
+      "Serbian language",
+      "retrieval",
+      "embeddings",
+      "question answering"
+    ],
+    "openTo": [
+      "industrial PhD supervision",
+      "joint projects"
+    ],
+    "bio": {
+      "recordId": "R0925",
+      "field": "bio",
+      "text": "Milan Petrović is an Assistant Professor at the Department of Computing and Control Engineering, Faculty of Technical Sciences, University of Novi Sad. His research focuses on natural language processing and machine learning, with a particular emphasis on transformer-based language models and low-resource NLP for Serbian. He works on building open language resources for Serbian, including pre-trained models, annotated corpora, and evaluation benchmarks. His recent work addresses dense retrieval, question answering, and the challenges of processing text in both Latin and Cyrillic scripts within a unified embedding space. He collaborates with regional and international partners and is actively involved in the SRB-NLP initiative under the Science Fund of the Republic of Serbia. He is open to industrial PhD supervision and joint research projects with companies seeking NLP solutions."
+    },
+    "industryExperience": {
+      "recordId": "R0925",
+      "field": "industry_experience",
+      "text": ""
+    },
+    "notes": {
+      "recordId": "R0925",
+      "field": "notes",
+      "text": ""
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-09804",
+        "kind": "publication",
+        "title": "A transformer model pre-trained on Serbian web text",
+        "body": {
+          "recordId": "SYN-PUB-09804",
+          "field": "abstract",
+          "text": "This paper presents SrbBERT-Web, a transformer language model pre-trained from scratch on a large-scale crawl of Serbian web text comprising approximately 14 billion tokens. We describe the data collection and cleaning pipeline, which addresses noise specific to Serbian web content, including mixed-script documents, informal spelling variations, and code-switched passages. The model adopts a RoBERTa-style architecture and is trained with dynamic masking on deduplicated data. We evaluate SrbBERT-Web on four downstream tasks: named entity recognition, sentiment analysis, morphological tagging, and extractive question answering, comparing it against multilingual baselines such as mBERT and XLM-R, as well as against smaller domain-specific Serbian models. SrbBERT-Web consistently outperforms all baselines on three of the four tasks, with especially pronounced gains on question answering and sentiment analysis. We release the model weights, tokenizer, and pre-training corpus metadata under open licenses to support further research on Serbian language technology. We also provide a detailed analysis of tokenization efficiency, showing that a vocabulary trained specifically on Serbian text significantly reduces token-per-word ratios compared to multilingual vocabularies."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09805",
+        "kind": "publication",
+        "title": "Dense retrieval for Serbian customer-support questions",
+        "body": {
+          "recordId": "SYN-PUB-09805",
+          "field": "abstract",
+          "text": "This paper investigates dense passage retrieval (DPR) for Serbian customer-support question answering. Customer-support interactions in Serbian present unique challenges: queries are short and colloquial, answers are embedded in lengthy policy documents, and the corpus contains both Latin and Cyrillic script. We construct a new benchmark dataset, SrbCSQA, containing 4,200 question–passage pairs collected from publicly available support portals and annotated by native speakers. We fine-tune a bi-encoder retrieval model initialised from a Serbian transformer checkpoint and compare it against BM25, a multilingual DPR baseline, and a cross-encoder re-ranker. Experiments show that our fine-tuned bi-encoder achieves a mean reciprocal rank of 0.73, outperforming BM25 by 18 percentage points and the multilingual baseline by 11 points. We further study the effect of script normalisation as a preprocessing step and show that it consistently improves retrieval quality. Error analysis reveals that lexical gaps between formal policy language and informal user queries remain the primary failure mode. We release the SrbCSQA benchmark and fine-tuned model under open licenses."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09806",
+        "kind": "publication",
+        "title": "Handling Latin and Cyrillic script in one embedding space",
+        "body": {
+          "recordId": "SYN-PUB-09806",
+          "field": "abstract",
+          "text": "Texts in Serbian are written in both the Latin and Cyrillic scripts, often within the same corpus or even the same document. Existing multilingual embedding models treat these as largely separate character sequences, resulting in poor cross-script semantic alignment. This paper proposes a script-unified embedding approach that maps Latin-script and Cyrillic-script Serbian sentences to a shared vector space. We achieve this through a three-stage training procedure: (1) initialisation from a multilingual sentence encoder, (2) contrastive fine-tuning on automatically generated Latin–Cyrillic parallel pairs obtained by deterministic transliteration, and (3) hard-negative mining using nearest-neighbour retrieval. We evaluate semantic textual similarity and cross-script retrieval on newly constructed Serbian benchmarks and on a subset of the XSTS evaluation suite. Our model closes 84% of the cosine-similarity gap between same-script and cross-script sentence pairs while maintaining competitive performance on standard STS tasks. We release the model, training data, and evaluation scripts. The approach is lightweight, requiring no manual annotation of cross-script pairs, and can be extended to other language communities with dual-script traditions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09807",
+        "kind": "publication",
+        "title": "SrbNER: a named entity recognition corpus and baseline models for Serbian",
+        "body": {
+          "recordId": "SYN-PUB-09807",
+          "field": "abstract",
+          "text": "Named entity recognition (NER) is a foundational NLP task, yet Serbian has lacked a large, openly licensed NER corpus with consistent annotation guidelines. This paper introduces SrbNER, a corpus of 120,000 tokens drawn from news, social media, and administrative text, manually annotated with seven entity categories: person, organisation, location, event, product, law, and date. We describe the annotation scheme, adjudication process, and inter-annotator agreement, which reached a Cohen's kappa of 0.87. We train and evaluate several baseline models: a CRF tagger with hand-crafted features, a BiLSTM-CRF model, and three transformer-based sequence labellers fine-tuned from mBERT, XLM-R, and SrbBERT-Web respectively. The transformer baselines substantially outperform the CRF and BiLSTM approaches, with SrbBERT-Web achieving an F1 of 89.4 on the test set. We analyse per-category performance and find that product and law entities are the most difficult, largely due to inconsistent surface forms and low frequency in the training data. SrbNER and all baseline model weights are released publicly to accelerate Serbian NLP research."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09808",
+        "kind": "publication",
+        "title": "Extractive question answering for Serbian: dataset construction and model evaluation",
+        "body": {
+          "recordId": "SYN-PUB-09808",
+          "field": "abstract",
+          "text": "We present SrbQA-Ext, the first large-scale extractive question answering dataset for Serbian, containing 11,400 question–answer pairs grounded in Wikipedia-derived passages. Questions were elicited from native-speaker annotators who read a passage and formulated answerable questions; each answer is a contiguous span within the passage. We additionally include 1,200 unanswerable questions to test model abstention. The dataset covers eight topic domains and is balanced across Latin and Cyrillic script versions to prevent script-specific overfitting. We establish baselines using mBERT, XLM-R-large, and our in-house SrbBERT-Web model fine-tuned with the standard span-extraction objective. SrbBERT-Web achieves an exact match of 62.1 and an F1 of 78.4 on the development set, surpassing XLM-R-large by 3.2 F1 points despite having fewer parameters. We analyse common error types, showing that multi-sentence reasoning and numerical inference are the leading sources of error. We also conduct a cross-lingual transfer experiment in which models trained on translated SQuAD data are compared against our natively constructed dataset, demonstrating the importance of domain-appropriate, language-native training data. All resources are publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09809",
+        "kind": "publication",
+        "title": "Cross-lingual transfer learning for low-resource South Slavic languages using shared subword vocabularies",
+        "body": {
+          "recordId": "SYN-PUB-09809",
+          "field": "abstract",
+          "text": "Transfer learning from high-resource to low-resource languages has shown strong results when languages share linguistic or orthographic properties. South Slavic languages — Serbian, Croatian, Bosnian, Slovenian, and Macedonian — form a cluster with shared grammatical structures and partially overlapping vocabulary, making them ideal candidates for cross-lingual transfer. In this paper we examine the effect of vocabulary design on transfer performance. Specifically, we train three transformer models with different tokenisation strategies: a vocabulary trained on Serbian only, a joint vocabulary trained on all five South Slavic languages, and the multilingual SentencePiece vocabulary of XLM-R. We evaluate downstream performance on NER, part-of-speech tagging, and dependency parsing for each language using the same fine-tuning budget. Results show that the joint South Slavic vocabulary reduces out-of-vocabulary rates by 31% on average and improves NER F1 by up to 4.7 points for Macedonian compared with the Serbian-only vocabulary. We release the joint vocabulary and pre-trained model checkpoints under an open license and provide a detailed analysis of vocabulary overlap across the five languages."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09810",
+        "kind": "publication",
+        "title": "Retrieval-augmented generation for Serbian: adapting RAG pipelines to a morphologically rich language",
+        "body": {
+          "recordId": "SYN-PUB-09810",
+          "field": "abstract",
+          "text": "Retrieval-augmented generation (RAG) combines a retrieval component with a generative language model to produce factual, grounded responses. Most RAG research targets English, where morphological simplicity makes keyword and dense retrieval effective. Serbian, as a morphologically rich language with six grammatical cases and free word order, poses distinctive challenges: inflected query terms may not match base forms in the index, and sentence boundary detection is complicated by enclitic clitics. This paper adapts a full RAG pipeline to Serbian by integrating our dense retrieval model with a multilingual generative model fine-tuned on Serbian instruction data. We introduce lemma-expanded dense retrieval, in which query embeddings are averaged over all inflected forms of content words as predicted by a morphological analyser. On the SrbCSQA benchmark, this approach improves ROUGE-L by 6.1 points over a vanilla bi-encoder retrieval baseline and reduces hallucination rate as measured by automatic factual consistency scoring. We also release a small test set of 400 long-form generation examples with human-annotated factuality labels to support future evaluation of Serbian generative NLP systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09811",
+        "kind": "publication",
+        "title": "Sentence embeddings for Serbian: benchmark construction and model comparison",
+        "body": {
+          "recordId": "SYN-PUB-09811",
+          "field": "abstract",
+          "text": "High-quality sentence embeddings are a prerequisite for semantic search, clustering, and question answering in any language. For Serbian, no systematic sentence-embedding benchmark has previously existed, leaving practitioners without a reliable way to compare models. This paper makes three contributions. First, we construct SrbSTS-22, a semantic textual similarity benchmark of 3,500 sentence pairs drawn from news headlines, online reviews, and conversational transcripts, scored by five native-speaker annotators on a 0–5 scale. Second, we adapt the NLI-based contrastive training paradigm to Serbian by automatically translating MultiNLI and SNLI into Serbian and fine-tuning sentence encoders from multiple base checkpoints. Third, we perform a systematic comparison of twelve sentence encoder variants—covering multilingual off-the-shelf models, cross-lingual knowledge distillation, and our natively trained models—on SrbSTS-22 and cross-script retrieval tasks. Our best model, fine-tuned from SrbBERT-Web using NLI pre-training followed by STS fine-tuning, achieves a Pearson correlation of 0.88 on SrbSTS-22. We release the benchmark, trained models, and evaluation toolkit."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09812",
+        "kind": "publication",
+        "title": "Morphology-aware tokenisation strategies for Serbian transformer models",
+        "body": {
+          "recordId": "SYN-PUB-09812",
+          "field": "abstract",
+          "text": "Standard subword tokenisation algorithms such as BPE and WordPiece are optimised for frequent character sequences but are agnostic to morphological structure. For a highly inflected language like Serbian, this can lead to segmentations that split across morpheme boundaries in linguistically arbitrary ways, potentially harming model generalisation across inflectional paradigms. This paper systematically evaluates five tokenisation strategies for Serbian: standard BPE, Unigram language model tokenisation, morpheme-boundary-aware BPE initialised with morphological analyses, syllable-based tokenisation, and character-level tokenisation. For each strategy we pre-train a small transformer model with identical hyperparameters and evaluate on NER, POS tagging, and STS tasks. We find that morpheme-boundary-aware BPE reduces the average number of split morphemes by 28% and yields consistent downstream gains on NER (+1.9 F1) and POS tagging (+0.8 accuracy) compared with standard BPE, while remaining computationally competitive. Syllable-based tokenisation performs competitively on STS but lags on structured prediction tasks. We provide guidance for practitioners choosing tokenisation strategies for morphologically rich Slavic languages."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09813",
+        "kind": "publication",
+        "title": "Zero-shot intent detection for Serbian chatbots using multilingual sentence encoders",
+        "body": {
+          "recordId": "SYN-PUB-09813",
+          "field": "abstract",
+          "text": "Intent detection is a core component of task-oriented dialogue systems. Deploying such systems for Serbian is hampered by the scarcity of labelled intent data; collecting annotated examples for every new domain is expensive and slow. This paper explores zero-shot intent detection, in which a model trained on seen intents in one or more high-resource languages is applied directly to Serbian without any Serbian-language training examples. We frame intent detection as nearest-neighbour classification in an embedding space and compare five multilingual sentence encoders, including our SrbBERT-Web-based sentence model, on a new Serbian intent detection benchmark covering four domains: banking, travel, e-commerce, and healthcare. Our Serbian sentence encoder, despite never seeing intent labels during training, achieves an accuracy of 71.3% in a zero-shot setting, outperforming the best general multilingual encoder by 8.4 points. We further show that adding as few as ten Serbian examples per intent in a few-shot extension pushes accuracy to 84.1%. We release the benchmark and all experimental code to support research on conversational Serbian NLP."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0009",
+        "kind": "project",
+        "title": "SRB-NLP: open language resources for Serbian",
+        "body": {
+          "recordId": "SYN-PRJ-0009",
+          "field": "summary",
+          "text": "The SRB-NLP project aims to build a comprehensive suite of open language resources for Serbian, addressing a long-standing gap in the NLP ecosystem for South Slavic languages. The project encompasses the creation of large pre-training corpora, fine-tuning datasets for core NLP tasks including named entity recognition, question answering, semantic similarity, and intent detection, as well as the training and public release of transformer-based language models tailored to Serbian. A central objective is ensuring that all resources support both Latin and Cyrillic scripts on equal footing. The project also includes the design and dissemination of standardised evaluation benchmarks to enable reproducible comparison of future Serbian NLP systems. Running from 2023 to 2026 with funding from the Science Fund of the Republic of Serbia, the project involves collaboration between linguists and computer scientists and is committed to open science through the public release of all data, model weights, and code."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0925",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0925",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

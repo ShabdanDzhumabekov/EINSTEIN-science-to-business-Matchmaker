@@ -1,0 +1,73 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C065-CH2-R0816",
+      "version": 1
+    },
+    "checkedClaimCount": 6,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Harmat wants an initial prototype for one client. Its offered access covers anonymised transactions and product catalogues under a data-sharing agreement; additional behavioural tracking is not part of that stated offer.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.36; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Erić lists openness to joint projects with retail technology companies, but cautions against commitments exceeding one day weekly outside the faculty during semester.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "joint projects with retail technology companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester but is flexible in summer months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.48; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

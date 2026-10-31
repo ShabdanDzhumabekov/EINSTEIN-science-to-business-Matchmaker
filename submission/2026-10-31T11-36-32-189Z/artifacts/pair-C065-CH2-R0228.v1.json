@@ -1,0 +1,195 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0228",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0228",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a lightweight content-based recommender, optionally augmented with within-basket co-occurrence, outperform best-seller sorting for one Harmat client with only 500–2,000 transactions? The first experiment would test transfer from the researcher’s clothing-retail point-of-sale study to product-page recommendations using a chronological holdout, comparing best-seller, content-only and hybrid approaches before considering an online pilot.",
+    "rationale": [
+      {
+        "text": "The researcher has directly relevant work combining product attributes and basket co-occurrence for recommendation under sparse user histories.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "The study highlights that even minimal session data meaningfully stabilises recommendation quality when transaction histories per user are fewer than five.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her recommendation study includes an empirical comparison against a content-only baseline, providing a starting point for comparative evaluation rather than assuming that a hybrid will help.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "yielding a precision at three of 0.38 against a pure content baseline of 0.29.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She uses R and Python and has experience preparing and anonymising company data, which is relevant to constructing the pilot dataset.",
+        "sources": [
+          {
+            "recordId": "R0228",
+            "field": "bio",
+            "quote": "Za analizu koristi softverske pakete R i Python",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0228",
+            "field": "industry_experience",
+            "quote": "sarađivala je kao eksterna analitičarka s jednim regionalnim SaaS provajderom na pripremi i anonimizaciji podataka o ugovorima za potrebe istraživanja.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Evaluation must use the existing small datasets and include best-seller sorting as a baseline; a plan dependent on accumulating substantially more transactions would not meet the task.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Keep the initial deliverable to a one-client prototype and fit integration work within roughly one developer-day per week.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must remain within the agreed anonymised transaction and catalogue scope and be covered by a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any deployed widget must fit the company's existing e-commerce integration and client-VPS environment, and user-facing strings must pass its three-language release workflow.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The project must accommodate her active dissertation work and preference for collaborations that support her thesis; a schedule cannot be assumed before she confirms capacity.",
+        "sources": [
+          {
+            "recordId": "R0228",
+            "field": "notes",
+            "quote": "Dunja Simić je u aktivnoj fazi pisanja doktorske disertacije i preferira saradnje koje se mogu uključiti u okvir njene teze",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The relevant recommendation study used 9,200 baskets across two clothing retailers, substantially more data than each target client. Its results may not transfer to 500–2,000 transactions; the first experiment must test this at the client's actual data scale.",
+      "Point-of-sale basket proximity is not equivalent to product-page browsing intent. The first experiment must test product-conditioned recommendations, rather than treating basket-level results as validation of an online widget.",
+      "The published comparison was against a content-only baseline, not best-seller sorting. Neither its reported precision nor its selected blending weight establishes an advantage for Harmat.",
+      "Catalogue attribute completeness, catalogue languages, basket identifiers and historical product availability are unknown. Poor metadata or missing basket structure could undermine both content and hybrid methods.",
+      "Low traffic may prevent a timely, conclusive online test; offline ranking improvements would not establish conversion or revenue gains.",
+      "Researcher availability is unknown, and this retail recommendation task may not support her subscription-focused dissertation sufficiently to secure sustained participation.",
+      "The company's numerical budget, pilot deadline, hosting limits and experience managing a formal research collaboration remain unresolved."
+    ],
+    "questions": [
+      "Can the researcher confirm availability, expected effort and whether this recommendation project can fit alongside or support her dissertation?",
+      "Which client will host the pilot, and what are its product count, basket-size distribution, repeat-purchase rate and available transaction dates?",
+      "Do the anonymised exports retain order-level item groupings, timestamps and stable product identifiers? Are page-view or session logs available, or must the experiment use orders alone?",
+      "Which catalogue attributes and description languages are available, and can historical availability, discontinued products and stock exclusions be reconstructed?",
+      "Can the first experiment compare best-seller, content-only and hybrid rankings on a chronological holdout without future-data leakage, and what minimum improvement and coverage would justify an online pilot?",
+      "What did the previous A/B test measure, and are its allocation, duration, sample sizes and results available for designing the new evaluation?",
+      "What budget, deadline, VPS resources and serving-latency limits apply, and who will own integration, maintenance and experiment monitoring?",
+      "What data-sharing, retention, access-control, publication and intellectual-property terms must be agreed before work begins?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0228",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0228",
+        "version": 1
+      }
+    ]
+  }
+}

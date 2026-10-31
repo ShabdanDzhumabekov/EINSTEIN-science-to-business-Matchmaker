@@ -1,0 +1,207 @@
+{
+  "ref": {
+    "artifactId": "proposal-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Weld-joint cracking in cold-store conveyor frames",
+    "facts": [
+      {
+        "text": "AutomVoj reports weld-joint cracking after about 18 months in chilled service, 14 warranty frame replacements this year, no room-temperature reproduction, and a goal to change welding procedure, filler or joint design.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "text",
+            "quote": "Our conveyor frames crack at the weld joints after roughly 18 months of operation in chilled environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we have replaced 14 complete frame assemblies under warranty",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "text",
+            "quote": "we test at room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "A good outcome would be understanding exactly what is causing the cracks so we can change our welding procedure, filler material, or joint design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Cold-store service is 2–6 °C with suspected combined thermal cycling, condensation and loaded-belt vibration; testing should represent this, not only room-temperature load.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "the combination of thermal cycling, condensation, and the vibration load from loaded belts",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj lacks low-temperature cyclic-load equipment and know-how; Erić’s group routinely uses servo-hydraulic fatigue machines and a climate chamber to −60 °C.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has site photos and measurements of cracked joints and two failed sections in storage.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we still have two of the failed sections in storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Frames are mild-steel hollow section, MIG/MAG welded and painted for corrosion resistance; specimens should match this production detail.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "tech",
+            "quote": "Mild steel and stainless steel MIG/MAG welded frame fabrication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s chamber and servo-hydraulic machine are shared, so extended campaigns need advance scheduling.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has no dedicated R&D department; technical development happens informally through project work, so a named owner and allocated time are needed.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department; technical development happens informally through project work",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić is open to contract research and joint projects on welded-steel fatigue and low-temperature or combined-loading testing; his own low-temperature paper reports a 22% lower fatigue-ductility coefficient at −40 °C, a cold-service risk.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "contract research on fatigue and fracture testing of welded steel components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04474",
+            "field": "abstract",
+            "quote": "At −40 °C, the fatigue ductility coefficient εf′ decreased by 22% relative to room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Erić’s thermal-cycling and residual-stress work suggests he can separate thermal, mechanical and residual-stress contributions, but his published steels and joint types differ from AutomVoj’s mild-steel hollow-section detail, so transfer must be demonstrated.",
+      "Because AutomVoj cannot reproduce the failure at room temperature, the first factorial should show whether cold, thermal cycling, condensation or vibration dominates; if no single factor repeats the crack, interaction testing is needed.",
+      "The proposal is conditional because Erić’s availability is unknown and equipment is shared, even though his joint-project willingness is open; scheduling confirmation is the main delivery risk."
+    ],
+    "proposedActions": [
+      "Run a first controlled comparison on the two failed sections plus new production-detail coupons (mild-steel hollow section, MIG/MAG crossmember-to-stringer weld, painted condition) using Erić’s servo-hydraulic machine and climate chamber. Proposed baseline: room-temperature load/vibration spectrum from company data. Then change one suspected factor at a time: cold isothermal 2–6 °C; cold plus slow thermal cycling; cold plus condensation; cold plus loaded-belt vibration. Measure crack initiation/growth, stiffness drop and crack-tip observations with FE/ΔK analysis. Go/no-go after two phases: proceed to design variants only if a cold or thermal-cycling condition gives a repeatable crack-driving or life difference versus room-temperature baseline under the company-named service condition; otherwise revise toward condensation/vibration and re-check.",
+      "Test the transfer gap by repeating the comparison on production-representative hollow-section crossmember-to-stringer joints, including paint and condensation, because Erić’s evidence covers other steel grades and butt/cruciform specimens, not this detail at 2–6 °C; compare measured life with his low-temperature and residual-stress models.",
+      "Set negotiation targets: identify at least one dominant factor repeatably across duplicate specimens, rank welding/filler/joint-design variants by measured fatigue life or ΔK under service conditions, and deliver a short report. Proposed 12-month, three-phase plan: specimen extraction and chamber scheduling, first factorial, variant screening; no performance is guaranteed.",
+      "Ask AutomVoj to name an engineering owner and allocate time for specimen supply, service-spectrum data and reviews; ask Erić to reserve chamber/machine slots before campaign start."
+    ],
+    "questions": [
+      "Can Erić confirm availability and scheduling for an extended chamber and servo-hydraulic campaign shared with two other groups?",
+      "Can AutomVoj name a technical owner and allocate engineering time, given there is no dedicated R&D department?",
+      "Can AutomVoj provide loaded-belt vibration spectra, thermal-cycle records and condensation conditions from cold-store sites?",
+      "Should the test coupons include the production paint system and condensation exposure, or is bare-weld testing acceptable for the first comparison?",
+      "Which changes to welding procedure, filler material or crossmember-to-stringer joint design are allowable, and what warranty or cost threshold would define success for AutomVoj?"
+    ],
+    "markdown": "# Weld-joint cracking in cold-store conveyor frames\n\n## Verified facts\n- AutomVoj reports weld-joint cracking after about 18 months in chilled service, 14 warranty frame replacements this year, no room-temperature reproduction, and a goal to change welding procedure, filler or joint design. [F1]\n- Cold-store service is 2–6 °C with suspected combined thermal cycling, condensation and loaded-belt vibration; testing should represent this, not only room-temperature load. [F2]\n- AutomVoj lacks low-temperature cyclic-load equipment and know-how; Erić’s group routinely uses servo-hydraulic fatigue machines and a climate chamber to −60 °C. [F3]\n- AutomVoj has site photos and measurements of cracked joints and two failed sections in storage. [F4]\n- Frames are mild-steel hollow section, MIG/MAG welded and painted for corrosion resistance; specimens should match this production detail. [F5]\n- Erić’s chamber and servo-hydraulic machine are shared, so extended campaigns need advance scheduling. [F6]\n- AutomVoj has no dedicated R&D department; technical development happens informally through project work, so a named owner and allocated time are needed. [F7]\n- Erić is open to contract research and joint projects on welded-steel fatigue and low-temperature or combined-loading testing; his own low-temperature paper reports a 22% lower fatigue-ductility coefficient at −40 °C, a cold-service risk. [F8]\n\n## Our inference\n- Erić’s thermal-cycling and residual-stress work suggests he can separate thermal, mechanical and residual-stress contributions, but his published steels and joint types differ from AutomVoj’s mild-steel hollow-section detail, so transfer must be demonstrated.\n- Because AutomVoj cannot reproduce the failure at room temperature, the first factorial should show whether cold, thermal cycling, condensation or vibration dominates; if no single factor repeats the crack, interaction testing is needed.\n- The proposal is conditional because Erić’s availability is unknown and equipment is shared, even though his joint-project willingness is open; scheduling confirmation is the main delivery risk.\n\n## Proposed next steps\n- Run a first controlled comparison on the two failed sections plus new production-detail coupons (mild-steel hollow section, MIG/MAG crossmember-to-stringer weld, painted condition) using Erić’s servo-hydraulic machine and climate chamber. Proposed baseline: room-temperature load/vibration spectrum from company data. Then change one suspected factor at a time: cold isothermal 2–6 °C; cold plus slow thermal cycling; cold plus condensation; cold plus loaded-belt vibration. Measure crack initiation/growth, stiffness drop and crack-tip observations with FE/ΔK analysis. Go/no-go after two phases: proceed to design variants only if a cold or thermal-cycling condition gives a repeatable crack-driving or life difference versus room-temperature baseline under the company-named service condition; otherwise revise toward condensation/vibration and re-check.\n- Test the transfer gap by repeating the comparison on production-representative hollow-section crossmember-to-stringer joints, including paint and condensation, because Erić’s evidence covers other steel grades and butt/cruciform specimens, not this detail at 2–6 °C; compare measured life with his low-temperature and residual-stress models.\n- Set negotiation targets: identify at least one dominant factor repeatably across duplicate specimens, rank welding/filler/joint-design variants by measured fatigue life or ΔK under service conditions, and deliver a short report. Proposed 12-month, three-phase plan: specimen extraction and chamber scheduling, first factorial, variant screening; no performance is guaranteed.\n- Ask AutomVoj to name an engineering owner and allocate time for specimen supply, service-spectrum data and reviews; ask Erić to reserve chamber/machine slots before campaign start.\n\n## Open questions\n- Can Erić confirm availability and scheduling for an extended chamber and servo-hydraulic campaign shared with two other groups?\n- Can AutomVoj name a technical owner and allocate engineering time, given there is no dedicated R&D department?\n- Can AutomVoj provide loaded-belt vibration spectra, thermal-cycle records and condensation conditions from cold-store sites?\n- Should the test coupons include the production paint system and condensation exposure, or is bare-weld testing acceptable for the first comparison?\n- Which changes to welding procedure, filler material or crossmember-to-stringer joint design are allowable, and what warranty or cost threshold would define success for AutomVoj?",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

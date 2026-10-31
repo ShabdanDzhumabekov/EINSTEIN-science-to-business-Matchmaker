@@ -1,0 +1,186 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0261",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0261",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an uncertainty-aware spatial and actuarial model link incompletely located farm policies to hail exposure and identify potentially underpriced portfolio segments more reliably than municipality-level loading? The first experiment would audit location accuracy and weather resolution, then test whether transferring the researcher’s spatial-extreme and Bayesian pricing methods to hail improves held-out claim-cost prediction and calibration, without assuming daily five-kilometre data can resolve individual fields.",
+    "rationale": [
+      {
+        "text": "The researcher has directly relevant experience in Bayesian credibility-based insurance pricing, providing a methodological basis for estimating heterogeneous policy risks from limited claims experience.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03299",
+            "field": "abstract",
+            "quote": "classic credibility estimators can be embedded in a Bayesian linear model with conjugate normal–inverse-gamma priors.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work on spatial dependence in extreme events is relevant to modelling geographically concentrated hail losses, although the demonstrated application concerns water-network pressure rather than hail.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03298",
+            "field": "abstract",
+            "quote": "A spatial analysis using a max-stable process model reveals a correlation range of approximately 2.1 km",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He contributes probabilistic modelling and uncertainty quantification to agricultural sensor research in the region, offering relevant experience with imperfect environmental observations.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0101",
+            "field": "summary",
+            "quote": "Struhár leads the work package on probabilistic modelling and uncertainty quantification, contributing Gaussian process and Bayesian hierarchical methods tailored to irregular and energy-constrained sampling schedules.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His property-insurance consulting experience covers model specification, data pipelines and regulatory documentation, which are relevant to moving beyond exploratory maps into pricing use.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "industry_experience",
+            "quote": "a sensor-based premium adjustment scheme for commercial fire risk, covering model specification, data pipeline requirements, and regulatory documentation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience includes modular risk-modelling pipelines intended for organisations without dedicated data-science teams.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0100",
+            "field": "summary",
+            "quote": "fitting hierarchical Bayesian risk models suitable for small and medium enterprises that lack dedicated data science teams.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level attribution must account for both coarse weather observations and uncertain policy locations; fine-resolution hail estimates cannot be treated as observed ground truth.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Initial development and validation must respect the limited claims history and portfolio size; spatially and temporally separated evaluation must avoid treating correlated storm losses as independent evidence.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must support automated pricing integration rather than stop at GIS visualisation, with compatibility assessed against the existing Python batch workflow.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and maintenance responsibilities must fit the company’s shared operational staffing rather than presume a dedicated research or deployment team.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data-access planning should accommodate the researcher’s preference for a formal data-sharing agreement before policy and claims records are exchanged.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "notes",
+            "quote": "He prefers collaborations where data-sharing agreements can be established formally; his department has a standard template for this.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The supplied evidence does not establish hail reconstruction or farm geocoding expertise. Transferring methods from pressure extremes, agricultural microclimates and motor pricing requires explicit testing in the first experiment; additional meteorological or geospatial expertise may be needed.",
+      "Daily five-kilometre weather data and settlement-only addresses may not contain enough information for defensible field-level exposure estimates. Without finer observations or parcel locations, only coarser risk estimates may be supportable.",
+      "Three claim years may contain too few independent hailstorms to validate spatial extremes or stable pricing differences, even if there are many individual claims.",
+      "The reported 18% claims excess does not by itself establish exposure mismeasurement as the cause; severity inflation, coverage differences or other portfolio factors could explain some of it.",
+      "Researcher availability for a joint project, company budget and delivery timeline are unknown.",
+      "Deployment could stall despite a useful prototype: the company’s earlier flood-mapping collaboration was completed but has not been integrated into pricing."
+    ],
+    "questions": [
+      "What joint-project time can the researcher commit, and what company budget, delivery timeline and named pricing/IT owners are available?",
+      "Can the company supply parcel boundaries or verified coordinates for insured assets, and how do geo-tagged loss locations relate to settlement-only policy addresses?",
+      "Which hail variables, timestamps, historical coverage and uncertainty information does MeteoVoj provide, and do its licence terms permit research use and derived pricing outputs?",
+      "Are independent radar, hail reports or field observations available to test spatial exposure estimates in the first experiment, and who can provide meteorological and geocoding expertise?",
+      "Can all policy-years, including policies without claims, be linked to coverage, insured value, exposure duration, deductibles, claim dates and claim amounts?",
+      "Which storm/year holdouts, calibration checks and improvements over municipality-level loading would justify proceeding, and what minimum location accuracy is acceptable?",
+      "What data-sharing, privacy, access-control and retention arrangements are required, and what actuarial explainability and regulatory review must precede pricing use?",
+      "Who will own integration and maintenance of the scoring pipeline, and can the earlier flood-mapping project clarify barriers that this project must avoid?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0261",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0261",
+        "version": 1
+      }
+    ]
+  }
+}

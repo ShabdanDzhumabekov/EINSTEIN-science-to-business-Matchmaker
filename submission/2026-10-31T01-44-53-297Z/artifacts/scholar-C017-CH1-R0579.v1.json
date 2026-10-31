@@ -1,0 +1,266 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0579",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0579",
+    "name": "Ljubomir Filipović",
+    "faculty": "Faculty of Agriculture",
+    "department": "Department of Water Management",
+    "fields": [
+      "Soil Science and Land Reclamation",
+      "Agricultural Water Management",
+      "Environmental Engineering",
+      "Agronomy"
+    ],
+    "keywords": [
+      "soil salinisation",
+      "alkalisation",
+      "solonetz reclamation",
+      "gypsum amendment",
+      "reclamation drainage",
+      "heavy clay soils",
+      "Vojvodina",
+      "irrigation management",
+      "salt balance modelling",
+      "soil hydraulic conductivity"
+    ],
+    "openTo": [
+      "joint projects with companies developing soil monitoring sensors or irrigation scheduling software",
+      "contract research on site-specific reclamation planning for agricultural land developers",
+      "consulting for water management authorities on drainage design standards",
+      "equipment access for EM38/EM31 surveys and lysimeter studies",
+      "student internships for BSc and MSc students with field data collection or modelling components"
+    ],
+    "bio": {
+      "recordId": "R0579",
+      "field": "bio",
+      "text": "Ljubomir Filipović completed his BSc and MSc degrees in Soil Science at the Faculty of Agriculture, University of Novi Sad, in 1994 and 1998 respectively, and defended his PhD thesis on solonetz reclamation in the Bačka lowland in 2004 at the same institution. He joined the Department of Water Management as an assistant in 1999 and was promoted to Full Professor in 2015. His group investigates salinisation and alkalisation dynamics in irrigated heavy clay soils of Vojvodina, focusing on reclamation drainage layout optimisation, gypsum amendment dose modelling, and long-term salt balance under furrow and drip irrigation. Teaching responsibilities include Soil Amelioration, Irrigation Engineering, and Land Reclamation for undergraduate and master students. The laboratory operates a time-domain reflectometry array, a suction-cup lysimeter network on a 4-hectare experimental plot near Bečej, and access to XRD and ICP-OES instruments at the Faculty's central analytical unit."
+    },
+    "industryExperience": {
+      "recordId": "R0579",
+      "field": "industry_experience",
+      "text": "Filipović has provided paid technical consulting to two regional agricultural land development companies since 2016, preparing reclamation feasibility reports for a combined 4,800 ha of solonetz land intended for conversion to irrigated arable production. He has also reviewed drainage contractor designs for the Provincial Directorate for Water Management on three occasions."
+    },
+    "notes": {
+      "recordId": "R0579",
+      "field": "notes",
+      "text": "Filipović has strong existing contacts with the Provincial Directorate for Water Management and is particularly interested in partnerships that could link sensor data streams from commercial precision agriculture platforms to his group's modelling workflows. He is cautious about projects requiring more than 20% of working time on administrative tasks and prefers arrangements with clear data-sharing agreements from the outset."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-06703",
+        "kind": "publication",
+        "title": "Spatial variability of exchangeable sodium percentage in solonetz soils of the Bačka lowland: a geostatistical survey",
+        "body": {
+          "recordId": "SYN-PUB-06703",
+          "field": "abstract",
+          "text": "A geostatistical study was conducted across 1,240 ha of Vojvodina solonetz soils to characterise spatial variability of exchangeable sodium percentage (ESP) and electrical conductivity (ECe) at three depth intervals (0–30, 30–60, 60–100 cm). A total of 312 soil cores were collected on a stratified random grid during spring 2008 and autumn 2009. Ordinary kriging with exponential variogram models (range 420–680 m) reproduced ESP patterns with cross-validation RMSE below 3.1 percentage points. Hotspots of ESP > 25% occupied 18% of the surveyed area, concentrated in micro-depressions with restricted drainage. ECe correlated weakly with ESP (r = 0.38) in the upper 30 cm but strongly (r = 0.71) below 60 cm, suggesting leaching of surface horizons by precipitation while subsoil alkalisation persisted. Results provide a baseline map for prioritising reclamation interventions and illustrate that single-depth sampling protocols underestimate subsurface alkalisation extent by 30–40% in this landscape."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06704",
+        "kind": "publication",
+        "title": "Effect of gypsum application rate on saturated hydraulic conductivity of a Vertisol under furrow irrigation in Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-06704",
+          "field": "abstract",
+          "text": "A three-year field experiment (2007–2009) evaluated four gypsum rates (0, 5, 10, and 20 t ha⁻¹) on saturated hydraulic conductivity (Ksat) of a Vertisol near Srbobran. Gypsum was surface-applied and incorporated to 30 cm in spring 2007. Ksat was measured in situ using the Guelph permeameter at 20, 60, and 90 cm depths after each growing season. At the 10 t ha⁻¹ rate, Ksat at 20 cm depth increased from 0.04 to 0.19 m day⁻¹ after three seasons, while the 20 t ha⁻¹ rate produced only marginally higher values (0.22 m day⁻¹), suggesting diminishing returns above 10 t ha⁻¹. Changes at 60 cm and 90 cm depths were smaller and non-significant after the first season. Exchangeable sodium percentage declined from 31% to 14% in the 0–30 cm layer under the optimal rate. These results support using 10 t ha⁻¹ as a practical threshold under current gypsum market prices in Serbia."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06705",
+        "kind": "publication",
+        "title": "Tile drainage performance on alkaline heavy clay: monitoring discharge and ionic composition over four cropping seasons",
+        "body": {
+          "recordId": "SYN-PUB-06705",
+          "field": "abstract",
+          "text": "Continuous discharge monitoring and bi-weekly water sampling were carried out at a 48-ha tile drainage system (drain spacing 15 m, depth 1.2 m) on an alkaline heavy clay near Zrenjanin from 2009 to 2012. Annual drainage volumes ranged from 82 mm (dry 2011) to 241 mm (wet 2010). Na⁺ export was highest in the first season (38 kg ha⁻¹) and declined to 17 kg ha⁻¹ by the fourth, while Ca²⁺ export remained below 8 kg ha⁻¹ throughout, indicating preferential Na removal but limited Ca mobilisation from the subsoil. Soil profile EC measurements showed that leaching was largely confined to the 0–80 cm layer despite drain depth. A simple one-dimensional leaching fraction model overpredicted Na export by 55% in the wet year due to preferential flow through shrinkage cracks. The data suggest that crack-flow pathways must be parameterised separately to improve prediction accuracy for heavy clay reclamation drainage."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06706",
+        "kind": "publication",
+        "title": "Calibration of the SALTMOD model for solonetz reclamation planning under Vojvodina irrigation conditions",
+        "body": {
+          "recordId": "SYN-PUB-06706",
+          "field": "abstract",
+          "text": "The steady-state SALTMOD water and salt balance model was calibrated and validated for two contrasting solonetz sites in Vojvodina (Bečej and Novi Bečej districts) using datasets spanning 1998–2011. Input data included monthly evapotranspiration (FAO-56 method), irrigation volumes from canal intake records, groundwater depth from 24 piezometers, and seasonal soil ECe profiles. After calibration, simulated root-zone ECe matched observed values with RMSE of 0.38 dS m⁻¹ and R² of 0.83 at Bečej and 0.79 at Novi Bečej. Sensitivity analysis identified capillary rise flux as the dominant source of uncertainty, accounting for 41% of output variance. Scenarios for drain spacing reduction from 20 m to 12 m combined with 15 t ha⁻¹ gypsum application predicted root-zone ESP below 15% within eight years. The calibrated parameter sets are made available to support regional reclamation planning by provincial water management authorities."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06707",
+        "kind": "publication",
+        "title": "Monitoring secondary salinisation under drip irrigation in a maize production system on Vojvodina clay",
+        "body": {
+          "recordId": "SYN-PUB-06707",
+          "field": "abstract",
+          "text": "Secondary salinisation risk was assessed in a three-year drip-irrigated maize trial (2013–2015) on a heavy clay at the Rimski Šančevi experimental station. Soil ECe and ESP were measured at 0–20, 20–50, and 50–100 cm depths before planting and after harvest each year. Irrigation water electrical conductivity was 0.9 dS m⁻¹. After three seasons, ECe in the 20–50 cm layer increased by 1.4 dS m⁻¹ relative to the non-irrigated control, while surface accumulation was modest (0.4 dS m⁻¹). Exchangeable sodium percentage did not change significantly in any layer, attributed to moderate sodium adsorption ratio (SAR < 6) in the irrigation source. The observed sub-surface ECe rise coincided with restricted lateral drainage and correlated with wetter-than-average seasons. Findings indicate that current irrigation practice at this site does not induce alkalisation over a three-year horizon but warrants continued ECe monitoring given the low initial soil permeability."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06708",
+        "kind": "publication",
+        "title": "Reclamation drainage design criteria for slotted pipe systems in Vojvodina solonetz: comparison of three hydraulic calculation methods",
+        "body": {
+          "recordId": "SYN-PUB-06708",
+          "field": "abstract",
+          "text": "Three analytical methods for pipe hydraulic design—the Hooghoudt equivalent depth method, the Ernst composite formula, and a numerical finite-element approach implemented in SEEP/W—were compared for 11 solonetz drainage projects in Vojvodina executed between 2000 and 2014. Project reports provided design drain spacing, installed depth, observed water table drawdown, and measured Ksat profiles. The Ernst formula most closely reproduced observed water table drawdown, with a mean absolute error of 0.09 m versus 0.17 m for Hooghoudt and 0.11 m for SEEP/W under dry-weather conditions. Under wet conditions following crack closure, all methods overestimated drainage rate by 25–60% due to clay swelling reducing effective pore volume. Practical guidance is provided for selecting calculation method based on available Ksat data quality and soil shrink-swell characterisation, with specific recommendations for the expansive clays predominant in the Bačka and Banat regions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06709",
+        "kind": "publication",
+        "title": "Long-term changes in soil alkalinity following combined gypsum and organic matter amendments on reclaimed solonetz in the Banat plain",
+        "body": {
+          "recordId": "SYN-PUB-06709",
+          "field": "abstract",
+          "text": "A 15-year monitoring dataset (2001–2015) from a reclaimed solonetz site near Zrenjanin was used to analyse trajectories of pH, ESP, and aggregate stability following three amendment treatments: gypsum alone (10 t ha⁻¹), gypsum combined with green manure (5 t ha⁻¹ dry matter), and untreated control. Soil was sampled every three years at six depths to 120 cm. In the gypsum-only treatment, surface ESP declined from 28% to 11% by year six and stabilised near 14% at year fifteen, suggesting partial re-alkalisation from capillary Na ascent. The combined treatment maintained ESP below 12% throughout and yielded mean aggregate stability (wet sieving, MWD) 40% higher than gypsum alone after year nine. pH in the 60–90 cm layer remained above 9.2 in all treatments, confirming that single surface applications do not reclaim the subsoil alkalinity horizon within a 15-year window. Annual organic carbon inputs from crop residues were identified as the principal factor in sustaining surface-layer improvements."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06710",
+        "kind": "publication",
+        "title": "Gypsum dose optimisation model for alkaline Vertisols: integrating soil ESP, crop tolerance and gypsum price",
+        "body": {
+          "recordId": "SYN-PUB-06710",
+          "field": "abstract",
+          "text": "An Excel-based decision support model was developed to calculate economically optimal gypsum doses for alkaline Vertisol reclamation in Vojvodina. The model couples a three-layer salt balance routine with crop-specific salt tolerance thresholds (from FAO bulletin 29 values updated with local field data for sugar beet, sunflower, and wheat) and current Serbian gypsum market prices. Input data requirements are ESP profile, cation exchange capacity, target crop, irrigation water SAR, and expected yields under reference conditions. Calibration used data from 18 field trials conducted between 1998 and 2016 across Bačka and Banat. For sugar beet, optimal doses ranged from 7.5 to 14 t ha⁻¹ depending on initial ESP (15–35%) and cation exchange capacity (35–55 cmol kg⁻¹). Sensitivity runs showed that a 20% increase in gypsum price shifts the economic optimum downward by 1.2–2.4 t ha⁻¹. The model was validated against three independent trials not used in calibration, reproducing observed yield responses within ±8%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06711",
+        "kind": "publication",
+        "title": "Electromagnetic induction mapping of solonetz areas in the Tamiš–Bega interfluve: comparison with laboratory ECe measurement",
+        "body": {
+          "recordId": "SYN-PUB-06711",
+          "field": "abstract",
+          "text": "EM38 and EM31 electromagnetic induction instruments were used to map apparent soil electrical conductivity (ECa) across 2,300 ha of the Tamiš–Bega interfluve in autumn 2017. A total of 61 calibration points were sampled for laboratory ECe, pH, and clay content to derive pedotransfer functions relating ECa to ECe at two depths. The EM38 vertical dipole configuration correlated best with 0–80 cm ECe (R² = 0.77), while EM31 was more informative below 1 m depth. Predicted ECe maps delineated three salinisation classes covering 8%, 31%, and 61% of the area. Cross-validation showed mean absolute errors of 0.44 dS m⁻¹ in the 0–30 cm layer and 0.61 dS m⁻¹ in the 30–80 cm layer. Temporal repeat surveys in spring and autumn 2018 detected seasonal ECa differences of up to 0.18 S m⁻¹ linked to drainage status. The maps are being used by the provincial water authority to prioritise areas for targeted reclamation funding."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06712",
+        "kind": "publication",
+        "title": "Influence of drain depth and spacing on groundwater salinity dynamics in a Vojvodina solonetz: a lysimeter study",
+        "body": {
+          "recordId": "SYN-PUB-06712",
+          "field": "abstract",
+          "text": "Twelve monolith lysimeters (1.5 m diameter × 1.8 m depth) containing undisturbed solonetz cores from Bačka were equipped with artificial drainage at two depths (0.9 m and 1.2 m) and irrigated over two seasons with water of two SAR values (5 and 12). Drainage effluent and pore water from suction cups at 0.4, 0.8, and 1.3 m were sampled weekly. Shallow drainage (0.9 m) removed 23% more Na⁺ per unit water volume applied than deep drainage in the first season under SAR-5 irrigation. Under SAR-12 irrigation, percolate SAR exceeded 8 in lysimeters with shallow drainage within six weeks, indicating re-sodification of the upper layer. Pore water data showed that the 0.8 m depth acted as a Na accumulation zone regardless of drain depth, attributed to upward capillary flux from the clay substratum during drying periods. These findings support the use of deeper drainage combined with low-SAR water as the minimum viable reclamation strategy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06713",
+        "kind": "publication",
+        "title": "Soil salinisation risk under projected climate change in the Vojvodina region: scenarios for 2050 and 2080",
+        "body": {
+          "recordId": "SYN-PUB-06713",
+          "field": "abstract",
+          "text": "Salt accumulation risk for Vojvodina irrigated soils was assessed under two CMIP6 climate scenarios (SSP2-4.5 and SSP5-8.5) using bias-corrected regional climate model output from the CORDEX-EUR-11 ensemble (six model chains). A one-dimensional unsaturated flow and salt transport model (HYDRUS-1D) was run for three representative soil profiles (solonetz, calcaric Chernozem, and stagnosol) at 24 virtual monitoring sites. Under SSP5-8.5, potential evapotranspiration is projected to increase by 14–18% by 2080 relative to 1990–2020, driving a simulated 28–42% rise in root-zone ECe under current irrigation management. Solonetz soils showed the highest sensitivity due to lower leaching efficiency. Switching from furrow to drip irrigation reduced projected ECe increase by 9–15 percentage points. The results suggest that without adaptation in irrigation scheduling and drainage infrastructure, roughly 65,000 ha of currently borderline alkaline soils in the region may cross the 15% ESP threshold by 2080."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06714",
+        "kind": "publication",
+        "title": "Assessment of phosphogypsum as a substitute for natural gypsum in solonetz reclamation: chemical purity, heavy metal load, and short-term soil response",
+        "body": {
+          "recordId": "SYN-PUB-06714",
+          "field": "abstract",
+          "text": "Phosphogypsum (PG) sourced from a Serbian fertiliser plant was evaluated as an alternative amendment to natural mined gypsum (MG) in a two-year pot experiment with alkaline clay soil. Chemical analysis showed PG contained 82.4% CaSO₄·2H₂O with residual phosphoric acid (0.3%), fluoride (0.8 g kg⁻¹), and trace cadmium (1.1 mg kg⁻¹). Three rates (5, 10, 15 t ha⁻¹ equivalent) of both PG and MG were applied to 25 kg soil-filled containers planted with sunflower. After two seasons, ESP reduction was statistically indistinguishable between PG and MG at matching rates (mean difference 1.4 percentage points, p = 0.18). Soil fluoride levels increased significantly only at 15 t ha⁻¹ PG, reaching 11.2 mg kg⁻¹ extractable F, which remained below Serbian regulatory thresholds. Cadmium accumulation was negligible at all rates. PG appears technically viable for solonetz reclamation, but regulatory approval for agricultural use on food-crop land has not yet been obtained in Serbia as of the study date."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06715",
+        "kind": "publication",
+        "title": "Irrigation water quality index for solonetz-prone soils in the Danube–Tisa–Danube canal system: 2015–2023 trends",
+        "body": {
+          "recordId": "SYN-PUB-06715",
+          "field": "abstract",
+          "text": "Water quality data from 14 sampling stations on the Danube–Tisa–Danube (DTD) canal network were compiled for the period 2015–2023 from monthly monitoring records of the Provincial Directorate for Water Management. Parameters analysed included EC, Na⁺, Ca²⁺, Mg²⁺, HCO₃⁻, Cl⁻, and SAR. A weighted irrigation water quality index (IWQI) was computed following the FAO guidelines approach, adapted with local soil texture weights for heavy clay. Mean annual SAR across stations ranged from 3.8 to 9.4, with highest values recorded in late summer (July–August) when low flows concentrate dissolved solids. Three stations exceeded SAR 8.5 in at least three of eight years, posing a moderate alkalisation hazard for clay soils. Trend analysis using Mann–Kendall tests detected a statistically significant increasing SAR trend (τ = 0.41, p < 0.05) at two stations downstream of intensive irrigation return flow discharge points. These results inform canal management scheduling to reduce peak-season hazard."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06716",
+        "kind": "publication",
+        "title": "Machine learning classification of solonetz reclamation readiness from proximal and remote sensing covariates",
+        "body": {
+          "recordId": "SYN-PUB-06716",
+          "field": "abstract",
+          "text": "Random forest and gradient boosting classifiers were trained to predict whether individual 1-ha parcels in the Bačka lowland met agronomic criteria for immediate reclamation (ESP < 20%, Ksat > 0.05 m day⁻¹, water table depth > 1.2 m) using a combination of Sentinel-2 vegetation indices, EM38-derived ECa maps, and 1:50,000 soil map polygons. A labelled dataset of 810 parcels with full profile measurements assembled between 2010 and 2023 was split 70/30 for training and testing. Random forest achieved an overall accuracy of 79% and F1 score of 0.76 for the reclamation-ready class; gradient boosting reached 81% accuracy and F1 of 0.78. The most informative predictors were ECa at 0.75 m integration depth, autumn NDVI, and soil map unit. A confusion analysis showed that misclassified parcels were disproportionately located at the solonetz–chernozem transition zone. The approach provides a scalable screening tool for provincial land reclamation planning without requiring exhaustive field campaigns."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06717",
+        "kind": "publication",
+        "title": "Impact of inter-annual rainfall variability on rainfed maize water stress in Vojvodina: a 30-year simulation study",
+        "body": {
+          "recordId": "SYN-PUB-06717",
+          "field": "abstract",
+          "text": "Long-term records from four synoptic stations in Vojvodina (1986–2015) were used to drive the AquaCrop model for rainfed maize in order to quantify inter-annual variability in crop water stress. The 30-year simulation showed that water stress during silking (growth stage GS-2) occurred in more than 60% of years at the most southern station (Sombor), compared to 42% at the northern station (Subotica). Mean simulated yield under rainfed conditions ranged from 5.9 t/ha (Sombor, dry years) to 9.4 t/ha (Subotica, wet years). The relationship between the standardised precipitation-evapotranspiration index (SPEI-3 for June–August) and simulated relative yield loss was statistically significant (r = −0.71, p < 0.001), confirming the utility of SPEI as a proxy indicator for irrigation need assessments at the planning level. Results suggest that supplemental irrigation of 60–80 mm applied at silking would reduce yield losses by approximately 35% in dry years."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03051",
+        "kind": "publication",
+        "title": "Projected changes in groundwater recharge across Vojvodina under CMIP6 climate scenarios using a coupled soil–water balance model",
+        "body": {
+          "recordId": "SYN-PUB-03051",
+          "field": "abstract",
+          "text": "Future groundwater recharge in the Vojvodina plain was assessed for the 2041–2060 and 2071–2090 periods using a daily soil water balance model driven by statistically downscaled outputs from five CMIP6 general circulation models under SSP2-4.5 and SSP5-8.5. The model was calibrated and validated against observed water-table hydrographs at 17 monitoring stations operated by the Provincial Hydrogeological Network over 1990–2020. Baseline mean annual recharge across the study domain was estimated at 43 mm/yr (range 22–68 mm/yr) depending on soil texture and land use. Under SSP5-8.5, ensemble-median recharge declined by 28 % (range −12 to −41 %) by 2071–2090, driven primarily by increased summer potential evapotranspiration. Uncertainty in recharge projections was dominated by inter-model spread in summer precipitation rather than by the choice of soil hydraulic parameterisation. Spatial patterns show the most pronounced reductions in the sandy Deliblato area and in the Bačka loess plateau."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1275",
+        "kind": "project",
+        "title": "Reclamation Strategy for Salt-Affected Soils in the Danube–Tisa–Danube Irrigation Zone under Changing Climate",
+        "body": {
+          "recordId": "SYN-PRJ-1275",
+          "field": "summary",
+          "text": "The project aimed to develop integrated reclamation strategies for salt-affected irrigated soils in the cross-border Danube–Tisa–Danube irrigation zone, covering approximately 120,000 ha across southern Hungary and Vojvodina. Activities included joint soil monitoring using standardised protocols, calibration of SALTMOD and HYDRUS-1D models to cross-border conditions, and preparation of a bilingual reclamation planning manual distributed to regional water management authorities. The University of Novi Sad team led field work in the Serbian sector, while the Hungarian partner managed modelling activities. Two pilot reclamation demonstrations were established, one on each side of the border, with matched monitoring equipment for comparative analysis."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1276",
+        "kind": "project",
+        "title": "Sodicity and Alkalinity Dynamics in Vojvodina Heavy Clay Soils: Linking Processes Across Scales for Improved Reclamation Design",
+        "body": {
+          "recordId": "SYN-PRJ-1276",
+          "field": "summary",
+          "text": "SODALKA addressed the mechanistic gap between plot-scale reclamation experiments and field-scale drainage design by combining isotopic tracer studies (²H₂O and ³⁶Cl⁻) with crack network characterisation using X-ray computed tomography on undisturbed soil columns, and a distributed MODFLOW-MT3DMS salt transport model. Twelve experimental plots at the Rimski Šančevi station were instrumented with TDR probes, suction cups, and automated water table recorders over three complete irrigation seasons. The project produced new pedotransfer functions for shrink-swell clay hydraulic properties and revised drainage spacing recommendations for soils with CEC above 40 cmol kg⁻¹, submitted to the national drainage design standard revision committee."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0579",
+            "field": "open_to",
+            "quote": "joint projects with companies developing soil monitoring sensors or irrigation scheduling software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0579",
+            "field": "open_to",
+            "quote": "contract research on site-specific reclamation planning for agricultural land developers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

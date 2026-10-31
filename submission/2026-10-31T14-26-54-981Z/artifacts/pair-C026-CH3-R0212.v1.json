@@ -1,0 +1,215 @@
+{
+  "ref": {
+    "artifactId": "pair-C026-CH3-R0212",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How can site-specific hydrogeological investigation and leachate transport modelling support a defensible four-well monitoring network and containment/treatment proposal for Zelena Petlja’s storage yard? The first investigation would test groundwater-flow and plume hypotheses using surveyed water levels and quality-controlled sampling, alongside bench tests of candidate treatment options on actual yard leachate, rather than assuming that published alluvial-aquifer designs or ammonium-removal results transfer to this COD-rich discharge.",
+    "rationale": [
+      {
+        "text": "Zorić has directly relevant consulting experience in groundwater monitoring design and assessment of interceptor drains at operating regional landfills.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "industry_experience",
+            "quote": "groundwater monitoring programme design and interceptor drain performance assessment at two operational landfills in the Južna Bačka district.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her research connects field monitoring of leachate indicators, including COD, with calibrated groundwater transport modelling.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "Groundwater samples were collected quarterly and analysed for chloride, ammonium, COD, and electrical conductivity.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "A calibrated MT3DMS transport model reproduced observed concentration profiles with a normalised root-mean-square error of 8.4 % for chloride and 14.1 % for ammonium.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her transfer-station research addresses seasonal water-table changes and their implications for containment design, matching a key uncertainty at the yard.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "Water table depths ranged from 0.4 m (spring snowmelt) to 3.1 m below ground (late summer)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "Results indicate that containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She offers a field-tested basis for evaluating passive interceptor drains, while leaving their suitability at this site to investigation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02715",
+            "field": "abstract",
+            "quote": "Chart validation was performed against three field installations in Vojvodina, where measured drain capture efficiencies ranged from 84 to 97 %",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project is explicitly compatible with her stated willingness to undertake site-specific leachate modelling and containment work.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "contract research on site-specific leachate transport modelling and containment design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The work must address installation of four monitoring wells and a remediation submission under the inspectorate’s order. The stated late-June-2024 deadline must be checked before setting a current programme.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Well siting and model assumptions require updated site characterisation; neither plume extent nor seasonal groundwater-flow direction is established by the available historical sketch.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The proposal must address continuing leakage from the yard, not only monitor groundwater or treat an already established plume.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Treatment selection must address the reported COD burden and verify performance on the actual leachate; the supplied passive-barrier evidence concerns ammonium removal, not demonstrated COD treatment.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "our last sampling showed COD at 3,400 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02719",
+            "field": "abstract",
+            "quote": "Permeable reactive barriers (PRBs) using natural zeolite (clinoptilolite) represent an inexpensive passive remediation option for ammonium-laden leachate plumes in alluvial aquifers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "External investigation, analytical capacity, drilling and implementation costs need an agreed funding route; the company has no dedicated research budget and only a basic laboratory.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher capacity must be confirmed for the actual project dates. The only dated availability indication concerns 2025/26 and cannot establish capacity for the stated 2024 deadline.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "notes",
+            "quote": "Zorić is on a reduced teaching load in the 2025/26 academic year due to project finalisation commitments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The task deadline and researcher availability information refer to different periods. Current compliance status and actual availability are unknown, so timely delivery cannot be assumed.",
+      "Local stratigraphy, hydraulic connectivity and seasonal gradients may differ from the published alluvial sites. Initial water-level measurements, borehole logging and sampling must test transferability before adopting drain charts or transport parameters.",
+      "Published zeolite-column results address ammonium, and field-scale longevity was model-predicted. They do not establish COD removal or treatment durability for this yard; initial bench tests may rule out that option.",
+      "A four-well network and an initial sampling round may not resolve a complex plume or seasonal flow reversals. Additional investigation could be necessary beyond the minimum ordered network.",
+      "Funding, drilling access, external laboratory capacity and implementation contractors are unconfirmed; the company’s limited research resources could prevent execution.",
+      "The inspectorate’s detailed acceptance criteria and required professional sign-offs are unknown. Research outputs alone do not guarantee acceptance of the remediation proposal."
+    ],
+    "questions": [
+      "What is the current status of the February order, the four wells and the late-June-2024 deadline? Can the full order, any extensions and regulator correspondence be shared?",
+      "Can Zorić confirm availability, field-team capacity and a delivery schedule for the actual project period?",
+      "What budget and procurement authority are available for drilling, surveying, independent laboratory analyses, modelling and containment works?",
+      "Can the company provide the 1993 sketch, permit documents, yard and utility plans, liner information, sampling records and analytical quality-control documentation?",
+      "What access is available on and beyond the eastern boundary, and are there nearby water abstractions or other sensitive groundwater receptors?",
+      "Which monitoring locations, well specifications, analytical parameters, treatment or discharge limits and professional approvals will the inspectorate require?",
+      "Can an initial field campaign and actual-leachate bench screening be funded immediately, followed by seasonal monitoring and additional wells if the initial conceptual model proves inadequate?",
+      "Who will supply treatment-process engineering and operate any selected system, and what space, power, discharge route and residual-waste disposal arrangements are available?"
+    ],
+    "outcome": "pair",
+    "taskId": "C026-CH3",
+    "researcherId": "R0212",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0212",
+        "version": 1
+      }
+    ]
+  }
+}

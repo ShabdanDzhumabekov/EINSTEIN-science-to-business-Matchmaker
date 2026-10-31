@@ -1,0 +1,283 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0493",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0493",
+    "name": "Darko Pejić",
+    "faculty": "Faculty of Medicine",
+    "department": "Department of Epidemiology",
+    "fields": [
+      "Cancer Epidemiology",
+      "Spatial Statistics and Geographic Information Science",
+      "Public Health and Health Services Research",
+      "Medical Informatics"
+    ],
+    "keywords": [
+      "small-area estimation",
+      "colorectal cancer",
+      "cancer registry",
+      "incomplete geocoding",
+      "Bayesian hierarchical models",
+      "spatial smoothing",
+      "incidence mapping",
+      "Vojvodina",
+      "routine health data",
+      "address imputation"
+    ],
+    "openTo": [
+      "joint projects on spatial health data analysis",
+      "contract research involving cancer registry data linkage or small-area estimation",
+      "consulting on geocoding pipelines and spatial epidemiology methods for health agencies or insurers",
+      "industrial PhD supervision for candidates working on health data analytics or geospatial informatics",
+      "student internships for data science or public health students with R or GIS skills"
+    ],
+    "bio": {
+      "recordId": "R0493",
+      "field": "bio",
+      "text": "Darko Pejić completed his medical degree at the University of Novi Sad Faculty of Medicine in 1998 and received his PhD in epidemiology from the same institution in 2006, with a dissertation on spatial heterogeneity in gastrointestinal cancer rates across Vojvodina municipalities. He joined the Department of Epidemiology as an assistant professor in 2007 and was promoted to full professor in 2019. His research group focuses on small-area estimation methods applied to cancer registry data, particularly addressing incomplete or imprecise address geocoding that limits reliable incidence mapping at sub-municipal level. The group routinely uses registry linkage, Bayesian hierarchical models, and geostatistical smoothing. Pejić teaches epidemiological methods and cancer surveillance at both undergraduate and postgraduate levels. The team works with the Vojvodina Cancer Registry and has access to GIS software infrastructure and a geodatabase server maintained at the Faculty."
+    },
+    "industryExperience": {
+      "recordId": "R0493",
+      "field": "industry_experience",
+      "text": "Pejić provided methodological consulting to a regional health insurance fund in 2019–2020 on the construction of municipality-level utilisation indices from administrative claims data, adapting registry-based spatial smoothing approaches to the fund's incomplete address fields."
+    },
+    "notes": {
+      "recordId": "R0493",
+      "field": "notes",
+      "text": "Pejić is currently supervising two doctoral candidates whose dissertations are expected to be defended in 2026–2027, which limits capacity for large new commitments before mid-2027. He is interested in collaborations that can use or extend the R package produced under GEOCAN-SRB. He has expressed preference for partners who can supply real address or location data for validation work rather than purely synthetic datasets."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-05811",
+        "kind": "publication",
+        "title": "Municipal-level variation in colorectal cancer incidence in Vojvodina, 1995–2003: a descriptive analysis using cancer registry records",
+        "body": {
+          "recordId": "SYN-PUB-05811",
+          "field": "abstract",
+          "text": "This study examined geographic variation in colorectal cancer (CRC) incidence across the 45 municipalities of Vojvodina using records from the Vojvodina Cancer Registry for the period 1995–2003. A total of 6,842 incident cases were included. Age-standardised incidence rates were calculated using the European standard population. Crude mapping revealed substantial differences between municipalities, with rates ranging from 18.4 to 61.7 per 100,000 person-years in men and 14.2 to 44.9 in women. Analysis of registry completeness indicated that approximately 22% of records lacked a full street-level address, relying instead on municipality of residence only. Spatial autocorrelation assessed by Moran's I statistic was statistically significant for men (I = 0.31, p = 0.003) but not for women (I = 0.11, p = 0.18). The findings suggest that observed heterogeneity partly reflects genuine geographic clustering and partly differential case ascertainment across districts. The study provides a baseline description motivating subsequent methodological work on estimation under incomplete spatial information."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04132",
+        "kind": "publication",
+        "title": "Address completeness in the Vojvodina Cancer Registry, 2000–2007: patterns and predictors of missing geocoding information",
+        "body": {
+          "recordId": "SYN-PUB-04132",
+          "field": "abstract",
+          "text": "Reliable spatial analysis of cancer incidence depends on accurate patient address data. This study quantified missing and partial address information in 14,203 colorectal and colon cancer records registered in the Vojvodina Cancer Registry between 2000 and 2007. Records were classified into three tiers: full street address (62.4%), municipality only (28.9%), and settlement only without street (8.7%). Logistic regression identified older age at diagnosis (OR 1.8 per decade, 95% CI 1.6–2.1), rural place of residence (OR 2.4, 95% CI 2.0–2.9), and diagnosis in hospitals outside Novi Sad (OR 1.7, 95% CI 1.5–2.0) as independent predictors of incomplete address. Temporal trends showed modest improvement in completeness over the study period, from 55% full-address in 2000 to 70% in 2007. The results establish the magnitude and structure of the missingness problem and inform the design of statistical approaches that can accommodate hierarchical, partially geocoded registry data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04133",
+        "kind": "publication",
+        "title": "A Bayesian Poisson model with spatially structured random effects for small-area colorectal cancer mapping under partial geocoding",
+        "body": {
+          "recordId": "SYN-PUB-04133",
+          "field": "abstract",
+          "text": "When registry records carry only administrative-unit identifiers for a fraction of cases, naïve area-level rate estimation is biased. This paper presents a Bayesian hierarchical Poisson model that treats the stratum of incompletely geocoded cases as a latent allocation problem. Cases known only to municipality level are redistributed probabilistically to constituent census tracts using population-weighted priors informed by the geocoded fraction. Spatially structured random effects follow a conditional autoregressive (CAR) prior. The model was applied to 3,218 colorectal cancer cases from Vojvodina registered 2003–2008, of which 31% lacked tract-level addresses. Posterior median incidence rate ratios across 312 census tracts ranged from 0.62 to 1.89 relative to the regional mean. Compared to a complete-case analysis excluding partially geocoded records, the full model produced narrower credible intervals and smoothed out artefactual high-rate areas near large hospitals. Model fit was assessed by the deviance information criterion and posterior predictive checks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05812",
+        "kind": "publication",
+        "title": "Comparative performance of deterministic and probabilistic geocoding strategies for Serbian residential address data",
+        "body": {
+          "recordId": "SYN-PUB-05812",
+          "field": "abstract",
+          "text": "Geocoding of patient addresses in Serbia is complicated by inconsistent street naming conventions, transliteration variants, and the absence of a comprehensive national address gazetteer. This study compared four geocoding strategies applied to 5,012 colorectal cancer patient addresses drawn from the Vojvodina Cancer Registry: (1) exact string matching against a municipal gazetteer, (2) phonetic normalisation with fuzzy matching, (3) reverse-geocoding from postal codes, and (4) a probabilistic ensemble combining all three. Match rates at the street-segment level were 54%, 66%, 59%, and 72%, respectively. The ensemble approach also produced positional accuracy estimates; median offset from field-verified coordinates was 148 m for urban addresses and 540 m for rural addresses. Unmatched records fell disproportionately in municipalities with older housing stock and pre-1990 address formats. These results provide practical guidance for registry data managers and supply match-rate parameters used in subsequent estimation models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05813",
+        "kind": "publication",
+        "title": "Small-area estimation of colorectal cancer incidence: a methodological review with emphasis on incomplete spatial data",
+        "body": {
+          "recordId": "SYN-PUB-05813",
+          "field": "abstract",
+          "text": "Reliable small-area estimates of cancer incidence are needed to allocate screening resources and identify high-risk communities, yet many European registries — particularly in Central and Eastern Europe — operate with substantial proportions of records geocoded only to administrative units larger than the area of interest. This chapter reviews the statistical literature on small-area estimation as applied to cancer registries, covering empirical Bayes and fully Bayesian smoothing methods, multiple imputation of spatial location, and composite estimators that combine survey and registry information. Special attention is given to the assumptions underlying each approach and their sensitivity to the pattern of missingness in address data. An illustrative comparison uses simulated data with realistic missingness fractions ranging from 10% to 50%. The chapter concludes with practical recommendations for registries operating in data-sparse environments and identifies open methodological problems, including the handling of population denominator uncertainty at small-area level."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04134",
+        "kind": "publication",
+        "title": "Temporal trends in colorectal cancer incidence in Vojvodina municipalities, 2000–2014, estimated by a spatio-temporal Bayesian model",
+        "body": {
+          "recordId": "SYN-PUB-04134",
+          "field": "abstract",
+          "text": "This study extended earlier cross-sectional small-area models to a spatio-temporal framework to estimate trends in colorectal cancer incidence across Vojvodina municipalities over a fifteen-year period. A total of 21,340 incident cases were obtained from the Vojvodina Cancer Registry for 2000–2014. A Bayesian hierarchical model with separable spatial and temporal random effects and a type IV interaction term was fitted in R-INLA. The proportion of records with incomplete geocoding averaged 27% over the period and was handled by the probabilistic reallocation approach developed in prior work. Male incidence increased at an average posterior rate of 1.4% per year (95% credible interval 0.9–1.8%), while female rates were stable. Three northern municipalities showed significantly increasing trends independent of age structure shifts. Results were robust to alternative prior specifications. The analysis demonstrates that spatio-temporal smoothing can recover meaningful trend signals even when registry completeness varies across both space and time."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05814",
+        "kind": "publication",
+        "title": "Sensitivity of small-area colorectal cancer rate estimates to the choice of spatial scale: census tract versus settlement level in Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-05814",
+          "field": "abstract",
+          "text": "Small-area health statistics are sensitive to the modifiable areal unit problem (MAUP): estimates at one geographic scale may differ substantially from those at another, complicating policy use. This study examined how CRC incidence estimates from the same registry dataset (Vojvodina, 2005–2014, n = 14,820) changed when the analysis unit was switched between census tracts (n = 312) and administrative settlements (n = 467). Bayesian CAR models were fitted separately at each scale and posterior medians were compared after areal interpolation. Correlation between scale-specific estimates was 0.74 for urban areas and 0.52 for rural areas, indicating meaningful scale dependence in sparsely populated zones. Variance components attributable to structured spatial effects were larger at settlement level. The paper quantifies the practical impact of scale choice and recommends census-tract level as a default for Vojvodina given the alignment with population denominator data from the Statistical Office of the Republic of Serbia."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05098",
+        "kind": "publication",
+        "title": "Using auxiliary covariates to improve small-area colorectal cancer estimates when registry geocoding is incomplete: a simulation study",
+        "body": {
+          "recordId": "SYN-PUB-05098",
+          "field": "abstract",
+          "text": "When address geocoding is incomplete, auxiliary area-level covariates — such as population density, deprivation index, and distance to the nearest gastroenterology unit — can improve small-area estimates by informing both the spatial random effects and the missingness mechanism. This simulation study generated 1,000 synthetic cancer registry datasets mimicking the Vojvodina registry structure, with missingness fractions of 15%, 30%, and 45% and three missingness mechanisms (MCAR, MAR, MNAR). Five models were compared: a null CAR model, a CAR model with covariates, a model with covariate-informed imputation, a full-data oracle model, and a complete-case model. Incorporating covariates reduced root mean squared error of tract-level estimates by 12–18% under MAR and had negligible effect under MNAR. The deprivation index was the most informative single covariate. Results support routine inclusion of socioeconomic area-level covariates in registry-based small-area models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05815",
+        "kind": "publication",
+        "title": "Concordance between colorectal cancer incidence estimates from the Vojvodina registry and hospital discharge data: implications for registry completeness assessment",
+        "body": {
+          "recordId": "SYN-PUB-05815",
+          "field": "abstract",
+          "text": "Independent validation of cancer registry completeness is rarely straightforward in settings without multiple high-quality data sources. This study used hospital discharge records from the Clinical Centre of Vojvodina (2010–2018) and the Vojvodina Cancer Registry over the same period to assess concordance and identify gaps. Probabilistic record linkage was performed using name, date of birth, sex, and municipality of residence. Of 9,247 discharge records with a primary CRC diagnosis, 87.3% could be linked to a registry record. Non-linked cases were more often rural residents and older women. Registry-to-discharge ratio varied by municipality from 0.74 to 1.12, with ratios below 0.85 concentrated in three southern municipalities. These results indicate that registry underreporting is geographically patterned, which, if unaddressed, would bias small-area incidence estimates in a spatially correlated manner. The study proposes a completeness correction factor for use in subsequent estimation models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05816",
+        "kind": "publication",
+        "title": "Cross-border small-area cancer incidence estimation in the Hungary–Serbia border region using jointly modelled registry data",
+        "body": {
+          "recordId": "SYN-PUB-05816",
+          "field": "abstract",
+          "text": "Administrative borders interrupt spatial continuity of cancer risk surfaces, making cross-border incidence mapping methodologically challenging. This study jointly modelled colorectal cancer incidence data from the Vojvodina Cancer Registry (Serbia) and the South Transdanubia Cancer Registry (Hungary) for the period 2012–2019, covering 58 administrative units on the Serbian side and 44 on the Hungarian side. A shared CAR model on a unified adjacency graph that spans the border was compared to two country-specific models. The joint model produced lower DIC and revealed a continuous north–south gradient that was obscured when each country's registry was modelled alone. Geocoding completeness differed substantially between registries (74% full-address in Hungary versus 63% in Serbia), and the reallocation prior was adapted to each system's address structure. Cross-border areas showed moderately elevated posterior incidence rate ratios (median 1.22, 95% CrI 1.07–1.41) relative to the pooled mean."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05817",
+        "kind": "publication",
+        "title": "A multiple imputation framework for registry address data with hierarchical geographic uncertainty",
+        "body": {
+          "recordId": "SYN-PUB-05817",
+          "field": "abstract",
+          "text": "Most multiple imputation (MI) procedures assume that the variable to be imputed is continuous or unordered categorical. Geographic location, however, has a hierarchical structure: a missing street address is known to lie within a settlement, which lies within a municipality. Ignoring this hierarchy in MI leads to implausible imputations. This paper develops a sequential MI procedure that first draws a settlement conditional on municipality using population-weighted multinomial sampling, then draws a street segment within the settlement using kernel density estimates from geocoded cases in the same municipality–year–sex stratum. The procedure was implemented in R and validated on the Vojvodina CRC registry (2008–2018, n = 18,032; 29% incompletely geocoded). Compared to single-imputation alternatives, the MI approach produced correctly calibrated confidence intervals for tract-level rate estimates and was robust to deviations from the assumed spatial density model. Code is provided as a supplementary R package."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05819",
+        "kind": "publication",
+        "title": "Probabilistic reallocation versus spatial interpolation for incomplete registry geocoding: a head-to-head comparison using leave-one-out validation",
+        "body": {
+          "recordId": "SYN-PUB-05819",
+          "field": "abstract",
+          "text": "Two broad families of methods address incomplete geocoding in registry-based small-area estimation: probabilistic reallocation, which assigns ungeocoded cases to sub-areas using prior distributions, and spatial interpolation, which smooths rate surfaces using neighbouring area information without explicit case relocation. This paper compares four specific implementations — weighted probabilistic reallocation, areal interpolation, kriging of standardised rates, and Bayesian CAR smoothing — using leave-one-out cross-validation on Vojvodina CRC data (2010–2022, n = 22,517). A random 30% of geocoded cases were masked to simulate the incomplete-geocoding scenario. Predictive performance was evaluated by mean absolute error and interval coverage at tract level. Bayesian CAR smoothing performed best overall (MAE 3.1 per 100,000), followed by weighted probabilistic reallocation (MAE 3.4). Kriging performed worst in sparsely populated rural tracts. Results provide a structured comparison to guide method selection by registry analysts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04135",
+        "kind": "publication",
+        "title": "Integrating opportunistic screening participation data into small-area colorectal cancer incidence models: a feasibility analysis",
+        "body": {
+          "recordId": "SYN-PUB-04135",
+          "field": "abstract",
+          "text": "Serbia launched an organised national colorectal cancer screening programme in 2013, but participation rates vary markedly across municipalities and have been recorded at programme level since 2015. This preprint explores whether incorporating municipality-level faecal immunochemical test (FIT) participation rates as a time-varying covariate improves small-area CRC incidence estimates. Using Vojvodina Cancer Registry data for 2015–2023 and programme participation data supplied by the Institute of Public Health of Serbia, a spatio-temporal Bayesian model with and without the participation covariate was fitted for 45 municipalities. Inclusion of participation rates improved DIC by 8.4 points and shifted posterior incidence estimates upward in high-participation municipalities, consistent with detection of prevalent undiagnosed cases. The analysis is limited by municipality-level aggregation of participation data; finer-resolution linkage is not yet available. Results suggest that screening uptake data should be incorporated in future registry-based models as this information becomes available at smaller geographic scales."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05097",
+        "kind": "publication",
+        "title": "Detection of spatiotemporal clusters of tick-borne encephalitis using SaTScan: Vojvodina 2005–2016",
+        "body": {
+          "recordId": "SYN-PUB-05097",
+          "field": "abstract",
+          "text": "A retrospective space-time permutation scan statistic (SaTScan v9.4) was applied to 1,102 confirmed TBE cases reported in Vojvodina from 2005 to 2016 to identify statistically significant space-time clusters. Cases were aggregated by municipality of residence and month of symptom onset. Three primary clusters were identified: the most likely cluster centred on Sremska Mitrovica (RR = 4.7, p < 0.001, 2007–2009), a secondary cluster in the Bečej-Zrenjanin corridor (RR = 2.9, p = 0.003, 2013–2015), and a smaller late-period cluster near Sombor (RR = 3.2, p = 0.012, 2014–2016). The emergence of the Bečej-Zrenjanin cluster coincides with documented changes in drainage management and partial reforestation of canal embankments in that period. Results are visualised as risk-ratio maps overlaid on municipal boundaries and discussed in relation to concurrent land-management records from the Provincial Directorate for Water Management."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05820",
+        "kind": "publication",
+        "title": "Glycaemic trajectory patterns and incident hypertension in a multigenerational Vojvodinian cohort: a joint modelling approach",
+        "body": {
+          "recordId": "SYN-PUB-05820",
+          "field": "abstract",
+          "text": "We applied joint group-based trajectory modelling to fasting glucose measurements and incident hypertension events in 791 non-diabetic participants from the Vojvodinian household registry followed for 18 years. Three fasting glucose trajectory groups were identified: stable low-normal (44%), gradually rising (38%), and accelerated rise crossing the impaired fasting glucose threshold (18%). The accelerated-rise group had a hazard ratio of 2.31 (95% CI: 1.62–3.29) for incident hypertension compared with the stable group, after adjustment for BMI trajectory class, LDL, sex, age, and smoking. Co-occurrence of the accelerated glucose rise and late-onset high-BMI trajectory substantially increased absolute hypertension risk. These findings contribute to understanding the sequence in which cardiometabolic risk factors accumulate in an ageing, economically transitioning community, and suggest that fasting glucose surveillance may be a useful early signal for cardiovascular risk escalation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04610",
+        "kind": "publication",
+        "title": "Dietary patterns, nitrate intake, and gastric cancer risk in a Vojvodina case-control study: preliminary findings",
+        "body": {
+          "recordId": "SYN-PUB-04610",
+          "field": "abstract",
+          "text": "We present preliminary findings from an ongoing hospital-based case-control study of gastric cancer in Vojvodina, with 214 incident cases recruited from the Oncology Institute of Vojvodina and 428 frequency-matched controls recruited from surgical wards of the same hospital between 2018 and 2021. Dietary exposure was assessed retrospectively using a validated food frequency questionnaire adapted to Vojvodina food culture, with nitrate values assigned from our regional food composition database. Conditional logistic regression adjusting for age, sex, H. pylori status, smoking, alcohol, and socioeconomic score yielded an odds ratio of 0.91 (95% CI: 0.67–1.23) per 50 mg/day increment in vegetable nitrate intake, indicating no significant association. A traditional Vojvodina dietary pattern characterised by high consumption of smoked meats, lard, and pickled vegetables was associated with elevated gastric cancer risk (OR 2.14, 95% CI: 1.44–3.18). Recruitment is ongoing with a target of 400 cases; final analysis is expected in 2025."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04612",
+        "kind": "publication",
+        "title": "Nitrate concentrations in conventionally and organically grown vegetables from certified farms in Vojvodina: a comparative survey, 2021–2022",
+        "body": {
+          "recordId": "SYN-PUB-04612",
+          "field": "abstract",
+          "text": "Consumer interest in organic produce raises questions about whether organic farming reduces dietary nitrate exposure. We compared nitrate concentrations in five common vegetables (spinach, lettuce, carrot, kohlrabi, and beetroot) sampled from 9 certified organic farms and 15 conventional farms across Vojvodina during the 2021 and 2022 growing seasons. A total of 520 samples were analysed by ion chromatography. Mean nitrate concentrations were significantly lower in organically grown spinach (2,140 vs. 3,280 mg/kg, p < 0.001) and lettuce (1,560 vs. 2,310 mg/kg, p = 0.002), but did not differ significantly for carrots, kohlrabi, or beetroot. Mixed-effects models accounting for municipality and season confirmed farming system as a significant predictor for leafy species only. Given that leafy vegetables dominate population nitrate intake in Vojvodina, a shift toward organic leafy vegetable consumption could reduce estimated mean daily intake by approximately 15–20%, based on current consumption patterns."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1447",
+        "kind": "project",
+        "title": "Improving the Spatial Precision of Cancer Incidence Estimates in Serbia Through Registry Geocoding Enhancement and Bayesian Modelling",
+        "body": {
+          "recordId": "SYN-PRJ-1447",
+          "field": "summary",
+          "text": "The project addressed the systematic gap between the geographic resolution of Serbian cancer registry records and the spatial precision required for evidence-based cancer control planning. Core activities included developing and validating probabilistic address imputation tools tailored to Serbian address formats, constructing a census-tract-level population denominator database for Vojvodina using 2011 and 2022 census microdata, and fitting spatio-temporal Bayesian models to colorectal and gastric cancer registry data. A secondary aim was to produce open-access incidence maps at census-tract level for Vojvodina for the period 2010–2020. The project trained two doctoral students and produced an R package for hierarchical geographic imputation. Partners contributed registry access, GIS infrastructure, and statistical expertise."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1448",
+        "kind": "project",
+        "title": "Cross-Border Cancer Incidence Mapping in the Hungary–Serbia Borderland Using Jointly Modelled Registry Data",
+        "body": {
+          "recordId": "SYN-PRJ-1448",
+          "field": "summary",
+          "text": "CROSSMAP brought together cancer registry holders and spatial statisticians from Hungary and Serbia to produce the first jointly modelled colorectal cancer incidence maps covering contiguous administrative units on both sides of the national border. The Novi Sad team led the work package on data harmonisation and model development, adapting a shared conditional autoregressive spatial model to a combined adjacency graph spanning both country's administrative geometries. Outputs included harmonised incidence maps, a joint methodological report submitted to both health ministries, and a training workshop for registry staff on cross-border data sharing under GDPR-equivalent protections. The project also produced publicly accessible summary statistics at NUTS-3 equivalent level for the border region."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates working on health data analytics or geospatial informatics",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "open_to",
+            "quote": "joint projects on spatial health data analysis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0493",
+            "field": "open_to",
+            "quote": "contract research involving cancer registry data linkage or small-area estimation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

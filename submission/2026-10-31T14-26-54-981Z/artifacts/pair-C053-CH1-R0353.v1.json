@@ -1,0 +1,210 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0353",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0353",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What explains the increase in manganese between AquaCikl’s greywater inlet and coagulation outlet, and which retrofit-compatible operating change could address manganese and iron non-compliance? The first experiment would combine flow- and residence-time-matched stage sampling, reagent/media release controls, and redox/speciation measurements with jar tests on actual greywater using the installed coagulants, testing whether release, redox cycling, or inadequate capture explains the observations and whether published treatment mechanisms transfer to this matrix.",
+    "rationale": [
+      {
+        "text": "Žigić’s research directly addresses iron and manganese speciation and redox transformations, providing a mechanistic basis for investigating holding-tank cycling rather than assuming coagulant under-dosing.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "bio",
+            "quote": "Her research group focuses on speciation analysis of transition metals—primarily iron, manganese, copper, and chromium—in aqueous systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0353",
+            "field": "bio",
+            "quote": "with emphasis on redox transformations under varying pH and dissolved oxygen conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experimental experience with simultaneous iron–manganese removal in continuous-flow coagulation, relevant to testing interactions between the two compliance problems, although not yet validated for this greywater.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04345",
+            "field": "abstract",
+            "quote": "A pilot-scale continuous-flow unit (30 L/h) was operated over fourteen weeks to examine the simultaneous removal of iron and manganese from synthetic water",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04345",
+            "field": "abstract",
+            "quote": "At low Fe/Mn ratios (1:1), competition for coagulant capacity reduced Fe removal by 12 percentage points.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her manganese jar-test work provides a basis for separating oxidation limitations from coagulation limitations, rather than repeating dose increases alone.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Pre-oxidation with KMnO₄ at stoichiometric doses converted Mn(II) to colloidal MnO₂ prior to coagulation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04337",
+            "field": "abstract",
+            "quote": "Zeta potential shifted from −22 mV at under-dosing to near-zero at optimal conditions, consistent with charge neutralisation as the dominant destabilisation mechanism.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience coordinating field sampling and laboratory speciation with inter-laboratory quality checks, useful for establishing whether the apparent process-stage manganese increase is real.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0345",
+            "field": "summary",
+            "quote": "coordinating field sampling and laboratory speciation analysis at Serbian monitoring stations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0345",
+            "field": "summary",
+            "quote": "Joint calibration exercises ensured inter-laboratory comparability; z-scores were within ±2 for all analytes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Evaluate any proposed change against both company-reported discharge limits, not manganese removal alone; confirm the applicable compliance sampling and analytical definitions before testing.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Fit diagnosis, field testing, and implementation planning within four months of company staffing, leaving time before the five-month reinspection.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Prioritise a defensible root cause and an operating or minor retrofit change compatible with existing installations, rather than a major equipment replacement.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Resolve the inlet–outlet manganese discrepancy with comparable stage samples and a flow-aware mass balance before selecting a removal intervention; use the available stage access and three field sites.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "with access to three operating installations for field testing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Agree the Faculty laboratory’s analytical role and arrange ICP-OES access through the university service-centre agreement; laboratory participation is the researcher’s stated preference, not evidence of reserved project capacity.",
+        "sources": [
+          {
+            "recordId": "R0353",
+            "field": "notes",
+            "quote": "a preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0353",
+            "field": "notes",
+            "quote": "The department's ICP-OES instrument is available for contract analytical work through the university's service centre agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The closest manganese coagulation studies used synthetic water, pre-oxidation, and either alum or polyaluminium chloride. Industrial greywater and AquaCikl’s ferric-sulphate operation are transfer gaps; the first real-matrix tests must assess these differences rather than adopt published doses or removal efficiencies.",
+      "External confirmation supports the reported outlet concentration but does not establish that inlet and outlet samples represent the same hydraulic parcel, metal fraction, or operating conditions. An apparent concentration increase may not demonstrate internal manganese release.",
+      "Filter-media release and holding-tank redox cycling remain unconfirmed hypotheses. Reagent inputs, accumulated solids, recycle streams, and upstream variability could complicate attribution.",
+      "Researcher availability and laboratory turnaround are unknown. Open participation does not establish capacity to meet the four-month project window.",
+      "The project budget, permissible shutdowns, and allowable chemical or control changes are unknown; these could prevent testing or implementation even if a mechanism is identified.",
+      "Current iron concentrations and the precise compliance sampling basis are missing, so a manganese-focused improvement could leave iron non-compliance unresolved."
+    ],
+    "questions": [
+      "Can Žigić and the Faculty laboratory commit to the next four months, and what staffing, analytical turnaround, and service-centre costs would apply?",
+      "What are the current iron results, applicable permit requirements, total-versus-dissolved definitions, sampling locations, and accredited methods for both metals?",
+      "Can AquaCikl provide process diagrams, flows, recycle and backwash routes, residence times, dosing logs, and time-matched inlet/outlet results for all three sites?",
+      "Which coagulant products and batches are used at each affected site, and can unused reagents, filter media, tank deposits, and sludge be sampled for release controls?",
+      "What preservation, filtration, digestion, detection limits, and quality controls were used for inlet and outlet analyses, and can paired split samples be analysed by the Faculty and accredited laboratory?",
+      "What are the greywater’s pH, dissolved oxygen, redox potential, organic load, alkalinity, temperature, and cleaning-cycle variability, and can these be logged during the first sampling campaign?",
+      "What budget, operational access, shutdown allowance, and approvals are available for bench tests and a controlled field trial, and which changes count as acceptable minor retrofits?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0353",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0353",
+        "version": 1
+      }
+    ]
+  }
+}

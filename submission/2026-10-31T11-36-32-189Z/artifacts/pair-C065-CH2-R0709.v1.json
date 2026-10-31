@@ -1,0 +1,211 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0709",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0709",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a lightweight content-based or hybrid product-page recommender outperform best-seller sorting for one Harmat client with only 500–2,000 transactions, and under what conditions would cross-client transfer help rather than harm? The first experiment would compare best-seller, category-based, content-based and simple hybrid baselines using chronological holdouts, testing recommendation relevance and coverage before considering transfer from any legally available, compatible source.",
+    "rationale": [
+      {
+        "text": "Prodanović has directly studied recommendation under population shift, providing relevant expertise for assessing whether information from other stores could help rather than simply pooling their transactions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07933",
+            "field": "abstract",
+            "quote": "We study unsupervised domain adaptation for GRU-based session encoders",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07933",
+            "field": "abstract",
+            "quote": "We conduct ablations separating the contributions of the encoder adversarial loss and a category-level alignment auxiliary objective.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work addresses differences between product catalogues and investigates category embeddings as a bridge, relevant to evaluating transfer between heterogeneous client stores.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07941",
+            "field": "abstract",
+            "quote": "Retail datasets from different markets differ not only in user behaviour but also in the item catalogue, making direct feature-level comparison impossible.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07941",
+            "field": "abstract",
+            "quote": "catalogue-embedding alignment—using pre-trained product category embeddings as a bridge—degrades most gracefully",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She can contribute evaluation design that guards against temporal leakage and misleading transfer gains, important when a small dataset leaves little room for independent validation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07934",
+            "field": "abstract",
+            "quote": "including temporal leakage across domain boundaries, conflation of domain shift with concept drift",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07934",
+            "field": "abstract",
+            "quote": "For each pitfall we propose a concrete corrective protocol.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has practical retail prediction consulting experience, including evaluation, calibration and decisions about retraining.",
+        "sources": [
+          {
+            "recordId": "R0709",
+            "field": "industry_experience",
+            "quote": "on the evaluation and calibration of their in-house next-basket prediction system, advising specifically on retraining triggers and population segmentation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The experiment must work within the existing sparse transaction history rather than depend on collecting a substantially larger dataset, and must compare against best-seller sorting.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be covered by a data-sharing agreement and remain within the permitted use of anonymised transaction and catalogue records; access does not itself establish permission for cross-client pooling.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope should remain a one-client prototype with limited integration demands, matching the company's allocation of roughly one developer-day per week.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Widget integration must account for the company's client-VPS deployment environment, and user-facing strings must follow its three-language review process; specific runtime resources remain to be agreed.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Research compute cannot be treated as dedicated or unlimited; any GPU-heavy extension must account for the group's shared cluster capacity.",
+        "sources": [
+          {
+            "recordId": "R0709",
+            "field": "notes",
+            "quote": "Her group's GPU cluster capacity is currently shared with two other research groups",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0709",
+            "field": "notes",
+            "quote": "may be a bottleneck for very large-scale experiments without additional infrastructure support from a partner.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The researcher's recommendation studies use much larger session or transaction datasets. Their results do not establish effectiveness with 500–2,000 orders; the first experiment must test performance in this actual low-data regime before adopting complex adaptation.",
+      "Session-based next-item and next-basket prediction differ from recommendations on a product page. Available order logs may lack browsing sessions or stable customer identifiers; the first experiment must establish what prediction target the data genuinely support.",
+      "Product-description modelling and multilingual content recommendations are not directly validated by the supplied research evidence. The first content-based baseline must test description completeness, language handling and category consistency.",
+      "Cross-client transfer could cause negative transfer when assortments and purchasing behaviour differ. Compatible source data and permission to reuse them are not established; transfer may need to be excluded entirely.",
+      "Low traffic may make a conversion-based A/B test inconclusive within an affordable period. Offline improvements would not establish commercial benefit.",
+      "The researcher's availability and the company's cash budget, deadline, VPS resources and acceptable latency are unknown. Shared compute and limited developer time could delay delivery."
+    ],
+    "questions": [
+      "Can Prodanović confirm availability, a named delivery contact and an achievable schedule for a scoped joint project?",
+      "Which client will host the prototype, and what cash budget, delivery deadline and maintenance ownership can Harmat commit?",
+      "Do records include timestamps, line items, quantities, stable anonymised customer identifiers, impressions or browsing sessions? How many products and repeat purchases are represented?",
+      "How complete are descriptions, categories and attributes, and which languages appear in the selected catalogue? Are historical catalogue and stock states available for leakage-safe evaluation?",
+      "What recommendation behaviour should the widget prioritise—substitutes, complements or discovery—and what improvement over best-sellers would be commercially meaningful?",
+      "Can the previous A/B-test design and results be reviewed, and what traffic and instrumentation are available for a prospective test?",
+      "Does the data-sharing agreement permit cross-client model training or use of external source models and datasets, and what retention, access and deletion rules apply?",
+      "What VPS memory, CPU, latency and integration limits apply, and should recommendations be precomputed rather than generated on request?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0709",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0709",
+        "version": 1
+      }
+    ]
+  }
+}

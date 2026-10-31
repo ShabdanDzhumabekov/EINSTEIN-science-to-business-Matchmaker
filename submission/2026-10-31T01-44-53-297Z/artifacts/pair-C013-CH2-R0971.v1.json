@@ -1,0 +1,117 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0971",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0971",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a reproducible geospatial pipeline link settlement-level farm policy locations to field-level hail intensity from the 5 km MeteoVoj grid, and use the matched exposure to identify portfolio segments where hail loss is underpriced? The first experiment would test that link against the available geo-tagged claims before any pricing use.",
+    "rationale": [
+      {
+        "text": "Đorđević's core research is integrating heterogeneous geospatial datasets and harmonising spatial databases, which matches the need to join policy, weather-grid and claims layers.",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "bio",
+            "quote": "integrating heterogeneous geospatial datasets from cadastral, topographic, and utility sources",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0971",
+            "field": "bio",
+            "quote": "spatial database harmonisation under national and European standards",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She works on coordinate reference system transformations and transformation provenance, which is directly relevant to aligning MeteoVoj grids with policy locations and auditing every spatial transformation.",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "bio",
+            "quote": "coordinate reference system transformations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10174",
+            "field": "abstract",
+            "quote": "tracks, for each geometry or geometry collection, the source CRS, target CRS, transformation method, parameter set version, and operator identity.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has operational experience moving a municipal network GIS to PostGIS and her group routinely uses QGIS, PostGIS and FME, matching the company's QGIS/PostgreSQL spatial stack.",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "industry_experience",
+            "quote": "supporting the migration of their network GIS from a proprietary format to a PostGIS-based system",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0971",
+            "field": "bio",
+            "quote": "The group regularly uses QGIS, PostGIS, FME Workbench, and ArcGIS Pro",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has led a cross-border data-quality and transformation work package, giving her direct experience of quality assurance for multi-source spatial data integration.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0468",
+            "field": "summary",
+            "quote": "Katarina Đorđević led the work package on data quality assessment and transformation infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "A 5 km daily grid may not resolve narrow, fast-moving hail swaths, so apparent field-level exposure may be an artifact of grid resolution.",
+      "Settlement-level addresses may make field-level assignment noisy or impossible for a material share of the portfolio, which could weaken any pricing signal.",
+      "Transfer gap: the provided record shows flood hazard mapping, not hail intensity mapping; field-level hail inference is the first thing to test.",
+      "A prior spatial-risk prototype with a Novi Sad faculty was completed but not integrated into pricing, showing an adoption risk for this work too.",
+      "The company's pricing and IT staff are split between operations and new build, so integration ownership and maintenance capacity are not assured.",
+      "Limited availability before mid-2026 could delay a joint project or restrict it to a small consulting scope."
+    ],
+    "questions": [
+      "Which policy-location fields exist for the 1,200 farm policies (settlement name, address text, parcel identifier, coordinates), and can they be shared under data-protection rules?",
+      "What exactly does MeteoVoj supply (hail intensity variable, radar or station basis, daily grid definition), and can historical grids plus independent validation data be provided?",
+      "What is the pricing-model interface and what held-out test would count as a credible improvement in identifying underpriced portfolio segments?",
+      "Is the expected output a research prototype or a production pipeline, and who on the pricing or IT team owns integration and maintenance?",
+      "Can Katarina Đorđević confirm her availability and preferred scope, especially whether a short contract before mid-2026 or a later start is intended?",
+      "Are there regulatory, explainability or rating-file constraints on using spatial hail covariates in the pricing model?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0971",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0971",
+        "version": 1
+      }
+    ]
+  }
+}

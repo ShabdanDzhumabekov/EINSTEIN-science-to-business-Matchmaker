@@ -1,0 +1,310 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R1008",
+    "name": "Krisztina Kiss",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Industrial cybersecurity",
+      "Network traffic analysis",
+      "Machine learning and statistical modelling",
+      "Industrial control systems"
+    ],
+    "keywords": [
+      "anomaly detection",
+      "one-class classification",
+      "industrial control systems",
+      "SCADA security",
+      "statistical baseline modelling",
+      "Modbus",
+      "DNP3",
+      "unsupervised learning",
+      "network intrusion detection",
+      "protocol traffic analysis"
+    ],
+    "openTo": [
+      "joint projects with companies deploying ICS monitoring solutions",
+      "contract research on protocol traffic analysis and anomaly detection deployment",
+      "industrial PhD supervision for candidates from companies in automation and critical infrastructure",
+      "student internships on ICS testbed experiments and dataset collection",
+      "consulting on detector calibration, evaluation methodology, and deployment architecture for industrial networks",
+      "access to ICS testbed and long-term traffic capture infrastructure for collaborative experiments"
+    ],
+    "bio": {
+      "recordId": "R1008",
+      "field": "bio",
+      "text": "Krisztina Kiss received her Dipl.Ing. degree in computer engineering from the University of Novi Sad in 2001 and her PhD in electrical and computer engineering from the same institution in 2008, with a dissertation on statistical traffic profiling in industrial Ethernet networks. She joined the Department of Computing and Control Engineering as an assistant professor in 2009 and was promoted to full professor in 2020. Her research group focuses on unsupervised anomaly detection and one-class classification for industrial control system protocol traffic, using statistical baseline modelling, kernel methods, and lightweight online learning algorithms suited to constrained embedded environments. She teaches courses on network security, operating systems, and industrial communication protocols. The group operates a dedicated ICS testbed equipped with Siemens-compatible PLCs, Modbus/TCP and DNP3 traffic generators, and packet capture infrastructure for long-term dataset collection."
+    },
+    "industryExperience": {
+      "recordId": "R1008",
+      "field": "industry_experience",
+      "text": "Kiss has collaborated with a regional energy distributor and a water utility as monitoring data partners on two funded projects, providing practical validation of research methods on operational infrastructure. She has carried out paid consulting for a mid-size automation integrator on specifying anomaly detection requirements for a SCADA upgrade project."
+    },
+    "notes": {
+      "recordId": "R1008",
+      "field": "notes",
+      "text": "Kiss prefers applied collaborations that result in deployment on real infrastructure rather than purely synthetic experiments. Her group's testbed capacity is available to industrial partners under a data-sharing agreement. She is particularly interested in partners dealing with proprietary or undocumented ICS protocols, which represent a gap in her current work."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-10472",
+        "kind": "publication",
+        "title": "Statistical Baseline Modelling of Modbus/TCP Traffic in a Substation Automation Network",
+        "body": {
+          "recordId": "SYN-PUB-10472",
+          "field": "abstract",
+          "text": "This paper describes the construction of per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed. For each register address, empirical distributions of inter-request intervals, payload values, and function code sequences were estimated using kernel density estimation with a Gaussian kernel and bandwidth selected by cross-validation. A one-class detector based on Mahalanobis distance thresholding over a 20-feature vector was evaluated against 14 manually injected attack scenarios, including replay, coil-write injection, and scan sweeps. At a false positive rate of 0.5%, the detector achieved a true positive rate of 91.4% across all attack types. The paper also quantifies the effect of seasonal load variation on baseline drift and proposes a sliding-window recalibration schedule with a 72-hour update period that maintains detection performance without human intervention. Results are compared with a fixed-threshold rule-based baseline, which achieved 67% TPR at the same FPR. The testbed comprised three Siemens-compatible PLCs connected over a deterministic switched Ethernet fabric."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10473",
+        "kind": "publication",
+        "title": "One-Class SVM for Detecting Anomalous DNP3 Command Sequences in Water Treatment Control Systems",
+        "body": {
+          "recordId": "SYN-PUB-10473",
+          "field": "abstract",
+          "text": "One-class support vector machines (OC-SVM) were applied to detect anomalous DNP3 application-layer command sequences in a water treatment SCADA testbed. Feature vectors were constructed from 15-second sliding windows using n-gram frequency histograms of function code and object group pairs, yielding 128-dimensional vectors after principal component analysis retaining 95% of variance. The OC-SVM used an RBF kernel; the nu hyperparameter was swept from 0.01 to 0.20 and selected via leave-one-out cross-validation on a 90-day normal-operation capture (approximately 4.2 million packets). Attack scenarios—unauthorised control block writes, time-sync spoofing, and application-layer flooding—were injected during a separate 14-day test period. The detector achieved an F1 score of 0.87 for unseen attack types not represented during training. Computational overhead was measured at under 3% CPU utilisation on an ARM Cortex-A9 industrial gateway, supporting inline deployment feasibility."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10474",
+        "kind": "publication",
+        "title": "Characterising Normal Behaviour in Industrial Ethernet Networks: A Long-Term Measurement Study",
+        "body": {
+          "recordId": "SYN-PUB-10474",
+          "field": "abstract",
+          "text": "This measurement study presents a 12-month passive capture of traffic from four industrial sites—two discrete manufacturing lines, one water utility, and one district heating plant—totalling approximately 680 GB of raw packet data. The study characterises normal traffic behaviour through 22 statistical descriptors per flow, including coefficient of variation of inter-packet gaps, entropy of destination port distributions, and autocorrelation structure of payload-length time series. Results show that industrial Ethernet traffic exhibits strong periodicity at scales of seconds to hours, with Hurst parameter estimates between 0.61 and 0.79 across sites, indicating long-range dependence. The study documents characteristic differences between Modbus, EtherNet/IP, and proprietary vendor protocols and quantifies seasonal variation. The dataset and feature extraction code are described in sufficient detail to support reproducibility. Findings inform design choices for unsupervised detectors and highlight risks of training on short captures."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10475",
+        "kind": "publication",
+        "title": "Isolation Forest Applied to ICS Protocol Traffic: Sensitivity to Contamination Fraction and Window Length",
+        "body": {
+          "recordId": "SYN-PUB-10475",
+          "field": "abstract",
+          "text": "Isolation Forest was evaluated as a detector for ICS protocol traffic anomalies under controlled variation of two critical hyperparameters: the contamination fraction estimate (ranging from 0.001 to 0.10) and the sliding-window aggregation length (1 s to 300 s). Experiments used a publicly described Modbus/TCP dataset generated on the authors' testbed across five attack classes. Detection rate and false alarm rate were measured at each combination using a 5×2 nested cross-validation design. The contamination fraction had a stronger effect on precision than recall; a mismatch of one order of magnitude reduced average precision from 0.91 to 0.63. Window length affected recall for short-burst attacks more than for persistent anomalies. An empirical calibration procedure based on unlabelled holdout data is proposed and benchmarked. The paper provides a practical guide for practitioners deploying tree-based anomaly detectors in environments where ground-truth labels are unavailable."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10476",
+        "kind": "publication",
+        "title": "Autoencoder-Based Reconstruction Error for Anomaly Scoring in PROFINET IO Traffic",
+        "body": {
+          "recordId": "SYN-PUB-10476",
+          "field": "abstract",
+          "text": "A shallow fully-connected autoencoder with a 48-32-16-32-48 architecture was trained on PROFINET IO cyclic data exchange traffic captured from an automotive body-assembly line. The encoder compressed 48-dimensional per-cycle feature vectors—including cycle time jitter, alarm status byte distributions, and data record checksum statistics—into a 16-dimensional bottleneck. Reconstruction error was used as an anomaly score. The network was trained on 30 days of normal operation (approximately 2.1 million cycles) using stochastic gradient descent with batch size 256. Anomaly scoring was tested against seven fault conditions introduced by a cooperating maintenance team, including sensor dropout, network congestion injection, and controller firmware substitution. The autoencoder achieved an area under the ROC curve of 0.94 across all fault types, compared with 0.81 for a PCA-based reconstruction baseline. Inference latency was 0.4 ms per cycle on a standard x86 edge server, compatible with 10 ms scan cycle requirements."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10477",
+        "kind": "publication",
+        "title": "Anomaly Detection in Industrial Control Systems",
+        "body": {
+          "recordId": "SYN-PUB-10477",
+          "field": "abstract",
+          "text": "This book chapter surveys statistical and machine-learning approaches to anomaly detection in ICS environments, focusing on network-level traffic analysis rather than host-based or physical-process monitoring. The chapter covers the statistical properties of ICS traffic that distinguish it from enterprise IT traffic—determinism, periodicity, limited state space—and how these properties can be exploited by unsupervised methods. Covered algorithms include univariate control charts, multivariate Gaussian models, kernel density estimators, one-class SVMs, Isolation Forest, and autoencoders, with discussion of their assumptions, computational requirements, and suitability for embedded deployment. Protocol-specific considerations are provided for Modbus, DNP3, EtherNet/IP, and PROFINET. The chapter closes with a discussion of evaluation methodology challenges, including the scarcity of labelled datasets, the difficulty of representative attack injection, and the trade-off between false alarm rate and response latency. Representative results from the published literature are tabulated."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00492",
+        "kind": "publication",
+        "title": "Incremental Gaussian Mixture Models for Online Anomaly Detection in Continuous ICS Traffic Streams",
+        "body": {
+          "recordId": "SYN-PUB-00492",
+          "field": "abstract",
+          "text": "This paper proposes an incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic without the need for periodic full retraining. The algorithm maintains a fixed number of Gaussian components (K = 5 to 20 evaluated) and uses a Bayesian update rule to adjust component means, covariances, and weights with each arriving window of observations. Feature vectors are 32-dimensional, derived from 10-second traffic windows. The method was evaluated on a 180-day Modbus/TCP capture from a district heating control network and compared with a static GMM retrained every 24 hours. The iGMM maintained an F1 score within 0.03 of the periodically retrained model while reducing retraining compute cost by 94%. Concept drift induced by a planned process reconfiguration was detected as a persistent anomaly episode; a supervised reset mechanism based on operator acknowledgement was proposed and tested. Memory footprint per detector instance was under 120 KB."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10478",
+        "kind": "publication",
+        "title": "Evaluating the Effect of Protocol Encryption on Traffic-Based Anomaly Detection: OPC UA Security Mode Comparison",
+        "body": {
+          "recordId": "SYN-PUB-10478",
+          "field": "abstract",
+          "text": "OPC UA supports three security modes—None, Sign, and SignAndEncrypt—and this paper evaluates how each mode affects the discriminability of traffic features used in unsupervised anomaly detectors. Experiments were conducted on a testbed comprising an OPC UA server, two client applications, and an embedded data historian. Seventeen traffic features extractable from unencrypted traffic were assessed for their availability under Sign and SignAndEncrypt modes using packet capture before and after the application layer. Under SignAndEncrypt, 11 of 17 features became unavailable or uninformative at the packet level; however, timing, packet length distribution, and session-level handshake frequency remained discriminative. A reduced 6-feature one-class SVM trained on these surviving features achieved a detection rate of 0.83 against four attack scenarios, compared with 0.91 for the full 17-feature detector on unencrypted traffic. The paper discusses the implications for passive inline monitoring architectures and proposes a broker-based decryption approach for trusted network segments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10479",
+        "kind": "publication",
+        "title": "A Labelled Packet-Level Dataset of Modbus/TCP Attacks for Evaluating Anomaly Detectors",
+        "body": {
+          "recordId": "SYN-PUB-10479",
+          "field": "abstract",
+          "text": "This paper describes the collection, annotation, and release of a packet-level Modbus/TCP dataset captured on the ICS testbed at the University of Novi Sad. The dataset spans 21 days of normal operation and 6 days of controlled attack execution, comprising approximately 310 million packets. Eight attack scenarios were implemented: function code scanning, coil mass-write injection, replay with modified values, man-in-the-middle payload substitution, time-synchronisation offset injection, denial-of-service flooding, slow-rate polling exhaustion, and firmware update spoofing. Each packet is labelled with a binary normal/attack flag and a scenario identifier. The paper documents the testbed topology, PLC configuration, traffic generation scripts, and labelling methodology in sufficient detail for reproduction. Baseline results for five detectors—statistical process control, one-class SVM, Isolation Forest, autoencoder, and LSTM-based reconstruction—are reported to enable direct comparison by future researchers. The dataset is hosted on the university repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10480",
+        "kind": "publication",
+        "title": "Threshold Calibration for ICS Anomaly Detectors Under Imbalanced Operating Conditions",
+        "body": {
+          "recordId": "SYN-PUB-10480",
+          "field": "abstract",
+          "text": "Anomaly detectors for ICS traffic are typically calibrated by fixing the decision threshold to achieve a target false positive rate estimated on a clean training set. This paper investigates the miscalibration that results when the actual false positive rate at deployment differs from the target, and proposes a post-hoc calibration procedure using a small set of unlabelled operational data. The procedure fits a two-component beta mixture model to the empirical score distribution and uses the mixture weight of the anomalous component as a proxy for the contamination fraction. Experiments on four detectors (OC-SVM, Isolation Forest, autoencoder, and kernel density estimator) across three ICS protocol datasets show that the calibration procedure reduces the gap between nominal and actual FPR from a mean of 3.1 percentage points to 0.4 percentage points. The paper also quantifies sensitivity to the choice of beta mixture initialisation and provides practical recommendations for operators setting alert thresholds."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00722",
+        "kind": "publication",
+        "title": "Detecting Stealthy Coil-Write Injection in Modbus Networks Using Temporal Autoencoder Ensembles",
+        "body": {
+          "recordId": "SYN-PUB-00722",
+          "field": "abstract",
+          "text": "Stealthy coil-write injection attacks modify a small number of PLC output coils at irregular intervals designed to evade detectors sensitive only to rate or volume changes. This paper evaluates temporal autoencoder ensembles—ten autoencoders trained on temporally shuffled subsets of a 60-day Modbus/TCP capture—for detecting such attacks. Each autoencoder receives a 30-dimensional feature vector derived from 5-second windows including coil change frequency, write-to-read ratio per coil address, and inter-write interval statistics. Anomaly scores from ensemble members are aggregated by the maximum rule. Against 240 injected stealthy attack episodes of varying intensity (1 to 8 modified coils per window), the ensemble achieved recall of 0.89 at a false positive rate of 0.8 per hour, compared with 0.64 for a single autoencoder and 0.58 for a static threshold detector. Computational cost of the ensemble was 2.3× that of a single autoencoder, remaining feasible on edge hardware."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10482",
+        "kind": "publication",
+        "title": "Comparing Score Aggregation Strategies for Multi-Protocol ICS Anomaly Detection",
+        "body": {
+          "recordId": "SYN-PUB-10482",
+          "field": "abstract",
+          "text": "Industrial sites often run several ICS protocols concurrently; a single anomaly may manifest in traffic from multiple protocols or only one. This paper compares six score aggregation strategies—maximum, mean, product, Dempster-Shafer combination, learned linear combination, and a voting threshold rule—for combining per-protocol anomaly scores from Modbus, DNP3, and EtherNet/IP detectors deployed simultaneously on the same network segment. A testbed with all three protocol stacks was operated for 45 days, and 18 multi-protocol and single-protocol attack scenarios were injected over a 10-day evaluation period. The learned linear combination, trained on a 5-day clean holdout with synthetic contamination, achieved the highest balanced accuracy (0.91) but required labelled data for weight estimation. The Dempster-Shafer rule achieved 0.88 without labelled data. The maximum rule performed consistently below 0.80. Results provide concrete guidance for operators designing multi-sensor detection pipelines."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10239",
+        "kind": "publication",
+        "title": "Lightweight Anomaly Detection for Resource-Constrained ICS Gateways: A Quantisation and Pruning Study",
+        "body": {
+          "recordId": "SYN-PUB-10239",
+          "field": "abstract",
+          "text": "Many ICS sites route traffic through ARM-based gateways with 256 MB RAM and single-core processors. This paper evaluates the effect of weight quantisation (32-bit to 8-bit and 4-bit floating point) and structured pruning (removing 10%, 25%, 50% of autoencoder units) on detection performance and inference latency for traffic-based anomaly detectors. Experiments used three autoencoder architectures differing in depth (2, 4, 6 hidden layers) trained on Modbus/TCP and DNP3 captures. 8-bit quantisation reduced model size by 3.7× and inference time by 2.1× with an average AUROC reduction of 0.012. 4-bit quantisation introduced a 0.041 AUROC drop. Structured pruning at 25% improved inference speed by 1.4× with negligible performance loss; at 50%, AUROC declined by 0.028. A combined 8-bit quantised, 25%-pruned model achieved inference at 0.9 ms per 10-second window on an ARM Cortex-A7 target, fitting within a 10 ms cycle budget, making real-time deployment feasible without dedicated hardware accelerators."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10483",
+        "kind": "publication",
+        "title": "Protocol-Agnostic Anomaly Detection Using Byte-Level Feature Extraction from ICS Application Payloads",
+        "body": {
+          "recordId": "SYN-PUB-10483",
+          "field": "abstract",
+          "text": "Most ICS anomaly detectors are designed for a specific protocol and rely on parsed field values. This paper investigates a protocol-agnostic approach in which raw application-layer payload bytes from the first 64 bytes of each PDU are used to construct feature vectors via byte-frequency histograms augmented with bigram entropy and mean absolute deviation of byte values. A one-class SVM and an Isolation Forest were trained on mixed-protocol captures from a testbed running Modbus, DNP3, and a proprietary vendor protocol for which no parser was available. The proprietary protocol represented 31% of traffic. Against seven attack scenarios including vendor-protocol-specific command injection, the protocol-agnostic detectors achieved AUROC values of 0.89 and 0.87 respectively, compared with 0.94 for a protocol-aware Modbus detector applied only to Modbus traffic. The paper discusses cases where protocol-agnostic features are sufficient and where parsed fields remain necessary, providing a decision framework for practitioners deploying detectors on heterogeneous industrial networks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00964",
+        "kind": "publication",
+        "title": "Imbalanced Learning for Industrial Time-Series: A Structured Review of Methods and Evaluation Practices",
+        "body": {
+          "recordId": "SYN-PUB-00964",
+          "field": "abstract",
+          "text": "This chapter surveys the literature on learning from imbalanced industrial time-series data published between 2010 and 2022, covering approximately 160 papers. The chapter is organised around five methodological families: resampling, cost-sensitive training, anomaly-detection-based approaches, threshold adjustment, and ensemble methods. For each family, representative algorithms are described, and reported evaluation metrics are tabulated. A recurring finding is that many papers report only accuracy or AUC-ROC despite these being insensitive to minority-class performance at high imbalance ratios; the chapter argues for systematic reporting of AUPRC and G-mean alongside domain-relevant cost measures. A taxonomy of evaluation pitfalls specific to temporal data—including label leakage across temporal folds and inappropriate use of stratified k-fold on non-stationary streams—is presented. The chapter concludes with a structured list of open problems, including the combination of concept drift adaptation with imbalanced learning and the lack of standardised public benchmarks for industrial fault streams."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10075",
+        "kind": "publication",
+        "title": "Human-in-the-Loop Annotation for Named Entity Recognition: Workflow Design and Annotator Agreement Analysis",
+        "body": {
+          "recordId": "SYN-PUB-10075",
+          "field": "abstract",
+          "text": "Named entity recognition annotation is iterative by nature: early model outputs guide annotators toward difficult spans, but annotator disagreement can compound over successive rounds if the workflow is not carefully designed. We constructed a workflow in which two annotators independently label each query batch, adjudication is performed by a third expert only when inter-annotator agreement falls below a Cohen's κ threshold of 0.75, and the adjudicated labels feed directly into the next retraining cycle. The corpus covers biomedical text from a Serbian-language clinical discharge summary dataset of 6,400 sentences. Across 12 rounds of 50 sentences each, κ averages 0.81 with adjudication invoked in 4 of 12 rounds. Final NER F1 on a fixed test set reaches 83.4 %, compared with 79.1 % under a single-annotator baseline with the same labelling budget. We discuss how adjudication frequency and annotator fatigue interact and propose a simple fatigue proxy based on session response time."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03072",
+        "kind": "publication",
+        "title": "A Retiming-Aware Operator Binding Algorithm for HLS with Heterogeneous DSP Blocks",
+        "body": {
+          "recordId": "SYN-PUB-03072",
+          "field": "abstract",
+          "text": "Modern FPGA families include DSP blocks with configurable pre-adder and post-accumulator pipelines that can absorb retiming registers, reducing the LUT cost of retimed datapaths. Existing HLS tools treat DSP blocks as fixed-latency operators and do not exploit this flexibility during binding. This paper presents a binding algorithm that models DSP pre-adder and accumulator optionality, integrates retiming feasibility checks derived from the bound schedule, and selects binding assignments that maximise internal DSP pipeline use. The algorithm is implemented as a post-synthesis pass processing netlists exported from Vitis HLS 2024.1 in Verilog form. Evaluated on twelve arithmetic-heavy signal processing kernels targeting a Versal AI Core VC1902, the pass reduces registered LUT count by 9–22% with no change in clock period. Compile-time overhead is under 8 seconds per kernel."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04494",
+        "kind": "publication",
+        "title": "Comparative evaluation of feature descriptors for outdoor point cloud classification: FPFH, SHOT, and learned local features",
+        "body": {
+          "recordId": "SYN-PUB-04494",
+          "field": "abstract",
+          "text": "Classical handcrafted feature descriptors and early learned representations are compared on a benchmark comprising five outdoor scenes captured with a Velodyne HDL-64E mobile scanner in Novi Sad and Subotica. The dataset contains roughly 4.5 million labelled points across eight semantic classes including ground, building, vegetation, vehicle, and street furniture. Fast Point Feature Histograms (FPFH) and Signature of Histograms of Orientations (SHOT) are evaluated alongside a shallow PointNet-style encoder trained from scratch. Mean intersection-over-union (mIoU) scores are 51.4% for FPFH with a random forest classifier, 54.9% for SHOT, and 62.8% for the learned encoder, all using identical training and test splits. Error analysis reveals that the building class benefits most from learned features due to heterogeneous surface textures, whereas ground and vegetation classification is robust across all three approaches. The benchmark data and evaluation scripts are released publicly."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04036",
+        "kind": "publication",
+        "title": "A Comparison of Krylov and POD Subspace Methods for Parametric Model Order Reduction in Structural Acoustics",
+        "body": {
+          "recordId": "SYN-PUB-04036",
+          "field": "abstract",
+          "text": "Parametric model order reduction (pMOR) methods based on Krylov subspaces and proper orthogonal decomposition (POD) are compared on a benchmark plate-cavity structural-acoustic problem. The full model has 8 400 structural and 3 100 acoustic degrees of freedom. The parameter of interest is the plate thickness, ranging from 3 mm to 8 mm in steps of 0.5 mm. Krylov-based reduction at a single expansion frequency preserves acoustic transfer functions to within 1.8 % across the 20–400 Hz band, but deteriorates above 600 Hz. POD bases constructed from 22 snapshot solutions at parameter samples achieve 0.9 % relative error across the full 20–800 Hz range with a basis of dimension 18. Computational speed-up relative to the full-order solve is 47× for POD and 31× for Krylov. Both methods are implemented in MATLAB and benchmarked on a shared server. Recommendations for selection between the two approaches based on available snapshots and frequency range requirements are given."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0511",
+        "kind": "project",
+        "title": "Incremental and Calibrated Anomaly Recognition for Operational SCADA Systems",
+        "body": {
+          "recordId": "SYN-PRJ-0511",
+          "field": "summary",
+          "text": "ICAROS addressed the calibration and incremental update of unsupervised anomaly detectors deployed on live SCADA networks. The project developed threshold calibration procedures for detectors operating without labelled attack data, incremental Gaussian mixture and autoencoder update algorithms suited to concept drift induced by planned process changes, and a set of evaluation protocols for comparing detectors across different ICS protocol environments. A labelled Modbus/TCP and DNP3 benchmark dataset was produced and released. Partners included a regional energy distributor that provided controlled access to a monitoring mirror port on an operational substation network, enabling validation under real traffic conditions. The project supported two doctoral candidates and produced nine peer-reviewed publications."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0512",
+        "kind": "project",
+        "title": "Federated Anomaly Detection Across Distributed Industrial Control System Sites",
+        "body": {
+          "recordId": "SYN-PRJ-0512",
+          "field": "summary",
+          "text": "FEDICS developed federated learning protocols enabling anomaly detection models trained at geographically distributed ICS sites to be aggregated without exchanging raw network traffic. The project addressed privacy constraints common in critical infrastructure contexts and evaluated ensemble aggregation strategies for combining site-level one-class classifiers. Pilot deployments were conducted at two water utility control centres and two district heating substations across the Hungarian–Serbian border region. The project also produced a joint curriculum module on ICS cybersecurity delivered at partner universities. Key deliverables included open-source federated aggregation software, two datasets, and six joint publications by the consortium."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates from companies in automation and critical infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "contract research on protocol traffic analysis and anomaly detection deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "access to ICS testbed and long-term traffic capture infrastructure for collaborative experiments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

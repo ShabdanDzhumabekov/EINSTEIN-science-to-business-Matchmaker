@@ -1,0 +1,115 @@
+{
+  "ref": {
+    "artifactId": "business-C026-CH3",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C026-CH3",
+    "companyId": "C026",
+    "companyName": "Zelena Petlja a.d.",
+    "sector": "Municipal solid waste collection, sorting and recycling",
+    "location": "Subotica",
+    "challenge": {
+      "text": {
+        "recordId": "C026-CH3",
+        "field": "text",
+        "text": "The leachate from our temporary storage yard has started seeping toward the site boundary; our last sampling showed COD at 3,400 mg/L and we're worried about the groundwater monitoring wells the inspectorate has ordered us to install."
+      },
+      "detail": {
+        "recordId": "C026-CH3",
+        "field": "detail",
+        "text": "The temporary storage yard on the eastern edge of our site has been used for oversized items and pre-sorted residuals for about twelve years. The liner under that area was never designed for liquid retention. This past winter we noticed discolouration along the eastern fence line and we took leachate samples ourselves using our in-house bench: COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response. The Subotica Environmental Inspectorate conducted a site visit in February and issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal. We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent. We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons. We need someone who can interpret the existing data, design the monitoring well network, and help us draft a leachate containment and treatment proposal that the inspectorate will accept — all before the 120-day deadline runs out in late June 2024."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C026",
+        "field": "about",
+        "text": "Zelena Petlja a.d. has been collecting, sorting and reprocessing waste in and around Subotica since 1975, when Branko Fekete started the business with a single truck and a handshake agreement with the city. Nearly five decades later the company employs 214 people, operates twelve collection routes across six municipalities, and runs a 4,800-square-metre sorting hall on the Bajmok road. A plastics reprocessing line added in 2011 converts recovered polyethylene and polypropylene into regranulate sold to packaging manufacturers in Serbia and Hungary. The Fekete family remains the majority shareholder; day-to-day management passed to the second generation in 2018. Our customers include the municipalities of Subotica, Kanjiža and Mali Iđoš, as well as several industrial parks whose tenants pay separately for bulky and hazardous-item removal. What sets us apart is continuity: drivers who have worked the same street for fifteen years, relationships with depot managers built over decades, and a maintenance crew that keeps old equipment running longer than the manuals say it should. We are currently restructuring our ownership and reporting to bring in outside capital for a sorting hall expansion, and we are looking for technical partners who work with real operational numbers rather than ideal-case assumptions."
+      },
+      "products": [
+        {
+          "recordId": "C026",
+          "field": "products",
+          "text": "Municipal solid waste collection across six municipalities"
+        },
+        {
+          "recordId": "C026",
+          "field": "products",
+          "text": "Mixed-stream and source-separated recyclables sorting"
+        },
+        {
+          "recordId": "C026",
+          "field": "products",
+          "text": "Polyethylene and polypropylene regranulate production"
+        },
+        {
+          "recordId": "C026",
+          "field": "products",
+          "text": "Industrial and bulky-waste removal on contract"
+        },
+        {
+          "recordId": "C026",
+          "field": "products",
+          "text": "Leachate and site environmental monitoring services"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Near-infrared (NIR) optical sorting line (secondhand, 2019 installation)"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Baling press for paper, cardboard, PET and PE fractions"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Single-shaft shredder for oversized waste pre-processing"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Twin-screw extruder and pelletising line for PP/HDPE regranulate"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Fleet telematics on twelve collection vehicles"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "COD and heavy-metal leachate sampling with in-house wet chemistry bench"
+        },
+        {
+          "recordId": "C026",
+          "field": "tech",
+          "text": "Manual quality-check stations downstream of optical sorter"
+        }
+      ],
+      "plans": {
+        "recordId": "C026",
+        "field": "plans",
+        "text": "Over the next three years Zelena Petlja intends to complete the sorting hall expansion, add a second optical sorting line with improved dark-polymer detection, and extend collection contracts to two additional municipalities in northern Bačka. We are also exploring a small-scale pyrolysis pilot for non-recyclable plastic fractions that currently go to landfill."
+      },
+      "rdCapacity": {
+        "recordId": "C026",
+        "field": "rd_capacity",
+        "text": "We have two technicians with process engineering backgrounds who track sorting-line performance data daily, but we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring."
+      },
+      "pastCollaborations": {
+        "recordId": "C026",
+        "field": "past_collaborations",
+        "text": "Between 2020 and 2022 we participated in a regional waste-data project coordinated by the Subotica Development Agency alongside two other Vojvodina waste operators, which produced a shared municipal waste composition database but no joint products."
+      }
+    }
+  }
+}

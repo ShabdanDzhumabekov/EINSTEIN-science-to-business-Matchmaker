@@ -1,0 +1,174 @@
+{
+  "ref": {
+    "artifactId": "proposal-C132-CH4-R0349",
+    "version": 3
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Reducing Cross-Script Contract Search Failures in KlozuraPro",
+    "facts": [
+      {
+        "text": "The company estimates that script mismatch affects roughly one in five searches, based on a January 2024 server-log sample.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We estimated this affects roughly one in five searches based on a sample we pulled from server logs in January 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's existing stack includes PostgreSQL full-text search and a Python NLP pipeline using spaCy and Serbian-contract transformer models.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Python-based NLP pipeline (spaCy, custom fine-tuned transformer models trained on Serbian-language contracts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's material identifies mixed-script documents, dialect-dependent transliteration ambiguity and search response time as concerns.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports one backend engineer available for up to six weeks and capacity for roughly one external project alongside product development.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić's notes report two active projects and capacity for one smaller industrial contract or consulting engagement.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić's work maps tokens to phoneme-based canonical forms for retrieval and evaluates this approach on manually annotated relevance pairs from Serbian court decisions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "the resulting phoneme string serves as the canonical form for retrieval purposes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His latency study reports an accuracy–latency tradeoff: transformer normalization achieved MRR 0.68 but added 47 ms at the 99th percentile on its tested workload.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "The transformer-based normalizer achieves MRR of 0.68 but adds 47 ms at the 99th percentile.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a focused joint project could resolve normalization placement rather than rebuild search. The proposal is conditional because Dragić's availability is unconfirmed and his stated capacity is limited to a small engagement.",
+      "Court-decision results suggest methodological relevance, not validation for contracts or PostgreSQL. Canonicalization could conflate names, abbreviations or legal terms; representative relevance judgments and exception tests are therefore important. The reported neural accuracy–latency tradeoff is a deployment risk.",
+      "The historical failure estimate may combine script mismatch with parsing or other failures. Reviewing successful and unsuccessful searches should help distinguish these explanations rather than assuming every zero-hit query has the same cause."
+    ],
+    "proposedActions": [
+      "On authorized contracts and random current query occurrences, separate tuning/evaluation; verify document/query-family independence. Compare unchanged PostgreSQL, indexing-only, query-only and both normalization; hold parsing, ranking and load constant. Judge every evaluation occurrence, including nonzero results. Select the best configuration on tuning only. Apply gates overall and separately to held-out cross-script, Latin-query/Cyrillic-document, Cyrillic-query/Latin-document, mixed-script and ambiguous-mapping populations: 95% upper confidence bound ≤5% for zero hits despite an accessible relevant document; 95% lower bound on P@10 change ≥−2 percentage points versus baseline; 95% upper confidence bounds on each p95/p99 relative latency increase ≤5% under company-approved representative load. These are negotiable proposals. Count each occurrence once, without deduplication; failures/all evaluated occurrences defines each population's failure rate. Count unresolved relevance as failures; use conservative precision bounds. Go/no-go concerns the tuning-selected best configuration, whichever it is, and requires verified PostgreSQL/Python compatibility and delivery within six weeks. Missing data, insufficient precision or insufficient evidence in either search direction leaves acceptance unresolved.",
+      "Propose a six-week schedule: week one for permissions, baseline reconstruction and acceptance definitions; weeks two–three for prototypes and tuning; weeks four–five for frozen evaluation and load tests; week six for a deployment decision. The company engineer would implement integration and workload replay; company reviewers would judge relevance. Dragić would propose normalization rules, experimental controls and error analysis, subject to confirmed hours.",
+      "Keep the initial prototype deterministic to limit integration scope; test ambiguous mappings, foreign names, abbreviations and within-token mixtures explicitly. A null result for either normalization location alone would not rule out a joint effect. Record index growth, rebuild time and maintenance effort; agree exception-rule ownership and rollback procedures. Neural fallback would be a separately justified follow-up because its reported accuracy gains carry latency costs."
+    ],
+    "questions": [
+      "Can Dragić confirm a start date and weekly contribution for a small joint project within the company's six-week engineering window?",
+      "What authorized contract corpus, current logs and company relevance reviewers can support independent tuning and evaluation under the applicable confidentiality restrictions?",
+      "What numerical acceptance limits and representative load should define noticeable latency, relevance preservation, mixed-script robustness, index growth and reindexing downtime?",
+      "What budget, test environment, PostgreSQL configuration and maintenance arrangement can support the proposed scope?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify where normalization belongs and whether it reduces confirmed cross-script failures in both directions without unacceptable relevance or latency costs.",
+      "researcher": "Subject to agreement and authorized access, Dragić could test how phoneme-based normalization transfers from court decisions to contract retrieval, using judged queries and controlled PostgreSQL comparisons."
+    },
+    "markdown": "# Reducing Cross-Script Contract Search Failures in KlozuraPro\n\n## Verified facts\n- The company estimates that script mismatch affects roughly one in five searches, based on a January 2024 server-log sample. [F1]\n- The company's existing stack includes PostgreSQL full-text search and a Python NLP pipeline using spaCy and Serbian-contract transformer models. [F2]\n- The company's material identifies mixed-script documents, dialect-dependent transliteration ambiguity and search response time as concerns. [F3]\n- The company reports one backend engineer available for up to six weeks and capacity for roughly one external project alongside product development. [F4]\n- Dragić's notes report two active projects and capacity for one smaller industrial contract or consulting engagement. [F5]\n- Dragić's work maps tokens to phoneme-based canonical forms for retrieval and evaluates this approach on manually annotated relevance pairs from Serbian court decisions. [F6]\n- His latency study reports an accuracy–latency tradeoff: transformer normalization achieved MRR 0.68 but added 47 ms at the 99th percentile on its tested workload. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify where normalization belongs and whether it reduces confirmed cross-script failures in both directions without unacceptable relevance or latency costs.\n- For the researcher: Subject to agreement and authorized access, Dragić could test how phoneme-based normalization transfers from court decisions to contract retrieval, using judged queries and controlled PostgreSQL comparisons.\n\n## Our inference\n- This suggests a focused joint project could resolve normalization placement rather than rebuild search. The proposal is conditional because Dragić's availability is unconfirmed and his stated capacity is limited to a small engagement.\n- Court-decision results suggest methodological relevance, not validation for contracts or PostgreSQL. Canonicalization could conflate names, abbreviations or legal terms; representative relevance judgments and exception tests are therefore important. The reported neural accuracy–latency tradeoff is a deployment risk.\n- The historical failure estimate may combine script mismatch with parsing or other failures. Reviewing successful and unsuccessful searches should help distinguish these explanations rather than assuming every zero-hit query has the same cause.\n\n## Proposed next steps\n- On authorized contracts and random current query occurrences, separate tuning/evaluation; verify document/query-family independence. Compare unchanged PostgreSQL, indexing-only, query-only and both normalization; hold parsing, ranking and load constant. Judge every evaluation occurrence, including nonzero results. Select the best configuration on tuning only. Apply gates overall and separately to held-out cross-script, Latin-query/Cyrillic-document, Cyrillic-query/Latin-document, mixed-script and ambiguous-mapping populations: 95% upper confidence bound ≤5% for zero hits despite an accessible relevant document; 95% lower bound on P@10 change ≥−2 percentage points versus baseline; 95% upper confidence bounds on each p95/p99 relative latency increase ≤5% under company-approved representative load. These are negotiable proposals. Count each occurrence once, without deduplication; failures/all evaluated occurrences defines each population's failure rate. Count unresolved relevance as failures; use conservative precision bounds. Go/no-go concerns the tuning-selected best configuration, whichever it is, and requires verified PostgreSQL/Python compatibility and delivery within six weeks. Missing data, insufficient precision or insufficient evidence in either search direction leaves acceptance unresolved.\n- Propose a six-week schedule: week one for permissions, baseline reconstruction and acceptance definitions; weeks two–three for prototypes and tuning; weeks four–five for frozen evaluation and load tests; week six for a deployment decision. The company engineer would implement integration and workload replay; company reviewers would judge relevance. Dragić would propose normalization rules, experimental controls and error analysis, subject to confirmed hours.\n- Keep the initial prototype deterministic to limit integration scope; test ambiguous mappings, foreign names, abbreviations and within-token mixtures explicitly. A null result for either normalization location alone would not rule out a joint effect. Record index growth, rebuild time and maintenance effort; agree exception-rule ownership and rollback procedures. Neural fallback would be a separately justified follow-up because its reported accuracy gains carry latency costs.\n\n## Open questions\n- Can Dragić confirm a start date and weekly contribution for a small joint project within the company's six-week engineering window?\n- What authorized contract corpus, current logs and company relevance reviewers can support independent tuning and evaluation under the applicable confidentiality restrictions?\n- What numerical acceptance limits and representative load should define noticeable latency, relevance preservation, mixed-script robustness, index growth and reindexing downtime?\n- What budget, test environment, PostgreSQL configuration and maintenance arrangement can support the proposed scope?",
+    "taskId": "C132-CH4",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C132-CH4-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0105",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0105",
+    "name": "Veljko Lazić",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Chemistry, Biochemistry and Environmental Protection",
+    "fields": [
+      "Inorganic and industrial chemistry",
+      "Waste valorisation and circular economy",
+      "Water treatment and environmental chemistry",
+      "Materials characterisation"
+    ],
+    "keywords": [
+      "aluminium hydroxide sludge",
+      "anodising wastewater",
+      "polyaluminium coagulants",
+      "zeolite synthesis",
+      "low-cost adsorbents",
+      "industrial waste valorisation",
+      "water treatment",
+      "surface area and porosity",
+      "heavy metal removal",
+      "circular economy"
+    ],
+    "openTo": [
+      "joint projects with surface-finishing or aluminium-processing companies generating hydroxide sludge",
+      "contract research on sludge characterisation and valorisation feasibility",
+      "consulting on wastewater treatment residue management and regulatory compliance",
+      "industrial PhD co-supervision",
+      "student internships (chemistry, environmental engineering)",
+      "equipment access (BET, FTIR, XRD) for external users by arrangement"
+    ],
+    "bio": {
+      "recordId": "R0105",
+      "field": "bio",
+      "text": "Veljko Lazić completed his undergraduate and master's studies in chemistry at the Faculty of Sciences, University of Novi Sad, graduating in 2005 and 2007 respectively. He earned his PhD in 2012 from the same institution, with a dissertation on the chemical treatment and valorisation of aluminium-bearing sludge generated during anodising effluent neutralisation. After a postdoctoral stay at the University of Ljubljana (2013–2014), he returned to Novi Sad, where he was appointed Assistant Professor in 2015 and Associate Professor in 2020. His group investigates the conversion of aluminium hydroxide sludge into functional inorganic materials, including polyaluminium coagulants, synthetic zeolites, and low-cost adsorbents for water treatment. He teaches Industrial Chemistry and Environmental Analytical Chemistry. The group regularly uses XRD, FTIR, SEM-EDS, BET surface analysis, and ICP-OES, much of which is housed in shared departmental infrastructure."
+    },
+    "industryExperience": {
+      "recordId": "R0105",
+      "field": "industry_experience",
+      "text": "Lazić has provided informal technical advice to two regional surface-finishing companies regarding sludge classification and disposal options, and supplied characterised sludge-derived coagulant samples for internal testing by a water treatment chemical distributor based in Novi Sad."
+    },
+    "notes": {
+      "recordId": "R0105",
+      "field": "notes",
+      "text": "Lazić is actively seeking an industrial partner willing to co-invest in a continuous-flow pilot line for coagulant production; the ALSOVAL project established the batch process but did not fund continuous operation. He has capacity to take one additional PhD student if external funding is secured. Prefers project roles where the group retains freedom to publish results."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01391",
+        "kind": "publication",
+        "title": "Characterisation of aluminium hydroxide sludge from a surface-finishing facility in Vojvodina: elemental composition, phase distribution, and leaching behaviour",
+        "body": {
+          "recordId": "SYN-PUB-01391",
+          "field": "abstract",
+          "text": "Sludge samples collected over twelve months from the neutralisation basin of an anodising plant in Vojvodina were characterised by ICP-OES, XRD, FTIR, and toxicity characteristic leaching procedure (TCLP). Aluminium accounted for 28–34 wt% of the dry solid, with subordinate iron, silicon, and sulphate. XRD patterns confirmed a predominantly amorphous boehmite-like phase, with traces of gibbsite appearing in samples collected during winter when bath temperatures were lower. TCLP leachates for Zn, Cu, Ni, and Cr remained below regulatory thresholds, supporting a classification as non-hazardous waste. Seasonal variation in sulphate content (1.2–4.7 wt%) was attributed to changes in sulphuric acid bath loading. These baseline data informed subsequent valorisation studies and established the compositional envelope within which value-added products can reliably be manufactured from this waste stream."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01392",
+        "kind": "publication",
+        "title": "Dissolution kinetics of aluminium hydroxide sludge in dilute sulphuric acid: effect of temperature, acid concentration, and particle size",
+        "body": {
+          "recordId": "SYN-PUB-01392",
+          "field": "abstract",
+          "text": "Acid dissolution is the first step in most wet-chemical valorisation routes for aluminium sludge, yet systematic kinetic data for anodising-derived material are scarce. Dissolution experiments were conducted at 30–80 °C, H2SO4 concentrations of 0.5–3.0 mol/L, and two particle-size fractions (<63 µm and 63–125 µm) using a stirred batch reactor. Aluminium extraction exceeded 92% under optimised conditions (70 °C, 2.0 mol/L, <63 µm, 60 min). The rate data fitted the shrinking-core model with a surface-reaction-controlled mechanism; apparent activation energy was 42.3 kJ/mol. Sulphate co-dissolution increased proportionally with acid concentration and partially inhibited Al release above 2.5 mol/L. These results define the processing window for downstream production of polyaluminium sulphate coagulants and serve as a reference for scale-up calculations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01393",
+        "kind": "publication",
+        "title": "Preparation and coagulation performance of polyaluminium sulphate derived from anodising sludge for treatment of synthetic textile dye wastewater",
+        "body": {
+          "recordId": "SYN-PUB-01393",
+          "field": "abstract",
+          "text": "Polyaluminium sulphate (PAS) was synthesised by controlled acid digestion of anodising sludge followed by basification to Al/OH molar ratios of 1.5, 2.0, and 2.5. The resulting coagulants were characterised by 27Al NMR, which confirmed a progressive increase in the Keggin-ion (Al13) fraction from 14 to 37% as basicity increased. Coagulation–flocculation jar tests were performed on a synthetic reactive-blue dye solution (100 mg/L) and on a settled municipal wastewater effluent. At a PAS dose of 40 mg Al/L and pH 7.0, colour removal reached 94% for the dye solution, comparable to a commercial polyaluminium chloride reference. COD reduction in the municipal effluent was 61% at the same dose. Residual aluminium in treated water stayed below 0.15 mg/L under all conditions tested. The results support sludge-derived PAS as a technically viable alternative to virgin-source coagulants."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01394",
+        "kind": "publication",
+        "title": "Hydrothermal synthesis of zeolite NaA from aluminium hydroxide sludge and rice husk ash: optimisation of Si/Al ratio and crystallisation conditions",
+        "body": {
+          "recordId": "SYN-PUB-01394",
+          "field": "abstract",
+          "text": "Zeolite NaA was synthesised hydrothermally by combining an aluminate solution prepared from anodising sludge with a silicate solution derived from rice husk ash. Si/Al molar ratios of 0.8, 1.0, 1.2, and 1.5 were tested at 80 °C and 100 °C for 4–24 h. Phase purity was assessed by XRD using reference diffractograms; BET surface areas and Langmuir micropore volumes were determined from N2 adsorption at −196 °C. Maximum crystallinity (89%) was obtained at Si/Al = 1.0, 100 °C, and 12 h, yielding a BET surface area of 14 m²/g and a micropore volume of 0.19 cm³/g consistent with literature values for zeolite NaA. SEM showed well-defined cubic crystals of 2–5 µm. Ion-exchange capacity for Ca²⁺ reached 185 mg CaCO3/g, indicating potential applicability in water softening and detergent formulations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01395",
+        "kind": "publication",
+        "title": "Low-temperature calcination of aluminium hydroxide sludge to produce an amorphous alumina adsorbent: fluoride removal from drinking water",
+        "body": {
+          "recordId": "SYN-PUB-01395",
+          "field": "abstract",
+          "text": "Aluminium hydroxide sludge was calcined at 300, 450, 600, and 750 °C for 2 h to produce a series of adsorbents whose surface chemistry and structure were tracked by TGA-DSC, FTIR, and XRD. The 450 °C sample exhibited the highest BET surface area (218 m²/g) and retained abundant surface hydroxyl groups as confirmed by FTIR. Batch adsorption experiments for fluoride in synthetic solutions (2–15 mg F⁻/L, pH 5–8) showed maximum uptake of 12.4 mg/g at pH 6.5, well-described by the Langmuir isotherm (R² = 0.994). Pseudo-second-order kinetics fitted the time-uptake data with a rate constant of 0.0031 g/(mg·min). Column tests at a bed volume of 200 demonstrated complete fluoride removal below the WHO guideline (1.5 mg/L) for the first 95 bed volumes. Regeneration with 0.1 mol/L NaOH restored more than 85% of initial capacity over three cycles."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01396",
+        "kind": "publication",
+        "title": "Phosphate recovery from secondary wastewater treatment effluent using calcined aluminium sludge granules",
+        "body": {
+          "recordId": "SYN-PUB-01396",
+          "field": "abstract",
+          "text": "Granular adsorbent pellets were prepared by mixing 450 °C-calcined aluminium sludge powder with 5 wt% bentonite binder, extruding, and drying at 105 °C. The granules (1.5–2.5 mm diameter) were tested for phosphate adsorption in batch and fixed-bed column experiments using real secondary effluent from a municipal wastewater treatment plant, with total phosphorus concentrations of 4.2–6.8 mg/L. The Freundlich exponent (1/n = 0.41) indicated favourable adsorption; column tests at an empty-bed contact time of 8 min achieved >90% phosphate removal for the first 120 bed volumes. Phosphate-loaded granules were regenerated with 0.5 mol/L NaOH; the resulting phosphate-rich eluate (220 mg P/L) was evaluated as a liquid fertiliser substitute in a pot-trial with spring wheat, where growth and phosphorus uptake were statistically indistinguishable from a commercial monoammonium phosphate treatment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01397",
+        "kind": "publication",
+        "title": "Valorisation of anodising sludge: from waste characterisation to product synthesis — a review of conversion pathways and downstream applications",
+        "body": {
+          "recordId": "SYN-PUB-01397",
+          "field": "abstract",
+          "text": "Anodising operations generate aluminium hydroxide sludge in quantities estimated at 0.5–2.5 kg per m² of anodised surface, yet the material remains widely landfilled. This chapter surveys conversion pathways that have been reported in the academic and patent literature, organised around four product families: soluble aluminium salts and polyaluminium coagulants, zeolites and aluminosilicate frameworks, calcined alumina adsorbents, and composite construction materials. For each pathway, the chapter discusses the required pre-treatment steps (dissolution, silica addition, calcination, granulation), key process variables, characterisation evidence for product quality, and documented end-use performance. Attention is given to impurity management, particularly iron, sulphate, and trace metals, which can compromise product purity or regulatory compliance. Economic and life-cycle considerations are summarised where data are available. The chapter concludes by identifying knowledge gaps, notably the limited number of pilot-scale demonstrations and the absence of standardised product specifications for sludge-derived coagulants in European regulations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01398",
+        "kind": "publication",
+        "title": "Effect of iron impurities in aluminium sludge on the quality and coagulation efficiency of derived polyaluminium chloride",
+        "body": {
+          "recordId": "SYN-PUB-01398",
+          "field": "abstract",
+          "text": "Commercial polyaluminium chloride (PACl) specifications limit iron content to below 0.5 wt%, yet anodising sludge commonly contains 1–6 wt% Fe. This study examined three iron removal strategies applied prior to PACl synthesis: selective precipitation at pH 3.8, oxidation with H2O2 followed by filtration, and magnetic separation after mild calcination. Iron removal efficiencies were 71, 84, and 58% respectively. PACl batches prepared from treated and untreated sludge digests were compared by 27Al NMR, UV-Vis basicity titration, and jar-test performance across a range of water matrices (river water, synthetic kaolin suspension, pre-treated textile effluent). Iron residuals above 1.2 wt% in the final product reduced Al13 fraction by roughly 12 percentage points and decreased turbidity removal by 8–11% in jar tests, confirming that a purification step is necessary for products intended for drinking water treatment but not necessarily for industrial process water applications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01399",
+        "kind": "publication",
+        "title": "Synthesis of sodalite from aluminium hydroxide sludge and sodium silicate: structural characterisation and performance as an adsorbent for lead and cadmium ions",
+        "body": {
+          "recordId": "SYN-PUB-01399",
+          "field": "abstract",
+          "text": "Sodalite was synthesised by combining sludge-derived sodium aluminate with commercial sodium silicate at Si/Al = 0.5 and treating hydrothermally at 120 °C for 48 h under static conditions. XRD Rietveld refinement confirmed phase-pure sodalite (space group P4̄3n) with unit-cell parameter a = 8.882 Å. BET surface area was 28 m²/g. Adsorption of Pb²⁺ and Cd²⁺ from single- and binary-metal solutions (0.5–50 mg/L, pH 5.5) followed Langmuir behaviour with maximum capacities of 74.6 mg Pb²⁺/g and 51.3 mg Cd²⁺/g. In binary systems, Pb²⁺ was preferentially adsorbed (selectivity coefficient 2.3), attributed to its stronger affinity for aluminosilicate surface sites. FTIR and XPS analysis after adsorption confirmed inner-sphere surface complexation as the dominant mechanism. Desorption with 0.1 mol/L HNO3 exceeded 90% for both metals, suggesting potential for metal recovery and adsorbent reuse."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01400",
+        "kind": "publication",
+        "title": "Pilot-scale production of polyaluminium sulphate from anodising sludge: process mass balance, product consistency, and preliminary cost estimate",
+        "body": {
+          "recordId": "SYN-PUB-01400",
+          "field": "abstract",
+          "text": "A 50-litre stirred-tank pilot reactor was used to produce polyaluminium sulphate (PAS) from anodising sludge over ten consecutive batches, processing a total of 42 kg of dry sludge. Each batch involved acid dissolution (H2SO4, 1.8 mol/L, 65 °C, 90 min), filtration to remove inerts, and basification to Al/OH = 2.0. Yield consistency was evaluated by measuring Al content, basicity, density, and turbidity of the liquid product. Batch-to-batch coefficient of variation was below 5% for all parameters except iron (CV 11%), the latter reflecting natural sludge heterogeneity. A simplified mass balance showed a PAS yield of 6.2 kg product per kg of dry sludge (expressed as Al2O3 equivalent). A preliminary production cost estimate, based on reagent consumption, energy, and labour, was 0.18–0.22 €/kg Al2O3 equivalent, compared to approximately 0.31 €/kg for commercially sourced aluminium sulphate in the region. Regulatory compliance of the product with EN 883 for water treatment chemicals is discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01401",
+        "kind": "publication",
+        "title": "Geopolymer binders incorporating anodising sludge as partial aluminium source: mechanical and leaching properties",
+        "body": {
+          "recordId": "SYN-PUB-01401",
+          "field": "abstract",
+          "text": "Geopolymer pastes were formulated by partially replacing metakaolin (0, 10, 20, and 30 wt%) with raw anodising sludge and activating with 8 mol/L NaOH/sodium silicate solution (modulus 1.2). Setting time, compressive strength at 3, 7, and 28 days, and toxicity leaching (EN 12457-2) were determined. At 20 wt% sludge substitution, 28-day compressive strength was 31.4 MPa, only marginally lower than the reference paste (34.1 MPa). XRD and FTIR confirmed the formation of an aluminosilicate geopolymer network with amorphous hump shift consistent with Al incorporation. Leachate concentrations of Al, Cr, Ni, and Cu remained below EN waste acceptance criteria for inert landfill, supporting the classification of the material as an encapsulation matrix for trace metals present in the sludge. Shrinkage over 28 days was 0.18% for the 20 wt% sludge paste, within acceptable limits for most non-structural applications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01402",
+        "kind": "publication",
+        "title": "Comparative life cycle assessment of three valorisation routes for anodising aluminium sludge: coagulant production, zeolite synthesis, and landfill disposal",
+        "body": {
+          "recordId": "SYN-PUB-01402",
+          "field": "abstract",
+          "text": "A cradle-to-gate life cycle assessment (LCA) was conducted for two valorisation scenarios — production of polyaluminium sulphate (PAS) and synthesis of zeolite NaA — and compared against the baseline of stabilisation and landfill disposal, using primary inventory data from laboratory and pilot experiments. The functional unit was 1 tonne of dry anodising sludge processed. Global warming potential (GWP100), cumulative energy demand, and three water-related impact categories were calculated using the ReCiPe 2016 midpoint method. PAS production showed a net avoided GWP of 142 kg CO2-eq per functional unit relative to landfill, primarily through substitution of virgin aluminium sulphate. Zeolite NaA synthesis showed a higher energy demand (+38%) than PAS production but a larger avoided impact in the eutrophication category. Data quality limitations and allocation choices are discussed in detail. The results are intended to guide process selection rather than provide definitive environmental benchmarks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01403",
+        "kind": "publication",
+        "title": "Quantitative determination of hydroxymethylfurfural and furfural in commercially available paprika powders from the Western Balkan market",
+        "body": {
+          "recordId": "SYN-PUB-01403",
+          "field": "abstract",
+          "text": "Fifty-six commercially available paprika powder samples from Serbia, Bosnia and Herzegovina, and North Macedonia were analysed for hydroxymethylfurfural (HMF) and furfural content by HPLC-UV as indicators of thermal processing intensity and potential adulteration. HMF ranged from 2.1 to 487 mg/kg dry weight; furfural ranged from 0.8 to 214 mg/kg. Nine samples exceeded the provisional 200 mg/kg HMF threshold proposed in regional food safety discussions. Cluster analysis grouped samples into three processing-intensity classes. Country-of-origin labelling was inconsistent in four cases identified by isotope ratio analysis conducted by a collaborating laboratory. The results suggest a need for updated regional regulatory guidance on heat-marker limits in paprika products."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01404",
+        "kind": "publication",
+        "title": "Random forest classification of ¹H NMR spectral patterns for rapid functional-group assignment",
+        "body": {
+          "recordId": "SYN-PUB-01404",
+          "field": "abstract",
+          "text": "Assignment of functional groups from ¹H NMR spectra before full structure elucidation reduces the candidate space and accelerates downstream interpretation. We trained a random forest classifier on spectral feature vectors—bin integrals at 0.05 ppm resolution combined with multiplicity-pattern descriptors—extracted from 2840 spectra of organic compounds covering 14 functional-group classes. The training data were drawn from a curated subset of an open spectral repository supplemented by in-house measurements. Ten-fold cross-validation gave macro-averaged F1 scores between 0.82 and 0.97 depending on class, with lower scores for compounds bearing overlapping carbonyl types. The model was evaluated on an independent external set of 310 spectra not used in training, giving an overall accuracy of 84%. Feature importance analysis confirmed that chemical shift region bins around 2.1, 3.4, and 9.7 ppm carried the highest discriminatory weight. The trained model and feature extraction code are provided as supplementary material."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01405",
+        "kind": "publication",
+        "title": "Systematic comparison of open spectral repositories for NMR-based chemoinformatics: coverage, format consistency, and metadata quality",
+        "body": {
+          "recordId": "SYN-PUB-01405",
+          "field": "abstract",
+          "text": "Machine-learning approaches in NMR chemoinformatics depend critically on the quality of training data sourced from public repositories. We systematically evaluated four open repositories containing a combined total of approximately 180 000 NMR records for small organic molecules, assessing coverage by compound class, format consistency, and completeness of key metadata fields including molecular formula, solvent, field strength, and temperature. Across repositories, 31–58% of records lacked at least one metadata field required for unambiguous interpretation. Duplicate detection based on InChI keys revealed an effective non-redundant corpus of roughly 94 000 unique structures with ¹H data and 61 000 with ¹³C data. Compound-class coverage was strongly biased toward aromatic and heteroaromatic structures, with aliphatic acyclic compounds underrepresented at roughly 8% of records. We propose a minimal metadata standard and describe a preprocessing pipeline that harmonises records across repositories, making a cleaned 73 000-compound dataset available for download."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01406",
+        "kind": "publication",
+        "title": "Metagenomic survey of iron-cycling guilds in tuberculated main sections: a pilot 454-pyrosequencing study",
+        "body": {
+          "recordId": "SYN-PUB-01406",
+          "field": "abstract",
+          "text": "DNA was extracted from corrosion tubercle material removed from three sections of a 60-year-old cast-iron main in Novi Sad and subjected to 454 pyrosequencing of the V3–V5 region of the 16S rRNA gene. A total of 47,320 quality-filtered reads were binned into OTUs at 97% identity. Taxonomic profiling indicated that iron-oxidising Betaproteobacteria related to Sideroxydans lithotrophicus (12.3–18.7% relative abundance across sites) and iron-reducing Geobacter-affiliated phylotypes (5.1–9.8%) co-dominated the tubercle communities, together with sulphate-reducing Deltaproteobacteria (3.2–6.4%). Alphaproteobacteria, Bacteroidetes and Firmicutes comprised the remaining diversity. Functional annotation of a 3.2 Mbp assembled metagenome fragment using the MG-RAST pipeline identified genes for cyc2 outer-membrane cytochrome, mtoA and mtr operons, consistent with extracellular electron transfer coupled to iron cycling. This represented the first metagenomic characterisation of Vojvodina distribution system tubercles."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00453",
+        "kind": "publication",
+        "title": "Low-dose cadmium and copper co-exposure in Unio pictorum over 60 days: bioaccumulation, histopathology, and biochemical biomarker integration",
+        "body": {
+          "recordId": "SYN-PUB-00453",
+          "field": "abstract",
+          "text": "A 60-day chronic co-exposure experiment tested the effects of environmentally realistic binary metal mixtures (5 µg/L Cu + 1 µg/L Cd; 10 µg/L Cu + 2 µg/L Cd) on Unio pictorum. Tissue metal loads, histopathological scoring of digestive gland tubules and gills, and a nine-biomarker panel (including SOD, CAT, GPx, GST, total GSH, MT, MDA, protein carbonyls, and neutral red retention) were assessed at days 15, 30, and 60. Principal component analysis of biomarker data separated all treatment groups from controls from day 30 onwards, with the first principal component explaining 44% of variance and loading most strongly on MT and protein carbonyls. Histopathological lesion scores (haemocytic infiltration, tubule atrophy, lysosomal enlargement) increased progressively with exposure duration and metal concentration. Integrated biomarker response scores correlated well with histopathological index values (Spearman r = 0.82). The 60-day low-dose design better reflects real tributary exposure scenarios than acute tests."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00462",
+        "kind": "publication",
+        "title": "Overlapping decomposition events in Ca–Sr carbonate solid solutions: deconvolution by Gaussian fitting of DTG data",
+        "body": {
+          "recordId": "SYN-PUB-00462",
+          "field": "abstract",
+          "text": "Synthetic Ca1−xSrxCO3 solid solutions (x = 0, 0.1, 0.2, 0.5, 0.8, 1.0) were prepared by co-precipitation from aqueous nitrate solutions and characterised by XRD (Vegard's law verification), TG-DSC at 5–20 K min−1, and coupled FTIR. The DTG profiles of intermediate compositions (x = 0.1–0.8) exhibited asymmetric peaks indicating overlapping events. Three-component Gaussian fitting resolved contributions from Ca-rich, intermediate, and Sr-rich domains in the solid solution, with peak positions shifting monotonically from 830 °C (pure calcite) to 960 °C (pure strontianite) at 10 K min−1 in nitrogen. DSC enthalpies scaled linearly with x (176 to 234 kJ mol−1). Activation energies by isoconversional analysis rose from 198 to 247 kJ mol−1 with increasing Sr content. The Gaussian deconvolution method was validated against physical mixtures of the pure end members, showing correct recovery of component fractions to within ±5 mol%."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0578",
+        "kind": "project",
+        "title": "Aluminium Sludge Valorisation: From Anodising Effluent Treatment Residues to Functional Inorganic Products",
+        "body": {
+          "recordId": "SYN-PRJ-0578",
+          "field": "summary",
+          "text": "The project investigates the full conversion chain from raw anodising sludge to three product families — polyaluminium coagulants, zeolitic adsorbents, and construction binders — at laboratory and pilot scale. Objectives include establishing compositional variability limits for regional sludge sources, optimising synthesis conditions for each product route, testing product performance against commercial benchmarks, and conducting a comparative life cycle assessment. The project funds two PhD students and includes analytical infrastructure upgrades (ICP-OES autosampler, 27Al solid-state NMR access via national facility). Industry engagement is pursued informally with a surface-finishing company in Vojvodina that supplies sludge and contributes operational knowledge."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0579",
+        "kind": "project",
+        "title": "Residue-Based Water Treatment Materials for Cross-Border Applications in Drinking Water and Industrial Effluent",
+        "body": {
+          "recordId": "SYN-PRJ-0579",
+          "field": "summary",
+          "text": "A cross-border cooperation project addressing the preparation and application of low-cost adsorbents and coagulants derived from industrial residues generated on both sides of the Hungary–Serbia border. Lazić's group led the work package on aluminium-bearing residues, supplying characterised sludge-derived coagulants and calcined adsorbents for joint testing at the Hungarian partner's pilot water treatment facility. The project also included training workshops for water utility engineers and a joint summer school for PhD students from both institutions. A joint application for a regional product standard for sludge-derived coagulants was initiated but not completed within the project period."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0197",
+        "kind": "project",
+        "title": "Chemical Markers of Thermal Processing Intensity and Adulteration in Serbian Paprika Products",
+        "body": {
+          "recordId": "SYN-PRJ-0197",
+          "field": "summary",
+          "text": "The project investigated heat-induced chemical markers in Serbian paprika and ajvar products, with dual objectives: developing analytical methods for estimating thermal treatment intensity and detecting adulteration by admixture with lower-grade pepper raw material. HPLC-based HMF and furfural quantification, HS-SPME-GC-MS volatile fingerprinting, and stable isotope ratio analysis were combined in a multi-method authentication platform. Sixty producers and market samples were analysed. A provisional discrimination threshold for smoked versus unsmoked paprika was established and submitted to the Serbian Institute for Standardisation as input for a draft standard. Two junior researchers received training in GC-MS and HPLC method validation."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0335",
+        "kind": "project",
+        "title": "Mechanisms and Control of Biogenic Hydrogen Sulphide in Ion Exchange Water Treatment Systems",
+        "body": {
+          "recordId": "SYN-PRJ-0335",
+          "field": "summary",
+          "text": "The project investigated the biological and chemical mechanisms by which sulphate-reducing bacteria generate hydrogen sulphide in sulphonate cation exchange resins under intermittent service conditions. Key activities included stable isotope tracing of sulphonate group degradation, transcriptomic profiling of colonising SRB strains, and development of a quantitative risk-scoring tool for water utilities. Field validation was conducted at two municipal water-treatment plants in Vojvodina. The project produced eight peer-reviewed publications, one doctoral thesis, and a freely accessible spreadsheet model for predicting H2S accumulation in exchange columns. Collaboration with the Provincial Institute of Public Health Novi Sad provided epidemiologically relevant field data."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1097",
+        "kind": "project",
+        "title": "Saponin Diversity in Threatened Caryophyllaceae of the Balkan Peninsula: Chemical Characterisation and Conservation Relevance",
+        "body": {
+          "recordId": "SYN-PRJ-1097",
+          "field": "summary",
+          "text": "SAPOBAL set out to document the triterpenoid saponin profiles of twelve Caryophyllaceae species listed as threatened or endemic on the Balkans, combining preparative HPLC isolation, multi-dimensional NMR structural elucidation, and HPLC-HRMS screening. The project produced reference compound libraries for six genera and established HPLC-UV quantification methods applicable to population-level surveys. Fieldwork was conducted across Serbia, Montenegro, and North Macedonia in cooperation with local botanical institutions. The chemical data are being integrated with distribution records to assess whether saponin chemotype diversity correlates with population fragmentation. Results are relevant to conservation prioritisation and to basic chemotaxonomy of the family."
+        }
+      },
+      {
+        "recordId": "SYN-PAT-052",
+        "kind": "patent",
+        "title": "Process for the preparation of polyaluminium sulphate coagulant from aluminium hydroxide sludge generated in anodising wastewater treatment",
+        "body": {
+          "recordId": "SYN-PAT-052",
+          "field": "abstract",
+          "text": "The invention describes a process comprising: acid digestion of dried anodising sludge in dilute sulphuric acid (1.5–2.5 mol/L, 60–75 °C), removal of insoluble impurities by pressure filtration, controlled neutralisation of the aluminium sulphate liquor with sodium hydroxide or calcium carbonate to achieve an Al/OH molar basicity of 1.8–2.2, and optional concentration by evaporation. The resulting polyaluminium sulphate product has an aluminium content of not less than 9 wt% as Al2O3 and a basicity of 70–80%. The patent covers both liquid and spray-dried solid product forms and specifies iron content limits applicable to drinking water treatment use."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0105",
+            "field": "open_to",
+            "quote": "industrial PhD co-supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0105",
+            "field": "open_to",
+            "quote": "joint projects with surface-finishing or aluminium-processing companies generating hydroxide sludge",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0105",
+            "field": "open_to",
+            "quote": "contract research on sludge characterisation and valorisation feasibility",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

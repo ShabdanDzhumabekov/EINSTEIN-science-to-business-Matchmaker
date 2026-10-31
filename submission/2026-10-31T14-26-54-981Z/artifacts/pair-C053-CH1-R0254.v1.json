@@ -1,0 +1,184 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0254",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0254",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What causes the apparent manganese increase between AquaCikl’s inlet and coagulation outlet, and which operational change could control manganese and iron without major equipment replacement? The first experiment would combine residence-time-matched stage sampling and metal mass balances with controlled tests of actual greywater, reagents and used filter media to distinguish additional metal inputs or release from impaired removal and test whether groundwater-derived mechanisms transfer.",
+    "rationale": [
+      {
+        "text": "Todorović’s research directly addresses iron and manganese oxidation mechanisms and granular-media catalysis, providing a relevant basis for investigating process-stage metal behaviour.",
+        "sources": [
+          {
+            "recordId": "R0254",
+            "field": "bio",
+            "quote": "His group investigates the reaction kinetics of iron and manganese oxidative precipitation, catalyst preparation for heterogeneous oxidation in granular media",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His comparative filter-media research can inform tests of whether media selection, conditioning or backwashing contributes to the problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03211",
+            "field": "abstract",
+            "quote": "A pilot study compared three single-medium and two dual-medium filter configurations for removing Fe(II) (3–6 mg/L) and Mn(II) (0.5–1.2 mg/L)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0254",
+            "field": "industry_experience",
+            "quote": "Todorović has provided technical consulting to two Vojvodina municipal waterworks on filter media replacement and backwash protocol optimisation under informal service agreements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group has bench-scale packed-bed equipment and elemental-analysis instruments relevant to controlled media testing and independent metal measurements.",
+        "sources": [
+          {
+            "recordId": "R0254",
+            "field": "bio",
+            "quote": "The group operates a bench-scale packed-bed pilot facility, ICP-OES and atomic absorption spectrometers, and a BET surface area analyser.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Research on surfactant interference in synthetic textile-rinse coagulation provides an additional basis for testing matrix effects, although it does not establish manganese or iron removal performance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02388",
+            "field": "abstract",
+            "quote": "Zeta potential measurements demonstrated that SLES progressively stabilised dye-coagulant flocs at surfactant concentrations above 80 mg/L, reducing colour removal from 88% to 54%.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Validation must address both company-reported discharge limits, with the applicable regulatory sampling point and analytical definitions confirmed before testing.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The investigation must reconcile the apparent inlet-to-outlet manganese increase rather than assume inadequate removal alone; stage-resolved sampling is available.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Our own analysers, confirmed by an accredited external lab in Zrenjanin, are reading 0.18 mg/L manganese at the outlet of our coagulation stage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work must fit four months of company staffing and leave time for implementation and verification before the five-month reinspection.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any proposed remedy must be implementable at existing installations without major equipment replacement; repeating dose or pH changes alone needs a new mechanistic justification.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Do not assume continuous online manganese and iron monitoring is available from the university; agree a workable sampling and laboratory turnaround plan.",
+        "sources": [
+          {
+            "recordId": "R0254",
+            "field": "notes",
+            "quote": "the group lacks real-time online Mn and Fe analysers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Most relevant metal-removal evidence concerns groundwater, often at higher manganese concentrations than AquaCikl’s inlet. Industrial greywater and its surfactants may alter oxidation, complexation and media behaviour; actual-matrix tests must be part of the first experiment.",
+      "The apparent manganese increase may reflect reagent or media inputs, accumulated solids release, recirculation, unmatched sampling times or analytical fraction differences. Impaired removal alone cannot explain a net increase without additional inputs or inventory release.",
+      "Published filter conditioning periods extend to 60–80 days for quartz–anthracite beds, potentially consuming much of the available implementation window; a media-based remedy is not assured.",
+      "Researcher availability and laboratory capacity for the required dates are unknown. Company project budget, site-intervention permissions and exact process configurations are also unknown and could delay execution.",
+      "Iron concentrations and the location of the final compliance discharge point are not supplied, so the scope and verification burden for iron remain uncertain."
+    ],
+    "questions": [
+      "Can Todorović commit supervision and laboratory capacity immediately for a four-month joint project, and what budget and contracting arrangements can both parties support?",
+      "What are the complete process flow diagrams, recycle and backwash routes, holding times, operating schedules, reagent specifications and media histories at each site?",
+      "Are inlet and outlet results residence-time matched and measured as the same total or dissolved metal fraction? What are the iron results, detection limits, preservation procedures and quality-control records?",
+      "Can the first experiment include matched stage samples, flow measurements, reagent blanks, used-media leaching tests and controlled actual-greywater tests varying oxygen/redox and contact time, with independent laboratory checks?",
+      "What exact discharge point, metal fractions and sampling protocol apply under the cited regulation, and what evidence will the inspector accept?",
+      "Which reversible process changes and temporary trial equipment are permitted without disrupting clients, and who will authorize implementation and post-change verification before reinspection?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0254",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0254",
+        "version": 1
+      }
+    ]
+  }
+}

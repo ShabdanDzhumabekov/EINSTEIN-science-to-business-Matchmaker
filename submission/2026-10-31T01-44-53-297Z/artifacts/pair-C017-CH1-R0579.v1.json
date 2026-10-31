@@ -1,0 +1,104 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0579",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0579",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can TloCare and the researcher develop and test a spatial prediction and adaptive-sampling workflow that uses existing soil sampling records and available covariates to identify sub-hectare salinity pockets near the Tisa before field teams are sent? The first experiment would test whether such a model can prioritise denser sampling only where salinity risk is high, without promising accuracy before validation.",
+    "rationale": [
+      {
+        "text": "Filipović has directly characterised field-scale spatial variability of ESP and ECe in Vojvodina solonetz, including salinity hotspots in micro-depressions that resemble the pockets TloCare is missing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06703",
+            "field": "abstract",
+            "quote": "Hotspots of ESP > 25% occupied 18% of the surveyed area, concentrated in micro-depressions with restricted drainage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has used EM induction surveys calibrated against laboratory ECe to produce salinisation-class maps, which is a proximal-sensing route for guiding sampling where early vegetation indices are weak.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06711",
+            "field": "abstract",
+            "quote": "EM38 and EM31 electromagnetic induction instruments were used to map apparent soil electrical conductivity (ECa) across 2,300 ha",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06711",
+            "field": "abstract",
+            "quote": "Predicted ECe maps delineated three salinisation classes covering 8%, 31%, and 61% of the area.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built machine-learning classifiers from Sentinel-2, EM38 and soil-map covariates to screen parcels, which is directly relevant to predicting variable zones before sending field teams.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06716",
+            "field": "abstract",
+            "quote": "Random forest and gradient boosting classifiers were trained to predict whether individual 1-ha parcels in the Bačka lowland met agronomic criteria for immediate reclamation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His SALTMOD calibration at Bečej and Novi Bečej gives local salt-balance modelling capacity for the Tisa-area landscapes named in the task.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06706",
+            "field": "abstract",
+            "quote": "calibrated and validated for two contrasting solonetz sites in Vojvodina (Bečej and Novi Bečej districts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Transfer gap: the geostatistical, EM induction and machine-learning evidence comes from Bačka or Tamiš–Bega datasets, not from the Tisa floodplain parcels named by TloCare; the first experiment must hold out Tisa parcels and compare predictions against denser sampling.",
+      "The historical 18,000 points were collected on a 4-ha grid and may be too sparse to label 0.3–0.8 ha salinity pockets; validation may require new dense sampling at targeted sites.",
+      "Single-depth sampling protocols can underestimate subsurface alkalisation extent by 30–40%, so a surface-only prediction may miss depth-dependent salinity.",
+      "The researcher's availability and industrial PhD willingness are unknown; administrative load above his stated tolerance could stall the collaboration.",
+      "TloCare has not yet confirmed which field sensor it will introduce, so sensor choice and data quality remain unresolved."
+    ],
+    "questions": [
+      "Confirm that both sides intend a joint project, and clarify whether industrial PhD supervision is also of interest; the researcher's industrial PhD willingness and availability are currently unknown.",
+      "Can TloCare provide a clear data-sharing agreement covering the 18,000 historical GPS/lab records and client parcel data before work starts?",
+      "Which Tisa-area parcels, such as Ravnica Agro near Novi Bečej, can be densely sampled as validation sites, and what budget and time are available for that validation?",
+      "Which field sensor route is planned first, electrical conductivity or near-infrared spectroscopy, and when would it become available?",
+      "What spatial resolution and prediction accuracy must be reached before the workflow is allowed to guide field sampling?",
+      "Can the project keep administrative work below 20% of the researcher's time and confirm the company's one-third developer/GIS capacity?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0579",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0579",
+        "version": 1
+      }
+    ]
+  }
+}

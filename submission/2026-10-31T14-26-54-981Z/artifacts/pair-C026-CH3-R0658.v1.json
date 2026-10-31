@@ -1,0 +1,209 @@
+{
+  "ref": {
+    "artifactId": "pair-C026-CH3-R0658",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0658",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can site-specific hydrogeological characterisation support a defensible four-well monitoring network and identify leachate migration pathways sufficiently to inform a containment and treatment proposal? The first investigation would test whether methods demonstrated in river-connected alluvial aquifers transfer to this yard through surveyed groundwater levels, stratigraphic observations, slug tests and quality-controlled water sampling, without assuming that natural attenuation or any treatment option will be effective.",
+    "rationale": [
+      {
+        "text": "Kovač's group combines field monitoring and groundwater modelling and has local equipment relevant to initial aquifer characterisation.",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "bio",
+            "quote": "combining field tracer experiments, multilevel piezometer networks, and numerical flow modelling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0658",
+            "field": "bio",
+            "quote": "equipped with portable multi-parameter sondes, slug-test apparatus, and data loggers for continuous head and temperature monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her published work demonstrates groundwater-flow model calibration against observed heads and explicit assessment of hydraulic-conductivity uncertainty, relevant to interpreting uncertain migration pathways.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07454",
+            "field": "abstract",
+            "quote": "calibrated against 18 months of observed heads in 11 piezometers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07454",
+            "field": "abstract",
+            "quote": "Sensitivity analyses indicated that uncertainty in hydraulic conductivity of the alluvial gravel unit is the dominant source of prediction uncertainty.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her hydrochemical research provides experience interpreting organic-carbon changes, redox conditions and metal mobilisation along groundwater pathways, although not validation for this leachate.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07455",
+            "field": "abstract",
+            "quote": "A clear redox sequence was observed: oxic riverbank conditions transitioned to anoxic conditions by 20 m",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07455",
+            "field": "abstract",
+            "quote": "Principal component analysis identified two dominant hydrochemical gradients corresponding to an organic matter degradation axis and a dilution axis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience producing hydrogeological assessments that informed regulatory licence conditions, relevant to preparing technically defensible submissions rather than guaranteeing approval.",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "industry_experience",
+            "quote": "provided a technical assessment of a proposed gravel extraction licence for a private aggregate company",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0658",
+            "field": "industry_experience",
+            "quote": "with findings that directly influenced licence conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The scope must address the ordered four monitoring wells and remediation proposal within the applicable regulatory deadline. The supplied deadline is late June 2024, so its current status must be established before scheduling.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Well locations and interpretations must account for an outdated hydrogeological baseline and unknown seasonal flow directions; a short initial campaign cannot establish full seasonal behaviour.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The proposal must address the ongoing source and inadequate liquid retention, not only groundwater monitoring.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The reported COD result comes from the company's own bench; the analytical scope and quality assurance needed for regulatory interpretation must be established rather than treating this measurement as a complete contaminant characterisation.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "we took leachate samples ourselves using our in-house bench: COD came back at 3,400 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A funded plan for drilling, external analyses and any treatment testing is necessary because the company has no dedicated research budget or advanced laboratory.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must be tightly scoped or supported by additional personnel: Kovač reports limited capacity for large commitments before mid-2025, and current availability remains unknown.",
+        "sources": [
+          {
+            "recordId": "R0658",
+            "field": "notes",
+            "quote": "has limited capacity for large new commitments before mid-2025.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The main transfer gap is from river-connected alluvial and bank-filtration settings to an uncharacterised waste-yard aquifer. The first site investigation must test local stratigraphy, hydraulic properties and flow directions before transferring models or monitoring assumptions.",
+      "The supplied evidence does not demonstrate municipal-leachate treatment design or containment engineering. A treatment and remediation specialist may be needed; bank-filtrate organic-carbon attenuation cannot be assumed effective at the reported leachate COD.",
+      "Four wells and a compressed investigation may not delineate the plume or resolve seasonal flow changes. Additional monitoring could be necessary, subject to access, funding and regulatory agreement.",
+      "The historical deadline may already have been superseded or missed. Current enforcement status and Kovač's availability are unknown, so timely mobilisation cannot be assumed.",
+      "Funding, drilling procurement, laboratory arrangements and access beyond the boundary are unspecified. These could prevent an otherwise suitable hydrogeological study from being implemented.",
+      "Inspectorate acceptance is not assured by previous regulatory experience; the required analytical suite, design standards and authorised sign-off remain unconfirmed."
+    ],
+    "questions": [
+      "What is the current status of the February order and late-June-2024 deadline, and can the complete order and subsequent inspectorate correspondence be shared?",
+      "Can Kovač confirm present availability, a named field team and capacity for a narrowly scoped joint project, including who would lead urgent mobilisation?",
+      "What funds and procurement routes are available for drilling four wells, surveying, monitoring equipment, external laboratory analyses and specialist remediation support?",
+      "Can the company supply the 1993 sketch, permit documents, site and utility plans, waste-storage history, sampling records and analytical quality-control information?",
+      "What well construction, sampling, analytical and professional sign-off requirements does the inspectorate specify, and will it review the proposed monitoring layout before drilling?",
+      "Are boundary and off-site access available, and are there nearby abstraction wells, existing monitoring wells or groundwater records that can inform the initial conceptual model?",
+      "Who will provide containment and leachate-treatment engineering, and what interim source-control actions, operational constraints and treatment-testing arrangements can the company support?"
+    ],
+    "outcome": "pair",
+    "taskId": "C026-CH3",
+    "researcherId": "R0658",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0658",
+        "version": 1
+      }
+    ]
+  }
+}

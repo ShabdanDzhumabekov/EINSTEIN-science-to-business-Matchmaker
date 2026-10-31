@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "proposal-C003-CH1-R0365",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Diagnosing cold-store conveyor weld cracking",
+    "facts": [
+      {
+        "text": "AutomVoj reports painted mild-steel hollow-section frames, weld cracking at main crossmember-to-stringer connections after about 18 months, and cold-store operation at 2–6 °C. Its room-temperature load tests pass.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "weld joint cracking at the main crossmember-to-stringer connections after about 18 months of continuous use.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We test frames under load at room temperature and they pass without any problem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has site photographs, measurements and two stored failed sections. It suspects a combination of thermal cycling, condensation and loaded-belt vibration, rather than an established single cause.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our suspicion is that the combination of thermal cycling, condensation, and the vibration load from loaded belts is doing something",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj lacks low-temperature cyclic-testing equipment and know-how. Erić’s climate chamber and servo-hydraulic machine are shared; extended campaigns require advance scheduling.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide their time between live projects and improvement work.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company identifies welding procedure, filler material and joint design as potential change areas in addressing warranty replacements.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "so we can change our welding procedure, filler material, or joint design and stop the warranty replacements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s research examined combined thermal cycling and mechanical fatigue in butt-welded S275JR plates, including crack initiation and growth. His field research used measured stress spectra and temperature records to construct assessment conditions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "This work examined whether superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "alters crack initiation and growth behaviour in butt-welded S275JR plates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić lists openness to joint projects involving low-temperature or combined-loading fatigue tests. His group routinely uses fatigue machines, a climate chamber and Abaqus models.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "open_to",
+            "quote": "joint projects involving fatigue testing under low-temperature or combined loading conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a strong methodological fit for a joint diagnostic project, but participation remains conditional: Erić’s availability and AutomVoj’s commitment are unconfirmed.",
+      "Transfer is unproven: colder plate-specimen studies do not establish the mechanism in painted hollow sections at 2–6 °C. Controlled condensation capability also remains uncertain; supplementary equipment or expertise may be necessary.",
+      "Two failed sections may not represent production variability, and post-failure damage may obscure origins. Accelerated testing could change the mechanism, so a short campaign cannot establish an 18-month lifetime or elimination of warranty failures."
+    ],
+    "proposedActions": [
+      "Propose a first experiment on replicated, production-representative painted crossmember-to-stringer joints. AutomVoj would supply specimens and service records; Erić would lead testing and fracture analysis. Independently control thermal cycling (steady 4 °C versus cycling within 2–6 °C), condensation (dry/wet), and measured belt vibration (absent/present), holding nominal belt load constant: test baseline, each factor alone, all three pairs and the full combination, plus the existing room-temperature load control. Derive waveforms, humidity and vibration levels from site measurements; keep coating, fabrication and fixtures comparable. Measure cycles to a predefined detectable crack size, growth, strain, crack location and fracture morphology. Proposed diagnostic go/no-go: proceed only if repeated tests reproduce field crack location and morphology within 2–6 °C, measured factor contrasts support an explanation, and setup safety and environmental control are demonstrated. No isolated null result ends the mechanism search; insufficient reproduction or uncertainty means further investigation, not success.",
+      "Before testing, propose a two-week evidence and feasibility phase: preserve and examine failed sections, obtain unfailed controls and fabrication records, and measure service loads, temperatures and condensation. Agree limited company engineering hours and reserve external equipment. Then negotiate an eight-week pilot window, conditional on access and representative cycling duration; do not accelerate beyond demonstrated mechanism equivalence.",
+      "Use separate tuning and held-out evaluation specimens, checking independence across production batches. Select the best feasible welding, filler or geometry configuration on tuning data. Proposed redesign gate: at least 25% longer cycles to the same crack-size endpoint than current production under the reproduced 2–6 °C failure condition, with uncertainty excluding no improvement. Unavailable evaluation specimens or inadequate precision leave validation unresolved."
+    ],
+    "questions": [
+      "Can Erić confirm availability and equipment access, and can AutomVoj confirm joint-project participation, an engineering lead, budget and reporting deadline?",
+      "Can AutomVoj authorize examination of the stored sections and supply production controls, drawings, steel certificates, welding, filler and coating records, and customer-site measurement access?",
+      "Can the shared setup safely accommodate representative joints and independently control loading, 2–6 °C thermal cycling and condensation?",
+      "Which manufacturing changes are feasible, and what additional evidence would AutomVoj require before production release and subsequent field verification of reduced warranty replacements?"
+    ],
+    "benefits": {
+      "company": "The experiment could distinguish interacting environmental and mechanical contributors and identify whether a manufacturable change deserves further validation, rather than relying on passing ambient tests.",
+      "researcher": "Subject to agreement, Erić could test whether combined-loading fracture methods transfer to painted conveyor joints, using production specimens, field failure evidence and measured service histories."
+    },
+    "markdown": "# Diagnosing cold-store conveyor weld cracking\n\n## Verified facts\n- AutomVoj reports painted mild-steel hollow-section frames, weld cracking at main crossmember-to-stringer connections after about 18 months, and cold-store operation at 2–6 °C. Its room-temperature load tests pass. [F1]\n- The company has site photographs, measurements and two stored failed sections. It suspects a combination of thermal cycling, condensation and loaded-belt vibration, rather than an established single cause. [F2]\n- AutomVoj lacks low-temperature cyclic-testing equipment and know-how. Erić’s climate chamber and servo-hydraulic machine are shared; extended campaigns require advance scheduling. [F3]\n- AutomVoj has no dedicated R&D department; its chief engineer and two senior automation engineers divide their time between live projects and improvement work. [F4]\n- The company identifies welding procedure, filler material and joint design as potential change areas in addressing warranty replacements. [F5]\n- Erić’s research examined combined thermal cycling and mechanical fatigue in butt-welded S275JR plates, including crack initiation and growth. His field research used measured stress spectra and temperature records to construct assessment conditions. [F6]\n- Erić lists openness to joint projects involving low-temperature or combined-loading fatigue tests. His group routinely uses fatigue machines, a climate chamber and Abaqus models. [F7]\n\n## Potential benefits\n- For the company: The experiment could distinguish interacting environmental and mechanical contributors and identify whether a manufacturable change deserves further validation, rather than relying on passing ambient tests.\n- For the researcher: Subject to agreement, Erić could test whether combined-loading fracture methods transfer to painted conveyor joints, using production specimens, field failure evidence and measured service histories.\n\n## Our inference\n- This suggests a strong methodological fit for a joint diagnostic project, but participation remains conditional: Erić’s availability and AutomVoj’s commitment are unconfirmed.\n- Transfer is unproven: colder plate-specimen studies do not establish the mechanism in painted hollow sections at 2–6 °C. Controlled condensation capability also remains uncertain; supplementary equipment or expertise may be necessary.\n- Two failed sections may not represent production variability, and post-failure damage may obscure origins. Accelerated testing could change the mechanism, so a short campaign cannot establish an 18-month lifetime or elimination of warranty failures.\n\n## Proposed next steps\n- Propose a first experiment on replicated, production-representative painted crossmember-to-stringer joints. AutomVoj would supply specimens and service records; Erić would lead testing and fracture analysis. Independently control thermal cycling (steady 4 °C versus cycling within 2–6 °C), condensation (dry/wet), and measured belt vibration (absent/present), holding nominal belt load constant: test baseline, each factor alone, all three pairs and the full combination, plus the existing room-temperature load control. Derive waveforms, humidity and vibration levels from site measurements; keep coating, fabrication and fixtures comparable. Measure cycles to a predefined detectable crack size, growth, strain, crack location and fracture morphology. Proposed diagnostic go/no-go: proceed only if repeated tests reproduce field crack location and morphology within 2–6 °C, measured factor contrasts support an explanation, and setup safety and environmental control are demonstrated. No isolated null result ends the mechanism search; insufficient reproduction or uncertainty means further investigation, not success.\n- Before testing, propose a two-week evidence and feasibility phase: preserve and examine failed sections, obtain unfailed controls and fabrication records, and measure service loads, temperatures and condensation. Agree limited company engineering hours and reserve external equipment. Then negotiate an eight-week pilot window, conditional on access and representative cycling duration; do not accelerate beyond demonstrated mechanism equivalence.\n- Use separate tuning and held-out evaluation specimens, checking independence across production batches. Select the best feasible welding, filler or geometry configuration on tuning data. Proposed redesign gate: at least 25% longer cycles to the same crack-size endpoint than current production under the reproduced 2–6 °C failure condition, with uncertainty excluding no improvement. Unavailable evaluation specimens or inadequate precision leave validation unresolved.\n\n## Open questions\n- Can Erić confirm availability and equipment access, and can AutomVoj confirm joint-project participation, an engineering lead, budget and reporting deadline?\n- Can AutomVoj authorize examination of the stored sections and supply production controls, drawings, steel certificates, welding, filler and coating records, and customer-site measurement access?\n- Can the shared setup safely accommodate representative joints and independently control loading, 2–6 °C thermal cycling and condensation?\n- Which manufacturing changes are feasible, and what additional evidence would AutomVoj require before production release and subsequent field verification of reduced warranty replacements?",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

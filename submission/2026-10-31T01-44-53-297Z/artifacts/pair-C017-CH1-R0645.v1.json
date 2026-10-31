@@ -1,0 +1,189 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0645",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0645",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a geostatistical and adaptive-sampling workflow using TloCare's historical grid samples and available field covariates predict where 0.3–0.8 ha salinity pockets are located before the field team is sent out? The first experiment would test this hypothesis on held-out densely sampled parcels and compare targeted sampling against the standard 4 ha grid.",
+    "rationale": [
+      {
+        "text": "The researcher has demonstrated spatially structured soil variation at sub-kilometre scales relevant to precision agriculture.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07332",
+            "field": "abstract",
+            "quote": "These results indicate that microbial diversity in Vojvodina croplands is structured at sub-kilometre scales relevant to precision agriculture management.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has modelled soil biological composition along measured EC and pH salinity gradients with explicit spatial random effects.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07334",
+            "field": "abstract",
+            "quote": "fitted Dirichlet-multinomial (DM) regression models with EC and pH as continuous predictors and geographic coordinates as spatial random effects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has benchmarked kriging interpolators for prediction from sparse sampling grids, which matches the need to improve maps without proportionally denser sampling.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07333",
+            "field": "abstract",
+            "quote": "benchmark four kriging variants: ordinary kriging, simple kriging, indicator kriging, and universal kriging with elevation as an external drift variable.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has tested satellite-derived covariates as external drift variables in kriging, a transferable approach for incorporating auxiliary field covariates.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02786",
+            "field": "abstract",
+            "quote": "Universal kriging with SAR-derived moisture as drift variable was compared to ordinary kriging for predicting Shannon diversity and three indicator taxa.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has led spatial statistical modelling and map production with uncertainty quantification in a regional soil-monitoring project.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1772",
+            "field": "summary",
+            "quote": "Filip Vučković led the work package on spatial statistical modelling, overseeing variogram analysis, kriging-based map production, and uncertainty quantification.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's stated participation preferences explicitly include joint projects with agri-tech or precision agriculture companies.",
+        "sources": [
+          {
+            "recordId": "R0645",
+            "field": "open_to",
+            "quote": "joint projects with agri-tech or precision agriculture companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The collaboration must be able to use and harmonise TloCare's historical GPS coordinates and laboratory results for about 18,000 points from the last ten years.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The target salinity pockets are only 0.3–0.8 ha, while the standard 4 ha grid misses them; the modelling and validation must operate at that fine spatial resolution.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Denser sampling cannot be allowed to raise field, laboratory and delivery costs proportionally; the workflow must target additional samples only where needed.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Early-spring NDVI cannot be assumed to reveal salinity; any vegetation-index covariate must be tested rather than treated as reliable.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "se salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "TloCare's R&D capacity is limited to two developers and one GIS specialist with up to one-third time, plus occasional field-team testing support.",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija, uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher availability is not confirmed beyond the statement that new collaborations are possible from mid-2025 onward.",
+        "sources": [
+          {
+            "recordId": "R0645",
+            "field": "notes",
+            "quote": "Vučković is available for new collaborations from mid-2025 onward.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The salinity-modelling evidence is on microbiome composition along EC and pH gradients, not on directly predicting soil salinity pockets from sparse grid samples; this transfer gap should be tested in the first experiment.",
+      "TloCare's client-facing results mention pH, phosphorus, potassium, humus and calcification need, so it is unknown whether the historical laboratory archive contains direct salinity or EC variables.",
+      "The satellite external-drift evidence uses SAR-derived soil moisture, not salinity, and includes temporal-mismatch constraints; it may not transfer to early-season salinity prediction.",
+      "The researcher's published variogram ranges of 1.8 km and 2.3 km are much coarser than the 0.3–0.8 ha target pockets, so fine-scale predictive skill must be demonstrated rather than assumed.",
+      "Laboratory report ingestion is only partly automated, which could create data-harmonisation errors when assembling the ten-year archive.",
+      "TloCare's earlier density-optimisation pilot with an institute was not formalised and produced no joint published result, so the collaboration agreement and outputs need explicit definition.",
+      "Researcher availability is only indicated from mid-2025 onward and is otherwise unknown; timing could limit the plan."
+    ],
+    "questions": [
+      "Does TloCare's 18,000-point laboratory archive include electrical conductivity or other direct salinity measurements, or only pH, phosphorus, potassium, humus and calcification need?",
+      "Can TloCare share the raw GPS coordinates and laboratory reports for secondary analysis, and what data-sharing or client-consent conditions apply?",
+      "Which field-scale covariates are available historically and going forward: elevation, soil maps, Sentinel-1/2, drone imagery, or on-the-go EC sensors?",
+      "What cost, turnaround and map-accuracy thresholds would make targeted denser sampling acceptable to TloCare and its clients?",
+      "Can TloCare provide a held-out set of parcels with dense salinity sampling to validate predictions of pocket locations?",
+      "Is a joint project the preferred format, and when could it start given that the researcher's availability is only indicated from mid-2025 onward? Would an industrial PhD be considered if the joint project succeeds?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0645",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0645",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Determine whether the crossmember-to-stringer weld cracking in AutomVoj conveyor frames is driven by the combined action of loaded-belt vibration and cold-store thermal cycling with condensation, and which change — welding procedure, filler material or joint detail — would raise the fatigue life of these joints at 2–6 °C. A first experiment would reproduce a representative site thermal-mechanical load profile on fillet-welded hollow-section joints and compare crack initiation and growth against a room-temperature baseline.",
+    "rationale": [
+      {
+        "text": "Erić's core research line is exactly the combined mechanical-plus-thermal fatigue of welded structural steel joints.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "fatigue and fracture mechanics of welded structural steel joints subjected to combined cyclic mechanical loading and low-temperature thermal excursions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has run superimposed thermal-cycling-during-fatigue experiments and reported synergistic damage rather than simple superposition, which is the mechanism AutomVoj suspects on site.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has quantified how a weld-procedure change (post-weld heat treatment) redistributes residual stress and translates into predicted endurance, which is the type of lever AutomVoj wants to pull.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04473",
+            "field": "abstract",
+            "quote": "estimated endurance at the design stress range of 90 MPa increased from 1.2 × 10⁶ to 3.8 × 10⁶ cycles following PWHT",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He can compute crack driving forces at weld toes by FE for the actual joint geometry, supporting a joint-redesign option rather than only a material change.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04477",
+            "field": "abstract",
+            "quote": "Semi-elliptical surface cracks at the toe of transverse attachment welds were modelled in Abaqus using the extended finite element method (XFEM)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His laboratory already has the low-temperature cyclic testing and simulation capability AutomVoj explicitly lacks.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has already assessed a welded structure under real operational temperature variation and argued for a temperature knock-down in fatigue assessment, i.e. the industrial framing of this problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "recommends that crane structures in cold continental climates should apply a temperature knock-down factor on the fatigue strength class",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The test pieces must represent AutomVoj's actual detail: mild steel hollow sections joined by MIG/MAG fillet welds at crossmember-to-stringer connections, not generic plate coupons.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "welded from mild steel hollow section and painted for corrosion resistance before delivery",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "tech",
+            "quote": "Mild steel and stainless steel MIG/MAG welded frame fabrication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The service environment to be represented is a cold store at 2–6 °C with condensation, combined with cyclic belt loading; the test profile has to be defined jointly because AutomVoj cannot test under those conditions itself.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Physical evidence exists but is limited: photographs, site measurements and only two retained failed sections, so destructive examination and replication of the joint must be planned around that.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Machine time is contested: the climate chamber and servo-hydraulic rig are shared, so long thermo-mechanical campaigns need advance scheduling.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "On the company side there is no dedicated R&D function; the counterpart effort must come from a chief engineer and two senior engineers who also carry live projects.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department; technical development happens informally through project work, led by our chief engineer and two senior automation engineers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The output must be actionable at the fabrication level — a changed welding procedure, filler material or joint design — not only a diagnostic report.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "so we can change our welding procedure, filler material, or joint design and stop the warranty replacements",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap on temperature regime: the researcher's low-temperature fatigue evidence is mostly at −20 °C to −60 °C on plate and cruciform specimens, whereas the failures occur at 2–6 °C; if the real driver is condensation-assisted corrosion fatigue rather than low-temperature embrittlement, the cited low-temperature datasets do not directly cover it and the first experiment must test this.",
+      "Scale transfer gap: the group's servo-hydraulic machines test specimens, while the cracking is reported in full frame assemblies 18 months into service; sub-component specimens must be shown to reproduce the site failure mode.",
+      "No site load or temperature record is stated in the company material: the vibration spectrum of loaded belts, defrost and door-opening thermal cycles, and stress ranges at the joint are unknown, so any test profile is an assumption to be validated.",
+      "Only two failed sections are retained, which limits fractography and metallography and may make it impossible to separate weld-quality effects from service-environment effects.",
+      "Shared equipment access could delay or truncate an extended thermo-mechanical test campaign, and the researcher's availability is unknown.",
+      "The company has no R&D department and its engineers are committed to live projects, so data collection, specimen preparation and implementation of a procedure change may stall.",
+      "Budget, project duration and the acceptable cost per frame (filler, procedure, design change versus warranty cost) are unstated.",
+      "A prior joint project with the faculty produced an internal tool that was neither published nor commercialised; expectations about exploitation of results should be set explicitly."
+    ],
+    "questions": [
+      "Is the researcher available for a joint project in the coming period, and how much time can he and his group commit given the shared climate chamber and servo-hydraulic machine?",
+      "What quantitative load data exist from cold-store installations — belt tensions, measured vibration, strain-gauge or accelerometer records — and can AutomVoj instrument a running line?",
+      "What temperature-cycle history do the cold stores actually impose (defrost cycles, door openings, seasonal variation), and how many cycles correspond to the 18 months to failure?",
+      "Can AutomVoj provide the welding procedure specifications, filler material grades, welding parameters and inspection records for the 14 replaced assemblies, and are the two stored failed sections available for destructive sectioning?",
+      "Can AutomVoj supply new representative joint specimens or a partial frame assembly, and what geometric simplification is acceptable to them?",
+      "What budget and timeline are foreseen, and what would AutomVoj consider a successful outcome (mechanism identified, revised procedure qualified, reduced warranty rate)?",
+      "Must the resulting assessment follow IIW recommendations or another standard for acceptance by their customers?",
+      "Would AutomVoj also consider the industrial PhD supervision route if a longer, student-based collaboration turns out to suit them better?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

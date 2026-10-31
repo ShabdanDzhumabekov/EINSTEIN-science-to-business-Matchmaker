@@ -1,0 +1,234 @@
+{
+  "ref": {
+    "artifactId": "proposal-C017-CH1-R0746",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0746",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C017-CH1-R0746",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Finding small Tisa salinity pockets within routine survey costs",
+    "facts": [
+      {
+        "text": "TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares. Denser sampling adds fieldwork, laboratory costs and delivery time; the company says it cannot afford generally denser sampling.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "text",
+            "quote": "We do traditional grid sampling at one point per 4 hectares",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "text",
+            "quote": "we can't afford to sample more densely.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has GPS coordinates and laboratory results for about 18,000 points from ten years. Its stated customer outputs cover pH, phosphorus, potassium, humus and liming needs, and it uses SRPS sampling and analysis protocols; these statements do not establish historical ECe or ESP coverage.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "about",
+            "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "Standardni agrohemijski protokoli po SRPS metodologiji za uzorkovanje i analizu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "TloCare reports unsuccessful NDVI-guided adaptive sampling because salinity was not clearly visible in early-spring vegetation indices.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Probali smo da koristimo satelitske NDVI snimke kao vodič za adaptivno uzorkovanje, ali nismo imali dobre rezultate",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kosanović lists openness to company joint projects, availability for short consultancy visits and a preference for field-data collection. His instruments are available to external partners subject to scheduling and consumables cost recovery.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "open_to",
+            "quote": "joint projects with companies needing field-scale soil characterisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "Kosanović is available for short-term consultancy visits to company sites within Serbia.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "He prefers collaborations that involve genuine field data collection rather than purely computational work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "His EM38 and pXRF instruments are available to external partners subject to scheduling and consumables cost recovery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "TloCare has two programmers and one GIS specialist able to allocate up to one-third of their time to development, with occasional field-team support. Its existing spatial database and portal use PostGIS and Leaflet.",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "PostGIS baza podataka za prostorne slojeve parcela",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "Leaflet.js za prikaz mapa u web portalu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements. It reported lower cross-validation errors than ordinary kriging without those covariates.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "Regression-kriging (RK) was applied to delineate saline-sodic soil management zones at a commercial sunflower farm of 280 hectares in central Vojvodina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "Apparent electrical conductivity (ECa) from an EM38 survey and total sodium content from pXRF scanning served as covariates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "RK achieved RMSE of 2.7 mS/m for ECe and 2.9 cmol/kg for ESP, compared with 3.8 and 4.2 for ordinary kriging without covariates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights. His flooded-field study found lower temporal stability in transitions between microrelief elements.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08252",
+            "field": "abstract",
+            "quote": "Nugget variance estimates became unstable below n=30, compromising kriging weights.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08250",
+            "field": "abstract",
+            "quote": "Zones of lower stability were located on sloping transitions between microrelief elements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a strong methodological fit, but published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow. Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives.",
+      "Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits. Historical records could help only after checking salinity coverage and protocol comparability; archive size alone does not establish usable reference labels.",
+      "This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format. A bounded field pilot appears more practical than immediate portal development."
+    ],
+    "proposedActions": [
+      "Propose comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze selection before evaluation. Test local conductivity–salinity calibration, not imported spacing. Define reference pockets using an agreed laboratory salinity threshold. Count each confirmed 0.3–0.8-hectare pocket once, detected when predictions cover at least half its polygon; divide by all confirmed target-size pockets. Measure false-positive hectares over reference-confirmed non-saline hectares. Proposed go/no-go applies to the best tuning-selected configuration, whichever it is: higher pocket detection than the grid, with no greater false-positive area rate, routine cost per hectare or turnaround. Pre-agree confidence level, spatially appropriate uncertainty estimation and minimum detection improvement; require the detection-difference lower confidence bound to exceed that improvement threshold and the false-positive-difference upper bound to satisfy an agreed nonpositive tolerance. Also require cost and turnaround within agreed caps. Unresolved reference areas or insufficient pockets prevent a pass.",
+      "Propose six to eight weeks after access and bookings: TloCare would nominate fields and supply records; Kosanović would design calibration and sensing. Audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund independent reference sampling. Deliver guidance before soil-sampling dispatch, explicitly scheduling and costing earlier sensing. If predictions must precede every field visit, advance-data availability remains a prerequisite. Confirm instrument bookings, consumables funding and field support before starting.",
+      "Keep implementation within stated staffing: initially export PostGIS-compatible zone and uncertainty layers for Leaflet review. Propose repeat measurements across moisture conditions, especially transitions, before reusing surveys. Test affordable calibration densities without assuming sparse samples remain reliable. Include advance sensing, consumables and repeat visits in recurring costs; report independent validation costs separately."
+    ],
+    "questions": [
+      "Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?",
+      "Can TloCare secure representative Tisa fields, independent reference-sampling access and historical salinity records with depth, date and laboratory metadata?",
+      "What laboratory salinity threshold, minimum detection improvement, confidence level, nonpositive false-positive tolerance, cost ceiling and turnaround limit should govern acceptance?",
+      "Is a separately costed advance sensor visit acceptable before soil-sampling dispatch, and can the parties agree pilot funding, staff allocation and data-use terms?"
+    ],
+    "benefits": {
+      "company": "The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround, and identify when advance sensing is economical.",
+      "researcher": "Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale."
+    },
+    "markdown": "# Finding small Tisa salinity pockets within routine survey costs\n\n## Verified facts\n- TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares. Denser sampling adds fieldwork, laboratory costs and delivery time; the company says it cannot afford generally denser sampling. [F1]\n- The company has GPS coordinates and laboratory results for about 18,000 points from ten years. Its stated customer outputs cover pH, phosphorus, potassium, humus and liming needs, and it uses SRPS sampling and analysis protocols; these statements do not establish historical ECe or ESP coverage. [F2]\n- TloCare reports unsuccessful NDVI-guided adaptive sampling because salinity was not clearly visible in early-spring vegetation indices. [F3]\n- Kosanović lists openness to company joint projects, availability for short consultancy visits and a preference for field-data collection. His instruments are available to external partners subject to scheduling and consumables cost recovery. [F4]\n- TloCare has two programmers and one GIS specialist able to allocate up to one-third of their time to development, with occasional field-team support. Its existing spatial database and portal use PostGIS and Leaflet. [F5]\n- Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements. It reported lower cross-validation errors than ordinary kriging without those covariates. [F6]\n- His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights. His flooded-field study found lower temporal stability in transitions between microrelief elements. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround, and identify when advance sensing is economical.\n- For the researcher: Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale.\n\n## Our inference\n- This suggests a strong methodological fit, but published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow. Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives.\n- Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits. Historical records could help only after checking salinity coverage and protocol comparability; archive size alone does not establish usable reference labels.\n- This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format. A bounded field pilot appears more practical than immediate portal development.\n\n## Proposed next steps\n- Propose comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze selection before evaluation. Test local conductivity–salinity calibration, not imported spacing. Define reference pockets using an agreed laboratory salinity threshold. Count each confirmed 0.3–0.8-hectare pocket once, detected when predictions cover at least half its polygon; divide by all confirmed target-size pockets. Measure false-positive hectares over reference-confirmed non-saline hectares. Proposed go/no-go applies to the best tuning-selected configuration, whichever it is: higher pocket detection than the grid, with no greater false-positive area rate, routine cost per hectare or turnaround. Pre-agree confidence level, spatially appropriate uncertainty estimation and minimum detection improvement; require the detection-difference lower confidence bound to exceed that improvement threshold and the false-positive-difference upper bound to satisfy an agreed nonpositive tolerance. Also require cost and turnaround within agreed caps. Unresolved reference areas or insufficient pockets prevent a pass.\n- Propose six to eight weeks after access and bookings: TloCare would nominate fields and supply records; Kosanović would design calibration and sensing. Audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund independent reference sampling. Deliver guidance before soil-sampling dispatch, explicitly scheduling and costing earlier sensing. If predictions must precede every field visit, advance-data availability remains a prerequisite. Confirm instrument bookings, consumables funding and field support before starting.\n- Keep implementation within stated staffing: initially export PostGIS-compatible zone and uncertainty layers for Leaflet review. Propose repeat measurements across moisture conditions, especially transitions, before reusing surveys. Test affordable calibration densities without assuming sparse samples remain reliable. Include advance sensing, consumables and repeat visits in recurring costs; report independent validation costs separately.\n\n## Open questions\n- Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?\n- Can TloCare secure representative Tisa fields, independent reference-sampling access and historical salinity records with depth, date and laboratory metadata?\n- What laboratory salinity threshold, minimum detection improvement, confidence level, nonpositive false-positive tolerance, cost ceiling and turnaround limit should govern acceptance?\n- Is a separately costed advance sensor visit acceptable before soil-sampling dispatch, and can the parties agree pilot funding, staff allocation and data-use terms?",
+    "taskId": "C017-CH1",
+    "researcherId": "R0746",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0746",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C017-CH1-R0746",
+        "version": 1
+      }
+    ]
+  }
+}

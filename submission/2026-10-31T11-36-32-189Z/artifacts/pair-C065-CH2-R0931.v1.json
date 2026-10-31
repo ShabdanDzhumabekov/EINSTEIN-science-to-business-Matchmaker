@@ -1,0 +1,202 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0931",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0931",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can recommendations based on product descriptions and category metadata, optionally combined with sparse purchase signals, outperform best-seller sorting for one Harmat client with only 500–2,000 transactions? The first experiment would test transfer from audio-description recommendation to product catalogs by comparing simple content-based methods, pretrained semantic embeddings and a lightweight hybrid against best-seller sorting, using time-held-out transactions and human relevance judgments while quantifying uncertainty.",
+    "rationale": [
+      {
+        "text": "Zahorecová has developed a description-embedding recommendation prototype and evaluated recommendations with users, directly supporting investigation of content-based alternatives to sparse collaborative filtering.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05004",
+            "field": "abstract",
+            "quote": "Razvijen je prototip sistema za preporučivanje podkast epizoda koji koristi semantička ugrađivanja opisa epizoda za računanje srodnosti sadržaja.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05004",
+            "field": "abstract",
+            "quote": "Evaluacija je sprovedena sa 87 dobrovoljnih korisnika u kontrolisanom okruženju",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work compares inexpensive lexical similarity with sentence embeddings for short descriptions, providing relevant methods for testing whether semantic models add value over simpler product-text baselines.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-09847",
+            "field": "abstract",
+            "quote": "We benchmarked eight similarity methods ranging from cosine similarity over TF-IDF vectors to sentence-level embeddings produced by a fine-tuned multilingual BERT variant.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has studied Serbian–Hungarian metadata representations, relevant to investigating multilingual product descriptions in Harmat's regional market, though not evidence of validated retail performance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-09846",
+            "field": "abstract",
+            "quote": "This paper investigates the effectiveness of Word2Vec skip-gram embeddings trained on bilingual corpora of Serbian and Hungarian audio metadata",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has prior industrial experience delivering a recommendation prototype that entered internal use and defining annotation requirements, supporting a scoped prototype and relevance-labeling exercise.",
+        "sources": [
+          {
+            "recordId": "R0931",
+            "field": "industry_experience",
+            "quote": "tokom kojeg je razvijen prototip sistema za preporučivanje koji je ušao u internu upotrebu.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0931",
+            "field": "industry_experience",
+            "quote": "Ima iskustvo u definisanju zahteva za anotaciju podataka i upravljanju procesima anotacije u industrijskom okruženju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The experiment must work with existing sparse data rather than depend on collecting substantially more transactions, and must retain best-seller sorting as a baseline.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be covered by a data-sharing agreement and limited to the offered anonymised transaction and catalog data unless additional access is explicitly agreed.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit approximately one developer-day per week from Harmat, initially targeting one client's prototype rather than a multi-client production rollout.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any deployable prototype must accommodate Harmat's existing integration and client-VPS environment; inference resources and latency limits need agreement before choosing a model.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "User-facing additions must follow Harmat's three-language review process; which catalog languages the pilot must support remains to be established.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the researcher's stated earliest start of mid-2027; her actual current availability and committed effort still require confirmation.",
+        "sources": [
+          {
+            "recordId": "R0931",
+            "field": "notes",
+            "quote": "dostupna je za nove projekte koji bi počeli najranije sredinom 2027. godine.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Audio and podcast recommendation results do not establish retail recommendation quality. Semantic similarity may identify substitutes when shoppers need complementary products; the first experiment must test both relevance and intended recommendation type on the chosen catalog.",
+      "The researcher's behavior-supervised embedding study used 4.2 million session records, unlike Harmat's small order histories. Training a similar behavioral model may be infeasible; the pilot should first test content-only methods and whether sparse purchase signals add any value.",
+      "Low transaction volume may make held-out estimates unstable and prevent a timely, adequately powered online comparison. Offline relevance improvements would not establish sales uplift.",
+      "Product-description completeness, category consistency, catalog size and language distribution are unknown. Poor metadata or untested Slovak coverage could undermine semantic recommendations.",
+      "Joint-project participation is open, but current researcher capacity, project budget, pilot deadline and hardware limits remain unknown. The stated mid-2027 start may not match Harmat's needs."
+    ],
+    "questions": [
+      "Can Zahorecová confirm a start no earlier than mid-2027, available effort and willingness to undertake this retail recommendation joint project?",
+      "Which client and catalog will be used, how many active products are present, and how complete are descriptions, categories, language variants and historical catalog snapshots?",
+      "Should the widget recommend substitutes, complementary products or both, and who can label a small set of product–recommendation pairs for the first transfer experiment?",
+      "Do the anonymised data retain order timestamps, basket membership and stable product identifiers? Are historical impressions or clicks available, and what exactly did the earlier A/B test measure?",
+      "What minimum improvement would justify deployment, which offline and business metrics matter, and is there enough traffic for a later online test within an agreed time window?",
+      "What budget, deadline, VPS resources, response-time limits and integration responsibilities can each partner commit to?",
+      "What data-sharing, retention, access-control and model-hosting terms must be agreed, including whether external embedding services are permitted?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0931",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0931",
+        "version": 1
+      }
+    ]
+  }
+}

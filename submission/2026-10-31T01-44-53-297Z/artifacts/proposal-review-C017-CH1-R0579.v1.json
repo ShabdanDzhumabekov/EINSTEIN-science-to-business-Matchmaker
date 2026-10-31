@@ -1,0 +1,130 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C017-CH1-R0579",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C017-CH1-R0579",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C017-CH1-R0579",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "TloCare samples one point per 4 ha, but Tisa-area clients report sunflower failure where maps look good; denser sampling found saline pockets of 0.3–0.8 ha that the standard grid skips.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Radimo grid uzorkovanje sa jednom tačkom na četiri hektara",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "videli smo da slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.38; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Filipović lists joint projects with companies developing soil monitoring sensors or irrigation scheduling software; he is cautious about projects requiring more than 20% of working time on administrative tasks and prefers clear data-sharing agreements.",
+        "sources": [
+          {
+            "recordId": "R0579",
+            "field": "open_to",
+            "quote": "joint projects with companies developing soil monitoring sensors or irrigation scheduling software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0579",
+            "field": "notes",
+            "quote": "cautious about projects requiring more than 20% of working time on administrative tasks",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.34; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "He calibrated and validated SALTMOD at Bečej and Novi Bečej; TloCare plans electrical-conductivity or near-infrared field sensing to offer denser coverage without proportional sampling-cost growth.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06706",
+            "field": "abstract",
+            "quote": "calibrated and validated for two contrasting solonetz sites in Vojvodina (Bečej and Novi Bečej districts)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "plans",
+            "quote": "kako bismo ponudili gušće prostorno pokriće bez proporcionalnog rasta troškova uzorkovanja",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.45; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "train a spatial salinity-risk model only on TloCare’s historical 18,000 GPS/lab points plus covariates",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "products",
+            "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom, uz preporuku za đubrenje po parcelama.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The material never states that the historical laboratory results include salinity-relevant analytes (ECe/ESP/EC); the only residues the company names are pH, P, K, humus and calcification need, so a salinity-risk model may have no usable labels. Add 'which analytes and depths exist in the 18,000 records (notably ECe/ESP)' to the data-audit step and state that training is contingent on it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "participation_misstated",
+        "severity": "blocking",
+        "claim": "Proposed researcher contribution: model design and validation; company contribution: data, field access and dense reference sampling.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Problem je što gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke — a cena usluge nam već pritiska granicu prihvatljivosti za klijenta.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija, uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Dense reference sampling is exactly the cost the company says it cannot bear, and its stated R&D capacity covers developers, one GIS specialist and only occasional field-team testing. Mark the company's dense-sampling contribution explicitly as unconfirmed and conditional on the budget question, rather than listing it as an assigned contribution.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

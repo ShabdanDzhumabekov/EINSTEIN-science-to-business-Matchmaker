@@ -1,0 +1,263 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0709",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0709",
+    "name": "Vladana Prodanović",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning",
+      "Sequence Modelling",
+      "Data Mining and Behavioural Analytics",
+      "Applied Statistics"
+    ],
+    "keywords": [
+      "domain adaptation",
+      "transfer learning",
+      "distribution shift",
+      "behavioural sequence modelling",
+      "consumer behaviour",
+      "covariate shift correction",
+      "recurrent neural networks",
+      "importance weighting",
+      "heterogeneous populations",
+      "representation alignment"
+    ],
+    "openTo": [
+      "joint projects with companies holding multi-market consumer transaction datasets",
+      "contract research on deployment and monitoring of recommendation or prediction systems across heterogeneous user populations",
+      "industrial PhD supervision for candidates working on applied transfer learning or behavioural analytics",
+      "student internships for thesis projects involving real retail or mobility datasets",
+      "consulting on distribution shift diagnostics and model retraining strategies"
+    ],
+    "bio": {
+      "recordId": "R0709",
+      "field": "bio",
+      "text": "Vladana Prodanović received her B.Sc. and M.Sc. degrees in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2005 and 2008 respectively, and her Ph.D. in Computer Science from the same institution in 2013, with a dissertation on covariate shift correction in sequential consumer behaviour models. She completed a postdoctoral fellowship at the University of Ljubljana (2014–2016) before returning to Novi Sad as an Assistant Professor. Promoted to Associate Professor in 2021, she leads a small research group focused on domain adaptation and transfer learning for behavioural sequence modelling, with particular attention to distribution shift across heterogeneous population datasets. She teaches courses in machine learning and probabilistic modelling. The group operates within the Laboratory for Intelligent Systems and uses a shared GPU cluster and anonymised retail and mobility datasets acquired through industry agreements."
+    },
+    "industryExperience": {
+      "recordId": "R0709",
+      "field": "industry_experience",
+      "text": "Prodanović served as a technical consultant to a regional grocery retail chain (2019–2020) on the evaluation and calibration of their in-house next-basket prediction system, advising specifically on retraining triggers and population segmentation. She has also participated in two industry-funded workshops organised by NTP Novi Sad tenants on the deployment of consumer analytics pipelines."
+    },
+    "notes": {
+      "recordId": "R0709",
+      "field": "notes",
+      "text": "Prodanović has a strong preference for collaborations that provide access to real, longitudinal consumer datasets; she is less interested in purely synthetic benchmarking engagements. Her group's GPU cluster capacity is currently shared with two other research groups and may be a bottleneck for very large-scale experiments without additional infrastructure support from a partner."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07931",
+        "kind": "publication",
+        "title": "Covariate Shift in Markov-Based Purchase Sequence Models: A Density-Ratio Approach",
+        "body": {
+          "recordId": "SYN-PUB-07931",
+          "field": "abstract",
+          "text": "This paper examines covariate shift between training and deployment distributions in first- and second-order Markov chain models of retail purchase sequences. We use kernel mean matching to estimate density ratios between a labelled source dataset of 180,000 anonymised transaction records from a Serbian supermarket chain and an unlabelled target dataset of 47,000 records from a Slovenian retailer. Reweighting source training samples by the estimated ratios reduces one-step prediction error on the target by 14.3% compared to unweighted transfer, measured by cross-entropy on held-out target sequences. We provide a bias-variance analysis of the density-ratio estimator under varying source-target overlap and show that performance degrades gracefully as overlap decreases. The approach requires no labelled target data and adds negligible computational overhead at inference time. Results suggest that even shallow sequence models can benefit substantially from explicit shift correction when deployed across national retail markets with differing product assortments and shopping rhythms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07932",
+        "kind": "publication",
+        "title": "Importance-Weighted Hidden Markov Models for Cross-Regional Mobility Behaviour Transfer",
+        "body": {
+          "recordId": "SYN-PUB-07932",
+          "field": "abstract",
+          "text": "We investigate the transfer of hidden Markov models (HMMs) trained on GPS-derived mobility sequences from one metropolitan region to another, where land-use patterns and transit infrastructure differ substantially. The source corpus contains 62,000 daily movement traces from Novi Sad and the target contains 21,000 traces from Pécs, Hungary. Importance weights are computed via logistic-regression-based density-ratio estimation on a set of trip-level features including departure time, trip duration, and activity-type distribution. Weighted Baum-Welch re-estimation of emission and transition parameters on source data followed by a short fine-tuning pass on 500 labelled target traces yields a 9.8-point improvement in activity-recognition accuracy over unweighted transfer and comes within 2.1 points of a fully supervised target model trained on 5,000 labelled traces. We also evaluate robustness under label noise in the small target supervision set. The method is computationally suitable for deployment on city-scale datasets without high-performance infrastructure."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07933",
+        "kind": "publication",
+        "title": "Domain Adaptation for Recurrent Session-Based Recommendation Without Target Labels",
+        "body": {
+          "recordId": "SYN-PUB-07933",
+          "field": "abstract",
+          "text": "Session-based recommendation systems trained on one user population often degrade when deployed for a demographically or geographically distinct population. We study unsupervised domain adaptation for GRU-based session encoders, adapting a model trained on an e-commerce session dataset of 1.2 million sessions from a Western European market to a dataset of 310,000 sessions from a Southeast European market with no available target labels. Adaptation is achieved by minimising the maximum mean discrepancy (MMD) between source and target hidden-state distributions in an adversarial training loop appended to the base GRU. On five standard next-item metrics (HR@10, NDCG@10, MRR, coverage, novelty), adapted models outperform direct transfer by margins of 6–12%. We conduct ablations separating the contributions of the encoder adversarial loss and a category-level alignment auxiliary objective. The study also reports how gains vary with session length distribution mismatch between domains, finding that the method is most beneficial when mean session lengths differ by more than 30%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07934",
+        "kind": "publication",
+        "title": "Transfer Learning for Sequential Models: Methods, Benchmarks, and Evaluation Pitfalls",
+        "body": {
+          "recordId": "SYN-PUB-07934",
+          "field": "abstract",
+          "text": "This book chapter reviews the landscape of transfer learning techniques applied to discrete-event and behavioural sequence models, covering instance reweighting, feature-level alignment, parameter transfer, and meta-learning approaches. We organise methods along two axes: the degree of target supervision required and the structural assumptions made about the sequence-generating process. Particular attention is paid to evaluation design: we identify four recurring pitfalls in published benchmarks, including temporal leakage across domain boundaries, conflation of domain shift with concept drift, and the use of target validation data during hyper-parameter selection, which artificially inflates reported gains. For each pitfall we propose a concrete corrective protocol. The chapter includes case studies drawn from retail, mobility, and digital media consumption domains, using both public and proprietary datasets. Intended as a reference for practitioners deploying sequence models across heterogeneous populations, the chapter also points to open problems around privacy-constrained adaptation and low-resource target domains."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07935",
+        "kind": "publication",
+        "title": "Subpopulation-Aware Adaptation: Clustering Source Users to Improve Target-Domain Sequence Predictions",
+        "body": {
+          "recordId": "SYN-PUB-07935",
+          "field": "abstract",
+          "text": "When a source dataset contains multiple latent user subpopulations, treating it as a single homogeneous distribution can obscure the subsets most relevant to the target domain. We propose a two-stage pipeline: first, soft-cluster source users into K groups using a variational autoencoder over their purchase-sequence embeddings; second, weight each cluster's contribution to fine-tuning by its representational similarity to the target population, estimated via symmetric KL divergence on cluster-level feature distributions. Experiments on a grocery transaction dataset (source: 950,000 users; target: 120,000 users from a different regional chain) show that K=6 clusters with similarity-weighted fine-tuning achieves a 17% reduction in next-basket prediction error over flat transfer and 8% over standard importance-weighted transfer. Performance is stable for K between 4 and 10. We also examine the cluster structures recovered, finding they correspond loosely to interpretable shopping-pattern archetypes. The pipeline adds one offline clustering step with negligible cost relative to model training."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07936",
+        "kind": "publication",
+        "title": "Quantifying Distributional Distance Between Consumer Datasets: A Practical Toolkit",
+        "body": {
+          "recordId": "SYN-PUB-07936",
+          "field": "abstract",
+          "text": "Choosing the right distributional distance measure is a prerequisite for meaningful domain adaptation diagnostics, yet practitioners rarely examine this choice systematically. We compare nine distance and divergence measures—including MMD with RBF and polynomial kernels, Wasserstein-1 distance estimated via the Sinkhorn algorithm, total variation, Jensen–Shannon divergence, and two classifier-based proxy measures—applied to six pairs of real consumer-behaviour datasets spanning retail, streaming, and banking domains. Dataset sizes range from 15,000 to 2.1 million sessions or transactions. We evaluate each measure by its rank-correlation with actual post-transfer model performance degradation, finding that Wasserstein-1 with a learned cost metric and a gradient-boosting-based classifier proxy consistently produce the highest correlations (Spearman ρ ≈ 0.81 and 0.78 respectively). We release a documented Python library implementing all nine measures with a unified interface. The toolkit is intended to assist practitioners in auditing dataset compatibility before investing in full adaptation pipelines."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07937",
+        "kind": "publication",
+        "title": "Federated Domain Adaptation for Behavioural Sequence Models Across Retail Partners",
+        "body": {
+          "recordId": "SYN-PUB-07937",
+          "field": "abstract",
+          "text": "Sharing raw transaction data across competing retail organisations is legally and commercially infeasible, yet jointly improving a shared sequence model would benefit all parties. We frame this as a federated domain adaptation problem: each of four retail partners holds a private dataset (sizes ranging from 80,000 to 420,000 users) and a global GRU-based next-item model is adapted to each partner's distribution using only locally computed gradient updates and aggregated feature statistics. We introduce a federated MMD alignment term that operates on summary statistics transmitted to a central coordinator rather than raw embeddings. After 40 communication rounds, per-partner models achieve within 3.5% of a centralised adaptation baseline that would require full data pooling. Privacy guarantees are characterised under differential privacy with ε=4.2. The paper also reports wall-clock communication overhead, which is dominated by the summary-statistic exchange rather than gradient transmission. Experiments use synthetic and real datasets under a data-use agreement with a regional retail consortium."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07938",
+        "kind": "publication",
+        "title": "Concept Drift Detection in Sequential Consumer Data Using Adaptive Windowing and Representation Shift Monitoring",
+        "body": {
+          "recordId": "SYN-PUB-07938",
+          "field": "abstract",
+          "text": "Distribution shift in deployed sequence models can arise gradually (concept drift) or abruptly (data drift); conflating the two leads to unnecessary retraining or missed degradation events. We propose a monitoring framework that tracks two signals in parallel: an ADWIN-based drift detector operating on rolling prediction-error streams, and a representation-drift monitor comparing cosine similarity between rolling mean hidden-state vectors and a reference window. Applied to 18 months of daily transaction streams from a mid-sized Serbian e-commerce platform (approximately 9,000 daily active users), the combined framework correctly identifies 14 of 16 manually annotated drift events, with two false positives. Detection latency averages 4.2 days. We compare against four baseline drift detectors (DDM, EDDM, PHT, STEPD) and show that the representation-shift monitor provides complementary signal particularly for gradual seasonal drift. The monitoring overhead is less than 2% of inference cost. Integration with an automated retraining trigger reduces average post-drift performance recovery time from 11 days to 4 days."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07939",
+        "kind": "publication",
+        "title": "Source Selection Under Budget Constraints for Multi-Source Transfer to Behavioural Sequence Targets",
+        "body": {
+          "recordId": "SYN-PUB-07939",
+          "field": "abstract",
+          "text": "When multiple potential source datasets are available for transfer, selecting which sources to include is non-trivial, especially when labelling or licensing costs constrain how many sources can be used. We formalise source selection as a combinatorial optimisation problem and evaluate three tractable heuristics: greedy selection by pairwise Wasserstein distance to the target, a Shapley-value-based attribution method, and a regularised regression approach that estimates each source's marginal contribution on a small probe set. Experiments span 12 source datasets across three behavioural domains (streaming media consumption, ride-hailing, grocery retail) with a fixed target in each domain. Across 36 transfer scenarios, Shapley-value attribution selects the most effective source subsets in 28 cases using a probe set of only 200 target examples. We also study how gains degrade as probe set size shrinks to 50 examples, finding that Wasserstein-based greedy selection becomes competitive at this regime. The study provides practical guidance on source curation workflows for teams with limited data access."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07941",
+        "kind": "publication",
+        "title": "Evaluating Cross-Domain Robustness of Temporal Purchase Pattern Models Under Assortment Heterogeneity",
+        "body": {
+          "recordId": "SYN-PUB-07941",
+          "field": "abstract",
+          "text": "Retail datasets from different markets differ not only in user behaviour but also in the item catalogue, making direct feature-level comparison impossible. We study a constrained transfer setting in which source and target share only a partial item overlap of 15–60% and examine how catalogue heterogeneity interacts with population shift. Using a controlled data generation framework and three real retail datasets, we systematically vary overlap levels and measure their effect on the adaptation gains achievable by importance weighting, adversarial alignment, and catalogue-embedding alignment methods. Results show that below 25% item overlap, all three methods converge to near-chance performance on target-exclusive items, and that catalogue-embedding alignment—using pre-trained product category embeddings as a bridge—degrades most gracefully, retaining 58% of full-overlap adaptation gains at 20% overlap. We release the data generation framework and reproducibility scripts. Findings have direct implications for retailers considering model sharing or acquisition of analytics assets from other markets."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07942",
+        "kind": "publication",
+        "title": "Test-Time Adaptation of Behavioural Sequence Models Using Unlabelled Target Batches",
+        "body": {
+          "recordId": "SYN-PUB-07942",
+          "field": "abstract",
+          "text": "Test-time adaptation (TTA) updates model parameters using only the unlabelled batch of target inputs available at inference time, without access to source data or target labels. We adapt this paradigm to GRU-based sequence models by defining a self-supervised auxiliary objective—predicting masked sub-sequences—that can be minimised on each incoming target batch before generating recommendations or predictions. On three deployment scenarios involving shifts in user demographics, device type, and regional market, TTA with 100-sample target batches recovers 73–85% of supervised adaptation gains in under 30 seconds of update time on a single GPU. We analyse stability under small batch sizes (down to 20 samples), finding that a layer-normalisation-only update strategy avoids the divergence observed with full-parameter TTA at small batch sizes. The method is compatible with any pre-trained GRU model without architectural modification, requiring only an auxiliary masked-token prediction head added at adaptation time."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03782",
+        "kind": "publication",
+        "title": "Threshold Selection Strategies for Anomaly Scorers: An Empirical Study on Six Industrial Sensor Datasets",
+        "body": {
+          "recordId": "SYN-PUB-03782",
+          "field": "abstract",
+          "text": "Anomaly detectors trained on imbalanced tabular data typically produce continuous scores that require a decision threshold to yield binary predictions. This study systematically compares seven threshold selection strategies—fixed percentile, maximum F1, maximum G-mean, precision–recall breakeven, expected cost minimisation at three cost ratios, and Youden's J—across six industrial sensor datasets ranging from 12 to 89 features and imbalance ratios from 1:30 to 1:420. The base scorer in all experiments is an isolation forest with 200 trees. Threshold selection is performed on a held-out calibration set representing 15% of available labelled data. Results show that expected cost minimisation with an asymmetric penalty of 10:1 yields the best F1 on five of six datasets, whereas Youden's J performs poorly at extreme imbalance. Cross-dataset variance is high, motivating dataset-specific calibration rather than universal rules."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04679",
+        "kind": "publication",
+        "title": "Static vs. Adaptive Query Scheduling in Multi-Tenant OLTP Databases: A Trace-Driven Analysis",
+        "body": {
+          "recordId": "SYN-PUB-04679",
+          "field": "abstract",
+          "text": "Multi-tenant OLTP databases face scheduling decisions that balance fairness across tenants with aggregate throughput goals. This paper uses six months of anonymised query traces from a regional ERP service provider to compare three scheduling policies: strict FIFO, weighted round-robin, and a feedback-driven adaptive scheduler that adjusts tenant weights every 500 ms based on queue depth. Trace analysis covers approximately 2.1 million distinct query events across 14 tenant accounts with highly heterogeneous arrival rates. The adaptive scheduler reduces 99th-percentile latency for the most resource-constrained tenant by 31% compared to weighted round-robin, at a cost of a 4% reduction in mean throughput for the heaviest tenant. The study identifies inter-arrival time variance as the dominant predictor of scheduling policy sensitivity and proposes a lightweight variance estimator that can be computed at negligible overhead. The findings suggest that tenant profiling updated on sub-second timescales is sufficient for most practical deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06234",
+        "kind": "publication",
+        "title": "Encoding Sporadic Task Models in SMT: Handling Minimum Inter-Arrival Times and Jitter",
+        "body": {
+          "recordId": "SYN-PUB-06234",
+          "field": "abstract",
+          "text": "Most SMT-based schedulability analyses in the literature restrict attention to strictly periodic tasks. This paper extends the QF-LIA encoding to sporadic task models characterised by minimum inter-arrival times and bounded release jitter. The key technical contribution is a bounded hyperperiod unrolling technique that constructs a finite but sufficient task arrival sequence within an SMT instance. Correctness of the truncation bound is shown formally. The extended encoding is evaluated on a benchmark combining synthetic sporadic task sets with traces extracted from a CAN-bus communication log captured in a laboratory automotive gateway prototype running on an NXP S32K144 microcontroller. Results show that the extended encoding adds on average 37 % more SMT variables compared to the periodic model but still solves within a 500 ms budget for task sets of up to 30 tasks. The paper discusses the tradeoff between unrolling depth and completeness guarantees."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0056",
+        "kind": "project",
+        "title": "Robust Sequential Behavioural Models Under Population Distribution Shift",
+        "body": {
+          "recordId": "SYN-PRJ-0056",
+          "field": "summary",
+          "text": "The project investigates theoretical foundations and practical algorithms for adapting sequential behavioural models when the user population distribution differs between training and deployment environments. Research activities cover importance-weighting theory for dependent observations, representation-alignment objectives for recurrent architectures, and diagnostic tools for quantifying and monitoring distribution shift in streaming consumer data. The project supports two PhD students and one postdoctoral researcher. Deliverables include a peer-reviewed publication programme, an open-source Python library for shift diagnostics, and a benchmarking suite covering retail, mobility, and streaming media datasets. All datasets used are anonymised and processed under applicable data-protection agreements with regional data providers."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0057",
+        "kind": "project",
+        "title": "Privacy-Respecting Cross-Organisational Adaptation of Consumer Intelligence Models",
+        "body": {
+          "recordId": "SYN-PRJ-0057",
+          "field": "summary",
+          "text": "ADAPTO addresses the practical challenge of improving shared machine-learning models for consumer behaviour across organisations in Hungary and Serbia that cannot legally pool raw data. The Novi Sad team leads the work package on federated domain adaptation, developing communication-efficient protocols that transmit aggregated representation statistics rather than individual data records. The Hungarian partner contributes mobility and retail datasets and co-develops evaluation protocols. Joint workshops bring together academic researchers and SME data teams from both countries to align on real-world deployment constraints. Expected outputs include a federated adaptation framework, two joint publications, and a set of best-practice guidelines for cross-border data collaboration in the retail and mobility sectors."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0063",
+        "kind": "project",
+        "title": "Fairness-Aware Recommender Systems for European Digital Media Platforms",
+        "body": {
+          "recordId": "SYN-PRJ-0063",
+          "field": "summary",
+          "text": "RecFair is a collaborative Horizon Europe project examining how popularity bias and demographic skew in recommendation algorithms affect content diversity and user experience across European digital media markets. The University of Novi Sad team leads the work package on measurement and benchmarking, responsible for defining and implementing a standardised fairness evaluation suite covering item-side, user-side, and provider-side metrics. The suite is validated on datasets contributed by project partners from four countries. Ivković's group also contributes to the work package on mitigation methods, testing post-processing debiasing strategies within the shared evaluation framework. The project targets outputs including a public benchmark dataset, an open-source evaluation library, and policy recommendations for platform operators."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0709",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates working on applied transfer learning or behavioural analytics",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0709",
+            "field": "open_to",
+            "quote": "joint projects with companies holding multi-market consumer transaction datasets",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0709",
+            "field": "open_to",
+            "quote": "contract research on deployment and monitoring of recommendation or prediction systems across heterogeneous user populations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

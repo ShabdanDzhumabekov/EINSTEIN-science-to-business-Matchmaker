@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C009-CH1",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T12-39-58-110Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C009-CH1",
+    "companyId": "C009",
+    "companyName": "LinguaBot d.o.o.",
+    "sector": "Conversational AI",
+    "location": "NTP Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C009-CH1",
+        "field": "text",
+        "text": "Our search misses answers because Serbian words change form (e.g. 'kartica', 'karticu', 'karticom') and users mix Latin and Cyrillic."
+      },
+      "detail": {
+        "recordId": "C009-CH1",
+        "field": "detail",
+        "text": "Serbian is a heavily inflected language, so a single noun like 'kartica' (card) appears as 'karticu', 'karticom', 'kartice', 'karticama' depending on case, and verbs shift even more. On top of that, our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos. Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms. We have measured this: in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result, and our analysis traced more than half of those misses directly to morphological mismatch or script confusion. We have tried adding synonym lists and a simple script-normalisation step, but maintaining those lists manually does not scale as clients add new product terminology every quarter. We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions. We need an approach that handles lemmatisation or indexing in a way that is accurate for Serbian, tolerates script mixing automatically, and can be updated when new vocabulary arrives without a full re-index. A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process. Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C009",
+        "field": "about",
+        "text": "LinguaBot d.o.o. was started in 2020 by three engineers who had spent years watching Serbian-language customer support run on copy-pasted email templates and overloaded call centres. We build conversational AI products specifically for Serbian-speaking users, which sounds narrow until you realise almost no one else bothers to do it properly. Our first client was a regional bank in Vojvodina; today we serve four banks and two telecoms providers across Serbia, handling roughly 140,000 chat sessions per month. Our team of 22 people sits inside the Science and Technology Park in Novi Sad — mostly engineers, with a small product team and two computational linguists who focus exclusively on Serbian morphology and dialect variation. What makes us different is that we do not drop a generic multilingual model on top of a client's FAQ and call it done. We maintain our own annotated Serbian-language datasets, we run our own fine-tuning pipelines, and we treat morphological variation and script mixing as first-class engineering problems rather than edge cases. Clients stay with us because the bot actually understands what their customers type, not just the textbook version of it."
+      },
+      "products": [
+        {
+          "recordId": "C009",
+          "field": "products",
+          "text": "LinguaBot Assist — multi-turn customer support chatbot for web and mobile"
+        },
+        {
+          "recordId": "C009",
+          "field": "products",
+          "text": "LinguaBot Search — knowledge-base retrieval with morphology-aware indexing"
+        },
+        {
+          "recordId": "C009",
+          "field": "products",
+          "text": "LinguaBot Studio — no-code flow builder for client content teams"
+        },
+        {
+          "recordId": "C009",
+          "field": "products",
+          "text": "LinguaBot Analytics — conversation quality dashboard with intent drift alerts"
+        },
+        {
+          "recordId": "C009",
+          "field": "products",
+          "text": "Managed integration service for core-banking and CRM connectors"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "Python"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "Elasticsearch"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "LLM APIs (external, fine-tuned adapters)"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "FastAPI"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "PostgreSQL"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "Docker / Kubernetes"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "spaCy with custom Serbian morphological components"
+        },
+        {
+          "recordId": "C009",
+          "field": "tech",
+          "text": "WebSocket-based real-time chat infrastructure"
+        }
+      ],
+      "plans": {
+        "recordId": "C009",
+        "field": "plans",
+        "text": "Voice channel in 2027."
+      },
+      "rdCapacity": {
+        "recordId": "C009",
+        "field": "rd_capacity",
+        "text": "Four ML engineers."
+      },
+      "pastCollaborations": {
+        "recordId": "C009",
+        "field": "past_collaborations",
+        "text": "Internships for FTN students."
+      }
+    }
+  }
+}

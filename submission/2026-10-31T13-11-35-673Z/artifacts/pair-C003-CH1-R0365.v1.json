@@ -1,0 +1,190 @@
+{
+  "ref": {
+    "artifactId": "pair-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T13-11-35-673Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What mechanisms cause cracking in AutomVoj’s painted mild-steel conveyor welds, and could changes to welding procedure, filler material or joint geometry reduce that damage? The first experiment would compare representative joints under measured service loading at room temperature and at 2–6 °C with representative thermal cycling and condensation, using failed-section examination to test whether laboratory damage reproduces the field failure mechanism.",
+    "rationale": [
+      {
+        "text": "Erić has directly relevant experimental experience separating mechanical fatigue from combined thermal–mechanical effects in welded structural steel.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "Four loading programmes were applied: isothermal fatigue at 20 °C, isothermal fatigue at −30 °C, in-phase thermo-mechanical fatigue (TMF), and out-of-phase TMF",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His residual-stress measurements and modelling could help investigate whether weld-induced stresses contribute to crack initiation and growth.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Residual stress relaxation in S355 cruciform fillet-welded joints was tracked over 10, 100, 1000, and 10 000 fatigue cycles",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "A cyclic plasticity FE model employing a Chaboche kinematic hardening rule reproduced the surface relaxation trend within 12% across all conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience translating measured industrial loads and temperatures into welded-joint fatigue assessments, relevant to establishing a realistic conveyor test programme.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Operational load spectra were recorded by a data logger over an eight-month measurement campaign using strain gauges at twelve positions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04479",
+            "field": "abstract",
+            "quote": "Rainflow-counted stress spectra and simultaneous temperature records were used to construct a combined loading environment for assessment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His weld-toe fracture-mechanics modelling provides a basis for investigating geometry and combined-loading effects rather than selecting a redesign by trial alone.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04477",
+            "field": "abstract",
+            "quote": "Semi-elliptical surface cracks at the toe of transverse attachment welds were modelled in Abaqus using the extended finite element method (XFEM)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04477",
+            "field": "abstract",
+            "quote": "Weld-toe geometry was parameterised by toe radius ρ (0.5–2.5 mm) and flank angle θ (30°–60°)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Tests must represent the actual mild-steel hollow-section joints, coating and chilled operating conditions; room-temperature testing alone cannot resolve the reported discrepancy.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "Our conveyor frames are welded from mild steel hollow section and painted for corrosion resistance before delivery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We test frames under load at room temperature and they pass without any problem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The investigation must secure access to the available failed sections and site evidence before destructive sampling, preserving material for identifying the field failure mechanism.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Low-temperature cyclic testing requires external equipment access and advance scheduling of Erić’s shared facilities; compatibility with representative joints and condensation control must be confirmed.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work plan must reserve company engineering time explicitly rather than assume a dedicated R&D team is available for instrumentation, fabrication and trial changes.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "our chief engineer and two senior automation engineers who allocate time between live projects and improvement work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest thermal-fatigue evidence concerns different steel grades, joint geometries and substantially colder or wider temperature cycles. It does not establish the cause of cracking at 2–6 °C; the first experiment must test that transfer rather than assume cold-induced embrittlement.",
+      "Condensation and coating-related corrosion are company hypotheses, not demonstrated mechanisms in the cited research. Humidity-control capability and any need for corrosion expertise remain unconfirmed.",
+      "Failures emerge after about 18 months. Accelerated loading could produce a different damage mechanism, so shorter tests may not establish service-life improvement without field-fracture comparison and subsequent monitoring.",
+      "Researcher availability, project budget, delivery deadline, customer-site access and representative loading data are unknown. Shared equipment and limited company R&D capacity could delay the campaign."
+    ],
+    "questions": [
+      "What time can Erić commit, when can the shared equipment be booked, and what budget and decision deadline can AutomVoj support?",
+      "Can failed sections, photographs, drawings, steel certificates, welding procedures, filler specifications, coating records and maintenance histories be supplied, with permission for destructive examination?",
+      "Can customer sites be instrumented to measure joint strains, vibration, payload cycles, starts and stops, temperature, humidity and condensation, including washdown or defrost events?",
+      "Can the available rig accommodate representative hollow-section joints under the measured loading spectrum while controlling 2–6 °C conditions and condensation, or is additional equipment or a partner laboratory needed?",
+      "What comparison criteria will define reproduction of the field failure and justify testing a revised weld or joint, and how will accelerated tests be checked against service damage?",
+      "Who at AutomVoj will own specimen fabrication, process changes and field follow-up, and are there customer approval or structural qualification requirements for modifications?"
+    ],
+    "outcome": "pair",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

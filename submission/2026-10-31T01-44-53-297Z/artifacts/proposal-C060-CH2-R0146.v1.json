@@ -1,0 +1,233 @@
+{
+  "ref": {
+    "artifactId": "proposal-C060-CH2-R0146",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C060-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C060-CH2-R0146",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C060-CH2-R0146",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Stop-level ETA prediction for PassengerView on a 340-bus AVL archive",
+    "facts": [
+      {
+        "text": "The Romanian contracts require PassengerView ETAs within 90 seconds of actual arrival at least 85 percent of the time; the company says current timetable-plus-offset projection drifts badly in peak-hour traffic, roadworks or bad weather.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "Our current PassengerView simply projects the published timetable plus a crude offset based on the last known GPS position.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "In peak-hour traffic, roadworks or bad weather it drifts badly.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Contracts have a twelve-month implementation window from go-live approval, expected Q3 2024.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work relies on full historical AVL data and timetable logs under a signed data-sharing agreement; the PostgreSQL time-series table has roughly 2.8 billion rows from 340 buses with ten-second pings and fields timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The AVL data includes timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The stack uses Java 17/Spring Boot, GTFS/GTFS-Realtime, and Docker/Kubernetes on an on-premise Subotica cluster; staffing is one senior backend engineer and one domain specialist part-time, one Python data engineer lacking time-series background, and no integrated weather data.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Java 17 backend with Spring Boot microservices",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "GTFS and GTFS-Realtime feed generation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "one senior backend engineer and one domain specialist part-time",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We do not have weather data integrated yet.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Novaković's dissertation used Bayesian state-space models for bus travel time from archived AVL data; her work reports 18% segment-level MAE reduction and open-source preprocessing modules. Her workload is moderate; she can take one new collaboration in 2026 and prefers publishing anonymised results.",
+        "sources": [
+          {
+            "recordId": "R0146",
+            "field": "bio",
+            "quote": "dissertation on Bayesian state-space models for bus travel time estimation using archived AVL data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01892",
+            "field": "abstract",
+            "quote": "Segment-level mean absolute error (MAE) is reduced by 18% compared with a historic-average baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01896",
+            "field": "abstract",
+            "quote": "Code is provided as open-source Python modules.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Risk from her work: a Novi Sad model fine-tuned on Subotica reached 52 seconds MAE per stop-to-stop segment, but topology differences limited gains beyond about 8 weeks of fine-tuning; conformal prediction held 90% coverage at the cost of wider intervals.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01897",
+            "field": "abstract",
+            "quote": "GRU model pre-trained on five years of Novi Sad AVL data can be fine-tuned with limited data (4 weeks) from Subotica",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01897",
+            "field": "abstract",
+            "quote": "fine-tuned model achieves MAE of 52 seconds per stop-to-stop segment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01897",
+            "field": "abstract",
+            "quote": "network topology differences limit gains beyond approximately 8 weeks of fine-tuning data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01900",
+            "field": "abstract",
+            "quote": "Conformal prediction maintains nominal 90% coverage most consistently, at the cost of wider intervals.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Her reported errors are segment-level or 15-minute-ahead, not the end-to-end 90-second/85% contract metric, so the SLA must be measured on company data.",
+      "Her filter assumes 30–90-second pings while the company logs every ten seconds; denser data likely changes preprocessing assumptions and needs revalidation.",
+      "Lightweight nightly-retrained models likely fit the company's limited Python maintenance capacity better than GPU-heavy models, suggesting state-space or fine-tuned GRU with a retraining runbook."
+    ],
+    "proposedActions": [
+      "First experiment (proposed): use 12 months of the 340-bus AVL archive; baselines are today's timetable-plus-offset PassengerView and a historic-average segment model. Re-run her preprocessing on the 10-second stream; compare a revalidated state-space model and a company-fine-tuned GRU. Measure the contract metric—share of displayed stop-level ETAs within 90 seconds—on held-out weeks, stratified by peak, off-peak, roadworks and bad weather, with actual arrival as door-open event plus a stop-line sensitivity check. Proposed go/no-go: at least 85% within 90 seconds overall and no scope stratum below a negotiated floor; otherwise stop. Researcher contributes modelling and evaluation design; company contributes data access, timetable logs and acceptance conditions.",
+      "Sign a data-sharing agreement and write a joint evaluation protocol defining actual arrival, scope, disruption strata, and the 90-second/85% computation. Proposed timeline as negotiation target: protocol month 1, experiment months 2–6, serving and handover months 7–12; success criteria are the SLA plus a reproducible retraining and monitoring runbook.",
+      "Isolate one suspected drift factor at a time: compare roadworks-only and bad-weather-only cases with and without integrated weather, so results say which factor matters. Test door-open events as a dwell proxy where passenger counters are absent, and report where load-aware gains do not transfer.",
+      "Plan serving and handover: expose the Python model behind a REST service consumed by the Java/Spring PassengerView path and GTFS-Realtime output on the Kubernetes cluster, with nightly retraining on a standard server and a data-engineer runbook."
+    ],
+    "questions": [
+      "What exactly counts as actual arrival for the 90-second/85% SLA—door-open event, stop-line crossing or another signal—and which lines, periods and disruption conditions are in scope?",
+      "Will the full historical AVL archive and timetable logs be available under a signed data-sharing agreement, and what known data-quality issues exist in the 2.8-billion-row table?",
+      "Can weather data be integrated, or should the first model be weather-blind; and are passenger counters available, or only door-open events and odometer?",
+      "The researcher's availability is not confirmed: can she confirm capacity and effort from 2026, and can the company accept her preference to publish anonymised results?",
+      "How will the Python model be served and owned inside the Java/Spring Kubernetes stack after the project, and are Q3 2024 go-live, the 12-month window, and any budget or compute allocation still operative?"
+    ],
+    "markdown": "# Stop-level ETA prediction for PassengerView on a 340-bus AVL archive\n\n## Verified facts\n- The Romanian contracts require PassengerView ETAs within 90 seconds of actual arrival at least 85 percent of the time; the company says current timetable-plus-offset projection drifts badly in peak-hour traffic, roadworks or bad weather. [F1]\n- Contracts have a twelve-month implementation window from go-live approval, expected Q3 2024. [F2]\n- Work relies on full historical AVL data and timetable logs under a signed data-sharing agreement; the PostgreSQL time-series table has roughly 2.8 billion rows from 340 buses with ten-second pings and fields timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer. [F3]\n- The stack uses Java 17/Spring Boot, GTFS/GTFS-Realtime, and Docker/Kubernetes on an on-premise Subotica cluster; staffing is one senior backend engineer and one domain specialist part-time, one Python data engineer lacking time-series background, and no integrated weather data. [F4]\n- Novaković's dissertation used Bayesian state-space models for bus travel time from archived AVL data; her work reports 18% segment-level MAE reduction and open-source preprocessing modules. Her workload is moderate; she can take one new collaboration in 2026 and prefers publishing anonymised results. [F5]\n- Risk from her work: a Novi Sad model fine-tuned on Subotica reached 52 seconds MAE per stop-to-stop segment, but topology differences limited gains beyond about 8 weeks of fine-tuning; conformal prediction held 90% coverage at the cost of wider intervals. [F6]\n\n## Our inference\n- Her reported errors are segment-level or 15-minute-ahead, not the end-to-end 90-second/85% contract metric, so the SLA must be measured on company data.\n- Her filter assumes 30–90-second pings while the company logs every ten seconds; denser data likely changes preprocessing assumptions and needs revalidation.\n- Lightweight nightly-retrained models likely fit the company's limited Python maintenance capacity better than GPU-heavy models, suggesting state-space or fine-tuned GRU with a retraining runbook.\n\n## Proposed next steps\n- First experiment (proposed): use 12 months of the 340-bus AVL archive; baselines are today's timetable-plus-offset PassengerView and a historic-average segment model. Re-run her preprocessing on the 10-second stream; compare a revalidated state-space model and a company-fine-tuned GRU. Measure the contract metric—share of displayed stop-level ETAs within 90 seconds—on held-out weeks, stratified by peak, off-peak, roadworks and bad weather, with actual arrival as door-open event plus a stop-line sensitivity check. Proposed go/no-go: at least 85% within 90 seconds overall and no scope stratum below a negotiated floor; otherwise stop. Researcher contributes modelling and evaluation design; company contributes data access, timetable logs and acceptance conditions.\n- Sign a data-sharing agreement and write a joint evaluation protocol defining actual arrival, scope, disruption strata, and the 90-second/85% computation. Proposed timeline as negotiation target: protocol month 1, experiment months 2–6, serving and handover months 7–12; success criteria are the SLA plus a reproducible retraining and monitoring runbook.\n- Isolate one suspected drift factor at a time: compare roadworks-only and bad-weather-only cases with and without integrated weather, so results say which factor matters. Test door-open events as a dwell proxy where passenger counters are absent, and report where load-aware gains do not transfer.\n- Plan serving and handover: expose the Python model behind a REST service consumed by the Java/Spring PassengerView path and GTFS-Realtime output on the Kubernetes cluster, with nightly retraining on a standard server and a data-engineer runbook.\n\n## Open questions\n- What exactly counts as actual arrival for the 90-second/85% SLA—door-open event, stop-line crossing or another signal—and which lines, periods and disruption conditions are in scope?\n- Will the full historical AVL archive and timetable logs be available under a signed data-sharing agreement, and what known data-quality issues exist in the 2.8-billion-row table?\n- Can weather data be integrated, or should the first model be weather-blind; and are passenger counters available, or only door-open events and odometer?\n- The researcher's availability is not confirmed: can she confirm capacity and effort from 2026, and can the company accept her preference to publish anonymised results?\n- How will the Python model be served and owned inside the Java/Spring Kubernetes stack after the project, and are Q3 2024 go-live, the 12-month window, and any budget or compute allocation still operative?",
+    "taskId": "C060-CH2",
+    "researcherId": "R0146",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C060-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C060-CH2-R0146",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C060-CH2-R0146",
+        "version": 1
+      }
+    ]
+  }
+}

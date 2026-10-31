@@ -1,0 +1,1207 @@
+{
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "results": [
+    {
+      "status": "screened_out",
+      "taskId": "C008-CH3",
+      "reason": "Jev rates the task as a research problem at 0.05"
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C013-CH2",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C017-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C017-CH1-R0746",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C017-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C017-CH1-R0746",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C017-CH1-R0746",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Targeted sampling of small salinity pockets on Tisa floodplain fields",
+          "facts": [
+            {
+              "text": "TloCare reports that its four-hectare sampling grid misses salinity pockets of 0.3–0.8 hectares. Blanket densification increases fieldwork, laboratory costs and delivery time; the company wants to predict variable zones before dispatching its sampling team.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "text",
+                  "quote": "We do traditional grid sampling at one point per 4 hectares",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "Problem je što gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "Dobar ishod bi bio da možemo da predvidimo gde su varijabilne zone pre nego što pošaljemo terenska ekipa",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "TloCare reports GPS coordinates and laboratory results for about 18,000 points over ten years. Its listed routine outputs cover pH, phosphorus, potassium, humus and liming needs, rather than explicitly establishing an archive of salinity reference measurements.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "about",
+                  "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "TloCare reports poor early-spring NDVI guidance because salinity was not clearly visible. It describes field sensing as a planned introduction within two years, not as established company equipment.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "nismo imali dobre rezultate jer se salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "plans",
+                  "quote": "U naredne dve godine planiramo da uvedemo bar jednu vrstu terenskog senzorskog merenja",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "TloCare has two programmers and one GIS specialist who can devote up to one-third of their working time to new functions. Its existing environment includes PostGIS and a Django portal backend.",
+              "sources": [
+                {
+                  "recordId": "C017",
+                  "field": "rd_capacity",
+                  "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "tech",
+                  "quote": "PostGIS baza podataka za prostorne slojeve parcela",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "tech",
+                  "quote": "Django backend za korisnički portal",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kosanović is open to joint company projects and prefers genuine field collection. His EM38 and pXRF equipment is available to external partners subject to scheduling and consumables cost recovery.",
+              "sources": [
+                {
+                  "recordId": "R0746",
+                  "field": "open_to",
+                  "quote": "joint projects with companies needing field-scale soil characterisation",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0746",
+                  "field": "notes",
+                  "quote": "He prefers collaborations that involve genuine field data collection rather than purely computational work.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0746",
+                  "field": "notes",
+                  "quote": "His EM38 and pXRF instruments are available to external partners subject to scheduling and consumables cost recovery.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kosanović’s published work applied regression-kriging to a commercial sunflower farm using EM38 conductivity and pXRF sodium covariates. This supports testing sensor-assisted zoning, rather than assuming that EM38 alone reproduces the published approach.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08248",
+                  "field": "abstract",
+                  "quote": "Regression-kriging (RK) was applied to delineate saline-sodic soil management zones at a commercial sunflower farm of 280 hectares in central Vojvodina.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08248",
+                  "field": "abstract",
+                  "quote": "Apparent electrical conductivity (ECa) from an EM38 survey and total sodium content from pXRF scanning served as covariates",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "His sample-reduction study reports unstable nugget estimates below 30 samples, compromising kriging weights. His flooded-field study reports that transition zones require repeat measurements. Both findings identify risks to reducing sampling and relying on a single survey.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08252",
+                  "field": "abstract",
+                  "quote": "Nugget variance estimates became unstable below n=30, compromising kriging weights.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08250",
+                  "field": "abstract",
+                  "quote": "transition zones require repeated measurement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a plausible joint project, conditional on confirming Kosanović’s project availability, which remains unknown. Local calibration is essential: results elsewhere in Vojvodina do not establish detection of TloCare’s small floodplain pockets or explain sunflower losses on these fields.",
+            "An initial conductivity survey could guide later targeted sampling, but likely cannot meet a literal requirement for recommendations before any field visit. Historical records should not be treated as current salinity ground truth without checking analytes, depths, dates and methods.",
+            "A lightweight GIS workflow likely fits better than a new software platform. Savings remain uncertain because sensor access, calibration, repeat surveys and integration may offset fewer laboratory analyses."
+          ],
+          "proposedActions": [
+            "Propose a pilot on previously investigated problem fields. TloCare would supply field access, records and workflow costs; Kosanović would design sensing, calibration and validation. Compare the current four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Separate tuning and spatially held-out evaluation samples, checking independence. Obtain laboratory references across suspected pockets and randomly selected predicted-positive and predicted-negative areas; count uncertain cases separately. Measure confirmed-pocket recall at 0.3–0.8 hectares, false-positive area, salinity error, uncertainty, total operational cost per hectare and turnaround, separating one-off validation expenditure. Negotiable go/no-go targets for the best configuration, whichever it is, are at least 90% confirmed-pocket recall, no higher operational cost and no slower delivery than baseline, with targeted—not blanket—routine densification. Proceed only if recommendations meet the agreed pre-dispatch interpretation, repeat-survey costs are included, and implementation fits stated staff capacity. Otherwise revise or stop deployment.",
+            "Propose an eight-week pilot after access and scheduling are agreed: audit records and protocols first, then field collection, modelling and held-out evaluation. Agree salinity definitions and reference-map resolution before collection. Check moisture and flooding conditions, repeating transition-zone measurements if feasible; any claim of seasonal reuse would remain conditional on further testing.",
+            "After evaluation, test reduced calibration designs without reusing held-out references for tuning. Propose delivery of sampling coordinates, salinity zones and uncertainty layers into PostGIS, with a minimal portal view. Estimate integration effort, equipment charges and maintenance before committing to deployment."
+          ],
+          "questions": [
+            "Can Kosanović confirm availability for the joint project’s fieldwork and analysis, including instrument scheduling and charges?",
+            "Can TloCare authorise pilot-field access, independent reference sampling and an audit of archived analytes, depths, dates, methods and data-sharing permissions?",
+            "What salinity definition, missed-pocket tolerance, false-positive tolerance, cost ceiling and delivery deadline should replace or confirm the proposed decision targets?",
+            "Does pre-dispatch prediction permit an initial sensor campaign reused later, or must recommendations rely entirely on existing data?"
+          ],
+          "benefits": {
+            "company": "The pilot could establish whether targeted sensing finds the pockets its grid misses without increasing routine service cost or delivery time, and identify when repeat surveys undermine that case.",
+            "researcher": "Subject to agreement, the project could provide floodplain field measurements for testing small-pocket detection, sensor transfer and calibration-sample tradeoffs under a commercial sampling constraint."
+          },
+          "markdown": "# Targeted sampling of small salinity pockets on Tisa floodplain fields\n\n## Verified facts\n- TloCare reports that its four-hectare sampling grid misses salinity pockets of 0.3–0.8 hectares. Blanket densification increases fieldwork, laboratory costs and delivery time; the company wants to predict variable zones before dispatching its sampling team. [F1]\n- TloCare reports GPS coordinates and laboratory results for about 18,000 points over ten years. Its listed routine outputs cover pH, phosphorus, potassium, humus and liming needs, rather than explicitly establishing an archive of salinity reference measurements. [F2]\n- TloCare reports poor early-spring NDVI guidance because salinity was not clearly visible. It describes field sensing as a planned introduction within two years, not as established company equipment. [F3]\n- TloCare has two programmers and one GIS specialist who can devote up to one-third of their working time to new functions. Its existing environment includes PostGIS and a Django portal backend. [F4]\n- Kosanović is open to joint company projects and prefers genuine field collection. His EM38 and pXRF equipment is available to external partners subject to scheduling and consumables cost recovery. [F5]\n- Kosanović’s published work applied regression-kriging to a commercial sunflower farm using EM38 conductivity and pXRF sodium covariates. This supports testing sensor-assisted zoning, rather than assuming that EM38 alone reproduces the published approach. [F6]\n- His sample-reduction study reports unstable nugget estimates below 30 samples, compromising kriging weights. His flooded-field study reports that transition zones require repeat measurements. Both findings identify risks to reducing sampling and relying on a single survey. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether targeted sensing finds the pockets its grid misses without increasing routine service cost or delivery time, and identify when repeat surveys undermine that case.\n- For the researcher: Subject to agreement, the project could provide floodplain field measurements for testing small-pocket detection, sensor transfer and calibration-sample tradeoffs under a commercial sampling constraint.\n\n## Our inference\n- This suggests a plausible joint project, conditional on confirming Kosanović’s project availability, which remains unknown. Local calibration is essential: results elsewhere in Vojvodina do not establish detection of TloCare’s small floodplain pockets or explain sunflower losses on these fields.\n- An initial conductivity survey could guide later targeted sampling, but likely cannot meet a literal requirement for recommendations before any field visit. Historical records should not be treated as current salinity ground truth without checking analytes, depths, dates and methods.\n- A lightweight GIS workflow likely fits better than a new software platform. Savings remain uncertain because sensor access, calibration, repeat surveys and integration may offset fewer laboratory analyses.\n\n## Proposed next steps\n- Propose a pilot on previously investigated problem fields. TloCare would supply field access, records and workflow costs; Kosanović would design sensing, calibration and validation. Compare the current four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Separate tuning and spatially held-out evaluation samples, checking independence. Obtain laboratory references across suspected pockets and randomly selected predicted-positive and predicted-negative areas; count uncertain cases separately. Measure confirmed-pocket recall at 0.3–0.8 hectares, false-positive area, salinity error, uncertainty, total operational cost per hectare and turnaround, separating one-off validation expenditure. Negotiable go/no-go targets for the best configuration, whichever it is, are at least 90% confirmed-pocket recall, no higher operational cost and no slower delivery than baseline, with targeted—not blanket—routine densification. Proceed only if recommendations meet the agreed pre-dispatch interpretation, repeat-survey costs are included, and implementation fits stated staff capacity. Otherwise revise or stop deployment.\n- Propose an eight-week pilot after access and scheduling are agreed: audit records and protocols first, then field collection, modelling and held-out evaluation. Agree salinity definitions and reference-map resolution before collection. Check moisture and flooding conditions, repeating transition-zone measurements if feasible; any claim of seasonal reuse would remain conditional on further testing.\n- After evaluation, test reduced calibration designs without reusing held-out references for tuning. Propose delivery of sampling coordinates, salinity zones and uncertainty layers into PostGIS, with a minimal portal view. Estimate integration effort, equipment charges and maintenance before committing to deployment.\n\n## Open questions\n- Can Kosanović confirm availability for the joint project’s fieldwork and analysis, including instrument scheduling and charges?\n- Can TloCare authorise pilot-field access, independent reference sampling and an audit of archived analytes, depths, dates, methods and data-sharing permissions?\n- What salinity definition, missed-pocket tolerance, false-positive tolerance, cost ceiling and delivery deadline should replace or confirm the proposed decision targets?\n- Does pre-dispatch prediction permit an initial sensor campaign reused later, or must recommendations rely entirely on existing data?",
+          "taskId": "C017-CH1",
+          "researcherId": "R0746",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C017-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C017-CH1-R0746",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C017-CH1-R0746",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C026-CH3",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C026-CH3-R0212",
+          "version": 3
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C026-CH3",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C026-CH3-R0212",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C026-CH3-R0212",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Site-specific monitoring and leachate containment for Zelena Petlja",
+          "facts": [
+            {
+              "text": "The company reports an inspectorate order requiring four groundwater monitoring wells within 120 days and a remediation proposal, with a stated deadline in late June 2024. This is the supplied historical timetable, not a confirmed current deadline.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "all before the 120-day deadline runs out in late June 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's latest hydrogeological sketch dates from 1993. It reports that contamination extent and seasonal groundwater-flow directions are unknown.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports a liner not designed for liquid retention and an in-house COD result of 3,400 mg/L. It seeks an inspectorate-acceptable containment and treatment proposal, not monitoring alone.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "The liner under that area was never designed for liquid retention.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "COD came back at 3,400 mg/L",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "help us draft a leachate containment and treatment proposal that the inspectorate will accept",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company states that it has two technicians with process-engineering backgrounds, no dedicated research budget, and no laboratory beyond its basic wet-chemistry bench for leachate monitoring.",
+              "sources": [
+                {
+                  "recordId": "C026",
+                  "field": "rd_capacity",
+                  "quote": "We have two technicians with process engineering backgrounds",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026",
+                  "field": "rd_capacity",
+                  "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Zorić lists openness to joint company projects on groundwater remediation. Her availability-related note concerns reduced teaching in 2025/26; it does not establish capacity for the company's stated 2024 deadline.",
+              "sources": [
+                {
+                  "recordId": "R0212",
+                  "field": "open_to",
+                  "quote": "joint project applications with companies working on landfill aftercare or groundwater remediation",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0212",
+                  "field": "notes",
+                  "quote": "Zorić is on a reduced teaching load in the 2025/26 academic year due to project finalisation commitments",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Zorić's research supports multi-indicator groundwater monitoring and moisture-calibrated infiltration modelling. Her transfer-station study warns that mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-02714",
+                  "field": "abstract",
+                  "quote": "Groundwater samples were collected quarterly and analysed for chloride, ammonium, COD, and electrical conductivity.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-02716",
+                  "field": "abstract",
+                  "quote": "A variably saturated flow model (HYDRUS-2D) was calibrated to soil moisture profiles measured with TDR probes.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-02716",
+                  "field": "abstract",
+                  "quote": "containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Her passive-drain research reports field capture efficiencies of 84–97% at three Vojvodina installations. Her zeolite research concerns ammonium removal in laboratory columns using leachate from two Vojvodina sites.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-02715",
+                  "field": "abstract",
+                  "quote": "Chart validation was performed against three field installations in Vojvodina, where measured drain capture efficiencies ranged from 84 to 97 %",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-02719",
+                  "field": "abstract",
+                  "quote": "Column experiments were conducted at 20 °C using landfill leachate from two Vojvodina sites",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-02719",
+                  "field": "title",
+                  "quote": "Evaluation of permeable reactive barrier materials for ammonium removal from landfill leachate in column experiments",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a useful joint project linking field investigation to regulatory design, conditional on confirming Zorić's availability for the actual delivery period.",
+            "The site's sediments, aquifer geometry and seasonal gradients may differ from the research sites. Four wells may leave plume boundaries unresolved; one campaign cannot establish seasonal reversals. Transferring published parameters or drain charts without local checks would therefore be risky.",
+            "Interception would not itself demonstrate treatment of the COD burden, and ammonium-column results do not establish COD removal or field performance here. A funded investigation and separate source-control and treatability work are likely necessary."
+          ],
+          "proposedActions": [
+            "Propose an initial four-week field-to-model test, subject to the current legal timetable and procurement feasibility. The company would supply records and coordinate access; Zorić would propose survey, sampling and model protocols. Compare the 1993-sketch conceptual baseline with surveyed groundwater heads, borehole sediments and quality-assured leachate/groundwater COD, chloride, ammonium and conductivity. Use separate tuning and later evaluation rounds, checking their independence. Test local hydraulic properties rather than importing published values. A negotiable screening target is head error below 10% of surveyed head range on withheld observations, reporting measurement uncertainty and unresolved plume boundaries. Go/no-go would concern the best configuration tested, not a named model: proceed only if evidence supports defensible well placement, resources and authorised delivery are available, and four installed wells plus an inspectorate-accepted containment/treatment proposal remain achievable by the verified deadline. Otherwise escalate immediately for regulatory agreement and additional investigation rather than claim compliance.",
+            "Propose source-leakage controls alongside investigation, with safety and regulatory review. Compare site-leachate treatment candidates against an untreated control using separate tuning and evaluation aliquots. If ammonium warrants zeolite testing, measure breakthrough, hydraulic performance, COD and residual-management needs; negotiate concentration and capacity targets from inspectorate requirements before testing. Do not select treatment on ammonium removal alone.",
+            "Propose a funded scope covering drilling, surveys, external analyses, monitoring and documentation, with named authorised contractors and signatories. Agree seasonal follow-up and any additional investigation with the inspectorate. Assign operation, maintenance and collected-leachate responsibilities before recommending implementation."
+          ],
+          "questions": [
+            "What is the current order and compliance status, including the four wells, submission, applicable deadline and inspectorate acceptance criteria?",
+            "Can Zorić confirm availability for this joint project's actual delivery window?",
+            "Can the company supply the order, sketch, site and utility plans, liner and waste records, original analytical quality-control records, and permissions for boundary-area investigation?",
+            "What funding, procurement arrangements and authorised delivery team can cover investigation, immediate containment, treatment trials and continuing operation?"
+          ],
+          "benefits": {
+            "company": "The first experiment could establish whether available evidence supports defensible well placement and identify the investigation or treatment gaps preventing an acceptable remediation proposal.",
+            "researcher": "Subject to agreement and access, the project could provide site measurements, sediments and leachate for testing how transferable alluvial-aquifer monitoring and containment methods are to this storage yard."
+          },
+          "markdown": "# Site-specific monitoring and leachate containment for Zelena Petlja\n\n## Verified facts\n- The company reports an inspectorate order requiring four groundwater monitoring wells within 120 days and a remediation proposal, with a stated deadline in late June 2024. This is the supplied historical timetable, not a confirmed current deadline. [F1]\n- The company's latest hydrogeological sketch dates from 1993. It reports that contamination extent and seasonal groundwater-flow directions are unknown. [F2]\n- The company reports a liner not designed for liquid retention and an in-house COD result of 3,400 mg/L. It seeks an inspectorate-acceptable containment and treatment proposal, not monitoring alone. [F3]\n- The company states that it has two technicians with process-engineering backgrounds, no dedicated research budget, and no laboratory beyond its basic wet-chemistry bench for leachate monitoring. [F4]\n- Zorić lists openness to joint company projects on groundwater remediation. Her availability-related note concerns reduced teaching in 2025/26; it does not establish capacity for the company's stated 2024 deadline. [F5]\n- Zorić's research supports multi-indicator groundwater monitoring and moisture-calibrated infiltration modelling. Her transfer-station study warns that mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting. [F6]\n- Her passive-drain research reports field capture efficiencies of 84–97% at three Vojvodina installations. Her zeolite research concerns ammonium removal in laboratory columns using leachate from two Vojvodina sites. [F7]\n\n## Potential benefits\n- For the company: The first experiment could establish whether available evidence supports defensible well placement and identify the investigation or treatment gaps preventing an acceptable remediation proposal.\n- For the researcher: Subject to agreement and access, the project could provide site measurements, sediments and leachate for testing how transferable alluvial-aquifer monitoring and containment methods are to this storage yard.\n\n## Our inference\n- This suggests a useful joint project linking field investigation to regulatory design, conditional on confirming Zorić's availability for the actual delivery period.\n- The site's sediments, aquifer geometry and seasonal gradients may differ from the research sites. Four wells may leave plume boundaries unresolved; one campaign cannot establish seasonal reversals. Transferring published parameters or drain charts without local checks would therefore be risky.\n- Interception would not itself demonstrate treatment of the COD burden, and ammonium-column results do not establish COD removal or field performance here. A funded investigation and separate source-control and treatability work are likely necessary.\n\n## Proposed next steps\n- Propose an initial four-week field-to-model test, subject to the current legal timetable and procurement feasibility. The company would supply records and coordinate access; Zorić would propose survey, sampling and model protocols. Compare the 1993-sketch conceptual baseline with surveyed groundwater heads, borehole sediments and quality-assured leachate/groundwater COD, chloride, ammonium and conductivity. Use separate tuning and later evaluation rounds, checking their independence. Test local hydraulic properties rather than importing published values. A negotiable screening target is head error below 10% of surveyed head range on withheld observations, reporting measurement uncertainty and unresolved plume boundaries. Go/no-go would concern the best configuration tested, not a named model: proceed only if evidence supports defensible well placement, resources and authorised delivery are available, and four installed wells plus an inspectorate-accepted containment/treatment proposal remain achievable by the verified deadline. Otherwise escalate immediately for regulatory agreement and additional investigation rather than claim compliance.\n- Propose source-leakage controls alongside investigation, with safety and regulatory review. Compare site-leachate treatment candidates against an untreated control using separate tuning and evaluation aliquots. If ammonium warrants zeolite testing, measure breakthrough, hydraulic performance, COD and residual-management needs; negotiate concentration and capacity targets from inspectorate requirements before testing. Do not select treatment on ammonium removal alone.\n- Propose a funded scope covering drilling, surveys, external analyses, monitoring and documentation, with named authorised contractors and signatories. Agree seasonal follow-up and any additional investigation with the inspectorate. Assign operation, maintenance and collected-leachate responsibilities before recommending implementation.\n\n## Open questions\n- What is the current order and compliance status, including the four wells, submission, applicable deadline and inspectorate acceptance criteria?\n- Can Zorić confirm availability for this joint project's actual delivery window?\n- Can the company supply the order, sketch, site and utility plans, liner and waste records, original analytical quality-control records, and permissions for boundary-area investigation?\n- What funding, procurement arrangements and authorised delivery team can cover investigation, immediate containment, treatment trials and continuing operation?",
+          "taskId": "C026-CH3",
+          "researcherId": "R0212",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C026-CH3",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C026-CH3-R0212",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C026-CH3-R0212",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C053-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C053-CH1-R0353",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C053-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C053-CH1-R0353",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C053-CH1-R0353",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Tracing manganese increases and restoring iron–manganese compliance",
+          "facts": [
+            {
+              "text": "AquaCikl reports that SR-IED-2023 lowered treated-discharge limits to 0.10 mg/L manganese and 0.30 mg/L iron.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports inlet manganese of 0.04–0.07 mg/L versus 0.18 mg/L at the coagulation outlet across three client sites. Increasing coagulant dose by 30 percent and lowering coagulation pH from 7.4 to 6.9 brought no meaningful improvement.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "AquaCikl seeks a root-cause finding and a specific change implementable at existing installations without major equipment replacement. One large laundry client faces reinspection in five months.",
+              "sources": [
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053-CH1",
+                  "field": "detail",
+                  "quote": "one large laundry client faces a reinspection in five months.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company can dedicate two senior process engineers and one lab technician for up to four months, with access to three operating installations for field testing.",
+              "sources": [
+                {
+                  "recordId": "C053",
+                  "field": "rd_capacity",
+                  "quote": "two senior process engineers and one lab technician to a defined project for up to four months",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C053",
+                  "field": "rd_capacity",
+                  "quote": "with access to three operating installations for field testing.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Žigić prefers collaborations in which the Faculty laboratory performs analytical work rather than acting solely as a subcontractor. The department’s ICP-OES is available for contract analysis through the university service-centre agreement.",
+              "sources": [
+                {
+                  "recordId": "R0353",
+                  "field": "notes",
+                  "quote": "a preference for project collaborations where the Faculty of Technology laboratory can perform the analytical work rather than acting solely as a subcontractor.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0353",
+                  "field": "notes",
+                  "quote": "The department's ICP-OES instrument is available for contract analytical work through the university's service centre agreement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Žigić’s manganese jar-test study used synthetic water containing 0.5–4.0 mg/L dissolved Mn(II). It reported conversion of Mn(II) to colloidal MnO₂ using KMnO₄ pre-oxidation before coagulation.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-04337",
+                  "field": "abstract",
+                  "quote": "Jar-test experiments were performed on synthetic water containing 0.5–4.0 mg/L dissolved Mn(II)",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-04337",
+                  "field": "abstract",
+                  "quote": "Pre-oxidation with KMnO₄ at stoichiometric doses converted Mn(II) to colloidal MnO₂ prior to coagulation.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Her continuous-flow iron–manganese study reported that, at a 1:1 Fe/Mn ratio, competition for coagulant capacity reduced iron removal by 12 percentage points.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-04345",
+                  "field": "abstract",
+                  "quote": "At low Fe/Mn ratios (1:1), competition for coagulant capacity reduced Fe removal by 12 percentage points.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This joint project is conditional on Žigić’s availability and reserved laboratory capacity, which remain unknown. Instrument availability alone does not establish analytical turnaround capacity.",
+            "The published oxidation–coagulation work suggests a useful experimental approach, not a validated greywater solution. Transfer from higher-concentration synthetic water requires real-matrix validation; the reported iron-removal tradeoff makes checking both metals essential.",
+            "The concentration discrepancy suggests investigating metal inputs, release and recycling alongside incomplete removal. Unmatched residence times, flows or analytical fractions could also explain an apparent increase; media release and tank cycling should remain hypotheses rather than assumed causes."
+          ],
+          "proposedActions": [
+            "First, propose residence-time- and flow-matched stage sampling across all three installations, including recycle streams, actual greywater, reagents and fresh/spent media. Measure total/dissolved Mn and Fe, pH, dissolved oxygen and metal mass flows, using blanks, spikes and external confirmation. Use separate tuning and evaluation batches; check their independence. Against current-operation controls, run an explicit diagnostic matrix: unchanged reference; media contact only; tank redox/residence change only; reagent-batch substitution only; combined changes. Hold other factors fixed. Judge reproduction against the observed inlet-to-coagulation-outlet manganese increase, not an assumed mechanism; null individual effects narrow hypotheses without ending investigation. Then compare feasible oxidation/coagulation adjustments on real greywater and field-verify the best configuration. Proposed go/no-go requires evidence explaining the observed increase and an implementable change achieving Mn ≤0.10 and Fe ≤0.30 mg/L under the confirmed discharge sampling protocol, without major equipment replacement, within four months and before reinspection. Otherwise, do not claim readiness; report unresolved causes and feasibility barriers.",
+            "Negotiate a four-month programme: month one for hydraulic reconciliation and matrix-validation checks, month two for controlled diagnosis, month three for treatment tuning, and month four for independent field verification and an operating recommendation. Confirm legal limits, sampling location and total-versus-dissolved definitions before acceptance testing; agree evaluation frequency and uncertainty handling before collecting verification samples.",
+            "Propose that AquaCikl’s engineers lead hydraulic mapping and safe operational trials, with its technician coordinating sampling. Subject to agreement, Žigić would lead experimental design and Faculty-led analytical interpretation. Arrange service-centre access, turnaround, external checks and costs before starting; nominate an operator to maintain and verify any selected change after the staffing window."
+          ],
+          "questions": [
+            "Can Žigić confirm availability for this joint project and can the Faculty reserve suitable analytical capacity throughout the proposed four-month programme?",
+            "What budget and permitted operational changes can support sampling, Faculty analyses, external confirmation and safe field trials without compromising production or reuse quality?",
+            "What legally applicable discharge sampling protocol, analytical definitions and current iron measurements should determine acceptance?",
+            "Can AquaCikl supply hydraulic diagrams, flow and residence-time records, recycle histories, original analytical procedures, and representative reagent, media and tank-deposit samples?"
+          ],
+          "benefits": {
+            "company": "The experiment could distinguish genuine manganese addition or release from sampling and hydraulic effects, and identify whether an equipment-light operational change can meet both reported limits before reinspection.",
+            "researcher": "Subject to agreement and sample access, Žigić could test how real industrial greywater alters metal release, redox cycling and coupled removal, using stage samples and controlled treatment comparisons."
+          },
+          "markdown": "# Tracing manganese increases and restoring iron–manganese compliance\n\n## Verified facts\n- AquaCikl reports that SR-IED-2023 lowered treated-discharge limits to 0.10 mg/L manganese and 0.30 mg/L iron. [F1]\n- The company reports inlet manganese of 0.04–0.07 mg/L versus 0.18 mg/L at the coagulation outlet across three client sites. Increasing coagulant dose by 30 percent and lowering coagulation pH from 7.4 to 6.9 brought no meaningful improvement. [F2]\n- AquaCikl seeks a root-cause finding and a specific change implementable at existing installations without major equipment replacement. One large laundry client faces reinspection in five months. [F3]\n- The company can dedicate two senior process engineers and one lab technician for up to four months, with access to three operating installations for field testing. [F4]\n- Žigić prefers collaborations in which the Faculty laboratory performs analytical work rather than acting solely as a subcontractor. The department’s ICP-OES is available for contract analysis through the university service-centre agreement. [F5]\n- Žigić’s manganese jar-test study used synthetic water containing 0.5–4.0 mg/L dissolved Mn(II). It reported conversion of Mn(II) to colloidal MnO₂ using KMnO₄ pre-oxidation before coagulation. [F6]\n- Her continuous-flow iron–manganese study reported that, at a 1:1 Fe/Mn ratio, competition for coagulant capacity reduced iron removal by 12 percentage points. [F7]\n\n## Potential benefits\n- For the company: The experiment could distinguish genuine manganese addition or release from sampling and hydraulic effects, and identify whether an equipment-light operational change can meet both reported limits before reinspection.\n- For the researcher: Subject to agreement and sample access, Žigić could test how real industrial greywater alters metal release, redox cycling and coupled removal, using stage samples and controlled treatment comparisons.\n\n## Our inference\n- This joint project is conditional on Žigić’s availability and reserved laboratory capacity, which remain unknown. Instrument availability alone does not establish analytical turnaround capacity.\n- The published oxidation–coagulation work suggests a useful experimental approach, not a validated greywater solution. Transfer from higher-concentration synthetic water requires real-matrix validation; the reported iron-removal tradeoff makes checking both metals essential.\n- The concentration discrepancy suggests investigating metal inputs, release and recycling alongside incomplete removal. Unmatched residence times, flows or analytical fractions could also explain an apparent increase; media release and tank cycling should remain hypotheses rather than assumed causes.\n\n## Proposed next steps\n- First, propose residence-time- and flow-matched stage sampling across all three installations, including recycle streams, actual greywater, reagents and fresh/spent media. Measure total/dissolved Mn and Fe, pH, dissolved oxygen and metal mass flows, using blanks, spikes and external confirmation. Use separate tuning and evaluation batches; check their independence. Against current-operation controls, run an explicit diagnostic matrix: unchanged reference; media contact only; tank redox/residence change only; reagent-batch substitution only; combined changes. Hold other factors fixed. Judge reproduction against the observed inlet-to-coagulation-outlet manganese increase, not an assumed mechanism; null individual effects narrow hypotheses without ending investigation. Then compare feasible oxidation/coagulation adjustments on real greywater and field-verify the best configuration. Proposed go/no-go requires evidence explaining the observed increase and an implementable change achieving Mn ≤0.10 and Fe ≤0.30 mg/L under the confirmed discharge sampling protocol, without major equipment replacement, within four months and before reinspection. Otherwise, do not claim readiness; report unresolved causes and feasibility barriers.\n- Negotiate a four-month programme: month one for hydraulic reconciliation and matrix-validation checks, month two for controlled diagnosis, month three for treatment tuning, and month four for independent field verification and an operating recommendation. Confirm legal limits, sampling location and total-versus-dissolved definitions before acceptance testing; agree evaluation frequency and uncertainty handling before collecting verification samples.\n- Propose that AquaCikl’s engineers lead hydraulic mapping and safe operational trials, with its technician coordinating sampling. Subject to agreement, Žigić would lead experimental design and Faculty-led analytical interpretation. Arrange service-centre access, turnaround, external checks and costs before starting; nominate an operator to maintain and verify any selected change after the staffing window.\n\n## Open questions\n- Can Žigić confirm availability for this joint project and can the Faculty reserve suitable analytical capacity throughout the proposed four-month programme?\n- What budget and permitted operational changes can support sampling, Faculty analyses, external confirmation and safe field trials without compromising production or reuse quality?\n- What legally applicable discharge sampling protocol, analytical definitions and current iron measurements should determine acceptance?\n- Can AquaCikl supply hydraulic diagrams, flow and residence-time records, recycle histories, original analytical procedures, and representative reagent, media and tank-deposit samples?",
+          "taskId": "C053-CH1",
+          "researcherId": "R0353",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C053-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C053-CH1-R0353",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C053-CH1-R0353",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C060-CH2",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C060-CH2-R0146",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C060-CH2",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C060-CH2-R0146",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C060-CH2-R0146",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Testing live bus-arrival predictions for PassengerView",
+          "facts": [
+            {
+              "text": "The company states that Romanian customer contracts require displayed ETAs to be within 90 seconds of actual arrival at least 85% of the time. Compliance therefore concerns displayed arrivals, not segment-level modelling scores.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "their contracts require displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports DataBridge telemetry from 340 buses every ten seconds, a PostgreSQL archive of roughly 2.8 billion rows, and no integrated weather data.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We do not have weather data integrated yet.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's integration environment comprises Java 17/Spring Boot, on-premise Docker/Kubernetes and GTFS/GTFS-Realtime feed generation.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Java 17 backend with Spring Boot microservices",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "GTFS and GTFS-Realtime feed generation",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company offers a senior backend engineer and domain specialist part-time. Its Python-capable data engineer has no time-series modelling background, making knowledge transfer important.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "We can dedicate one senior backend engineer and one domain specialist part-time to a collaborative project",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Company historical-data access requires a signed data-sharing agreement. Novaković prefers retaining the right to publish anonymised results; compatible terms remain necessary.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "with access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company stated a twelve-month implementation window from approval expected in Q3 2024. Novaković's notes instead identify capacity for one new collaboration in 2026; this schedule mismatch needs resolution.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Novaković's research supports testing latent-state travel-time estimation and GRU stop-arrival prediction. Her recurrent-model work also documents evening-peak underperformance on shared congested corridors, a relevant risk rather than evidence of Romanian contractual compliance.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-01892",
+                  "field": "abstract",
+                  "quote": "This study develops a Kalman filter formulation that treats segment-level travel time as a latent state evolving according to a random-walk process",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01895",
+                  "field": "abstract",
+                  "quote": "Long short-term memory (LSTM) and gated recurrent unit (GRU) networks are evaluated for predicting bus arrival times at individual stops 1 to 5 stops ahead",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01895",
+                  "field": "abstract",
+                  "quote": "both models underperform during the evening peak on lines sharing a congested corridor",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a joint project could connect relevant forecasting expertise with an existing passenger-information product. The proposal is conditional: joint-project willingness is open, but current availability is unconfirmed and the stated collaboration capacity is limited.",
+            "Evidence from other networks and telemetry frequencies does not validate Romanian display-level performance. Ten-second DataBridge observations, local routes, disruption conditions and archive-scale processing likely require separate validation."
+          ],
+          "proposedActions": [
+            "Propose an eight-week benchmark after access and staffing agreement. The company would supply representative extracts from each Romanian network, timetable versions and PassengerView replay logic; Novaković would lead preprocessing and state-space/GRU comparisons against the current timetable-offset baseline. Treat archives as unlabelled until arrival references are checked. Separate chronological tuning and evaluation samples and check their independence. Randomly select evaluation windows across all predictions for expert arrival validation, counting uncertain cases separately. Replay actual display timing; measure the percentage within 90 seconds overall, by city, horizon, peak period and confirmed disruption/weather conditions. Go forward only if the best configuration tested reaches at least 85% under the agreed contractual aggregation, regardless of model identity, and passes arrival-reference, integration-capacity and confirmed twelve-month deadline feasibility gates. Missing representative adverse-condition data would leave robustness unresolved, not passed.",
+            "Propose a bounded extraction and stop-event reconstruction audit before scaling. Measure extraction throughput, reconstruction errors and missingness; establish whether Romanian coverage and confirmed disruption periods support evaluation. Use weather features only if historical and live availability can both be established.",
+            "Propose a PassengerView shadow integration through Java/Spring and GTFS-Realtime on the company's on-premise containers. Measure display latency, refresh behaviour, resource use and fallback against agreed operational limits. Pair company engineers with the researcher on reproducible preprocessing, retraining and monitoring; do not infer hardware fit from research benchmarks."
+          ],
+          "questions": [
+            "Can Novaković confirm current availability and staffing for this joint project against the actual approval date, contractual deadline and status of the planned mid-2025 release?",
+            "What contractual evaluation definition governs prediction horizons, display sampling, city aggregation, cancellations, missing telemetry and stale predictions?",
+            "Can the company supply each Romanian network's arrival evidence and representative disruption periods, together with serving-resource limits and operational acceptance requirements?",
+            "Can both sides agree data access, anonymisation, publication, budget, engineering allocation and maintenance ownership before work starts?"
+          ],
+          "benefits": {
+            "company": "The benchmark could establish whether PassengerView can meet its contractual arrival-accuracy target and identify data or deployment gaps before wider implementation.",
+            "researcher": "Subject to agreement, the project could provide target-network telemetry for testing how state-space and recurrent predictors transfer to higher-frequency observations and operational display-level evaluation."
+          },
+          "markdown": "# Testing live bus-arrival predictions for PassengerView\n\n## Verified facts\n- The company states that Romanian customer contracts require displayed ETAs to be within 90 seconds of actual arrival at least 85% of the time. Compliance therefore concerns displayed arrivals, not segment-level modelling scores. [F1]\n- The company reports DataBridge telemetry from 340 buses every ten seconds, a PostgreSQL archive of roughly 2.8 billion rows, and no integrated weather data. [F2]\n- The company's integration environment comprises Java 17/Spring Boot, on-premise Docker/Kubernetes and GTFS/GTFS-Realtime feed generation. [F3]\n- The company offers a senior backend engineer and domain specialist part-time. Its Python-capable data engineer has no time-series modelling background, making knowledge transfer important. [F4]\n- Company historical-data access requires a signed data-sharing agreement. Novaković prefers retaining the right to publish anonymised results; compatible terms remain necessary. [F5]\n- The company stated a twelve-month implementation window from approval expected in Q3 2024. Novaković's notes instead identify capacity for one new collaboration in 2026; this schedule mismatch needs resolution. [F6]\n- Novaković's research supports testing latent-state travel-time estimation and GRU stop-arrival prediction. Her recurrent-model work also documents evening-peak underperformance on shared congested corridors, a relevant risk rather than evidence of Romanian contractual compliance. [F7]\n\n## Potential benefits\n- For the company: The benchmark could establish whether PassengerView can meet its contractual arrival-accuracy target and identify data or deployment gaps before wider implementation.\n- For the researcher: Subject to agreement, the project could provide target-network telemetry for testing how state-space and recurrent predictors transfer to higher-frequency observations and operational display-level evaluation.\n\n## Our inference\n- This suggests a joint project could connect relevant forecasting expertise with an existing passenger-information product. The proposal is conditional: joint-project willingness is open, but current availability is unconfirmed and the stated collaboration capacity is limited.\n- Evidence from other networks and telemetry frequencies does not validate Romanian display-level performance. Ten-second DataBridge observations, local routes, disruption conditions and archive-scale processing likely require separate validation.\n\n## Proposed next steps\n- Propose an eight-week benchmark after access and staffing agreement. The company would supply representative extracts from each Romanian network, timetable versions and PassengerView replay logic; Novaković would lead preprocessing and state-space/GRU comparisons against the current timetable-offset baseline. Treat archives as unlabelled until arrival references are checked. Separate chronological tuning and evaluation samples and check their independence. Randomly select evaluation windows across all predictions for expert arrival validation, counting uncertain cases separately. Replay actual display timing; measure the percentage within 90 seconds overall, by city, horizon, peak period and confirmed disruption/weather conditions. Go forward only if the best configuration tested reaches at least 85% under the agreed contractual aggregation, regardless of model identity, and passes arrival-reference, integration-capacity and confirmed twelve-month deadline feasibility gates. Missing representative adverse-condition data would leave robustness unresolved, not passed.\n- Propose a bounded extraction and stop-event reconstruction audit before scaling. Measure extraction throughput, reconstruction errors and missingness; establish whether Romanian coverage and confirmed disruption periods support evaluation. Use weather features only if historical and live availability can both be established.\n- Propose a PassengerView shadow integration through Java/Spring and GTFS-Realtime on the company's on-premise containers. Measure display latency, refresh behaviour, resource use and fallback against agreed operational limits. Pair company engineers with the researcher on reproducible preprocessing, retraining and monitoring; do not infer hardware fit from research benchmarks.\n\n## Open questions\n- Can Novaković confirm current availability and staffing for this joint project against the actual approval date, contractual deadline and status of the planned mid-2025 release?\n- What contractual evaluation definition governs prediction horizons, display sampling, city aggregation, cancellations, missing telemetry and stale predictions?\n- Can the company supply each Romanian network's arrival evidence and representative disruption periods, together with serving-resource limits and operational acceptance requirements?\n- Can both sides agree data access, anonymisation, publication, budget, engineering allocation and maintenance ownership before work starts?",
+          "taskId": "C060-CH2",
+          "researcherId": "R0146",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C060-CH2",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C060-CH2-R0146",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C060-CH2-R0146",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "proposal_needs_revision",
+      "taskId": "C065-CH2",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C086-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C086-CH1-R0503",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C086-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C086-CH1-R0503",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C086-CH1-R0503",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Joint project: a tested post-quantum signing path for KL-HSM",
+          "facts": [
+            {
+              "text": "Kriptolog states that KL-HSM has limited microcontroller flash and RAM, making a straight drop-in replacement impossible. Its cryptographic firmware uses ARM Cortex-M and C.",
+              "sources": [
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "tech",
+                  "quote": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company has not adapted its architecture for larger keys or changed signature flows. It wants a migration plan identifying supporting firmware versions, performance trade-offs and hybrid classical/post-quantum operation.",
+              "sources": [
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "we have not touched the firmware architecture to accommodate larger key material or different signature flows.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "which firmware version will support post-quantum algorithms, what the performance trade-offs are, and how hybrid classical/post-quantum operation will work during transition.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kriptolog defines a good outcome as a documented roadmap and at least one working integration proof of concept within twelve months. It describes modest collaborative capacity, conditional on well-defined, practically applicable work.",
+              "sources": [
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "rd_capacity",
+                  "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's technology list includes PKCS#11, RFC 5280 and RFC 6960, and Common Criteria evaluation methodology targeting EAL4+.",
+              "sources": [
+                {
+                  "recordId": "C086",
+                  "field": "tech",
+                  "quote": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "tech",
+                  "quote": "Common Criteria evaluation methodology (targeting EAL4+)",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Nikolić prefers real-hardware collaboration with measurable deliverables. Her laboratory has only two Infineon SLE97 evaluation kits; her notes say additional partner hardware would accelerate shared projects.",
+              "sources": [
+                {
+                  "recordId": "R0503",
+                  "field": "notes",
+                  "quote": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0503",
+                  "field": "notes",
+                  "quote": "The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Nikolić's work implements finalist-era Dilithium and Falcon in C. Her separate Dilithium study reports timing-leakage detection in three of eight compiler/architecture combinations, highlighting an implementation-security risk rather than an assurance of constant-time behaviour.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-05919",
+                  "field": "abstract",
+                  "quote": "We implement the NIST post-quantum signature finalists CRYSTALS-Dilithium (security levels 2 and 3) and Falcon-512 in C",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05922",
+                  "field": "abstract",
+                  "quote": "Leakage detection using Welch's t-test and TVLA methodology crosses the threshold of |t| = 4.5 in three of eight compiler/architecture combinations.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Her hybrid-HSM prototype combines classical ECDH on an SLE97 secure microcontroller with Kyber-768 encapsulation on a separate FPGA; it concerns key exchange, not hybrid signing.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-05920",
+                  "field": "abstract",
+                  "quote": "The HSM combines an Infineon SLE97 secure microcontroller for classical ECDH key agreement with a separate FPGA fabric (Lattice iCE40UP5K) dedicated to Kyber-768 key encapsulation.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a useful division of work: Nikolić could lead reproducible benchmarking and leakage screening, while Kriptolog could lead firmware integration and client-facing migration decisions. This joint-project proposal is conditional because her current availability is unknown, despite openness to this format.",
+            "Finalist-era Dilithium measurements do not validate standardised ML-DSA on KL-HSM. Likewise, hybrid key exchange does not establish hybrid-signature compatibility. Actual-target signing and downstream verification tests are therefore likely to be more informative than extrapolating published performance.",
+            "A narrowly scoped firmware experiment could reveal whether existing hardware supports migration or whether architectural changes are needed. Early interface and certification-impact review would likely reduce the risk of treating a functional prototype as production-ready."
+          ],
+          "proposedActions": [
+            "Propose an eight-week first experiment on an agreed representative KL-HSM, using non-production keys and its production toolchain. Kriptolog would supply hardware, builds, its prototype and representative signing workloads; Nikolić would lead porting and measurement. Compare current RSA/ECDSA, standardised ML-DSA, and agreed hybrid signing with downstream verification. Use standard test vectors and separate tuning/evaluation workload samples, checking their independence. Measure correctness, peak RAM, flash, signing latency, throughput, signature size and timing leakage. Negotiate acceptance limits before testing: all correctness vectors pass, zero memory-budget overruns, performance within agreed workload-specific limits, and a screening target of |t| below 4.5 under an agreed protocol. Go/no-go should use the best configuration tested, not require hybrid to outperform alternatives; require successful hybrid interoperability, feasible hardware access, and a resourced twelve-month delivery plan. Final project acceptance would require a versioned roadmap with measured trade-offs and at least one working integrated proof of concept within twelve months.",
+            "If the feasibility gate passes, propose months three through twelve for key-storage and signature-flow integration, hybrid packaging, verifier acceptance and downgrade-prevention tests. Map architecture changes to PKCS#11 and assess implications for the current Common Criteria evaluation configuration. Draft the versioned roadmap with Kriptolog; distinguish experimental support, production-readiness work and certification milestones.",
+            "Propose regression tests across compiler settings and targeted side-channel and fault-injection evaluation before any production recommendation. Document residual risks and security/performance costs of mitigations. Use actual KL-HSM hardware first; consider an SLE97 route only if justified and hardware access is agreed. Neither initial leakage screening nor the proof of concept would constitute certification."
+          ],
+          "questions": [
+            "Can Nikolić confirm availability for this joint project, including a possible start date and time allocation, and can Kriptolog identify committed engineering support and budget?",
+            "Which KL-HSM configuration, MCU, memory headroom, toolchain and workload should define the first experiment, and what latency, throughput and resource limits must it meet?",
+            "Can Kriptolog provide safe access to representative hardware, firmware, build tools and its ML-DSA prototype under agreed confidentiality and intellectual-property terms?",
+            "Which signing use case, ML-DSA parameters, downstream verifiers and hybrid acceptance rules are required, and who will approve the roadmap and confirm current certification status and evaluation scope?"
+          ],
+          "benefits": {
+            "company": "The experiment could replace an open-ended evaluation with measured feasibility evidence and a defensible versioned migration plan, including explicit hardware, interoperability and security limitations.",
+            "researcher": "Subject to agreement and access, Nikolić could investigate how standardised ML-DSA and hybrid signing transfer to a production HSM environment, using target-hardware measurements and integration constraints."
+          },
+          "markdown": "# Joint project: a tested post-quantum signing path for KL-HSM\n\n## Verified facts\n- Kriptolog states that KL-HSM has limited microcontroller flash and RAM, making a straight drop-in replacement impossible. Its cryptographic firmware uses ARM Cortex-M and C. [F1]\n- The company has not adapted its architecture for larger keys or changed signature flows. It wants a migration plan identifying supporting firmware versions, performance trade-offs and hybrid classical/post-quantum operation. [F2]\n- Kriptolog defines a good outcome as a documented roadmap and at least one working integration proof of concept within twelve months. It describes modest collaborative capacity, conditional on well-defined, practically applicable work. [F3]\n- The company's technology list includes PKCS#11, RFC 5280 and RFC 6960, and Common Criteria evaluation methodology targeting EAL4+. [F4]\n- Nikolić prefers real-hardware collaboration with measurable deliverables. Her laboratory has only two Infineon SLE97 evaluation kits; her notes say additional partner hardware would accelerate shared projects. [F5]\n- Nikolić's work implements finalist-era Dilithium and Falcon in C. Her separate Dilithium study reports timing-leakage detection in three of eight compiler/architecture combinations, highlighting an implementation-security risk rather than an assurance of constant-time behaviour. [F6]\n- Her hybrid-HSM prototype combines classical ECDH on an SLE97 secure microcontroller with Kyber-768 encapsulation on a separate FPGA; it concerns key exchange, not hybrid signing. [F7]\n\n## Potential benefits\n- For the company: The experiment could replace an open-ended evaluation with measured feasibility evidence and a defensible versioned migration plan, including explicit hardware, interoperability and security limitations.\n- For the researcher: Subject to agreement and access, Nikolić could investigate how standardised ML-DSA and hybrid signing transfer to a production HSM environment, using target-hardware measurements and integration constraints.\n\n## Our inference\n- This suggests a useful division of work: Nikolić could lead reproducible benchmarking and leakage screening, while Kriptolog could lead firmware integration and client-facing migration decisions. This joint-project proposal is conditional because her current availability is unknown, despite openness to this format.\n- Finalist-era Dilithium measurements do not validate standardised ML-DSA on KL-HSM. Likewise, hybrid key exchange does not establish hybrid-signature compatibility. Actual-target signing and downstream verification tests are therefore likely to be more informative than extrapolating published performance.\n- A narrowly scoped firmware experiment could reveal whether existing hardware supports migration or whether architectural changes are needed. Early interface and certification-impact review would likely reduce the risk of treating a functional prototype as production-ready.\n\n## Proposed next steps\n- Propose an eight-week first experiment on an agreed representative KL-HSM, using non-production keys and its production toolchain. Kriptolog would supply hardware, builds, its prototype and representative signing workloads; Nikolić would lead porting and measurement. Compare current RSA/ECDSA, standardised ML-DSA, and agreed hybrid signing with downstream verification. Use standard test vectors and separate tuning/evaluation workload samples, checking their independence. Measure correctness, peak RAM, flash, signing latency, throughput, signature size and timing leakage. Negotiate acceptance limits before testing: all correctness vectors pass, zero memory-budget overruns, performance within agreed workload-specific limits, and a screening target of |t| below 4.5 under an agreed protocol. Go/no-go should use the best configuration tested, not require hybrid to outperform alternatives; require successful hybrid interoperability, feasible hardware access, and a resourced twelve-month delivery plan. Final project acceptance would require a versioned roadmap with measured trade-offs and at least one working integrated proof of concept within twelve months.\n- If the feasibility gate passes, propose months three through twelve for key-storage and signature-flow integration, hybrid packaging, verifier acceptance and downgrade-prevention tests. Map architecture changes to PKCS#11 and assess implications for the current Common Criteria evaluation configuration. Draft the versioned roadmap with Kriptolog; distinguish experimental support, production-readiness work and certification milestones.\n- Propose regression tests across compiler settings and targeted side-channel and fault-injection evaluation before any production recommendation. Document residual risks and security/performance costs of mitigations. Use actual KL-HSM hardware first; consider an SLE97 route only if justified and hardware access is agreed. Neither initial leakage screening nor the proof of concept would constitute certification.\n\n## Open questions\n- Can Nikolić confirm availability for this joint project, including a possible start date and time allocation, and can Kriptolog identify committed engineering support and budget?\n- Which KL-HSM configuration, MCU, memory headroom, toolchain and workload should define the first experiment, and what latency, throughput and resource limits must it meet?\n- Can Kriptolog provide safe access to representative hardware, firmware, build tools and its ML-DSA prototype under agreed confidentiality and intellectual-property terms?\n- Which signing use case, ML-DSA parameters, downstream verifiers and hybrid acceptance rules are required, and who will approve the roadmap and confirm current certification status and evaluation scope?",
+          "taskId": "C086-CH1",
+          "researcherId": "R0503",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C086-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C086-CH1-R0503",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C086-CH1-R0503",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C105-CH2",
+      "reason": "None of 3 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C132-CH4",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C132-CH4-R0349",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T11-36-32-189Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C132-CH4",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C132-CH4-R0349",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C132-CH4-R0349",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Joint project: reliable cross-script contract search in KlozuraPro",
+          "facts": [
+            {
+              "text": "The company estimates that script mismatch affected roughly one in five searches in a January 2024 server-log sample. This is a historical estimate, not a current evaluation baseline.",
+              "sources": [
+                {
+                  "recordId": "C132-CH4",
+                  "field": "detail",
+                  "quote": "We estimated this affects roughly one in five searches based on a sample we pulled from server logs in January 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company wants robust mixed-script document search and identifies ambiguous Latin-to-Cyrillic mappings dependent on dialect conventions.",
+              "sources": [
+                {
+                  "recordId": "C132-CH4",
+                  "field": "detail",
+                  "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C132-CH4",
+                  "field": "detail",
+                  "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company uses PostgreSQL full-text search and wants no noticeable search-response slowdown.",
+              "sources": [
+                {
+                  "recordId": "C132",
+                  "field": "tech",
+                  "quote": "PostgreSQL with full-text search for document storage",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C132-CH4",
+                  "field": "detail",
+                  "quote": "does not slow down search response times noticeably.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Task-specific company capacity is one backend engineer for up to six weeks; broader collaborative capacity is roughly one external project alongside product development.",
+              "sources": [
+                {
+                  "recordId": "C132-CH4",
+                  "field": "detail",
+                  "quote": "We have one backend engineer who can work on this for up to six weeks.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C132",
+                  "field": "rd_capacity",
+                  "quote": "with capacity for roughly one external project at a time alongside normal product development.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Dragić is open to joint projects with Serbian-document companies. His notes report two active projects and capacity for one smaller industrial contract or consultancy; he is not interested in general software development without research.",
+              "sources": [
+                {
+                  "recordId": "R0349",
+                  "field": "open_to",
+                  "quote": "joint projects with companies that manage large Serbian-language document collections",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0349",
+                  "field": "notes",
+                  "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0349",
+                  "field": "notes",
+                  "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Dragić prefers a clearly defined, sufficiently large Serbian-language corpus. The company describes its internal information-security policy as ISO 27001-aligned and self-assessed.",
+              "sources": [
+                {
+                  "recordId": "R0349",
+                  "field": "notes",
+                  "quote": "Dragić preferira saradnju s kompanijama koje imaju jasno definisan i dovoljno veliki tekstualni korpus na srpskom jeziku",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C132",
+                  "field": "tech",
+                  "quote": "ISO 27001-aligned internal information security policy (self-assessed)",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Dragić’s work evaluates phoneme-based canonicalization on annotated court-decision retrieval pairs. His latency study reports a transformer normalizer adding 47 ms at the 99th percentile: an accuracy–latency tradeoff relevant to implementation risk.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-04279",
+                  "field": "abstract",
+                  "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-04287",
+                  "field": "abstract",
+                  "quote": "The transformer-based normalizer achieves MRR of 0.68 but adds 47 ms at the 99th percentile.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "These methods suggest a focused joint project comparing normalization placement rather than building a replacement search engine. Court-decision results do not establish performance on contracts or PostgreSQL; relevance and production-like latency need direct testing.",
+            "Canonicalization could conflate distinct terms, particularly ambiguous sequences and names. Exception-focused judgments would likely distinguish genuine retrieval gains from misleading extra hits.",
+            "The proposal is conditional: Dragić is open to this format, but his start date and weekly availability remain unconfirmed and his capacity is limited. Corpus access and annotation support also need agreement."
+          ],
+          "proposedActions": [
+            "Run a controlled PostgreSQL experiment on approved contract–query samples, including opposite-script, mixed-script, ambiguous-sequence and same-script cases. Separate tuning and evaluation samples and check independence. Proposed matrix: indexing normalization off/query normalization off; on/off; off/on; on/on, holding ranking and morphology fixed. Have legal reviewers label intended documents and result relevance, including randomly sampled queries with and without hits; logs alone are not ground truth. Measure verified script-mismatch zero-hit rate, known-document retrieval, precision@10, p95/p99 latency under representative load, and index size. Proposed go/no-go targets for the best configuration, whichever wins: halve verified cross-script zero-hit failures, no precision@10 regression, and at most 5% p95/p99 slowdown, including mixed-script and ambiguous strata. Negotiate these targets as the meaning of robust and unnoticeable before testing. Require working PostgreSQL integration within the engineer’s six-week limit and approved access; a null single-factor result narrows, rather than ends, investigation.",
+            "Subject to agreement, the company engineer would prepare the PostgreSQL baseline, controlled configurations and load replay; company legal reviewers would adjudicate relevance. Dragić would propose canonicalization rules, exception handling and evaluation design. Establish an acceptable corpus size and confidential access arrangements before extracting data; do not assume additional ML-engineering support.",
+            "Propose week one for access, sampling and target agreement; weeks two through four for implementation and tuning; week five for held-out relevance and load tests; and week six for a decision and handover. Record migration effort, index growth, exception maintenance and unresolved failures, keeping neural fallback outside the initial scope unless feasible."
+          ],
+          "questions": [
+            "Can Dragić confirm interest in this scoped joint project, a start date and weekly availability compatible with the six-week engineering window?",
+            "What corpus size, query logs and legal-review capacity can the company approve under confidentiality, tenant-isolation and data-handling arrangements?",
+            "What PostgreSQL configuration, morphology, load, index limits and migration restrictions must the experiment reproduce?",
+            "Are the proposed success thresholds acceptable, and what budget, code-licensing and maintenance arrangements can both sides support?"
+          ],
+          "benefits": {
+            "company": "The experiment could identify where normalization helps contract retrieval without unacceptable relevance or latency costs, and reveal whether implementation fits the available engineering window.",
+            "researcher": "Subject to agreement and approved access, Dragić could test how normalization placement transfers to PostgreSQL contract search, using adjudicated examples of mixed-script and ambiguous retrieval."
+          },
+          "markdown": "# Joint project: reliable cross-script contract search in KlozuraPro\n\n## Verified facts\n- The company estimates that script mismatch affected roughly one in five searches in a January 2024 server-log sample. This is a historical estimate, not a current evaluation baseline. [F1]\n- The company wants robust mixed-script document search and identifies ambiguous Latin-to-Cyrillic mappings dependent on dialect conventions. [F2]\n- The company uses PostgreSQL full-text search and wants no noticeable search-response slowdown. [F3]\n- Task-specific company capacity is one backend engineer for up to six weeks; broader collaborative capacity is roughly one external project alongside product development. [F4]\n- Dragić is open to joint projects with Serbian-document companies. His notes report two active projects and capacity for one smaller industrial contract or consultancy; he is not interested in general software development without research. [F5]\n- Dragić prefers a clearly defined, sufficiently large Serbian-language corpus. The company describes its internal information-security policy as ISO 27001-aligned and self-assessed. [F6]\n- Dragić’s work evaluates phoneme-based canonicalization on annotated court-decision retrieval pairs. His latency study reports a transformer normalizer adding 47 ms at the 99th percentile: an accuracy–latency tradeoff relevant to implementation risk. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify where normalization helps contract retrieval without unacceptable relevance or latency costs, and reveal whether implementation fits the available engineering window.\n- For the researcher: Subject to agreement and approved access, Dragić could test how normalization placement transfers to PostgreSQL contract search, using adjudicated examples of mixed-script and ambiguous retrieval.\n\n## Our inference\n- These methods suggest a focused joint project comparing normalization placement rather than building a replacement search engine. Court-decision results do not establish performance on contracts or PostgreSQL; relevance and production-like latency need direct testing.\n- Canonicalization could conflate distinct terms, particularly ambiguous sequences and names. Exception-focused judgments would likely distinguish genuine retrieval gains from misleading extra hits.\n- The proposal is conditional: Dragić is open to this format, but his start date and weekly availability remain unconfirmed and his capacity is limited. Corpus access and annotation support also need agreement.\n\n## Proposed next steps\n- Run a controlled PostgreSQL experiment on approved contract–query samples, including opposite-script, mixed-script, ambiguous-sequence and same-script cases. Separate tuning and evaluation samples and check independence. Proposed matrix: indexing normalization off/query normalization off; on/off; off/on; on/on, holding ranking and morphology fixed. Have legal reviewers label intended documents and result relevance, including randomly sampled queries with and without hits; logs alone are not ground truth. Measure verified script-mismatch zero-hit rate, known-document retrieval, precision@10, p95/p99 latency under representative load, and index size. Proposed go/no-go targets for the best configuration, whichever wins: halve verified cross-script zero-hit failures, no precision@10 regression, and at most 5% p95/p99 slowdown, including mixed-script and ambiguous strata. Negotiate these targets as the meaning of robust and unnoticeable before testing. Require working PostgreSQL integration within the engineer’s six-week limit and approved access; a null single-factor result narrows, rather than ends, investigation.\n- Subject to agreement, the company engineer would prepare the PostgreSQL baseline, controlled configurations and load replay; company legal reviewers would adjudicate relevance. Dragić would propose canonicalization rules, exception handling and evaluation design. Establish an acceptable corpus size and confidential access arrangements before extracting data; do not assume additional ML-engineering support.\n- Propose week one for access, sampling and target agreement; weeks two through four for implementation and tuning; week five for held-out relevance and load tests; and week six for a decision and handover. Record migration effort, index growth, exception maintenance and unresolved failures, keeping neural fallback outside the initial scope unless feasible.\n\n## Open questions\n- Can Dragić confirm interest in this scoped joint project, a start date and weekly availability compatible with the six-week engineering window?\n- What corpus size, query logs and legal-review capacity can the company approve under confidentiality, tenant-isolation and data-handling arrangements?\n- What PostgreSQL configuration, morphology, load, index limits and migration restrictions must the experiment reproduce?\n- Are the proposed success thresholds acceptable, and what budget, code-licensing and maintenance arrangements can both sides support?",
+          "taskId": "C132-CH4",
+          "researcherId": "R0349",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C132-CH4",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C132-CH4-R0349",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C132-CH4-R0349",
+              "version": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Serbian Morphology and Script Normalisation for LinguaBot Search",
+    "facts": [
+      {
+        "text": "LinguaBot's material states that in a sample of 12,000 real support queries from one bank client about 18% returned no useful result, more than half traced to morphological mismatch or script confusion, and that a good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports that users switch between Latin and Cyrillic mid-sentence, sometimes mid-word in typos, that synonym lists and simple script normalisation were tried but manual list maintenance does not scale as clients add terminology each quarter, and the researcher's pilot work notes modules must be updated when a company introduces new terminology in one script.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have tried adding synonym lists and a simple script-normalisation step, but maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "module treba ažurirati kada kompanija uvede novu terminologiju u jednom pismu, jer inicijalni rečnik sinonima nije potpun",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company needs an approach that is accurate for Serbian, tolerates script mixing automatically and can be updated when new vocabulary arrives without a full re-index; the stated tooling/data budget is modest, around 8,000 EUR, and results should be testable within six months.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's material states it has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists who can annotate or validate proposed solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "In the researcher's publication, each token is mapped to a phoneme-based canonical form used as the primary identifier in an inverted index, reaching F1 0.81 in ad-hoc search, 14 percentage points above the better of two single-script baselines, on 120,000 news articles.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji, a zatim se fonemski ključevi koriste kao primarni identifikatori u indeksu.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi sistem postiže F1 vrednost od 0,81 u zadatku ad-hoc pretrage, što je povećanje od 14 procentnih poena u odnosu na bolji od dva bazična sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's work on morphological reduction finds that stemming after script normalisation gives consistently better results for all three stemmer combinations (4–9 MAP points), with the evaluation run on a CLEF 2012 subset containing documents in both scripts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "pri čemu stemovanje posle normalizacije daje konzistentno bolje rezultate za sve tri kombinacije",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "Evaluacija je sprovedena na podskupu CLEF 2012 kolekcije koji sadrži dokumente u oba pisma.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's latency study reports a cascaded configuration with deterministic normalisation and neural fallback only for out-of-vocabulary tokens reaching MRR 0.66 with a 99th-percentile latency overhead of only 9 ms.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "A cascaded configuration — deterministic normalizer with neural fallback triggered only for out-of-vocabulary tokens — reaches MRR of 0.66 with a 99th-percentile latency overhead of only 9 ms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's notes state he is currently engaged on two active projects but has capacity for one smaller industrial contract or consulting engagement; his formal availability is not confirmed.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The researcher's evidence comes from news, legal and encyclopedia-style corpora, while the company's queries include mid-word script typos; transfer to bank support traffic is untested, so the first comparison should isolate script canonicalisation from morphology to see which factor drives the misses.",
+      "Combining phoneme-canonical indexing with stemming after normalisation plausibly addresses both the morphological mismatch and script confusion the company traced, but the CLEF 2012 and news-corpus gains may not carry over to short support queries.",
+      "Replacing manual synonym lists with an override-rule layer for exceptions could reduce quarterly maintenance, but the researcher's own pilot limitation suggests the exception dictionary will start incomplete."
+    ],
+    "proposedActions": [
+      "First experiment: take the company's 12,000-query miss sample and a held-out slice of the 85,000 labelled pairs, run the current Elasticsearch pipeline with the Croatian stemmer as baseline, and compare three conditions on identical queries — script canonicalisation alone, stemming after normalisation alone, and both combined — scoring the no-useful-result rate per condition and reporting which condition moves the misses the company attributed to morphology versus script. Go/no-go: proceed only if the combined condition brings the no-useful-result rate on held-out bank queries substantially toward the company's below-5% target while each single change shows a measurable, separable effect; otherwise the transfer gap is the finding. Researcher contributes method and scripts, company contributes data, linguists and the running baseline pipeline; scope and commitments to be agreed.",
+      "Run an ablation with the two in-house linguists validating a sample of corrected queries, to confirm the automatic canonicalisation does not merge distinct product terms.",
+      "Test the deterministic normaliser with a neural fallback limited to out-of-vocabulary tokens against the company's stated production latency and throughput expectations before any wider rollout.",
+      "Draft a maintenance workflow where new client terminology arrives as override rules rather than hand-maintained synonym lists, and agree who owns those updates after the project."
+    ],
+    "questions": [
+      "Can you confirm your availability for a six-month joint project within the company's modest budget, given the note of capacity for one smaller industrial contract or consulting engagement?",
+      "Will LinguaBot provide access to the 85,000 labelled query-response pairs and the 12,000-query sample, and will the two in-house linguists be available for annotation and validation?",
+      "What is the exact definition and per-client breakdown of 'no useful result', and how should the below-5% target be measured?",
+      "Which Elasticsearch version and indexing/query pipeline must the solution fit, and what re-indexing or downtime is allowed when new vocabulary arrives?",
+      "What latency and throughput SLOs apply in production, and may a neural component be limited to out-of-vocabulary fallback?"
+    ],
+    "markdown": "# Serbian Morphology and Script Normalisation for LinguaBot Search\n\n## Verified facts\n- LinguaBot's material states that in a sample of 12,000 real support queries from one bank client about 18% returned no useful result, more than half traced to morphological mismatch or script confusion, and that a good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process. [F1]\n- The company reports that users switch between Latin and Cyrillic mid-sentence, sometimes mid-word in typos, that synonym lists and simple script normalisation were tried but manual list maintenance does not scale as clients add terminology each quarter, and the researcher's pilot work notes modules must be updated when a company introduces new terminology in one script. [F2]\n- The company needs an approach that is accurate for Serbian, tolerates script mixing automatically and can be updated when new vocabulary arrives without a full re-index; the stated tooling/data budget is modest, around 8,000 EUR, and results should be testable within six months. [F3]\n- The company's material states it has a labelled query-response dataset of around 85,000 pairs across all clients, and two in-house linguists who can annotate or validate proposed solutions. [F4]\n- In the researcher's publication, each token is mapped to a phoneme-based canonical form used as the primary identifier in an inverted index, reaching F1 0.81 in ad-hoc search, 14 percentage points above the better of two single-script baselines, on 120,000 news articles. [F5]\n- The researcher's work on morphological reduction finds that stemming after script normalisation gives consistently better results for all three stemmer combinations (4–9 MAP points), with the evaluation run on a CLEF 2012 subset containing documents in both scripts. [F6]\n- The researcher's latency study reports a cascaded configuration with deterministic normalisation and neural fallback only for out-of-vocabulary tokens reaching MRR 0.66 with a 99th-percentile latency overhead of only 9 ms. [F7]\n- The researcher's notes state he is currently engaged on two active projects but has capacity for one smaller industrial contract or consulting engagement; his formal availability is not confirmed. [F8]\n\n## Our inference\n- The researcher's evidence comes from news, legal and encyclopedia-style corpora, while the company's queries include mid-word script typos; transfer to bank support traffic is untested, so the first comparison should isolate script canonicalisation from morphology to see which factor drives the misses.\n- Combining phoneme-canonical indexing with stemming after normalisation plausibly addresses both the morphological mismatch and script confusion the company traced, but the CLEF 2012 and news-corpus gains may not carry over to short support queries.\n- Replacing manual synonym lists with an override-rule layer for exceptions could reduce quarterly maintenance, but the researcher's own pilot limitation suggests the exception dictionary will start incomplete.\n\n## Proposed next steps\n- First experiment: take the company's 12,000-query miss sample and a held-out slice of the 85,000 labelled pairs, run the current Elasticsearch pipeline with the Croatian stemmer as baseline, and compare three conditions on identical queries — script canonicalisation alone, stemming after normalisation alone, and both combined — scoring the no-useful-result rate per condition and reporting which condition moves the misses the company attributed to morphology versus script. Go/no-go: proceed only if the combined condition brings the no-useful-result rate on held-out bank queries substantially toward the company's below-5% target while each single change shows a measurable, separable effect; otherwise the transfer gap is the finding. Researcher contributes method and scripts, company contributes data, linguists and the running baseline pipeline; scope and commitments to be agreed.\n- Run an ablation with the two in-house linguists validating a sample of corrected queries, to confirm the automatic canonicalisation does not merge distinct product terms.\n- Test the deterministic normaliser with a neural fallback limited to out-of-vocabulary tokens against the company's stated production latency and throughput expectations before any wider rollout.\n- Draft a maintenance workflow where new client terminology arrives as override rules rather than hand-maintained synonym lists, and agree who owns those updates after the project.\n\n## Open questions\n- Can you confirm your availability for a six-month joint project within the company's modest budget, given the note of capacity for one smaller industrial contract or consulting engagement?\n- Will LinguaBot provide access to the 85,000 labelled query-response pairs and the 12,000-query sample, and will the two in-house linguists be available for annotation and validation?\n- What is the exact definition and per-client breakdown of 'no useful result', and how should the below-5% target be measured?\n- Which Elasticsearch version and indexing/query pipeline must the solution fit, and what re-indexing or downtime is allowed when new vocabulary arrives?\n- What latency and throughput SLOs apply in production, and may a neural component be limited to out-of-vocabulary fallback?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

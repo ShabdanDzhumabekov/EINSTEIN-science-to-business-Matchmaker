@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a combined script-normalization, phoneme-canonicalization and morphology-aware indexing pipeline, integrated with Elasticsearch and updatable without full re-index, reduce LinguaBot's measured 18% Serbian support-query miss rate to below 5% on its labelled bank-query data while meeting latency and maintenance constraints?",
+    "rationale": [
+      {
+        "text": "The researcher's group directly works on mixed-script Serbian information retrieval, script normalization, transliteration, and inversion indexes robust to script variation.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "bio",
+            "quote": "Njegova istraživačka grupa bavi se pronalaženjem informacija u dokumentima koji sadrže mešovito ćirilično-latinično srpsko pismo, normalizacijom skripte, transliteracijom kao korakom u pretprocesiranju i izgradnjom invertovanih indeksa otpornih na varijacije pisma.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied how stemming and lemmatisation interact with script normalization during search-index construction.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has evaluated phoneme-based token canonicalization for Serbian script unification and shown reduced out-of-vocabulary rates on a legal gold standard.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "The phoneme-based canonical form reduced the out-of-vocabulary rate from 9.3% to 2.1% compared with a Latin-only baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked on real-time mixed-script retrieval and incremental index updating under low latency.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Sistemi za pretragu u realnom vremenu nad tokovima vesti zahtevaju inkrementalno ažuriranje indeksa s niskim kašnjenjem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience includes an open-source script-normalization module compatible with popular search frameworks and pilot deployments.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0546",
+            "field": "summary",
+            "quote": "razvijen je open-source modul za normalizaciju pisma kompatibilan s popularnim okvirima za pretragu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior contract research adapting a search module for Serbian court decisions with a Novi Sad legaltech startup.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He is open to contract research on internal search engine customization.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "contract research on internal search engine customization",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The pilot must define, measure, and reduce the bank-query miss rate from the current 18% to below 5%, with a maintenance process that keeps it there.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must be testable within six months and fit a modest tooling/data budget of around 8,000 EUR.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation should use LinguaBot's labelled query-response data and in-house linguist annotation/validation.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must tolerate mid-sentence Latin/Cyrillic script mixing and integrate with LinguaBot's existing Elasticsearch/spaCy-based stack.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "users freely switch between Latin and Cyrillic script mid-sentence",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009",
+            "field": "tech",
+            "quote": "spaCy with custom Serbian morphological components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The indexing/lemmatisation approach must support updates when new vocabulary arrives without requiring a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher capacity is limited to one smaller industrial contract or consultancy alongside two active projects; exact availability remains unknown.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest evidence is from news, legal, web, and benchmark corpora, not from bank customer-support chat queries; the first experiment must explicitly test transfer to LinguaBot's 12,000-query sample and 85,000 labelled pairs.",
+      "Even fine-tuned multilingual models underperform on inputs that mix scripts within a single sentence, so script mixing may remain a residual error source.",
+      "Manual synonym resources do not scale: the researcher's own pilot work reports that modules need updating when new terminology appears and the initial synonym dictionary is incomplete.",
+      "The 8,000 EUR budget and six-month horizon may only support a focused pilot, not full production hardening across all clients and products.",
+      "Researcher availability is not confirmed; the notes state capacity for one smaller contract only, alongside two active projects."
+    ],
+    "questions": [
+      "Can Stefan Dragić confirm his availability and the exact scope of one smaller industrial contract or consultancy for the six-month pilot?",
+      "Which LinguaBot product and Elasticsearch index should be targeted, and what are the current latency, throughput, and deployment constraints?",
+      "Can LinguaBot provide the 12,000-query bank sample, the 85,000 labelled pairs, relevant query logs, and linguist validation time within the 8,000 EUR budget?",
+      "How exactly is 'no useful result' defined and measured for the 18% baseline, and which query set will define the below-5% target?",
+      "Who owns and updates the normalization, lemma, and exception resources after the project, and how often does new product terminology arrive?",
+      "Does LinguaBot prefer a joint project or an industrial PhD format, and is there any co-funding or in-kind engineering time beyond the stated budget?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "ref": {
+    "artifactId": "scholar-C086-CH1-R0503",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0503",
+    "name": "Milica Nikolić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Cryptography and Information Security",
+      "Embedded Systems and Hardware Engineering",
+      "Computer Engineering"
+    ],
+    "keywords": [
+      "post-quantum cryptography",
+      "lattice-based signatures",
+      "hardware security modules",
+      "resource-constrained devices",
+      "performance benchmarking",
+      "side-channel analysis",
+      "CRYSTALS-Dilithium",
+      "NTRU",
+      "microcontroller implementation",
+      "memory optimisation"
+    ],
+    "openTo": [
+      "joint projects with companies developing HSMs, IoT security firmware, or industrial control system security",
+      "contract research on PQC migration assessment and implementation",
+      "industrial PhD supervision for candidates employed at NTP Novi Sad member companies",
+      "student internships for embedded security firmware development",
+      "consulting on NIST post-quantum standard adoption timelines and compliance"
+    ],
+    "bio": {
+      "recordId": "R0503",
+      "field": "bio",
+      "text": "Milica Nikolić completed her undergraduate and master's studies at the Faculty of Technical Sciences, University of Novi Sad, and received her PhD in computer engineering from the same institution in 2009, with a dissertation on side-channel resistance in symmetric cipher implementations. She joined the Department of Computing and Control Engineering as an assistant professor in 2010 and was promoted to full professor in 2021. Her research group focuses on implementing and benchmarking post-quantum cryptographic primitives—particularly lattice-based schemes—on microcontrollers, smart cards, and dedicated hardware security modules with tight memory and power budgets. She teaches courses in applied cryptography, embedded systems security, and secure software design. The group maintains a laboratory equipped with oscilloscopes, electromagnetic probes, and a collection of ARM Cortex-M and RISC-V development boards used for power and timing analysis."
+    },
+    "industryExperience": {
+      "recordId": "R0503",
+      "field": "industry_experience",
+      "text": "Milica Nikolić collaborated with Informatika d.o.o. (Novi Sad) on a six-month applied research contract in 2022 covering PQC readiness assessment for their smart metering gateway product line. She has also served as a technical reviewer for two Serbian national certification procedures involving cryptographic modules."
+    },
+    "notes": {
+      "recordId": "R0503",
+      "field": "notes",
+      "text": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work. The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects. Currently co-supervising four PhD students; capacity for a fifth industrial PhD exists from late 2025 onward."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-05914",
+        "kind": "publication",
+        "title": "Side-Channel Leakage in AES Implementations on 8-Bit AVR Microcontrollers: A Comparative Power Analysis Study",
+        "body": {
+          "recordId": "SYN-PUB-05914",
+          "field": "abstract",
+          "text": "This paper evaluates the susceptibility of three publicly available AES-128 software implementations to simple and differential power analysis on an 8-bit AVR ATmega328P microcontroller. We collected 50,000 power traces per implementation using a 1 GHz digital oscilloscope and a 1-ohm shunt resistor, then applied standard DPA with a Hamming-weight model. All three implementations leaked the full 128-bit key within 10,000 traces; the fastest implementation (executing in 4,112 clock cycles) proved most vulnerable, with a signal-to-noise ratio 2.3 times higher than the most compact one. Countermeasures including boolean masking and shuffled S-box lookups were applied and re-evaluated; masking reduced the distinguishability metric by 87% at the cost of a 34% increase in execution time. The results provide a quantitative baseline for hardening AES on severely constrained nodes, directly informing subsequent work on post-quantum primitives for similar platforms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05915",
+        "kind": "publication",
+        "title": "Benchmarking SHA-3 Candidates on ARM Cortex-M3: Cycle Counts, Stack Usage, and Energy Consumption",
+        "body": {
+          "recordId": "SYN-PUB-05915",
+          "field": "abstract",
+          "text": "We ported and benchmarked five finalist and alternate candidates from the NIST SHA-3 competition—Keccak, Skein-512, Grøstl, BLAKE, and JH—on an ARM Cortex-M3 running at 72 MHz with 20 kB of SRAM. For each candidate we measured clock cycles per byte for message lengths of 64, 256, and 4096 bytes, peak stack consumption, and energy drawn from a 3.3 V supply using a precision current sensor. Keccak achieved the lowest energy per byte (1.14 µJ for 256-byte messages) but consumed the most stack (3,584 bytes). BLAKE offered the best throughput at 15.2 cycles/byte for long messages. Grøstl was slowest on this architecture due to poor utilisation of 32-bit word operations. The dataset is publicly archived and intended to serve as a reference for designers selecting hash functions for sensor node firmware, and as a comparison point for future post-quantum scheme evaluations that rely on these primitives."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05916",
+        "kind": "publication",
+        "title": "Memory-Efficient Polynomial Multiplication for NTRU on a 32-Bit Microcontroller",
+        "body": {
+          "recordId": "SYN-PUB-05916",
+          "field": "abstract",
+          "text": "NTRU encryption requires repeated polynomial multiplication in truncated polynomial rings, and naïve convolution is prohibitively slow on constrained hardware. This work implements and compares three multiplication strategies—schoolbook convolution, Karatsuba decomposition, and a Number Theoretic Transform adapted to NTRU parameters—on an STM32F103 Cortex-M3 running at 72 MHz with 20 kB RAM. The NTT approach requires 512 bytes of working memory for degree-509 polynomials and achieves 148,000 clock cycles per multiplication, compared to 1.92 million for schoolbook convolution. Karatsuba occupies a middle ground at 340,000 cycles with minimal stack overhead. Code size across all three variants was kept below 8 kB of flash. We profile the full NTRU-HPS key-generation and encapsulation routines and show that NTT-based multiplication reduces total encapsulation time from 28.4 ms to 4.1 ms at 72 MHz. The implementation is validated against known test vectors from the NTRU reference package."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05917",
+        "kind": "publication",
+        "title": "Practical Fault Injection Attacks Against a Lattice-Based Key Encapsulation Mechanism on a Smart Card",
+        "body": {
+          "recordId": "SYN-PUB-05917",
+          "field": "abstract",
+          "text": "We investigate the fault resilience of a software implementation of Kyber-512 running on a Java Card 3.0.4 smart card with an ARM SC300 security core. Using a voltage glitching station with sub-microsecond pulse resolution, we injected faults during the decapsulation procedure and collected 6,800 faulty ciphertexts over three days of automated testing. By applying a variant of the decryption failure attack, we recovered 128-bit session keys from 42% of successful fault injections within a single-bit error model. We further show that a simple instruction-count check at the end of the decapsulation loop detects 91% of our glitch attempts with zero false positives in 5,000 benign runs. The results indicate that Kyber implementations on real smart card hardware need explicit fault countermeasures beyond those assumed in the formal security proofs, and we propose a concrete software hardening checklist derived from our observations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05918",
+        "kind": "publication",
+        "title": "Post-Quantum Cryptography on Constrained Devices: Implementation Strategies and Open Challenges",
+        "body": {
+          "recordId": "SYN-PUB-05918",
+          "field": "abstract",
+          "text": "This book chapter surveys the state of post-quantum cryptographic implementations on microcontrollers, smart cards, and IoT gateways as of 2017. We categorise the main algorithm families—lattice-based, code-based, hash-based, and multivariate—by their suitability for constrained platforms, defining 'constrained' as under 64 kB RAM and under 256 kB flash. For each family we summarise published benchmarks, identify the primary performance bottlenecks (arithmetic units, memory bus width, absence of hardware multipliers), and discuss known implementation pitfalls such as non-constant-time modular reduction. A comparative table covers 14 schemes across seven hardware platforms. We also discuss the implications of NIST's post-quantum standardisation process for industry adoption timelines and the specific gap between academic proof-of-concept implementations and production-grade secure firmware. The chapter concludes with a prioritised list of open engineering problems, including the need for unified benchmarking methodology and hardware-assisted arithmetic support."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05919",
+        "kind": "publication",
+        "title": "Comparing CRYSTALS-Dilithium and Falcon Signature Verification Speed on ARM Cortex-M4",
+        "body": {
+          "recordId": "SYN-PUB-05919",
+          "field": "abstract",
+          "text": "We implement the NIST post-quantum signature finalists CRYSTALS-Dilithium (security levels 2 and 3) and Falcon-512 in C with platform-specific assembly optimisations for the ARM Cortex-M4 FPU on an STM32F407 board running at 168 MHz. Dilithium-2 verification takes 1.37 ms and requires 13.2 kB of stack; Dilithium-3 requires 1.89 ms and 16.8 kB. Falcon-512 verification takes 2.11 ms but requires only 7.4 kB of stack, making it preferable for devices with less than 10 kB SRAM. Signing is substantially more expensive for Falcon due to the discrete Gaussian sampler: 14.8 ms versus 3.2 ms for Dilithium-2. We also measure flash footprint and provide a side-by-side energy profile collected with a USB power monitor. All source code and raw trace data are released under a permissive open-source licence. The findings inform a practical selection guide for firmware engineers choosing between the two schemes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05920",
+        "kind": "publication",
+        "title": "A Hardware Security Module Architecture Supporting Hybrid Classical/Post-Quantum Key Exchange for Industrial Controllers",
+        "body": {
+          "recordId": "SYN-PUB-05920",
+          "field": "abstract",
+          "text": "This paper describes the design and prototyping of a hardware security module intended for attachment to programmable logic controllers in industrial automation environments. The HSM combines an Infineon SLE97 secure microcontroller for classical ECDH key agreement with a separate FPGA fabric (Lattice iCE40UP5K) dedicated to Kyber-768 key encapsulation. The hybrid design ensures backward compatibility while adding quantum resistance. We detail the inter-chip communication protocol, a SPI-based command interface with authenticated encryption, and the key storage layout. Full key exchange (hybrid ECDH + Kyber-768) completes in 38 ms end-to-end. The FPGA implementation of Kyber uses 3,200 LUTs and 12 kB of embedded block RAM. Power consumption during key exchange peaks at 210 mW and averages 42 mW at idle. We evaluate the design against the IEC 62443-4-2 security level 2 requirements and identify three areas requiring further hardening before production deployment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05921",
+        "kind": "publication",
+        "title": "Stack and Heap Memory Profiling of SPHINCS+ on RISC-V RV32IMC Without Hardware Multiplier",
+        "body": {
+          "recordId": "SYN-PUB-05921",
+          "field": "abstract",
+          "text": "SPHINCS+ is a stateless hash-based signature scheme selected for standardisation by NIST, but its relatively large signature sizes and tree traversal operations raise questions about feasibility on severely memory-constrained RISC-V cores lacking the M (multiply) extension. We port all three SPHINCS+-SHA2 and SPHINCS+-SHAKE parameter sets to bare-metal RISC-V RV32I (without M extension) on a 32 kB RAM, 256 kB flash target and measure peak stack depth, heap allocation, code size, and cycle counts. Without a multiplier, SHA-256 compression function throughput drops by 6.1x compared to RV32IM. Signing with SPHINCS+-SHA2-128s (the smallest parameter set) requires 28.4 kB of stack and 1.84 billion cycles, which is infeasible for latency-sensitive applications at typical MHz clock rates but acceptable for infrequent firmware update signing. We propose a streaming tree-node computation that reduces peak stack to 11.2 kB at a 9% cycle overhead, and validate correctness against the NIST Known Answer Tests."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05922",
+        "kind": "publication",
+        "title": "Timing Variability in Constant-Time Dilithium Implementations Across Different Compiler Optimisation Levels",
+        "body": {
+          "recordId": "SYN-PUB-05922",
+          "field": "abstract",
+          "text": "Lattice-based signature schemes such as CRYSTALS-Dilithium are typically written to be constant-time, but compiler optimisations can inadvertently introduce data-dependent timing variation by reordering or eliminating branchless constructs. We compile a reference Dilithium-2 implementation using GCC 11 and Clang 14 at optimisation levels O0 through O3 and Os on ARM Cortex-M4 and x86-64, then measure timing distributions for 100,000 signing operations with message inputs sampled uniformly at random. At O3 with GCC on x86-64, we observe a 14-cycle bimodal spread in the rejection sampling loop that correlates weakly (Pearson r = 0.19) with the norm of the signing randomness. Leakage detection using Welch's t-test and TVLA methodology crosses the threshold of |t| = 4.5 in three of eight compiler/architecture combinations. We trace each instance to specific compiler transformations visible in the generated assembly and propose source-level annotations (using the volatile barrier idiom) that suppress the leakage in all tested configurations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05923",
+        "kind": "publication",
+        "title": "Towards a Standardised Benchmarking Suite for Post-Quantum Cryptography on Embedded Targets",
+        "body": {
+          "recordId": "SYN-PUB-05923",
+          "field": "abstract",
+          "text": "Comparing published implementation results for post-quantum schemes is difficult because researchers use different clock frequencies, compiler flags, measurement methods, and reporting conventions. This paper proposes a minimal benchmarking suite—PQBench-Embed—that specifies four representative hardware targets (ARM Cortex-M0+, Cortex-M4, RISC-V RV32IMC, and ESP32), a fixed GCC toolchain version and flag set, a cycle-counting harness based on hardware performance counters, and a structured JSON output format for result reporting. We validate the suite by collecting results for Kyber-512, Dilithium-2, Falcon-512, SPHINCS+-SHA2-128s, and Classic McEliece 348864 across all four targets. Results show that cross-architecture speedup ratios for the same algorithm vary by up to 3.1x depending on benchmarking methodology, confirming the need for standardisation. The suite and all collected data are released as a public repository. We also provide a discussion of what metrics matter most for different deployment scenarios such as TLS handshake, firmware signing, and device attestation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05925",
+        "kind": "publication",
+        "title": "Cache-Timing Attacks on ML-KEM (FIPS 203) in a Shared-Memory Embedded RTOS Environment",
+        "body": {
+          "recordId": "SYN-PUB-05925",
+          "field": "abstract",
+          "text": "Embedded real-time operating systems increasingly run multiple isolated tasks sharing a common data cache, creating conditions for cache-timing side channels even on microcontrollers. We study ML-KEM (FIPS 203, formerly Kyber) running as a FreeRTOS task on an STM32H743 Cortex-M7 with a 16 kB 4-way set-associative L1 data cache and a co-resident adversarial task with unprivileged access. Using a Prime+Probe variant adapted for the Cortex-M7 cache geometry, the adversary task collects 250,000 cache access measurements and applies a correlation distinguisher to the modular reduction tables. We recover 4 bits of the decapsulation secret with probability greater than 0.8, demonstrating a practical (though partial) leakage channel. We then evaluate three mitigations: cache-line aligned constant-time modular arithmetic, OS-level cache flushing between task switches, and disabling the data cache entirely. The last option increases ML-KEM decapsulation time from 0.31 ms to 1.87 ms and is impractical for most deployments, while aligned arithmetic eliminates the observed leakage with a 4% cycle overhead."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05425",
+        "kind": "publication",
+        "title": "Latency and Throughput of ML-DSA and SLH-DSA in a Constrained TLS 1.3 Handshake Over LoRaWAN",
+        "body": {
+          "recordId": "SYN-PUB-05425",
+          "field": "abstract",
+          "text": "LoRaWAN networks impose strict duty-cycle limits and maximum payload sizes (typically 51–242 bytes depending on spreading factor), making a standard TLS 1.3 handshake with post-quantum signatures highly problematic. We prototype a fragment-reassembly layer that segments ML-DSA-44 and SLH-DSA-SHA2-128s certificates and signature payloads across multiple LoRaWAN frames and measure end-to-end handshake completion time and energy on an STM32WL55 running at SF9 with BW125. ML-DSA-44 requires 38 uplink frames for a full handshake (certificate chain of one leaf and one intermediate), completing in 112 seconds under EU868 duty-cycle regulations; SLH-DSA-SHA2-128s requires 61 frames and 181 seconds. For comparison, a classical ECDSA P-256 handshake requires 9 frames and 26 seconds. We quantify the trade-off between quantum security and network overhead and propose a certificate compression scheme that reduces ML-DSA-44 frame count to 27 with no loss of security. Results are validated on a physical three-node LoRaWAN testbed using a Semtech SX1262 gateway."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00965",
+        "kind": "publication",
+        "title": "Active Learning with Query-by-Committee for Labelling Efficiency in Imbalanced Fault Streams",
+        "body": {
+          "recordId": "SYN-PUB-00965",
+          "field": "abstract",
+          "text": "Obtaining labelled fault examples is expensive in industrial settings because it requires expert inspection. Active learning selects the most informative unlabelled samples for expert annotation, potentially reducing labelling cost. This paper applies query-by-committee (QBC) using a committee of five classifiers—two gradient-boosted trees, two SVMs with different kernels, and a shallow neural network—to three simulated fault streams with imbalance ratios of 1:100, 1:500, and 1:2000. A disagreement-weighted sampling strategy biased toward minority-class candidates is introduced to counteract the tendency of standard QBC to query near the decision boundary in the majority class region. The biased strategy reaches 90% of fully labelled F1 using only 12% of available labels at 1:500 imbalance, compared to 21% for unbiased QBC and 31% for random sampling. Latency until the first useful model (F1 > 0.5) is reduced from 840 queries to 310 queries under the biased strategy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05926",
+        "kind": "publication",
+        "title": "Traceability Between Requirements and ARXML Artefacts in AUTOSAR Development",
+        "body": {
+          "recordId": "SYN-PUB-05926",
+          "field": "abstract",
+          "text": "Establishing traceable links between functional requirements and AUTOSAR model artefacts is required by ISO 26262 for software at ASIL B and above, yet toolchain support for this is fragmented. This paper reports on a traceability framework, TraceAR, that stores bidirectional links between requirement identifiers in a ReqIF document and elements in one or more ARXML files, using a trace metamodel serialised as a lightweight XML sidecar. The framework was implemented as an Eclipse plug-in with a matrix view and impact analysis function. It was evaluated in a 12-week study with four engineers working on a powertrain control ECU with 284 functional requirements and a corresponding AUTOSAR model containing 1 140 traceable elements. Coverage analysis showed 91% of requirements linked after the study period; initial linkage completeness before tool adoption had been estimated at 47% based on project documentation. Engineers rated the impact analysis function as the most practically valuable feature in post-study interviews."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04447",
+        "kind": "publication",
+        "title": "Context Inference from Ambient Sensor Streams for Dynamic Public Display Content Selection",
+        "body": {
+          "recordId": "SYN-PUB-04447",
+          "field": "abstract",
+          "text": "Digital signage in public spaces typically cycles content on fixed schedules regardless of audience size, time of day, or environmental conditions. This work proposes a context inference layer sitting between raw sensor feeds—occupancy IR arrays, CO2 sensors, noise-level microphones, and BLE beacon receivers—and a display management system. A rule engine with 34 hand-authored production rules maps sensor state combinations to content-category weights; the display scheduler then selects playlist entries proportional to those weights. A four-week field trial in a university building corridor using a six-screen installation showed that context-driven scheduling increased measured dwell time in front of displays by 22 percent compared with the fixed-rotation baseline, evaluated through a separate overhead camera with OpenCV-based pedestrian counting. Energy draw of the inference layer on a Raspberry Pi 4 averaged 3.1 W under peak sensor load."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05927",
+        "kind": "publication",
+        "title": "Reinforcement Learning for Joint Offloading and Beam Selection in mmWave-Assisted IoT Edge Nodes",
+        "body": {
+          "recordId": "SYN-PUB-05927",
+          "field": "abstract",
+          "text": "This paper investigates the use of a deep Q-network to simultaneously select beam directions and offloading fractions at mmWave-equipped edge nodes serving dense IoT clusters. A custom simulation environment is constructed in Python using ray tracing channel models parameterised for an indoor factory scenario at 28 GHz with 64-element ULA antennas. The agent observes local queue length, residual energy, and a coarse channel quality indicator quantised to four levels. Training uses 200,000 environment steps with an experience replay buffer of 10,000 transitions. The learned policy achieves a 28% reduction in energy-per-bit compared to a heuristic that handles beam selection and offloading independently, and maintains queue stability at arrival rates up to 85% of channel capacity. Ablation experiments show that joint optimisation accounts for most of the gain over independent control."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05928",
+        "kind": "publication",
+        "title": "Subspace Identification of Multizone Thermal Dynamics in a Renovated School Building",
+        "body": {
+          "recordId": "SYN-PUB-05928",
+          "field": "abstract",
+          "text": "Thermal coupling between adjacent zones complicates single-zone modelling approaches and motivates multivariate state-space identification. This paper applies a subspace identification algorithm (N4SID) to estimate a coupled three-zone state-space model for a renovated primary school in Zrenjanin, Serbia, heated by a central hot-water system with zone-level thermostatic valves. Input variables were valve opening signals and outdoor temperature; outputs were zone air temperatures sampled at 15-minute intervals over one full heating season. The estimated 6th-order state-space model captured inter-zone heat transfer through internal partitions and achieved a simulation RMSE below 0.35 °C in all three zones over a 30-day validation window. Model order reduction via balanced truncation yielded a 4th-order approximation with less than 5% increase in validation error, suitable for real-time model predictive control implementation on an embedded Linux platform. Energy simulations using the reduced model indicated that coordinated multizone control could reduce heating energy use by 14–17% relative to independent thermostat operation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05929",
+        "kind": "publication",
+        "title": "Loop Nest Optimisation for Sparse Tensor Contractions on an Out-of-Order Accelerator with Prefetch Buffers",
+        "body": {
+          "recordId": "SYN-PUB-05929",
+          "field": "abstract",
+          "text": "Sparse tensor contractions involve loop nests whose iteration spaces are implicitly defined by the sparsity pattern of one or more operands. Standard loop transformations such as tiling and interchange assume dense rectangular iteration spaces and do not directly apply. This paper reformulates loop tiling for sparse iteration spaces by treating the compressed index arrays as first-class objects during the transformation and deriving tile boundaries from statistical properties of the non-zero structure. Prefetch buffer allocation is handled by a separate pass that inserts prefetch instructions at tile entry points, guided by a cost model calibrated on the target accelerator. Experiments on an RTL-level simulation of a six-stage out-of-order accelerator show 19–27% reduction in stall cycles for eight tensor contraction benchmarks from quantum chemistry. The paper reports sensitivity to tile size and discusses interaction with register allocation."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0502",
+        "kind": "project",
+        "title": "Post-Quantum Cryptography for Hardware Security Modules in Critical Infrastructure",
+        "body": {
+          "recordId": "SYN-PRJ-0502",
+          "field": "summary",
+          "text": "The project investigates the performance and security constraints of deploying post-quantum cryptographic algorithms on hardware security modules used in Serbian energy and transport infrastructure. Work packages cover algorithm selection and adaptation, FPGA and secure microcontroller implementation, side-channel and fault-injection evaluation, and a migration roadmap document targeting IEC 62443 compliance. The team collaborates with the RT-RK Institute in Novi Sad for industrial system integration testing. Outputs include an open benchmarking dataset, two software libraries released under an open-source licence, and a technical report delivered to the Serbian Ministry of Information and Telecommunications."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0503",
+        "kind": "project",
+        "title": "Securing Embedded Controllers in Industrial Cyber-Physical Systems Against Quantum-Capable Adversaries",
+        "body": {
+          "recordId": "SYN-PRJ-0503",
+          "field": "summary",
+          "text": "SECURED-ICS is a 3-year Horizon Europe project bringing together eight partners from six countries to develop and validate a reference architecture for quantum-resistant security in industrial cyber-physical systems. Milica Nikolić leads Work Package 3, which covers hardware-level implementation and benchmarking of NIST-standardised post-quantum schemes on programmable logic controllers and remote terminal units. The work package produces a common evaluation board, a porting guide for firmware engineers, and a set of test vectors and timing datasets. Results feed into Work Package 5 on certification methodology. The project targets IEC 62443 and the forthcoming ETSI EN 303 645 annex on quantum-resistant requirements."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0353",
+        "kind": "project",
+        "title": "Toolchain-Aware Validation Methods for Safety-Critical Embedded Firmware",
+        "body": {
+          "recordId": "SYN-PRJ-0353",
+          "field": "summary",
+          "text": "EMBIVAL addresses the problem that firmware validation results obtained with one compiler version may not transfer to another version, which complicates certification workflows. The project develops a lightweight regression harness that automatically re-runs a defined set of timing, stack, and binary-size checks whenever the toolchain is updated. The harness targets Cortex-M and RISC-V boards available in the laboratory. A database of known GCC version-to-version behavioural differences is being compiled from publicly available bug trackers and from experiments conducted within the project. Expected outputs include the harness software, the database, and a practitioner guide."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates employed at NTP Novi Sad member companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "open_to",
+            "quote": "joint projects with companies developing HSMs, IoT security firmware, or industrial control system security",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0503",
+            "field": "open_to",
+            "quote": "contract research on PQC migration assessment and implementation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0212",
+    "version": 3
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 3
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 3
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "the upper 95% uncertainty bound on outward contaminant mass flux is no greater than zero across a locally justified control surface encompassing all plausible downgradient pathways in every agreed seasonal scenario.",
+        "sources": [],
+        "explanation": "The first experiment describes field characterisation and bench screening but no implemented containment condition with field observations capable of supporting this gate; it also explicitly excludes model predictions alone as proof of containment. Separate the initial screening/design decision from a later containment-verification gate, making the latter conditional on an agreed field intervention, baseline and post-intervention flux evidence.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company reports seepage toward its boundary and says the yard liner was not designed for liquid retention.” and “The company reports leachate COD of 3,400 mg/L.” Proposed next steps: “Four-well installation, submission and professional approvals must be feasible by the verified deadline.” These identify the leaking yard, measured pollution burden and ordered compliance work rather than a generic remediation objective."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Our inference: “the historical deadline cannot establish a current delivery schedule.” Proposed next steps: “Cost external analysis, drilling, treatment engineering and sign-off before procurement.” and “Agree funding, operating responsibilities and residual disposal.” Open questions: “Can Zorić confirm availability, field-team capacity and interest in this joint project for the actual delivery period?” These make the deadline, funding, external facilities and staffing prerequisites to execution rather than assuming resources beyond the company's limited capacity."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Zorić's research combines leachate-indicator sampling with calibrated transport modelling.” and “mean-annual containment designs may underestimate peak infiltration by up to 40% in that climatic setting.” Our inference: “Published alluvial-aquifer parameters and ammonium-removal results do not establish COD treatment or containment performance at this yard.” These connect her documented monitoring and modelling methods to the yard while expressly limiting geographic, seasonal and treatment transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “The company would supply records, access and yard leachate; Zorić would lead surveying, borehole interpretation, quality-controlled sampling and modelling, with treatment-engineering support.” Our inference: “Openness to joint work does not constitute acceptance of this project.” Open questions request confirmation of “availability, field-team capacity and interest”; documented methods are distinguished from proposed roles and unconfirmed support."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps specify “untreated split-batch controls with individually applied treatments” and “Separate tuning from held-out collection batches, and calibration from held-out field measurements”, adequately framing the bench comparison and data separation. However, “Compare immediate source control with interceptor drainage and treatment” does not specify an installed field intervention or comparable field observations through which the containment-flux acceptance target would be tested; the field experiment cannot yet be assessed against its own gate."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps define treatment acceptance as “each independent collection batch, averaging technical repeats” with a “one-sided 95% upper confidence bound, incorporating analytical uncertainty, below every applicable effluent limit, without pooling away failures.” However, the additional requirement that “the upper 95% uncertainty bound on outward contaminant mass flux is no greater than zero” lacks a specified link to an implemented containment condition and its field observations, despite the explicit statement that “predictions of zero flux alone cannot establish containment.” Thus the bench gate is defined, but the containment gate is not operationally supported by the proposed first experiment."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare untreated split-batch controls with individually applied treatments” and “Select the best configuration using tuning data.” Potential benefits: “The experiment could distinguish viable containment and COD-treatment options from unsuitable transfers of published methods”. The text proposes controlled treatment screening and conditional option assessment, without claiming that observational field calibration isolates seasonal, stratigraphic or intervention effects."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Four wells and one campaign would likely leave seasonal reversals or complex plume pathways unresolved” and “Published alluvial-aquifer parameters and ammonium-removal results do not establish COD treatment or containment performance at this yard.” Proposed next steps: “Missing limits, inadequate validation, insufficient seasonal evidence or unresolved feasibility mean no pass and a revised investigation plan.” These cover the principal transfer, evidence and execution risks without presenting unknown site conditions as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This proposal is conditional: current researcher availability is unknown” and “Openness to joint work does not constitute acceptance of this project.” Open questions: “Can Zorić confirm availability, field-team capacity and interest in this joint project for the actual delivery period?” These preserve the distinction between stated openness and an actual commitment, including the mismatch between historical deadline and dated availability information."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could distinguish viable containment and COD-treatment options from unsuitable transfers of published methods, while identifying evidence gaps in a regulator-facing remediation package.” and “Conditional on agreement and access, Zorić could test how seasonal gradients and site stratigraphy affect containment design, using yard observations and actual-leachate treatment results.” These are plausible potential decision-support and research gains, not guarantees of successful treatment or regulatory approval."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.96,
+        0.98,
+        0.78,
+        0.99,
+        0.91,
+        0.83
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

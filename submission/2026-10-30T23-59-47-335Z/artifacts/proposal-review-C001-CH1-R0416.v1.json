@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R0416",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R0416",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R0416",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Her work formalises a one-sided error condition for safety-critical protocol verification: the hypothesis may reject strings in the target language but must not accept strings outside it.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04999",
+            "field": "abstract",
+            "quote": "This one-sided error condition arises naturally in safety-critical protocol verification.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04999",
+            "field": "abstract",
+            "quote": "We study the sample complexity of passive learning of regular languages in the PAC framework where learners are permitted only false-negative errors",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The paper studies sample complexity under an existing one-sided-error condition and notes it arises naturally in safety-critical verification; it does not 'formalise' that condition. Reword to say her work derives sample-complexity bounds for the one-sided-error learning setting motivated by safety-critical verification.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

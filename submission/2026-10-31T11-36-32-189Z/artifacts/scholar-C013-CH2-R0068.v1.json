@@ -1,0 +1,193 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0068",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0068",
+    "name": "Branislav Lekić",
+    "faculty": "BioSense Institute",
+    "department": "Remote Sensing and GIS Group",
+    "fields": [
+      "Remote Sensing",
+      "Agricultural Informatics",
+      "Geoinformatics",
+      "Machine Learning"
+    ],
+    "keywords": [
+      "Sentinel-2",
+      "crop yield prediction",
+      "time series analysis",
+      "precision agriculture",
+      "parcel-level mapping",
+      "vegetation indices",
+      "random forest",
+      "weather data fusion",
+      "NDVI",
+      "agricultural monitoring"
+    ],
+    "openTo": [
+      "joint projects",
+      "contract research",
+      "consulting"
+    ],
+    "bio": {
+      "recordId": "R0068",
+      "field": "bio",
+      "text": "Branislav Lekić completed his BSc and MSc in Geodesy and Geoinformatics at the Faculty of Technical Sciences, University of Novi Sad, graduating in 2014 and 2016 respectively. He received his PhD from the same institution in 2022, with a dissertation on parcel-level crop yield estimation using dense Sentinel-2 time series fused with meteorological reanalysis data. He joined the Remote Sensing and GIS Group at the BioSense Institute as a Research Associate in 2022, where the group focuses on satellite-based agricultural monitoring, land-cover mapping, and precision farming decision support. He contributed to teaching exercises in the GIS and Remote Sensing courses at the Faculty of Technical Sciences. His experimental work relies on the group's high-performance computing cluster, Google Earth Engine, and ground-truth yield data collected via collaboration with local agricultural cooperatives."
+    },
+    "industryExperience": {
+      "recordId": "R0068",
+      "field": "industry_experience",
+      "text": "During the CROPSENSE project Lekić worked directly with staff from three agricultural cooperatives to collect combine-harvester yield records and validate satellite-based estimates, gaining practical experience in translating research outputs into formats usable by field agronomists."
+    },
+    "notes": {
+      "recordId": "R0068",
+      "field": "notes",
+      "text": "Left the University of Novi Sad in March 2026; now a postdoctoral researcher at a university in Austria. Profile not updated. Enquiries regarding ongoing collaboration or access to the CROPSENSE dataset should be directed to the Remote Sensing and GIS Group at BioSense Institute."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-00919",
+        "kind": "publication",
+        "title": "Seasonal NDVI trajectories from Landsat-8 for distinguishing winter wheat and sunflower parcels in the Vojvodina plain",
+        "body": {
+          "recordId": "SYN-PUB-00919",
+          "field": "abstract",
+          "text": "This study examined the separability of winter wheat and sunflower cultivation units in the Vojvodina lowland using dense NDVI time series derived from Landsat-8 surface reflectance imagery acquired during the 2015 and 2016 growing seasons. A total of 412 reference parcels were digitised from cadastral data and verified by field survey. Temporal profiles were constructed at 16-day intervals and smoothed using a Savitzky–Golay filter before being fed into a random forest classifier. Overall classification accuracy reached 91.4% for winter wheat and 87.9% for sunflower across both years. The main source of confusion was between sunflower and maize in parcels smaller than 1.5 hectares, where mixed pixels reduced time-series coherence. Results suggest that the phenological window between day-of-year 160 and 220 provides the greatest discriminative power for separating these two summer crops. The dataset and code are made available through the BioSense Institute repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00920",
+        "kind": "publication",
+        "title": "Effect of cloud gap-filling strategy on Sentinel-2 derived LAI estimates in humid continental climates",
+        "body": {
+          "recordId": "SYN-PUB-00920",
+          "field": "abstract",
+          "text": "Frequent cloud cover in temperate agricultural regions causes substantial data gaps in optical satellite time series, potentially biasing derived biophysical variables such as leaf area index (LAI). This paper compares four gap-filling approaches—linear interpolation, Whittaker smoother, harmonic regression, and a radial basis function network—applied to Sentinel-2 MultiSpectral Instrument Level-2A imagery over a 180 000-hectare study area in northern Serbia. LAI was estimated using a lookup-table inversion of the PROSAIL radiative transfer model. Reference LAI measurements were collected at 38 field plots across three crop types during the 2018 season. The harmonic regression and Whittaker smoother produced the lowest root mean square errors against field data (0.41 and 0.44 m² m⁻² respectively), while linear interpolation performed worst in years with extended cloud sequences exceeding 25 consecutive days. The study recommends harmonic regression as the default for LAI products intended for yield modelling in the region."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00921",
+        "kind": "publication",
+        "title": "Integrating ERA5-Land meteorological variables with satellite vegetation indices for in-season winter wheat yield forecasting at the field level",
+        "body": {
+          "recordId": "SYN-PUB-00921",
+          "field": "abstract",
+          "text": "Accurate in-season yield forecasting at individual field level remains difficult because satellite observations alone do not capture agronomic stress caused by temperature extremes or moisture deficits. This paper presents a regression framework that combines seven Sentinel-2 derived spectral indices sampled at weekly intervals with ERA5-Land reanalysis variables including daily maximum temperature, precipitation sum, and reference evapotranspiration. Training data were compiled from 1 247 winter wheat parcels in the Srem district spanning the 2017–2020 growing seasons, with yield ground truth from cooperative combine-harvester records. A gradient boosting regressor outperformed a simple LAI-based benchmark, reducing mean absolute error from 0.71 t ha⁻¹ to 0.49 t ha⁻¹ when the model was applied to the 2021 holdout season. Feature importance analysis identified the red-edge chlorophyll index acquired between Zadoks stage 37 and 55 as the strongest single predictor. Spatial autocorrelation of residuals was moderate (Moran's I = 0.18), indicating that local soil variability not captured by weather reanalysis remains a limiting factor."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00922",
+        "kind": "publication",
+        "title": "Parcel boundary delineation from Sentinel-2 imagery using a watershed segmentation approach adapted for fragmented agricultural landscapes",
+        "body": {
+          "recordId": "SYN-PUB-00922",
+          "field": "abstract",
+          "text": "Automatic delineation of agricultural parcel boundaries is a prerequisite for scalable field-level monitoring but is complicated by the small, irregular parcel structure typical of post-socialist land fragmentation in the western Balkans. This conference paper describes an adaptation of marker-controlled watershed segmentation applied to a composite of three Sentinel-2 bands (B4, B8, B11) and a gradient magnitude image generated from a spring-season mosaic. Markers were seeded using local minima of the gradient after Gaussian smoothing at two spatial scales. Accuracy was evaluated against 630 manually digitised parcels in a 5 000-hectare test region in the South Bačka district. The method achieved an average boundary displacement error of 8.3 m and an over-segmentation rate of 14%, comparable to published results on larger, more regular field systems in Western Europe. The approach is computationally light and runs within Google Earth Engine without requiring additional training data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00923",
+        "kind": "publication",
+        "title": "A transferability assessment of yield prediction models trained in the Pannonian Plain when applied to Romanian agricultural regions",
+        "body": {
+          "recordId": "SYN-PUB-00923",
+          "field": "abstract",
+          "text": "Machine learning models trained on local yield and satellite data often degrade when transferred to neighbouring regions with different climate regimes, soil types, and crop varieties. This study evaluates the transferability of three yield prediction models—random forest, support vector regression, and a convolutional recurrent network operating on image time series—trained on Serbian Pannonian Plain data and tested on 890 winter wheat parcels distributed across four counties in south-west Romania. Models were trained on 2017–2021 Serbian data and applied without retraining, with partial retraining on 20% of Romanian parcels, and with full retraining. Partial retraining using as few as 180 Romanian parcels recovered 78% of the performance attainable with full local training. The convolutional recurrent network showed the largest absolute performance drop under zero-shot transfer but also the greatest benefit from partial retraining. The study concludes that a small locally collected calibration dataset is sufficient for practical deployment across the Pannonian–Wallachian agroclimatic gradient."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00924",
+        "kind": "publication",
+        "title": "Combining Sentinel-1 SAR coherence and Sentinel-2 optical indices for sunflower yield estimation under variable cloud cover",
+        "body": {
+          "recordId": "SYN-PUB-00924",
+          "field": "abstract",
+          "text": "Optical satellite data for yield modelling become unreliable during cloudy periods that coincide with critical crop growth stages. This study investigates whether Sentinel-1 C-band SAR coherence, which is unaffected by cloud cover, can supplement or replace optical indices during such periods for sunflower yield estimation. A dataset of 534 sunflower parcels in the Banat region monitored from 2019 to 2022 was used. Repeat-pass interferometric coherence was computed from 6-day Sentinel-1 pairs on ascending and descending orbits. Coherence values between day-of-year 190 and 230 correlated negatively with canopy biomass (r = −0.61) and showed predictive value for final yield independent of optical data. A fusion model combining coherence time series with cloud-gapfilled NDVI achieved a mean absolute error of 0.44 t ha⁻¹, compared with 0.61 t ha⁻¹ for an optical-only baseline in years with high cloud frequency. The benefit of SAR fusion was largest in the 2021 season, which experienced 34 cloudy days during the critical growth window."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00925",
+        "kind": "publication",
+        "title": "Temporal resolution requirements for Sentinel-2 based yield modelling: a sensitivity analysis across five crop types",
+        "body": {
+          "recordId": "SYN-PUB-00925",
+          "field": "abstract",
+          "text": "The operational cadence of Sentinel-2 is five days at the equator but is reduced by cloud cover and orbital geometry at mid-latitudes. It remains unclear how large the resulting temporal gaps can be before yield prediction accuracy degrades significantly. This paper presents a systematic sensitivity analysis in which synthetic temporal gaps of 5, 10, 15, 20, and 30 days are introduced into complete Sentinel-2 time series for five crop types—winter wheat, maize, sunflower, soybean, and sugar beet—across 2 300 parcels observed in Vojvodina from 2018 to 2023. Yield prediction models were retrained and evaluated for each gap scenario. Winter wheat and sugar beet showed the steepest accuracy decline beyond 15-day gaps, linked to the narrow phenological windows of booting and canopy closure respectively. Maize and sunflower were more tolerant of sparse observations due to longer plateau phases in their spectral trajectories. Results provide quantitative guidance for data acquisition planning and for identifying crop types most in need of SAR data supplementation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00926",
+        "kind": "publication",
+        "title": "Parcel-level crop yield prediction in heterogeneous agricultural landscapes: methods, data requirements, and operational constraints",
+        "body": {
+          "recordId": "SYN-PUB-00926",
+          "field": "abstract",
+          "text": "This book chapter reviews quantitative approaches to predicting crop yields at the individual parcel level using satellite time series and ancillary data, with emphasis on conditions typical of Central and South-East European agricultural regions. The chapter covers radiative transfer model inversion, statistical regression, and machine learning approaches, discussing their data requirements, computational demands, and performance under limited ground truth availability. A practical section addresses the challenge of obtaining parcel boundaries from heterogeneous national LPIS databases and the trade-offs involved in selecting temporal compositing windows. The chapter draws on published literature and on experiments conducted by the authors over parcels in Serbia, Hungary, and Romania between 2017 and 2024. An operational workflow suitable for deployment by regional agricultural advisory services is outlined, including a checklist of minimum data requirements and common failure modes encountered in practice."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1821",
+        "kind": "project",
+        "title": "Cross-border Agricultural Monitoring and Yield Forecasting Using Copernicus Data in the Hungarian–Serbian Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-1821",
+          "field": "summary",
+          "text": "The project aimed to establish a shared satellite-based monitoring service for agricultural parcels in the cross-border region spanning South Bačka (Serbia) and Csongrád-Csanád (Hungary). The BioSense Institute was responsible for processing Sentinel-2 time series, constructing parcel databases from national LPIS sources, and delivering seasonal yield forecast maps. Branislav Lekić contributed the yield modelling component, adapting and validating regression models trained on Serbian data for application to Hungarian parcels. The project produced a web-based dashboard for regional agricultural authorities and published protocols for harmonising cross-border parcel datasets. Final yield forecast maps for winter wheat and maize were delivered to partner organisations at the end of each growing season."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1822",
+        "kind": "project",
+        "title": "Operational Crop Yield Estimation for the Vojvodina Region Using Fused Optical and SAR Satellite Data",
+        "body": {
+          "recordId": "SYN-PRJ-1822",
+          "field": "summary",
+          "text": "CROPSENSE addressed the practical deployment of parcel-level yield prediction for five major crops grown in Vojvodina, with particular focus on reducing dependence on cloud-free optical imagery by incorporating Sentinel-1 SAR data. Branislav Lekić led the work package on data fusion and model development, overseeing the assembly of a multi-year parcel dataset from combine-harvester records provided by three agricultural cooperatives, satellite data processing, and the design of a modular prediction pipeline. The project produced open-source Python tooling for time series fusion, a calibrated yield model ensemble, and a set of validation reports for each crop type. Dissemination included two journal articles, one conference paper, and a technical report delivered to the Provincial Secretariat for Agriculture."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0068",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0068",
+            "field": "open_to",
+            "quote": "contract research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "limited",
+        "sources": [
+          {
+            "recordId": "R0068",
+            "field": "notes",
+            "quote": "Left the University of Novi Sad in March 2026; now a postdoctoral researcher at a university in Austria.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    },
+    "qualityFlags": [
+      "stale_profile"
+    ]
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "ref": {
+    "artifactId": "scholar-C026-CH3-R0240",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0240",
+    "name": "Borislav Vranješ",
+    "faculty": "Faculty of Agriculture",
+    "department": "Department of Water Management",
+    "fields": [
+      "Hydrology and Water Resources",
+      "Hydrogeology",
+      "Environmental Engineering",
+      "Agricultural Water Management"
+    ],
+    "keywords": [
+      "bank filtration",
+      "alluvial aquifer",
+      "groundwater–surface water interaction",
+      "Pannonian Plain",
+      "recharge estimation",
+      "land-use change",
+      "piezometric monitoring",
+      "MODFLOW",
+      "Danube floodplain",
+      "hyporheic zone"
+    ],
+    "openTo": [
+      "joint projects with companies working on water supply, environmental monitoring, or geospatial data services",
+      "contract research on site-specific hydrogeological assessment or recharge studies",
+      "consulting on groundwater–surface water interaction, bank filtration siting and management",
+      "student internships for civil or environmental engineering students",
+      "equipment access (multi-level piezometers, slug test equipment, portable temperature loggers)"
+    ],
+    "bio": {
+      "recordId": "R0240",
+      "field": "bio",
+      "text": "Borislav Vranješ completed his undergraduate and master's degrees in Water Management at the Faculty of Agriculture, University of Novi Sad, in 2003 and 2006 respectively, and obtained his PhD from the same institution in 2011 with a dissertation on bank filtration dynamics along the Danube floodplain. He has held the position of Associate Professor since 2019. His research focuses on groundwater–surface water exchange in alluvial aquifers of the Pannonian Plain, with particular attention to bank filtration, recharge estimation under changing land use, and the influence of river morphology on subsurface flow. The group routinely uses multi-level piezometer networks, tracer tests, and numerical flow modelling (MODFLOW, FEFLOW). Teaching responsibilities include Hydrogeology, Irrigation and Drainage, and Water Resources Planning at undergraduate and master's levels."
+    },
+    "industryExperience": {
+      "recordId": "R0240",
+      "field": "industry_experience",
+      "text": "Provided hydrogeological consulting to Vojvodina's provincial water utility during the 2019–2020 expansion of a bank filtration well field, advising on site characterisation methodology and monitoring network design. Has occasional advisory interactions with municipal water companies regarding production well maintenance and clogging issues."
+    },
+    "notes": {
+      "recordId": "R0240",
+      "field": "notes",
+      "text": "Prefers projects with a clear field measurement component rather than purely modelling-focused work. Has capacity to co-supervise an industrial PhD student starting autumn 2026. Fluent in Serbian, English, and functional German."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03043",
+        "kind": "publication",
+        "title": "Hydraulic gradients and exchange fluxes at a bank filtration site on the Middle Danube near Novi Sad",
+        "body": {
+          "recordId": "SYN-PUB-03043",
+          "field": "abstract",
+          "text": "Bank filtration (BF) sites along the Middle Danube supply roughly 40 % of the drinking water used by Novi Sad municipality. This study characterised hydraulic gradients and vertical exchange fluxes at an operational BF site over a 24-month period using a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank. Stage and groundwater-head data collected at 15-minute intervals were combined with streambed vertical hydraulic conductivity estimates obtained from falling-head slug tests. Seepage fluxes ranged from 0.3 to 2.1 m/d depending on river stage and antecedent soil moisture. Riverbank clogging was quantified by comparing hydraulic conductivity measured in November 2008 and June 2009, revealing a 35 % reduction in the upper 0.5 m of the streambed during the low-flow period attributed to fine sediment deposition. Results provide a calibration dataset for subsequent numerical modelling and highlight the sensitivity of BF efficiency to seasonal stage fluctuations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03044",
+        "kind": "publication",
+        "title": "Estimating groundwater recharge in the Bačka loess plateau under maize-dominated land use using chloride mass balance and water-table fluctuation methods",
+        "body": {
+          "recordId": "SYN-PUB-03044",
+          "field": "abstract",
+          "text": "Two independent methods were applied to estimate annual groundwater recharge in a 420 km² agricultural catchment in the Bačka region of Vojvodina, where continuous maize cultivation covers approximately 68 % of the surface area. The chloride mass balance (CMB) method used monthly precipitation and unsaturated-zone pore water samples collected from 12 sites over two hydrological years (2009–2011). The water-table fluctuation (WTF) method relied on 23 existing monitoring wells of the Provincial Hydrogeological Network. CMB estimates ranged from 18 to 54 mm/yr, with a mean of 31 mm/yr. WTF-derived values were systematically 15–25 % higher, a discrepancy attributed to lateral inflow from irrigation canals. Specific yield was estimated at 0.12 ± 0.03 using laboratory permeameter tests on 48 core samples. Recharge was strongly correlated with autumn precipitation totals (r² = 0.71) and inversely correlated with summer evapotranspiration computed by the Penman–Monteith equation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03045",
+        "kind": "publication",
+        "title": "Numerical simulation of bank filtrate travel times in a heterogeneous gravel-sand aquifer using MODFLOW-2005 with the MT3DMS transport package",
+        "body": {
+          "recordId": "SYN-PUB-03045",
+          "field": "abstract",
+          "text": "A steady-state and transient groundwater flow model was constructed for a 3.2 km reach of the Tisa River near Titel, Vojvodina, to simulate bank filtrate travel times under varying pumping and river-stage conditions. Aquifer stratigraphy was characterised using 34 borehole logs and 6 electrical resistivity tomography profiles, identifying three distinct hydrofacies with hydraulic conductivities of 1.2 × 10⁻³, 4.7 × 10⁻⁴, and 8.1 × 10⁻⁵ m/s. The model was calibrated against 14 months of observed heads (RMSE = 0.18 m) and validated against a river-stage recession event. MT3DMS particle tracking indicated median travel times of 18–42 days at the production well field, consistent with environmental tracer data (δ¹⁸O, tritium) collected from six monitoring wells. Sensitivity analysis showed travel time to be most sensitive to hydraulic conductivity in the high-permeability facies and to the abstraction rate at the well field."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03046",
+        "kind": "publication",
+        "title": "Impact of forest-to-cropland conversion on shallow groundwater recharge in the Fruška Gora piedmont zone",
+        "body": {
+          "recordId": "SYN-PUB-03046",
+          "field": "abstract",
+          "text": "Land-use change from mixed deciduous forest to arable land in the Fruška Gora piedmont affects unsaturated-zone water balance and ultimately recharge to shallow quaternary aquifers. Paired catchment monitoring was established at two 1.2–1.8 km² subcatchments with contrasting land cover. Soil moisture was logged continuously at three depths (0.3, 0.6, 1.0 m) using capacitance probes; actual evapotranspiration was estimated from eddy covariance measurements over the 2015–2018 period. Annual recharge under cropland was 78 ± 12 mm compared with 41 ± 9 mm under forest, reflecting lower interception and root-zone uptake. However, the elevated recharge under cropland was associated with increased nitrate concentrations in shallow wells (mean 38 mg/L NO₃⁻ versus 7 mg/L), indicating a water quality trade-off. A simple transfer function model reproducing the observed recharge dynamics is presented for use in scenario analyses."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03047",
+        "kind": "publication",
+        "title": "Hyporheic exchange in a channelised lowland river: field measurements and 2D hydrodynamic modelling along the Begej Canal, Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-03047",
+          "field": "abstract",
+          "text": "Channelisation of natural rivers in Vojvodina has dramatically altered the hyporheic exchange capacity of riparian systems. This study quantified hyporheic exchange fluxes in a 4.8 km reach of the Begej Canal using vertical streambed temperature profiles measured at 12 locations with high-resolution thermistors deployed over three seasons. One-dimensional heat-transport inversion using the VFLUX toolbox yielded vertical flux estimates ranging from −0.8 to +1.4 cm/d, indicating alternating gaining and losing conditions linked to canal operating schedule. A 2D hydrodynamic model of the reach (MIKE 21 FM) was used to derive spatially distributed bed shear stress, which correlated positively with upwelling flux (r = 0.62). Streambed grain size was characterised at each measurement point using sieve analysis. Results suggest that current canal management practice suppresses hyporheic exchange by maintaining artificially uniform stage, with implications for self-purification capacity and ecological status under the Water Framework Directive."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03048",
+        "kind": "publication",
+        "title": "Groundwater–surface water interaction in alluvial aquifers of the Pannonian Plain: a synthesis",
+        "body": {
+          "recordId": "SYN-PUB-03048",
+          "field": "abstract",
+          "text": "This book chapter synthesises knowledge on groundwater–surface water (GW–SW) interactions specific to the Pannonian Plain, a large intramontane sedimentary basin with characteristic flat topography, thick Quaternary sediments, and dense agricultural land use. The chapter covers the geological and hydrogeological framework of Pannonian alluvial aquifers, reviews methods applicable in data-sparse lowland settings (slug tests, streambed temperature profiling, environmental tracers, water balance approaches), and discusses how irrigation, drainage, and river regulation have modified natural exchange fluxes over the past century. Case studies from Vojvodina (Serbia), the Tisza Plain (Hungary), and the Sava corridor (Croatia) are presented to illustrate common patterns and regional differences. Particular attention is given to the implications of altered GW–SW exchange for drinking water supply via bank filtration and for wetland and riparian habitat maintenance. The chapter concludes with a discussion of monitoring gaps and priorities for regional research cooperation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03049",
+        "kind": "publication",
+        "title": "Responses of a shallow phreatic aquifer to irrigation canal recharge: evidence from a dense piezometer network in the DTD canal system, Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-03049",
+          "field": "abstract",
+          "text": "The Danube–Tisa–Danube (DTD) hydro-engineering system, one of the largest canal networks in Southeast Europe, acts as both a drainage and irrigation infrastructure across Vojvodina. This study tracked aquifer responses to canal recharge events at 31 piezometers installed along a 12 km transect perpendicular to the main DTD canal near Bečej during the 2018 and 2019 irrigation seasons. Water-table hydrographs were decomposed to separate canal-recharge signals from precipitation-driven responses using a cross-correlation approach. Canal recharge elevated groundwater levels by up to 0.9 m within 200 m of the canal within 48–72 hours of gate opening, with the response attenuating to below detection threshold at 1.4 km. Leakage coefficients averaged 1.8 × 10⁻⁴ m/s across the lined and unlined canal sections, with unlined sections showing 2.7-fold higher leakage. Implications for waterlogging risk and soil salinity management in adjacent agricultural fields are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03050",
+        "kind": "publication",
+        "title": "Seasonal variability of bank filtrate quality at a municipal well field on the Danube: two years of high-frequency monitoring",
+        "body": {
+          "recordId": "SYN-PUB-03050",
+          "field": "abstract",
+          "text": "Water quality at a well field supplying approximately 85,000 residents along the Middle Danube was monitored at biweekly intervals from January 2019 to December 2020. Samples were collected from 8 production wells and 4 riverbank monitoring points and analysed for turbidity, dissolved organic carbon (DOC), UV absorbance at 254 nm, temperature, specific conductance, and a suite of microbiological parameters. DOC concentrations in bank filtrate were 40–70 % lower than in river water, with attenuation efficiency declining during high-flow events when travel times fell below 12 days as inferred from temperature cross-correlation. Turbidity spikes in the river were entirely removed in all monitoring wells. Thermophilic bacteria counts in production wells increased measurably in late summer, correlating with river water temperature exceeding 24 °C. Results are discussed in the context of climate-driven increases in river temperature and implications for treatment requirements at the water works."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03051",
+        "kind": "publication",
+        "title": "Projected changes in groundwater recharge across Vojvodina under CMIP6 climate scenarios using a coupled soil–water balance model",
+        "body": {
+          "recordId": "SYN-PUB-03051",
+          "field": "abstract",
+          "text": "Future groundwater recharge in the Vojvodina plain was assessed for the 2041–2060 and 2071–2090 periods using a daily soil water balance model driven by statistically downscaled outputs from five CMIP6 general circulation models under SSP2-4.5 and SSP5-8.5. The model was calibrated and validated against observed water-table hydrographs at 17 monitoring stations operated by the Provincial Hydrogeological Network over 1990–2020. Baseline mean annual recharge across the study domain was estimated at 43 mm/yr (range 22–68 mm/yr) depending on soil texture and land use. Under SSP5-8.5, ensemble-median recharge declined by 28 % (range −12 to −41 %) by 2071–2090, driven primarily by increased summer potential evapotranspiration. Uncertainty in recharge projections was dominated by inter-model spread in summer precipitation rather than by the choice of soil hydraulic parameterisation. Spatial patterns show the most pronounced reductions in the sandy Deliblato area and in the Bačka loess plateau."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03052",
+        "kind": "publication",
+        "title": "Using environmental tracers (δ¹⁸O, δ²H, ³H) to delineate recharge zones and groundwater age in the Titel loess plateau aquifer",
+        "body": {
+          "recordId": "SYN-PUB-03052",
+          "field": "abstract",
+          "text": "The Titel loess plateau, a distinctive geomorphological unit at the confluence of the Danube and Tisa rivers, hosts a multilayer aquifer system used for local water supply. Stable water isotopes (δ¹⁸O, δ²H) and tritium were measured in 41 groundwater samples collected from wells spanning depths of 8–95 m in 2022. Isotopic compositions of shallow groundwater (δ¹⁸O: −9.2 to −8.4 ‰) were depleted relative to local meteoric water, suggesting a component of recharge from cold-season precipitation. Tritium activities ranged from <0.5 to 4.8 TU; wells with activities below detection limit were considered pre-bomb (pre-1952) water and constitute approximately 30 % of sampled sites. A two-component mixing model was applied to quantify the proportion of modern versus pre-modern water at each well. Results have direct implications for the vulnerability of the deeper aquifer to land-surface contamination and for sustainable abstraction planning."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03053",
+        "kind": "publication",
+        "title": "Clogging dynamics at bank filtration intake structures: column experiments with Danube riverbed sediment",
+        "body": {
+          "recordId": "SYN-PUB-03053",
+          "field": "abstract",
+          "text": "Biological and physical clogging reduces the hydraulic efficiency of bank filtration systems over time. Laboratory column experiments were conducted using intact sediment cores (n = 12, length 0.4 m, diameter 0.1 m) extracted from the Danube riverbed at an operational BF site to evaluate clogging development under controlled conditions. Columns were fed with Danube surface water at flow rates mimicking natural seepage (0.5–2.0 m/d). Hydraulic conductivity was measured every 48 hours for 60 days using constant-head permeameter tests. Total suspended solids, turbidity, and total cell counts were monitored in influent and effluent. Hydraulic conductivity declined by 55–82 % over the experiment duration, with steeper declines at higher flow rates. Microscopic examination and phospholipid fatty acid analysis indicated that biofilm growth contributed 40–60 % of total clogging in low-TSS treatments, while physical filtration of fine particles dominated at high-TSS influent. Protocols for maintenance backwashing intervals are proposed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03054",
+        "kind": "publication",
+        "title": "Aquifer thermal energy storage feasibility in alluvial sediments of the Pannonian Basin: site assessment and groundwater flow implications",
+        "body": {
+          "recordId": "SYN-PUB-03054",
+          "field": "abstract",
+          "text": "Growing interest in shallow geothermal energy use in Vojvodina raises questions about the suitability of alluvial aquifers for aquifer thermal energy storage (ATES) and about potential thermal plume interference with bank filtration operations. This study assessed a potential ATES site in a suburban area of Novi Sad using existing borehole data, pumping test results, and ambient groundwater temperature profiles. Groundwater flow velocity was estimated at 0.5–1.4 m/d from tracer tests, which is relatively high for ATES and implies rapid plume advection. Numerical simulations with FEFLOW coupled with a heat transport module projected thermal plume extents of 80–130 m after five years of cyclic operation at a 250 kW system. A minimum setback distance of 300 m from active BF production wells is recommended based on sensitivity analysis across a range of hydraulic conductivity values. Regulatory and monitoring framework requirements are outlined."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03055",
+        "kind": "publication",
+        "title": "Suspended sediment rating curves and their seasonal variability at three gauging stations on the Bega River",
+        "body": {
+          "recordId": "SYN-PUB-03055",
+          "field": "abstract",
+          "text": "Suspended sediment concentration was measured biweekly over three hydrological years (2011–2013) at Zrenjanin, Srpski Itebej, and Žitište gauging stations on the Bega canalised reach. Depth-integrated isokinetic sampling was combined with turbidity probe deployment to produce continuous surrogate records. Rating curve exponents derived from ordinary least squares regression ranged from 1.41 to 1.89 across stations, with systematic seasonal hysteresis: clockwise loops predominated in spring snowmelt events while counterclockwise patterns were observed during summer convective floods. Annual suspended load estimates at Zrenjanin averaged 24 300 tonnes per year, approximately 35 percent lower than values reported for the same station in the 1970s. The reduction is attributed to a combination of reduced discharge variability following channel deepening and increased riparian vegetation cover in the headwater zone. Uncertainty propagation analysis suggests 90th-percentile load errors of ±18 percent at the best-instrumented station."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03056",
+        "kind": "publication",
+        "title": "Bank erosion rates and controlling factors at 12 sites on unregulated meander bends of the Zlatica stream, Banat",
+        "body": {
+          "recordId": "SYN-PUB-03056",
+          "field": "abstract",
+          "text": "Repeated RTK-GPS surveys of eroding outer banks were conducted quarterly over 24 months (2023–2025) at 12 meander bends on the Zlatica stream in eastern Banat. Bank retreat distances varied from 0.08 to 1.6 m per year, with the highest rates associated with bends where toe scour exposed fine-sand layers overlain by silt–clay composites prone to cantilever failure. Bulk density, Atterberg limits, and undrained shear strength were measured for 58 bank samples stratified by lithological unit. Logistic regression identified three significant predictors of retreat rate exceeding 0.5 m per year: low plasticity index, bank height above 2.2 m, and curvature radius-to-width ratio below 3.5. Riparian tree root reinforcement was quantified at six sites using the perpendicular root density method, and root-reinforced banks exhibited retreat rates 40–55 percent lower than comparable non-vegetated banks. Results are intended to support prioritisation of bank protection works within the provincial drainage maintenance programme."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03057",
+        "kind": "publication",
+        "title": "Seasonal variation in nutrient load from subsurface tile drains under conventional cereal production in the southern Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PUB-03057",
+          "field": "abstract",
+          "text": "Tile drain outflow chemistry was monitored over two complete hydrological years (2013–2015) at four 5–12 ha cereal production fields in Bačka and Banat districts. Automatic samplers and continuous flow sensors recorded drainage volumes and captured time-proportional samples during all significant drainage events. Nitrate-N export ranged from 12 to 47 kg ha⁻¹ yr⁻¹ across sites, with peak concentrations of 28–41 mg NO₃-N L⁻¹ occurring in late autumn and early spring following fertiliser application events. Dissolved reactive phosphorus export was lower (0.08–0.31 kg P ha⁻¹ yr⁻¹) but showed strong event-driven pulses coinciding with heavy rainfall on recently fertilised soils. Inter-site variability was explained in part by soil texture and drain depth. The dataset provides empirical loading estimates for sizing constructed wetland treatment systems at farm scale in the region, where such field-specific data had previously been scarce."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03058",
+        "kind": "publication",
+        "title": "Institutional Disintegration and Recomposition of Irrigation Cooperatives in Vojvodina, 1989–1995",
+        "body": {
+          "recordId": "SYN-PUB-03058",
+          "field": "abstract",
+          "text": "This paper examines the structural breakdown of socialist irrigation collectives in the Vojvodina region of northern Serbia following the political transitions of 1989–1991, and the early attempts at recomposing water management authority under nascent water-user associations (WUAs). Drawing on archival records from twelve canal districts and semi-structured interviews with forty-three former cooperative officials and successor association managers conducted in 1995–1996, the study documents the redistribution of infrastructure responsibilities, fee collection failures, and the rapid decline of canal maintenance. Ostrom's institutional design principles are applied as an evaluative framework. Findings indicate that only three of the twelve studied districts achieved minimally functional self-governance within the first five post-transition years, largely due to retained social networks from the previous cooperative era. The paper concludes that informal trust capital from the socialist period was a stronger predictor of early WUA viability than formal legal provisions introduced after 1992."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03059",
+        "kind": "publication",
+        "title": "Water-Allocation Equity Among Smallholders and Agro-Industrial Estates in the DTD Canal Network: A Gini-Based Assessment",
+        "body": {
+          "recordId": "SYN-PUB-03059",
+          "field": "abstract",
+          "text": "The DTD (Danube–Tisa–Danube) hydro-engineering system in Vojvodina serves a heterogeneous landscape of subsistence smallholders and large agro-industrial estates. This study develops a field-applicable water-allocation equity index adapted from the Gini coefficient, using volumetric delivery records from four lateral canal branches over the irrigation seasons of 1998 and 1999, supplemented by on-site interviews with 61 water users stratified by farm size. Results show a Gini coefficient for water delivery ranging from 0.38 to 0.52 across branches, indicating moderate to high inequality, systematically favoring farms above 50 ha. Multivariate regression identifies proximity to pumping stations, membership in formal WUA committees, and historical cadastral classification as the three strongest predictors of favorable allocation outcomes. The study provides a replicable measurement protocol for monitoring equity obligations embedded in Serbian water law, and recommends revising fee structures to reduce infrastructure-proximity advantages."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1271",
+        "kind": "project",
+        "title": "Groundwater Recharge and Bank Filtration Resilience Under Climate and Land-Use Change in the Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PRJ-1271",
+          "field": "summary",
+          "text": "AQUAPAN brought together four institutions from Serbia and Hungary to produce a joint assessment of groundwater recharge trends and bank filtration performance under combined climate and land-use change pressures. The Novi Sad team was responsible for the Serbian case study sites, including monitoring network installation and data collection at two BF sites on the Danube and two recharge transects in Vojvodina. Work package outputs included a shared monitoring protocol, a publicly accessible database of head and water quality records, and scenario analysis using coupled hydrological and groundwater models. Results were communicated to water utility operators and provincial water authorities through two technical workshops."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1272",
+        "kind": "project",
+        "title": "Recharge Estimation and Groundwater Vulnerability Assessment for Public Water Supply Zones in Vojvodina",
+        "body": {
+          "recordId": "SYN-PRJ-1272",
+          "field": "summary",
+          "text": "REGROZ addressed a practical need of provincial water managers: updated, spatially distributed recharge estimates and groundwater vulnerability maps for the 14 public water supply zones of Vojvodina. The project combined existing monitoring data with new field campaigns (tracer tests, streambed measurements, unsaturated zone profiling) and applied the DRASTIC vulnerability indexing method recalibrated against local contamination data. A key output is a GIS-based decision-support layer provided to the Provincial Secretariat for Water Management. The project also supported two master's theses and a PhD candidate's field data collection. Total budget was approximately 4.2 million RSD."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1267",
+        "kind": "project",
+        "title": "Sediment Budget Dynamics and Channel Adjustment in the Lower Tisa River Under Changing Hydrological Forcing",
+        "body": {
+          "recordId": "SYN-PRJ-1267",
+          "field": "summary",
+          "text": "The project aimed to quantify sediment budget components for the lower Tisa reach in Serbia and to identify dominant controls on observed channel incision. Field campaigns included seasonal ADCP transects, bedload trap deployments, and systematic floodplain coring. A hydraulic–sediment transport model was developed and run under historical and projected climate forcing. The project produced the first high-resolution longitudinal grain-size map of the reach, an updated sediment budget covering 2010–2023, and scenario simulations to 2070. Outputs inform Serbian Water Directorate maintenance planning. Three journal papers and one conference contribution have resulted from the project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1275",
+        "kind": "project",
+        "title": "Reclamation Strategy for Salt-Affected Soils in the Danube–Tisa–Danube Irrigation Zone under Changing Climate",
+        "body": {
+          "recordId": "SYN-PRJ-1275",
+          "field": "summary",
+          "text": "The project aimed to develop integrated reclamation strategies for salt-affected irrigated soils in the cross-border Danube–Tisa–Danube irrigation zone, covering approximately 120,000 ha across southern Hungary and Vojvodina. Activities included joint soil monitoring using standardised protocols, calibration of SALTMOD and HYDRUS-1D models to cross-border conditions, and preparation of a bilingual reclamation planning manual distributed to regional water management authorities. The University of Novi Sad team led field work in the Serbian sector, while the Hungarian partner managed modelling activities. Two pilot reclamation demonstrations were established, one on each side of the border, with matched monitoring equipment for comparative analysis."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1277",
+        "kind": "project",
+        "title": "Governance Capacity of Water-User Associations in the Western Balkans: Diagnostic Framework and Policy Recommendations",
+        "body": {
+          "recordId": "SYN-PRJ-1277",
+          "field": "summary",
+          "text": "A bilateral research cooperation between the Faculty of Agriculture, University of Novi Sad, and the Faculty of Agronomy, University of Zagreb, funded under the Serbian–Croatian scientific exchange programme. The project developed a standardised diagnostic toolkit for evaluating WUA governance capacity, comprising 47 indicators across financial, technical, social, and legal dimensions. The toolkit was piloted in 14 associations (8 Serbian, 6 Croatian) and results were used to produce national-language practitioner guides for WUA board training. Final outputs included two journal articles, a bilingual practitioner handbook, and a joint policy brief submitted to both countries' water management directorates."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "joint projects with companies working on water supply, environmental monitoring, or geospatial data services",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "contract research on site-specific hydrogeological assessment or recharge studies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0931",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0931",
+    "name": "Jana Zahorecová",
+    "faculty": "Prirodno-matematički fakultet",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Natural language processing",
+      "Information retrieval and recommendation systems",
+      "Machine learning",
+      "Multimedia metadata analysis"
+    ],
+    "keywords": [
+      "semantic embedding",
+      "content recommendation",
+      "audio metadata classification",
+      "natural language processing",
+      "text representation",
+      "transformer models",
+      "collaborative filtering",
+      "music information retrieval",
+      "multilingual NLP",
+      "low-resource languages"
+    ],
+    "openTo": [
+      "joint projects with companies in audio/video content distribution and archiving",
+      "contract research on metadata classification and recommendation systems",
+      "student internships for master's and final-year bachelor's students",
+      "consulting on NLP pipeline design for Serbian-language text",
+      "equipment access: GPU cluster for NLP model training (scheduling required)"
+    ],
+    "bio": {
+      "recordId": "R0931",
+      "field": "bio",
+      "text": "Jana Zahorecová diplomirala je matematiku na Prirodno-matematičkom fakultetu Univerziteta u Novom Sadu 2008. godine, a doktorsku disertaciju iz oblasti računarske lingvistike odbranila je 2015. na istom fakultetu. Od 2016. zaposlena je kao viši istraživački saradnik na Departmanu za matematiku i informatiku. Njena istraživačka grupa bavi se obradom prirodnog jezika, semantičkim ugrađivanjem teksta i automatskom klasifikacijom metapodataka audiosadržaja. Nastavnički angažman uključuje kurseve iz mašinskog učenja i obrade teksta na master studijama. Koristi klaster za visoko-performantna računanja PMF-a, kao i sopstvenu infrastrukturu za anotaciju i čuvanje audio metapodataka."
+    },
+    "industryExperience": {
+      "recordId": "R0931",
+      "field": "industry_experience",
+      "text": "Zahorecová je sarađivala sa regionalnim distributerom digitalnog audio sadržaja u okviru trogodišnjeg ugovora o istraživanju (2019–2022), tokom kojeg je razvijen prototip sistema za preporučivanje koji je ušao u internu upotrebu. Ima iskustvo u definisanju zahteva za anotaciju podataka i upravljanju procesima anotacije u industrijskom okruženju."
+    },
+    "notes": {
+      "recordId": "R0931",
+      "field": "notes",
+      "text": "Od jeseni 2026. Zahorecová planira istraživački boravak na University of Vienna u trajanju od jednog semestra; dostupna je za nove projekte koji bi počeli najranije sredinom 2027. godine."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-09845",
+        "kind": "publication",
+        "title": "Uticaj kvaliteta korisničkih oznaka na preciznost preporučivanja audio sadržaja",
+        "body": {
+          "recordId": "SYN-PUB-09845",
+          "field": "abstract",
+          "text": "Rad analizira kako nepotpunost i nekonzistentnost korisničkih tagova utiče na preporučivanje audio sadržaja u sistemima zasnovanim na sadržaju. Korišćen je skup od 42 000 pesama sa tagovima prikupljenim sa javne platforme za striming, uz ručno kreiranu zlatnu referencu za 1 200 stavki. Uvedena je metrika zagađenosti oznaka (tag noise ratio) i ispitana korelacija sa padom preciznosti preporuke merene NDCG@10 merom. Eksperimenti pokazuju da porast zagađenosti sa 5% na 25% dovodi do pada NDCG@10 za prosečno 0,12 poena u četiri testirana modela. Rad predlaže strategiju prečišćavanja zasnovanu na klasterovanju rečničkih vektora i pokazuje da ona delimično kompenzuje efekte zagađenosti."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09846",
+        "kind": "publication",
+        "title": "Word2Vec Embeddings for Multilingual Audio Metadata: A Comparative Study on Serbian and Hungarian Text",
+        "body": {
+          "recordId": "SYN-PUB-09846",
+          "field": "abstract",
+          "text": "This paper investigates the effectiveness of Word2Vec skip-gram embeddings trained on bilingual corpora of Serbian and Hungarian audio metadata for downstream music genre and mood classification tasks. We collected a dataset of 31 000 tracks whose metadata fields were available in both languages, sourced from a regional content aggregator. Models were trained separately on each language corpus and on a concatenated bilingual corpus with cross-lingual alignment via a small bilingual dictionary of 4 200 entries. Classification experiments using logistic regression show that the bilingual model outperforms both monolingual baselines on Hungarian data by 4.3 F1 points while maintaining Serbian-language performance. Error analysis highlights morphological richness as a persistent challenge, particularly for Serbian due to inflectional variability in descriptive text. The findings suggest that joint training with modest alignment resources is viable for closely cooperating regional content markets."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09847",
+        "kind": "publication",
+        "title": "Semantic Similarity Measures for Short Audio Descriptions: Benchmarking on a Regional Podcast Corpus",
+        "body": {
+          "recordId": "SYN-PUB-09847",
+          "field": "abstract",
+          "text": "Short descriptive texts accompanying podcast episodes present a distinct NLP challenge due to their brevity and domain heterogeneity. We assembled a corpus of 9 600 podcast episode descriptions from three Serbian-language podcast platforms, annotated by three independent judges for pairwise semantic similarity on a 1–5 scale (inter-annotator agreement κ = 0.64). We benchmarked eight similarity methods ranging from cosine similarity over TF-IDF vectors to sentence-level embeddings produced by a fine-tuned multilingual BERT variant. The sentence embedding approach achieved the highest Spearman correlation with human judgements (ρ = 0.73), outperforming TF-IDF cosine by 0.18 points. We also report that methods relying on surface lexical overlap perform disproportionately poorly on this corpus due to high synonym usage in Serbian descriptive prose. The annotated corpus is publicly released under a Creative Commons licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05004",
+        "kind": "publication",
+        "title": "Preporučivanje podkast epizoda zasnovano na semantičkom ugrađivanju opisa: prototip i evaluacija sa korisnicima",
+        "body": {
+          "recordId": "SYN-PUB-05004",
+          "field": "abstract",
+          "text": "Razvijen je prototip sistema za preporučivanje podkast epizoda koji koristi semantička ugrađivanja opisa epizoda za računanje srodnosti sadržaja. Sistem je implementiran nad korpusom od 14 200 epizoda na srpskom jeziku. Evaluacija je sprovedena sa 87 dobrovoljnih korisnika u kontrolisanom okruženju, pri čemu su korisnici ocenjivali relevantnost prvih pet preporuka na skali od 1 do 5. Prosečna ocena relevantnosti iznosila je 3,82, što je statistički značajno bolje od nasumičnog i popularnosnog osnivača (p < 0,01). Ispitana je i tzv. hladni start situacija — epizode bez dovoljno istorije slušanja — i pokazano je da semantički pristup zadržava prihvatljive performanse i u tom slučaju. Rad raspravlja o ograničenjima sistema vezanim za dijalektalne varijante i žargon."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09848",
+        "kind": "publication",
+        "title": "Fine-Tuning Multilingual Sentence Transformers for Low-Resource Audio Metadata Classification",
+        "body": {
+          "recordId": "SYN-PUB-09848",
+          "field": "abstract",
+          "text": "We examine the degree to which a multilingual sentence transformer pre-trained on 104 languages can be efficiently fine-tuned for audio metadata classification in Serbian and Romanian — two languages with limited labelled resources. Starting from a publicly available multilingual sentence transformer checkpoint, we fine-tune on three target tasks: genre classification, mood tagging, and content advisory labelling, using labelled datasets of 6 000, 4 200, and 2 800 examples respectively. Fine-tuning with as few as 500 task-specific examples per class yields macro F1 scores within 5 points of a fully supervised baseline trained on ten times more data. We compare three fine-tuning strategies: full model, last-layer only, and adapter modules, finding that adapter-based fine-tuning achieves the best trade-off between performance and training cost. Experiments are conducted on a shared GPU cluster and all code and model weights are released openly."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09849",
+        "kind": "publication",
+        "title": "Semantičko pretraživanje audio arhiva radiodifuznih stanica korišćenjem gustih vektora upita",
+        "body": {
+          "recordId": "SYN-PUB-09849",
+          "field": "abstract",
+          "text": "Rad opisuje primenu gustih vektora upita (dense retrieval) za semantičko pretraživanje digitalnih audio arhiva dve regionalne radiodifuzne stanice. Arhive sadrže ukupno 230 000 zapisa sa prateće tekstualnim metapodacima različitog kvaliteta i opsega. Sistem upotrebljava bi-enkoder arhitekturu: odvojeni enkoder za upite i enkoder za dokumente, trenirane na skupu od 18 000 ručno pariranih parova upit–relevantni zapis. Efikasno pretraživanje velikog indeksa omogućeno je FAISS bibliotekom za aproksimativno pretraživanje najbližih suseda. Evalucija na 500 testnih upita pokazuje MRR@10 = 0,61, što je poboljšanje od 22% u odnosu na BM25 osnivača. Poseban naglasak stavljen je na upite koji koriste govorni jezik i idiome koji se ne pojavljuju direktno u metapodacima."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02980",
+        "kind": "publication",
+        "title": "Cross-Lingual Transfer for Mood Classification in Streaming Audio Metadata: Balkan Language Varieties",
+        "body": {
+          "recordId": "SYN-PUB-02980",
+          "field": "abstract",
+          "text": "Mood classification of audio content is commercially valuable for playlist curation but manually labelled data in minority languages remain scarce. We study zero-shot and few-shot cross-lingual transfer from English and German mood-labelled datasets to Serbian, Croatian, Bosnian, and Macedonian audio metadata. Source datasets contain 22 000 and 14 000 labelled examples respectively. Experiments use a multilingual transformer fine-tuned on source languages and evaluated on 1 500 labelled examples per target language. Zero-shot transfer yields macro F1 of 0.55–0.61 across target languages, while five-shot prompted adaptation raises this to 0.66–0.71. We additionally probe the extent to which orthographic differences between Serbian Cyrillic and Latin scripts affect transfer, finding only marginal impact after transliteration. Results indicate that cross-lingual transfer is a practical path toward mood classifiers for these languages without requiring large annotated corpora."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09850",
+        "kind": "publication",
+        "title": "Evaluacija vektorskih modela za automatsko tagovanje audio metapodataka u uslovima nedovoljno zastupljenih klasa",
+        "body": {
+          "recordId": "SYN-PUB-09850",
+          "field": "abstract",
+          "text": "Automatsko tagovanje audio sadržaja u realnim industrijskim katalozima karakteriše se izrazitom neravnomernošću klasa: manji broj popularnih žanrova i raspoloženja daleko je zastupljeniji od dugog repa specifičnih kategorija. U ovom radu evaluiramo šest metoda balansiranja klasa — uključujući preuzorkovanje, potcenjivanje i sintetičke primere bazirane na SMOTE pristupu primenjenom na prostoru ugrađivanja — u kombinaciji sa tri tipa semantičkih vektora (Word2Vec, fastText i sentence-BERT). Eksperimenti su sprovedeni na internom katalog skupu od 61 000 zapisa sa 47 tag kategorija. Kombinacija sentence-BERT ugrađivanja i SMOTE u prostoru ugrađivanja daje best macro F1 = 0,68, poboljšavajući rezultat najjačeg osnivača za 9,4 poena. Analiza troškova pokazuje da metoda ostaje računski primenljiva za operativnu upotrebu na prosečnom serverskom hardveru."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09851",
+        "kind": "publication",
+        "title": "Contrastive Learning of Audio Description Embeddings Using Weak Supervision from Listener Behaviour",
+        "body": {
+          "recordId": "SYN-PUB-09851",
+          "field": "abstract",
+          "text": "We propose a contrastive training objective for learning audio description embeddings that incorporates weak supervision signals derived from listener co-engagement patterns — specifically, pairs of audio items listened to in the same session by the same user. A dataset of 4.2 million session records from a fictional regional streaming platform was provided under a data processing agreement. Positive pairs are defined by co-occurrence within a session window of ten consecutive plays; negatives are sampled from across the catalogue. The resulting embeddings are evaluated on three downstream tasks: genre classification, mood tagging, and nearest-neighbour retrieval as judged by human assessors. On retrieval, the contrastive model achieves NDCG@10 = 0.74, exceeding a supervised sentence-transformer baseline by 3.1 points. Ablation studies confirm that session-derived weak supervision contributes meaningfully beyond text-only training, particularly for instrumental and ambient content where descriptive text is sparse."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-09852",
+        "kind": "publication",
+        "title": "Retrieval-Augmented Metadata Enrichment for Legacy Audio Archives: A Case Study with a Serbian National Broadcaster",
+        "body": {
+          "recordId": "SYN-PUB-09852",
+          "field": "abstract",
+          "text": "Legacy audio archives at broadcasting institutions often contain incomplete or absent textual metadata, limiting discoverability. We describe a retrieval-augmented enrichment pipeline applied to a 180 000-item archive of a Serbian national broadcaster, where 38% of records lacked genre or thematic tags. The pipeline retrieves semantically similar, fully annotated items using a dense retrieval index and uses their metadata to propose tags for the unlabelled item via a lightweight classifier applied to the concatenated candidate descriptions. Human curators validated a random sample of 2 000 enriched records, accepting 71% of proposed primary tags without modification and 83% after minor edit. Processing cost was estimated at 0.4 CPU-hours per 1 000 records on standard server hardware. The pipeline is now in trial deployment. This work was carried out in collaboration with the broadcaster's digital archive department."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01686",
+        "kind": "publication",
+        "title": "Character-Level Neural Transliteration for Serbian: Training Data, Architecture Choices, and Error Analysis",
+        "body": {
+          "recordId": "SYN-PUB-01686",
+          "field": "abstract",
+          "text": "Deterministic rule-based transliteration between Serbian Cyrillic and Latin scripts handles the majority of tokens correctly, but fails on foreign loanwords, abbreviations, and alphanumeric strings. This paper investigates whether a character-level sequence-to-sequence neural model can handle these exceptions while remaining accurate on regular tokens. We trained models on a corpus of 2.3 million aligned Cyrillic–Latin token pairs extracted from parallel editions of official gazettes, experimenting with LSTM encoder-decoder architectures with attention, as well as a character-level transformer. The transformer model achieved a character error rate of 0.4% on regular tokens and 3.1% on the exception classes, compared with 0.1% and 19.4% respectively for the deterministic baseline. We performed a detailed error analysis categorising 800 mistransliterated tokens by type. The paper concludes that a cascaded system — deterministic rules followed by the neural model for detected exceptions — outperforms either component alone, reaching a token error rate of 0.6% overall."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07412",
+        "kind": "publication",
+        "title": "Quasi-Monte Carlo methods for uncertainty quantification in compressible flow simulations with uncertain boundary conditions",
+        "body": {
+          "recordId": "SYN-PUB-07412",
+          "field": "abstract",
+          "text": "This study applies randomised quasi-Monte Carlo methods to quantify uncertainty in a one-dimensional compressible Euler flow problem in which the upstream Mach number and total temperature are jointly uncertain. The joint distribution is modelled as a bivariate normal with means 0.4 and 420 K, standard deviations 0.03 and 12 K, and correlation 0.35, calibrated from wind-tunnel measurement records. Scrambled Sobol sequences of size 2^{14} are used as the primary estimator, with a 32-sample pilot study for variance estimation. The quantities of interest are the downstream pressure ratio and the shock position. Randomised quasi-Monte Carlo achieves a root-mean-square error of 1.2 × 10^{−4} for the pressure ratio at 2^{12} samples, compared with 4.8 × 10^{−4} for plain Monte Carlo at the same sample size. A first-order Sobol sensitivity analysis shows that the upstream Mach number accounts for 71 percent of the output variance in the pressure ratio, while total temperature contributes 22 percent."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05143",
+        "kind": "publication",
+        "title": "Truthful Multi-Unit Auctions for Flexibility Services in Distribution Networks: Design and Simulation",
+        "body": {
+          "recordId": "SYN-PUB-05143",
+          "field": "abstract",
+          "text": "Distribution system operators increasingly procure demand-response flexibility from aggregators and prosumers through auctions. This paper designs and analyses a multi-unit procurement auction for flexibility services in which bidders may submit multi-dimensional bids specifying quantity, activation time, and ramp rate. A generalised Vickrey auction with feasibility constraints imposed by grid topology is shown to be truthful and to satisfy individual rationality under mild regularity conditions. The auction is simulated on a 69-node test network populated with 120 heterogeneous flexibility providers whose cost parameters are drawn from engineering estimates for residential battery storage in the 3–10 kWh range. Results indicate that the mechanism procures the required flexibility volume at 8–15% lower total cost than a pay-as-bid alternative across 200 simulated procurement events. Scalability limitations arising from the NP-hard feasibility check are discussed and a greedy relaxation is proposed that recovers near-optimal solutions in polynomial time."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0523",
+        "kind": "project",
+        "title": "Semantic Embeddings for Regional Audio Content Metadata in Low-Resource Languages",
+        "body": {
+          "recordId": "SYN-PRJ-0523",
+          "field": "summary",
+          "text": "Projekat SERACOM istražuje primenu semantičkih ugrađivanja za automatsku obradu i klasifikaciju metapodataka audio sadržaja na jezicima sa ograničenim resursima, pre svega na srpskom, mađarskom i rumunskom. Aktivnosti obuhvataju izgradnju anotiranih skupova podataka, razvoj metoda cross-lingvalnog prenosa znanja i evaluaciju preporučivačkih sistema u saradnji sa regionalnim distributerima sadržaja. Projektni tim broji pet istraživača, a posebna pažnja poklonjena je primenljivosti rezultata u malim i srednjim preduzećima koja upravljaju digitalnim katalozima. Finansiran iz programa IDEAS Fonda za nauku Republike Srbije."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0524",
+        "kind": "project",
+        "title": "Cross-Border Digital Archive Interoperability through Semantic Metadata Harmonisation",
+        "body": {
+          "recordId": "SYN-PRJ-0524",
+          "field": "summary",
+          "text": "CROSSARCH za cilj ima unapređenje interoperabilnosti digitalnih arhiva audio i audiovizuelnih sadržaja u pograničnom regionu Srbije i Rumunije harmonizacijom metapodatkovnih šema i uvođenjem zajedničkih semantičkih modela. Zahorecová vodi radni paket posvećen razvoju metoda automatskog mapiranja između različitih šema opisa sadržaja, koristeći tehnike ugrađivanja teksta. Planirani rezultati uključuju zajednički semantički repozitorijum sa 50 000 anotiranih stavki i prototip alata za interoperabilnost dostupnog javnim arhivima. Projekat uključuje partnere iz bibliotečko-informacijske i audiovizuelne oblasti."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0072",
+        "kind": "project",
+        "title": "Constraint-Based Spatial Content Generation for Training and Simulation Environments",
+        "body": {
+          "recordId": "SYN-PRJ-0072",
+          "field": "summary",
+          "text": "SPACEGEN investigates the combination of constraint-satisfaction methods and graph-grammar formalisms to generate spatial layouts for use in emergency-response training simulations and serious-game platforms. The project develops a middleware library that exposes a unified API to both a CSP solver backend and a graph-transformation engine, allowing designers to specify spatial requirements declaratively. Validation work involves partners from a regional civil-protection agency who supply domain requirements and evaluate generated training scenarios. The project funds two PhD students, produces open-source tooling, and contributes benchmark datasets for the procedural generation research community. A secondary strand examines formal verification of safety properties in generated scenarios."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0931",
+            "field": "open_to",
+            "quote": "joint projects with companies in audio/video content distribution and archiving",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0931",
+            "field": "open_to",
+            "quote": "contract research on metadata classification and recommendation systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "non_english"
+    ]
+  }
+}

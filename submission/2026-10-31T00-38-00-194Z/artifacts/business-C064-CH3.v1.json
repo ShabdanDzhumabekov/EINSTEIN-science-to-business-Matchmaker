@@ -1,0 +1,110 @@
+{
+  "ref": {
+    "artifactId": "business-C064-CH3",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T00-38-00-194Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C064-CH3",
+    "companyId": "C064",
+    "companyName": "Krenuti Digital d.o.o.",
+    "sector": "Custom software and IT services for EU clients",
+    "location": "Zrenjanin",
+    "challenge": {
+      "text": {
+        "recordId": "C064-CH3",
+        "field": "text",
+        "text": "We pitch to EU clients in English but our two founders speak with heavy accents and lose deals at the demo stage — we need professional sales training and presentation coaching, not more engineering."
+      },
+      "detail": {
+        "recordId": "C064-CH3",
+        "field": "detail",
+        "text": "Both of our founders run sales demos for prospective clients in Germany and the Benelux. The platform itself performs well in demos — prospects generally like what they see. The problem is that after demos with competitors, we are losing deals at a rate that our pipeline data does not fully explain by product gaps alone. We have collected feedback from three lost deals and in each case the client mentioned communication clarity as a factor. Our founders are strong engineers and know the product well, but English is not their first language and the accent and pacing make it harder for German and Dutch procurement teams to follow a 45-minute technical demo. We do not need help with the product. We need structured coaching on spoken presentation delivery, handling objections in a second language, and running demos that move a cautious logistics buyer toward a decision. We have a modest budget — roughly €4,000 — and would prefer a programme that can be delivered in short sessions over two to three months rather than a single workshop. A good outcome is that both founders can run a full demo confidently and close at a higher rate than the current 18 percent."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C064",
+        "field": "about",
+        "text": "Krenuti Digital d.o.o. was founded in 2019 by two software engineers who spent several years building dispatch systems for a mid-size freight forwarder in Zrenjanin before deciding to turn that experience into a product. We are based at the Technical Faculty Mihajlo Pupin incubator in Zrenjanin and employ 44 people across engineering, customer success, and sales. Our main product is FlowDeck, a no-code platform that lets logistics operations teams draw their own workflows — order intake, carrier assignment, exception handling — and have them run as live automated processes without writing a single line of code. Our customers are mid-market road freight and 3PL companies in Germany and the Benelux. We currently serve eleven paying clients, the largest of which processes around 4,000 shipments per week through FlowDeck. What makes us different from general-purpose automation tools is that we built the workflow engine specifically around logistics data structures: shipments, legs, carriers, and status events are first-class objects in our system, not fields in a generic form. Our team is primarily Serbian, distributed between Zrenjanin and a small commercial office in Novi Sad. We do not outsource core development. We have raised one seed round from a regional venture fund and received a DUNS-registered grant from an EU regional development programme."
+      },
+      "products": [
+        {
+          "recordId": "C064",
+          "field": "products",
+          "text": "FlowDeck – no-code workflow automation platform for logistics operations"
+        },
+        {
+          "recordId": "C064",
+          "field": "products",
+          "text": "FlowDeck Live – real-time vehicle tracking and ETA display module"
+        },
+        {
+          "recordId": "C064",
+          "field": "products",
+          "text": "Workflow Health Monitor – alerting and diagnostics dashboard for running automations"
+        },
+        {
+          "recordId": "C064",
+          "field": "products",
+          "text": "Managed Onboarding – paid implementation and configuration service for new clients"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "Python (workflow execution engine)"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "React (front-end canvas and dashboard)"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "PostgreSQL with row-level locking for workflow state"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "RabbitMQ for event-driven step execution"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "Docker and Kubernetes on Hetzner Cloud"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "REST and webhook integrations with telematics APIs"
+        },
+        {
+          "recordId": "C064",
+          "field": "tech",
+          "text": "OpenStreetMap with Valhalla routing engine for ETA calculation"
+        }
+      ],
+      "plans": {
+        "recordId": "C064",
+        "field": "plans",
+        "text": "Krenuti Digital plans to reach 20 paying clients by the end of 2025 and to release a public API that allows logistics TMS vendors to embed FlowDeck automations directly into their own products. We are also evaluating whether to open a small commercial office in Hamburg to support closer sales conversations with German prospects."
+      },
+      "rdCapacity": {
+        "recordId": "C064",
+        "field": "rd_capacity",
+        "text": "We have a core engineering team of 11 developers, with roughly two to three people available for applied research or experimental work at any given time, depending on the sprint cycle."
+      },
+      "pastCollaborations": {
+        "recordId": "C064",
+        "field": "past_collaborations",
+        "text": "Krenuti Digital completed a three-month technical mentorship programme in 2022 with Lokomotiv Labs d.o.o., a Novi Sad-based software consultancy, which helped us redesign the workflow execution engine's concurrency model."
+      }
+    }
+  }
+}

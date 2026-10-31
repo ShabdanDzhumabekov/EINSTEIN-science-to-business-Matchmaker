@@ -1,0 +1,216 @@
+{
+  "ref": {
+    "artifactId": "proposal-C086-CH1-R0503",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C086-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C086-CH1-R0503",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C086-CH1-R0503",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "A tested migration path to post-quantum KL-HSM signing",
+    "facts": [
+      {
+        "text": "Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows. Its listed technologies include PKCS#11.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "we have not touched the firmware architecture to accommodate larger key material or different signature flows.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's enquiry concerns firmware-version support, performance trade-offs and hybrid transition operation. It describes a documented roadmap and working integration proof of concept inside twelve months as a good outcome.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "which firmware version will support post-quantum algorithms, what the performance trade-offs are",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "how hybrid classical/post-quantum operation will work during transition.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kriptolog's plans state an end-2025 Common Criteria EAL4+ objective for the KL-500; this is a stated objective, not evidence of current certification.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "plans",
+            "quote": "Kriptolog intends to achieve Common Criteria EAL4+ certification for the KL-500 HSM by the end of 2025",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kriptolog reports a twelve-engineer core R&D group and modest collaborative capacity.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "We have a core R&D group of twelve engineers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić's signature study used an STM32F407 Cortex-M4: Falcon-512 used less verification stack but more signing time than Dilithium-2. Separate Dilithium work found compiler-dependent timing leakage. Her hybrid HSM prototype combined ECDH and Kyber key exchange, not hybrid signing.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "on an STM32F407 board running at 168 MHz.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Dilithium-2 verification takes 1.37 ms and requires 13.2 kB of stack;",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Falcon-512 verification takes 2.11 ms but requires only 7.4 kB of stack",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Signing is substantially more expensive for Falcon due to the discrete Gaussian sampler: 14.8 ms versus 3.2 ms for Dilithium-2.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05922",
+            "field": "abstract",
+            "quote": "We trace each instance to specific compiler transformations visible in the generated assembly",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05920",
+            "field": "abstract",
+            "quote": "Full key exchange (hybrid ECDH + Kyber-768) completes in 38 ms end-to-end.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's notes express a preference for real hardware and measurable deliverables. Her laboratory has two SLE97 evaluation kits, with limited availability.",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić's stated participation interests include joint projects with companies developing HSMs.",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "open_to",
+            "quote": "joint projects with companies developing HSMs, IoT security firmware, or industrial control system security",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Her benchmarking experience suggests a strong methodological fit, but earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware. The published verification-memory versus signing-cost trade-off motivates separate signing-latency and memory measurements, not forecasts from published timings.",
+      "Hybrid key-exchange experience likely helps architecture discussions, but signing policy, PKCS#11 integration and client verifier compatibility need separate validation. Compiler-dependent leakage is a material risk; resource optimisation could conflict with security hardening.",
+      "This joint-project proposal is conditional because Nikolić's current availability is unknown. A narrowly bounded hardware pilot likely fits the company's collaborative capacity better than immediate product-wide migration."
+    ],
+    "proposedActions": [
+      "Propose an eight-week experiment on one agreed KL-HSM variant with its production toolchain. Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement. Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads. Separate tuning and held-out evaluation workloads, verify independence, and select the best configuration on tuning data. Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage. Proposed go/no-go requires all correctness/interoperability tests passing, resource use and performance within pre-agreed numerical limits under the frozen specification below, and no detected leakage in its adequately powered screen. Judge the best configuration against these criteria, not superiority over another method. Missing specifications or insufficient evidence mean unresolved, not pass. Include feasibility of the twelve-month delivery; functional success would not establish production security or certification.",
+      "Before evaluation, freeze an acceptance specification defining workloads, operating conditions, repeats, numerical ceilings and floors, and confidence levels. Require the one-sided upper confidence bound for p99 latency below its ceiling and lower bound for throughput above its floor. Define the leakage test threshold, sample size, minimum detectable effect and positive-control sensitivity criterion. An insensitive screen cannot pass; unresolved specifications or inadequate precision block go/no-go. These procedures are proposals for agreement.",
+      "Propose months three through twelve for integration and a versioned roadmap covering key storage, signature flows, hybrid policy, compatibility and measured trade-offs. Check delivery against the twelve-month outcome and firmware-version reporting needs. Bound effort, budget, access and confidentiality/licensing terms; prioritise KL-HSM hardware, scheduling justified SLE97 comparisons within two-kit availability or negotiating additional units. Include certification change-impact review and agreed side-channel/fault testing; unresolved requirements block production-readiness claims. Reconfirm scope and schedule after the pilot."
+    ],
+    "questions": [
+      "Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?",
+      "Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?",
+      "What acceptance specification defines signing versus update-verification scope, ML-DSA parameters, resource and performance limits, hybrid policy, PKCS#11 consumers, client verifiers and the proposed statistical and leakage-screen procedures?",
+      "What is the KL-500's current certification status and applicable evaluator-approved change-control, side-channel and fault-testing scope?"
+    ],
+    "benefits": {
+      "company": "The experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies.",
+      "researcher": "Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware, using target-hardware measurements to study resource, toolchain and security trade-offs."
+    },
+    "markdown": "# A tested migration path to post-quantum KL-HSM signing\n\n## Verified facts\n- Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows. Its listed technologies include PKCS#11. [F1]\n- The company's enquiry concerns firmware-version support, performance trade-offs and hybrid transition operation. It describes a documented roadmap and working integration proof of concept inside twelve months as a good outcome. [F2]\n- Kriptolog's plans state an end-2025 Common Criteria EAL4+ objective for the KL-500; this is a stated objective, not evidence of current certification. [F3]\n- Kriptolog reports a twelve-engineer core R&D group and modest collaborative capacity. [F4]\n- Nikolić's signature study used an STM32F407 Cortex-M4: Falcon-512 used less verification stack but more signing time than Dilithium-2. Separate Dilithium work found compiler-dependent timing leakage. Her hybrid HSM prototype combined ECDH and Kyber key exchange, not hybrid signing. [F5]\n- The researcher's notes express a preference for real hardware and measurable deliverables. Her laboratory has two SLE97 evaluation kits, with limited availability. [F6]\n- Nikolić's stated participation interests include joint projects with companies developing HSMs. [F7]\n\n## Potential benefits\n- For the company: The experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies.\n- For the researcher: Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware, using target-hardware measurements to study resource, toolchain and security trade-offs.\n\n## Our inference\n- Her benchmarking experience suggests a strong methodological fit, but earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware. The published verification-memory versus signing-cost trade-off motivates separate signing-latency and memory measurements, not forecasts from published timings.\n- Hybrid key-exchange experience likely helps architecture discussions, but signing policy, PKCS#11 integration and client verifier compatibility need separate validation. Compiler-dependent leakage is a material risk; resource optimisation could conflict with security hardening.\n- This joint-project proposal is conditional because Nikolić's current availability is unknown. A narrowly bounded hardware pilot likely fits the company's collaborative capacity better than immediate product-wide migration.\n\n## Proposed next steps\n- Propose an eight-week experiment on one agreed KL-HSM variant with its production toolchain. Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement. Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads. Separate tuning and held-out evaluation workloads, verify independence, and select the best configuration on tuning data. Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage. Proposed go/no-go requires all correctness/interoperability tests passing, resource use and performance within pre-agreed numerical limits under the frozen specification below, and no detected leakage in its adequately powered screen. Judge the best configuration against these criteria, not superiority over another method. Missing specifications or insufficient evidence mean unresolved, not pass. Include feasibility of the twelve-month delivery; functional success would not establish production security or certification.\n- Before evaluation, freeze an acceptance specification defining workloads, operating conditions, repeats, numerical ceilings and floors, and confidence levels. Require the one-sided upper confidence bound for p99 latency below its ceiling and lower bound for throughput above its floor. Define the leakage test threshold, sample size, minimum detectable effect and positive-control sensitivity criterion. An insensitive screen cannot pass; unresolved specifications or inadequate precision block go/no-go. These procedures are proposals for agreement.\n- Propose months three through twelve for integration and a versioned roadmap covering key storage, signature flows, hybrid policy, compatibility and measured trade-offs. Check delivery against the twelve-month outcome and firmware-version reporting needs. Bound effort, budget, access and confidentiality/licensing terms; prioritise KL-HSM hardware, scheduling justified SLE97 comparisons within two-kit availability or negotiating additional units. Include certification change-impact review and agreed side-channel/fault testing; unresolved requirements block production-readiness claims. Reconfirm scope and schedule after the pilot.\n\n## Open questions\n- Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?\n- Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?\n- What acceptance specification defines signing versus update-verification scope, ML-DSA parameters, resource and performance limits, hybrid policy, PKCS#11 consumers, client verifiers and the proposed statistical and leakage-screen procedures?\n- What is the KL-500's current certification status and applicable evaluator-approved change-control, side-channel and fault-testing scope?",
+    "taskId": "C086-CH1",
+    "researcherId": "R0503",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C086-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C086-CH1-R0503",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C086-CH1-R0503",
+        "version": 1
+      }
+    ]
+  }
+}

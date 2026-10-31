@@ -1,0 +1,183 @@
+{
+  "ref": {
+    "artifactId": "proposal-C001-CH1-R1008",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Per-site unsupervised ICS baselines and calibration for Modbus/BACnet on ProtoSense",
+    "facts": [
+      {
+        "text": "ArmaturaSec states it has no confirmed attack capture from clients and only normal-traffic archives collected over three years.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "none of our clients has ever given us a packet capture that contains a confirmed attack",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company’s ProtoSense product is specified as passive protocol inspection for Modbus TCP and BACnet/IP traffic.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A previous supervised classifier, fed public ICS data, produced so many false positives in real deployments that clients disabled alerts.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company requires on-device anomaly detection without affecting packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company requires alerts that can be explained to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec can dedicate one to two engineers part-time and give access to traffic archives, hardware bench, and firmware codebase under NDA.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss is open to joint projects with companies deploying ICS monitoring solutions and to contract research on anomaly-detection deployment.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "contract research on protocol traffic analysis and anomaly detection deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss’s published work includes per-register Modbus/TCP baselines, a one-class Mahalanobis detector, and post-hoc threshold calibration using unlabelled operational data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "one-class detector based on Mahalanobis distance thresholding over a 20-feature vector",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Kiss’s documented testbed lists Modbus/TCP and DNP3 generators, not BACnet/IP; this suggests BACnet samples for the first experiment must come from ArmaturaSec archives or a new generator, and transfer remains to be tested.",
+      "Her per-register baselines and post-hoc calibration are likely relevant to no-label, per-site detection, but the prior alert-fatigue failure means false-alarm acceptance, not detection accuracy alone, is the main operational risk.",
+      "Kiss’s availability is unknown in the material, so the joint-project timeline is conditional; her openness to the format is not a confirmed commitment."
+    ],
+    "proposedActions": [
+      "First experiment (proposed 12 weeks): use held-out normal captures from ArmaturaSec archives for one Modbus TCP site and one BACnet/IP site (BACnet capture availability to be confirmed; Kiss’s documented testbed is Modbus/DNP3, so do not assume it supplies BACnet). Train a per-site baseline on an early normal window and hold out later normal windows; compare against a fixed-threshold rule and a static Gaussian baseline. Kiss proposes feature and calibration design and analysis; ArmaturaSec proposes archive access, bench or mirrored segment, firmware integration, and one part-time engineer. Inject controlled anomalies one factor at a time. Proposed go/no-go targets: ≤1 false alarm per site per day on held-out normal; ≥80% recall on injected anomalies; no packet loss and p99 forwarding-latency increase within an agreed bound; an ArmaturaSec-nominated plant-facing reviewer can explain each alert card unaided, with pilot plant-manager testing only if consenting clients are secured; BACnet no-go if no BACnet normal sample is available.",
+      "If the first experiment passes, run a calibration and drift study on ArmaturaSec multi-site normal archives: compare static versus incremental updates and measure seasonal or process-change false alarms, testing whether Kiss’s testbed-calibrated recalibration transfers to company traffic.",
+      "Port the selected detector to the agreed ProtoSense or NetGuard target under NDA and measure CPU, memory, and forwarding latency on the hardware bench; if the planned security-processor variant is unavailable, use the existing appliance as baseline.",
+      "Conditional on ArmaturaSec securing two consenting pilot clients, co-design an alert card with their plant managers and measure whether they can judge an alert actionable unaided; otherwise use ArmaturaSec engineer review and defer the plant-manager test."
+    ],
+    "questions": [
+      "Does Krisztina Kiss have availability and supervisory capacity for a joint project in the coming academic year, and can her group’s testbed data-sharing agreement be applied to ArmaturaSec?",
+      "Which ArmaturaSec traffic archives and BACnet/IP captures can be shared under NDA, for which sites and time periods, and do they include any known incidents or operator annotations?",
+      "What target hardware and resource budget should the first prototype meet: existing ProtoSense or NetGuard appliances or the planned late-2025 security-processor variant?",
+      "What false-positive rate, alert volume, and explanation format would be acceptable to ArmaturaSec’s clients and plant managers, and can two consenting pilot plant managers be secured for explanation testing?",
+      "What approvals and licensing terms are needed before controlled anomaly injection on a bench or mirrored segment and joint code integration can begin?"
+    ],
+    "markdown": "# Per-site unsupervised ICS baselines and calibration for Modbus/BACnet on ProtoSense\n\n## Verified facts\n- ArmaturaSec states it has no confirmed attack capture from clients and only normal-traffic archives collected over three years. [F1]\n- The company’s ProtoSense product is specified as passive protocol inspection for Modbus TCP and BACnet/IP traffic. [F2]\n- A previous supervised classifier, fed public ICS data, produced so many false positives in real deployments that clients disabled alerts. [F3]\n- The company requires on-device anomaly detection without affecting packet forwarding latency. [F4]\n- The company requires alerts that can be explained to a plant manager in plain language. [F5]\n- ArmaturaSec can dedicate one to two engineers part-time and give access to traffic archives, hardware bench, and firmware codebase under NDA. [F6]\n- Kiss is open to joint projects with companies deploying ICS monitoring solutions and to contract research on anomaly-detection deployment. [F7]\n- Kiss’s published work includes per-register Modbus/TCP baselines, a one-class Mahalanobis detector, and post-hoc threshold calibration using unlabelled operational data. [F8]\n\n## Our inference\n- Kiss’s documented testbed lists Modbus/TCP and DNP3 generators, not BACnet/IP; this suggests BACnet samples for the first experiment must come from ArmaturaSec archives or a new generator, and transfer remains to be tested.\n- Her per-register baselines and post-hoc calibration are likely relevant to no-label, per-site detection, but the prior alert-fatigue failure means false-alarm acceptance, not detection accuracy alone, is the main operational risk.\n- Kiss’s availability is unknown in the material, so the joint-project timeline is conditional; her openness to the format is not a confirmed commitment.\n\n## Proposed next steps\n- First experiment (proposed 12 weeks): use held-out normal captures from ArmaturaSec archives for one Modbus TCP site and one BACnet/IP site (BACnet capture availability to be confirmed; Kiss’s documented testbed is Modbus/DNP3, so do not assume it supplies BACnet). Train a per-site baseline on an early normal window and hold out later normal windows; compare against a fixed-threshold rule and a static Gaussian baseline. Kiss proposes feature and calibration design and analysis; ArmaturaSec proposes archive access, bench or mirrored segment, firmware integration, and one part-time engineer. Inject controlled anomalies one factor at a time. Proposed go/no-go targets: ≤1 false alarm per site per day on held-out normal; ≥80% recall on injected anomalies; no packet loss and p99 forwarding-latency increase within an agreed bound; an ArmaturaSec-nominated plant-facing reviewer can explain each alert card unaided, with pilot plant-manager testing only if consenting clients are secured; BACnet no-go if no BACnet normal sample is available.\n- If the first experiment passes, run a calibration and drift study on ArmaturaSec multi-site normal archives: compare static versus incremental updates and measure seasonal or process-change false alarms, testing whether Kiss’s testbed-calibrated recalibration transfers to company traffic.\n- Port the selected detector to the agreed ProtoSense or NetGuard target under NDA and measure CPU, memory, and forwarding latency on the hardware bench; if the planned security-processor variant is unavailable, use the existing appliance as baseline.\n- Conditional on ArmaturaSec securing two consenting pilot clients, co-design an alert card with their plant managers and measure whether they can judge an alert actionable unaided; otherwise use ArmaturaSec engineer review and defer the plant-manager test.\n\n## Open questions\n- Does Krisztina Kiss have availability and supervisory capacity for a joint project in the coming academic year, and can her group’s testbed data-sharing agreement be applied to ArmaturaSec?\n- Which ArmaturaSec traffic archives and BACnet/IP captures can be shared under NDA, for which sites and time periods, and do they include any known incidents or operator annotations?\n- What target hardware and resource budget should the first prototype meet: existing ProtoSense or NetGuard appliances or the planned late-2025 security-processor variant?\n- What false-positive rate, alert volume, and explanation format would be acceptable to ArmaturaSec’s clients and plant managers, and can two consenting pilot plant managers be secured for explanation testing?\n- What approvals and licensing terms are needed before controlled anomaly injection on a bench or mirrored segment and joint code integration can begin?",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

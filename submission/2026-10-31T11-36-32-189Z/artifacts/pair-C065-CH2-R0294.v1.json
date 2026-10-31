@@ -1,0 +1,168 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0294",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0294",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can content-based or lightweight hybrid recommendations outperform best-seller sorting for a product-page widget using only 500–2,000 transactions per client? A first experiment would test transfer of methods identified in the researcher's review to one client's catalogue, using a leakage-controlled temporal holdout to compare precision at five, ranking quality and catalogue coverage before considering a live trial.",
+    "rationale": [
+      {
+        "text": "Her review directly addresses sparse retail recommendations and examines the content-based and hybrid alternatives the company wants to investigate.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03666",
+            "field": "abstract",
+            "quote": "The review covers memory-based collaborative filtering, content-based methods using product attribute vectors, and several hybrid architectures published between 2005 and 2013.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The review offers a basis for selecting candidate hybrid methods according to catalogue characteristics and metadata availability.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03666",
+            "field": "abstract",
+            "quote": "The paper concludes by outlining criteria for selecting hybrid strategies depending on catalogue density, session length, and the availability of product metadata",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her event-log preprocessing research provides a methodological starting point for auditing transaction data quality, although its demonstrated setting is university administration.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03663",
+            "field": "abstract",
+            "quote": "The procedure addresses four recurring data quality issues: missing case identifiers, overlapping timestamps caused by batch processing, inconsistent activity labels across module versions,",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The pilot must use existing sparse histories rather than depend on collecting substantially more transactions, and must benchmark against best-seller sorting.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "text",
+            "quote": "with only 500–2,000 transactions per client the collaborative filtering models we tried give worse results than simple best-seller sorting.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The initial scope should be a prototype for one client, with access governed by an anonymised-data sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Engineering work must fit roughly one developer-day per week; integration planning must accommodate the company's existing commerce interfaces and client-hosting environment.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any new user-facing widget strings must follow the company's three-language release-testing requirement.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher must confirm direct dissertation alignment before committing: her external collaboration capacity is restricted by that condition.",
+        "sources": [
+          {
+            "recordId": "R0294",
+            "field": "notes",
+            "quote": "her availability for external collaborations is limited to projects that align directly with her dissertation topic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The directly relevant recommendation evidence is a literature review of methods published between 2005 and 2013, not a demonstrated implementation on this company's data. The first experiment must test transfer and present-day suitability rather than assume effectiveness.",
+      "The demonstrated preprocessing work concerns university ERP logs, not retail purchases. The initial data audit must test whether its quality checks transfer to the client's transaction structure.",
+      "The review identifies over-specialisation in content-based recommendations. Incomplete product attributes or inconsistent multilingual descriptions could further limit performance; their actual condition is unknown.",
+      "Few held-out purchases and low traffic could make offline comparisons unstable and a live A/B test inconclusive. Offline gains would not establish commercial benefit.",
+      "Although joint-project participation is open, actual researcher hours and start date are unknown. Dissertation alignment could prevent participation.",
+      "The company's exact budget, deadline, hosting resources and latency requirements are unknown and could exceed the available engineering capacity."
+    ],
+    "questions": [
+      "Does this recommendation pilot align directly with your dissertation, and what hours, start date and duration can you commit to a joint project?",
+      "Which client will host the pilot, and what are its catalogue size, repeat-purchase rate, transaction timestamps and available anonymised user or session identifiers?",
+      "How complete are product descriptions, attributes and categories, which languages occur, and are historical catalogue snapshots available to prevent evaluation leakage?",
+      "Can the data-sharing agreement cover the required linkage and evaluation, and are page-view, recommendation-impression or click logs available alongside completed orders?",
+      "What counts as a meaningful improvement over best-seller sorting, and what were the protocol, sample size and uncertainty of the previous A/B test?",
+      "What budget, deadline, hosting resources, response-time limits and maintenance ownership apply to the prototype?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0294",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0294",
+        "version": 1
+      }
+    ]
+  }
+}

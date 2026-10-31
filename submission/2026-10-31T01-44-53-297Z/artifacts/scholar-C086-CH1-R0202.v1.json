@@ -1,0 +1,283 @@
+{
+  "ref": {
+    "artifactId": "scholar-C086-CH1-R0202",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0202",
+    "name": "Zorica Tešić",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Cryptography and Information Security",
+      "Mathematics (Algebra and Discrete Mathematics)",
+      "Post-Quantum Computing",
+      "Algorithm Design and Complexity"
+    ],
+    "keywords": [
+      "lattice-based cryptography",
+      "key encapsulation mechanisms",
+      "Learning With Errors",
+      "NTRU",
+      "post-quantum cryptography",
+      "hardness reductions",
+      "ring-LWE",
+      "module lattices",
+      "parameter selection",
+      "implementation security"
+    ],
+    "openTo": [
+      "joint projects with companies requiring post-quantum cryptography integration",
+      "contract research on parameter selection and security auditing of lattice-based protocols",
+      "industrial PhD supervision for candidates working on embedded cryptographic implementations",
+      "consulting on post-quantum migration planning for software and hardware products",
+      "student internships on implementation and testing of KEM primitives"
+    ],
+    "bio": {
+      "recordId": "R0202",
+      "field": "bio",
+      "text": "Zorica Tešić completed her undergraduate and master's studies in Mathematics at the Faculty of Sciences, University of Novi Sad, graduating in 2005 and 2007 respectively. She received her PhD in 2012 from the same institution, with a dissertation on algebraic lattice structures in cryptographic hardness reductions. After a postdoctoral stint at the University of Ljubljana (2013–2014), she returned to Novi Sad as an Assistant Professor and was promoted to Associate Professor in 2019. Her group focuses on the design and security analysis of lattice-based key encapsulation mechanisms, ring-LWE parameter selection, and implementation hardness for post-quantum standards. She teaches courses in abstract algebra, cryptography, and algorithms. The group uses SageMath, PARI/GP, and a small cluster for lattice sieving experiments."
+    },
+    "industryExperience": {
+      "recordId": "R0202",
+      "field": "industry_experience",
+      "text": "Tešić provided a two-month consultancy for a Novi Sad-based software company in 2022, reviewing their TLS library integration of draft ML-KEM and identifying two constant-time violations. She has no long-term industry employment history."
+    },
+    "notes": {
+      "recordId": "R0202",
+      "field": "notes",
+      "text": "Tešić is available for collaboration starting from the autumn 2025 semester. She prefers projects with a concrete implementation or evaluation component alongside the theoretical work, and is specifically interested in companies operating in the IoT, industrial automation, or secure communications sectors. She is not currently seeking large consortium project coordination roles."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02590",
+        "kind": "publication",
+        "title": "Hardness of Approximate Shortest Vector Problems in q-ary Lattices: A Reduction Framework",
+        "body": {
+          "recordId": "SYN-PUB-02590",
+          "field": "abstract",
+          "text": "This paper revisits the hardness of the approximate shortest vector problem (SVP) in the specific class of q-ary lattices that arise naturally in cryptographic constructions. We formalize a reduction framework that maps instances of approximate SVP with gap factor γ to decision-LWE instances with explicitly computed noise parameters. The reduction is tight in the sense that the error rate grows only polynomially in the lattice dimension n for n up to 1024. We implement the framework in SageMath and run experiments on randomly generated q-ary lattices with q ≈ 2^13, measuring reduction success probabilities over 10,000 trial instances at dimensions 256, 512, and 1024. Results confirm that the reduction overhead is within a factor of 2.3 of the theoretical bound across all tested dimensions. We also identify a class of structured q-ary lattices where the reduction fails for γ < 1.8 sqrt(n), providing a concrete bound below which existing reductions break down. The findings are relevant to parameter selection in NTRU-style schemes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02591",
+        "kind": "publication",
+        "title": "Parameter Selection for Ring-LWE-Based Key Exchange: A Systematic Study",
+        "body": {
+          "recordId": "SYN-PUB-02591",
+          "field": "abstract",
+          "text": "We carry out a systematic study of parameter choices for ring-LWE-based key exchange protocols, focusing on the trade-off between security level and ciphertext size. For polynomial rings Z_q[x]/(x^n+1) with n ∈ {256, 512, 1024} and moduli q ranging from 2^11 to 2^14, we evaluate the concrete security against known lattice attacks including BKZ-2.0, primal and dual distinguishing attacks, and hybrid meet-in-the-middle variants. Security estimates are computed using both the BKZ simulator and the lattice estimator library, yielding bit-security estimates that differ by up to 18 bits depending on the tool. We identify parameter sets achieving 128-bit post-quantum security with ciphertext overhead below 900 bytes. A reference implementation in C achieves encapsulation latency of 34 µs on an Intel Core i7-8700 at 3.2 GHz, with decapsulation at 41 µs. The paper provides parameter recommendation tables for practitioners."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02592",
+        "kind": "publication",
+        "title": "On the Equivalence of Search and Decision Variants of Module-LWE",
+        "body": {
+          "recordId": "SYN-PUB-02592",
+          "field": "abstract",
+          "text": "The Learning With Errors problem over module lattices (Module-LWE, or MLWE) generalizes both plain LWE and ring-LWE. While search-to-decision reductions are well established for standard LWE, the module setting introduces subtleties arising from the choice of rank k and the underlying number field. This work presents a self-contained proof that search-MLWE reduces to decision-MLWE for ranks k ≥ 2 over cyclotomic rings of conductor 2^m, under standard algebraic assumptions. The reduction is constructive and yields an explicit algorithm with running time polynomial in n, k, and log q. We also show that for rank k = 1 the reduction requires an additional algebraic condition on the error distribution that does not hold for all Gaussian parameters, clarifying a gap in prior literature. We verify the algebraic claims computationally in PARI/GP for m ∈ {8, 9, 10, 11}. The result strengthens the theoretical basis of the Kyber/ML-KEM family of schemes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02593",
+        "kind": "publication",
+        "title": "Timing Side-Channel Vulnerabilities in Lattice-Based Decapsulation: A Case Study on Polynomial Multiplication",
+        "body": {
+          "recordId": "SYN-PUB-02593",
+          "field": "abstract",
+          "text": "We investigate timing side-channel leakage arising in the decapsulation procedure of lattice-based key encapsulation mechanisms, focusing on the polynomial multiplication step implemented via the Number Theoretic Transform (NTT). Using a cache-timing attack model on a shared-memory system, we demonstrate that branch-free NTT implementations can still leak information through operand-dependent memory access patterns during coefficient reduction modulo q. We instrument five publicly available reference implementations in C and measure execution times across 10^6 decapsulation operations at a ring dimension of n = 512 and modulus q = 3329, finding timing variance of up to 14 ns correlated with the Hamming weight of secret key coefficients. We propose two countermeasures: a fully constant-time coefficient reduction routine and an operand-blinding technique, and evaluate their overhead at 6% and 11% respectively. The work applies directly to software deployed on resource-constrained IoT devices."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02594",
+        "kind": "publication",
+        "title": "Lattice-Based Cryptography in Practice: Design Principles and Implementation Pitfalls",
+        "body": {
+          "recordId": "SYN-PUB-02594",
+          "field": "abstract",
+          "text": "This book chapter surveys the landscape of lattice-based cryptographic primitives from the perspective of practical deployment. We cover the mathematical foundations—SVP, CVP, LWE, NTRU, and their module variants—and describe how theoretical hardness results translate (or fail to translate) into implementation security guarantees. Special attention is given to three categories of implementation pitfall: incorrect error sampling that reduces effective entropy, improper handling of decapsulation failure probability leading to information leakage, and misuse of deterministic randomness in encapsulation. Each pitfall is illustrated with a concrete example drawn from published implementations. The chapter concludes with a checklist of 14 implementation requirements derived from observed errors in the literature, intended as a practical reference for software engineers integrating post-quantum primitives. The material is suitable for graduate students and practitioners without prior background in lattice mathematics."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02595",
+        "kind": "publication",
+        "title": "Failure Probability Bounds for NTRU-Based Key Encapsulation Under Non-Uniform Error Distributions",
+        "body": {
+          "recordId": "SYN-PUB-02595",
+          "field": "abstract",
+          "text": "NTRU-based key encapsulation schemes specify error polynomials drawn from distributions with small coefficients. In practice, hardware random number generators may produce distributions that deviate measurably from the target. This paper derives closed-form upper bounds on the decapsulation failure probability when the error distribution is a perturbation of the nominal distribution by a total-variation distance δ. We show that for standard NTRU parameters at n = 677 and q = 2048, a perturbation of δ = 2^{-20} inflates the failure probability by a factor of at most 3.2, while for δ = 2^{-14} the inflation factor reaches 47. The analysis uses moment-generating function techniques for bounded discrete distributions. We validate the bounds by Monte Carlo simulation over 5 × 10^7 key pairs generated with synthetically perturbed distributions. The results provide concrete guidance for hardware entropy source quality requirements in NTRU deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02596",
+        "kind": "publication",
+        "title": "Sieving Algorithms on Module Lattices: Complexity and Practical Limits at Dimension 400–600",
+        "body": {
+          "recordId": "SYN-PUB-02596",
+          "field": "abstract",
+          "text": "Lattice sieving algorithms have become the dominant approach for solving SVP in high dimensions, but their practical behaviour on module lattices—relevant for post-quantum cryptography—is less well characterised than on random lattices. This paper reports a systematic computational study of three sieving algorithms (GaussSieve, BGJ1, and a multi-level bucket sieve) applied to module lattices of rank k ∈ {2, 4} at total lattice dimensions between 400 and 600. Experiments are run on a 32-core cluster using a distributed implementation in C++. We record wall-clock time, memory consumption, and the number of vectors found shorter than the Gaussian heuristic bound. At dimension 512, the module structure reduces sieving time by 23% compared to unstructured lattices of the same dimension, a non-trivial gap that affects concrete security estimates. We provide updated security estimate tables for ML-KEM parameter sets based on our empirical timings."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02597",
+        "kind": "publication",
+        "title": "Algebraic Structure Exploitation in Quantum Lattice Attacks: Limits of the Hidden Subgroup Approach",
+        "body": {
+          "recordId": "SYN-PUB-02597",
+          "field": "abstract",
+          "text": "A recurring question in post-quantum cryptography is whether quantum algorithms can exploit the ring or module structure of lattice problems to achieve superpolynomial speedup over classical sieving. This paper examines the applicability of the hidden subgroup problem (HSP) framework to ring-SIS and ring-LWE, formalising the conditions under which the algebraic structure of the cyclotomic ring Z[x]/(Φ_m(x)) could be cast as an HSP instance over a non-abelian group. We show that while a group-theoretic embedding exists for m = 2^k with k ≤ 5, the resulting HSP is over a group whose quantum Fourier transform has no known efficient implementation. The negative result implies that standard HSP-based quantum algorithms do not yield a superpolynomial advantage for ring-LWE at currently deployed parameter sizes. The argument is formalized using representation theory of dihedral groups and validated computationally for m ∈ {16, 32, 64}."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02598",
+        "kind": "publication",
+        "title": "Compressed Public Keys in Module-NTRU: Balancing Size and Failure Rate",
+        "body": {
+          "recordId": "SYN-PUB-02598",
+          "field": "abstract",
+          "text": "Module-NTRU schemes allow public keys to be compressed by rounding polynomial coefficients, reducing transmission overhead at the cost of a higher decapsulation failure probability. This paper gives a rigorous analysis of the trade-off for rank-k module-NTRU over Z_q[x]/(x^n + 1) at the specific parameter set n = 256, k = 4, q = 4096 targeted at 128-bit post-quantum security. We derive an explicit formula for failure probability as a function of the rounding step Δ and show that Δ = 4 yields a public key size reduction of 22% while inflating the failure probability from 2^{-138} to 2^{-97}, which remains acceptable for most applications. We implement the compressed scheme in constant-time C and benchmark it on an ARM Cortex-M4 microcontroller, achieving encapsulation in 1.14 ms and decapsulation in 1.37 ms at 168 MHz clock speed. The implementation is made publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01087",
+        "kind": "publication",
+        "title": "Formal Verification of a Constant-Time NTT Implementation Using the Frama-C Framework",
+        "body": {
+          "recordId": "SYN-PUB-01087",
+          "field": "abstract",
+          "text": "Number Theoretic Transform implementations are at the heart of lattice-based KEM performance, but verifying their constant-time property formally remains challenging. This paper presents a Frama-C/WP-based verification of a complete constant-time NTT implementation for the ring Z_q[x]/(x^{256}+1) with q = 3329, corresponding to the ML-KEM-512 parameter set. We annotate the C source with ACSL contracts specifying absence of secret-dependent branches and memory accesses, and discharge 1,847 verification conditions automatically using the Alt-Ergo and CVC5 SMT solvers. Of the conditions, 43 required manual lemma assistance. The verified implementation matches cycle counts of the unverified reference to within 0.4%, confirming that verification annotations do not degrade performance. We also identify one latent timing leak in a subtraction-based modular reduction present in three widely used open-source libraries, report it to maintainers, and provide a verified replacement."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02599",
+        "kind": "publication",
+        "title": "Tighter Noise Flooding Bounds for Lattice-Based Zero-Knowledge Proofs of Knowledge",
+        "body": {
+          "recordId": "SYN-PUB-02599",
+          "field": "abstract",
+          "text": "Lattice-based zero-knowledge proofs of knowledge for linear relations modulo q frequently rely on noise flooding to achieve statistical zero-knowledge: the prover adds a fresh Gaussian noise vector large enough to mask the witness. Existing analyses require the flooding noise standard deviation to be at least 2^{40} times the witness norm, leading to large proof sizes. We present a refined analysis using the Rényi divergence instead of statistical distance to bound the distinguishing advantage, reducing the required flooding factor to 2^{22} for security parameter λ = 128. The reduction in flooding factor translates to a 42% decrease in proof size for a representative linear-relation statement over Z_q^n with n = 512. We construct an explicit proof system, implement it in SageMath, and provide proof-size and verification-time benchmarks. The proof system is compatible with the commitment schemes used in current post-quantum signature proposals."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02600",
+        "kind": "publication",
+        "title": "Security Degradation in Hybrid Classical–Lattice KEM Combiners: An Analysis of XOR-Then-Hash Approaches",
+        "body": {
+          "recordId": "SYN-PUB-02600",
+          "field": "abstract",
+          "text": "Hybrid KEM combiners are increasingly used in TLS 1.3 and other protocols to hedge against failures of either the classical (ECDH) or post-quantum component. A common construction takes the form K = H(K_1 || K_2 || ct_1 || ct_2), where H is a hash function. This paper analyses the security degradation incurred when the classical component is broken by an adversary with quantum access, focusing on XOR-then-hash combiners of the form K = H(K_1 XOR K_2). We show that if K_1 is a uniformly random string (indistinguishable-CCA assumption on the classical KEM) but K_2 leaks b bits of information due to a partial break of the PQ-KEM, then the combined key retains min(256 - b, λ_PQ) bits of security, where λ_PQ is the standalone security of the PQ-KEM. The proof uses hybrid arguments and the random oracle model. We evaluate the result numerically for ML-KEM-768 combined with X25519 across several partial break scenarios, providing a concrete security budget table."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02601",
+        "kind": "publication",
+        "title": "Reinforcement Learning for Adaptive Queue Management in Edge-Cloud Continuum Deployments",
+        "body": {
+          "recordId": "SYN-PUB-02601",
+          "field": "abstract",
+          "text": "Edge nodes in a continuum deployment have limited queuing capacity and must decide whether to process requests locally or offload them to a central cloud tier. This paper formulates the per-edge offloading decision as a Markov decision process solved approximately by a tabular Q-learning agent. The state is a discretised pair of local queue length and observed round-trip latency to the cloud. Reward is the negative of per-request sojourn time. The agent is trained in a simulated environment parameterised from latency and arrival-rate measurements at two edge nodes of a pilot deployment at the NTP Novi Sad testbed during a three-week collection period. After convergence (approximately 800,000 simulated steps), the learned policy reduces mean sojourn time by 14 percent and 99th-percentile sojourn time by 23 percent compared to a static threshold offloading rule. Robustness to distributional shift is tested by applying the policy under a workload with 30 percent higher arrival rate; degradation is modest, with mean sojourn time increasing by 9 percent over the trained-condition optimum."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02602",
+        "kind": "publication",
+        "title": "Topological analysis of pore networks in ceramic materials from micro-CT imaging",
+        "body": {
+          "recordId": "SYN-PUB-02602",
+          "field": "abstract",
+          "text": "We analyse three-dimensional pore networks of five types of porous ceramic samples, each imaged by micro-CT at 1.8 μm voxel resolution, yielding binary volumes of approximately 500³ voxels. Skeletonisation produces point clouds of up to 180 000 points. We compute Čech complex persistent homology up to dimension 3 using a GPU-accelerated boundary matrix reduction implementation. H_0 features characterise connectivity of the pore space; H_1 and H_2 features correspond to tunnels and enclosed voids respectively. Samples with high sintering temperature exhibit fewer and larger H_1 generators, consistent with pore coarsening. We regress total porosity (range 12–38%) and pore-size distribution parameters from persistence diagram features using random forests, achieving R² = 0.91 on a held-out test set of 18 samples. The approach provides a parameter-free topological signature that complements mercury intrusion porosimetry. This is the first study applying persistent homology to sinter-controlled alumina ceramics."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02603",
+        "kind": "publication",
+        "title": "Byzantine-Robust Aggregation Under Local Differential Privacy Constraints",
+        "body": {
+          "recordId": "SYN-PUB-02603",
+          "field": "abstract",
+          "text": "Federated learning systems face two simultaneous threats: privacy leakage toward the aggregator and Byzantine clients that submit corrupted model updates. We study whether standard Byzantine-robust aggregation rules—coordinate-wise median, trimmed mean, and Krum—remain effective when client updates are additionally perturbed for local differential privacy. We show analytically that the coordinate-wise median rule retains its Byzantine tolerance when the fraction of malicious clients is below 1/4, provided the LDP noise scale is below a threshold that we characterise in terms of model dimension and ε. Above this threshold, Byzantine clients can craft updates that are indistinguishable from honest noisy updates, defeating the robust rule. We verify these claims in a simulation with a 32-dimensional linear model, 100 clients, and up to 20 Byzantine clients using a sign-flip attack. Practical guidelines for choosing ε in adversarial deployments are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01768",
+        "kind": "publication",
+        "title": "Comparative Performance of Segmented Sieve Variants for Prime Enumeration Beyond 10^13",
+        "body": {
+          "recordId": "SYN-PUB-01768",
+          "field": "abstract",
+          "text": "We benchmark four variants of the segmented sieve of Eratosthenes—standard, bit-packed, wheel-factored with modulus 30, and wheel-factored with modulus 210—for prime enumeration in intervals of length 10^8 located near 10^13 and 10^14. Experiments were run on a dual-socket server with 256 GB RAM and 16 physical cores. The wheel-210 variant achieves the lowest wall-clock time per prime found, with a throughput of 1.42 × 10^9 primes per second per core at the 10^13 level, representing a factor of 2.8 improvement over the standard segmented sieve. Memory access patterns are analysed using hardware performance counters, and cache miss rates are correlated with throughput degradation at larger sieve limits. The paper includes a correctness proof for the wheel decomposition and provides open-source C++ implementations. Results are directly applicable to large-scale prime-gap studies."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01076",
+        "kind": "publication",
+        "title": "A Riemannian Gradient Descent Algorithm for Structured Low-Rank Matrix Approximation",
+        "body": {
+          "recordId": "SYN-PUB-01076",
+          "field": "abstract",
+          "text": "We formulate the problem of fitting a structured low-rank matrix model as an optimisation problem on the Grassmann manifold and derive a Riemannian gradient descent algorithm with an Armijo-type line search. The algorithm is applied to the problem of imputing dropout zeros in single-cell RNA-seq count matrices, where the true expression matrix is assumed to lie near a low-dimensional manifold in log-space. On three simulated datasets with known ground-truth dropout patterns, the Riemannian approach recovers missing entries with lower mean squared error than two standard nuclear-norm relaxation methods, with differences statistically significant at the 1 percent level by paired Wilcoxon test. We analyse convergence to a first-order critical point and discuss the effect of rank misspecification. Limitations include quadratic memory scaling with cell count and sensitivity to the initial rank estimate."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1038",
+        "kind": "project",
+        "title": "Lattice Security Parameters for Post-Quantum Embedded Systems",
+        "body": {
+          "recordId": "SYN-PRJ-1038",
+          "field": "summary",
+          "text": "The project investigates the concrete security of lattice-based KEM parameters when deployed on resource-constrained embedded hardware, with a focus on ARM Cortex-M4 and RISC-V targets. Research activities cover three areas: (1) empirical sieving experiments on module lattices to update concrete security estimates, (2) constant-time implementation and formal verification of NTT-based polynomial arithmetic, and (3) analysis of failure probability inflation due to imperfect entropy sources in embedded RNGs. The project funds two PhD students, travel to international conferences, and access to a 48-core computing cluster at the Faculty of Sciences."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1039",
+        "kind": "project",
+        "title": "Bridging Post-Quantum Standards and Industrial Embedded Security",
+        "body": {
+          "recordId": "SYN-PRJ-1039",
+          "field": "summary",
+          "text": "PQBRIDGE is a cross-border collaboration between Serbian and Hungarian partners aimed at transferring post-quantum cryptographic knowledge to small and medium enterprises producing embedded devices for industrial automation. The University of Novi Sad team leads the work package on algorithm selection and parameter recommendation, producing guidelines for integrating ML-KEM and ML-DSA into industrial communication protocols. The project includes two industry workshops per year, an open-source reference implementation repository, and a joint summer school for graduate students from both countries. The Faculty of Sciences contributes expertise in hardness analysis; industrial partners provide hardware targets and real-world protocol constraints."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0202",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates working on embedded cryptographic implementations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0202",
+            "field": "open_to",
+            "quote": "joint projects with companies requiring post-quantum cryptography integration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0202",
+            "field": "open_to",
+            "quote": "contract research on parameter selection and security auditing of lattice-based protocols",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

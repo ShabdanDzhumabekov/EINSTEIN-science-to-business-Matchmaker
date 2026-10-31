@@ -1,0 +1,190 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0319",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0319",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "The joint question is whether grammar-guided symbolic regression, trained on TloCare's georeferenced soil laboratory records and available parcel covariates, can produce interpretable sub-field predictions of salinity pockets near the Tisa that prioritize where denser sampling is needed. A first experiment would test this on held-out Tisa parcels against the current 4-ha grid and the earlier NDVI-guided baseline.",
+    "rationale": [
+      {
+        "text": "Milan explicitly offers joint industry projects on interpretable model discovery from proprietary tabular data, matching TloCare's soil laboratory tables.",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "open_to",
+            "quote": "joint projects with industry on interpretable model discovery from proprietary tabular data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group's core research is automated discovery of interpretable mathematical models from tabular data using symbolic regression.",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "bio",
+            "quote": "automatsko otkrivanje interpretabilnih matematičkih modela iz tabelarnih podataka primenom simboličke regresije",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has already applied grammar-guided symbolic regression to agronomic tabular data and obtained a compact formula comparable to a random-forest ensemble.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03945",
+            "field": "abstract",
+            "quote": "Otkrivena formula sa četiri promenljive postiže R² = 0.81 na test skupu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His methods are designed for small or sparse tabular datasets, relevant when salinity pockets are rare in a coarse grid.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03943",
+            "field": "abstract",
+            "quote": "Predictive accuracy differences are modest but consistent in favour of grammar-constrained derivation trees across datasets with fewer than 100 samples",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He offers post-hoc uncertainty estimates from ensemble disagreement, useful for flagging where denser sampling is most uncertain.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03950",
+            "field": "abstract",
+            "quote": "post-hoc uncertainty quantification method based on disagreement among the top-k expressions retained from the final generation of a grammar-guided GP run",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has industrial experience turning symbolic regression into an audit tool and interpretable models for company use.",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "industry_experience",
+            "quote": "Collaborated with a local manufacturing company (injection moulding sector) on a symbolic regression audit tool for quality control prediction models, resulting in a published case study.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The SYMFORM project integrated domain knowledge into the grammar guiding genetic programming, matching the need to encode soil and floodplain knowledge.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1037",
+            "field": "summary",
+            "quote": "integracija ekspertskog znanja o domenu u gramatiku koja vodi prostor pretrage genetskog programiranja",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Shared analysis requires a tabular dataset of at least moderate size; TloCare has about 18,000 georeferenced laboratory records over ten years.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0319",
+            "field": "notes",
+            "quote": "tabular datasets of at least moderate size (>200 rows) are available for shared analysis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The model must resolve salinity pockets of roughly 0.3–0.8 ha, below the current 4-ha grid support.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Adaptive sampling must not create unacceptable extra field work, laboratory cost, or delivery delay.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration should not require real-time embedded system deployment.",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "notes",
+            "quote": "not currently available for projects requiring real-time embedded system deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any use of the laboratory GPU cluster for larger experiments needs a formal access agreement with the Faculty of Sciences.",
+        "sources": [
+          {
+            "recordId": "R0319",
+            "field": "notes",
+            "quote": "GPU cluster at the laboratory is accessible to external collaborators under a formal agreement with the Faculty of Sciences.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      ":{",
+      "textAn error occurred: I accidentally malformed. Need final correct JSON. Let's produce carefully. Need valid JSON. Use proper closing. I'll rewrite full final. Need ensure no typo "
+    ],
+    "questions": [
+      "Can Milan Gligorić confirm his availability and expected time commitment, since his availability is currently unknown?",
+      "Does the 18,000-point dataset contain a salinity-relevant target such as electrical conductivity, sodium, chloride, pH, or yield-loss labels, and at what spatial support?",
+      "Can TloCare share anonymized coordinates, laboratory records, parcel boundaries, terrain/DEM layers, floodplain-deposit maps, weather data, and historical NDVI for shared analysis?",
+      "What output and interpretability format do TloCare agronomists need in the portal, and how will adaptive-sampling success be evaluated: pocket detection, field/lab cost, or delivery time?",
+      "Will the first experiment use held-out Tisa parcels and compare against both the current grid and the failed NDVI-guided adaptive sampling baseline?",
+      "Can TloCare provide field-team validation on selected parcels and, if needed, support an electrical-conductivity or NIR sensor pilot?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0319",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0319",
+        "version": 1
+      }
+    ]
+  }
+}

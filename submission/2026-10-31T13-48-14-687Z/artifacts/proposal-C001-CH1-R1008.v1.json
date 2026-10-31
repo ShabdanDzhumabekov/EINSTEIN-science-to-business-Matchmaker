@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "proposal-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Explainable, Site-Specific Anomaly Alerts for ProtoSense",
+    "facts": [
+      {
+        "text": "ArmaturaSec reports no traffic labelled malicious and acknowledges that historical compromises could have gone unnoticed. Its archives therefore have no confirmed clean status.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have nothing labelled as malicious.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "if they were compromised they would not know.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ProtoSense inspects Modbus TCP and BACnet/IP. ArmaturaSec reports that its previous public-dataset-trained classifier generated enough false positives for clients to switch alerts off.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec reports having on-device inference hardware and using custom Yocto Embedded Linux. Its hardware plan describes a dedicated security processor intended to avoid affecting packet-forwarding latency; that plan does not establish present availability.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have the hardware to run inference on-device",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Embedded Linux (custom Yocto build)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec offers one to two part-time engineers and archive, bench and firmware access under NDA. Kiss's group describes university testbed access under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's Modbus research constructed per-register statistical baselines on substation-testbed traffic. Her participation material states openness to joint projects with ICS monitoring companies.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "This paper describes the construction of per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's incremental modelling study detected a planned process reconfiguration as a persistent anomaly episode and tested an operator-acknowledged reset mechanism.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "a supervised reset mechanism based on operator acknowledgement was proposed and tested.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "Concept drift induced by a planned process reconfiguration was detected as a persistent anomaly episode;",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her Isolation Forest study reports a calibration risk: an order-of-magnitude contamination mismatch reduced average precision from 0.91 to 0.63.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10475",
+            "field": "abstract",
+            "quote": "a mismatch of one order of magnitude reduced average precision from 0.91 to 0.63.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This joint-project proposal is conditional because Kiss's availability and team allocation remain unknown; openness to this format does not establish a commitment.",
+      "Field-level baselines suggest a plausible route to plain-language explanations. However, the supplied research does not establish BACnet effectiveness or ProtoSense hardware fit; both require direct testing rather than extrapolation from Modbus or other ARM devices.",
+      "The reported contamination sensitivity suggests that unlabelled calibration could produce misleading thresholds. Seasonal variation and adaptation could also hide persistent anomalies; bench success would not establish real-attack effectiveness or malicious intent."
+    ],
+    "proposedActions": [
+      "Propose an isolated first experiment using representative site archives, separate chronological training/tuning/evaluation periods, and authorised injected attacks plus legitimate changes for each protocol. Check temporal and device leakage before evaluation; unavailable representative BACnet evaluation data blocks a decision. Compare fixed-threshold rules with site-specific statistical baselines, calibrated thresholds and operator-gated adaptation; train and calibrate without attack labels. Select the best configuration on tuning data, then evaluate once on held-out data separately for Modbus and BACnet. Proposed go/no-go targets, subject to negotiation: the upper 95% confidence bound on false-alert episodes is at most one per site-day; at least 80% of injected episodes are detected within 60 seconds; each participating plant manager correctly interprets at least four of five explanation tasks per protocol. Also require measured CPU, memory and storage within agreed appliance limits and no measurable forwarding-latency increase at agreed resolution under peak replay load. Insufficient exposure, unresolved permissions or failed protocol-specific checks prevent a pass, whichever configuration wins.",
+      "Propose counting alerts for the same site, device and protocol separated by at most 60 seconds as one episode; review every episode, conservatively counting unresolved ones as false. Exposure is complete monitored site-hours divided by 24. Predefine confidence estimation and exposure adequacy before testing. Randomly expert-label 10% of all evaluation windows, each with equal inclusion probability regardless of alerts, to audit contamination—not estimate episode counts. Measure detection only on injected or confirmed cases.",
+      "Propose six weeks after approvals: two for permissions, hardware profiling and sampling; two for implementation and tuning; two for locked evaluation and review. Kiss could lead features, calibration and evaluation; ArmaturaSec's part-time engineers could lead replay, Yocto integration and profiling. Keep updates operator-approved and test persistent anomalies before permitting adaptation. Scope to available capacity, with NDA and university data-sharing terms settled first."
+    ],
+    "questions": [
+      "Can Kiss confirm availability, team allocation and a feasible start for this joint project?",
+      "Can both parties agree the budget, six-week scope, implementation ownership, maintenance responsibility and client-data permissions, including retention and research-use terms?",
+      "Which current appliance, resource limits, peak traffic load and latency measurement resolution apply, and is the planned security processor available?",
+      "Which representative sites, BACnet devices, change logs, authorised scenarios, expert reviewers and plant managers are available, and do they accept the proposed alert, detection and explanation criteria?"
+    ],
+    "benefits": {
+      "company": "The experiment could show whether site-specific alerts are tolerable, understandable and deployable on actual ProtoSense hardware, while identifying whether BACnet needs further development.",
+      "researcher": "Subject to agreement and permissions, Kiss could test how calibration and guarded adaptation transfer across protocols using operational archives and controlled bench scenarios."
+    },
+    "markdown": "# Explainable, Site-Specific Anomaly Alerts for ProtoSense\n\n## Verified facts\n- ArmaturaSec reports no traffic labelled malicious and acknowledges that historical compromises could have gone unnoticed. Its archives therefore have no confirmed clean status. [F1]\n- ProtoSense inspects Modbus TCP and BACnet/IP. ArmaturaSec reports that its previous public-dataset-trained classifier generated enough false positives for clients to switch alerts off. [F2]\n- ArmaturaSec reports having on-device inference hardware and using custom Yocto Embedded Linux. Its hardware plan describes a dedicated security processor intended to avoid affecting packet-forwarding latency; that plan does not establish present availability. [F3]\n- ArmaturaSec offers one to two part-time engineers and archive, bench and firmware access under NDA. Kiss's group describes university testbed access under a data-sharing agreement. [F4]\n- Kiss's Modbus research constructed per-register statistical baselines on substation-testbed traffic. Her participation material states openness to joint projects with ICS monitoring companies. [F5]\n- Kiss's incremental modelling study detected a planned process reconfiguration as a persistent anomaly episode and tested an operator-acknowledged reset mechanism. [F6]\n- Her Isolation Forest study reports a calibration risk: an order-of-magnitude contamination mismatch reduced average precision from 0.91 to 0.63. [F7]\n\n## Potential benefits\n- For the company: The experiment could show whether site-specific alerts are tolerable, understandable and deployable on actual ProtoSense hardware, while identifying whether BACnet needs further development.\n- For the researcher: Subject to agreement and permissions, Kiss could test how calibration and guarded adaptation transfer across protocols using operational archives and controlled bench scenarios.\n\n## Our inference\n- This joint-project proposal is conditional because Kiss's availability and team allocation remain unknown; openness to this format does not establish a commitment.\n- Field-level baselines suggest a plausible route to plain-language explanations. However, the supplied research does not establish BACnet effectiveness or ProtoSense hardware fit; both require direct testing rather than extrapolation from Modbus or other ARM devices.\n- The reported contamination sensitivity suggests that unlabelled calibration could produce misleading thresholds. Seasonal variation and adaptation could also hide persistent anomalies; bench success would not establish real-attack effectiveness or malicious intent.\n\n## Proposed next steps\n- Propose an isolated first experiment using representative site archives, separate chronological training/tuning/evaluation periods, and authorised injected attacks plus legitimate changes for each protocol. Check temporal and device leakage before evaluation; unavailable representative BACnet evaluation data blocks a decision. Compare fixed-threshold rules with site-specific statistical baselines, calibrated thresholds and operator-gated adaptation; train and calibrate without attack labels. Select the best configuration on tuning data, then evaluate once on held-out data separately for Modbus and BACnet. Proposed go/no-go targets, subject to negotiation: the upper 95% confidence bound on false-alert episodes is at most one per site-day; at least 80% of injected episodes are detected within 60 seconds; each participating plant manager correctly interprets at least four of five explanation tasks per protocol. Also require measured CPU, memory and storage within agreed appliance limits and no measurable forwarding-latency increase at agreed resolution under peak replay load. Insufficient exposure, unresolved permissions or failed protocol-specific checks prevent a pass, whichever configuration wins.\n- Propose counting alerts for the same site, device and protocol separated by at most 60 seconds as one episode; review every episode, conservatively counting unresolved ones as false. Exposure is complete monitored site-hours divided by 24. Predefine confidence estimation and exposure adequacy before testing. Randomly expert-label 10% of all evaluation windows, each with equal inclusion probability regardless of alerts, to audit contamination—not estimate episode counts. Measure detection only on injected or confirmed cases.\n- Propose six weeks after approvals: two for permissions, hardware profiling and sampling; two for implementation and tuning; two for locked evaluation and review. Kiss could lead features, calibration and evaluation; ArmaturaSec's part-time engineers could lead replay, Yocto integration and profiling. Keep updates operator-approved and test persistent anomalies before permitting adaptation. Scope to available capacity, with NDA and university data-sharing terms settled first.\n\n## Open questions\n- Can Kiss confirm availability, team allocation and a feasible start for this joint project?\n- Can both parties agree the budget, six-week scope, implementation ownership, maintenance responsibility and client-data permissions, including retention and research-use terms?\n- Which current appliance, resource limits, peak traffic load and latency measurement resolution apply, and is the planned security processor available?\n- Which representative sites, BACnet devices, change logs, authorised scenarios, expert reviewers and plant managers are available, and do they accept the proposed alert, detection and explanation criteria?",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

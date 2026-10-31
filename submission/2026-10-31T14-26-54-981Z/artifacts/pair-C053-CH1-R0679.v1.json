@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0679",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0679",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What explains the apparent manganese increase across AquaCikl’s treatment process and its iron non-compliance, and could an operational change restore compliance without major equipment replacement? The first experiment would test whether Radulović’s groundwater analytical methods transfer to industrial greywater using time-aligned, stage-by-stage sampling, matrix-recovery checks and independent reference measurements, then use flow-aware metal balances to distinguish measurement effects from actual metal release or accumulation.",
+    "rationale": [
+      {
+        "text": "He has directly relevant experience evaluating portable manganese methods against reference measurements, including identifying hardness-dependent interference.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07646",
+            "field": "abstract",
+            "quote": "In high-hardness matrix, the periodate procedure showed a positive bias of 7–13% on the absorbance platforms",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07646",
+            "field": "abstract",
+            "quote": "results from the formaldoxime absorbance method agreed with ICP-OES reference values within 4.5%.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His iron-speciation work can inform sampling protocols that distinguish genuine process changes from preservation and precipitation artefacts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07650",
+            "field": "abstract",
+            "quote": "This study combined field Eh and pH measurements with laboratory Fe(II), Fe(III), and total iron determinations by ICP-OES and spectrophotometry",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07650",
+            "field": "abstract",
+            "quote": "Fe(III) precipitation within 5 minutes of sampling accounted for losses of 12–38% of total iron from the dissolved fraction.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has translated interference-correction research into practical tools and harmonised protocols for water-sector operators.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0337",
+            "field": "summary",
+            "quote": "The models were implemented in a freely downloadable spreadsheet calculator and in a printed field reference card distributed to water utility technicians in three municipalities.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0338",
+            "field": "summary",
+            "quote": "Radulović led the work package on matrix interference assessment, contributing the iron, manganese, and phosphate correction procedures developed in his laboratory.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His laboratory has instrumentation relevant to independent analytical checks, and his stated collaboration interests include applied water-quality measurement problems.",
+        "sources": [
+          {
+            "recordId": "R0679",
+            "field": "bio",
+            "quote": "The group operates a small field-analytical laboratory equipped with portable spectrophotometers, ion chromatography, ICP-OES, and a titration workstation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0679",
+            "field": "notes",
+            "quote": "Radulović is primarily interested in applied collaborations where his interference correction models and groundwater matrix expertise can solve a specific measurement problem",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Use the company-reported discharge limits of 0.10 mg/L manganese and 0.30 mg/L iron as provisional acceptance criteria, subject to verifying the applicable regulation and compliance sampling requirements.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Complete diagnosis and an implementable intervention within the four-month company staffing window, leaving time before the five-month reinspection.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any proposed remedy must work at existing installations without major equipment replacement.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Build the investigation around accessible process-stage samples and the three available installations; preserve cross-site comparisons rather than assuming one site's cause explains all failures.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "with access to three operating installations for field testing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Treat external confirmation and the unsuccessful dose/pH trials as baseline evidence: do not presume a photometric artefact or simply repeat these adjustments as the proposed solution.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Our own analysers, confirmed by an accredited external lab in Zrenjanin",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The manganese and iron methods were demonstrated principally in groundwater, not industrial laundry or food-processing greywater. Industrial matrix effects and analyte recovery must be tested in the first experiment before applying the published corrections.",
+      "External laboratory confirmation makes a purely on-site instrument-bias explanation insufficient without new evidence; the cause may instead involve real metal inputs, filter-media release, tank cycling or recirculation.",
+      "The supplied evidence establishes analytical and sampling expertise more strongly than treatment-process remediation expertise. Confirmed media or tank-related release may require an additional process specialist.",
+      "Researcher availability and committed laboratory capacity remain unknown. The general note about availability from 2025 onward does not establish capacity for this four-month project.",
+      "The budget, site operating restrictions, actual iron concentrations and legally applicable analytical definitions are unknown; these could prevent a timely or affordable intervention.",
+      "Unaligned inlet and outlet samples, changing flow or recycle streams could create a misleading apparent manganese increase unless sampling follows hydraulic residence times and metal balances."
+    ],
+    "questions": [
+      "Can Radulović commit to the required four-month investigation, including early fieldwork, reference analyses and rapid reporting, and does he accept a scope extending from measurement validation to joint root-cause diagnosis?",
+      "What budget is available for sampling, reference laboratory work, media and reagent testing, and controlled operational trials?",
+      "What discharge permit and regulatory text apply, and do the limits concern total, dissolved or another defined metal fraction? What sampling and analytical methods will the reinspection accept?",
+      "What are the actual iron results, and can AquaCikl provide raw on-site and external laboratory reports, methods, detection limits, preservation records and quality-control results?",
+      "Can the company provide process diagrams, flows, recycle routes, hydraulic residence times, dosing records, media histories and tank cleaning/redox records to support time-aligned sampling and metal balances?",
+      "Can the first experiment include paired field/reference measurements, matrix spikes, appropriately preserved total and dissolved fractions, and samples of candidate metal inputs such as coagulants and filter media?",
+      "What operational changes and temporary isolation tests are permitted at each site, and who will provide treatment-process expertise if confirmed metal release requires work beyond analytical diagnosis?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0679",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0679",
+        "version": 1
+      }
+    ]
+  }
+}

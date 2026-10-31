@@ -1,0 +1,274 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0254",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0254",
+    "name": "Strahinja Todorović",
+    "faculty": "Faculty of Technology",
+    "department": "Department of Chemical Engineering",
+    "fields": [
+      "Chemical Engineering",
+      "Environmental Engineering",
+      "Water Treatment Technology",
+      "Heterogeneous Catalysis"
+    ],
+    "keywords": [
+      "oxidative precipitation",
+      "manganese removal",
+      "iron removal",
+      "packed-bed filtration",
+      "heterogeneous catalysis",
+      "groundwater treatment",
+      "aeration",
+      "trace heavy metals",
+      "filter media",
+      "reaction kinetics"
+    ],
+    "openTo": [
+      "joint projects with water treatment equipment manufacturers or utilities",
+      "contract research on filter media performance testing and optimisation",
+      "consulting on groundwater treatment plant design and troubleshooting",
+      "industrial PhD supervision",
+      "student internships (lab-based, 3–6 months)",
+      "equipment access (ICP-OES, BET surface area analyser, bench-scale packed-bed pilot)"
+    ],
+    "bio": {
+      "recordId": "R0254",
+      "field": "bio",
+      "text": "Strahinja Todorović completed his undergraduate and master's studies in Chemical Engineering at the Faculty of Technology, University of Novi Sad, graduating in 2005 and 2007 respectively. He obtained his PhD in 2012 from the same institution, with a dissertation on manganese oxidation kinetics in packed-bed filters. After a postdoctoral stay at the Institute of Environmental Engineering, TU Dresden (2013–2014), he returned to Novi Sad as Assistant Professor and was promoted to Associate Professor in 2019. His group investigates the reaction kinetics of iron and manganese oxidative precipitation, catalyst preparation for heterogeneous oxidation in granular media, and the performance of aeration–filtration train configurations for trace-metal groundwater remediation. He teaches Reaction Engineering and Water Treatment Technology. The group operates a bench-scale packed-bed pilot facility, ICP-OES and atomic absorption spectrometers, and a BET surface area analyser."
+    },
+    "industryExperience": {
+      "recordId": "R0254",
+      "field": "industry_experience",
+      "text": "Todorović has provided technical consulting to two Vojvodina municipal waterworks on filter media replacement and backwash protocol optimisation under informal service agreements. He contributed to the design review of a cascade aeration retrofit for a 10 000 m³/day treatment station near Zrenjanin in 2020."
+    },
+    "notes": {
+      "recordId": "R0254",
+      "field": "notes",
+      "text": "Todorović is particularly interested in connecting with companies developing sensor systems or IoT monitoring for water treatment, as the group lacks real-time online Mn and Fe analysers and would value access to or co-development of such instrumentation. He is not seeking pure funding arrangements without scientific content."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03208",
+        "kind": "publication",
+        "title": "Kinetics of Mn(II) Oxidation by Dissolved Oxygen on Naturally Formed MnOx Filter Coatings",
+        "body": {
+          "recordId": "SYN-PUB-03208",
+          "field": "abstract",
+          "text": "The oxidative removal of dissolved manganese in granular filter beds depends critically on the catalytic activity of MnOx coatings that accumulate on filter grains during operation. This study quantified the surface-catalysed oxidation rate of Mn(II) in a bench-scale quartz-sand column operated at pH 7.2–8.0, dissolved oxygen 3–9 mg/L, and inlet Mn(II) concentrations of 0.2–2.5 mg/L. Rate data were fitted to a Langmuir–Hinshelwood model, yielding an apparent surface rate constant of 4.1 × 10⁻³ L·m⁻²·min⁻¹ at pH 7.5 and 20 °C. Activation energy was estimated at 38 kJ/mol from experiments at 10, 20 and 30 °C. Coating characterisation by XRD and BET showed birnessite-type MnO₂ with specific surface area increasing from 12 to 74 m²/g over 180 days of filter ripening. Effluent Mn concentrations fell below 0.05 mg/L after 45 days of continuous operation. The results support a two-step autocatalytic mechanism and provide parameters suitable for reactor design models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03209",
+        "kind": "publication",
+        "title": "Effect of pH and Carbonate Alkalinity on Iron(II) Oxidation Rates in Aerated Groundwater",
+        "body": {
+          "recordId": "SYN-PUB-03209",
+          "field": "abstract",
+          "text": "Iron removal from groundwater by aeration and filtration is well established, yet the inhibitory role of carbonate species on Fe(II) oxidation kinetics remains incompletely characterised under conditions typical of the Vojvodina aquifer system. Batch oxidation experiments were conducted at pH 6.5–8.5, total alkalinity 1–8 meq/L, temperature 15 °C, and initial Fe(II) concentrations of 0.5–8 mg/L. Dissolved oxygen was maintained at saturation throughout. Second-order rate constants decreased from 8.2 × 10¹³ to 1.4 × 10¹³ L·mol⁻¹·min⁻¹ as alkalinity increased from 1 to 8 meq/L at pH 7.5, consistent with competitive complexation of Fe(II) by carbonate ligands reducing the reactive hydroxo-Fe(II) fraction. A modified rate law incorporating a carbonate inhibition term reproduced 91% of variance across all conditions. Practical implications for cascade aeration design serving high-alkalinity Vojvodina wells are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03210",
+        "kind": "publication",
+        "title": "Column Breakthrough Behaviour of Arsenic(V) in Iron-Oxide-Coated Sand Beds: Influence of Competing Anions",
+        "body": {
+          "recordId": "SYN-PUB-03210",
+          "field": "abstract",
+          "text": "Iron-oxide-coated sand (IOCS) prepared by co-precipitation on quartz grains was tested for As(V) removal in fixed-bed columns at superficial velocities of 5–15 m/h and bed depths of 30–90 cm. Feed water contained 50–200 µg/L As(V) with variable concentrations of phosphate (0–2 mg/L) and silicate (0–20 mg/L) as competing anions. Thomas and Bohart–Adams models were fitted to breakthrough curves; Thomas rate constants ranged from 2.1 to 6.8 × 10⁻⁴ mL·µg⁻¹·min⁻¹ depending on flow rate and competitor loading. Phosphate at 1 mg/L reduced bed capacity by 38%, while silicate at 10 mg/L caused a 19% reduction. SEM-EDX confirmed As surface loading up to 1.8 mg/g on exhausted media. Results indicate that IOCS columns are feasible for rural groundwater treatment in Serbia but require pre-dephosphatisation when P exceeds 0.5 mg/L."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03211",
+        "kind": "publication",
+        "title": "Comparative Performance of Quartz Sand, Anthracite, and Pyrolusite Filter Media for Simultaneous Fe and Mn Removal",
+        "body": {
+          "recordId": "SYN-PUB-03211",
+          "field": "abstract",
+          "text": "A pilot study compared three single-medium and two dual-medium filter configurations for removing Fe(II) (3–6 mg/L) and Mn(II) (0.5–1.2 mg/L) from a municipal well in Sremska Mitrovica over a 12-month operational period. Pyrolusite-based media achieved Mn effluent concentrations below 0.02 mg/L from the first week of operation, bypassing the ripening period required by quartz sand. Dual-medium quartz–anthracite beds showed superior turbidity removal but lagged in Mn oxidation for 60–80 days. Head loss development was 30–45% lower for anthracite-containing beds. Backwash frequency and water consumption were monitored; pyrolusite required 20% more frequent backwashing due to higher bed expansion resistance. A cost-per-cubic-metre analysis over the monitoring period favoured quartz–pyrolusite dual media for Fe/Mn combined removal when source Mn exceeded 0.8 mg/L."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03212",
+        "kind": "publication",
+        "title": "Catalytic Decomposition of Hydrogen Peroxide on MnO₂ Pellets: Surface Deactivation Under High-Flux Conditions",
+        "body": {
+          "recordId": "SYN-PUB-03212",
+          "field": "abstract",
+          "text": "MnO₂ pellets synthesised by thermal decomposition of MnCO₃ were tested as catalysts for H₂O₂ decomposition in a tubular reactor at H₂O₂ feed concentrations of 50–500 mg/L, flow rates yielding residence times of 30–300 s, and temperatures of 20–40 °C. Initial first-order rate constants ranged from 0.8 to 3.4 min⁻¹. Under sustained operation above 200 mg/L H₂O₂, surface activity declined by 60% over 72 hours, attributed to oxidative dissolution of Mn(III/IV) surface sites and re-precipitation as amorphous MnO(OH). XPS spectra before and after deactivation showed a shift in the Mn 2p₃/₂ binding energy from 642.1 to 641.5 eV consistent with partial reduction. Activity was partially restored by alkaline washing followed by re-oxidation in KMnO₄ solution. The findings are relevant to advanced oxidation pre-treatment steps coupled with aeration–filtration trains for heavy-metal groundwater remediation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03213",
+        "kind": "publication",
+        "title": "Modelling Dissolved Oxygen Profiles in Cascade Aerators for Groundwater Pre-Treatment: Field Validation at Three Sites in Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-03213",
+          "field": "abstract",
+          "text": "A one-dimensional plug-flow mass-transfer model for dissolved oxygen (DO) re-aeration in multi-step cascade aerators was calibrated and validated against field measurements at three groundwater treatment stations in Vojvodina. Model inputs included weir geometry, step height (0.15–0.35 m), number of steps (4–8), and inlet DO (0.1–1.8 mg/L). The overall volumetric mass-transfer coefficient KLa ranged from 0.12 to 0.41 min⁻¹ across sites; a correlation with hydraulic loading rate (r² = 0.87) was derived. Outlet DO predictions deviated from measured values by less than 8% at all three sites across twelve sampling campaigns. The calibrated model was used to evaluate retrofitting options for an ageing four-step cascade needing to achieve DO > 7 mg/L for downstream biological Mn oxidation. Sensitivity analysis identified step height and flow per unit weir width as the dominant design variables."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03214",
+        "kind": "publication",
+        "title": "Nickel and Cobalt Removal from Dilute Aqueous Streams by Oxidative Precipitation at Controlled pH: Batch and Semi-Continuous Studies",
+        "body": {
+          "recordId": "SYN-PUB-03214",
+          "field": "abstract",
+          "text": "The removal of Ni(II) and Co(II) at concentrations typical of contaminated groundwater near laterite processing sites (0.1–5 mg/L each) was investigated by oxidative precipitation using KMnO₄ as oxidant at pH 7–10. In batch experiments, Ni removal exceeded 95% only above pH 9.0 regardless of oxidant dose, while Co removal reached 97% at pH 8.5 with a 2:1 molar ratio of KMnO₄ to Co. In a semi-continuous stirred tank with continuous feed and periodic sludge withdrawal, steady-state effluent concentrations of 0.03 mg/L Ni and 0.01 mg/L Co were achieved at pH 9.2 and 30-minute hydraulic retention time. Sludge characterisation by ICP-OES and TEM confirmed mixed Mn–Ni and Mn–Co oxide precipitates with mean particle sizes of 80–120 nm. The influence of Ca²⁺ and Mg²⁺ hardness on precipitation efficiency was minor below 400 mg/L CaCO₃ equivalent."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03215",
+        "kind": "publication",
+        "title": "In Situ Formation of MnOx Catalysts on Zeolite Clinoptilolite Carriers for Mn(II) Oxidation in Packed-Bed Filters",
+        "body": {
+          "recordId": "SYN-PUB-03215",
+          "field": "abstract",
+          "text": "Clinoptilolite from the Igroš deposit (Serbia) was evaluated as a carrier for in situ MnOx catalyst formation by sequential treatment with KMnO₄ and reduction cycling. BET surface area increased from 18 to 52 m²/g after three coating cycles; Mn loading reached 4.2% w/w as determined by acid digestion and ICP-OES. Packed columns (diameter 5 cm, bed depth 40 cm) were operated at pH 7.0–8.5 and inlet Mn(II) of 1.0 mg/L. Steady-state effluent Mn fell below 0.02 mg/L within 10 days, compared to 45 days for quartz sand controls. The catalytic first-order rate constant on coated clinoptilolite was 0.078 min⁻¹, approximately 3.4 times higher than on coated quartz under identical conditions. Mechanical abrasion tests showed acceptable grain attrition below 2% mass loss after 50 backwash cycles. The material is available locally and represents a lower-cost alternative to pyrolusite import."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03216",
+        "kind": "publication",
+        "title": "Biologically Mediated Manganese Oxidation in Trickling Filter Media: Microbial Community Shifts Under Varying Hydraulic Loading",
+        "body": {
+          "recordId": "SYN-PUB-03216",
+          "field": "abstract",
+          "text": "Biological Mn(II) oxidation was studied in a laboratory trickling filter packed with polyethylene biofilm carriers, operated at hydraulic loading rates of 0.5, 1.0 and 2.0 m³·m⁻²·h⁻¹ with inlet Mn(II) of 0.8 mg/L at pH 7.2. 16S rRNA amplicon sequencing (Illumina MiSeq) revealed a community dominated by Pseudomonas-like and Hyphomicrobium-like genera, whose combined relative abundance correlated inversely with hydraulic loading (r = −0.91). At 0.5 m³·m⁻²·h⁻¹, effluent Mn averaged 0.03 mg/L; at 2.0 m³·m⁻²·h⁻¹, it rose to 0.28 mg/L. Abiotic controls with sterilised media produced effluent Mn of 0.55–0.62 mg/L across loading rates, confirming biological contribution of 40–60% to total removal. Biomass-specific Mn oxidation rates ranged from 0.9 to 2.4 mg Mn·g VSS⁻¹·h⁻¹. The results suggest that biological and chemical pathways can be distinguished operationally using temperature and pH manipulation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03217",
+        "kind": "publication",
+        "title": "Pore-Scale Modelling of Reactive Transport in MnOx-Coated Filter Beds Using a Lattice-Boltzmann Approach",
+        "body": {
+          "recordId": "SYN-PUB-03217",
+          "field": "abstract",
+          "text": "A two-dimensional lattice-Boltzmann model was implemented to simulate reactive transport of Mn(II) in idealized packed-bed filter geometries representing circular and angular grain assemblies at porosities of 0.35–0.45. Surface reaction was represented as a first-order boundary condition with rate constants derived from earlier experimental work. Simulated effluent concentration profiles agreed with column data within 12% root-mean-square deviation across five grain packing configurations. Local Mn(II) concentration gradients near grain surfaces reached up to 18 times the bulk concentration, indicating external mass-transfer limitation at superficial velocities above 8 m/h. The Thiele modulus was below 0.3 for grain diameters under 0.6 mm, confirming surface-reaction-limited behaviour for standard filter sands. Model outputs were used to generate dimensionless design charts relating bed depth, contact time, and target effluent Mn for operational practice."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03218",
+        "kind": "publication",
+        "title": "Trace Barium and Strontium Removal from Drinking Water by Oxidative Softening and Filtration: Bench-Scale Assessment",
+        "body": {
+          "recordId": "SYN-PUB-03218",
+          "field": "abstract",
+          "text": "Elevated barium (100–300 µg/L) and strontium (3–8 mg/L) concentrations occur in certain deep Vojvodina aquifers. Conventional lime softening and oxidative filtration were tested sequentially at bench scale to evaluate combined removal efficiency. Lime addition to pH 10.5 reduced Ba to 40–60 µg/L and Sr to 0.8–1.5 mg/L through co-precipitation with CaCO₃ and Mg(OH)₂. Subsequent MnOx-catalysed oxidation with O₂ at pH 8.0 did not further reduce Ba or Sr, confirming that oxidative filtration is ineffective for these alkaline earth metals in the absence of a redox transition. Addition of Na₂CO₃ post-softening to achieve residual alkalinity of 0.5 meq/L drove Ba to below 10 µg/L. XRD of sludge confirmed BaCO₃ (witherite) and SrCO₃ (strontianite) as minor phases co-precipitated within the CaCO₃ matrix. Sludge dewatering behaviour and disposal constraints are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03219",
+        "kind": "publication",
+        "title": "Long-Term Stability of MnOx Filter Coatings Under Intermittent Operation: A 24-Month Column Study",
+        "body": {
+          "recordId": "SYN-PUB-03219",
+          "field": "abstract",
+          "text": "Filter ripening studies typically run under continuous operation, but many rural waterworks in Serbia operate intermittently, shutting down for 8–16 hours per day. A 24-month column experiment investigated how daily interruptions to flow affect the catalytic activity, physical integrity and metal retention capacity of MnOx coatings on quartz sand. Three operational schedules (continuous, 8 h off per day, 16 h off per day) were run in parallel. After 24 months, BET surface area of coatings was 71, 64, and 49 m²/g respectively, and Langmuir–Hinshelwood rate constants were 4.0, 3.6, and 2.5 × 10⁻³ L·m⁻²·min⁻¹. Mn retained within the bed increased under intermittent schedules due to partial desiccation and structural densification, raising head loss by 18% in the 16-h-off column. Coating XRD patterns shifted toward more crystalline MnO₂ phases under longer rest periods, which partly explains reduced surface area. Recommendations for minimum flushing duration before return-to-service are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02388",
+        "kind": "publication",
+        "title": "Influence of anionic surfactant presence on coagulation of C.I. Reactive Red 198 in synthetic textile rinse water",
+        "body": {
+          "recordId": "SYN-PUB-02388",
+          "field": "abstract",
+          "text": "Industrial textile rinse waters typically contain both residual reactive dye and anionic surfactants from washing auxiliaries. This study examined how sodium lauryl ether sulphate (SLES) at concentrations of 20–200 mg/L affects coagulation of C.I. Reactive Red 198 at 100 mg/L using ferric chloride. Zeta potential measurements demonstrated that SLES progressively stabilised dye-coagulant flocs at surfactant concentrations above 80 mg/L, reducing colour removal from 88% to 54%. Adding a cationic polyelectrolyte (polyDADMAC, 2–8 mg/L) as a coagulant aid partially restored performance, achieving 79% colour removal even at 200 mg/L SLES. Turbidity of treated effluent remained below 5 NTU across all conditions with polyelectrolyte addition. TOC reduction was modest (35–42%), indicating that dissolved organic load from surfactant fragments persists. Implications for sequential treatment design in dyeing facilities are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02373",
+        "kind": "publication",
+        "title": "Processing–property maps for extruded thermoplastic starch–sunflower protein films",
+        "body": {
+          "recordId": "SYN-PUB-02373",
+          "field": "abstract",
+          "text": "A central composite design was used to map the effect of barrel temperature (120–160 °C), screw speed (80–200 rpm), and sunflower protein concentrate content (0–25 wt%) on the mechanical and barrier properties of blown films produced from the extruded blends via a subsequent film blowing step. Seventeen experimental runs yielded response surfaces for tensile strength, elongation at break, Young's modulus, water vapour transmission rate (WVTR), and oxygen transmission rate (OTR). Tensile strength ranged from 7.2 to 16.8 MPa across the design space; OTR varied from 180 to 620 cm³·m⁻²·day⁻¹·bar⁻¹. Optimal conditions identified by desirability function (maximum strength and minimum OTR) were 148 °C, 145 rpm, and 18 wt% protein. At the optimum, predicted and experimental values agreed within 6%. Specific mechanical energy was modelled as a secondary response and found to increase linearly with screw speed but to show a quadratic relationship with protein content, with a minimum near 12 wt% attributed to lubrication effects of denatured protein at low concentration."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0321",
+        "kind": "project",
+        "title": "Kinetics and Catalyst Design for Manganese and Trace Metal Removal from Vojvodina Groundwater",
+        "body": {
+          "recordId": "SYN-PRJ-0321",
+          "field": "summary",
+          "text": "The project addressed the gap between laboratory-derived rate constants for Mn(II) oxidation and actual filter performance at Vojvodina waterworks, where high carbonate alkalinity, intermittent operation, and variable Fe/Mn ratios frequently cause non-compliant effluent. Work packages covered (i) fundamental kinetic characterisation of MnOx coatings on natural zeolite and quartz carriers, (ii) pilot-column testing at two municipal waterworks, and (iii) development of a design tool integrating mass-transfer and surface-reaction sub-models. The project supported two PhD students and produced seven peer-reviewed publications. A simplified calculation spreadsheet for filter sizing was delivered to the two waterworks partners as a practical outcome."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0322",
+        "kind": "project",
+        "title": "Affordable Packed-Bed Aeration and Filtration Technologies for Small Rural Water Systems in the Hungary–Serbia Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-0322",
+          "field": "summary",
+          "text": "AQUAPAKT brought together chemical engineers, civil engineers, and public health authorities from Novi Sad, Subotica, and Pécs to design, build, and evaluate low-cost aeration–filtration units suitable for settlements supplying fewer than 2 000 inhabitants from groundwater with elevated Fe, Mn, or As. Todorović led the work package on reactor design and media selection, coordinating bench-scale testing of three candidate media configurations before field installation of modular units at two pilot villages. Performance monitoring over 18 months showed consistent compliance with Serbian and Hungarian drinking-water standards for Fe and Mn. The project produced design guidelines adapted to local material availability and operator skill levels."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0607",
+        "kind": "project",
+        "title": "Aromatic and Medicinal Plant Residue Valorisation through Integrated Extraction and Separation Networks",
+        "body": {
+          "recordId": "SYN-PRJ-0607",
+          "field": "summary",
+          "text": "ARIANES addresses the underutilisation of spent plant biomass after essential oil distillation across the Hungary–Serbia cross-border region. The project combines steam and hydrodistillation optimisation (WP2, led by the Novi Sad team) with downstream recovery of polyphenols from spent biomass by pressurised liquid extraction (WP3, led by Hungarian partner). A shared pilot facility protocol was developed to allow cross-border operators to benchmark their processes. Enikő Varga leads WP2, responsible for standardising distillation protocols and generating yield and composition data for six target species. The project targets small and medium aromatic plant processing enterprises in both countries."
+        }
+      },
+      {
+        "recordId": "SYN-PAT-031",
+        "kind": "patent",
+        "title": "Process for Preparing MnOx-Coated Natural Zeolite Filter Granules with Enhanced Catalytic Activity for Manganese Removal from Drinking Water",
+        "body": {
+          "recordId": "SYN-PAT-031",
+          "field": "abstract",
+          "text": "A method for coating clinoptilolite zeolite granules (0.5–2.0 mm) with catalytically active MnOx layers by repeated immersion in aqueous KMnO₄ solution (5–20 g/L), controlled pH reduction to 5.5–6.5 to induce surface reduction and precipitation, and intermediate calcination at 200–250 °C. The procedure yields coatings with specific surface area above 45 m²/g and Mn loadings of 3–5% w/w reproducibly within four treatment cycles. Coated granules show first-order Mn(II) oxidation rate constants at least 2.5 times higher than equivalently coated quartz sand, with mechanical durability sufficient for standard backwash operation. The patent covers the preparation sequence, temperature and pH parameter ranges, and intended application in packed-bed drinking-water filters."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0254",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0254",
+            "field": "open_to",
+            "quote": "joint projects with water treatment equipment manufacturers or utilities",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0254",
+            "field": "open_to",
+            "quote": "contract research on filter media performance testing and optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

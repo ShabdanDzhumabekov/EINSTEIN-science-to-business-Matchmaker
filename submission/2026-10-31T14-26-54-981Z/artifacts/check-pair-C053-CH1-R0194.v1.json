@@ -1,0 +1,32 @@
+{
+  "ref": {
+    "artifactId": "check-pair-C053-CH1-R0194",
+    "version": 1
+  },
+  "kind": "check",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "pair-C053-CH1-R0194",
+      "version": 1
+    }
+  ],
+  "content": {
+    "taskId": "C053-CH1",
+    "researcherId": "R0194",
+    "assessment": {
+      "artifactId": "pair-C053-CH1-R0194",
+      "version": 1
+    },
+    "jev": 0.39,
+    "isKept": false,
+    "threshold": 0.9,
+    "model": "typesafe/jev-1.14",
+    "question": {
+      "instructions": "Do the quotes in `rationale` show that the researcher's own methods address the core technical problem in `task`, so that `jointProblem` is a credible joint research question to start? Gaps that are named in `risks` (another protocol, device or dataset) are expected for a new collaboration and are tested in the first experiment.",
+      "whenTrue": "The quoted evidence shows a method that addresses this task",
+      "whenFalse": "The quotes do not show a method that addresses this task"
+    }
+  }
+}

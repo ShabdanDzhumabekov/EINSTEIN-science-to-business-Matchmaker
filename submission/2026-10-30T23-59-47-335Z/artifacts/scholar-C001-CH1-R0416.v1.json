@@ -1,0 +1,243 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R0416",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0416",
+    "name": "Ksenija Hadžić",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Theoretical Computer Science",
+      "Formal Language Theory",
+      "Machine Learning and Inference",
+      "Network Protocol Analysis"
+    ],
+    "keywords": [
+      "automata theory",
+      "grammatical inference",
+      "regular grammars",
+      "passive learning",
+      "protocol inference",
+      "finite state machines",
+      "L* algorithm",
+      "RPNI algorithm",
+      "formal verification",
+      "network trace analysis"
+    ],
+    "openTo": [
+      "joint projects with companies on protocol analysis or network security",
+      "contract research on automaton-based behavioural modelling",
+      "student internships for master's or final-year undergraduate students",
+      "consulting on formal specification and verification of communication protocols",
+      "co-supervision of industrial PhD candidates working on network security or IoT"
+    ],
+    "bio": {
+      "recordId": "R0416",
+      "field": "bio",
+      "text": "Ksenija Hadžić completed her undergraduate and master's studies in mathematics and computer science at the University of Novi Sad, Faculty of Sciences, graduating in 2005 and 2007 respectively. She received her PhD in 2013 from the same institution, with a dissertation on passive inference of finite automata from labelled example strings. After a postdoctoral stay at the University of Ljubljana (2014–2015), she returned to Novi Sad as an assistant professor and was promoted to associate professor in 2020. Her group works on grammatical inference of regular and context-free languages, with a particular focus on deriving communication protocol models from network traces. She teaches courses on formal languages, automata theory, and algorithms. The group uses a small cluster of eight nodes for symbolic learning experiments and maintains an open corpus of protocol trace datasets."
+    },
+    "industryExperience": {
+      "recordId": "R0416",
+      "field": "industry_experience",
+      "text": "Hadžić collaborated with BEZ Systems d.o.o., a Novi Sad-based embedded systems company, on an anomaly detection pilot for SCADA protocol traffic between 2018 and 2020, contributing inference algorithms and evaluation methodology."
+    },
+    "notes": {
+      "recordId": "R0416",
+      "field": "notes",
+      "text": "Hadžić is particularly interested in working with companies that generate large volumes of network or protocol logs and need structured behavioural models for testing, monitoring, or certification purposes. She prefers project engagements where there is a defined research question rather than pure development work. The GInferLib library is freely available and can serve as a starting point for feasibility discussions."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02981",
+        "kind": "publication",
+        "title": "On the Minimal Consistent DFA Problem and Its Approximability",
+        "body": {
+          "recordId": "SYN-PUB-02981",
+          "field": "abstract",
+          "text": "The problem of finding a smallest deterministic finite automaton consistent with a given set of positive and negative strings is NP-hard. This paper revisits the approximability of Minimum Consistent DFA (MCDFA) under standard complexity-theoretic assumptions. We tighten a known inapproximability lower bound, showing that MCDFA cannot be approximated within a factor of n^(1/3 − ε) in polynomial time unless P = NP, where n is the total length of the input sample. The proof uses a reduction from graph colouring adapted to the automaton setting. We also describe a branch-and-bound exact solver that outperforms previous implementations on instances with up to 18 states, verified against a corpus of 3,400 randomly generated instances. Practical implications for grammatical inference pipelines that rely on minimality as a regulariser are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04997",
+        "kind": "publication",
+        "title": "Active Learning of Network Protocol State Machines Using Membership and Equivalence Queries",
+        "body": {
+          "recordId": "SYN-PUB-04997",
+          "field": "abstract",
+          "text": "Angluin's L* algorithm learns an unknown regular language by posing membership queries and equivalence queries to a teacher. We adapt this framework to learn state machines of application-layer network protocols, where a live server acts as the membership oracle and conformance testing acts as the approximate equivalence oracle. The approach is applied to four text-based protocols implemented by open-source servers. For each protocol, we measure the number of membership queries required until convergence, the size of the resulting hypothesis automaton, and the number of counterexamples returned during equivalence testing. Across all four protocols, learning converged within 2,100 to 14,700 membership queries and produced automata of 12 to 47 states. We discuss reset costs, timeouts, and non-determinism in server responses as practical obstacles and propose mitigations. The resulting models are validated against independently written RFC-compliant test suites."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03956",
+        "kind": "publication",
+        "title": "Automata-Theoretic Models in Formal Language Theory: A Pedagogical Survey",
+        "body": {
+          "recordId": "SYN-PUB-03956",
+          "field": "abstract",
+          "text": "This book chapter provides a structured introduction to automata-theoretic foundations of formal language theory intended for graduate students in mathematics and computer science. Topics covered include the Myhill–Nerode theorem, minimisation of DFAs, the Pumping Lemma for regular languages, closure properties, and the relationship between regular expressions and finite automata. Each section includes worked examples and a set of exercises graded by difficulty. The chapter also gives a brief account of learning-theoretic aspects, specifically the Gold limit-identification result for the class of regular languages from positive examples alone, motivating the use of negative examples or active query mechanisms. The exposition is self-contained, assuming only undergraduate-level discrete mathematics. The chapter is part of a regional collaborative textbook project involving universities from Serbia, Croatia, and Slovenia."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03206",
+        "kind": "publication",
+        "title": "Passive Inference of Regular Tree Languages from XML Document Corpora",
+        "body": {
+          "recordId": "SYN-PUB-03206",
+          "field": "abstract",
+          "text": "Finite tree automata generalise string automata to tree-structured inputs. This paper extends the RPNI state-merging strategy to infer regular tree automata from corpora of XML documents treated as ordered labelled trees. We evaluate the approach on three real-world XML corpora: a collection of 9,400 bibliographic records, a set of 4,200 configuration files, and a corpus of 7,800 scientific article metadata documents. Ground-truth schemas expressed as Document Type Definitions (DTDs) are used as reference models. The inferred tree automata correctly accepted 96–99% of held-out valid documents and rejected 88–93% of artificially corrupted counterexamples across the three corpora. Merging order heuristics modelled on EDSM are shown to reduce the size of the inferred automaton by 15–30% compared to canonical RPNI ordering. Running times remain below two minutes on a commodity workstation for all corpora tested."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04998",
+        "kind": "publication",
+        "title": "Detecting Anomalous Protocol Behaviour Using Inferred Automaton Models",
+        "body": {
+          "recordId": "SYN-PUB-04998",
+          "field": "abstract",
+          "text": "Once a finite automaton model of a protocol is inferred from normal traffic, it can serve as a baseline for anomaly detection: messages causing transitions absent from the model are flagged. We implement this principle and evaluate it on a dataset of 230,000 sessions from a SCADA communication protocol captured in a test environment, of which 4,800 sessions contain injected anomalies of five types (replay, truncation, out-of-order, field mutation, and session hijack simulation). The inferred DFA correctly flags anomalous sessions with a precision of 0.91 and a recall of 0.87 averaged across anomaly types. Replay and out-of-order anomalies are detected most reliably; field mutation is detected less well because it does not always alter the message-type sequence. We compare performance to a Hidden Markov Model baseline and a rule-based system, finding the automaton approach superior in precision at comparable recall levels."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04999",
+        "kind": "publication",
+        "title": "Sample Complexity Bounds for Passive Learning of Regular Languages with One-Sided Error",
+        "body": {
+          "recordId": "SYN-PUB-04999",
+          "field": "abstract",
+          "text": "We study the sample complexity of passive learning of regular languages in the PAC framework where learners are permitted only false-negative errors — that is, the hypothesis may reject strings in the target language but must not accept strings outside it. This one-sided error condition arises naturally in safety-critical protocol verification. We derive upper and lower bounds on the number of labelled examples sufficient and necessary for a consistent learner to achieve error at most ε with confidence at least 1 − δ. The upper bound, of order O(k² · n · log(1/δ) / ε), depends on k, the number of states of the minimal DFA, and n, the alphabet size. The lower bound construction uses a family of pairwise distinguishable automata to show that dependence on k is unavoidable. Connections to the VC dimension of DFA hypothesis classes are also established."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05000",
+        "kind": "publication",
+        "title": "GInferLib: A Python Library for Grammatical Inference of Finite Automata",
+        "body": {
+          "recordId": "SYN-PUB-05000",
+          "field": "abstract",
+          "text": "We present GInferLib, an open-source Python library providing implementations of seven grammatical inference algorithms for deterministic and nondeterministic finite automata, including RPNI, EDSM, L*, NL*, and three recent state-merging variants. The library offers a unified API for defining sample sets, running inference, inspecting intermediate hypothesis automata, and exporting results to standard formats including DOT, KISS, and a custom JSON schema. Benchmark results on 500 randomly generated regular languages show running times and accuracy figures consistent with published results in the original algorithm papers, validating the implementations. The library includes utilities for generating random DFAs, sampling strings, and computing standard metrics such as structural accuracy and Jaccard similarity between hypothesis and target. An interactive tutorial built with Jupyter notebooks is included in the repository. The library is intended primarily for researchers and graduate students."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05001",
+        "kind": "publication",
+        "title": "Learning Automaton Models of IoT Device Behaviour from Encrypted Traffic Metadata",
+        "body": {
+          "recordId": "SYN-PUB-05001",
+          "field": "abstract",
+          "text": "End-to-end encryption prevents direct inspection of protocol message content, but metadata features — packet sizes, inter-arrival times, and flow directions — remain observable. We investigate whether finite automaton models of IoT device communication behaviour can be inferred from such metadata alone. Twenty-two consumer IoT device types were placed in a controlled network testbed; traffic was captured over 72-hour periods under scripted usage scenarios. Message sequences were reconstructed from metadata clusters using a k-means procedure with k determined by a silhouette criterion. RPNI was applied to the resulting labelled sequences. The inferred automata reproduce 79–93% of transitions present in models derived from unencrypted reference captures of the same devices. Devices with highly regular behaviour (smart plugs, sensors) yielded better models than devices with irregular patterns (smart cameras during video streaming). The approach is evaluated on its suitability for network anomaly detection in encrypted environments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05002",
+        "kind": "publication",
+        "title": "Counterexample-Guided Refinement of Inferred Protocol Automata Using Fuzzing",
+        "body": {
+          "recordId": "SYN-PUB-05002",
+          "field": "abstract",
+          "text": "An inferred automaton model of a protocol is only as good as the coverage of its training traces. We propose a refinement loop in which a fuzzer generates candidate inputs that drive the live protocol implementation into states not represented in the current hypothesis automaton, collecting new labelled counterexamples that are fed back to the inference algorithm. The process iterates until no new counterexamples are found within a time budget. Applied to four open-source implementations of a file-transfer protocol, the loop produces automata 23–41% larger than those obtained from passive inference alone, with a corresponding increase in structural accuracy of 8–17 percentage points when compared against a manually constructed ground-truth model. Total fuzzing budget across all experiments was 48 CPU-hours. We characterise which protocol features are most likely to be missed by passive inference and most reliably recovered by fuzzing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05003",
+        "kind": "publication",
+        "title": "Probably Approximately Correct Identification of Minimal DFAs Under Restricted Query Models",
+        "body": {
+          "recordId": "SYN-PUB-05003",
+          "field": "abstract",
+          "text": "We examine a restricted active learning setting in which equivalence queries are replaced by statistical sampling: the learner draws random strings from a known distribution and observes their membership labels. This weakened query model is relevant when black-box testing of real systems cannot guarantee exact equivalence answers. We show that, for the class of languages accepted by DFAs of at most k states over an alphabet of size n, the number of samples required to achieve PAC identification with parameters (ε, δ) is Θ(k² log(k n / δ) / ε) under the uniform distribution over strings of bounded length. We also show that no consistent learner can do better than Ω(k log k / ε) samples in the worst case regardless of the string distribution. Experimental validation using GInferLib on synthetic targets confirms that empirical sample requirements track the theoretical bounds closely for k ≤ 25."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04288",
+        "kind": "publication",
+        "title": "A Corpus Study of Designer Intent Encoding in Commercial Game Level Data",
+        "body": {
+          "recordId": "SYN-PUB-04288",
+          "field": "abstract",
+          "text": "Understanding how human designers encode intent in level geometry is necessary for building generators that align with design goals. We manually annotated 620 levels from six released commercial-style games distributed under open licenses, tagging 14 categories of spatial intent including chokepoint placement, reward pacing, and difficulty escalation. Inter-annotator agreement reached Cohen's κ = 0.71 across three annotators. Statistical analysis reveals that chokepoint density correlates negatively with level width-to-length ratio (Pearson r = −0.43, p < 0.001) and that reward pacing patterns cluster into four archetypes by k-means on pacing-curve descriptors. We use these findings to propose a vocabulary of 14 soft-constraint templates that can be embedded in a CSP-based generator. Preliminary generation tests using three templates show that 73% of generated levels are classified into the intended archetype by a trained SVM classifier."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01685",
+        "kind": "publication",
+        "title": "Skalabilnost OCSP stapling mehanizma u opterećenim TLS okruženjima: merenja i ograničenja",
+        "body": {
+          "recordId": "SYN-PUB-01685",
+          "field": "abstract",
+          "text": "OCSP stapling prenet je u TLS 1.3 kao preferirani mehanizam provere statusa sertifikata, ali su njegova skalabilna ograničenja na strani servera nedovoljno istražena. Ovaj rad meri uticaj stapling operacija na propusnost TLS rukovanjem na serverima s različitim profilima sertifikata — kratkim, srednjim i dugim vekom trajanja. Testovi su sprovedeni na konfiguraciji s jednim poslužiteljem koji obrađuje do 20.000 TLS rukovanja u sekundi, koristeći nginx i prilagođeni omotač za OpenSSL. Mereno je zauzeće CPU-a, memorije i kašnjenje osvežavanja OCSP odgovora. Rezultati pokazuju da frekvencija osvežavanja OCSP odgovora direktno utiče na propusnost pri vrednostima ispod 30 sekundi perioda kešovanja, povećavajući CPU opterećenje za 9–17%. Rad predlaže adaptivni raspored osvežavanja zasnovan na tekućem opterećenju sistema."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05004",
+        "kind": "publication",
+        "title": "Preporučivanje podkast epizoda zasnovano na semantičkom ugrađivanju opisa: prototip i evaluacija sa korisnicima",
+        "body": {
+          "recordId": "SYN-PUB-05004",
+          "field": "abstract",
+          "text": "Razvijen je prototip sistema za preporučivanje podkast epizoda koji koristi semantička ugrađivanja opisa epizoda za računanje srodnosti sadržaja. Sistem je implementiran nad korpusom od 14 200 epizoda na srpskom jeziku. Evaluacija je sprovedena sa 87 dobrovoljnih korisnika u kontrolisanom okruženju, pri čemu su korisnici ocenjivali relevantnost prvih pet preporuka na skali od 1 do 5. Prosečna ocena relevantnosti iznosila je 3,82, što je statistički značajno bolje od nasumičnog i popularnosnog osnivača (p < 0,01). Ispitana je i tzv. hladni start situacija — epizode bez dovoljno istorije slušanja — i pokazano je da semantički pristup zadržava prihvatljive performanse i u tom slučaju. Rad raspravlja o ograničenjima sistema vezanim za dijalektalne varijante i žargon."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1055",
+        "kind": "project",
+        "title": "Automated Learning and Verification of Communication Protocol Models",
+        "body": {
+          "recordId": "SYN-PRJ-1055",
+          "field": "summary",
+          "text": "The project develops algorithms and tools for automatically constructing finite automaton models of communication protocols from network traffic, without access to protocol specifications. The main research directions are: improving the scalability of state-merging inference to protocols with large alphabets; integrating fuzzing-based counterexample generation into the inference loop; and establishing theoretical sample complexity guarantees for the resulting hybrid active-passive framework. A secondary objective is producing a verified automaton-based anomaly detector applicable to industrial control system traffic. The project involves collaboration with the School of Electrical Engineering in Belgrade and the Faculty of Informatics at Masaryk University in Brno. The team consists of four researchers at the University of Novi Sad plus two external collaborators."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1056",
+        "kind": "project",
+        "title": "Formal Models for IoT Device Behaviour Verification in Smart Infrastructure",
+        "body": {
+          "recordId": "SYN-PRJ-1056",
+          "field": "summary",
+          "text": "FORMIOT investigates the application of formally inferred finite automaton models to the problem of verifying expected behaviour of IoT devices deployed in smart-building and smart-city infrastructure. The project establishes a testbed of 30 representative consumer and industrial IoT devices, collects long-term traffic datasets under normal and fault-injected conditions, and evaluates multiple inference algorithms on their ability to produce accurate and compact behavioural models. A particular focus is on encrypted-traffic scenarios where only metadata is available. Results are intended to inform procurement guidelines for IoT devices in public-sector infrastructure in Vojvodina. The project involves a local engineering company as an industry partner providing device access and domain expertise."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0416",
+            "field": "open_to",
+            "quote": "co-supervision of industrial PhD candidates working on network security or IoT",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0416",
+            "field": "open_to",
+            "quote": "joint projects with companies on protocol analysis or network security",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0416",
+            "field": "open_to",
+            "quote": "contract research on automaton-based behavioural modelling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

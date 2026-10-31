@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “LinguaBot reports that about 18% of a sample of 12,000 real support queries from one bank client returned no useful result; its analysis attributed more than half of those misses to morphology or script confusion.” Also: “The company’s Elasticsearch setup uses a Croatian-oriented stemmer, while users mix Latin and Cyrillic even within words.” Proposed next steps: “Updates must avoid full re-indexing and continually expanding manual synonym lists.” These identify the concrete retrieval failures, their reported causes and the vocabulary-maintenance problem."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Updates must avoid full re-indexing and continually expanding manual synonym lists. Measure index operations, update time and linguist hours; require an agreed maintenance-hours ceiling, tooling/data costs within approximately EUR 8,000 and a testable prototype within six months.” Also: “Before implementation, establish protected data access, usable commercial licences, deployment limits, permitted initial index changes and maintenance ownership.” Open questions: “Can Nikolić confirm availability for this six-month joint project, with reserved company engineering and linguist hours, and clarify total-cost allocation including researcher compensation?” These make update behavior, maintenance effort, spending and timing explicit gates, while treating access, staffing and deployment details as prerequisites rather than assumed resources."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić’s work describes cross-script lemmatization and normalization inside tokens.” Also: “Her morphological-lexicon study reports lower paradigm correctness for borrowings than for common vocabulary: 78.6% versus 91.3%.” Our inference: “This suggests methodological fit, but corpus and social-media results do not establish support-retrieval performance. Banking and telecom terminology and within-word typos need direct testing; borrowing errors and meaning conflation could increase false matches.” These connect her documented methods to the company's morphology and script problems while identifying domain-transfer limits and the reported borrowing-quality trade-off."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “LinguaBot describes around 85,000 labelled query-response pairs across all clients and two in-house linguists who can annotate or validate solutions.” Proposed next steps: “Subject to agreement, Nikolić would guide morphology, normalization and error analysis; LinguaBot engineers would implement comparisons, and its linguists would validate relevance and paradigms within reserved hours.” Our inference: “Openness to joint projects does not establish a time commitment, company staffing or an agreed total budget.” These distinguish documented data and linguistic capacity from proposed research, implementation and validation roles and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Use permitted query-response pairs and knowledge-base documents, separating tuning from held-out evaluation; verify independence through duplicate, client and time checks.” Also: “Compare current Elasticsearch against an eight-configuration matrix: baseline, Serbian lemmatization, within-token normalization, paradigm expansion, each pair and all three. Define factor settings independently; hold documents and ranking settings constant. Select the best configuration on tuning data, whichever it is.” These specify inputs, the operational baseline, all factorial conditions, controlled retrieval settings and selection separate from held-out evaluation; unresolved access and evaluation details remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Linguists would judge every evaluation query, including non-misses, using a fixed usefulness rubric. Count each query once: miss rate is queries without useful results divided by all evaluated queries; unresolved judgments count as misses.” Also: “Proposed go/no-go requires its upper 95% confidence bound below 5% on a separate held-out sample from the original bank population, plus precision non-loss under the pre-agreed rule.” The design additionally requires “simultaneous 95% upper bank miss-rate bounds below 5% in every round.” Open questions require, before tuning, precision definitions including “the relevant-result count, returned-slot denominator, query-level averaging and treatment of empty returns” and “a nonnegative lower 95% confidence bound on the mean precision difference,” plus “separate acceptance thresholds, confidence rules and sufficient independent evaluation exposure for telecom, mixed-script and unseen-term populations.” Together with duplicate checks and “Missing evaluation data or insufficient evidence prevents a pass,” these define counting, adjudication and uncertainty for the company metric and make remaining precision, subgroup and maintenance thresholds prerequisites rather than implicit passes."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare current Elasticsearch against an eight-configuration matrix: baseline, Serbian lemmatization, within-token normalization, paradigm expansion, each pair and all three. Define factor settings independently; hold documents and ranking settings constant.” Potential benefits: “The experiment could identify which components reduce support-search misses and whether vocabulary updates remain practical without full re-indexing.” The full factorial comparison includes component combinations and controls documents and ranking, supporting the conditional component-level benefit without attributing retrieval gains to token-level accuracy alone."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Banking and telecom terminology and within-word typos need direct testing; borrowing errors and meaning conflation could increase false matches.” Also: “Query-time normalization and expansion could offer an incremental-update route, but Elasticsearch compatibility and avoidance of full re-indexing remain unvalidated.” Verified facts report “78.6% versus 91.3%” paradigm correctness for borrowings versus common vocabulary. Proposed next steps require protected access, commercial licences and deployment limits before implementation, while Open questions seek permissions, staffing and cost allocation. These cover the documented linguistic weakness, task transfer, false matches, update feasibility and operational unknowns without presenting unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional because Nikolić’s availability is unknown. Openness to joint projects does not establish a time commitment, company staffing or an agreed total budget.” Proposed next steps introduce roles with “Subject to agreement,” and Open questions ask: “Can Nikolić confirm availability for this six-month joint project, with reserved company engineering and linguist hours, and clarify total-cost allocation including researcher compensation?” These respect documented openness to joint projects without assuming availability or assigning an unaccepted commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could identify which components reduce support-search misses and whether vocabulary updates remain practical without full re-indexing.” For the researcher: “Subject to agreement and permissions, support-domain evaluation material could enable research on cross-script morphology, borrowing errors and the gap between linguistic accuracy and retrieval usefulness.” Both gains follow from the proposed retrieval comparisons and update tests and are framed as conditional possibilities, not guaranteed outcomes or data-sharing commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.88,
+        0.96,
+        0.99,
+        0.98,
+        0.84,
+        0.98
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

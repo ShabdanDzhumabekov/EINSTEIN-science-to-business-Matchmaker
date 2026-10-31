@@ -1,0 +1,306 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0700",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0700",
+    "name": "Дарко Тошић",
+    "faculty": "Институт БиоСенс",
+    "department": "Remote Sensing and GIS Group",
+    "fields": [
+      "Даљинска детекција и ГИС",
+      "Хидрометеорологија",
+      "Геостатистика",
+      "Картографија хазарда"
+    ],
+    "keywords": [
+      "конвективне падавине",
+      "фузија података даљинске детекције",
+      "радарска метеорологија",
+      "геостатистичка интерполација",
+      "картирање хазарда",
+      "просторно-временска анализа",
+      "поплавни ризик",
+      "метеоролошки радар",
+      "МХСС производи",
+      "екстремне падавине"
+    ],
+    "openTo": [
+      "заједнички пројекти са компанијама из области агро-осигурања и управљања ризиком",
+      "уговорна истраживања — QPE производи и картирање хазарда на захтев",
+      "консалтинг за процену хазарда екстремних падавина",
+      "приступ лабораторијској и теренској опреми (X-band радар, мрежа дистрометара)",
+      "менторство индустријских докторандуса",
+      "студентске праксе у области даљинске детекције и хидрометеорологије"
+    ],
+    "bio": {
+      "recordId": "R0700",
+      "field": "bio",
+      "text": "Дарко Тошић дипломирао је на Департману за географију, туризам и хотелијерство Универзитета у Новом Саду 2004. године, а докторат из геоинформатике одбранио је на Универзитету у Бечу 2011. године. Од 2012. године запослен је у Истраживачкој групи за даљинску детекцију и ГИС Института БиоСенс, где је 2021. унапређен у звање вишег научног сарадника. Група се бави просторно-временском анализом екстремних метеоролошких догађаја, фузијом вишеизворних података даљинске детекције и геостатистичком интерполацијом падавина. Тошић користи радарске, сателитске и плувиометријске мреже за картирање конвективних олуја високе резолуције. Изводи наставу на мастер студијама БиоСенса и менторише докторанде. Редовно користи опрему лабораторија за обраду хиперспектралних и радарских снимака."
+    },
+    "industryExperience": {
+      "recordId": "R0700",
+      "field": "industry_experience",
+      "text": "У периоду 2017–2019. сарађивао је са осигуравајућом кућом Агропрот д.о.о. из Новог Сада на пројекту зонирања премија за градобитно осигурање усева, у оквиру кога су коришћени радарски производи за процену учесталости и интензитета туче на нивоу катастарских парцела."
+    },
+    "notes": {
+      "recordId": "R0700",
+      "field": "notes",
+      "text": "Тошић у академској 2025/2026. години има смањено наставно оптерећење због руковођења теренским мерним кампањама у оквиру пројекта FLOODWISE-IPA; доступан је за нове сарадње, али са почетком рада не пре септембра 2025. Посебно заинтересован за сарадњу са компанијама које раде у области прецизне пољопривреде или управљања критичном инфраструктуром, где постоји конкретна потреба за просторним производима падавина."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-07834",
+        "kind": "publication",
+        "title": "Geostatistical merging of rain-gauge and C-band radar data over the Pannonian Plain: a variogram-based approach",
+        "body": {
+          "recordId": "SYN-PUB-07834",
+          "field": "abstract",
+          "text": "Accurate precipitation estimates over flat terrain such as the Pannonian Plain are constrained by the low density of surface rain-gauge networks and the range-dependent errors of single-polarisation C-band radars. This study applies ordinary kriging with external drift (KED) to merge hourly rain-gauge observations from 47 stations in Vojvodina with composited reflectivity data from the Serbian RHMSS radar network during the summer convective seasons of 2007–2009. Empirical variograms were fitted using an exponential model after systematic bias correction of the radar field via mean-field adjustment. Cross-validation against withheld gauge stations showed a reduction in root-mean-square error of 31% compared to radar-only estimates and 18% compared to gauge-only kriging. Spatial correlation ranges of 35–60 km were identified for convective events, substantially shorter than for stratiform precipitation. The merged product was tested against an independent flash-flood inventory for the Fruška Gora foothills, showing improved hit rates for events exceeding 20 mm h⁻¹. Results confirm that KED merging is viable operationally even with sparse station networks typical of the western Balkans."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07835",
+        "kind": "publication",
+        "title": "Просторна варијабилност интензитета конвективних олуја у Војводини на основу мреже дистрометара",
+        "body": {
+          "recordId": "SYN-PUB-07835",
+          "field": "abstract",
+          "text": "У раду је анализирана просторна варијабилност интензитета падавина током девет конвективних епизода у Војводини у периоду 2010–2011. на основу мреже од шеснаест оптичких дистрометара типа ОТТ Парсивел размештених на растојању 5–40 км. Измерени параметри расподеле капљица (DSD) коришћени су за проверу Z–R релација добијених за радарске снимке РХМЗС мреже. Утврђено је да стандардна Маршал–Палмерова релација потцењује акумулацију за 15–28% у највећим ћелијама организованих мезоскалних конвективних система. Предложена је регионално калибрисана релација Z = 270R¹·⁵², чијом применом је RMSE смањен на 2,4 mm у поређењу са 4,1 mm код стандардне релације. Резултати указују на значај регионалне калибрације за оперативну хидрологију."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07836",
+        "kind": "publication",
+        "title": "Detection of hail-bearing convective cells using dual-polarisation radar signatures and MSG SEVIRI infrared channels",
+        "body": {
+          "recordId": "SYN-PUB-07836",
+          "field": "abstract",
+          "text": "This study presents a cell-tracking algorithm that fuses dual-polarisation C-band radar parameters with Meteosat Second Generation SEVIRI brightness temperatures to identify hail-bearing convective cells over Serbia and northern Bosnia-Herzegovina. Radar-derived variables — differential reflectivity ZDR, co-polar correlation coefficient ρHV, and specific differential phase KDP — were combined with 10.8 µm and 6.2 µm channel data at 15-minute temporal resolution. A decision-tree classifier trained on 78 hail reports collected during 2011–2014 achieved a probability of detection of 0.81 and a false alarm ratio of 0.23 in leave-one-season-out validation. Detected cells were tracked using a modified TITAN algorithm over a 400 × 400 km domain. The resulting dataset of 312 hail-cell trajectories reveals a pronounced SW–NE advection corridor across the Pannonian sector, consistent with regional synoptic climatology. Cell life spans ranged from 18 to 94 minutes, with median maximum reflectivity of 58 dBZ. The fused approach outperformed single-source detection in both probability of detection and cell continuity."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07837",
+        "kind": "publication",
+        "title": "High-resolution precipitation accumulation maps from X-band radar for urban flash-flood assessment in Novi Sad",
+        "body": {
+          "recordId": "SYN-PUB-07837",
+          "field": "abstract",
+          "text": "A portable X-band polarimetric radar was deployed on the roof of the Faculty of Technical Sciences in Novi Sad to capture fine-scale precipitation structure over the city's 290 km² urban area during ten events in summer 2015. Scan-to-scan attenuation correction was applied using a ZPHI algorithm, and the resulting specific differential phase KDP fields were converted to rain rate with a power-law estimator calibrated against a co-located Pluvio² weighing gauge. Sub-hourly accumulation grids at 100 m × 100 m resolution were produced and ingested into a 1D urban drainage model of the Kisač storm-sewer network. Comparison with seven observed pipe-overflow locations showed that the X-band-derived inputs correctly flagged six exceedance events, whereas the nearest operational S-band radar at 68 km range missed two due to overshooting of shallow convective cells. The study demonstrates that local X-band deployment significantly improves lead time estimates for urban flash-flood warnings in medium-sized Central European cities."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07838",
+        "kind": "publication",
+        "title": "Spatio-temporal recurrence of extreme convective precipitation in the central Balkans derived from a 20-year radar climatology",
+        "body": {
+          "recordId": "SYN-PUB-07838",
+          "field": "abstract",
+          "text": "A 20-year archive (1998–2017) of composited C-band radar reflectivity from three operational Serbian radars was processed to derive a spatially continuous climatology of convective precipitation extremes. Reflectivity fields were converted to rain rates using a seasonally varying Z–R relationship, bias-corrected against 112 rain gauges, and aggregated to daily extremes. Return periods for 1-hour accumulations exceeding 30, 50, and 80 mm were estimated cell-by-cell using a generalised extreme-value (GEV) distribution fitted with L-moments. Bootstrapped uncertainty bounds at the 90% confidence level were mapped across a 10 × 10 km grid. The analysis identifies a statistically robust hot-spot zone along the southern margins of the Pannonian Plain where 50-year return-period hourly accumulations reach 72 mm, substantially higher than in adjacent mountainous terrain. Orographic lift along the Fruška Gora and Vršački Breg massifs modulates cell initiation but not maximum intensities. The resulting hazard maps are compared with insurance loss data from hail and flood events, showing qualitative agreement in the highest-risk zones."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07840",
+        "kind": "publication",
+        "title": "Fusion of multi-frequency passive microwave and infrared satellite retrievals for sub-daily precipitation estimation over the Dinaric–Pannonian transition zone",
+        "body": {
+          "recordId": "SYN-PUB-07840",
+          "field": "abstract",
+          "text": "Passive microwave (PMW) precipitation retrievals from the GPM constellation provide physically meaningful rain-rate estimates but suffer from low revisit frequency (2–4 h) over mid-latitudes. This paper presents a weighted blending scheme that combines half-hourly IMERG Late Run precipitation fields with SEVIRI infrared-based motion-vector extrapolations to produce 15-minute precipitation estimates over a 600 × 600 km domain spanning the Dinaric–Pannonian transition. Blending weights were determined by a spatially varying skill score derived from three years of gauge verification data. Against an independent 2020 verification dataset, the blended product reduced false alarm rates for events above 10 mm h⁻¹ by 22% relative to IMERG alone, while maintaining the spatial coherence of large-scale precipitation features. Systematic underestimation of deep convective cores, documented in earlier IMERG studies, was partially corrected by incorporating column-maximum reflectivity from operational radars as a secondary predictor. Seasonal analysis shows the largest skill gains in June–August, when fast-evolving supercell storms constitute a majority of extreme events in the study domain."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07841",
+        "kind": "publication",
+        "title": "Probabilistic hail hazard maps for agricultural insurance: a radar-based approach for Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-07841",
+          "field": "abstract",
+          "text": "Agricultural losses from convective hail in Vojvodina represent a recurrent economic hazard affecting the region's dominant cereal and vegetable production. This study develops probabilistic hail hazard maps at 1 km resolution using a 15-year (2005–2019) archive of dual-polarisation radar data processed with the cell-tracking algorithm described in earlier work. For each identified hail trajectory, kinetic energy proxies were derived from maximum expected size of hail (MESH) estimates. Kernel density estimation was applied to produce continuous hail frequency surfaces. GEV distribution fitting at pixel level yielded 10-, 25-, and 50-year return-period MESH maps. The maps were validated against parcel-level crop loss reports provided by the insurance cooperative Vojvodina Agro-Protect covering 14,000 parcels over 2015–2019. Concordance between high-hazard zones and observed loss frequencies was evaluated with the Spearman rank correlation (ρ = 0.67, p < 0.001). Spatial clustering of high-hazard areas is statistically significant (Moran's I = 0.43), supporting the use of these maps for zone-based premium differentiation rather than uniform province-wide rates."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07842",
+        "kind": "publication",
+        "title": "Evaluation of a random forest downscaling model for daily precipitation from ERA5 reanalysis over the Carpathian–Pannonian region",
+        "body": {
+          "recordId": "SYN-PUB-07842",
+          "field": "abstract",
+          "text": "ERA5 reanalysis provides spatially complete precipitation fields at 31 km resolution, but this coarseness is insufficient for catchment-scale hazard assessment. This paper evaluates a random forest (RF) model that statistically downscales ERA5 daily precipitation to a 5 km grid using terrain elevation, land cover, distance to major water bodies, and upper-air predictors as features. Training used 780 station-days from a dense network in Hungary, Romania, and Serbia (2000–2015), with spatial cross-validation across five geographic blocks. In the validation period (2016–2020) the RF model achieved a continuous rank probability score 18% lower than bilinear interpolation and correctly reproduced 91% of the spatial pattern variance for events exceeding the 95th percentile. However, peak intensities in convective grid cells were systematically underestimated by 12–19%, a limitation attributed to the representativeness mismatch between point gauge observations and ERA5 large-scale fields. The model is made available as a Python package with pre-trained weights for the study domain."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07843",
+        "kind": "publication",
+        "title": "Резултати примене производа мреже метеоролошких радара РХМЗС у систему за рано упозорење на поплаве у Сремском округу",
+        "body": {
+          "recordId": "SYN-PUB-07843",
+          "field": "abstract",
+          "text": "У раду су приказани резултати двогодишњег тестирања система за рано упозорење на изненадне поплаве у Сремском округу заснованог на оперативним производима радарске мреже Републичког хидрометеоролошког завода Србије. Систем комбинује QPE (quantitative precipitation estimation) производе у реалном времену са хидролошким моделом ТОПМОДЕЛ прилагођеним за шест малих сливова брдске Посавине. Прагови упозорења дефинисани су на основу фреквентне анализе падавина из дугогодишњег архивског низа. У периоду тестирања (2021–2022) систем је генерисао 23 упозорења, од чега је 19 коресподирало са забележеним надлевањима водотокова или пријавама штете. Средње предупређујуће време износило је 47 минута. Лажне узбуне везују се претежно за рефлективност из прелетних конвективних ћелија ниске основе облака које нису дале значајне падавине на тлу. Предложено је увођење дополнске верификације путем мреже нисконошћних сензора влажности тла."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04466",
+        "kind": "publication",
+        "title": "Assessing sub-kilometre spatial coherence of convective rainfall using a dense disdrometer transect across the Fruška Gora ridge",
+        "body": {
+          "recordId": "SYN-PUB-04466",
+          "field": "abstract",
+          "text": "A transect of 22 optical disdrometers spaced 800 m apart along a 17.5 km line perpendicular to the Fruška Gora mountain ridge was operated during May–September 2022 to characterise the spatial decorrelation of convective rainfall intensity at sub-kilometre scales. During 38 convective events, inter-instrument correlation coefficients for 5-minute intensities were computed as a function of separation distance and storm advection direction. The correlation length for 5-minute intensities exceeded 8 km for stratiform rainfall but dropped to 2.1 km for intense convective cells (R > 20 mm h⁻¹). An anisotropy ratio of 1.6 was identified between the ridge-parallel and ridge-perpendicular directions, attributable to orographic forcing of cell alignment. These results impose quantitative limits on the validity of spatial interpolation at spacings used by most national rain-gauge networks. Implications for the accuracy of kriging-merged products at sub-hourly time steps are discussed with reference to the error budgets reported in our earlier Pannonian Plain merging study."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07844",
+        "kind": "publication",
+        "title": "A benchmark dataset and baseline models for convective storm cell segmentation from composite radar reflectivity in South-East Europe",
+        "body": {
+          "recordId": "SYN-PUB-07844",
+          "field": "abstract",
+          "text": "Automated segmentation of convective storm cells from composite radar reflectivity is a prerequisite for downstream hazard mapping workflows, yet no publicly available labelled dataset exists for the South-East European radar domain. This paper describes the construction of CONVBALK-2800, a dataset of 2,800 manually annotated composite reflectivity images from three operational C-band radars in Serbia covering 2010–2023, with polygonal labels for 14,620 individual convective cells. Three baseline segmentation approaches — watershed transform, U-Net, and an ensemble of watershed with a gradient-boosting cell-property classifier — are evaluated in five-fold cross-validation. The U-Net achieves the highest intersection-over-union (IoU) of 0.74 for cells with equivalent radar reflectivity factor ≥ 45 dBZ but degrades to IoU = 0.51 for weak-cell fringe areas. Processing time per composite frame is 1.2 s on a single GPU, suitable for near-real-time use. The dataset and training scripts are released under an open licence to facilitate reproducible research. Known limitations include temporal clustering of labels and under-representation of nocturnal events."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07845",
+        "kind": "publication",
+        "title": "Temporal trends in convective precipitation intensity over the Pannonian Basin inferred from a homogenised multi-radar archive, 1998–2023",
+        "body": {
+          "recordId": "SYN-PUB-07845",
+          "field": "abstract",
+          "text": "Detection of long-term trends in convective precipitation intensity from radar archives is hampered by hardware upgrades, site relocations, and calibration discontinuities. This study applies a homogenisation procedure to the 25-year (1998–2023) Serbian composite radar archive using parallel rain-gauge records and reanalysis data as reference series. After correction for six identified inhomogeneity breaks, Mann–Kendall trend tests were applied to annual 99th-percentile hourly rain-rate series at each 4 × 4 km grid cell. Statistically significant increasing trends (p < 0.05) in hourly extremes are found over 34% of the Pannonian domain, concentrated in the northern and eastern sectors, with median Sen's slope of +0.18 mm h⁻¹ per decade. No significant trend was detected in event frequency, suggesting intensification rather than increased occurrence. Comparison with ERA5-derived convective available potential energy (CAPE) trends shows spatial correspondence (Pearson r = 0.61), supporting a thermodynamic interpretation. These findings have direct implications for updating the probabilistic hazard maps produced in earlier work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07847",
+        "kind": "publication",
+        "title": "Combining Sentinel-2 and PlanetScope imagery for fine-scale riparian habitat mapping in a braided gravel-bar reach",
+        "body": {
+          "recordId": "SYN-PUB-07847",
+          "field": "abstract",
+          "text": "Braided river reaches with active gravel bars, pioneer herbaceous vegetation, and narrow willow scrub strips pose particular challenges for satellite-based habitat mapping because the relevant landscape elements are often narrower than 10–20 m. This study tested the feasibility of fusing 3 m PlanetScope SuperDove multispectral imagery with 10 m Sentinel-2 time-series composites to map seven riparian habitat classes in a 40 km reach of the upper Ibar River, which represents an unusual morphologically active corridor in the otherwise lowland-dominated Serbian river network. Fusion was performed through a spatial-temporal adaptive reflectance fusion model (STARFM) adapted for the 8-band PlanetScope configuration. An OBIA workflow using eCognition was applied to the fused product, yielding a map with overall accuracy of 91.3% verified against 320 independent field polygons collected in summer 2021. Pioneer herb communities on gravel bars, which were undetectable in Sentinel-2-only classifications, were correctly identified with a producer's accuracy of 79%. Processing time for the fusion step on the group's workstation cluster was approximately 4 hours per scene pair. The results support the use of commercial 3 m imagery for national-scale habitat monitoring programmes where budget allows targeted acquisitions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07848",
+        "kind": "publication",
+        "title": "L-band vs. C-band InSAR for deformation retrieval on vegetated loess slopes: a case study from the Srem region",
+        "body": {
+          "recordId": "SYN-PUB-07848",
+          "field": "abstract",
+          "text": "Agricultural and orchard-covered loess slopes in the Srem region decorrelate rapidly at C-band, limiting persistent scatterer density to sparse built structures. This study compared 34 ALOS-2 PALSAR-2 Fine Beam Double acquisitions (L-band, 2015–2021) with 78 Sentinel-1 C-band acquisitions over the same area and period. L-band coherence exceeded 0.35 over 71 % of vegetated pixels compared to only 19 % for C-band in summer months. Distributed scatterer processing with MintPy using SqueeSAR-style covariance estimation yielded 4 800 measurement points ha⁻¹ from L-band against 620 from C-band across orchard parcels. Both datasets agreed within 1.5 mm/yr over bare-soil reference parcels. L-band detected a previously unreported creep zone of −4.3 mm/yr on a north-facing loess scarp, invisible in C-band products. The study quantifies the coherence benefit of L-band for vegetated loess and discusses practical constraints related to ALOS-2 data availability and cost."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04469",
+        "kind": "publication",
+        "title": "Temporal comparison of peri-urban expansion in three Vojvodina towns using Ikonos and WorldView-1 imagery, 2003–2010",
+        "body": {
+          "recordId": "SYN-PUB-04469",
+          "field": "abstract",
+          "text": "Change between 2003 Ikonos (4 m multispectral) and 2010 WorldView-1 (0.5 m panchromatic) imagery was assessed for peri-urban zones of Subotica, Zrenjanin and Sombor to quantify the rate and spatial pattern of new construction at urban fringes. Pre-processing included sensor-specific radiometric normalisation, histogram matching, and co-registration to sub-pixel accuracy (RMSE < 0.4 m). Binary change maps derived from post-classification comparison were validated against municipal building permit records and field survey points. Across the three towns, a combined 178 ha of new built-up area was detected, of which 41 % lacked corresponding building permit records, indicating informal construction activity. Growth was markedly asymmetric: southern peripheral zones showed the highest expansion rates, coinciding with proximity to road infrastructure and lower agricultural land values. Seasonal spectral variability between acquisition dates introduced a false-alarm rate of approximately 7 %, which was reduced to 3 % after applying a minimum mapping unit of 100 m²."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07849",
+        "kind": "publication",
+        "title": "Transfer of a convolutional feature extractor trained on Tehran informal settlements to European peri-urban contexts",
+        "body": {
+          "recordId": "SYN-PUB-07849",
+          "field": "abstract",
+          "text": "A compact convolutional neural network (CNN) trained on a labelled VHR dataset of informal settlements in Tehran (approximately 18,000 image patches at 0.5 m) was fine-tuned with 1,200 locally labelled patches from Novi Sad and tested on held-out scenes from Sofia and Niš. The pre-trained feature extractor, frozen except for the final two layers, achieved 85.7 % F1-score on the Novi Sad test set after fine-tuning with only 600 local samples, compared with 74.3 % when trained from scratch on the same 600 samples. Applying the fine-tuned model to the Sofia and Niš scenes without any additional local training yielded F1 scores of 81.2 % and 83.6 % respectively, suggesting reasonable cross-city transferability within the post-socialist built environment context. Domain shift was partially attributed to differences in rooftop colour conventions and parcel shape regularity. The paper quantifies the minimum local sample size required to exceed the from-scratch baseline at each target site."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0102",
+        "kind": "project",
+        "title": "Convective Precipitation Hazard Mapping for the Serbian Pannonian Sector Using Multi-Source Remote Sensing",
+        "body": {
+          "recordId": "SYN-PRJ-0102",
+          "field": "summary",
+          "text": "Пројекат је имао за циљ израду висококвалитетних карата хазарда конвективних падавина за северну Србију интеграцијом тридесетогодишњег радарског архива, плувиометријских мрежа и сателитских производа. У оквиру пројекта развијени су алгоритми за детекцију и праћење олујних ћелија, хомогенизацију дугих радарских архива и процену ретких повратних периода екстремних сатних падавина. Резултати су коришћени за ажурирање карата поплавног ризика у сарадњи са РХМЗС и Управом за управљање ванредним ситуацијама. Пројектом је финансирано запошљавање двоје истраживача на позицијама постдокторанада и набавка додатних дистрометара за теренска мерења."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0103",
+        "kind": "project",
+        "title": "Cross-Border Flash Flood Early Warning System for the Sava and Tisa Catchments",
+        "body": {
+          "recordId": "SYN-PRJ-0103",
+          "field": "summary",
+          "text": "Интеррег IPA пројекат окупља партнере из Србије и Мађарске у циљу развоја прекограничног система раног упозорења на изненадне поплаве у сливовима Саве и Тисе. Тошић руководи радним пакетом задуженим за QPE производе и просторну интерполацију падавина. Систем у реалном времену преузима оперативне радарске производе обеју земаља, меша их са плувиометријским подацима и прослеђује хидролошком моделу који управља мађарски партнерски универзитет. Крајњи корисници система су локалне самоуправе и ватрогасно-спасилачке службе у Бачкој и Барањи. Планирано је да систем буде у пилот-оперативном режиму до краја 2025. године."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0124",
+        "kind": "project",
+        "title": "High-Resolution Agroclimatic Downscaling for Sustainable Agriculture in the Pannonian and Dinaric Zones",
+        "body": {
+          "recordId": "SYN-PRJ-0124",
+          "field": "summary",
+          "text": "The project developed and validated a multi-source satellite downscaling pipeline producing 500 m agroclimatic grids for Serbia. Core deliverables included the benchmark dataset of 18 agroclimatic indices (2001–2020), a Web Map Service interface, and a documented open-source Python processing chain. Field validation campaigns were conducted across three growing seasons in Vojvodina and the Mačva basin. The project also assessed the utility of the derived grids as forcing data for DSSAT and AquaCrop crop simulation models, finding that spatially disaggregated inputs reduced maize yield simulation error by 9–14 % relative to nearest-station forcing. Three researchers from BioSense and two doctoral students were involved."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0133",
+        "kind": "project",
+        "title": "Cross-Border UAV Data Infrastructure for Sustainable Agriculture in the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0133",
+          "field": "summary",
+          "text": "DRONAGRI-IPA established a shared UAV remote sensing data infrastructure and processing capacity across Hungarian and Serbian partner institutions to support sustainable agriculture monitoring in the Danube–Tisa–Danube canal region. The project created joint field campaign protocols, a shared raw-data archive accessible to both country teams, and a harmonised quality-control procedure for multispectral and RGB UAV products. Anna Turčanová contributed the spectral calibration methodology and led the object-based canopy classification component for the Serbian field sites covering approximately 2 400 ha of arable land near Zrenjanin and Kikinda."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1747",
+        "kind": "project",
+        "title": "Multi-Source Satellite Monitoring of Flood Dynamics and Wetland Hydroperiods in the Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PRJ-1747",
+          "field": "summary",
+          "text": "PANNFLOOD aimed to produce the first systematic, SAR-based hydroperiod climatology for wetland complexes in the Serbian portion of the Pannonian Plain. The project generated a continuous Sentinel-1 inundation record spanning 2015–2024, validated against in-situ canal gauge data, drone surveys, and field campaigns at six representative wetland sites. A coupled SAR–hydrological modelling component was developed to handle shallow inundation under dense canopy, building on the water-cloud model inversion methods developed in Zorić's earlier work. Outputs include open-access raster datasets, a technical report submitted to the Provincial Secretariat for Nature Protection, and peer-reviewed publications. The project employed one postdoctoral researcher and two PhD students."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0700",
+            "field": "open_to",
+            "quote": "менторство индустријских докторандуса",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0700",
+            "field": "open_to",
+            "quote": "заједнички пројекти са компанијама из области агро-осигурања и управљања ризиком",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0700",
+            "field": "open_to",
+            "quote": "уговорна истраживања — QPE производи и картирање хазарда на захтев",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "non_english"
+    ]
+  }
+}

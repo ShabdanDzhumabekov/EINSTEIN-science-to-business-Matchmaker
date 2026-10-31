@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C114-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T12-43-03-800Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C114-CH2",
+    "companyId": "C114",
+    "companyName": "ŠtitNet d.o.o.",
+    "sector": "Cybersecurity",
+    "location": "Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C114-CH2",
+        "field": "text",
+        "text": "We want to offer clients a threat-intelligence feed tailored to Serbian and regional threat actors, but extracting structured indicators from Serbian-language dark-web forums and local hacker communities is something none of our analysts have time for."
+      },
+      "detail": {
+        "recordId": "C114-CH2",
+        "field": "detail",
+        "text": "A growing share of the threats we see against Serbian clients originate from, or are discussed in, Serbian and regional-language online communities — forums, Telegram channels, paste sites, and a small number of dark-web boards that use Serbian Cyrillic. Our analysts read Serbian, but they do not have time to monitor these sources manually and then convert what they find into structured indicators — IPs, domains, file hashes, TTPs — that can go into MISP and be pushed to client sensors. We have tried using generic commercial threat feeds, but those feeds are tuned for Western European and North American targets and miss a lot of the regional activity we care about. We have collected roughly eight months of raw scraped text from publicly accessible parts of some of these communities, stored as plain text files, but it has never been processed in any structured way. The constraint is that some of this text is informal, uses slang, and mixes Latin and Cyrillic script inconsistently. A good outcome is a pipeline that runs at least daily, extracts indicators with acceptable precision, and feeds them into our existing MISP instance with minimal analyst review per batch."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C114",
+        "field": "about",
+        "text": "ŠtitNet d.o.o. was founded in Novi Sad in 2014 by a small team of network engineers who had spent the previous decade working inside Serbian banks and telecoms. The founding idea was simple: mid-sized companies in Serbia face the same threats as large enterprises but have none of the internal security staff to deal with them. Ten years later we operate a 24/7 Security Operations Centre from our offices in the Science Technology Park and monitor networks for clients across finance, energy, healthcare, and manufacturing.\n\nOur team of 28 includes analysts, incident responders, threat hunters, and infrastructure engineers. We do not resell foreign platforms under a local label — we build our own detection logic on top of open and commercial tooling, tuned specifically for the threat landscape our clients actually face. Most of our clients are Serbian companies with between 200 and 2,000 employees. A handful operate across the Western Balkans.\n\nWhat separates us from larger regional MSSPs is that our clients speak directly to the analyst handling their environment, not to a ticket queue. Response times and detection quality are things we measure publicly in quarterly reports we share with every client. We have no marketing department. Almost every new client has come through a referral."
+      },
+      "products": [
+        {
+          "recordId": "C114",
+          "field": "products",
+          "text": "24/7 SOC monitoring with dedicated analyst contact"
+        },
+        {
+          "recordId": "C114",
+          "field": "products",
+          "text": "Incident response and digital forensics retainer"
+        },
+        {
+          "recordId": "C114",
+          "field": "products",
+          "text": "Managed SIEM deployment and tuning"
+        },
+        {
+          "recordId": "C114",
+          "field": "products",
+          "text": "Vulnerability management and periodic penetration testing"
+        },
+        {
+          "recordId": "C114",
+          "field": "products",
+          "text": "Regulatory compliance gap assessment (NIS2 and domestic frameworks)"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "Wazuh SIEM"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "Elastic Stack (log aggregation and search)"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "MISP threat intelligence platform"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "Zeek network traffic analysis"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "OpenCTI for indicator management"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "Ansible for SOC infrastructure automation"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "Python-based detection rule pipeline"
+        },
+        {
+          "recordId": "C114",
+          "field": "tech",
+          "text": "TheHive for incident case management"
+        }
+      ],
+      "plans": {
+        "recordId": "C114",
+        "field": "plans",
+        "text": "ŠtitNet intends to achieve its first signed contract with an EU-based client by the end of 2025, initially targeting Croatian and Slovenian companies with Serbian operational subsidiaries. Longer term, the company plans to grow the SOC team to 40 analysts and expand the compliance assessment practice into a standalone revenue line."
+      },
+      "rdCapacity": {
+        "recordId": "C114",
+        "field": "rd_capacity",
+        "text": "We can allocate one to two analysts for up to six hours per week to support a collaborative project, alongside our lead infrastructure engineer who manages the Elastic and MISP stack."
+      },
+      "pastCollaborations": {
+        "recordId": "C114",
+        "field": "past_collaborations",
+        "text": "ŠtitNet ran a three-month data-sharing pilot with Balkan Cyber Exchange, a regional non-profit threat-sharing community, to test MISP federation between member organisations."
+      }
+    }
+  }
+}

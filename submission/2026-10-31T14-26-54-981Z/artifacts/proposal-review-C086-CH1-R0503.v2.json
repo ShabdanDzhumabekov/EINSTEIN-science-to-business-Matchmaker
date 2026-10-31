@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C086-CH1-R0503",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C086-CH1-R0503",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C086-CH1-R0503",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows.” Proposed next steps: “Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow” and “a versioned roadmap covering key storage, signature flows, hybrid policy, compatibility and measured trade-offs.” These connect the constrained KL-HSM signing migration to concrete integration and roadmap outputs rather than a generic PQC benchmark."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “resource use and performance within pre-agreed numerical limits under the frozen specification below”; “Missing specifications or insufficient evidence mean unresolved, not pass”; “Propose months three through twelve for integration and a versioned roadmap”; and “Bound effort, budget, access and confidentiality/licensing terms; prioritise KL-HSM hardware, scheduling justified SLE97 comparisons within two-kit availability or negotiating additional units.” Open questions: “Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?” These make hardware fit and access explicit prerequisites, bound staffing and resources before commitment, and retain the twelve-month delivery requirement."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić's signature study used an STM32F407 Cortex-M4: Falcon-512 used less verification stack but more signing time than Dilithium-2. Separate Dilithium work found compiler-dependent timing leakage. Her hybrid HSM prototype combined ECDH and Kyber key exchange, not hybrid signing.” Our inference: “earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware” and “The published verification-memory versus signing-cost trade-off motivates separate signing-latency and memory measurements, not forecasts from published timings.” These tie her documented implementation methods and reported trade-offs to the proposed measurements while explicitly limiting transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts document the company's firmware and modest R&D capacity and the researcher's signature, leakage and hybrid-HSM work. Proposed next steps: “Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement.” Open questions: “Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?” and “Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?” These distinguish documented capabilities from proposed work allocations and unconfirmed resources."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose an eight-week experiment on one agreed KL-HSM variant with its production toolchain”; “Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads”; and “Separate tuning and held-out evaluation workloads, verify independence, and select the best configuration on tuning data.” Open questions require agreement on “signing versus update-verification scope, ML-DSA parameters, resource and performance limits, hybrid policy, PKCS#11 consumers, client verifiers and the proposed statistical and leakage-screen procedures.” These specify inputs, baseline, compared conditions and independent evaluation, with unresolved execution choices explicitly prerequisite to acceptance."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage”; “Proposed go/no-go requires all correctness/interoperability tests passing, resource use and performance within pre-agreed numerical limits under the frozen specification below, and no detected leakage in its adequately powered screen”; “Before evaluation, freeze an acceptance specification defining workloads, operating conditions, repeats, numerical ceilings and floors, and confidence levels”; “Require the one-sided upper confidence bound for p99 latency below its ceiling and lower bound for throughput above its floor”; and “Define the leakage test threshold, sample size, minimum detectable effect and positive-control sensitivity criterion.” The additional rules “Judge the best configuration against these criteria, not superiority over another method” and “unresolved specifications or inadequate precision block go/no-go” make company-relevant acceptance conditional on agreed measurement definitions and sufficient statistical evidence, rather than relative benchmark success."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps compare alternatives “on one agreed KL-HSM variant with its production toolchain” and require an acceptance specification defining “workloads, operating conditions, repeats”. Our inference states that earlier results are “not forecasts from published timings” and that “signing policy, PKCS#11 integration and client verifier compatibility need separate validation.” Proposed next steps further state “functional success would not establish production security or certification.” These limit conclusions to measured feasibility and trade-offs under agreed conditions, without attributing results to independently untested architectural or security factors."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware”; “Compiler-dependent leakage is a material risk; resource optimisation could conflict with security hardening”; and “Nikolić's current availability is unknown.” Proposed next steps: “An insensitive screen cannot pass” and “Include certification change-impact review and agreed side-channel/fault testing; unresolved requirements block production-readiness claims.” Open questions cover hardware access, staffing, budget, verifier requirements and current certification status. These identify the main methodological, implementation, interoperability and delivery risks without converting unknowns into facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Nikolić's stated participation interests include joint projects with companies developing HSMs.” Our inference: “This joint-project proposal is conditional because Nikolić's current availability is unknown.” Open questions: “Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?” These support the joint-project format while leaving actual participation and effort unconfirmed; no declined role is assigned."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies” and “Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware, using target-hardware measurements to study resource, toolchain and security trade-offs.” These are conditional gains supported by the pilot's target-hardware integration and measurements, not guarantees of product readiness or participant commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.85,
+        0.82,
+        0.98,
+        0.85,
+        0.96,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

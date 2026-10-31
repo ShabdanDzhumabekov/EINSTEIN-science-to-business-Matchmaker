@@ -1,0 +1,209 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T12-43-03-800Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Where should script normalization be applied—during indexing, querying, or both—to improve cross-script and mixed-script Serbian contract retrieval in PostgreSQL without unacceptable precision or latency costs? The first experiment would compare these configurations against the existing search on representative, relevance-judged company queries and contracts, explicitly testing ambiguous transliterations, names and mixed-script tokens while measuring missed matches, ranking quality and tail latency.",
+    "rationale": [
+      {
+        "text": "His research directly addresses token canonicalization for Serbian cross-script retrieval, with evaluation on legal documents.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has investigated query-side transliteration expansion, providing an alternative to rebuilding the index.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "This paper studies the effect of automatically expanding queries with their transliteration variants before submission to an inverted index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work explicitly evaluates normalization's retrieval-quality and latency trade-offs, relevant to the company's response-time requirement.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "We measure mean reciprocal rank, P@5, and end-to-end latency at the 50th, 90th, and 99th percentiles on a server cluster of four nodes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has applied search-customization experience with a Novi Sad legal-tech company, beyond benchmark research.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His transliteration research examines exception handling rather than assuming deterministic rules are sufficient for every token.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01686",
+            "field": "abstract",
+            "quote": "Deterministic rule-based transliteration between Serbian Cyrillic and Latin scripts handles the majority of tokens correctly, but fails on foreign loanwords, abbreviations, and alphanumeric strings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must integrate with the existing PostgreSQL full-text search pipeline; compatibility with its tokenization and indexing must be established rather than assumed.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "PostgreSQL with full-text search for document storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "The root cause is that our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Coverage must include mixed-script documents and ambiguous Latin-to-Cyrillic mappings, not just whole-document transliteration.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search overhead must remain within a company-approved latency budget; the currently qualitative requirement needs a numerical acceptance threshold.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit one backend engineer's six-week allocation and the researcher's capacity for only a small industrial engagement; his actual start date remains unknown.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The engagement needs a clearly defined, sufficiently large Serbian corpus and a genuine research comparison, not merely routine software implementation.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Dragić preferira saradnju s kompanijama koje imaju jasno definisan i dovoljno veliki tekstualni korpus na srpskom jeziku",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Corpus access and experimental deployment must respect the company's internal information-security policy and existing private-cloud environment; specific access permissions still need agreement.",
+        "sources": [
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "ISO 27001-aligned internal information security policy (self-assessed)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on a private cloud hosted in Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Results from court decisions, web search and news workloads do not validate performance on this company's contracts or PostgreSQL configuration. The first experiment must test this transfer under representative data and load.",
+      "Canonicalization can conflate distinct terms, while ambiguous digraphs, foreign names, abbreviations and alphanumeric identifiers may still produce missed or incorrect matches; exception-focused relevance judgments are necessary.",
+      "The estimated one-in-five failure rate comes from a January 2024 log sample and may not represent current traffic or isolate script mismatch from parsing, morphology and other search failures.",
+      "Researcher start-date availability is unknown despite stated capacity for a small engagement. Integration, reindexing and evaluation may exceed the backend engineer's six-week allocation.",
+      "Company corpus size, relevance-label availability, permitted data access, production workload, hardware headroom and project budget are unknown; these could block meaningful evaluation or deployment.",
+      "Existing reusable tools may require PostgreSQL-specific adaptation, and new contract terminology may require ongoing exception-rule maintenance."
+    ],
+    "questions": [
+      "Can the researcher commit to a small joint project within the company's six-week engineering window, and how much time can he allocate?",
+      "What budget, deliverables and division of implementation, annotation and evaluation responsibilities can both parties agree?",
+      "How many contracts and queries are available, how much script mixing occurs, and can legal-domain reviewers label relevance and ambiguous transliteration cases?",
+      "What access to contracts and logs is permitted, and must all experiments run inside the company's private cloud with anonymized or redacted data?",
+      "Which PostgreSQL version, text-search configurations, dictionaries and indexes are used, and where do parsing and normalization currently occur?",
+      "What are current query volumes and p50, p95 and p99 latencies, and what numerical latency, relevance and missed-match thresholds would define an acceptable pilot?",
+      "Can the company reproduce the January 2024 finding on current traffic and distinguish script mismatches from parsing failures or genuinely absent terms?",
+      "What downtime, reindexing time, storage overhead and rollback procedures are acceptable, and are the researcher's normalization tools available under suitable licenses?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

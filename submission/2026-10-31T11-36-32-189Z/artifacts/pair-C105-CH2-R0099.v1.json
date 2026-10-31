@@ -1,0 +1,210 @@
+{
+  "ref": {
+    "artifactId": "pair-C105-CH2-R0099",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C105-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C105-CH2-R0099",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can workload-aware resource sizing and scheduling reduce GenovaMed’s Python/Snakemake star-allele pipeline toward below EUR 3 per sample and ideally under 90 minutes per 24-sample batch without changing clinical call accuracy? The first experiment would profile a representative baseline batch and replay candidate configurations against it, testing whether scheduling methods studied on other workloads transfer to this pipeline before considering production deployment.",
+    "rationale": [
+      {
+        "text": "Popović’s workload-characterisation research supports an evidence-led investigation of bottlenecks rather than assuming alignment and allele calling dominate resource consumption.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01331",
+            "field": "abstract",
+            "quote": "Statistical properties analysed include inter-arrival time distributions, job size (CPU × memory × duration) distributions, diurnal and weekly periodicity, and user-level burstiness.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His batch-scheduling research provides a relevant starting point for heterogeneous-resource experiments, including experience using bioinformatics-cluster traces; its simulation results do not establish performance on this clinical pipeline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01322",
+            "field": "abstract",
+            "quote": "A Longest-Processing-Time-first (LPT) strategy is adapted for the online setting using a lazy migration rule that avoids excessive job movement between machines.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01322",
+            "field": "abstract",
+            "quote": "parameters estimated from a three-month trace of a bioinformatics cluster at the University of Pécs.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience addresses CPU, memory-bandwidth and storage heterogeneity, making it relevant to testing whether different resource configurations suit different pipeline stages.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0082",
+            "field": "summary",
+            "quote": "The project developed theoretical foundations and practical algorithms for scheduling in distributed systems where nodes differ in CPU architecture, memory bandwidth, and storage speed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He brings applied VM-placement and capacity-planning experience that complements his scheduling research.",
+        "sources": [
+          {
+            "recordId": "R0099",
+            "field": "industry_experience",
+            "quote": "Popović served as a part-time technical consultant to a Novi Sad-based managed hosting company for eighteen months (2017–2018), advising on VM placement policy and capacity planning models.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Experiments must represent the existing Python/Snakemake cloud pipeline and its operating cadence: 24-sample batches, twice daily on weekdays. Benchmarking a different workload would not establish production suitability.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "tech",
+            "quote": "In-house star-allele calling pipeline (Python, Snakemake) running on cloud VMs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "Our bioinformatics pipeline takes a batch of 24 samples from raw sequencing reads to a final star-allele call in roughly four to six hours.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We run two batches a day on weekdays",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluate cost and end-to-end runtime together against the company’s stated targets; below EUR 3 per sample is the cost goal, while under 90 minutes is an ideal runtime target, not a promised outcome.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "A good outcome would be getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Clinical accuracy must not be degraded, and any production change must be handled within the laboratory’s accredited quality-management and clinical-review processes.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "without touching the clinical accuracy of the calls.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "about",
+            "quote": "Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Access to retained samples and operational traces must respect the existing ethics approval and an agreed anonymisation and access protocol; the supplied evidence does not establish permission to transfer genomic data.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a set of retained clinical samples held under ethics approval",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0099",
+            "field": "notes",
+            "quote": "willing to share anonymised traces for joint research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0099",
+            "field": "notes",
+            "quote": "he has an established anonymisation protocol suitable for GDPR compliance.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope implementation and validation around the company’s limited staff allocation and approximately EUR 8,000 annual discretionary R&D budget.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a small discretionary R&D budget of approximately 8,000 EUR per year.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any faculty-testbed experiments must accommodate off-peak access rather than assume dedicated infrastructure.",
+        "sources": [
+          {
+            "recordId": "R0099",
+            "field": "notes",
+            "quote": "His group's OpenStack testbed (16 nodes) is available to partners during off-peak periods.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The scheduling evidence comes from simulations, academic clusters and other application workloads, not GenovaMed’s star-allele pipeline. The initial profiling-and-replay experiment must test this transfer gap.",
+      "No supplied evidence establishes expertise in clinical star-allele validation or Snakemake-specific optimisation. GenovaMed’s bioinformatics and clinical specialists would need to own domain-specific correctness checks.",
+      "The actual bottlenecks are unconfirmed. Serial algorithmic work, storage I/O or caller limitations could leave little scope for scheduling improvements, making the combined cost and runtime targets unattainable.",
+      "Researcher availability and committed project effort are unknown despite open participation and the stated availability of two PhD students for collaborative work.",
+      "Cloud provider, instance types, pricing breakdown, storage and transfer charges, and interruption behaviour are unknown. Faculty-testbed savings may not translate into commercial-cloud savings.",
+      "Existing ethics approval and the researcher’s trace-anonymisation protocol do not by themselves establish permission or sufficient protection for sharing clinical sequencing data.",
+      "A delivery deadline and detailed funding allocation are unknown; benchmarking, integration and clinical change control could exceed the available budget or staff capacity."
+    ],
+    "questions": [
+      "Can Popović confirm his availability, weekly effort, proposed student involvement and a feasible joint-project start date and duration?",
+      "Can GenovaMed provide the Snakemake DAG, tool and reference versions, representative batch characteristics, per-step logs, resource measurements and an itemised cloud bill?",
+      "Which provider, VM types, storage arrangements and deployment restrictions apply, and are spot instances, alternative VM configurations or workflow-level parallelism acceptable?",
+      "What representative validation set, reference calls and acceptance criteria will establish unchanged clinical accuracy, including difficult CYP2D6 cases, and who approves production changes?",
+      "Which traces and sequencing data may be accessed, under what ethics and contractual permissions, and must all patient-level data remain in GenovaMed’s environment?",
+      "How should the EUR 3 target account for storage, data transfer, retries and failed batches, and does the 90-minute target include provisioning, input transfer and final report preparation?",
+      "What portion of the EUR 8,000 annual budget is available for research effort, benchmarking compute and validation, and what delivery deadline and stop/go criteria should govern the initial profiling experiment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C105-CH2",
+    "researcherId": "R0099",
+    "inputs": [
+      {
+        "artifactId": "business-C105-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C105-CH2-R0099",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "proposal-C013-CH2-R0700",
+    "version": 3
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0700",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C013-CH2-R0700",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Testing field-level hail exposure for Vojvodina farm pricing",
+    "facts": [
+      {
+        "text": "The company reports hail claims about 18% above its loss assumption over three summers, municipality-level hail loadings, and three full claim years with geo-tagged loss data for about 1,200 farm policies.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "Hail claims on Vojvodina farm property have been running about 18% above our loss assumption for the past three summers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "Our current approach is to rate by municipality and apply a single hail loading per municipality",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company says a large share of farm addresses identify settlements rather than coordinates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company receives daily five-kilometre weather grids. Tošić’s published hail method used dual-polarisation radar to produce one-kilometre hazard maps, validated against parcel-level crop losses.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07841",
+            "field": "abstract",
+            "quote": "This study develops probabilistic hail hazard maps at 1 km resolution using a 15-year (2005–2019) archive of dual-polarisation radar data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-07841",
+            "field": "abstract",
+            "quote": "The maps were validated against parcel-level crop loss reports provided by the insurance cooperative Vojvodina Agro-Protect covering 14,000 parcels over 2015–2019.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company describes difficulty turning spatial analysis into automatic pricing inputs; its technology includes a Python batch pipeline for quarterly rating-factor refresh.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has no dedicated research unit. Its four-person pricing team and six-person IT team divide their time between operational support and new development.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Tošić lists openness to company joint projects in agricultural insurance and risk management. His notes state availability for new collaborations no earlier than September 2025 and field-campaign leadership obligations.",
+        "sources": [
+          {
+            "recordId": "R0700",
+            "field": "open_to",
+            "quote": "заједнички пројекти са компанијама из области агро-осигурања и управљања ризиком",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0700",
+            "field": "notes",
+            "quote": "доступан је за нове сарадње, али са почетком рада не пре септембра 2025.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0700",
+            "field": "notes",
+            "quote": "због руковођења теренским мерним кампањама у оквиру пројекта FLOODWISE-IPA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher’s radar–satellite hail-cell study reported probability of detection of 0.81 and false alarm ratio of 0.23 in leave-one-season-out validation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-07836",
+            "field": "abstract",
+            "quote": "achieved a probability of detection of 0.81 and a false alarm ratio of 0.23 in leave-one-season-out validation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The crop-hail work suggests a strong starting point, but one-kilometre hazard mapping does not establish exact field-level intensity or transfer to buildings. False hail identification remains a risk.",
+      "Better locations and hail observations could improve pricing differentiation. Asset values, coverage, vulnerability and loss development could also explain excess claim costs; spatial association alone would not establish causation.",
+      "This joint-project proposal is conditional on confirming Tošić’s current availability and allocation. A retrospective pilot likely fits company capacity better than immediate production deployment."
+    ],
+    "proposedActions": [
+      "Use the three claim years and about 1,200 policies; reserve tuning/evaluation storms or seasons and verify storm, policy and spatial independence. Select configurations on tuning data. Define severity error as |observed/priced mean cost per confirmed hail claim − 1|, with comparable coverage and developed losses. Add loss-per-exposure error: |observed/priced hail loss per earned policy-year − 1|, including non-claiming policies; agree exposure accounting before evaluation. Proposed go/no-go for the best configuration, whichever wins: both errors lower than municipality rating and upper 95% uncertainty bounds at most 10%, overall, separately for crops/buildings, and within each tuning-selected underpriced segment, including location-error perturbations. Require at least 95% correct asset-to-hazard-cell links against independently verified parcel boundaries and storm footprints, with matching protocols agreed beforehand. Require licensed observations adequate for field matching and automatic Python pricing-input generation. Insufficient independent claims or exposure records, missing building evaluation, or unverifiable matching means no pass. These are negotiation targets, not commitments.",
+      "Propose eight weeks after access and availability confirmation: two for feasibility, four for modelling, two for evaluation and handover. Company pricing staff would reconcile claims, exposures and assumptions; IT would support secure extracts and a repeatable quarterly-input dry run. Tošić would lead hail reconstruction and uncertainty validation. Agree workload, budget and maintenance ownership first; renegotiate if suitable observations or independent evaluation records are unavailable. Document location confidence, hazard uncertainty and segment calibration in the prototype.",
+      "Compare municipality rating and a controlled matrix: existing-grid matching, improved locations alone, hail-specific estimates alone, both; define factor levels independently and hold other pricing inputs constant. Before splitting, agree claim deduplication and independent hail confirmation. Audit locations without inventing settlement coordinates. Bound unresolved labels/locations conservatively; no pass if exclusions determine conclusions. Restrict acceptance to represented populations; test crop/building transfer against independent damage evidence. Account for storm clustering in uncertainty; insufficient evidence cannot pass."
+    ],
+    "questions": [
+      "Can Tošić confirm interest in this specific joint project, current capacity and a feasible start consistent with his stated scheduling restriction?",
+      "Can the company provide parcel boundaries or verified asset locations for claiming and non-claiming policies, clarify loss-geotag meaning, and supply event dates, asset classes, pricing assumptions, coverage, developed losses and earned exposure records?",
+      "What hail indicators does MeteoVoj supply, and can suitable historical radar and independent hail-damage evidence be licensed across all three years and the portfolio territory?",
+      "Can both sides agree the proposed severity, loss-per-exposure, segment-calibration and location-matching criteria, exposure denominator, independent samples, uncertainty procedures, represented populations, staff allocation, budget, data-protection approvals and named pricing/IT maintenance owners before evaluation?"
+    ],
+    "benefits": {
+      "company": "The pilot could distinguish useful spatial pricing differentiation from an aggregate pricing adjustment, checking both claim severity and total losses per insured exposure. It could identify where location quality or other loss drivers prevent defensible conclusions.",
+      "researcher": "Subject to agreement and data access, Tošić could test transfer of crop-hail methods to mixed farm-property risks using historical losses, non-claiming exposures and uncertain policy locations."
+    },
+    "markdown": "# Testing field-level hail exposure for Vojvodina farm pricing\n\n## Verified facts\n- The company reports hail claims about 18% above its loss assumption over three summers, municipality-level hail loadings, and three full claim years with geo-tagged loss data for about 1,200 farm policies. [F1]\n- The company says a large share of farm addresses identify settlements rather than coordinates. [F2]\n- The company receives daily five-kilometre weather grids. Tošić’s published hail method used dual-polarisation radar to produce one-kilometre hazard maps, validated against parcel-level crop losses. [F3]\n- The company describes difficulty turning spatial analysis into automatic pricing inputs; its technology includes a Python batch pipeline for quarterly rating-factor refresh. [F4]\n- The company has no dedicated research unit. Its four-person pricing team and six-person IT team divide their time between operational support and new development. [F5]\n- Tošić lists openness to company joint projects in agricultural insurance and risk management. His notes state availability for new collaborations no earlier than September 2025 and field-campaign leadership obligations. [F6]\n- The researcher’s radar–satellite hail-cell study reported probability of detection of 0.81 and false alarm ratio of 0.23 in leave-one-season-out validation. [F7]\n\n## Potential benefits\n- For the company: The pilot could distinguish useful spatial pricing differentiation from an aggregate pricing adjustment, checking both claim severity and total losses per insured exposure. It could identify where location quality or other loss drivers prevent defensible conclusions.\n- For the researcher: Subject to agreement and data access, Tošić could test transfer of crop-hail methods to mixed farm-property risks using historical losses, non-claiming exposures and uncertain policy locations.\n\n## Our inference\n- The crop-hail work suggests a strong starting point, but one-kilometre hazard mapping does not establish exact field-level intensity or transfer to buildings. False hail identification remains a risk.\n- Better locations and hail observations could improve pricing differentiation. Asset values, coverage, vulnerability and loss development could also explain excess claim costs; spatial association alone would not establish causation.\n- This joint-project proposal is conditional on confirming Tošić’s current availability and allocation. A retrospective pilot likely fits company capacity better than immediate production deployment.\n\n## Proposed next steps\n- Use the three claim years and about 1,200 policies; reserve tuning/evaluation storms or seasons and verify storm, policy and spatial independence. Select configurations on tuning data. Define severity error as |observed/priced mean cost per confirmed hail claim − 1|, with comparable coverage and developed losses. Add loss-per-exposure error: |observed/priced hail loss per earned policy-year − 1|, including non-claiming policies; agree exposure accounting before evaluation. Proposed go/no-go for the best configuration, whichever wins: both errors lower than municipality rating and upper 95% uncertainty bounds at most 10%, overall, separately for crops/buildings, and within each tuning-selected underpriced segment, including location-error perturbations. Require at least 95% correct asset-to-hazard-cell links against independently verified parcel boundaries and storm footprints, with matching protocols agreed beforehand. Require licensed observations adequate for field matching and automatic Python pricing-input generation. Insufficient independent claims or exposure records, missing building evaluation, or unverifiable matching means no pass. These are negotiation targets, not commitments.\n- Propose eight weeks after access and availability confirmation: two for feasibility, four for modelling, two for evaluation and handover. Company pricing staff would reconcile claims, exposures and assumptions; IT would support secure extracts and a repeatable quarterly-input dry run. Tošić would lead hail reconstruction and uncertainty validation. Agree workload, budget and maintenance ownership first; renegotiate if suitable observations or independent evaluation records are unavailable. Document location confidence, hazard uncertainty and segment calibration in the prototype.\n- Compare municipality rating and a controlled matrix: existing-grid matching, improved locations alone, hail-specific estimates alone, both; define factor levels independently and hold other pricing inputs constant. Before splitting, agree claim deduplication and independent hail confirmation. Audit locations without inventing settlement coordinates. Bound unresolved labels/locations conservatively; no pass if exclusions determine conclusions. Restrict acceptance to represented populations; test crop/building transfer against independent damage evidence. Account for storm clustering in uncertainty; insufficient evidence cannot pass.\n\n## Open questions\n- Can Tošić confirm interest in this specific joint project, current capacity and a feasible start consistent with his stated scheduling restriction?\n- Can the company provide parcel boundaries or verified asset locations for claiming and non-claiming policies, clarify loss-geotag meaning, and supply event dates, asset classes, pricing assumptions, coverage, developed losses and earned exposure records?\n- What hail indicators does MeteoVoj supply, and can suitable historical radar and independent hail-damage evidence be licensed across all three years and the portfolio territory?\n- Can both sides agree the proposed severity, loss-per-exposure, segment-calibration and location-matching criteria, exposure denominator, independent samples, uncertainty procedures, represented populations, staff allocation, budget, data-protection approvals and named pricing/IT maintenance owners before evaluation?",
+    "taskId": "C013-CH2",
+    "researcherId": "R0700",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0700",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C013-CH2-R0700",
+        "version": 1
+      }
+    ]
+  }
+}

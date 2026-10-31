@@ -1,0 +1,67 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Erić's published work reports that superimposed thermal cycling during mechanical fatigue alters crack initiation and growth in butt-welded S275JR plates, and that in S355 cruciform joints peak longitudinal weld-toe residual stress of +287 MPa relaxed to +61 MPa after 1000 cycles at 180 MPa.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Initial peak longitudinal residual stress averaged +287 MPa in the as-welded state. After 1000 cycles at 180 MPa, surface residual stresses had relaxed to +61 MPa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.36; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "which is outside the −40 °C structural-steel conditions in its published evidence",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04482",
+            "field": "abstract",
+            "quote": "mechanical fatigue (R = 0.05, ΔP = 18 kN) combined with slow thermal cycling between −25 °C and +15 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The researcher's published evidence is not limited to −40 °C structural-steel tests: it also includes thermo-mechanical cycling between −30 °C and +20 °C and between −25 °C and +15 °C, which overlaps the company's 2–6 °C regime more closely. The genuine novelty gap is the wet/condensation cold-store environment and mild-steel hollow-section T-joints, so reword the benefit to state that gap rather than labelling the prior work as '−40 °C conditions'.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

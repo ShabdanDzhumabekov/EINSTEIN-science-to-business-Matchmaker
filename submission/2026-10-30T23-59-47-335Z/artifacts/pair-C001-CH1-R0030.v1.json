@@ -1,0 +1,211 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0030",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0030",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an unsupervised, drift-aware anomaly detection pipeline learn site-specific normal behaviour from unlabelled Modbus TCP and BACnet/IP traffic and raise explainable alerts that stay usable when a site's operating behaviour changes? The collaboration would test this by adapting Vojnović's log and stream anomaly methods to ArmaturaSec's traffic archives and measuring false-positive behaviour against expert-reviewed normal periods and any controlled injections.",
+    "rationale": [
+      {
+        "text": "Vojnović has a research grounding in unsupervised clustering for distributed system log analysis, directly relevant to learning normal behaviour without attack labels.",
+        "sources": [
+          {
+            "recordId": "R0030",
+            "field": "bio",
+            "quote": "dissertation on unsupervised clustering methods for distributed system log analysis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work includes adaptive thresholding under non-stationary distributions, which addresses the site-specific baseline drift ArmaturaSec needs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00350",
+            "field": "abstract",
+            "quote": "threshold adaptation scheme based on extreme value theory (EVT)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has evaluated methods on industrial SCADA and PLC logs from water, heating and food-processing facilities, indicating familiarity with OT data quirks.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00348",
+            "field": "abstract",
+            "quote": "logs collected from two SCADA systems in a regional water treatment facility and a district heating network",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00352",
+            "field": "abstract",
+            "quote": "PLC diagnostic logs recording motor current deviations, sensor timeouts, and safety interlock triggers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has benchmarked stream processing engines for real-time log anomaly detection, relevant to the latency and throughput constraints of on-device deployment.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00347",
+            "field": "abstract",
+            "quote": "compares Apache Flink, Apache Storm, and a custom lightweight engine for deploying log anomaly detection models in a streaming context",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience with analyst-facing triage presentation, relevant to explaining alerts to plant managers.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00351",
+            "field": "abstract",
+            "quote": "A user-facing triage interface ranks suspicious chains by graph anomaly score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her stated preference for industry partnerships with real operational log datasets under NDA matches ArmaturaSec's traffic archives.",
+        "sources": [
+          {
+            "recordId": "R0030",
+            "field": "notes",
+            "quote": "prefers industry partnerships that include access to real operational log datasets, even under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The detector must work without labelled malicious traffic, so the design cannot rely on supervised classifiers trained on attack examples.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "It must learn a site-specific normal baseline, raise flags on drift, and be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec can provide traffic archives and firmware code only under NDA and can assign one to two engineers part-time.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "one to two engineers part-time to a collaborative project, with access to our traffic archives",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The target is Modbus TCP and BACnet/IP protocol traffic on embedded Linux appliances, with a dedicated security processor planned for the fifth hardware variant so inference does not affect packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Modbus TCP and BACnet/IP protocol parsing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Embedded Linux (custom Yocto build)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher capacity is limited for new large commitments until mid-2026.",
+        "sources": [
+          {
+            "recordId": "R0030",
+            "field": "notes",
+            "quote": "has limited capacity for new large commitments until mid-2026",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: the researcher's published evidence is on logs, traces and PLC diagnostic logs, not on Modbus TCP/BACnet/IP packet captures; protocol-level anomaly detection must be tested in the first experiment.",
+      "No confirmed malicious traffic means evaluation cannot rely on supervised attack labels; success criteria using expert review, known incidents or controlled injections must be agreed.",
+      "A prior supervised classifier produced too many false positives; the new method could still generate alert volumes that clients switch off.",
+      "On-device inference and packet-forwarding latency constraints may rule out heavier models, and some cited methods use GPU/Kafka infrastructure not present in the appliance.",
+      "Explainability to plant managers is a hard requirement and may constrain model choice.",
+      "Researcher availability is unknown and notes indicate limited capacity until mid-2026.",
+      "Data access under NDA and client consent may limit how much traffic can be shared or used for benchmarking.",
+      "ArmaturaSec has one engineer reading about anomaly detection for six months; limited ML engineering depth may slow iteration."
+    ],
+    "questions": [
+      "What PCAP or flow-level data can be shared under NDA, and what normal-period metadata (topology, maintenance windows, firmware updates, seasonal schedules) accompanies it?",
+      "Are there any known incidents, maintenance reports or operator notes that can serve as weak validation signals even if no confirmed attack captures exist?",
+      "What are the exact deployment hardware, memory and latency limits for ProtoSense and the planned fifth hardware variant?",
+      "Which site and protocol (Modbus TCP or BACnet/IP) should be the first pilot, and what false-positive rate would clients tolerate?",
+      "How should alerts be explained to plant managers, and what output format would fit ProtoSense?",
+      "Can you confirm your availability and capacity for a joint project given three co-supervised PhD students and limited capacity until mid-2026?",
+      "What NDA/IP terms would apply to data, models and resulting code, and how would client consent be obtained?",
+      "What support can ArmaturaSec provide for data engineering and model integration, given one to two part-time engineers?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0030",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0030",
+        "version": 1
+      }
+    ]
+  }
+}

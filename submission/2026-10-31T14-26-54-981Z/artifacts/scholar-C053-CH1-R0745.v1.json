@@ -1,0 +1,166 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0745",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0745",
+    "name": "Aleksandar Marić",
+    "faculty": "Faculty of Technology",
+    "department": "Department of Chemical Engineering",
+    "fields": [
+      "chemical engineering",
+      "separation processes"
+    ],
+    "keywords": [
+      "membrane filtration",
+      "fouling",
+      "wastewater treatment",
+      "process intensification"
+    ],
+    "openTo": [
+      "industrial PhD supervision",
+      "joint projects"
+    ],
+    "bio": {
+      "recordId": "R0745",
+      "field": "bio",
+      "text": "Aleksandar Marić is a Full Professor in the Department of Chemical Engineering at the Faculty of Technology, University of Novi Sad. His research focuses on membrane filtration, fouling mitigation, wastewater treatment, and process intensification in industrial settings. He has made significant contributions to understanding fouling mechanisms in ceramic and polymeric membranes, and to the development of cleaning and pretreatment strategies for food-industry effluents. Professor Marić has served as a consultant to several food processing factories, advising on wastewater line optimization and regulatory compliance. He is an advocate for industrial–academic collaboration and actively welcomes joint projects and industrial PhD supervision in his fields of expertise."
+    },
+    "industryExperience": {
+      "recordId": "R0745",
+      "field": "industry_experience",
+      "text": "Consultant to food factories on wastewater lines."
+    },
+    "notes": {
+      "recordId": "R0745",
+      "field": "notes",
+      "text": ""
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08238",
+        "kind": "publication",
+        "title": "Ultrasound-assisted cleaning cuts membrane fouling in dairy wastewater",
+        "body": {
+          "recordId": "SYN-PUB-08238",
+          "field": "abstract",
+          "text": "Membrane fouling remains a primary operational challenge in dairy wastewater treatment, leading to flux decline, increased energy consumption, and frequent membrane replacement. This study investigates the application of low-frequency ultrasound as an in-situ cleaning strategy to mitigate fouling in polymeric ultrafiltration membranes processing dairy effluents. Experiments were conducted at ultrasound frequencies of 25 kHz and 40 kHz under controlled transmembrane pressure and crossflow velocity conditions. Fouling layer composition was characterized by scanning electron microscopy, ATR-FTIR spectroscopy, and hydraulic resistance analysis. Results demonstrated that ultrasound-assisted cleaning reduced irreversible fouling resistance by up to 62% compared to hydraulic backwashing alone, with the 25 kHz treatment yielding superior flux recovery rates. A reversibility index was introduced to quantify cleaning efficiency across repeated fouling–cleaning cycles. The findings further showed that ultrasound treatment did not compromise membrane integrity over ten operational cycles. The study concludes that ultrasound-assisted cleaning is a viable, energy-efficient method for extending membrane service life in dairy wastewater applications, offering practical guidance for industrial implementation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08239",
+        "kind": "publication",
+        "title": "Modelling fouling in ceramic membranes",
+        "body": {
+          "recordId": "SYN-PUB-08239",
+          "field": "abstract",
+          "text": "Fouling of ceramic membranes in industrial wastewater streams represents a persistent obstacle to the broader adoption of membrane-based separation processes. This work presents a comprehensive mathematical modelling framework to describe fouling dynamics in ceramic microfiltration membranes under variable operating conditions. The model integrates standard blocking laws with a cake filtration sub-model extended to account for compressibility effects observed in particulate-rich food-industry effluents. Experimental validation was performed using synthetic suspensions of varying particle size distributions and real dairy effluents processed on tubular alumina membranes. The model accurately predicted flux decline profiles across a range of transmembrane pressures (0.5–2.5 bar) and temperatures (15–45 °C), with an average relative error below 8%. A sensitivity analysis identified initial particle concentration and membrane surface charge as the most influential parameters governing fouling rate. The proposed framework provides a predictive tool suitable for process design and operational optimisation of ceramic membrane filtration units in food and beverage processing environments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08240",
+        "kind": "publication",
+        "title": "Crossflow microfiltration of vegetable oil wastewater: flux behaviour and fouling indices",
+        "body": {
+          "recordId": "SYN-PUB-08240",
+          "field": "abstract",
+          "text": "Vegetable oil processing generates large volumes of effluent rich in suspended solids, emulsified fats, and surface-active compounds that pose significant challenges for conventional wastewater treatment. This study examines the performance of polymeric polysulfone membranes in crossflow microfiltration of sunflower oil mill effluent, with emphasis on flux behaviour over extended operating periods. Fouling indices including the modified fouling index and resistance-in-series parameters were evaluated under systematically varied crossflow velocities and transmembrane pressures. Results indicated that emulsified oil droplets constitute the primary foulant, forming a compressible gel layer that dominates hydraulic resistance. Pre-screening of the feed stream through a 200 µm mesh reduced total fouling resistance by 34%. Chemical oxygen demand (COD) removal exceeded 85% after ultrafiltration polishing, indicating potential for effluent reuse in non-contact cooling circuits. An empirical correlation linking fouling index to feed oil concentration was derived and validated against three independent datasets. The findings provide actionable design criteria for membrane units treating vegetable oil processing wastewater in food industrial parks."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08241",
+        "kind": "publication",
+        "title": "Process intensification via membrane-integrated evaporation for whey concentration",
+        "body": {
+          "recordId": "SYN-PUB-08241",
+          "field": "abstract",
+          "text": "Whey, a major by-product of cheese manufacturing, contains valuable proteins and lactose yet is frequently discharged as effluent due to the high cost of conventional concentration technologies. This study proposes and evaluates a process-intensified hybrid system coupling nanofiltration membrane stages with mechanical vapour recompression evaporation for whey concentration. The integrated configuration was modelled using steady-state mass and energy balances, and the resulting process flowsheet was optimised using a multi-objective genetic algorithm minimising specific energy consumption and capital cost simultaneously. Simulation results showed that the hybrid process reduces specific energy demand by 41% relative to standalone evaporation while achieving a total solids concentration of 45% w/w. A laboratory-scale proof-of-concept trial confirmed model predictions within 7% deviation. Membrane fouling behaviour during whey nanofiltration was characterised, and a cleaning-in-place protocol optimised for caustic and enzymatic agents was established. The study demonstrates that process intensification through membrane–evaporation integration offers a technically and economically viable route for sustainable whey valorisation in small-to-medium dairy enterprises."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08242",
+        "kind": "publication",
+        "title": "Effect of operating pH on fouling layer formation in ultrafiltration of fruit juice effluents",
+        "body": {
+          "recordId": "SYN-PUB-08242",
+          "field": "abstract",
+          "text": "Fruit juice processing effluents contain pectin, polyphenols, and suspended pulp fragments that rapidly foul ultrafiltration membranes, curtailing process efficiency and product quality. This investigation systematically evaluates the influence of feed pH (3.0–7.5) on fouling layer composition, membrane flux, and rejection of target macromolecules during dead-end and crossflow ultrafiltration of apple and plum juice processing effluents. Regenerated cellulose membranes with molecular weight cut-offs of 10, 30, and 50 kDa were employed. At pH 4.5, pectin molecules were found to adopt a coil configuration that promoted dense cake layer formation, yielding the highest fouling resistance. Alkaline pre-adjustment to pH 7.0 shifted the dominant fouling mechanism from cake filtration to standard pore blocking, reducing irreversible resistance by 28%. Polyphenol adsorption onto membrane surfaces was characterised by X-ray photoelectron spectroscopy, revealing covalent bonding at acidic pH values. A fouling mechanism transition map as a function of pH and flux was constructed, providing practical operational guidance. These results directly inform pre-treatment protocol design for fruit processing wastewater membrane systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08243",
+        "kind": "publication",
+        "title": "Pilot-scale assessment of forward osmosis for concentration of sugar beet molasses stillage",
+        "body": {
+          "recordId": "SYN-PUB-08243",
+          "field": "abstract",
+          "text": "Sugar beet molasses stillage, generated as a by-product of bioethanol distillation, presents a high organic load that complicates conventional wastewater treatment. Forward osmosis (FO) is investigated here as an energy-efficient pre-concentration technology to reduce the hydraulic load prior to anaerobic digestion. Pilot-scale trials were conducted using cellulose triacetate flat-sheet FO membranes with sodium chloride and magnesium chloride draw solutions at varying concentrations. Water flux, reverse solute flux, and organic rejection were monitored over 72-hour continuous runs. Membrane orientation (active layer facing feed versus draw) was found to significantly influence internal concentration polarisation, with the active-layer-facing-draw configuration yielding 18% higher average water flux. Specific reverse solute flux values below 0.15 g L⁻¹ were achieved with MgCl₂ draw solution, minimising process losses. Organic matter rejection exceeded 92%, and the pre-concentrated stillage demonstrated improved biogas yield in subsequent bench-scale anaerobic digestion tests. The study provides a scale-up basis for integrating FO into sugar industry wastewater management chains."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08244",
+        "kind": "publication",
+        "title": "Intensified reactive extraction coupled with membrane separation for lactic acid recovery from fermentation broth",
+        "body": {
+          "recordId": "SYN-PUB-08244",
+          "field": "abstract",
+          "text": "Lactic acid is a platform chemical of growing industrial relevance, yet its recovery from complex fermentation broths remains costly and energy-intensive. This study presents a process-intensified approach combining reactive liquid–liquid extraction with continuous hollow-fibre membrane contactors for the selective separation and concentration of lactic acid. Tri-n-octylamine dissolved in a non-toxic diluent mixture was employed as the extractant, and the membrane contactor configuration eliminated phase dispersion and emulsification problems encountered in conventional mixer-settlers. Extraction efficiency exceeding 94% was achieved at feed pH 2.5, with a membrane mass transfer coefficient of 3.1 × 10⁻⁵ m s⁻¹. Fouling of the microporous polypropylene membranes by biomass and protein residues was characterised and substantially mitigated by inclusion of a tangential flow microfiltration pre-treatment step. A simplified techno-economic analysis indicated that the integrated process reduces operating costs by approximately 30% relative to a conventional ion-exchange recovery route at the 500 kg d⁻¹ scale. The results support further scale-up investigation within the framework of biorefinery process intensification."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08245",
+        "kind": "publication",
+        "title": "Anti-fouling surface modification of polyethersulfone membranes using zwitterionic polymer grafting",
+        "body": {
+          "recordId": "SYN-PUB-08245",
+          "field": "abstract",
+          "text": "Polyethersulfone (PES) ultrafiltration membranes are widely adopted in food and beverage wastewater treatment but suffer from rapid hydrophobic fouling that degrades long-term performance. This work investigates surface modification of PES membranes by grafting of a zwitterionic poly(sulfobetaine methacrylate) (PSBMA) brush layer via UV-initiated free radical polymerisation. Modification was confirmed by ATR-FTIR, contact angle goniometry, and atomic force microscopy. Water contact angle decreased from 68° for pristine PES to 14° after grafting, confirming substantial hydrophilicity enhancement. Fouling resistance was assessed using bovine serum albumin, sodium alginate, and humic acid as model foulants representative of food processing effluents. PSBMA-grafted membranes exhibited flux recovery ratios above 93% after simple hydraulic cleaning across all foulant types, compared to 51–67% for unmodified membranes. Protein rejection remained above 96%, confirming that modification did not compromise selectivity. Long-term stability tests over 30 days in simulated dairy effluent showed no significant loss of hydrophilicity. The modified membranes represent a promising platform for low-maintenance, high-throughput filtration in food industry wastewater applications."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08246",
+        "kind": "publication",
+        "title": "Membrane separation processes in agro-industrial wastewater treatment: a systematic review",
+        "body": {
+          "recordId": "SYN-PUB-08246",
+          "field": "abstract",
+          "text": "Agro-industrial wastewater presents one of the most complex challenges in environmental engineering due to its highly variable composition, high organic load, and seasonal discharge patterns. Membrane separation processes, including microfiltration, ultrafiltration, nanofiltration, and reverse osmosis, have emerged as versatile and efficient tools for the treatment and valorisation of such effluents. This systematic review synthesises findings from 180 peer-reviewed studies published between 2010 and 2023, covering applications in dairy, fruit and vegetable processing, slaughterhouse, and fermentation industries. Key performance indicators including flux, rejection, fouling propensity, and energy consumption are compared across membrane materials, module geometries, and operating conditions. The review identifies fouling management as the predominant technical barrier, discusses advances in anti-fouling surface modification and enhanced cleaning protocols, and highlights process intensification strategies that integrate membrane stages with biological treatment or thermal concentration. Emerging trends including ceramic membrane adoption, membrane bioreactors, and digitally monitored autonomous cleaning cycles are discussed. Critical research gaps are identified, particularly regarding long-term pilot studies under real industrial conditions and standardised fouling characterisation protocols. The review concludes with recommendations for future research and development priorities relevant to sustainable agro-industrial water management."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0745",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0745",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

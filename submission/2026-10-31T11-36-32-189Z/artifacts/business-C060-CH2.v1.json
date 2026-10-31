@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C060-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C060-CH2",
+    "companyId": "C060",
+    "companyName": "Subotička Mobilnost a.d.",
+    "sector": "Automotive and mobility software",
+    "location": "Subotica",
+    "challenge": {
+      "text": {
+        "recordId": "C060-CH2",
+        "field": "text",
+        "text": "We are collecting AVL data from 340 buses — GPS pings every 10 seconds — but we have never used it to predict travel times; three Romanian municipalities are asking for passenger information screens that show live ETAs within 90 seconds of reality."
+      },
+      "detail": {
+        "recordId": "C060-CH2",
+        "field": "detail",
+        "text": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL. The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point — and we have done almost nothing analytical with it beyond basic replay and delay logging. Three Romanian customers, the Timișoara Metropolitan Authority, the Alba Iulia Transit Office and the Reșița City Bus Consortium, have signed letters of intent for PassengerView screens at stops, but their contracts require displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time. Our current PassengerView simply projects the published timetable plus a crude offset based on the last known GPS position. On a clear day that works. In peak-hour traffic, roadworks or bad weather it drifts badly. We have one data engineer on staff who knows Python well but has no background in time-series modelling. The AVL data includes timestamp, vehicle ID, line ID, stop sequence, door-open events and odometer. We do not have weather data integrated yet. The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C060",
+        "field": "about",
+        "text": "Subotička Mobilnost a.d. was founded in 1997 as a commercial spin-off of the Subotica Regional Transport Coordination Office. Our original mandate was to bring the paper-based scheduling work of the coordination office into a software product that smaller municipalities could actually afford and maintain. Twenty-seven years later, we employ 112 people across our Subotica headquarters and field offices in Novi Sad, Timișoara and Debrecen, and our software runs the daily operations of fourteen public transit authorities across Serbia, Hungary and Romania.\n\nOur core product, TrasaNet, handles timetable construction, vehicle assignment, driver rostering and real-time dispatch monitoring for bus and light-rail networks ranging from twelve to three hundred vehicles. Customers include the Zrenjanin City Transport Authority, the Oradea Metropolitan Transit Consortium and the Kiskunfélegyháza Municipal Bus Service. We do not serve private logistics; everything we build is designed for publicly accountable transit operators who answer to elected officials and daily commuters.\n\nOur team includes transport planners, backend engineers, GIS specialists and a small embedded-systems group that handles onboard AVL hardware integration. Managing Director Dragana Fekete joined from a civil engineering background in 2011 and has led the company through two product generations. We are methodical rather than fast-moving, which suits customers who cannot afford surprises in their morning peak hour."
+      },
+      "products": [
+        {
+          "recordId": "C060",
+          "field": "products",
+          "text": "TrasaNet – timetable planning and crew scheduling platform for municipal bus operators"
+        },
+        {
+          "recordId": "C060",
+          "field": "products",
+          "text": "TrasaNet Dispatch – real-time operations console with vehicle tracking and incident logging"
+        },
+        {
+          "recordId": "C060",
+          "field": "products",
+          "text": "PassengerView – passenger information display system for stops and mobile web"
+        },
+        {
+          "recordId": "C060",
+          "field": "products",
+          "text": "DataBridge AVL – onboard GPS and door-sensor hardware with cellular telemetry"
+        },
+        {
+          "recordId": "C060",
+          "field": "products",
+          "text": "CrossBorder Compliance Module – regulatory documentation and data-segregation tooling for multi-jurisdiction operators"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "Java 17 backend with Spring Boot microservices"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "PostgreSQL with PostGIS for spatial timetable data"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "Custom constraint-programming solver built on Choco Solver library"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "Python scripts for AVL data ingestion and preprocessing"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "GTFS and GTFS-Realtime feed generation"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "Docker and Kubernetes on on-premise cluster in Subotica data centre"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "REST and MQTT for vehicle-to-server telemetry"
+        },
+        {
+          "recordId": "C060",
+          "field": "tech",
+          "text": "Oracle Forms legacy modules still running in two older customer deployments"
+        }
+      ],
+      "plans": {
+        "recordId": "C060",
+        "field": "plans",
+        "text": "We plan to release a fully GTFS-Realtime-compliant version of PassengerView by mid-2025 and to expand TrasaNet Dispatch into the Romanian market with at least two additional municipal contracts. We are also evaluating whether to productise the CrossBorder Compliance Module as a standalone offering for other Balkan transit software vendors."
+      },
+      "rdCapacity": {
+        "recordId": "C060",
+        "field": "rd_capacity",
+        "text": "We can dedicate one senior backend engineer and one domain specialist part-time to a collaborative project, with access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement."
+      },
+      "pastCollaborations": {
+        "recordId": "C060",
+        "field": "past_collaborations",
+        "text": "We completed a co-development project with the Novi Sad Faculty of Technical Sciences in 2019 on GTFS data quality validation tooling, which was incorporated into an early version of DataBridge."
+      }
+    }
+  }
+}

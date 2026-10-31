@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C017-CH1",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C017-CH1",
+    "companyId": "C017",
+    "companyName": "TloCare d.o.o.",
+    "sector": "Agri-tech (farm software, sensing, drones)",
+    "location": "Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C017-CH1",
+        "field": "text",
+        "text": "We do traditional grid sampling at one point per 4 hectares but clients with highly variable soils — especially those with old floodplain deposits near the Tisa — say our maps miss the pockets of salinity that are killing their sunflower establishment, and we can't afford to sample more densely."
+      },
+      "detail": {
+        "recordId": "C017-CH1",
+        "field": "detail",
+        "text": "Radimo grid uzorkovanje sa jednom tačkom na četiri hektara, što je standard koji funkcioniše na uniformnim parcelama centralnog Banata. Ali klijenti čije su njive uz Tisu — na primer kooperativa 'Ravnica Agro' iz Novog Bečeja — stalno nam javljaju da im suncokret propadne na delovima parcele koji na mapi izgledaju dobro. Kada smo naknadno gušće uzorkovali nekoliko tih parcela, videli smo da slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače. Problem je što gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke — a cena usluge nam već pritiska granicu prihvatljivosti za klijenta. Probali smo da koristimo satelitske NDVI snimke kao vodič za adaptivno uzorkovanje, ali nismo imali dobre rezultate jer se salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću. Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina. Dobar ishod bi bio da možemo da predvidimo gde su varijabilne zone pre nego što pošaljemo terenska ekipa, i da gušće uzorkujemo samo tamo gde je potrebno."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C017",
+        "field": "about",
+        "text": "TloCare d.o.o. osnovan je 2013. godine u Novom Sadu sa jednom idejom: da kooperativama i agro-input trgovcima u Vojvodini pruži jasnu sliku o tome šta se dešava ispod površine njihovih njiva. Počeli smo sa dva agrohemičara, terenskim vozilom i dogovorom sa jednim regionalnim laboratorijem. Danas nas je dvadeset dvoje i radimo sa više od četrdeset kooperativa i distributivnih centara od Subotice do Zrenjanina.\n\nNaša osnovna usluga je uzorkovanje zemljišta po mreži, laboratorijska analiza i dostava nutrientnih mapa kroz naš web portal koji su stranicu dizajnirali sami naši klijenti — bez nepotrebnih funkcija, samo ono što agronomu treba kada stigne s polja. Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom, uz preporuku za đubrenje po parcelama.\n\nNe prodajemo softver kao proizvod. Nudimo uslugu od uzorkovanja do preporuke, i ostajemo uz klijenta tokom sezone. Naš tim čine agrohemičari, jedan GIS specijalista i dva programera koji održavaju portal. Terenska ekipa poznaje specifičnosti vojvođanskih serija zemljišta, posebno parcela uz Tisu gde se hidromorfna i aluvijalna tla smenjuju na kratkim rastojanjima.\n\nRazlikujemo se po tome što ne tražimo od klijenta da uči novi sistem — mi donosimo podatke njemu u format koji već razume."
+      },
+      "products": [
+        {
+          "recordId": "C017",
+          "field": "products",
+          "text": "Uzorkovanje zemljišta po mreži (4 ha po tački) sa terenskim timom"
+        },
+        {
+          "recordId": "C017",
+          "field": "products",
+          "text": "Nutrientne mape i preporuke za đubrenje dostupne kroz web portal"
+        },
+        {
+          "recordId": "C017",
+          "field": "products",
+          "text": "Izveštaji o potrebi za kalcifikacijom po parcelama"
+        },
+        {
+          "recordId": "C017",
+          "field": "products",
+          "text": "Godišnji praćeni programi za kooperative (višegodišnje baze podataka po parceli)"
+        },
+        {
+          "recordId": "C017",
+          "field": "products",
+          "text": "Usluga tumačenja rezultata i direktna podrška agronoma klijenata"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "GPS-vođeno grid uzorkovanje sa Trimble handheld uređajima"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "PostGIS baza podataka za prostorne slojeve parcela"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "Python skripta za obradu i vizualizaciju laboratorijskih rezultata"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "Leaflet.js za prikaz mapa u web portalu"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "Django backend za korisnički portal"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "PDF parsiranje laboratorijskih izveštaja (delimično automatizovano, delimično ručno)"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "QGIS za internu pripremu i kontrolu karata"
+        },
+        {
+          "recordId": "C017",
+          "field": "tech",
+          "text": "Standardni agrohemijski protokoli po SRPS metodologiji za uzorkovanje i analizu"
+        }
+      ],
+      "plans": {
+        "recordId": "C017",
+        "field": "plans",
+        "text": "U naredne dve godine planiramo da uvedemo bar jednu vrstu terenskog senzorskog merenja (elektrokonduktivitet ili blisku infracrvenu spektroskopiju) kako bismo ponudili gušće prostorno pokriće bez proporcionalnog rasta troškova uzorkovanja. Takođe razmatramo proširenje portala na modularni sistem preporuka koji kooperative mogu da dele sa svojim članovima direktno."
+      },
+      "rdCapacity": {
+        "recordId": "C017",
+        "field": "rd_capacity",
+        "text": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija, uz povremenu podršku terenske ekipe za testiranje u polju."
+      },
+      "pastCollaborations": {
+        "recordId": "C017",
+        "field": "past_collaborations",
+        "text": "2019. godine učestvovali smo u kratkom pilot projektu sa institutom 'Vojvodina Agro Centar' iz Sombora na temu optimizacije gustine uzorkovanja, ali saradnja nije formalizovana i nije objavljen zajednički rezultat."
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "ref": {
+    "artifactId": "proposal-C060-CH2-R0146",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C060-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C060-CH2-R0146",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C060-CH2-R0146",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Testing live bus-arrival predictions for PassengerView",
+    "facts": [
+      {
+        "text": "The company states that Romanian customer contracts require displayed ETAs to be within 90 seconds of actual arrival at least 85% of the time. Compliance therefore concerns displayed arrivals, not segment-level modelling scores.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "their contracts require displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports DataBridge telemetry from 340 buses every ten seconds, a PostgreSQL archive of roughly 2.8 billion rows, and no integrated weather data.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We do not have weather data integrated yet.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's integration environment comprises Java 17/Spring Boot, on-premise Docker/Kubernetes and GTFS/GTFS-Realtime feed generation.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Java 17 backend with Spring Boot microservices",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060",
+            "field": "tech",
+            "quote": "GTFS and GTFS-Realtime feed generation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company offers a senior backend engineer and domain specialist part-time. Its Python-capable data engineer has no time-series modelling background, making knowledge transfer important.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one senior backend engineer and one domain specialist part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company historical-data access requires a signed data-sharing agreement. Novaković prefers retaining the right to publish anonymised results; compatible terms remain necessary.",
+        "sources": [
+          {
+            "recordId": "C060",
+            "field": "rd_capacity",
+            "quote": "with access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company stated a twelve-month implementation window from approval expected in Q3 2024. Novaković's notes instead identify capacity for one new collaboration in 2026; this schedule mismatch needs resolution.",
+        "sources": [
+          {
+            "recordId": "C060-CH2",
+            "field": "detail",
+            "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "notes",
+            "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Novaković's research supports testing latent-state travel-time estimation and GRU stop-arrival prediction. Her recurrent-model work also documents evening-peak underperformance on shared congested corridors, a relevant risk rather than evidence of Romanian contractual compliance.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01892",
+            "field": "abstract",
+            "quote": "This study develops a Kalman filter formulation that treats segment-level travel time as a latent state evolving according to a random-walk process",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01895",
+            "field": "abstract",
+            "quote": "Long short-term memory (LSTM) and gated recurrent unit (GRU) networks are evaluated for predicting bus arrival times at individual stops 1 to 5 stops ahead",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01895",
+            "field": "abstract",
+            "quote": "both models underperform during the evening peak on lines sharing a congested corridor",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a joint project could connect relevant forecasting expertise with an existing passenger-information product. The proposal is conditional: joint-project willingness is open, but current availability is unconfirmed and the stated collaboration capacity is limited.",
+      "Evidence from other networks and telemetry frequencies does not validate Romanian display-level performance. Ten-second DataBridge observations, local routes, disruption conditions and archive-scale processing likely require separate validation."
+    ],
+    "proposedActions": [
+      "Propose an eight-week benchmark after access and staffing agreement. The company would supply representative extracts from each Romanian network, timetable versions and PassengerView replay logic; Novaković would lead preprocessing and state-space/GRU comparisons against the current timetable-offset baseline. Treat archives as unlabelled until arrival references are checked. Separate chronological tuning and evaluation samples and check their independence. Randomly select evaluation windows across all predictions for expert arrival validation, counting uncertain cases separately. Replay actual display timing; measure the percentage within 90 seconds overall, by city, horizon, peak period and confirmed disruption/weather conditions. Go forward only if the best configuration tested reaches at least 85% under the agreed contractual aggregation, regardless of model identity, and passes arrival-reference, integration-capacity and confirmed twelve-month deadline feasibility gates. Missing representative adverse-condition data would leave robustness unresolved, not passed.",
+      "Propose a bounded extraction and stop-event reconstruction audit before scaling. Measure extraction throughput, reconstruction errors and missingness; establish whether Romanian coverage and confirmed disruption periods support evaluation. Use weather features only if historical and live availability can both be established.",
+      "Propose a PassengerView shadow integration through Java/Spring and GTFS-Realtime on the company's on-premise containers. Measure display latency, refresh behaviour, resource use and fallback against agreed operational limits. Pair company engineers with the researcher on reproducible preprocessing, retraining and monitoring; do not infer hardware fit from research benchmarks."
+    ],
+    "questions": [
+      "Can Novaković confirm current availability and staffing for this joint project against the actual approval date, contractual deadline and status of the planned mid-2025 release?",
+      "What contractual evaluation definition governs prediction horizons, display sampling, city aggregation, cancellations, missing telemetry and stale predictions?",
+      "Can the company supply each Romanian network's arrival evidence and representative disruption periods, together with serving-resource limits and operational acceptance requirements?",
+      "Can both sides agree data access, anonymisation, publication, budget, engineering allocation and maintenance ownership before work starts?"
+    ],
+    "benefits": {
+      "company": "The benchmark could establish whether PassengerView can meet its contractual arrival-accuracy target and identify data or deployment gaps before wider implementation.",
+      "researcher": "Subject to agreement, the project could provide target-network telemetry for testing how state-space and recurrent predictors transfer to higher-frequency observations and operational display-level evaluation."
+    },
+    "markdown": "# Testing live bus-arrival predictions for PassengerView\n\n## Verified facts\n- The company states that Romanian customer contracts require displayed ETAs to be within 90 seconds of actual arrival at least 85% of the time. Compliance therefore concerns displayed arrivals, not segment-level modelling scores. [F1]\n- The company reports DataBridge telemetry from 340 buses every ten seconds, a PostgreSQL archive of roughly 2.8 billion rows, and no integrated weather data. [F2]\n- The company's integration environment comprises Java 17/Spring Boot, on-premise Docker/Kubernetes and GTFS/GTFS-Realtime feed generation. [F3]\n- The company offers a senior backend engineer and domain specialist part-time. Its Python-capable data engineer has no time-series modelling background, making knowledge transfer important. [F4]\n- Company historical-data access requires a signed data-sharing agreement. Novaković prefers retaining the right to publish anonymised results; compatible terms remain necessary. [F5]\n- The company stated a twelve-month implementation window from approval expected in Q3 2024. Novaković's notes instead identify capacity for one new collaboration in 2026; this schedule mismatch needs resolution. [F6]\n- Novaković's research supports testing latent-state travel-time estimation and GRU stop-arrival prediction. Her recurrent-model work also documents evening-peak underperformance on shared congested corridors, a relevant risk rather than evidence of Romanian contractual compliance. [F7]\n\n## Potential benefits\n- For the company: The benchmark could establish whether PassengerView can meet its contractual arrival-accuracy target and identify data or deployment gaps before wider implementation.\n- For the researcher: Subject to agreement, the project could provide target-network telemetry for testing how state-space and recurrent predictors transfer to higher-frequency observations and operational display-level evaluation.\n\n## Our inference\n- This suggests a joint project could connect relevant forecasting expertise with an existing passenger-information product. The proposal is conditional: joint-project willingness is open, but current availability is unconfirmed and the stated collaboration capacity is limited.\n- Evidence from other networks and telemetry frequencies does not validate Romanian display-level performance. Ten-second DataBridge observations, local routes, disruption conditions and archive-scale processing likely require separate validation.\n\n## Proposed next steps\n- Propose an eight-week benchmark after access and staffing agreement. The company would supply representative extracts from each Romanian network, timetable versions and PassengerView replay logic; Novaković would lead preprocessing and state-space/GRU comparisons against the current timetable-offset baseline. Treat archives as unlabelled until arrival references are checked. Separate chronological tuning and evaluation samples and check their independence. Randomly select evaluation windows across all predictions for expert arrival validation, counting uncertain cases separately. Replay actual display timing; measure the percentage within 90 seconds overall, by city, horizon, peak period and confirmed disruption/weather conditions. Go forward only if the best configuration tested reaches at least 85% under the agreed contractual aggregation, regardless of model identity, and passes arrival-reference, integration-capacity and confirmed twelve-month deadline feasibility gates. Missing representative adverse-condition data would leave robustness unresolved, not passed.\n- Propose a bounded extraction and stop-event reconstruction audit before scaling. Measure extraction throughput, reconstruction errors and missingness; establish whether Romanian coverage and confirmed disruption periods support evaluation. Use weather features only if historical and live availability can both be established.\n- Propose a PassengerView shadow integration through Java/Spring and GTFS-Realtime on the company's on-premise containers. Measure display latency, refresh behaviour, resource use and fallback against agreed operational limits. Pair company engineers with the researcher on reproducible preprocessing, retraining and monitoring; do not infer hardware fit from research benchmarks.\n\n## Open questions\n- Can Novaković confirm current availability and staffing for this joint project against the actual approval date, contractual deadline and status of the planned mid-2025 release?\n- What contractual evaluation definition governs prediction horizons, display sampling, city aggregation, cancellations, missing telemetry and stale predictions?\n- Can the company supply each Romanian network's arrival evidence and representative disruption periods, together with serving-resource limits and operational acceptance requirements?\n- Can both sides agree data access, anonymisation, publication, budget, engineering allocation and maintenance ownership before work starts?",
+    "taskId": "C060-CH2",
+    "researcherId": "R0146",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C060-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C060-CH2-R0146",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C060-CH2-R0146",
+        "version": 1
+      }
+    ]
+  }
+}

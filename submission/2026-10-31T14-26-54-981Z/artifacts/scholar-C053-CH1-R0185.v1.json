@@ -1,0 +1,304 @@
+{
+  "ref": {
+    "artifactId": "scholar-C053-CH1-R0185",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0185",
+    "name": "Branislava Jovanović",
+    "faculty": "Faculty of Technology",
+    "department": "Department of Chemical Engineering",
+    "fields": [
+      "Chemical Engineering",
+      "Environmental Engineering",
+      "Water and Wastewater Treatment",
+      "Industrial Biotechnology"
+    ],
+    "keywords": [
+      "textile effluent treatment",
+      "coagulation-flocculation",
+      "reactive dyes",
+      "advanced oxidation processes",
+      "ozonation",
+      "Fenton process",
+      "surfactant removal",
+      "biological post-treatment",
+      "activated sludge",
+      "decolourisation"
+    ],
+    "openTo": [
+      "contract research on industrial wastewater characterisation and treatment optimisation",
+      "joint projects with textile or chemical companies seeking process water reuse solutions",
+      "student internships for chemical engineering undergraduates",
+      "equipment access (jar-test, bench ozonation, TOC analyser, respirometer)",
+      "consulting on regulatory compliance for wastewater discharge",
+      "co-supervision of industrial PhD candidates"
+    ],
+    "bio": {
+      "recordId": "R0185",
+      "field": "bio",
+      "text": "Branislava Jovanović completed her undergraduate and master's studies in Chemical Engineering at the Faculty of Technology, University of Novi Sad, graduating in 2008 and 2010 respectively. She defended her PhD thesis on coagulation-flocculation pretreatment of reactive dye effluents in 2015 at the same institution. Following a postdoctoral stay at the University of Ljubljana (2016–2017), she returned to Novi Sad as a Teaching Assistant and was promoted to Assistant Professor in 2020. Her research group focuses on physicochemical and combined treatment trains for textile process wastewater, with particular emphasis on reactive dye removal, surfactant behaviour in coagulation systems, and coupling advanced oxidation with biological post-treatment. She teaches Industrial Wastewater Treatment and Unit Operations. The group routinely uses jar-test apparatus, UV-Vis and TOC analysis, a bench-scale ozonation reactor, and respirometric equipment for activated sludge assays."
+    },
+    "industryExperience": {
+      "recordId": "R0185",
+      "field": "industry_experience",
+      "text": "Jovanović has conducted two contract characterisation and treatability studies for textile finishing companies in Vojvodina (2019 and 2023), providing effluent analysis and treatment design recommendations that fed into permit renewal applications. She has also participated as an external technical reviewer for one environmental impact assessment for a planned dyeing facility expansion."
+    },
+    "notes": {
+      "recordId": "R0185",
+      "field": "notes",
+      "text": "Jovanović is actively seeking industry partners for a planned pilot-to-full-scale translation study following the TEXWAT and SURFCLEAN projects; she is particularly interested in companies at NTP Novi Sad working in water technology, textile chemistry or environmental monitoring instrumentation. Her lab has spare analytical capacity on the TOC analyser and UV reactor outside of teaching semesters. She is not currently on sabbatical and is available for new collaborations starting from late 2026."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02387",
+        "kind": "publication",
+        "title": "Coagulation of simulated reactive dye bath effluent using aluminium sulphate: effect of pH, coagulant dose and dye structure",
+        "body": {
+          "recordId": "SYN-PUB-02387",
+          "field": "abstract",
+          "text": "Coagulation-flocculation experiments were performed on synthetic effluents containing three structurally distinct reactive dyes (monochlorotriazine, vinyl sulphone, and bifunctional) at concentrations of 50–500 mg/L using aluminium sulphate as the primary coagulant. Jar-test trials at pH 5–10 and coagulant doses of 50–600 mg/L revealed that optimal removal of all three dyes occurred near pH 6.5–7.0. Colour removal exceeded 92% for the monochlorotriazine dye at an alum dose of 300 mg/L, but only 74% for the bifunctional dye under the same conditions, indicating that dye charge density and molecular weight significantly influence coagulation efficiency. Residual COD ranged from 180 to 340 mg/L after treatment, confirming that coagulation alone is insufficient for discharge compliance. Sludge volumes and specific resistance to filtration were characterised for each dye system. Results provide a structured basis for selecting coagulant conditions prior to downstream oxidative polishing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02388",
+        "kind": "publication",
+        "title": "Influence of anionic surfactant presence on coagulation of C.I. Reactive Red 198 in synthetic textile rinse water",
+        "body": {
+          "recordId": "SYN-PUB-02388",
+          "field": "abstract",
+          "text": "Industrial textile rinse waters typically contain both residual reactive dye and anionic surfactants from washing auxiliaries. This study examined how sodium lauryl ether sulphate (SLES) at concentrations of 20–200 mg/L affects coagulation of C.I. Reactive Red 198 at 100 mg/L using ferric chloride. Zeta potential measurements demonstrated that SLES progressively stabilised dye-coagulant flocs at surfactant concentrations above 80 mg/L, reducing colour removal from 88% to 54%. Adding a cationic polyelectrolyte (polyDADMAC, 2–8 mg/L) as a coagulant aid partially restored performance, achieving 79% colour removal even at 200 mg/L SLES. Turbidity of treated effluent remained below 5 NTU across all conditions with polyelectrolyte addition. TOC reduction was modest (35–42%), indicating that dissolved organic load from surfactant fragments persists. Implications for sequential treatment design in dyeing facilities are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02389",
+        "kind": "publication",
+        "title": "Fenton oxidation as a polishing step after coagulation-flocculation of reactive dye effluents: mineralisation kinetics and toxicity reduction",
+        "body": {
+          "recordId": "SYN-PUB-02389",
+          "field": "abstract",
+          "text": "A two-stage treatment sequence was evaluated on real textile effluent collected from a knitting facility in Vojvodina: coagulation-flocculation with FeCl₃ (400 mg/L, pH 7.0) followed by Fenton oxidation (H₂O₂ 200–1000 mg/L, Fe²⁺ 10–80 mg/L, pH 3.0). After coagulation, COD was reduced from an initial 1840 mg/L to 760 mg/L and colour by 85%. Subsequent Fenton treatment at H₂O₂/Fe²⁺ molar ratio of 15 achieved further COD removal to 210 mg/L and near-complete decolourisation (>99%). Pseudo-first-order rate constants for COD decay ranged from 0.018 to 0.047 min⁻¹ depending on H₂O₂ dose. Acute toxicity to Daphnia magna (EC₅₀) improved from 3.2% v/v in raw effluent to >80% v/v after combined treatment. The combined process reduced sludge mass by 28% compared with coagulation alone at equivalent COD targets, an economically relevant outcome for small dyeing operations."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02371",
+        "kind": "publication",
+        "title": "Ozonation of reactive azo dye effluents: decolourisation rates, by-product identification and biodegradability enhancement",
+        "body": {
+          "recordId": "SYN-PUB-02371",
+          "field": "abstract",
+          "text": "Bench-scale ozonation (applied ozone dose 10–80 mg/L, contact time 5–30 min) was studied on effluents containing three azo reactive dyes at 200 mg/L each. Decolourisation followed first-order kinetics with rate constants of 0.12–0.31 min⁻¹ at pH 9, approximately 2.4-fold higher than at pH 6, consistent with hydroxyl radical dominance under alkaline conditions. BOD₅/COD ratios increased from 0.08 in raw effluent to 0.38 after 20 mg/L ozone application, indicating a transition to biodegradable intermediates. LC-MS analysis identified six aromatic sulphonated by-products, with naphthalene sulphonic acid and phthalic acid among the most abundant. At the highest ozone dose tested, total aromatic content declined by 91% but TOC only by 34%, confirming partial mineralisation. The biodegradability improvement at moderate ozone doses is sufficient to support subsequent biological treatment, reducing ozone consumption and operating costs."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02390",
+        "kind": "publication",
+        "title": "Activated sludge adaptation to pre-ozonated reactive dye wastewater: respirometry, biomass morphology and colour residuals",
+        "body": {
+          "recordId": "SYN-PUB-02390",
+          "field": "abstract",
+          "text": "An acclimation study was conducted over 90 days using a lab-scale sequencing batch reactor (SBR, 4 L working volume) fed with pre-ozonated reactive dye effluent as a fraction (10–40% v/v) of synthetic municipal wastewater. Respirometric measurements showed that oxygen uptake rate stabilised within 21 days at 10% dye effluent fraction and within 42 days at 40%. Specific COD removal efficiency reached 87–91% under steady-state conditions at all fractions tested. Residual colour after biological treatment was 15–62 Pt-Co units depending on dye type, meeting Serbian discharge thresholds for three of four dyes studied. MLSS concentrations were maintained at 2.8–3.5 g/L throughout. Filamentous organism abundance, assessed by microscopy, remained low (score ≤ 1 on the 0–5 scale), suggesting no major settleability issues. The results confirm that moderate ozone pre-treatment enables stable aerobic biodegradation without dedicated biomass augmentation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02391",
+        "kind": "publication",
+        "title": "Techno-economic comparison of coagulation–ozonation–SBR and coagulation–Fenton–SBR sequences for treatment of knitting mill effluent",
+        "body": {
+          "recordId": "SYN-PUB-02391",
+          "field": "abstract",
+          "text": "A comparative assessment was carried out for two treatment trains applied to 50 m³/day of real knitting mill effluent (COD 1600–2200 mg/L, colour 800–1500 Pt-Co, surfactant 40–90 mg/L): Train A used coagulation followed by ozonation (20 mg O₃/L) and aerobic SBR; Train B replaced ozonation with Fenton oxidation (H₂O₂ 300 mg/L, Fe²⁺ 25 mg/L). Both trains achieved final effluent quality within Serbian Class II discharge limits. Capital cost estimates based on vendor quotations placed Train A at approximately 1.15× the cost of Train B due to ozone generator investment. However, operating costs for Train A were 18% lower over a 10-year horizon, primarily because reagent costs for Fenton were higher than electricity for ozone generation at this scale. Sludge production in Train B was 2.1-fold higher than in Train A, creating additional disposal costs. Sensitivity analysis showed the crossover point at electricity prices above 0.18 €/kWh, relevant for current Serbian tariffs."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02392",
+        "kind": "publication",
+        "title": "Removal of nonionic surfactants from textile effluents by coagulation with polyaluminium chloride: effect of ethoxylation degree",
+        "body": {
+          "recordId": "SYN-PUB-02392",
+          "field": "abstract",
+          "text": "Four commercially available nonionic alcohol ethoxylate surfactants (AE) with ethoxylation degrees of 5, 9, 14, and 20 ethylene oxide units were studied at 100 mg/L in coagulation experiments with polyaluminium chloride (PACl, 50–500 mg/L, pH 5–9). Removal efficiency declined monotonically with increasing ethoxylation degree: AE-5 showed 81% TOC removal at 300 mg/L PACl, while AE-20 yielded only 31% under identical conditions. Surface tension measurements confirmed that higher-ethoxylation surfactants formed more stable colloidal dispersions that resisted charge neutralisation. Addition of 10 mg/L chitosan as a bio-based coagulant aid improved AE-20 removal to 58% without increasing sludge volume. Acute toxicity to Aliivibrio fischeri (luminescence inhibition, 15 min) was reduced by 60–75% across all surfactant types after combined PACl-chitosan treatment. The findings suggest that surfactant composition, not only total concentration, should inform coagulant selection in textile plant design."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02393",
+        "kind": "publication",
+        "title": "UV/H₂O₂ treatment of pre-coagulated reactive dye effluent: quantum yield estimation and effect on downstream biological treatment",
+        "body": {
+          "recordId": "SYN-PUB-02393",
+          "field": "abstract",
+          "text": "UV/H₂O₂ was evaluated as an alternative to ozonation for polishing pre-coagulated reactive dye effluent. Experiments used a 15 W low-pressure mercury lamp (λ = 254 nm, fluence rate 1.8 mW/cm²) with H₂O₂ doses of 50–400 mg/L and exposure times of 5–60 min. Apparent quantum yields for decolourisation of C.I. Reactive Blue 19 and C.I. Reactive Yellow 145 were 0.0041 and 0.0029 mol/Einstein, respectively. At a H₂O₂ dose of 200 mg/L and 30 min exposure, COD was reduced by 41% and BOD₅/COD increased from 0.11 to 0.45. Residual H₂O₂ at the end of UV treatment was quenched with sodium sulphite before SBR feeding to avoid inhibition; without quenching, SBR performance declined noticeably within five days. Electrical energy per order (EEO) for colour removal was 0.38 kWh/m³/order, lower than values reported for comparable ozone systems in the literature. Results support UV/H₂O₂ as a cost-competitive option for facilities with existing UV disinfection infrastructure."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02394",
+        "kind": "publication",
+        "title": "Combined electrocoagulation and biological treatment of mixed reactive dye and surfactant effluent: pilot-scale results",
+        "body": {
+          "recordId": "SYN-PUB-02394",
+          "field": "abstract",
+          "text": "A pilot unit (200 L/day) combining electrocoagulation (EC) with aluminium electrodes (current density 10–40 mA/cm², electrolysis time 10–30 min) and a moving bed biofilm reactor (MBBR, 120 L, HRT 18 h) was operated for 45 days on effluent from a textile finishing plant in Vojvodina. The effluent contained reactive dyes (80–240 mg/L), anionic and nonionic surfactants (combined 50–120 mg/L) and COD of 900–1600 mg/L. Electrocoagulation at 20 mA/cm² and 20 min achieved 89% colour removal and 62% COD reduction with specific energy consumption of 1.8 kWh/kg COD removed. The MBBR reduced remaining COD to below 120 mg/L on 38 of 45 operating days; exceedances corresponded to days with dye concentration spikes above 200 mg/L. MBBR biofilm carrier coverage reached 85% by day 21. Total treatment cost was estimated at 1.4 €/m³, competitive with chemical coagulation-Fenton sequences reported for similar effluent characteristics. The pilot data form the basis for a planned full-scale feasibility study."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02395",
+        "kind": "publication",
+        "title": "Fouling mechanisms during ultrafiltration of corn steep liquor: a combined blocking model and rheological analysis",
+        "body": {
+          "recordId": "SYN-PUB-02395",
+          "field": "abstract",
+          "text": "Corn steep liquor (CSL), a by-product of wet-milling, was subjected to ultrafiltration with 10 and 30 kDa polyethersulphone membranes at TMP values of 0.5–3.0 bar to characterise fouling mechanisms. Hermia's blocking models (complete, intermediate, standard blocking and cake filtration) were fitted to flux–time data. Cake filtration was the dominant mechanism at protein concentrations above 15 g/L and TMP above 1.5 bar, while intermediate blocking prevailed at lower concentrations. Dynamic viscosity of the feed ranged from 3.2 to 18.7 mPa·s depending on solids content, and cake compressibility index was determined to be 0.61, indicating a moderately compressible deposit. Backwash at 0.5 bar for 30 s every 15 min restored 70–85% of initial flux. The study provides design parameters for ultrafiltration as a clarification step in CSL-based fermentation medium preparation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02396",
+        "kind": "publication",
+        "title": "Reconciliation of measured flow and concentration data in water treatment plant networks using weighted least-squares adjustment",
+        "body": {
+          "recordId": "SYN-PUB-02396",
+          "field": "abstract",
+          "text": "Measured flow rates and pollutant concentrations in operating water treatment plants contain random errors that violate mass-balance closure when checked against network equations. Data reconciliation by weighted least-squares (WLS) adjustment forces closure while distributing corrections proportionally to measurement uncertainties. This study applies WLS reconciliation to data from a 15,000 m³/day surface-water treatment plant in Serbia, using 10-minute averages of 31 flow meters and 14 in-line conductivity and turbidity sensors over a 45-day observation period. Measurement uncertainty estimates were derived from manufacturer specifications and short-term repeat measurements. Reconciled data reduced apparent mass-balance residuals by 82% on average. Gross-error detection using the global chi-squared test identified three sensors with systematic biases exceeding 12%, which were subsequently recalibrated. The reconciled dataset was then used to re-parameterise clarifier and filter submodels, improving their predictive accuracy relative to the models previously calibrated on raw data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02397",
+        "kind": "publication",
+        "title": "Uticaj veličine čestica biljnog materijala na prinos i sastav etarskog ulja lavande (Lavandula angustifolia Mill.) pri hidrodestilaciji",
+        "body": {
+          "recordId": "SYN-PUB-02397",
+          "field": "abstract",
+          "text": "U radu je ispitivan uticaj granulacije sušenog cveta lavande na prinos i hemijski sastav etarskog ulja dobijenog hidrodestilacijom u laboratorijskom Clevenger-ovom aparatu zapremine 2 L. Primenjen je plan potpunog faktorijalnog eksperimenta sa tri nivoa veličine čestica (0,5–1 mm, 1–2 mm, 2–4 mm) i tri vremena destilacije (60, 90, 120 min). Prinos etarskog ulja određen je gravimetrijski, a hemijski sastav analiziran GC-MS metodom. Rezultati pokazuju da sitnije čestice (0,5–1 mm) daju statistički značajno veći prinos (do 1,84% v/m) u odnosu na krupniju frakciju (1,19% v/m pri istom vremenu destilacije). Udio linalola kao dominantne komponente kreće se između 28,4 i 35,7% u zavisnosti od granulacije, pri čemu finija mlevenje povećava udeo oksidacionih degradacionih produkata pri dužem vremenu destilacije. Zaključeno je da je optimalan kompromis između prinosa i kvaliteta ulja postignut pri veličini čestica 1–2 mm i vremenu destilacije od 90 minuta."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02398",
+        "kind": "publication",
+        "title": "Reactive blending of pea protein isolate and corn starch in a twin-screw extruder: structural and mechanical outcomes",
+        "body": {
+          "recordId": "SYN-PUB-02398",
+          "field": "abstract",
+          "text": "Pea protein isolate (PPI) was melt-blended with corn starch at protein contents of 10, 20, and 30 wt% in a co-rotating twin-screw extruder at barrel temperatures of 120–150 °C and screw speeds of 100–200 rpm. Cross-linking between starch hydroxyl groups and protein amino acid residues was promoted by adding 0.5 wt% citric acid as a reactive compatibiliser. FTIR spectra showed a new absorption band at 1 735 cm⁻¹ consistent with ester bond formation, whose intensity increased with citric acid concentration. Tensile strength of compression-moulded films increased from 8.4 MPa (neat TPS) to 14.7 MPa at 20 wt% PPI, while elongation at break decreased from 96 to 31%. Scanning electron microscopy of fracture surfaces revealed reduced phase domain size at 20 wt% PPI when citric acid was present. Water vapour transmission rate decreased by 29% relative to unfilled TPS at the same formulation, measured at 38 °C and 90% RH. Results suggest that moderate protein content with reactive compatibilisation improves stiffness and barrier properties without excessive embrittlement."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0619",
+        "kind": "project",
+        "title": "Integrated physicochemical–biological treatment strategies for complex textile process effluents in the Pannonian region",
+        "body": {
+          "recordId": "SYN-PRJ-0619",
+          "field": "summary",
+          "text": "TEXWAT brought together research groups from Novi Sad and Pécs to develop and validate combined treatment sequences for textile effluents characteristic of small and medium-sized dyeing and finishing enterprises in the Pannonian basin. The project included laboratory optimisation of coagulation, ozonation and activated sludge steps, a field characterisation campaign covering eight textile plants on both sides of the border, and a pilot demonstration at a partner facility in Vojvodina. Branislava Jovanović led the work package responsible for advanced oxidation process optimisation and integration with biological post-treatment. The project produced treatment design guidelines in Serbian and Hungarian and trained twelve process engineers from participating companies."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0620",
+        "kind": "project",
+        "title": "Behaviour and removal of mixed surfactant systems in coagulation-based textile wastewater treatment",
+        "body": {
+          "recordId": "SYN-PRJ-0620",
+          "field": "summary",
+          "text": "SURFCLEAN investigated how mixtures of anionic, nonionic and cationic surfactants, representative of modern textile auxiliaries, interact with coagulants under conditions relevant to industrial practice. The project combined surface tension measurements, zeta potential titration, TOC and HPLC analysis to characterise surfactant behaviour across coagulation pH windows. A secondary objective was to assess the ecotoxicological profile of coagulation sludges arising from surfactant-containing effluents using earthworm and seed germination bioassays. Two master's students and one doctoral candidate contributed experimental work. Outcomes include a dataset of coagulant performance parameters for fourteen surfactant–coagulant combinations and guidance for sludge classification under Serbian waste regulations."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0321",
+        "kind": "project",
+        "title": "Kinetics and Catalyst Design for Manganese and Trace Metal Removal from Vojvodina Groundwater",
+        "body": {
+          "recordId": "SYN-PRJ-0321",
+          "field": "summary",
+          "text": "The project addressed the gap between laboratory-derived rate constants for Mn(II) oxidation and actual filter performance at Vojvodina waterworks, where high carbonate alkalinity, intermittent operation, and variable Fe/Mn ratios frequently cause non-compliant effluent. Work packages covered (i) fundamental kinetic characterisation of MnOx coatings on natural zeolite and quartz carriers, (ii) pilot-column testing at two municipal waterworks, and (iii) development of a design tool integrating mass-transfer and surface-reaction sub-models. The project supported two PhD students and produced seven peer-reviewed publications. A simplified calculation spreadsheet for filter sizing was delivered to the two waterworks partners as a practical outcome."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0322",
+        "kind": "project",
+        "title": "Affordable Packed-Bed Aeration and Filtration Technologies for Small Rural Water Systems in the Hungary–Serbia Border Region",
+        "body": {
+          "recordId": "SYN-PRJ-0322",
+          "field": "summary",
+          "text": "AQUAPAKT brought together chemical engineers, civil engineers, and public health authorities from Novi Sad, Subotica, and Pécs to design, build, and evaluate low-cost aeration–filtration units suitable for settlements supplying fewer than 2 000 inhabitants from groundwater with elevated Fe, Mn, or As. Todorović led the work package on reactor design and media selection, coordinating bench-scale testing of three candidate media configurations before field installation of modular units at two pilot villages. Performance monitoring over 18 months showed consistent compliance with Serbian and Hungarian drinking-water standards for Fe and Mn. The project produced design guidelines adapted to local material availability and operator skill levels."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0587",
+        "kind": "project",
+        "title": "Heat-Sealable Multilayer Films for Food Packaging: Cross-Border Knowledge Transfer and Process Validation",
+        "body": {
+          "recordId": "SYN-PRJ-0587",
+          "field": "summary",
+          "text": "A cross-border collaboration between the Faculty of Technology Novi Sad and the Department of Plastics Technology at Budapest University of Technology, co-funded under Interreg IPA. The project addressed gaps in the regional packaging film industry by developing shared test protocols for heat-seal quality assessment and transferring extensional rheology measurement competence to the Serbian side. Grbić led Work Package 2, covering heat-seal and hot-tack testing protocol harmonisation and the comparative study of 180° peel versus burst test methods. Joint workshops were held in both Novi Sad and Budapest. A shared database of polymer melt rheology and seal-performance data was compiled and made available to packaging SMEs in both countries."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1359",
+        "kind": "project",
+        "title": "Cross-Border Knowledge Exchange on Drying and Encapsulation Technologies for Functional Food Powders",
+        "body": {
+          "recordId": "SYN-PRJ-1359",
+          "field": "summary",
+          "text": "A cross-border cooperation project between the Faculty of Technology Novi Sad and the Department of Food Engineering at the University of Szeged. The Novi Sad team led the work package on characterisation and modelling of moisture-sorption behaviour, contributing sorption isotherm data for eight pilot-scale spray-dried and granulated prototypes of fruit and dairy powders. The Szeged team led a parallel work package on thermal analysis. Joint training events for industry representatives from both countries were organised, and shared access to DVS equipment at both sites was established. Three co-authored publications resulted from the partnership."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1363",
+        "kind": "project",
+        "title": "Cross-Border Valorisation of Agricultural Protein Co-Streams into Biopolymer Packaging Materials",
+        "body": {
+          "recordId": "SYN-PRJ-1363",
+          "field": "summary",
+          "text": "BIOCROSS addresses sunflower and rapeseed protein meal generated as co-products in oilseed processing in the Vojvodina and western Romania regions. The project characterises the functional properties of these protein streams (solubility, water absorption, thermal denaturation profiles) and tests their performance as the protein phase in reactively extruded starch–protein blends. Lalić's team leads the work package on extrusion processing and mechanical characterisation, while partners in Timișoara focus on protein fractionation and upstream characterisation. The project aims to produce a technical specification document usable by regional packaging manufacturers and to demonstrate a 50-kg pilot batch. Three joint publications are planned across the project duration."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1365",
+        "kind": "project",
+        "title": "Regional Agricultural Waste-Derived Adsorbents for Emerging Pollutant Removal from Industrial Waters",
+        "body": {
+          "recordId": "SYN-PRJ-1365",
+          "field": "summary",
+          "text": "REGSORP is a cross-border cooperation project developing adsorbent materials from agricultural residues available in the Hungarian–Serbian border region (sunflower husk, corn cob, wheat straw). Vladan Đurić leads the work package on column design and pilot-scale validation, responsible for producing standardised fixed-bed adsorption testing protocols and transferring laboratory-derived Thomas and Bohart–Adams parameters to a mobile pilot unit operated at partner sites. The project targets three micropollutant classes: pharmaceuticals, corrosion inhibitors, and pesticide degradation products. Deliverables include a joint test protocol document, two peer-reviewed publications, and a short course on adsorbent column design delivered to industrial engineers at both partner institutions."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0185",
+            "field": "open_to",
+            "quote": "co-supervision of industrial PhD candidates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0185",
+            "field": "open_to",
+            "quote": "contract research on industrial wastewater characterisation and treatment optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0185",
+            "field": "open_to",
+            "quote": "joint projects with textile or chemical companies seeking process water reuse solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

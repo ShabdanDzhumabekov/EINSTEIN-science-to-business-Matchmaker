@@ -1,0 +1,260 @@
+{
+  "ref": {
+    "artifactId": "scholar-C105-CH2-R0099",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0099",
+    "name": "Aleksa Popović",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Distributed and Cloud Computing",
+      "Operations Research and Optimisation",
+      "Stochastic Modelling and Queueing Theory",
+      "Combinatorial Algorithms"
+    ],
+    "keywords": [
+      "cloud resource allocation",
+      "workload scheduling",
+      "queueing theory",
+      "bin-packing algorithms",
+      "online algorithms",
+      "virtual machine placement",
+      "auto-scaling",
+      "multi-server queues",
+      "makespan minimisation",
+      "load balancing"
+    ],
+    "openTo": [
+      "joint projects with companies operating cloud or HPC infrastructure",
+      "contract research on workload scheduling and resource allocation",
+      "industrial PhD supervision",
+      "student internships (MSc level) involving trace analysis or scheduling implementation",
+      "consulting on SLA design and capacity planning",
+      "access to the faculty OpenStack testbed for joint experiments"
+    ],
+    "bio": {
+      "recordId": "R0099",
+      "field": "bio",
+      "text": "Aleksa Popović completed his undergraduate and master's degrees in Mathematics and Computer Science at the University of Novi Sad (2004, 2007), followed by a PhD in Computer Science at the University of Zagreb in 2012, with a dissertation on admission control policies for heterogeneous server farms modelled as multi-class queueing networks. He joined the Department of Mathematics and Informatics at the Faculty of Sciences, University of Novi Sad, as an Assistant Professor in 2013 and was promoted to Associate Professor in 2019. His group studies resource allocation in distributed and cloud computing environments, combining stochastic modelling, queueing theory, and combinatorial optimisation. Teaching covers algorithms, probability theory, and cloud computing. The group makes regular use of the faculty's Linux cluster and OpenStack testbed for experimental validation."
+    },
+    "industryExperience": {
+      "recordId": "R0099",
+      "field": "industry_experience",
+      "text": "Popović served as a part-time technical consultant to a Novi Sad-based managed hosting company for eighteen months (2017–2018), advising on VM placement policy and capacity planning models. This engagement directly informed the energy-aware consolidation work published in 2020."
+    },
+    "notes": {
+      "recordId": "R0099",
+      "field": "notes",
+      "text": "Popović is particularly interested in collaborations with NTP companies that generate operational workload data and are willing to share anonymised traces for joint research; he has an established anonymisation protocol suitable for GDPR compliance. He is currently supervising two PhD students who are available for collaborative work. His group's OpenStack testbed (16 nodes) is available to partners during off-peak periods."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01320",
+        "kind": "publication",
+        "title": "Admission Control in Multi-Class Server Farms: A Queueing Network Approach",
+        "body": {
+          "recordId": "SYN-PUB-01320",
+          "field": "abstract",
+          "text": "This paper analyses admission control policies for server farms handling multiple classes of jobs with heterogeneous service requirements. The system is modelled as a network of M/G/k queues with class-dependent priority disciplines. Using matrix-analytic methods, we derive closed-form approximations for mean sojourn time and rejection probability under static threshold policies. Experiments on a simulated cluster of 128 nodes with four job classes and workloads drawn from traces of a 2009 academic computing grid show that a threshold vector tuned by a gradient-descent procedure reduces mean sojourn time by 18% compared to a FCFS baseline while keeping rejection below 2%. The analysis also identifies a concavity property of the throughput function that enables efficient policy search. The results carry implications for admission control design in shared infrastructure where quality-of-service targets must be maintained per job class."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01322",
+        "kind": "publication",
+        "title": "Online Scheduling of Batch Jobs on Heterogeneous Clusters with Release Dates",
+        "body": {
+          "recordId": "SYN-PUB-01322",
+          "field": "abstract",
+          "text": "We study the online scheduling problem in which jobs arrive over time with release dates, processing times that are unknown until completion, and must be assigned to machines of differing speeds. The objective is to minimise weighted completion time. A Longest-Processing-Time-first (LPT) strategy is adapted for the online setting using a lazy migration rule that avoids excessive job movement between machines. The analysis proves a competitive ratio of O(log n) for the adapted algorithm when processing times follow a log-normal distribution with parameters estimated from a three-month trace of a bioinformatics cluster at the University of Pécs. Simulation experiments confirm that in practice the algorithm achieves within 7% of an offline lower bound. Runtime overhead introduced by the migration-check procedure is below 1% of total scheduling overhead at cluster sizes up to 512 nodes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01323",
+        "kind": "publication",
+        "title": "Modelling Auto-Scaling Latency in Cloud Platforms as a Transient Queue",
+        "body": {
+          "recordId": "SYN-PUB-01323",
+          "field": "abstract",
+          "text": "Auto-scaling services react to load changes with a non-negligible spin-up delay, typically between 30 and 180 seconds on public cloud platforms. This paper models the system as an M/M/c queue with a time-inhomogeneous arrival process and delayed capacity increments. Transient state probabilities are computed numerically using uniformisation, and the impact of spin-up delay on queue length distribution and mean waiting time is characterised for workloads with sinusoidal and burst-shaped arrival patterns. Using publicly released workload data from a European e-government portal (anonymised, 90-day window, peak arrival rate 320 requests/second), the model predicts 95th-percentile response times within 11% of measurements during load ramp-up events. The paper derives a practical rule relating acceptable delay to the coefficient of variation of the inter-arrival time, offering a design guide for platform operators."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01324",
+        "kind": "publication",
+        "title": "Resource Fragmentation in Multi-Tenant Clouds: Measurement and Mitigation",
+        "body": {
+          "recordId": "SYN-PUB-01324",
+          "field": "abstract",
+          "text": "Resource fragmentation occurs when allocated virtual machines leave portions of physical hosts unusable due to mismatched CPU-to-memory ratios. This chapter reviews fragmentation metrics proposed in the literature, proposes a unified fragmentation index based on vector packing residuals, and surveys mitigation strategies including defragmentation via live migration, skewed VM flavours, and admission shaping. A case study using a 60-day operational trace from a fictional regional cloud provider with 48 physical hosts and approximately 900 concurrent VMs illustrates how the fragmentation index evolves over time and how a weekly defragmentation schedule reduces index values by 34% with a mean migration cost of 1.2 seconds of service interruption per VM. The chapter concludes with an open problem formulation connecting fragmentation control to the online vector bin-packing literature."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01325",
+        "kind": "publication",
+        "title": "A Fluid Model for Workload Burstiness and Its Effect on Scheduler Performance",
+        "body": {
+          "recordId": "SYN-PUB-01325",
+          "field": "abstract",
+          "text": "Bursty workloads violate the Poisson assumption underlying classical queueing analysis. This paper replaces the Poisson arrival model with a Markov-modulated fluid process parameterised by burstiness ratio and burst duration, and derives steady-state buffer content distributions analytically for a single-server fluid queue. The derived distributions are validated against discrete-event simulation using synthetic traces with burstiness ratios between 1.1 and 4.0. The model is then used to predict the degradation of three scheduling policies—FIFO, Shortest Job First, and Least Laxity—under increasing burstiness. Results show that Shortest Job First degrades least rapidly but requires accurate job-size estimation, while Least Laxity suffers from instability at burstiness ratios above 2.5 unless a smoothing window is applied. Parametric guidance for selecting the smoothing window width as a function of burst duration is provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01326",
+        "kind": "publication",
+        "title": "Deadline-Aware Scheduling for Mixed Batch and Interactive Workloads on Shared Clusters",
+        "body": {
+          "recordId": "SYN-PUB-01326",
+          "field": "abstract",
+          "text": "Shared computing clusters serving both interactive and batch workloads must balance tight deadline requirements of interactive tasks against the throughput needs of long-running batch jobs. We formulate the problem as an online scheduling problem with two priority classes, hard deadlines for the interactive class, and a weighted sum of tardy batch jobs as secondary objective. A modified Earliest-Deadline-First algorithm with batch back-fill is proposed and evaluated on traces from a university computing centre comprising 11 months of mixed workloads (approximately 230,000 jobs). The algorithm reduces interactive task deadline violation rate from 6.1% under simple priority scheduling to 1.4%, while reducing batch job mean slowdown from 3.8 to 2.9. The trade-off between interactive reliability and batch throughput is characterised as a Pareto frontier parameterised by a single back-fill aggressiveness parameter."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01327",
+        "kind": "publication",
+        "title": "Energy-Aware Server Consolidation Using Lyapunov Drift Optimisation",
+        "body": {
+          "recordId": "SYN-PUB-01327",
+          "field": "abstract",
+          "text": "Server consolidation reduces energy consumption by concentrating workloads onto fewer active hosts, but aggressive consolidation increases queueing delays. This paper applies Lyapunov drift-plus-penalty optimisation to dynamically control consolidation level, trading off energy consumption against a penalty for exceeding per-class response time targets. The control policy requires no prior knowledge of arrival rates and adapts to load changes in O(1) computation per scheduling epoch. Experiments on an OpenStack testbed with 16 physical nodes and workloads replaying a 7-day e-commerce trace show that the Lyapunov policy achieves energy savings of 22% compared to no consolidation and 8% compared to a threshold-based policy, while keeping 98.3% of requests within their response time targets. The paper proves that the policy maintains queue stability under any feasible load."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01328",
+        "kind": "publication",
+        "title": "Bin-Packing Approximations for Container Scheduling in Microservice Architectures",
+        "body": {
+          "recordId": "SYN-PUB-01328",
+          "field": "abstract",
+          "text": "Container-based microservice deployments generate scheduling problems where each container specifies requests and limits for CPU, memory, and network bandwidth, resulting in a three-dimensional vector bin-packing instance. This paper studies the approximation guarantees of five algorithms—FFD, Best-Fit Decreasing, a randomised rounding LP relaxation, a greedy list-scheduling heuristic, and a simulated-annealing post-processor—on both synthetic instances and a Kubernetes scheduling trace from an internal platform of a fictional logistics company (52,000 container placement decisions over 14 days). Approximation ratios are measured as excess node count over a lower bound derived from fractional relaxation. The LP-rounding approach achieves the best theoretical guarantee (2 OPT+3) and performs within 4% of optimal on trace instances, at the cost of 120 ms average runtime versus under 5 ms for FFD."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01329",
+        "kind": "publication",
+        "title": "Sensitivity of Queueing-Based SLA Models to Arrival Process Misspecification",
+        "body": {
+          "recordId": "SYN-PUB-01329",
+          "field": "abstract",
+          "text": "Service-level agreements (SLAs) in cloud computing are often derived from M/M/c or M/G/c queueing models, which assume Poisson arrivals. This paper quantifies the error incurred when the true arrival process has heavier autocorrelation structure—specifically, when it follows a Markov-modulated Poisson process (MMPP)—but is fitted and evaluated as if Poisson. A systematic experiment varies the MMPP correlation coefficient from 0 to 0.85 and the coefficient of variation of service times from 1.0 to 3.0. Mean waiting time prediction error grows from under 5% at low correlation to over 60% at high correlation, with strong interaction with service time variability. Practical recommendations are made for operators: re-estimate arrival processes at intervals no longer than 10 minutes during peak periods, and apply a safety margin of at least 15% to SLA threshold parameters derived under Poisson assumptions."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01330",
+        "kind": "publication",
+        "title": "Preprint: Regret Bounds for Online Vector Bin Packing with Stochastic Item Arrivals",
+        "body": {
+          "recordId": "SYN-PUB-01330",
+          "field": "abstract",
+          "text": "Online bin-packing algorithms must assign items to bins without knowledge of future items. In the stochastic setting where item sizes are drawn i.i.d. from an unknown distribution, learning algorithms can exploit observed history to improve decisions. This preprint formulates the problem in an adversarial-then-stochastic framework and analyses the regret—measured as excess bins opened—of a UCB-style algorithm that maintains empirical size distributions and uses them to bias item-to-bin assignment probabilities. For d-dimensional items and bins of unit capacity in each dimension, an upper regret bound of O(d · T^{2/3} log T) is derived for horizon T, and a lower bound of Ω(d · T^{1/2}) is conjectured. Numerical experiments on synthetic 3-dimensional instances with 10,000 items confirm that empirical regret grows roughly as T^{0.59}, between the two bounds. The preprint also discusses implications for cloud scheduling when job resource footprints can be partially predicted from job metadata."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01331",
+        "kind": "publication",
+        "title": "Workload Trace Characterisation for Distributed Cloud Scheduling Benchmarks: A Multi-Site Study",
+        "body": {
+          "recordId": "SYN-PUB-01331",
+          "field": "abstract",
+          "text": "Reproducible evaluation of cloud scheduling algorithms requires workload traces that reflect realistic job mix, resource heterogeneity, and temporal patterns. This paper collects and characterises traces from four academic computing sites in Serbia, Croatia, Hungary, and Romania, covering a combined 18-month window and approximately 2.1 million job submissions. Statistical properties analysed include inter-arrival time distributions, job size (CPU × memory × duration) distributions, diurnal and weekly periodicity, and user-level burstiness. Fitted distributions are compared against Pareto, log-normal, and phase-type families; the heavy-tailed Pareto fits job duration and memory request marginals best, while inter-arrival times are well-modelled by MMPP(2) processes. A synthetic trace generator calibrated to these parameters is released alongside the paper, enabling controlled benchmark generation. The characterisation reveals systematic differences between sites that caution against generalising results from single-site studies."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01332",
+        "kind": "publication",
+        "title": "A Branch-and-Bound Approach to Freight Consolidation on Sparse Rail Networks",
+        "body": {
+          "recordId": "SYN-PUB-01332",
+          "field": "abstract",
+          "text": "This paper considers the problem of consolidating less-than-truckload freight shipments on a sparse fixed-route rail network modelled as a directed graph with 42 nodes and 67 arcs. An integer programming formulation is presented in which binary variables encode assignment of shipment batches to departure slots, and capacity constraints are imposed at each arc. A branch-and-bound algorithm is implemented and compared against a greedy earliest-departure heuristic on 120 randomly generated instances with demand drawn from empirical distributions derived from a Central European regional operator. The branch-and-bound procedure finds provably optimal solutions for instances with up to 200 shipments within a two-hour time limit in 91% of cases. Average cost reduction relative to the greedy baseline is 14.3%. The formulation is extended to handle transshipment nodes and the resulting increase in integrality gap is analysed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01333",
+        "kind": "publication",
+        "title": "Wrapping-Effect Reduction in Interval Taylor Solvers for Stiff Initial-Value Problems",
+        "body": {
+          "recordId": "SYN-PUB-01333",
+          "field": "abstract",
+          "text": "Stiff ordinary differential equations pose particular difficulties for interval Taylor solvers because error accumulation from the wrapping effect can cause enclosures to grow rapidly. This paper analyses the sources of wrapping-effect inflation in step-by-step Taylor integration and introduces a coordinate-transformation strategy based on a QR-factored Jacobian evaluated at each grid point. The method is implemented within a prototype solver written in MATLAB using INTLAB for directed rounding. Numerical experiments on five benchmark stiff systems, including the Robertson chemical kinetics model and a linearised van der Pol oscillator at large parameter values, demonstrate that enclosure diameters are reduced by factors between 3.1 and 11.7 compared with a plain interval Taylor solver of the same order. Convergence and termination criteria are discussed and step-size control is adapted to maintain both verified inclusion and computational efficiency. Runtime overhead relative to non-rigorous integration is measured and kept below 40% for the tested systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01334",
+        "kind": "publication",
+        "title": "Conditional tail expectation for bivariate environmental risk under asymmetric dependence",
+        "body": {
+          "recordId": "SYN-PUB-01334",
+          "field": "abstract",
+          "text": "The conditional tail expectation (CTE), also known as expected shortfall, is a coherent risk measure widely used in financial risk management but less frequently applied to environmental hazard quantification. This paper derives analytical expressions for the bivariate CTE when the dependence structure belongs to the class of Archimedean copulas with completely monotone generators, covering the Clayton, Gumbel–Hougaard and Joe families. The expressions are used to compute the expected discharge at one gauging station given that discharge at a second station simultaneously exceeds its empirical 95th, 99th and 99.9th percentiles, using records from eleven paired stations in the Tisza basin. Clayton copula fits indicate substantial asymmetry in lower and upper tail dependence, and the resulting CTEs are 12 to 38 percent higher than those implied by the bivariate Gaussian model with matched Kendall τ. Simulation experiments confirm the accuracy of the analytical results for sample sizes as small as n = 200."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0082",
+        "kind": "project",
+        "title": "Scheduling Algorithms for Heterogeneous Resource-Constrained Distributed Systems",
+        "body": {
+          "recordId": "SYN-PRJ-0082",
+          "field": "summary",
+          "text": "The project developed theoretical foundations and practical algorithms for scheduling in distributed systems where nodes differ in CPU architecture, memory bandwidth, and storage speed. The core contributions were: (1) an extended bin-packing framework accommodating three resource dimensions with correlated item sizes; (2) a Lyapunov-based dynamic consolidation policy validated on a local OpenStack testbed; (3) sensitivity analysis of SLA derivation under arrival-process misspecification. The project funded two PhD students, produced eight peer-reviewed publications, and delivered an open-source scheduling simulator released under MIT licence. Collaboration was established with the University of Bologna and Warsaw University of Technology."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0083",
+        "kind": "project",
+        "title": "Multi-Site Workload Trace Collection and Benchmarking Infrastructure for Cloud Scheduling Research",
+        "body": {
+          "recordId": "SYN-PRJ-0083",
+          "field": "summary",
+          "text": "TRACE4CLOUD establishes a shared infrastructure for collecting, anonymising, and publishing workload traces from academic computing centres in Serbia and Hungary, with associated partners in Croatia and Romania. Popović leads the work package on trace characterisation and synthetic trace generation, which produced a calibrated generator described in the 2026 Future Generation Computer Systems paper. The project also organises annual workshops for researchers and computing centre operators, and maintains a publicly accessible trace repository. A secondary objective is developing a common anonymisation protocol that satisfies GDPR requirements while preserving statistical properties relevant to scheduling research."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0099",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0099",
+            "field": "open_to",
+            "quote": "joint projects with companies operating cloud or HPC infrastructure",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0099",
+            "field": "open_to",
+            "quote": "contract research on workload scheduling and resource allocation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0099",
+            "field": "open_to",
+            "quote": "access to the faculty OpenStack testbed for joint experiments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

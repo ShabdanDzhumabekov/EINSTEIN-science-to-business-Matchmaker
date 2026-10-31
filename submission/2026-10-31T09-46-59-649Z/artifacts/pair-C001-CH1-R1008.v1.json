@@ -1,0 +1,200 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a per-site, unsupervised baseline detector calibrated on unlabelled Modbus and BACnet/IP traffic detect behaviour drift in ArmaturaSec's ProtoSense deployments with low false alarms and plain-language explanations, with transfer to BACnet/IP and embedded hardware tested in the first experiment?",
+    "rationale": [
+      {
+        "text": "Kiss's group works directly on unsupervised anomaly detection and one-class classification for ICS protocol traffic using statistical baseline modelling.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "bio",
+            "quote": "unsupervised anomaly detection and one-class classification for industrial control system protocol traffic, using statistical baseline modelling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has built per-register statistical baselines for Modbus/TCP and evaluated a one-class detector at a 0.5% false positive rate on a live substation testbed.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "At a false positive rate of 0.5%, the detector achieved a true positive rate of 91.4% across all attack types.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has methods for threshold calibration when labelled attack data are unavailable, using unlabelled operational data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10480",
+            "field": "abstract",
+            "quote": "proposes a post-hoc calibration procedure using a small set of unlabelled operational data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work includes incremental online anomaly detection that maintains performance under concept drift without periodic full retraining.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "incremental variant of Gaussian mixture modelling (iGMM) for online anomaly detection in ICS traffic without the need for periodic full retraining",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has demonstrated embedded inference feasibility for resource-constrained gateways with quantised and pruned models.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10239",
+            "field": "abstract",
+            "quote": "combined 8-bit quantised, 25%-pruned model achieved inference at 0.9 ms per 10-second window on an ARM Cortex-A7 target",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She is open to joint projects with companies deploying ICS monitoring solutions and prefers applied collaborations that reach real infrastructure.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Kiss prefers applied collaborations that result in deployment on real infrastructure rather than purely synthetic experiments.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The detector must work without labelled malicious traffic and cannot rely on supervised classifiers trained on public attack datasets.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have nothing labelled as malicious",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The method must cover both Modbus and BACnet/IP traffic handled by ProtoSense.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Detection must run on-device on the planned hardware variant without affecting packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration has limited company staffing and data access under NDA.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project, with access to our traffic archives",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Use of the researcher's testbed with industrial partners depends on a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "No BACnet/IP study appears in the supplied researcher material; BACnet detection is a transfer gap from her Modbus/DNP3/PROFINET/EtherNet/IP/OPC UA evidence and must be tested first.",
+      "False positives are the company's proven deployment failure mode: a prior supervised classifier caused clients to switch alerts off, so any detector must be calibrated on site-specific normal traffic.",
+      "The researcher's availability for a joint project is unknown and could limit scope or timeline.",
+      "There are no labelled attacks available from ArmaturaSec clients, so evaluation will depend on controlled or injected scenarios whose representativeness is uncertain.",
+      "Plain-language explanation for plant managers is a hard requirement but is not evidenced in the supplied publications.",
+      "Budget, timeline and the exact NDA/data-sharing terms are not specified."
+    ],
+    "questions": [
+      "What is Prof. Kiss's available time and capacity for this joint project, and does she prefer joint project or industrial PhD supervision?",
+      "Does Prof. Kiss have BACnet/IP traffic experience, BACnet captures or BACnet devices for a first transfer experiment?",
+      "Which normal traffic archives and hardware bench can ArmaturaSec provide under NDA, and do they include BACnet/IP sites?",
+      "What false alarm rate and alert volume do ArmaturaSec clients tolerate, and what explanation format is useful to plant managers?",
+      "Can the planned fifth hardware variant run the candidate detector within ProtoSense's latency and memory limits?",
+      "What are the project budget, duration, data-sharing agreement and publication/IP terms?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T13-53-23-732Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can Serbian-specific lemmatization, within-token script normalization and paradigm-aware retrieval reduce LinguaBot’s no-useful-result rate toward its below-5% target while allowing vocabulary updates without full re-indexing? The first experiment would compare these components against the current Elasticsearch baseline on held-out support queries, stratified by morphology, script mixing and new terminology, testing whether corpus and social-media methods transfer to banking and telecom retrieval without unacceptable precision loss.",
+    "rationale": [
+      {
+        "text": "Her Serbian-specific hybrid lemmatizer directly addresses inflection and dual-script processing, providing a concrete candidate for adaptation rather than relying on a Croatian stemmer.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "This paper presents a rule-based and machine-learning hybrid lemmatizer designed specifically for Serbian, a morphologically rich language written in two scripts — Cyrillic and Latin.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her retrieval research compares stemming, lemmatization and paradigm-based expansion, supporting an evidence-based choice of retrieval strategy.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "The paper evaluates three mitigation strategies — stemming, full lemmatization, and paradigm-based query expansion — comparing their precision and recall",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her cross-script tokenizer explicitly handles script boundaries inside tokens, closely matching the company's mixed-script typo problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her corpus-driven paradigm induction offers a candidate workflow for expanding terminology with linguistic validation, although incremental Elasticsearch updates remain to be demonstrated.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03592",
+            "field": "abstract",
+            "quote": "candidate lemmas are identified through lemmatisation, and their full inflectional paradigms are hypothesised by a rule engine and then validated against corpus evidence.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her evaluation of alternative spelling-normalization methods provides a basis for balancing precision against generalization to unfamiliar borrowings.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must handle Serbian inflection and mixed Latin/Cyrillic input, including switches inside words; handling clean, single-script text alone is insufficient.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "text",
+            "quote": "Our search misses answers because Serbian words change form (e.g. 'kartica', 'karticu', 'karticom') and users mix Latin and Cyrillic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must integrate with the existing Elasticsearch retrieval setup and support vocabulary updates without a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation should use the available labelled query-response data and company linguists; the reported baseline comes from one bank and must not be assumed representative of every client.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Success criteria must test the below-5% miss-rate goal and ongoing maintenance burden; neither is an established outcome.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The prototype must be testable within six months, with tooling and data work scoped to approximately EUR 8,000.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Corpus lemmatization, social-media tokenization and research retrieval results do not establish performance on bank and telecom support queries. The first experiment must test these transfers explicitly, including within-word script typos.",
+      "Paradigm expansion or normalization may conflate distinct terms and improve recall while reducing precision; tokenization or lemmatization accuracy alone cannot establish retrieval success.",
+      "The morphological lexicon reports lower paradigm correctness for borrowings than common vocabulary, creating a specific risk for newly introduced product terminology.",
+      "No supplied evidence demonstrates incremental Elasticsearch integration without full re-indexing; index-time changes could conflict with this requirement.",
+      "Morphology and script confusion account for more than half of baseline misses, but the remaining causes may prevent reaching below 5% through these interventions alone.",
+      "Researcher availability and committed effort are unknown. Deployment hardware, latency limits, data-access permissions and the budget for researcher time are also unspecified."
+    ],
+    "questions": [
+      "What researcher time and company engineering effort can be committed over the six-month period, and is researcher compensation funded separately from the EUR 8,000 tooling/data budget?",
+      "Can the researcher access de-identified queries, relevant knowledge-base documents and relevance labels, and what client permissions, security controls and processing-location restrictions apply?",
+      "How is 'no useful result' defined, and can the baseline be reproduced with held-out, client-stratified and time-separated evaluation data?",
+      "Which Elasticsearch version, analyzers and index mappings are deployed, and what exactly is permitted under the no-full-re-index requirement?",
+      "What latency, throughput, hosting and hardware limits must the prototype satisfy, and what precision regression would be unacceptable?",
+      "Can the first experiment include separately labelled inflection, within-word script-mixing and unseen-product-term cases, with linguists validating both retrieval relevance and normalization errors?",
+      "Which released models, code, lexicons and corpus subsets are available for commercial use under their exact licences?",
+      "How frequently must new vocabulary become searchable, who approves additions, and what maintenance workload is acceptable?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0288",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

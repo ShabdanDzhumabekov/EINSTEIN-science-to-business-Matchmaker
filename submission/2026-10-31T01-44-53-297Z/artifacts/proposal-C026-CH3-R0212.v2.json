@@ -1,0 +1,189 @@
+{
+  "ref": {
+    "artifactId": "proposal-C026-CH3-R0212",
+    "version": 2
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0212",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Groundwater monitoring and leachate containment for Zelena Petlja's unlined yard",
+    "facts": [
+      {
+        "text": "Company sampling returned COD 3,400 mg/L, above the formal-response threshold, and the Subotica Environmental Inspectorate ordered four groundwater wells within 120 days plus a remediation proposal before late June 2024.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Only a 1993 hydrogeological sketch exists; the company does not know contamination extent or seasonal groundwater flow direction.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The yard liner was never designed for liquid retention; a 50 mm defect increased cumulative groundwater loading by 340% relative to an intact liner under wet antecedent conditions in a published simulation.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02724",
+            "field": "abstract",
+            "quote": "a 50 mm circular defect increased cumulative groundwater loading by 340 % relative to an intact liner under wet antecedent conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports no dedicated research budget or laboratory beyond a basic wet-chemistry bench, and two process technicians who track sorting-line performance data daily.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "two technicians with process engineering backgrounds who track sorting-line performance data daily",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Vojvodina evidence indicates mean-annual-only containment design may underestimate peak leachate infiltration by up to 40% in this climatic setting.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Site-specific geochemical attenuation factors are expected in Serbian landfill permit risk assessments.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02717",
+            "field": "abstract",
+            "quote": "reporting geochemical attenuation factors as part of site-specific risk assessments for Serbian landfill permit applications",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Zorić is open to contract research on site-specific leachate transport modelling and containment design.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "contract research on site-specific leachate transport modelling and containment design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her field study used an 18-piezometer network over 30 months and recommends dual-tracer campaigns for comparable compliance monitoring.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "A closed landfill in northern Vojvodina was monitored over a 30-month period using a network of 18 piezometers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "recommends dual-tracer campaigns for compliance monitoring at comparable sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This is a plausible match because Zorić's openness and landfill monitoring/drain-design experience fit the inspectorate task; it is reasoning, not a commitment.",
+      "Transfer and method risk: her evidence comes from closed landfills, a transfer station and gravel/alluvial aquifers, not an unlined yard with 3,400 mg/L COD; dual tracers add analysis burden and her PRB evidence covers ammonium, not bulk COD.",
+      "The proposal is conditional: Zorić's availability for the 2024 120-day window is unknown, and company technician time, site access and data sharing are not confirmed."
+    ],
+    "proposedActions": [
+      "First experiment: a four-well baseline/seasonal-screening campaign at the yard, using the 1993 sketch and company COD bench data as baseline, subject to confirming site access, technician time and data sharing. Researcher contribution proposed: define well locations/depths and sampling protocol; company contribution proposed: access, records and technician support if confirmed. Measure water level, chloride, ammonium, COD and electrical conductivity at each well and selected depths, with a seasonal repeat if possible. Compare conservative chloride with reactive ammonium to test whether published closed-landfill/transfer-station assumptions hold for this unlined yard at 3,400 mg/L COD. Go/no-go: proceed only if the inspectorate confirms written well/proposal criteria in weeks 1-2, the wells give interpretable flow direction, and at least one consistent tracer signal appears; otherwise escalate. Success criteria: four interpretable wells and a defensible flow-direction map by week 12; draft remediation proposal by late June 2024. Timeline: weeks 1-2 design/permits, weeks 3-8 drilling/sampling, weeks 9-16 interpretation/draft.",
+      "Proposed next step: design the four-well network (locations, depths, screen intervals, sampling frequency) to the inspectorate's format, using first-campaign data and Zorić's dual-tracer experience; review before final drilling if flow direction remains undefined.",
+      "Draft a containment/remediation proposal comparing passive interceptor drain charts with source control, liner repair and ammonium PRB polishing; include seasonal water-table design and geochemical attenuation factors; treat PRB evidence as ammonium-only and require a COD-treatment pilot before claiming 3,400 mg/L COD treatment.",
+      "Set up a joint inspectorate/company review to confirm acceptance criteria, QA/QC, sample custody, publication and IP terms; use the company wet-chemistry bench for COD/conductivity and external lab for chloride/ammonium if budget is confirmed."
+    ],
+    "questions": [
+      "Can Zorić confirm availability and field capacity for the 120-day window ending late June 2024, given teaching and project commitments?",
+      "What exactly does the inspectorate require for the four wells (locations, depths, construction, sampling frequency) and what remediation-proposal format or standards will be accepted?",
+      "What existing data can the company share: 1993 sketch, borehole logs, water levels, leachate sampling QA/QC, waste composition, yard drainage, liner condition, topography and leachate flow/volume/chemistry?",
+      "What budget and procurement route exist for drilling, laboratory analyses and any treatment pilot, and can external funding fit the 120-day deadline?",
+      "Will the company provide site access, technician time and permission for data use or publication, and what IP terms apply?"
+    ],
+    "markdown": "# Groundwater monitoring and leachate containment for Zelena Petlja's unlined yard\n\n## Verified facts\n- Company sampling returned COD 3,400 mg/L, above the formal-response threshold, and the Subotica Environmental Inspectorate ordered four groundwater wells within 120 days plus a remediation proposal before late June 2024. [F1]\n- Only a 1993 hydrogeological sketch exists; the company does not know contamination extent or seasonal groundwater flow direction. [F2]\n- The yard liner was never designed for liquid retention; a 50 mm defect increased cumulative groundwater loading by 340% relative to an intact liner under wet antecedent conditions in a published simulation. [F3]\n- The company reports no dedicated research budget or laboratory beyond a basic wet-chemistry bench, and two process technicians who track sorting-line performance data daily. [F4]\n- Vojvodina evidence indicates mean-annual-only containment design may underestimate peak leachate infiltration by up to 40% in this climatic setting. [F5]\n- Site-specific geochemical attenuation factors are expected in Serbian landfill permit risk assessments. [F6]\n- Zorić is open to contract research on site-specific leachate transport modelling and containment design. [F7]\n- Her field study used an 18-piezometer network over 30 months and recommends dual-tracer campaigns for comparable compliance monitoring. [F8]\n\n## Our inference\n- This is a plausible match because Zorić's openness and landfill monitoring/drain-design experience fit the inspectorate task; it is reasoning, not a commitment.\n- Transfer and method risk: her evidence comes from closed landfills, a transfer station and gravel/alluvial aquifers, not an unlined yard with 3,400 mg/L COD; dual tracers add analysis burden and her PRB evidence covers ammonium, not bulk COD.\n- The proposal is conditional: Zorić's availability for the 2024 120-day window is unknown, and company technician time, site access and data sharing are not confirmed.\n\n## Proposed next steps\n- First experiment: a four-well baseline/seasonal-screening campaign at the yard, using the 1993 sketch and company COD bench data as baseline, subject to confirming site access, technician time and data sharing. Researcher contribution proposed: define well locations/depths and sampling protocol; company contribution proposed: access, records and technician support if confirmed. Measure water level, chloride, ammonium, COD and electrical conductivity at each well and selected depths, with a seasonal repeat if possible. Compare conservative chloride with reactive ammonium to test whether published closed-landfill/transfer-station assumptions hold for this unlined yard at 3,400 mg/L COD. Go/no-go: proceed only if the inspectorate confirms written well/proposal criteria in weeks 1-2, the wells give interpretable flow direction, and at least one consistent tracer signal appears; otherwise escalate. Success criteria: four interpretable wells and a defensible flow-direction map by week 12; draft remediation proposal by late June 2024. Timeline: weeks 1-2 design/permits, weeks 3-8 drilling/sampling, weeks 9-16 interpretation/draft.\n- Proposed next step: design the four-well network (locations, depths, screen intervals, sampling frequency) to the inspectorate's format, using first-campaign data and Zorić's dual-tracer experience; review before final drilling if flow direction remains undefined.\n- Draft a containment/remediation proposal comparing passive interceptor drain charts with source control, liner repair and ammonium PRB polishing; include seasonal water-table design and geochemical attenuation factors; treat PRB evidence as ammonium-only and require a COD-treatment pilot before claiming 3,400 mg/L COD treatment.\n- Set up a joint inspectorate/company review to confirm acceptance criteria, QA/QC, sample custody, publication and IP terms; use the company wet-chemistry bench for COD/conductivity and external lab for chloride/ammonium if budget is confirmed.\n\n## Open questions\n- Can Zorić confirm availability and field capacity for the 120-day window ending late June 2024, given teaching and project commitments?\n- What exactly does the inspectorate require for the four wells (locations, depths, construction, sampling frequency) and what remediation-proposal format or standards will be accepted?\n- What existing data can the company share: 1993 sketch, borehole logs, water levels, leachate sampling QA/QC, waste composition, yard drainage, liner condition, topography and leachate flow/volume/chemistry?\n- What budget and procurement route exist for drilling, laboratory analyses and any treatment pilot, and can external funding fit the 120-day deadline?\n- Will the company provide site access, technician time and permission for data use or publication, and what IP terms apply?",
+    "taskId": "C026-CH3",
+    "researcherId": "R0212",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0212",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C026-CH3-R0212",
+        "version": 1
+      }
+    ]
+  }
+}

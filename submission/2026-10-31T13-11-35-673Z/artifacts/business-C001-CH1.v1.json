@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C001-CH1",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T13-11-35-673Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C001-CH1",
+    "companyId": "C001",
+    "companyName": "ArmaturaSec d.o.o.",
+    "sector": "Cybersecurity",
+    "location": "Zrenjanin",
+    "challenge": {
+      "text": {
+        "recordId": "C001-CH1",
+        "field": "text",
+        "text": "We need to detect unusual behaviour on Modbus and BACnet networks without labelled attack data — our clients have never been breached (or don't know it), so we have zero examples of malicious traffic and supervised classifiers are useless to us."
+      },
+      "detail": {
+        "recordId": "C001-CH1",
+        "field": "detail",
+        "text": "Our ProtoSense module watches Modbus and BACnet traffic and is supposed to flag anything that looks wrong. The problem is that none of our clients has ever given us a packet capture that contains a confirmed attack. A few of them have been running their networks for twenty years with no security monitoring at all, so if they were compromised they would not know. We have plenty of normal traffic — we have collected several terabytes of captures from consenting clients over the past three years — but we have nothing labelled as malicious. We tried building a supervised classifier once, fed it data from public ICS datasets, and it flagged so many false positives in real deployments that clients started switching the alerts off. What we actually need is something that learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline. We have the traffic archives, we have the hardware to run inference on-device, and we have one engineer who has been reading about anomaly detection for six months. We need a method that works with no attack examples and that we can explain to a plant manager in plain language."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C001",
+        "field": "about",
+        "text": "ArmaturaSec d.o.o. has been building network security hardware in Zrenjanin since 2008. We started by selling simple firewall appliances to regional electricity distributors who needed to segment their control networks from corporate IT. Over fifteen years that focus narrowed: today every product we ship is designed specifically for operational technology environments — the kind of networks that run pumps, switchgear, and assembly lines, not office computers.\n\nOur customers are energy utilities, water treatment operators, and discrete manufacturers in Serbia, Bosnia and Herzegovina, North Macedonia, and Montenegro. They are not looking for cloud dashboards or vendor lock-in; they need a device that sits in a metal cabinet at a substation or pump station, runs for years without attention, and tells someone when something is wrong.\n\nWe have 67 people in Zrenjanin. About half write firmware or do hardware bring-up; the rest handle sales, installation, and support. Our head of engineering, Radovan Čičić, joined from a SCADA integrator in 2011 and has led every product generation since. We do not resell other vendors' software. Everything that runs on our appliances — the protocol parsers, the access control engine, the alerting logic — is written and maintained by our own team."
+      },
+      "products": [
+        {
+          "recordId": "C001",
+          "field": "products",
+          "text": "NetGuard-OT: network access control appliance for industrial Ethernet segments"
+        },
+        {
+          "recordId": "C001",
+          "field": "products",
+          "text": "NetGuard-OT Mini: DIN-rail form factor variant for smaller substations and pump stations"
+        },
+        {
+          "recordId": "C001",
+          "field": "products",
+          "text": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic"
+        },
+        {
+          "recordId": "C001",
+          "field": "products",
+          "text": "ArmaturaSec Managed Support: annual firmware maintenance and remote monitoring subscription"
+        },
+        {
+          "recordId": "C001",
+          "field": "products",
+          "text": "SecAudit Report: one-time on-site assessment and written security findings report"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "Embedded Linux (custom Yocto build)"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "Modbus TCP and BACnet/IP protocol parsing"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "C and Rust for firmware components"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "iptables and nftables for packet filtering"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "GPRS and LTE-M cellular backhaul"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "Python for internal tooling and test scripts"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "Hardware-in-the-loop bench testing with physical PLC simulators"
+        },
+        {
+          "recordId": "C001",
+          "field": "tech",
+          "text": "X.509 certificate management for device identity"
+        }
+      ],
+      "plans": {
+        "recordId": "C001",
+        "field": "plans",
+        "text": "ArmaturaSec intends to release a fifth hardware variant in late 2025 with a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency. We are also evaluating whether to open a small office in Sarajevo to reduce travel time for Bosnian client support."
+      },
+      "rdCapacity": {
+        "recordId": "C001",
+        "field": "rd_capacity",
+        "text": "We can dedicate one to two engineers part-time to a collaborative project, with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA."
+      },
+      "pastCollaborations": {
+        "recordId": "C001",
+        "field": "past_collaborations",
+        "text": "We ran a one-semester student project with a technical faculty in Novi Sad in 2021 that produced a prototype BACnet fuzzer; the code was useful but the collaboration was not continued formally."
+      }
+    }
+  }
+}

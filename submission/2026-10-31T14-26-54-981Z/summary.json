@@ -1,0 +1,1072 @@
+{
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "results": [
+    {
+      "status": "screened_out",
+      "taskId": "C008-CH3",
+      "reason": "Jev rates the task as a research problem at 0.05"
+    },
+    {
+      "status": "proposal_needs_revision",
+      "taskId": "C013-CH2",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C017-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C017-CH1-R0746",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T14-26-54-981Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C017-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C017-CH1-R0746",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C017-CH1-R0746",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Finding small Tisa salinity pockets within routine survey costs",
+          "facts": [
+            {
+              "text": "TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares. Denser sampling adds fieldwork, laboratory costs and delivery time; the company says it cannot afford generally denser sampling.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "text",
+                  "quote": "We do traditional grid sampling at one point per 4 hectares",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "text",
+                  "quote": "we can't afford to sample more densely.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company has GPS coordinates and laboratory results for about 18,000 points from ten years. Its stated customer outputs cover pH, phosphorus, potassium, humus and liming needs, and it uses SRPS sampling and analysis protocols; these statements do not establish historical ECe or ESP coverage.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "about",
+                  "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "tech",
+                  "quote": "Standardni agrohemijski protokoli po SRPS metodologiji za uzorkovanje i analizu",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "TloCare reports unsuccessful NDVI-guided adaptive sampling because salinity was not clearly visible in early-spring vegetation indices.",
+              "sources": [
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "Probali smo da koristimo satelitske NDVI snimke kao vodič za adaptivno uzorkovanje, ali nismo imali dobre rezultate",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017-CH1",
+                  "field": "detail",
+                  "quote": "salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kosanović lists openness to company joint projects, availability for short consultancy visits and a preference for field-data collection. His instruments are available to external partners subject to scheduling and consumables cost recovery.",
+              "sources": [
+                {
+                  "recordId": "R0746",
+                  "field": "open_to",
+                  "quote": "joint projects with companies needing field-scale soil characterisation",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0746",
+                  "field": "notes",
+                  "quote": "Kosanović is available for short-term consultancy visits to company sites within Serbia.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0746",
+                  "field": "notes",
+                  "quote": "He prefers collaborations that involve genuine field data collection rather than purely computational work.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0746",
+                  "field": "notes",
+                  "quote": "His EM38 and pXRF instruments are available to external partners subject to scheduling and consumables cost recovery.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "TloCare has two programmers and one GIS specialist able to allocate up to one-third of their time to development, with occasional field-team support. Its existing spatial database and portal use PostGIS and Leaflet.",
+              "sources": [
+                {
+                  "recordId": "C017",
+                  "field": "rd_capacity",
+                  "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "rd_capacity",
+                  "quote": "uz povremenu podršku terenske ekipe za testiranje u polju.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "tech",
+                  "quote": "PostGIS baza podataka za prostorne slojeve parcela",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C017",
+                  "field": "tech",
+                  "quote": "Leaflet.js za prikaz mapa u web portalu",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements. It reported lower cross-validation errors than ordinary kriging without those covariates.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08248",
+                  "field": "abstract",
+                  "quote": "Regression-kriging (RK) was applied to delineate saline-sodic soil management zones at a commercial sunflower farm of 280 hectares in central Vojvodina.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08248",
+                  "field": "abstract",
+                  "quote": "Apparent electrical conductivity (ECa) from an EM38 survey and total sodium content from pXRF scanning served as covariates",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08248",
+                  "field": "abstract",
+                  "quote": "RK achieved RMSE of 2.7 mS/m for ECe and 2.9 cmol/kg for ESP, compared with 3.8 and 4.2 for ordinary kriging without covariates.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights. His flooded-field study found lower temporal stability in transitions between microrelief elements.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08252",
+                  "field": "abstract",
+                  "quote": "Nugget variance estimates became unstable below n=30, compromising kriging weights.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-08250",
+                  "field": "abstract",
+                  "quote": "Zones of lower stability were located on sloping transitions between microrelief elements.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a strong methodological fit, but published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow. Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives.",
+            "Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits. Historical records could help only after checking salinity coverage and protocol comparability; archive size alone does not establish usable reference labels.",
+            "This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format. A bounded field pilot appears more practical than immediate portal development."
+          ],
+          "proposedActions": [
+            "Propose comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze selection before evaluation. Test local conductivity–salinity calibration, not imported spacing. Define reference pockets using an agreed laboratory salinity threshold. Count each confirmed 0.3–0.8-hectare pocket once, detected when predictions cover at least half its polygon; divide by all confirmed target-size pockets. Measure false-positive hectares over reference-confirmed non-saline hectares. Proposed go/no-go applies to the best tuning-selected configuration, whichever it is: higher pocket detection than the grid, with no greater false-positive area rate, routine cost per hectare or turnaround. Pre-agree confidence level, spatially appropriate uncertainty estimation and minimum detection improvement; require the detection-difference lower confidence bound to exceed that improvement threshold and the false-positive-difference upper bound to satisfy an agreed nonpositive tolerance. Also require cost and turnaround within agreed caps. Unresolved reference areas or insufficient pockets prevent a pass.",
+            "Propose six to eight weeks after access and bookings: TloCare would nominate fields and supply records; Kosanović would design calibration and sensing. Audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund independent reference sampling. Deliver guidance before soil-sampling dispatch, explicitly scheduling and costing earlier sensing. If predictions must precede every field visit, advance-data availability remains a prerequisite. Confirm instrument bookings, consumables funding and field support before starting.",
+            "Keep implementation within stated staffing: initially export PostGIS-compatible zone and uncertainty layers for Leaflet review. Propose repeat measurements across moisture conditions, especially transitions, before reusing surveys. Test affordable calibration densities without assuming sparse samples remain reliable. Include advance sensing, consumables and repeat visits in recurring costs; report independent validation costs separately."
+          ],
+          "questions": [
+            "Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?",
+            "Can TloCare secure representative Tisa fields, independent reference-sampling access and historical salinity records with depth, date and laboratory metadata?",
+            "What laboratory salinity threshold, minimum detection improvement, confidence level, nonpositive false-positive tolerance, cost ceiling and turnaround limit should govern acceptance?",
+            "Is a separately costed advance sensor visit acceptable before soil-sampling dispatch, and can the parties agree pilot funding, staff allocation and data-use terms?"
+          ],
+          "benefits": {
+            "company": "The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround, and identify when advance sensing is economical.",
+            "researcher": "Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale."
+          },
+          "markdown": "# Finding small Tisa salinity pockets within routine survey costs\n\n## Verified facts\n- TloCare reports that its four-hectare sampling grid misses saline pockets of 0.3–0.8 hectares. Denser sampling adds fieldwork, laboratory costs and delivery time; the company says it cannot afford generally denser sampling. [F1]\n- The company has GPS coordinates and laboratory results for about 18,000 points from ten years. Its stated customer outputs cover pH, phosphorus, potassium, humus and liming needs, and it uses SRPS sampling and analysis protocols; these statements do not establish historical ECe or ESP coverage. [F2]\n- TloCare reports unsuccessful NDVI-guided adaptive sampling because salinity was not clearly visible in early-spring vegetation indices. [F3]\n- Kosanović lists openness to company joint projects, availability for short consultancy visits and a preference for field-data collection. His instruments are available to external partners subject to scheduling and consumables cost recovery. [F4]\n- TloCare has two programmers and one GIS specialist able to allocate up to one-third of their time to development, with occasional field-team support. Its existing spatial database and portal use PostGIS and Leaflet. [F5]\n- Kosanović’s sunflower-farm study used regression-kriging with both EM38 conductivity and pXRF sodium measurements. It reported lower cross-validation errors than ordinary kriging without those covariates. [F6]\n- His sample-reduction study found unstable nugget estimates below 30 cores, compromising kriging weights. His flooded-field study found lower temporal stability in transitions between microrelief elements. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether small salinity pockets can be located more reliably without increasing routine cost or turnaround, and identify when advance sensing is economical.\n- For the researcher: Subject to agreement and access, the project could provide Tisa floodplain measurements for testing local calibration, sensor combinations and the sampling-density trade-off at small-pocket scale.\n\n## Our inference\n- This suggests a strong methodological fit, but published sunflower results do not validate detection of TloCare’s small Tisa pockets or an EM38-only workflow. Conductivity is a proxy: texture, moisture and survey timing could produce missed pockets or false positives.\n- Savings likely depend on balancing calibration density against advance sensor-survey costs and repeat visits. Historical records could help only after checking salinity coverage and protocol comparability; archive size alone does not establish usable reference labels.\n- This joint-project proposal is conditional: sustained researcher availability remains unconfirmed despite openness to this format. A bounded field pilot appears more practical than immediate portal development.\n\n## Proposed next steps\n- Propose comparing the four-hectare grid, EM38-assisted regression-kriging and EM38-plus-pXRF regression-kriging. Use separate tuning fields and densely laboratory-referenced held-out Tisa fields; verify spatial independence and freeze selection before evaluation. Test local conductivity–salinity calibration, not imported spacing. Define reference pockets using an agreed laboratory salinity threshold. Count each confirmed 0.3–0.8-hectare pocket once, detected when predictions cover at least half its polygon; divide by all confirmed target-size pockets. Measure false-positive hectares over reference-confirmed non-saline hectares. Proposed go/no-go applies to the best tuning-selected configuration, whichever it is: higher pocket detection than the grid, with no greater false-positive area rate, routine cost per hectare or turnaround. Pre-agree confidence level, spatially appropriate uncertainty estimation and minimum detection improvement; require the detection-difference lower confidence bound to exceed that improvement threshold and the false-positive-difference upper bound to satisfy an agreed nonpositive tolerance. Also require cost and turnaround within agreed caps. Unresolved reference areas or insufficient pockets prevent a pass.\n- Propose six to eight weeks after access and bookings: TloCare would nominate fields and supply records; Kosanović would design calibration and sensing. Audit archive targets, depths, dates and laboratory comparability; agree evaluation precision and fund independent reference sampling. Deliver guidance before soil-sampling dispatch, explicitly scheduling and costing earlier sensing. If predictions must precede every field visit, advance-data availability remains a prerequisite. Confirm instrument bookings, consumables funding and field support before starting.\n- Keep implementation within stated staffing: initially export PostGIS-compatible zone and uncertainty layers for Leaflet review. Propose repeat measurements across moisture conditions, especially transitions, before reusing surveys. Test affordable calibration densities without assuming sparse samples remain reliable. Include advance sensing, consumables and repeat visits in recurring costs; report independent validation costs separately.\n\n## Open questions\n- Can Kosanović confirm sustained joint-project availability, his proposed role and feasible instrument-booking terms?\n- Can TloCare secure representative Tisa fields, independent reference-sampling access and historical salinity records with depth, date and laboratory metadata?\n- What laboratory salinity threshold, minimum detection improvement, confidence level, nonpositive false-positive tolerance, cost ceiling and turnaround limit should govern acceptance?\n- Is a separately costed advance sensor visit acceptable before soil-sampling dispatch, and can the parties agree pilot funding, staff allocation and data-use terms?",
+          "taskId": "C017-CH1",
+          "researcherId": "R0746",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C017-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C017-CH1-R0746",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C017-CH1-R0746",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C026-CH3",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C026-CH3-R0658",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T14-26-54-981Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C026-CH3",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C026-CH3-R0658",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C026-CH3-R0658",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Groundwater monitoring and leachate containment at Zelena Petlja",
+          "facts": [
+            {
+              "text": "The company reports leachate seeping toward its boundary, a liner not designed for liquid retention, and an in-house leachate COD measurement of 3,400 mg/L.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "text",
+                  "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "The liner under that area was never designed for liquid retention.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "we took leachate samples ourselves using our in-house bench: COD came back at 3,400 mg/L",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports a February inspectorate order concerning four groundwater monitoring wells and a remediation proposal, with a 120-day period ending in late June 2024.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "all before the 120-day deadline runs out in late June 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's hydrogeological sketch dates from 1993. It reports neither the extent of contamination nor seasonal groundwater-flow directions as known.",
+              "sources": [
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C026-CH3",
+                  "field": "detail",
+                  "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company reports no dedicated research budget and no laboratory beyond its basic leachate wet-chemistry bench.",
+              "sources": [
+                {
+                  "recordId": "C026",
+                  "field": "rd_capacity",
+                  "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kovač's group combines tracer experiments, piezometer networks and numerical flow modelling. Her published Danube model was calibrated against observed heads; its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty.",
+              "sources": [
+                {
+                  "recordId": "R0658",
+                  "field": "bio",
+                  "quote": "combining field tracer experiments, multilevel piezometer networks, and numerical flow modelling.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-07454",
+                  "field": "abstract",
+                  "quote": "calibrated against 18 months of observed heads in 11 piezometers.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-07454",
+                  "field": "abstract",
+                  "quote": "Sensitivity analyses indicated that uncertainty in hydraulic conductivity of the alluvial gravel unit is the dominant source of prediction uncertainty.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kovač lists openness to joint project proposals on aquifer management. Her notes report limited capacity for large new commitments before mid-2025.",
+              "sources": [
+                {
+                  "recordId": "R0658",
+                  "field": "open_to",
+                  "quote": "joint project proposals on water supply security and alluvial aquifer management",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0658",
+                  "field": "notes",
+                  "quote": "has limited capacity for large new commitments before mid-2025.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "This suggests a useful joint project centred on hydrogeological characterisation rather than an immediate treatment solution. Participation remains conditional because Kovač's present availability is unknown.",
+            "Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer. Local stratigraphy, hydraulic properties and repeat groundwater levels would test that transfer; four wells and a short campaign may leave plume extent and seasonal reversals unresolved.",
+            "The supplied research does not establish municipal-leachate treatment or containment-design capability. A specialist would likely be needed. The company bench result is not complete contaminant characterisation, and neither natural attenuation nor inspectorate acceptance should be assumed."
+          ],
+          "proposedActions": [
+            "Compare the 1993-sketch interpretation with site-derived interpretations. The company would supply records, access and procurement; Kovač would lead interpretation if available. Survey four agreed wells, log strata, conduct slug tests, and sample leachate and groundwater with an agreed analytical suite, blanks and duplicates. Use initial levels for interpretation selection and a separate repeat round for verification, checking independence. Measure head-prediction error, gradient uncertainty, hydraulic conductivity and contaminant concentrations. Before verification, fix tolerances and the held-out statistic: maximum absolute head error across repeat observations at each well, without averaging; every well, including boundary wells, must pass with measurement uncertainty included. For the best-supported interpretation selected using initial data, proposed technical go/no-go also requires gradients distinguishable from measurement uncertainty and laboratory quality-control acceptance. Insufficient evidence means further investigation, not a pass. Regulatory go/no-go additionally requires four compliant wells installed and an acceptable remediation proposal submitted by the confirmed applicable deadline, with acceptance checked directly with the inspectorate.",
+            "Propose a mobilisation review in week one, layout and analytical-protocol review in week two, and an initial field-and-reporting phase over the following four weeks, subject to drilling access and procurement. First verify the historical order's current status; reject or revise this schedule if it cannot meet the applicable deadline. Agree construction standards, authorised sign-off and inspectorate review before drilling.",
+            "Prepare a funded, narrowly scoped work plan covering drilling, surveying, external analyses and additional personnel. Include specialist review of interim source containment and treatment options, with any treatment performance tested separately against agreed discharge or disposal criteria. Plan seasonal follow-up and possible additional wells or off-site investigation; do not describe the initial campaign as complete plume delineation."
+          ],
+          "questions": [
+            "Can the company provide the complete order and subsequent correspondence establishing the current deadline, four-well specifications, analytical requirements and remediation-acceptance process?",
+            "Can Kovač confirm present availability for this narrowly scoped joint project and identify who could lead urgent field mobilisation?",
+            "What funding and procurement arrangements could cover drilling, external laboratory work, monitoring and containment/treatment specialist support?",
+            "Can the company provide the 1993 sketch, permits, utility plans, storage and sampling records, quality-control information, and permissions for necessary on-site and boundary access?"
+          ],
+          "benefits": {
+            "company": "The first investigation could distinguish defensible monitoring locations from assumptions and identify evidence still needed for containment decisions and a regulatory submission.",
+            "researcher": "Subject to agreement and access, Kovač could test how alluvial-aquifer characterisation methods transfer to a waste-yard setting using new stratigraphic, hydraulic and water-quality observations."
+          },
+          "markdown": "# Groundwater monitoring and leachate containment at Zelena Petlja\n\n## Verified facts\n- The company reports leachate seeping toward its boundary, a liner not designed for liquid retention, and an in-house leachate COD measurement of 3,400 mg/L. [F1]\n- The company reports a February inspectorate order concerning four groundwater monitoring wells and a remediation proposal, with a 120-day period ending in late June 2024. [F2]\n- The company's hydrogeological sketch dates from 1993. It reports neither the extent of contamination nor seasonal groundwater-flow directions as known. [F3]\n- The company reports no dedicated research budget and no laboratory beyond its basic leachate wet-chemistry bench. [F4]\n- Kovač's group combines tracer experiments, piezometer networks and numerical flow modelling. Her published Danube model was calibrated against observed heads; its sensitivity analysis identified hydraulic-conductivity uncertainty as the dominant prediction uncertainty. [F5]\n- Kovač lists openness to joint project proposals on aquifer management. Her notes report limited capacity for large new commitments before mid-2025. [F6]\n\n## Potential benefits\n- For the company: The first investigation could distinguish defensible monitoring locations from assumptions and identify evidence still needed for containment decisions and a regulatory submission.\n- For the researcher: Subject to agreement and access, Kovač could test how alluvial-aquifer characterisation methods transfer to a waste-yard setting using new stratigraphic, hydraulic and water-quality observations.\n\n## Our inference\n- This suggests a useful joint project centred on hydrogeological characterisation rather than an immediate treatment solution. Participation remains conditional because Kovač's present availability is unknown.\n- Methods demonstrated in river-connected alluvial aquifers are not already validated for this waste-yard aquifer. Local stratigraphy, hydraulic properties and repeat groundwater levels would test that transfer; four wells and a short campaign may leave plume extent and seasonal reversals unresolved.\n- The supplied research does not establish municipal-leachate treatment or containment-design capability. A specialist would likely be needed. The company bench result is not complete contaminant characterisation, and neither natural attenuation nor inspectorate acceptance should be assumed.\n\n## Proposed next steps\n- Compare the 1993-sketch interpretation with site-derived interpretations. The company would supply records, access and procurement; Kovač would lead interpretation if available. Survey four agreed wells, log strata, conduct slug tests, and sample leachate and groundwater with an agreed analytical suite, blanks and duplicates. Use initial levels for interpretation selection and a separate repeat round for verification, checking independence. Measure head-prediction error, gradient uncertainty, hydraulic conductivity and contaminant concentrations. Before verification, fix tolerances and the held-out statistic: maximum absolute head error across repeat observations at each well, without averaging; every well, including boundary wells, must pass with measurement uncertainty included. For the best-supported interpretation selected using initial data, proposed technical go/no-go also requires gradients distinguishable from measurement uncertainty and laboratory quality-control acceptance. Insufficient evidence means further investigation, not a pass. Regulatory go/no-go additionally requires four compliant wells installed and an acceptable remediation proposal submitted by the confirmed applicable deadline, with acceptance checked directly with the inspectorate.\n- Propose a mobilisation review in week one, layout and analytical-protocol review in week two, and an initial field-and-reporting phase over the following four weeks, subject to drilling access and procurement. First verify the historical order's current status; reject or revise this schedule if it cannot meet the applicable deadline. Agree construction standards, authorised sign-off and inspectorate review before drilling.\n- Prepare a funded, narrowly scoped work plan covering drilling, surveying, external analyses and additional personnel. Include specialist review of interim source containment and treatment options, with any treatment performance tested separately against agreed discharge or disposal criteria. Plan seasonal follow-up and possible additional wells or off-site investigation; do not describe the initial campaign as complete plume delineation.\n\n## Open questions\n- Can the company provide the complete order and subsequent correspondence establishing the current deadline, four-well specifications, analytical requirements and remediation-acceptance process?\n- Can Kovač confirm present availability for this narrowly scoped joint project and identify who could lead urgent field mobilisation?\n- What funding and procurement arrangements could cover drilling, external laboratory work, monitoring and containment/treatment specialist support?\n- Can the company provide the 1993 sketch, permits, utility plans, storage and sampling records, quality-control information, and permissions for necessary on-site and boundary access?",
+          "taskId": "C026-CH3",
+          "researcherId": "R0658",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C026-CH3",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C026-CH3-R0658",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C026-CH3-R0658",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C053-CH1",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "ready",
+      "taskId": "C060-CH2",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C060-CH2-R0146",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T14-26-54-981Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C060-CH2",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C060-CH2-R0146",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C060-CH2-R0146",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Testing PassengerView ETA Accuracy for Romanian Bus Networks",
+          "facts": [
+            {
+              "text": "The company reports a contractual benchmark of displayed ETAs within 90 seconds of actual arrival at least 85% of the time. Its current PassengerView uses the published timetable plus a last-position offset.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "their contracts require displayed ETAs to be within 90 seconds of the bus's actual arrival at least 85 percent of the time.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "Our current PassengerView simply projects the published timetable plus a crude offset based on the last known GPS position.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company collects ten-second GPS pings from 340 buses. Its PostgreSQL archive contains roughly 2.8 billion rows, and weather data is not integrated.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "Since 2021 we have been collecting GPS pings from 340 buses every ten seconds through DataBridge AVL.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The raw data sits in a PostgreSQL time-series table — roughly 2.8 billion rows at this point",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We do not have weather data integrated yet.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's environment includes Java 17/Spring Boot and on-premise Docker/Kubernetes. It offers a senior backend engineer and domain specialist part-time; its Python-capable data engineer lacks time-series modelling experience.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Java 17 backend with Spring Boot microservices",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "tech",
+                  "quote": "Docker and Kubernetes on on-premise cluster in Subotica data centre",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "We can dedicate one senior backend engineer and one domain specialist part-time to a collaborative project",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "We have one data engineer on staff who knows Python well but has no background in time-series modelling.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's stated implementation window is twelve months from approval, originally expected in Q3 2024. Novaković's notes describe moderate workload and capacity for one new collaboration in 2026.",
+              "sources": [
+                {
+                  "recordId": "C060-CH2",
+                  "field": "detail",
+                  "quote": "The Romanian contracts have a twelve-month implementation window starting from go-live approval, which we expect in Q3 2024.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "Workload is moderate; she can take on one new collaboration in 2026.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company describes historical AVL and timetable access through a signed data-sharing agreement. Novaković expresses a preference to publish anonymised results.",
+              "sources": [
+                {
+                  "recordId": "C060",
+                  "field": "rd_capacity",
+                  "quote": "with access to our full historical AVL dataset and timetable logs under a signed data-sharing agreement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0146",
+                  "field": "notes",
+                  "quote": "She prefers collaborations where her group retains the right to publish anonymised results.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Novaković's published work develops Kalman-filter travel-time estimation from AVL. Her cross-network study reports topology-dependent transfer limits; her recurrent-model study reports weaker evening-peak performance on shared congested corridors.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-01892",
+                  "field": "abstract",
+                  "quote": "This study develops a Kalman filter formulation that treats segment-level travel time as a latent state evolving according to a random-walk process",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01897",
+                  "field": "abstract",
+                  "quote": "network topology differences limit gains beyond approximately 8 weeks of fine-tuning data.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-01895",
+                  "field": "abstract",
+                  "quote": "both models underperform during the evening peak on lines sharing a congested corridor",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Novaković lists joint projects with urban-mobility software companies among her collaboration interests.",
+              "sources": [
+                {
+                  "recordId": "R0146",
+                  "field": "open_to",
+                  "quote": "joint projects with companies operating urban mobility platforms or fleet management software",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "Her AVL modelling experience suggests a strong methodological fit, but results from other networks and error metrics do not establish Romanian contractual performance. Congestion remains a specific transfer risk.",
+            "This joint-project proposal is conditional: current availability remains unconfirmed, and the stated 2026 capacity may conflict with the company's original implementation schedule.",
+            "A bounded extraction and replay study likely offers a more practical starting point than processing the entire archive or assuming that a research prototype is production-ready."
+          ],
+          "proposedActions": [
+            "Propose an eight-week replay experiment after prerequisites are resolved. Company staff would extract Romanian AVL/timetable samples and validate arrivals; Novaković would develop locally calibrated state-space and GRU candidates. Compare against current PassengerView using prediction-time information only. Separate tuning and later held-out periods by municipality, checking independence and leakage; select the configuration on tuning data. Count each agreed eligible display update once, without merging; denominator is all eligible updates during observed service periods. Score absolute arrival error ≤90 seconds using validated arrivals; conservatively count unresolved outcomes and missing predictions as failures. Report census counts, service-day uncertainty, and separate peak/disruption results. Proposed go/no-go: the best tuning-selected configuration, including baseline, reaches ≥85% separately for every customer's holdout, with a service-day confidence lower bound ≥85%, plus feasible integration within the remaining twelve-month window. Insufficient labels, customer coverage, or precision means no pass. Measure telemetry-to-display delay and serving cost against agreed deployment limits.",
+            "Before extraction, sign an operator-authorised data-sharing agreement covering segregation, anonymisation, publication review and permitted outputs. Agree arrival definitions, prediction horizons and eligibility rules. Audit door events against independently checked arrivals and reconstruct historical timetables; do not treat unverified records as ground truth. Missing Romanian evaluation data remains an unresolved prerequisite.",
+            "Propose weeks 1–2 for audit, weeks 3–5 for preprocessing and tuning, and weeks 6–8 for locked evaluation and integration profiling. Start without weather features; obtain confirmed disruption/weather annotations for stratified evaluation. Propose company-led Java/on-premise integration and researcher-led modelling handover, including fallback, retraining and monitoring procedures, rather than assuming existing production readiness."
+          ],
+          "questions": [
+            "What are the actual approval date and remaining contractual window, and can Novaković confirm current availability, start date and effort?",
+            "How do the contracts define actual arrival, prediction horizons, eligible display updates, cancellations, stale displays and municipality-level acceptance?",
+            "Which Romanian customer histories, timetable versions and independently verifiable arrival/disruption records are available for separate tuning and held-out evaluation?",
+            "What compute, latency, refresh-rate, budget and ownership limits apply, and can all parties authorise data access and acceptable anonymised publication terms?"
+          ],
+          "benefits": {
+            "company": "The experiment could establish whether its existing data supports the contractual ETA benchmark for each Romanian customer and identify whether data quality, modelling or deployment is the main obstacle.",
+            "researcher": "Subject to agreement, the project could provide multi-network AVL material to test transfer of state-space and recurrent models under congestion and operational serving constraints."
+          },
+          "markdown": "# Testing PassengerView ETA Accuracy for Romanian Bus Networks\n\n## Verified facts\n- The company reports a contractual benchmark of displayed ETAs within 90 seconds of actual arrival at least 85% of the time. Its current PassengerView uses the published timetable plus a last-position offset. [F1]\n- The company collects ten-second GPS pings from 340 buses. Its PostgreSQL archive contains roughly 2.8 billion rows, and weather data is not integrated. [F2]\n- The company's environment includes Java 17/Spring Boot and on-premise Docker/Kubernetes. It offers a senior backend engineer and domain specialist part-time; its Python-capable data engineer lacks time-series modelling experience. [F3]\n- The company's stated implementation window is twelve months from approval, originally expected in Q3 2024. Novaković's notes describe moderate workload and capacity for one new collaboration in 2026. [F4]\n- The company describes historical AVL and timetable access through a signed data-sharing agreement. Novaković expresses a preference to publish anonymised results. [F5]\n- Novaković's published work develops Kalman-filter travel-time estimation from AVL. Her cross-network study reports topology-dependent transfer limits; her recurrent-model study reports weaker evening-peak performance on shared congested corridors. [F6]\n- Novaković lists joint projects with urban-mobility software companies among her collaboration interests. [F7]\n\n## Potential benefits\n- For the company: The experiment could establish whether its existing data supports the contractual ETA benchmark for each Romanian customer and identify whether data quality, modelling or deployment is the main obstacle.\n- For the researcher: Subject to agreement, the project could provide multi-network AVL material to test transfer of state-space and recurrent models under congestion and operational serving constraints.\n\n## Our inference\n- Her AVL modelling experience suggests a strong methodological fit, but results from other networks and error metrics do not establish Romanian contractual performance. Congestion remains a specific transfer risk.\n- This joint-project proposal is conditional: current availability remains unconfirmed, and the stated 2026 capacity may conflict with the company's original implementation schedule.\n- A bounded extraction and replay study likely offers a more practical starting point than processing the entire archive or assuming that a research prototype is production-ready.\n\n## Proposed next steps\n- Propose an eight-week replay experiment after prerequisites are resolved. Company staff would extract Romanian AVL/timetable samples and validate arrivals; Novaković would develop locally calibrated state-space and GRU candidates. Compare against current PassengerView using prediction-time information only. Separate tuning and later held-out periods by municipality, checking independence and leakage; select the configuration on tuning data. Count each agreed eligible display update once, without merging; denominator is all eligible updates during observed service periods. Score absolute arrival error ≤90 seconds using validated arrivals; conservatively count unresolved outcomes and missing predictions as failures. Report census counts, service-day uncertainty, and separate peak/disruption results. Proposed go/no-go: the best tuning-selected configuration, including baseline, reaches ≥85% separately for every customer's holdout, with a service-day confidence lower bound ≥85%, plus feasible integration within the remaining twelve-month window. Insufficient labels, customer coverage, or precision means no pass. Measure telemetry-to-display delay and serving cost against agreed deployment limits.\n- Before extraction, sign an operator-authorised data-sharing agreement covering segregation, anonymisation, publication review and permitted outputs. Agree arrival definitions, prediction horizons and eligibility rules. Audit door events against independently checked arrivals and reconstruct historical timetables; do not treat unverified records as ground truth. Missing Romanian evaluation data remains an unresolved prerequisite.\n- Propose weeks 1–2 for audit, weeks 3–5 for preprocessing and tuning, and weeks 6–8 for locked evaluation and integration profiling. Start without weather features; obtain confirmed disruption/weather annotations for stratified evaluation. Propose company-led Java/on-premise integration and researcher-led modelling handover, including fallback, retraining and monitoring procedures, rather than assuming existing production readiness.\n\n## Open questions\n- What are the actual approval date and remaining contractual window, and can Novaković confirm current availability, start date and effort?\n- How do the contracts define actual arrival, prediction horizons, eligible display updates, cancellations, stale displays and municipality-level acceptance?\n- Which Romanian customer histories, timetable versions and independently verifiable arrival/disruption records are available for separate tuning and held-out evaluation?\n- What compute, latency, refresh-rate, budget and ownership limits apply, and can all parties authorise data access and acceptable anonymised publication terms?",
+          "taskId": "C060-CH2",
+          "researcherId": "R0146",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C060-CH2",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C060-CH2-R0146",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C060-CH2-R0146",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C065-CH2",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C065-CH2-R0816",
+          "version": 1
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T14-26-54-981Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C065-CH2",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C065-CH2-R0816",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C065-CH2-R0816",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "Testing Small-Catalogue Recommendations Against Best-Seller Sorting",
+          "facts": [
+            {
+              "text": "Harmat reports trials using three clients’ transaction logs: the largest contained 1,900 completed orders over eighteen months and the smallest around 520. Best-seller sorting outperformed its model in one client A/B test. The company reports insufficient budget and traffic to wait for larger datasets.",
+              "sources": [
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Harmat describes a one-client prototype as sufficient to start and offers read access to anonymised transactions and catalogues. Its research-capacity statement places anonymised dataset access under a data-sharing agreement.",
+              "sources": [
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "A working prototype for one client would be enough to start.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065-CH2",
+                  "field": "detail",
+                  "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "rd_capacity",
+                  "quote": "access to anonymised client datasets under a data-sharing agreement.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Harmat offers one mid-level developer for roughly one day weekly. Erić’s notes describe caution about commitments exceeding one external day weekly during the academic semester.",
+              "sources": [
+                {
+                  "recordId": "C065",
+                  "field": "rd_capacity",
+                  "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0816",
+                  "field": "notes",
+                  "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Harmat’s technology includes WooCommerce, custom REST integrations and Docker deployments on client VPS environments.",
+              "sources": [
+                {
+                  "recordId": "C065",
+                  "field": "tech",
+                  "quote": "WooCommerce and custom REST API integrations",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C065",
+                  "field": "tech",
+                  "quote": "Docker for containerised deployments on client VPS environments",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Harmat describes testing every user-facing string in three languages before shipping.",
+              "sources": [
+                {
+                  "recordId": "C065",
+                  "field": "about",
+                  "quote": "we test every user-facing string in all three languages before a build ships",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić’s clothing-retail research combines cosine attribute similarity with within-session co-occurrence. Its evidence comes from two retailers providing 9,200 baskets, rather than this client’s product-page setting.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-02898",
+                  "field": "abstract",
+                  "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-02898",
+                  "field": "abstract",
+                  "quote": "Data come from two small clothing retailers operating in Serbia, collectively yielding 9,200 baskets over 18 months",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Erić’s attribute study discusses limitations involving attribute completeness and supplier data. Her review reports that content-based methods can over-specialise recommendations.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-08868",
+                  "field": "abstract",
+                  "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-03666",
+                  "field": "abstract",
+                  "quote": "Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "A lightweight attribute model, optionally blended with basket evidence, looks better aligned with this problem than another unconstrained collaborative model. However, larger grocery and clothing studies do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.",
+            "Basket-ranking results would provide a screening signal, not evidence of conversion gains. Similarity may also favour substitutes when the retailer wants complements; this makes the retailer’s relevance definition important.",
+            "This joint-project proposal is conditional on Erić’s availability, which remains unknown. Her stated participation category is open to joint projects, but that does not establish a commitment to this project or schedule."
+          ],
+          "proposedActions": [
+            "Propose a six-week offline pilot using one client’s existing anonymised orders and catalogue only. First audit metadata and agree relevance; compare best-sellers, attribute-only similarity and lightweight hybrids. Create chronological training, tuning and untouched evaluation partitions; check leakage and dependence from repeated customers and products. Tune configurations only on tuning data. For eligible multi-item evaluation baskets, reveal one anchor and rank remaining purchased items; average NDCG@5 per basket, reporting singleton exclusions and catalogue coverage. Propose a 10% relative improvement target over best-sellers, with a paired, dependence-aware 95% confidence interval above zero. Go/no-go concerns the best tuning-selected configuration, regardless of method, using existing data; inadequate evaluation evidence means unresolved, not pass. Require feasible integration and language-review gates before release. Offline success authorises only a proposed live test, whose go/no-go must use the company’s agreed business metric. Erić could lead evaluation; Harmat could prepare exports and integration.",
+            "Propose weeks one–two for agreement, permissions and metadata audit; weeks three–four for modelling; and weeks five–six for held-out evaluation and a prototype decision. Confirm that this scope fits both weekly limits and the available budget before starting; otherwise reduce scope rather than assume additional staffing.",
+            "Before deployment, test the selected prototype through the pilot’s WooCommerce or REST interface in its Docker/VPS environment against agreed latency and refresh limits. Require successful company review of all widget strings in three languages. Separately establish live-event permissions and instrumentation; do not assume historical read access includes impressions, clicks or sessions."
+          ],
+          "questions": [
+            "Can Erić confirm availability and interest in this specific joint project, and can both parties support the proposed schedule and budget?",
+            "Which client will pilot, should recommendations favour substitutes or complements, and which metadata, languages, timestamps and basket identifiers are available?",
+            "What metric defined the earlier A/B result, what improvement is meaningful, and what traffic and evaluation duration could support a conclusive live comparison?",
+            "What data-sharing, retention and security terms, VPS resources, latency limits, catalogue-refresh responsibilities and three-language reviewers can be agreed?"
+          ],
+          "benefits": {
+            "company": "The pilot could establish whether existing data supports a useful alternative to best-sellers, or justify retaining the simpler baseline without waiting for more transactions.",
+            "researcher": "Subject to agreement, Erić could test the boundary between attribute-only and hybrid recommendation under smaller-data, multilingual e-commerce conditions using an anonymised client case."
+          },
+          "markdown": "# Testing Small-Catalogue Recommendations Against Best-Seller Sorting\n\n## Verified facts\n- Harmat reports trials using three clients’ transaction logs: the largest contained 1,900 completed orders over eighteen months and the smallest around 520. Best-seller sorting outperformed its model in one client A/B test. The company reports insufficient budget and traffic to wait for larger datasets. [F1]\n- Harmat describes a one-client prototype as sufficient to start and offers read access to anonymised transactions and catalogues. Its research-capacity statement places anonymised dataset access under a data-sharing agreement. [F2]\n- Harmat offers one mid-level developer for roughly one day weekly. Erić’s notes describe caution about commitments exceeding one external day weekly during the academic semester. [F3]\n- Harmat’s technology includes WooCommerce, custom REST integrations and Docker deployments on client VPS environments. [F4]\n- Harmat describes testing every user-facing string in three languages before shipping. [F5]\n- Erić’s clothing-retail research combines cosine attribute similarity with within-session co-occurrence. Its evidence comes from two retailers providing 9,200 baskets, rather than this client’s product-page setting. [F6]\n- Erić’s attribute study discusses limitations involving attribute completeness and supplier data. Her review reports that content-based methods can over-specialise recommendations. [F7]\n\n## Potential benefits\n- For the company: The pilot could establish whether existing data supports a useful alternative to best-sellers, or justify retaining the simpler baseline without waiting for more transactions.\n- For the researcher: Subject to agreement, Erić could test the boundary between attribute-only and hybrid recommendation under smaller-data, multilingual e-commerce conditions using an anonymised client case.\n\n## Our inference\n- A lightweight attribute model, optionally blended with basket evidence, looks better aligned with this problem than another unconstrained collaborative model. However, larger grocery and clothing studies do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.\n- Basket-ranking results would provide a screening signal, not evidence of conversion gains. Similarity may also favour substitutes when the retailer wants complements; this makes the retailer’s relevance definition important.\n- This joint-project proposal is conditional on Erić’s availability, which remains unknown. Her stated participation category is open to joint projects, but that does not establish a commitment to this project or schedule.\n\n## Proposed next steps\n- Propose a six-week offline pilot using one client’s existing anonymised orders and catalogue only. First audit metadata and agree relevance; compare best-sellers, attribute-only similarity and lightweight hybrids. Create chronological training, tuning and untouched evaluation partitions; check leakage and dependence from repeated customers and products. Tune configurations only on tuning data. For eligible multi-item evaluation baskets, reveal one anchor and rank remaining purchased items; average NDCG@5 per basket, reporting singleton exclusions and catalogue coverage. Propose a 10% relative improvement target over best-sellers, with a paired, dependence-aware 95% confidence interval above zero. Go/no-go concerns the best tuning-selected configuration, regardless of method, using existing data; inadequate evaluation evidence means unresolved, not pass. Require feasible integration and language-review gates before release. Offline success authorises only a proposed live test, whose go/no-go must use the company’s agreed business metric. Erić could lead evaluation; Harmat could prepare exports and integration.\n- Propose weeks one–two for agreement, permissions and metadata audit; weeks three–four for modelling; and weeks five–six for held-out evaluation and a prototype decision. Confirm that this scope fits both weekly limits and the available budget before starting; otherwise reduce scope rather than assume additional staffing.\n- Before deployment, test the selected prototype through the pilot’s WooCommerce or REST interface in its Docker/VPS environment against agreed latency and refresh limits. Require successful company review of all widget strings in three languages. Separately establish live-event permissions and instrumentation; do not assume historical read access includes impressions, clicks or sessions.\n\n## Open questions\n- Can Erić confirm availability and interest in this specific joint project, and can both parties support the proposed schedule and budget?\n- Which client will pilot, should recommendations favour substitutes or complements, and which metadata, languages, timestamps and basket identifiers are available?\n- What metric defined the earlier A/B result, what improvement is meaningful, and what traffic and evaluation duration could support a conclusive live comparison?\n- What data-sharing, retention and security terms, VPS resources, latency limits, catalogue-refresh responsibilities and three-language reviewers can be agreed?",
+          "taskId": "C065-CH2",
+          "researcherId": "R0816",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C065-CH2",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C065-CH2-R0816",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C065-CH2-R0816",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "ready",
+      "taskId": "C086-CH1",
+      "proposal": {
+        "ref": {
+          "artifactId": "proposal-C086-CH1-R0503",
+          "version": 2
+        },
+        "kind": "proposal",
+        "runId": "2026-10-31T14-26-54-981Z",
+        "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+        "inputs": [
+          {
+            "artifactId": "business-C086-CH1",
+            "version": 1
+          },
+          {
+            "artifactId": "scholar-C086-CH1-R0503",
+            "version": 1
+          },
+          {
+            "artifactId": "pair-C086-CH1-R0503",
+            "version": 1
+          }
+        ],
+        "content": {
+          "isConditional": true,
+          "title": "A tested migration path to post-quantum KL-HSM signing",
+          "facts": [
+            {
+              "text": "Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows. Its listed technologies include PKCS#11.",
+              "sources": [
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "tech",
+                  "quote": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "we have not touched the firmware architecture to accommodate larger key material or different signature flows.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "tech",
+                  "quote": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The company's enquiry concerns firmware-version support, performance trade-offs and hybrid transition operation. It describes a documented roadmap and working integration proof of concept inside twelve months as a good outcome.",
+              "sources": [
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "which firmware version will support post-quantum algorithms, what the performance trade-offs are",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "how hybrid classical/post-quantum operation will work during transition.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086-CH1",
+                  "field": "detail",
+                  "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kriptolog's plans state an end-2025 Common Criteria EAL4+ objective for the KL-500; this is a stated objective, not evidence of current certification.",
+              "sources": [
+                {
+                  "recordId": "C086",
+                  "field": "plans",
+                  "quote": "Kriptolog intends to achieve Common Criteria EAL4+ certification for the KL-500 HSM by the end of 2025",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Kriptolog reports a twelve-engineer core R&D group and modest collaborative capacity.",
+              "sources": [
+                {
+                  "recordId": "C086",
+                  "field": "rd_capacity",
+                  "quote": "We have a core R&D group of twelve engineers",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "C086",
+                  "field": "rd_capacity",
+                  "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Nikolić's signature study used an STM32F407 Cortex-M4: Falcon-512 used less verification stack but more signing time than Dilithium-2. Separate Dilithium work found compiler-dependent timing leakage. Her hybrid HSM prototype combined ECDH and Kyber key exchange, not hybrid signing.",
+              "sources": [
+                {
+                  "recordId": "SYN-PUB-05919",
+                  "field": "abstract",
+                  "quote": "on an STM32F407 board running at 168 MHz.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05919",
+                  "field": "abstract",
+                  "quote": "Dilithium-2 verification takes 1.37 ms and requires 13.2 kB of stack;",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05919",
+                  "field": "abstract",
+                  "quote": "Falcon-512 verification takes 2.11 ms but requires only 7.4 kB of stack",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05919",
+                  "field": "abstract",
+                  "quote": "Signing is substantially more expensive for Falcon due to the discrete Gaussian sampler: 14.8 ms versus 3.2 ms for Dilithium-2.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05922",
+                  "field": "abstract",
+                  "quote": "We trace each instance to specific compiler transformations visible in the generated assembly",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "SYN-PUB-05920",
+                  "field": "abstract",
+                  "quote": "Full key exchange (hybrid ECDH + Kyber-768) completes in 38 ms end-to-end.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "The researcher's notes express a preference for real hardware and measurable deliverables. Her laboratory has two SLE97 evaluation kits, with limited availability.",
+              "sources": [
+                {
+                  "recordId": "R0503",
+                  "field": "notes",
+                  "quote": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                },
+                {
+                  "recordId": "R0503",
+                  "field": "notes",
+                  "quote": "The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects.",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            },
+            {
+              "text": "Nikolić's stated participation interests include joint projects with companies developing HSMs.",
+              "sources": [
+                {
+                  "recordId": "R0503",
+                  "field": "open_to",
+                  "quote": "joint projects with companies developing HSMs, IoT security firmware, or industrial control system security",
+                  "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+                }
+              ]
+            }
+          ],
+          "inferences": [
+            "Her benchmarking experience suggests a strong methodological fit, but earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware. The published verification-memory versus signing-cost trade-off motivates separate signing-latency and memory measurements, not forecasts from published timings.",
+            "Hybrid key-exchange experience likely helps architecture discussions, but signing policy, PKCS#11 integration and client verifier compatibility need separate validation. Compiler-dependent leakage is a material risk; resource optimisation could conflict with security hardening.",
+            "This joint-project proposal is conditional because Nikolić's current availability is unknown. A narrowly bounded hardware pilot likely fits the company's collaborative capacity better than immediate product-wide migration."
+          ],
+          "proposedActions": [
+            "Propose an eight-week experiment on one agreed KL-HSM variant with its production toolchain. Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement. Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads. Separate tuning and held-out evaluation workloads, verify independence, and select the best configuration on tuning data. Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage. Proposed go/no-go requires all correctness/interoperability tests passing, resource use and performance within pre-agreed numerical limits under the frozen specification below, and no detected leakage in its adequately powered screen. Judge the best configuration against these criteria, not superiority over another method. Missing specifications or insufficient evidence mean unresolved, not pass. Include feasibility of the twelve-month delivery; functional success would not establish production security or certification.",
+            "Before evaluation, freeze an acceptance specification defining workloads, operating conditions, repeats, numerical ceilings and floors, and confidence levels. Require the one-sided upper confidence bound for p99 latency below its ceiling and lower bound for throughput above its floor. Define the leakage test threshold, sample size, minimum detectable effect and positive-control sensitivity criterion. An insensitive screen cannot pass; unresolved specifications or inadequate precision block go/no-go. These procedures are proposals for agreement.",
+            "Propose months three through twelve for integration and a versioned roadmap covering key storage, signature flows, hybrid policy, compatibility and measured trade-offs. Check delivery against the twelve-month outcome and firmware-version reporting needs. Bound effort, budget, access and confidentiality/licensing terms; prioritise KL-HSM hardware, scheduling justified SLE97 comparisons within two-kit availability or negotiating additional units. Include certification change-impact review and agreed side-channel/fault testing; unresolved requirements block production-readiness claims. Reconfirm scope and schedule after the pilot."
+          ],
+          "questions": [
+            "Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?",
+            "Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?",
+            "What acceptance specification defines signing versus update-verification scope, ML-DSA parameters, resource and performance limits, hybrid policy, PKCS#11 consumers, client verifiers and the proposed statistical and leakage-screen procedures?",
+            "What is the KL-500's current certification status and applicable evaluator-approved change-control, side-channel and fault-testing scope?"
+          ],
+          "benefits": {
+            "company": "The experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies.",
+            "researcher": "Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware, using target-hardware measurements to study resource, toolchain and security trade-offs."
+          },
+          "markdown": "# A tested migration path to post-quantum KL-HSM signing\n\n## Verified facts\n- Kriptolog reports limited microcontroller flash and RAM, ARM Cortex-M firmware in C, and firmware architecture not yet adapted for larger keys or different signature flows. Its listed technologies include PKCS#11. [F1]\n- The company's enquiry concerns firmware-version support, performance trade-offs and hybrid transition operation. It describes a documented roadmap and working integration proof of concept inside twelve months as a good outcome. [F2]\n- Kriptolog's plans state an end-2025 Common Criteria EAL4+ objective for the KL-500; this is a stated objective, not evidence of current certification. [F3]\n- Kriptolog reports a twelve-engineer core R&D group and modest collaborative capacity. [F4]\n- Nikolić's signature study used an STM32F407 Cortex-M4: Falcon-512 used less verification stack but more signing time than Dilithium-2. Separate Dilithium work found compiler-dependent timing leakage. Her hybrid HSM prototype combined ECDH and Kyber key exchange, not hybrid signing. [F5]\n- The researcher's notes express a preference for real hardware and measurable deliverables. Her laboratory has two SLE97 evaluation kits, with limited availability. [F6]\n- Nikolić's stated participation interests include joint projects with companies developing HSMs. [F7]\n\n## Potential benefits\n- For the company: The experiment could distinguish a feasible firmware migration from changes requiring architectural redesign, giving clients a more defensible account of resource costs, compatibility and release dependencies.\n- For the researcher: Subject to agreement and access, Nikolić could test how earlier signature implementation methods transfer to production HSM firmware, using target-hardware measurements to study resource, toolchain and security trade-offs.\n\n## Our inference\n- Her benchmarking experience suggests a strong methodological fit, but earlier Dilithium results cannot establish final ML-DSA correctness, resource fit or security on KL-HSM hardware. The published verification-memory versus signing-cost trade-off motivates separate signing-latency and memory measurements, not forecasts from published timings.\n- Hybrid key-exchange experience likely helps architecture discussions, but signing policy, PKCS#11 integration and client verifier compatibility need separate validation. Compiler-dependent leakage is a material risk; resource optimisation could conflict with security hardening.\n- This joint-project proposal is conditional because Nikolić's current availability is unknown. A narrowly bounded hardware pilot likely fits the company's collaborative capacity better than immediate product-wide migration.\n\n## Proposed next steps\n- Propose an eight-week experiment on one agreed KL-HSM variant with its production toolchain. Kriptolog would supply development hardware, builds, its prototype and non-production keys; Nikolić would lead porting and measurement. Compare current RSA/ECDSA with standards-conformant ML-DSA and a defined hybrid flow using known-answer vectors and representative signing workloads. Separate tuning and held-out evaluation workloads, verify independence, and select the best configuration on tuning data. Measure correctness, peak RAM, flash, p99 latency, throughput, PKCS#11/verifier interoperability and preliminary timing leakage. Proposed go/no-go requires all correctness/interoperability tests passing, resource use and performance within pre-agreed numerical limits under the frozen specification below, and no detected leakage in its adequately powered screen. Judge the best configuration against these criteria, not superiority over another method. Missing specifications or insufficient evidence mean unresolved, not pass. Include feasibility of the twelve-month delivery; functional success would not establish production security or certification.\n- Before evaluation, freeze an acceptance specification defining workloads, operating conditions, repeats, numerical ceilings and floors, and confidence levels. Require the one-sided upper confidence bound for p99 latency below its ceiling and lower bound for throughput above its floor. Define the leakage test threshold, sample size, minimum detectable effect and positive-control sensitivity criterion. An insensitive screen cannot pass; unresolved specifications or inadequate precision block go/no-go. These procedures are proposals for agreement.\n- Propose months three through twelve for integration and a versioned roadmap covering key storage, signature flows, hybrid policy, compatibility and measured trade-offs. Check delivery against the twelve-month outcome and firmware-version reporting needs. Bound effort, budget, access and confidentiality/licensing terms; prioritise KL-HSM hardware, scheduling justified SLE97 comparisons within two-kit availability or negotiating additional units. Include certification change-impact review and agreed side-channel/fault testing; unresolved requirements block production-readiness claims. Reconfirm scope and schedule after the pilot.\n\n## Open questions\n- Can Nikolić confirm availability and researcher/laboratory effort for this proposed twelve-month joint project?\n- Which initial KL-HSM variant, exact resource limits, production build environment, hardware/source access, company engineering allocation and budget can support the pilot?\n- What acceptance specification defines signing versus update-verification scope, ML-DSA parameters, resource and performance limits, hybrid policy, PKCS#11 consumers, client verifiers and the proposed statistical and leakage-screen procedures?\n- What is the KL-500's current certification status and applicable evaluator-approved change-control, side-channel and fault-testing scope?",
+          "taskId": "C086-CH1",
+          "researcherId": "R0503",
+          "format": "joint_project",
+          "inputs": [
+            {
+              "artifactId": "business-C086-CH1",
+              "version": 1
+            },
+            {
+              "artifactId": "scholar-C086-CH1-R0503",
+              "version": 1
+            },
+            {
+              "artifactId": "pair-C086-CH1-R0503",
+              "version": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "status": "check_failed",
+      "taskId": "C105-CH2",
+      "reason": "None of 3 screened pairs produced a Critic-approved proposal"
+    },
+    {
+      "status": "proposal_needs_revision",
+      "taskId": "C132-CH4",
+      "reason": "None of 8 screened pairs produced a Critic-approved proposal"
+    }
+  ]
+}

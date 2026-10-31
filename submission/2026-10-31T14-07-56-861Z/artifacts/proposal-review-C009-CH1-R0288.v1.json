@@ -1,0 +1,116 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0288",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Report other clients and mixed-script, inflectional and unseen-product subsets separately.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We need an approach that handles lemmatisation or indexing in a way that is accurate for Serbian, tolerates script mixing automatically, and can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Reporting these subsets does not prevent acceptance when mixed-script or newly introduced product queries still fail: sufficiently small subsets can fail entirely while the overall bank miss-rate confidence bound remains below 5%. Add a short prerequisite that held-out mixed-script and genuinely new-product cases must meet separately agreed useful-retrieval acceptance limits, including after the vocabulary-update rehearsal; those limits need not equal the overall 5% target.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"LinguaBot attributes search failures to Serbian inflection and mixed scripts, including script changes inside words.\" and \"It reports that manual synonym-list maintenance does not scale as clients introduce product terminology quarterly.\" Proposed next steps: \"Test new product vocabulary through query-time or auxiliary-lexicon updates in the existing Elasticsearch workflow, with zero full re-index operations as a gate.\" These identify the concrete retrieval failures and the vocabulary-maintenance problem rather than a generic NLP goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"with zero full re-index operations as a gate\"; \"Bound annotation work within the two linguists’ agreed allocation\"; and \"Gate continuation on a testable prototype within six months and tooling/data costs within approximately EUR 8,000.\" Open questions: \"What client permissions, de-identification rules, processing-location restrictions and commercial-use licences would govern the datasets, knowledge-base snapshots and research tools?\" and \"Which Elasticsearch mappings, permitted incremental-update mechanisms, compute resources, staff allocations and research-time funding are available?\" These provide verifiable re-indexing, staffing, schedule and spending gates while leaving access and resource allocation as explicit prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Nikolić’s work presents Serbian-specific hybrid lemmatization, within-token script normalization, and retrieval comparisons in which full lemmatization with paradigm-aware indexing achieved the highest F1.\" Also: \"Her lexicon research reports lower paradigm correctness for borrowings than common vocabulary. Her normalization study reports a tradeoff: lookup tables had highest precision, while the neural model generalized better to unseen borrowings.\" Our inference: \"corpus and social-media results do not establish useful-answer retrieval performance on banking or telecom support, especially mixed-script typos and unseen products.\" These connect methods documented in her own works to the proposed retrieval experiment while explicitly bounding transfer and identifying reported trade-offs."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"the company’s two in-house linguists can annotate or validate solutions.\" Proposed next steps: \"Nikolić would propose linguistic components; company engineers would implement replay and integration, with linguists validating relevance.\" Also: \"Research-time funding, engineering allocation and maintenance ownership remain to be agreed; these are proposed planning limits, not commitments.\" These distinguish documented linguistic capacity from proposed research and engineering roles and unconfirmed allocations."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"First, propose replaying company-labelled queries against corresponding knowledge-base snapshots. Reserve separate tuning and held-out evaluation samples; check duplicate, client and temporal leakage.\" Also: \"Independently switch Serbian lemmatization, within-token script normalization and paradigm expansion on/off: test the current Elasticsearch baseline, each alone, all pairs and all three, holding other settings constant. Select the best configuration on tuning data, then freeze it.\" These specify inputs, a deployed-system baseline, factorial comparisons and separate configuration selection and evaluation; access and evaluation definitions remain explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: \"Measure no-useful-result query events divided by all evaluated query events, counting repeated submissions separately without merging. Linguists would adjudicate every evaluation query at an agreed retrieval depth; unresolved cases count as misses.\" Also: \"Require the upper 95% confidence bound below 5%, separately on held-out queries from the original bank; pooled results cannot substitute.\" These define the main event, denominator, repeat handling, adjudication and bank-specific acceptance. However, \"Report other clients and mixed-script, inflectional and unseen-product subsets separately\" supplies reporting but no acceptance requirement for mixed-script or unseen-product queries; the overall bank gate could pass while these explicitly required capabilities fail."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: \"Independently switch Serbian lemmatization, within-token script normalization and paradigm expansion on/off\" and \"holding other settings constant.\" Also: \"Investigate null component effects and interactions rather than treating a null effect alone as disproving the mechanism.\" Potential benefits: \"The experiment could identify which linguistic components reduce actual support-search misses\". The factorial comparisons support the conditional component-level conclusion without conflating bundled changes or claiming that a null result disproves the mechanism."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: \"corpus and social-media results do not establish useful-answer retrieval performance on banking or telecom support\"; \"compatibility with existing indexed representations remains untested\"; and \"Borrowing errors and normalization-induced ambiguity could increase irrelevant results.\" Proposed next steps: \"check duplicate, client and temporal leakage.\" Open questions ask about permissions, licences, mappings, compute and staffing. These identify domain transfer, published vocabulary limitations, retrieval degradation, integration, leakage and delivery risks without presenting unresolved matters as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: \"Nikolić’s participation material lists openness to joint projects.\" Our inference: \"This joint-project proposal is conditional because Nikolić’s availability is unknown; openness to collaboration does not establish a delivery commitment.\" Open questions: \"Can Nikolić confirm availability for this joint project and agree research responsibilities with the company’s engineering and maintenance owners?\" These use the supported collaboration format and make proposed participation conditional on availability and agreement."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: \"The experiment could identify which linguistic components reduce actual support-search misses and whether the best configuration can meet the bank-specific target while accommodating vocabulary changes without full re-indexing.\" Also: \"Subject to agreement and permissions, Nikolić could test how corpus-derived morphology and cross-script methods transfer to support retrieval, using labelled queries and expert-reviewed product-vocabulary cases.\" These are conditional engineering and research gains that follow from the proposed comparisons, not guaranteed outcomes or commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.94,
+        0.95,
+        0.95,
+        0.97,
+        0.86,
+        0.98,
+        0.61
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

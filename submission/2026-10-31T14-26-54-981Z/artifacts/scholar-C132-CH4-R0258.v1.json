@@ -1,0 +1,293 @@
+{
+  "ref": {
+    "artifactId": "scholar-C132-CH4-R0258",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0258",
+    "name": "Zoran Vukelić",
+    "faculty": "Faculty of Philosophy",
+    "department": "Department of Serbian Language and Linguistics",
+    "fields": [
+      "Computational Linguistics",
+      "Lexicography and Lexical Resources",
+      "Corpus Linguistics",
+      "Cross-lingual Information Retrieval"
+    ],
+    "keywords": [
+      "multilingual lexical resources",
+      "Serbian morphology",
+      "cross-lingual information retrieval",
+      "Slavic–Germanic language contact",
+      "bilingual professional corpora",
+      "finite-state morphology",
+      "wordnet construction",
+      "terminological databases",
+      "contrastive linguistics",
+      "morphologically rich languages"
+    ],
+    "openTo": [
+      "joint projects with companies needing multilingual text processing or terminology management",
+      "contract research on building domain-specific bilingual lexicons or morphological analyzers",
+      "consulting on cross-lingual document search and retrieval system design",
+      "student internships for computational linguistics or software engineering students",
+      "industrial PhD supervision for candidates working on Serbian NLP in professional domains"
+    ],
+    "bio": {
+      "recordId": "R0258",
+      "field": "bio",
+      "text": "Zoran Vukelić completed his undergraduate and master's studies at the Faculty of Philosophy, University of Novi Sad, and received his PhD in Linguistics from the same institution in 2003, with a dissertation on morphological encoding in Serbian–German contact lexicons. He joined the Department of Serbian Language and Linguistics as an assistant professor in 2004 and was promoted to Full Professor in 2016. His research group focuses on building multilingual lexical databases, developing morphological analyzers for inflectionally rich Slavic languages, and studying cross-lingual information retrieval in bilingual professional corpora where Serbian interacts with German or Hungarian. He teaches courses on computational lexicology, corpus linguistics, and contrastive grammar. The group regularly uses the Sketch Engine corpus platform, custom finite-state morphological tools, and a departmental annotated corpus of approximately 120 million tokens."
+    },
+    "industryExperience": {
+      "recordId": "R0258",
+      "field": "industry_experience",
+      "text": "During the VOITERM project, Vukelić collaborated directly with the translation unit of the Provincial Secretariat and with two manufacturing companies from the NTP Novi Sad area to collect and validate domain terminology. He has provided informal consulting on text search systems to a Novi Sad-based software company developing document management tools for Serbian public institutions."
+    },
+    "notes": {
+      "recordId": "R0258",
+      "field": "notes",
+      "text": "Vukelić is currently in the final year of CROSSLEX and has capacity for one new collaboration starting in late 2025 or 2026. He prefers engagements where linguistic expertise is genuinely central rather than peripheral. He is not equipped for speech processing or acoustic work; his group's tools and data are text-only."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-03259",
+        "kind": "publication",
+        "title": "Morphological tagging of Serbian technical texts: a rule-based finite-state approach",
+        "body": {
+          "recordId": "SYN-PUB-03259",
+          "field": "abstract",
+          "text": "This paper describes the construction and evaluation of a finite-state morphological tagger for Serbian, applied specifically to technical documentation in the automotive and machinery sectors. The tagger was built using the Stuttgart Finite State Transducer toolkit and a hand-crafted lexicon of approximately 48,000 lemmas with full inflectional paradigms. A test corpus of 310,000 tokens drawn from maintenance manuals and technical standards was annotated semi-automatically and then used for evaluation. The tagger achieved a lemmatization accuracy of 94.3% and a part-of-speech tagging accuracy of 91.7% on held-out data. Error analysis showed that the main source of mistakes was nominal compounds borrowed from German and not yet registered in the lexicon. The paper discusses strategies for extending the lexicon incrementally using a back-off mechanism based on suffix-stripping heuristics. Results are compared against a statistical baseline trained on a general-language corpus, which underperformed on domain-specific tokens by 6.4 percentage points."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03260",
+        "kind": "publication",
+        "title": "Serbian–German bilingual lexical database for the engineering domain: design principles and coverage",
+        "body": {
+          "recordId": "SYN-PUB-03260",
+          "field": "abstract",
+          "text": "The paper reports on the design and initial population of a Serbian–German bilingual lexical database targeted at engineering terminology. The resource encodes 12,400 term pairs extracted semi-automatically from a 4.2-million-token parallel corpus of EU-translated technical standards and verified by two domain-expert translators. Each entry stores a canonical lemma, inflectional class, syntactic valency frame, domain label, and up to three usage examples drawn from the source corpus. The database schema follows an extended version of the TermBase eXchange format to ensure interoperability with existing translation memory systems. Coverage was assessed against a reference terminology list compiled by the Serbian Standards Institute, yielding recall of 71% for core engineering concepts. The paper also discusses the treatment of multi-word terms, which account for 38% of all entries, and the specific difficulties posed by prefixal verb derivation in Serbian when mapping to German particle-verb equivalents."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03261",
+        "kind": "publication",
+        "title": "Inflectional paradigm clustering in Serbian: implications for lexicon compression",
+        "body": {
+          "recordId": "SYN-PUB-03261",
+          "field": "abstract",
+          "text": "Serbian nominal and verbal inflection presents a large number of partially overlapping paradigm classes, whose exact count and internal structure affect the size of any morphological lexicon. This study applies agglomerative hierarchical clustering to the paradigm tables of 8,700 lemmas from the Serbian Reference Lexicon project to identify natural groupings that minimize storage redundancy. Using normalized edit distance between paradigm vectors as the similarity measure, the analysis converges on 42 nominal and 27 verbal macro-classes, compared to the 104 micro-classes traditionally assumed in descriptive grammars. Compression experiments show that adopting macro-classes reduces the lexicon file size by 34% with a loss in tagging precision of less than 0.8 percentage points on a 200,000-token evaluation corpus. The paper argues that this trade-off is acceptable for resource-constrained deployment scenarios such as mobile translation assistants and lightweight corpus search tools."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03262",
+        "kind": "publication",
+        "title": "Cross-lingual query expansion for Serbian–German document retrieval using morphology-aware translation lexicons",
+        "body": {
+          "recordId": "SYN-PUB-03262",
+          "field": "abstract",
+          "text": "Cross-lingual information retrieval between Serbian and German is complicated by the mismatch between Serbian's fusional morphology and German's compounding strategies. This paper presents a retrieval framework in which user queries formulated in Serbian are expanded using a morphology-aware translation lexicon before being matched against an indexed German document collection. The lexicon was derived from the bilingual database described in earlier work and extended with 3,800 compound decompositions on the German side. Experiments were conducted on a collection of 22,000 technical patent abstracts with 120 manually constructed query-relevance judgement pairs. Mean Average Precision improved from 0.41 for a baseline bag-of-words approach to 0.58 when using the expanded lexicon with morphological normalization on both sides. The largest gains were observed for queries containing deverbal nouns, which are frequent in technical language and morphologically opaque to naive stemming. Error analysis identified 14% of failures as due to false friends between the two languages."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03263",
+        "kind": "publication",
+        "title": "Loanword integration in Serbian technical registers: a corpus-based morphophonological study",
+        "body": {
+          "recordId": "SYN-PUB-03263",
+          "field": "abstract",
+          "text": "Technical registers in Serbian have absorbed large numbers of loanwords from German, English, and Latin over the past century. This corpus-based study examines the morphophonological adaptation of 1,240 technical loanwords extracted from a 38-million-token corpus of Serbian professional writing spanning 1950–2010. Each token was annotated for source language, phonological adaptation strategy (substitution, deletion, epenthesis), and inflectional class assignment. Quantitative analysis shows that 67% of German-origin loanwords are assigned to the masculine a-declension, while English-origin items show greater variability. Temporal trends reveal increasing phonological retention of source-language consonant clusters after 1990, correlating with greater direct exposure to English-language technical literature. The findings have implications for lexicon design: inflectional class assignment for new technical borrowings cannot be predicted purely from phonological form and requires a probabilistic model with language-of-origin as a feature."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03264",
+        "kind": "publication",
+        "title": "Towards a SerbianWordNet: linking synsets to inflectional paradigms",
+        "body": {
+          "recordId": "SYN-PUB-03264",
+          "field": "abstract",
+          "text": "This book chapter describes the methodology and current state of SerbianWordNet, a lexical semantic network developed at the University of Novi Sad following the EuroWordNet model. The chapter focuses specifically on the problem of linking Princeton WordNet synsets to Serbian lemmas while preserving full morphological information. At the time of writing, the resource contained 32,000 synsets mapped from English, of which 21,400 had been manually verified by lexicographers. Each synset member is associated with an inflectional class identifier from the Serbian Reference Lexicon, enabling downstream applications to generate correctly inflected forms. The chapter discusses inter-annotator agreement on synset membership (Kappa 0.74) and describes a semi-automatic procedure for extending coverage by exploiting translational equivalents found in the Serbian–German bilingual database. Three application case studies are presented: a morphologically aware lexical simplification tool, a terminology extraction pipeline, and a query reformulation module for a Serbian patent search engine."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03265",
+        "kind": "publication",
+        "title": "Annotating semantic roles in a Serbian–German parallel corpus of legal texts",
+        "body": {
+          "recordId": "SYN-PUB-03265",
+          "field": "abstract",
+          "text": "Semantic role labeling in morphologically rich languages requires annotation schemes that can accommodate the greater word-order freedom that morphological case marking permits. This paper presents a semantic role annotation study conducted on a 280,000-token Serbian–German parallel corpus of EU legal texts. Annotation followed a PropBank-style scheme extended with five additional roles for beneficiary, causal, and concessive relations that occur frequently in legal prose. Inter-annotator agreement reached a Kappa of 0.69 for core roles and 0.54 for adjunct roles on a double-annotated subset of 40,000 tokens. The parallel structure of the corpus allowed contrastive analysis of how oblique arguments in Serbian, marked by morphological case, map to German prepositional phrases with varying degrees of ambiguity. Results suggest that automatic role labeling for Serbian can benefit from projection of labels from the German side using word alignment, increasing F1 from 0.61 to 0.68 in preliminary experiments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03266",
+        "kind": "publication",
+        "title": "Evaluation of open-source morphological analyzers on Vojvodina regional administrative texts",
+        "body": {
+          "recordId": "SYN-PUB-03266",
+          "field": "abstract",
+          "text": "Administrative and official texts produced by institutions in Vojvodina are characterized by frequent multilingual insertions from Hungarian and German, archaic Serbian inflectional forms, and specialized terminological layers absent from general-language training data. This paper benchmarks four freely available Serbian morphological analyzers—two rule-based and two based on conditional random fields—against a hand-annotated corpus of 95,000 tokens of Vojvodina administrative language collected from municipal websites and official gazettes between 2010 and 2016. Lemmatization accuracy ranges from 79.1% to 88.4% across systems; POS accuracy ranges from 82.3% to 90.1%. All systems degrade significantly on tokens containing Hungarian proper nouns used as base forms for Serbian derivative suffixation. The paper proposes a lightweight post-processing layer using a small hybrid lexicon of 2,100 regional-specific forms, which raises the best system's lemmatization accuracy to 92.6%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03267",
+        "kind": "publication",
+        "title": "Bilingual term extraction from comparable corpora: Serbian and German annual reports in the financial sector",
+        "body": {
+          "recordId": "SYN-PUB-03267",
+          "field": "abstract",
+          "text": "This study presents a method for extracting bilingual financial terminology from comparable—rather than parallel—corpora. The source corpus consists of 180 Serbian and 210 German annual reports from banking and insurance companies published between 2012 and 2018, totaling approximately 9.4 million tokens across both languages. Candidate terms were first extracted monolingually using a C-value measure combined with morphological normalization; 6,700 Serbian and 7,200 German candidates were retained. Bilingual alignment relied on a combination of cross-lingual word embeddings trained on a small seed lexicon of 1,800 verified financial term pairs and a cognate-detection component handling Internationalismen shared by both languages. Precision at rank 10 reached 0.72 for the embedding-based method, compared to 0.59 for a translation-dictionary baseline. Manual post-editing by two professional financial translators produced a verified bilingual glossary of 4,100 entries, which has been deposited in the departmental lexical resource archive."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03268",
+        "kind": "publication",
+        "title": "Constructing a morphosyntactic lexicon for Serbian sign-language finger-spelled loanwords: a feasibility study",
+        "body": {
+          "recordId": "SYN-PUB-03268",
+          "field": "abstract",
+          "text": "Finger-spelled words in Serbian Sign Language frequently originate as borrowings from written Serbian, and their morphosyntactic behavior differs from both their source forms and from native sign constructions. This feasibility study investigates whether existing Serbian morphological lexicons can be adapted to handle the restricted inflectional behavior of finger-spelled forms. Data were collected through structured elicitation sessions with twelve deaf informants from Novi Sad and Belgrade, producing a corpus of 4,400 finger-spelled tokens covering 310 distinct base forms. Analysis shows that finger-spelled nouns behave like Serbian masculine a-declension nouns in 82% of contexts regardless of their source paradigm class, suggesting a default assignment rule. A small proof-of-concept lexicon module of 310 entries was integrated into the existing Serbian Reference Lexicon infrastructure and evaluated in a retrieval task, where it improved recall for documents mentioning finger-spelled technical terms by 11 percentage points."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03269",
+        "kind": "publication",
+        "title": "Low-resource neural lemmatization for Serbian: comparing data augmentation strategies using inflectional paradigm tables",
+        "body": {
+          "recordId": "SYN-PUB-03269",
+          "field": "abstract",
+          "text": "Neural sequence-to-sequence lemmatizers trained on small annotated corpora suffer from sparse coverage of infrequent inflected forms. This paper compares five data augmentation strategies for Serbian, all of which exploit the paradigm tables stored in the Serbian Reference Lexicon. Strategies range from simple oversampling of low-frequency paradigm cells to generating synthetic training sentences by substituting lemma slots in dependency-parsed gold sentences. Experiments use a base training set of 90,000 tokens from the SETimes corpus and evaluate on a held-out 18,000-token slice. A transformer-based lemmatizer trained on the base data achieves an accuracy of 91.3%; augmenting with paradigm-table oversampling raises this to 93.8%; the best-performing strategy—slot-substituted synthetic sentences combined with paradigm oversampling—reaches 95.1%. The gap relative to a fully supervised model trained on 500,000 tokens is 1.9 percentage points. Results suggest that morphological lexicons remain a cost-effective resource for low-resource lemmatization even in the neural era."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03270",
+        "kind": "publication",
+        "title": "Cross-lingual passage retrieval for Serbian–Hungarian bilingual administrative portals: a case study from Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-03270",
+          "field": "abstract",
+          "text": "Vojvodina's bilingual administrative portals publish documents in both Serbian and Hungarian, creating a practical need for cross-lingual search that allows users querying in one language to retrieve relevant passages in the other. This paper describes a retrieval system built for a corpus of 640,000 documents totaling 310 million tokens collected from eleven municipal portal archives between 2015 and 2021. The retrieval backbone uses BM25 with morphological normalization on both language sides; cross-lingual query translation relies on a bilingual lexicon of 28,000 administrative term pairs assembled from earlier terminology projects and extended with a cognate list. A dense retrieval component based on multilingual sentence embeddings fine-tuned on 12,000 manually aligned passage pairs was integrated as a re-ranking layer. On 200 test queries, NDCG@10 improved from 0.49 (BM25 baseline) to 0.63 (hybrid system). The paper discusses user acceptance issues and ongoing cooperation with the Provincial Secretariat for Administration."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03271",
+        "kind": "publication",
+        "title": "Multilingual named entity alignment across Serbian, German, and Hungarian in a shared industrial corpus: annotation scheme and baseline results",
+        "body": {
+          "recordId": "SYN-PUB-03271",
+          "field": "abstract",
+          "text": "Named entities—company names, product identifiers, standards codes, and role designations—constitute a structurally important layer in industrial documents and present particular challenges when texts circulate across Serbian, German, and Hungarian. This paper proposes an annotation scheme for multilingual named entity alignment that accounts for the grammatical integration of foreign entity names into Serbian morphology (case suffixation, possessive clitic attachment) and the compounding behavior of entity names in German. The scheme was applied to a 520,000-token corpus of industrial tender documents and procurement records contributed by three manufacturing companies from the NTP Novi Sad ecosystem. Fourteen annotator sessions produced a triple-annotated gold standard of 42,000 tokens with Cohen's Kappa of 0.81 for entity span detection and 0.74 for cross-lingual alignment links. A CRF-based baseline system trained on 80% of the data achieved F1 of 0.77 for Serbian and 0.71 for Hungarian entity spans; cross-lingual link precision was 0.66."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03272",
+        "kind": "publication",
+        "title": "Diachronic stability of Serbian inflectional paradigms in specialized registers, 1960–2020: evidence from a 200-million-token corpus",
+        "body": {
+          "recordId": "SYN-PUB-03272",
+          "field": "abstract",
+          "text": "Descriptive grammars of Serbian were largely codified in the mid-twentieth century, but the inflectional behavior of nouns in specialized professional registers has not been systematically tracked across time. This study uses a 200-million-token diachronic corpus spanning 1960–2020, drawn from digitized issues of twelve Serbian trade and professional journals, to track frequency distributions across competing inflectional variants for 380 lexemes that exhibit paradigm instability in contemporary usage. Mixed-effects logistic regression models, with decade, register, and domain as fixed effects, show statistically significant drift toward the -a genitive singular for masculine inanimate nouns in technical registers (OR 1.34 per decade, p < 0.001), consistent with analogical leveling toward the most productive paradigm. These findings have practical implications for the design of morphological analyzers: models trained on pre-2000 data systematically underperform on post-2010 technical text due to unmodeled paradigm drift."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03273",
+        "kind": "publication",
+        "title": "Polysemy Patterns in Serbian Newspaper Vocabulary: A Frequency-Based Pilot Study",
+        "body": {
+          "recordId": "SYN-PUB-03273",
+          "field": "abstract",
+          "text": "This study examines polysemy distribution in a 2.4-million-token corpus of Serbian daily newspaper articles drawn from three national dailies published between 2006 and 2010. Using frequency ranking and concordance analysis in SketchEngine, the author identifies 318 high-frequency lemmas exhibiting at least three distinguishable senses in context. Sense boundaries were established through manual annotation following adapted WordNet criteria. Results indicate that approximately 34% of polysemous nouns in political reporting acquire secondary evaluative senses not attested in standard lexicographic sources. The paper argues that journalistic register drives systematic sense extension in a relatively short time window and proposes a preliminary taxonomy of extension types. Findings are compared with analogous observations in Croatian and Polish newspaper corpora from published literature. The study serves as a baseline for subsequent automated approaches to Serbian lexical sense disambiguation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03274",
+        "kind": "publication",
+        "title": "Šokački i bunjevački govori u Bačkoj: dijalektološka monografija",
+        "body": {
+          "recordId": "SYN-PUB-03274",
+          "field": "abstract",
+          "text": "Monografija predstavlja sintezu desetogodišnjih terenskih istraživanja šokačkih i bunjevačkih govora na području Bačke. Opisuje se fonetski i fonološki sistem oba vernakula, s poglavljima posvećenim vokalizmu, konsonantizmu, prozodijskom sistemu i morfonološkim alternacijama. Poseban deo bavi se leksičkim elementima mađarskog porekla i njihovom fonetskom adaptacijom. Monografija sadrži i gelingvistički prilog — 14 karata distribucije odabranih dijalekatskih obeležja — kao i transkripcioni rečnik termina koji nije uvršten u standardnu IPA notaciju. Korpus na kome se zasniva obuhvata 212 govornika iz 27 naselja, snimljenih u periodu od 2008. do 2017. godine. Monografija je namenjena dijalektolozima, sociolingvistima i istraživačima jezičke politike zainteresovanim za situaciju romaniziranih slovenskih manjinskih govora u kontaktu s finougarskim jezicima."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00295",
+        "kind": "publication",
+        "title": "Parental Language Ideologies and Intergenerational Romani Transmission in Novi Sad Peri-Urban Households",
+        "body": {
+          "recordId": "SYN-PUB-00295",
+          "field": "abstract",
+          "text": "This paper reports on a qualitative study of language ideologies held by 22 parents in Serbian–Romani bilingual households in three peri-urban settlements adjacent to Novi Sad. Semi-structured interviews explored parental beliefs about the utility, prestige, and emotional value of Romani versus Serbian in the context of their children's schooling and future employment prospects. Thematic analysis identified two dominant ideological orientations: an instrumental orientation prioritising Serbian acquisition for social mobility, held by 15 of 22 parents, and a heritage orientation emphasising Romani as a carrier of familial and ethnic identity, held by the remaining seven. Parents with the instrumental orientation more frequently reported discouraging children from using Romani outside the home. The paper situates these findings within language shift literature on minority languages in Central and Eastern European urban contexts and argues that economic precarity mediates ideological stance, with parents experiencing greater employment instability more consistently endorsing Serbian monolingual norms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03275",
+        "kind": "publication",
+        "title": "Prefixed Verbs in Learner Serbian: A Corpus-Based Account of Prefix Selection Errors at B1–B2",
+        "body": {
+          "recordId": "SYN-PUB-03275",
+          "field": "abstract",
+          "text": "Using the NoSLeCS learner corpus, this study analyses prefix selection errors in written texts produced by B1 and B2 learners of Serbian. A total of 3,218 prefixed verb tokens were identified in texts from 284 learners; 427 (13.3%) were manually coded as erroneous, subdivided into wrong-prefix, missing-prefix, and superfluous-prefix categories. Wrong-prefix errors were most frequent (58% of errors), and a large proportion involved substitution of a directional or spatial prefix for an aspectual one in telic contexts. Error rate per prefix type ranged from 3% for u- to 29% for po- in certain aspectual functions. Learners whose L1 was a Slavic language (Polish, Czech, Slovak, n = 44) showed significantly lower overall prefix error rates than non-Slavic L1 learners, but showed a distinct pattern of near-misses with cognate prefixes that carry subtly different meanings in their L1."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0054",
+        "kind": "project",
+        "title": "Terminological Infrastructure for Vojvodina's Bilingual Administrative and Professional Communication",
+        "body": {
+          "recordId": "SYN-PRJ-0054",
+          "field": "summary",
+          "text": "The project built a publicly accessible bilingual Serbian–Hungarian terminological database covering the administrative, agricultural, and light manufacturing sectors active in Vojvodina. The database was populated from a 28-million-token corpus of administrative documents, agricultural extension bulletins, and industrial catalogs collected from provincial institutions and companies. Terminology extraction combined rule-based and statistical methods with expert post-editing. The final resource contains 34,000 verified term pairs with inflectional class and domain metadata. A web search interface was deployed on Faculty of Philosophy servers and has been used by the Provincial Secretariat's translation unit since 2021. The project employed two research assistants and supported one doctoral dissertation."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0055",
+        "kind": "project",
+        "title": "Cross-Lingual Lexical Resources for Information Access in Morphologically Rich Contact Languages of the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-0055",
+          "field": "summary",
+          "text": "CROSSLEX develops interconnected lexical resources—bilingual lexicons, morphological analyzers, and word-sense-disambiguated wordnets—for Serbian in contact with German and Hungarian, targeting professional and institutional domains. The project is constructing a unified resource graph linking SerbianWordNet synsets to paradigm tables and to bilingual term pairs extracted from a 60-million-token domain corpus. A secondary workstream investigates how large multilingual language models perform on morphologically rich Serbian subsets and how injecting structured lexical knowledge improves their lemmatization and retrieval accuracy. The project supports two doctoral students and one postdoctoral researcher. An open-access repository of all produced datasets and software is maintained on the Faculty of Philosophy GitLab instance."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates working on Serbian NLP in professional domains",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "open_to",
+            "quote": "joint projects with companies needing multilingual text processing or terminology management",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0258",
+            "field": "open_to",
+            "quote": "contract research on building domain-specific bilingual lexicons or morphological analyzers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0746",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0746",
+    "name": "Đorđe Kosanović",
+    "faculty": "Faculty of Agriculture",
+    "department": "Department of Field and Vegetable Crops",
+    "fields": [
+      "Soil Science and Land Management",
+      "Precision Agriculture",
+      "Geostatistics and Spatial Analysis",
+      "Remote and Proximal Sensing"
+    ],
+    "keywords": [
+      "spatial interpolation",
+      "ordinary kriging",
+      "regression-kriging",
+      "saline-sodic soils",
+      "electromagnetic induction",
+      "proximal soil sensing",
+      "variogram modelling",
+      "electrical conductivity",
+      "Vojvodina",
+      "soil mapping"
+    ],
+    "openTo": [
+      "joint projects with companies needing field-scale soil characterisation",
+      "contract research on precision agriculture soil surveys",
+      "consulting on geostatistical mapping workflows and software",
+      "student internships involving field data collection and GIS analysis",
+      "equipment access to EM38 and pXRF instruments for partner projects"
+    ],
+    "bio": {
+      "recordId": "R0746",
+      "field": "bio",
+      "text": "Đorđe Kosanović completed his BSc and MSc in Agriculture at the Faculty of Agriculture, University of Novi Sad, graduating in 2009 and 2012 respectively. He defended his PhD in Soil Science at the same faculty in 2018, focusing on geostatistical mapping of saline-sodic soils in the Vojvodina plain. Since 2019 he has held a Research Associate position in the Department of Field and Vegetable Crops. His work centres on combining electromagnetic induction surveys, portable XRF measurements, and soil sampling to build spatial models of physico-chemical properties such as electrical conductivity, pH, exchangeable sodium percentage, and texture. He teaches practical courses in soil survey methods for undergraduate students. His group regularly uses a Geonics EM38 terrain conductivity meter, a portable XRF analyser, and open-source geostatistical software environments for day-to-day work."
+    },
+    "industryExperience": {
+      "recordId": "R0746",
+      "field": "industry_experience",
+      "text": "Kosanović has carried out two paid soil survey commissions for agricultural cooperatives in Vojvodina, delivering ECe and ESP maps used for variable-rate gypsum application. He has no sustained industrial employment outside academia."
+    },
+    "notes": {
+      "recordId": "R0746",
+      "field": "notes",
+      "text": "Kosanović is available for short-term consultancy visits to company sites within Serbia. He prefers collaborations that involve genuine field data collection rather than purely computational work. His EM38 and pXRF instruments are available to external partners subject to scheduling and consumables cost recovery."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02588",
+        "kind": "publication",
+        "title": "Variogram analysis of topsoil electrical conductivity measured by EM38 in a salt-affected field in northern Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-02588",
+          "field": "abstract",
+          "text": "Apparent electrical conductivity (ECa) measured with an EM38 electromagnetic induction sensor was used to characterise spatial variability of topsoil salinity in a 45-hectare salt-affected field near Bačko Gradište, Serbia. A total of 312 georeferenced ECa readings collected along transects at 10-metre intervals were analysed by fitting spherical, exponential, and Gaussian theoretical variogram models. The spherical model provided the best fit (nugget-to-sill ratio 0.18), indicating strong spatial structure with a range of approximately 87 metres. Cross-validation with leave-one-out ordinary kriging yielded a root mean squared error of 1.4 mS/m and a mean error close to zero. Interpolated ECa maps were compared with 42 soil core measurements of electrical conductivity of the saturation extract (ECe). The Pearson correlation between predicted ECa and measured ECe was 0.81, confirming the utility of EM38 data as a surrogate for direct salinity measurements in this landscape. Results suggest that a transect spacing of 15 metres would be sufficient for capturing the dominant spatial patterns without significant loss of mapping accuracy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08247",
+        "kind": "publication",
+        "title": "Comparing ordinary kriging and inverse distance weighting for mapping exchangeable sodium percentage in Vojvodina sodic soils",
+        "body": {
+          "recordId": "SYN-PUB-08247",
+          "field": "abstract",
+          "text": "Exchangeable sodium percentage (ESP) is a primary diagnostic criterion for classifying sodic soils, yet its spatial mapping is rarely performed at the within-field scale. This study compared ordinary kriging (OK) and inverse distance weighting (IDW) for predicting ESP from 88 topsoil samples (0–30 cm) collected across a 120-hectare trial site in the Zrenjanin municipality. Samples were analysed for cation exchange capacity and exchangeable cations by standard titrimetric and flame photometric methods. Omnidirectional variograms for ESP were fitted with an exponential model (range 134 m, nugget-to-sill ratio 0.24). Cross-validation showed that OK produced a lower RMSE (3.1 cmol/kg) than IDW with power 2 (RMSE 4.0 cmol/kg). Spatial maps generated by the two methods differed most in areas between sampling locations, where OK smoothing reduced the risk of artefacts. Areas exceeding the ESP threshold of 15% covered 38% of the field under OK interpolation and 41% under IDW, a difference relevant for lime and gypsum amendment planning."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-05388",
+        "kind": "publication",
+        "title": "Use of portable X-ray fluorescence spectrometry for estimating total potassium and calcium in saline soil profiles of the Pannonian Plain",
+        "body": {
+          "recordId": "SYN-PUB-05388",
+          "field": "abstract",
+          "text": "Portable X-ray fluorescence (pXRF) spectrometry was tested as a rapid, non-destructive method for estimating total potassium and calcium in soil profiles from six saline and saline-sodic sites across the Pannonian Plain in Serbia and Hungary. A total of 180 soil samples from depths of 0–100 cm were measured with a pXRF device and also analysed in the laboratory by acid digestion followed by ICP-OES. Linear regression models between pXRF and laboratory values achieved R² of 0.87 for potassium and 0.79 for calcium when field-moist samples were used. Predictive accuracy improved markedly (R² of 0.93 for K, 0.85 for Ca) after air-drying and sieving to 2 mm, suggesting that moisture content is a major source of error under field conditions. Depth-specific calibration equations were more accurate than a single pooled model, particularly below 40 cm where organic matter interference diminished. The findings support the use of pXRF as a screening tool for profile characterisation in salt-affected soil surveys where laboratory throughput is a limiting factor."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08248",
+        "kind": "publication",
+        "title": "Regression-kriging for delineating saline-sodic soil units using EM38 and pXRF auxiliary data",
+        "body": {
+          "recordId": "SYN-PUB-08248",
+          "field": "abstract",
+          "text": "Regression-kriging (RK) was applied to delineate saline-sodic soil management zones at a commercial sunflower farm of 280 hectares in central Vojvodina. Apparent electrical conductivity (ECa) from an EM38 survey and total sodium content from pXRF scanning served as covariates in a multiple linear regression step predicting measured ECe and ESP from 66 calibration soil cores. Residuals from the regression were subsequently kriged with fitted spherical variogram models and added back to the regression predictions. Prediction performance was assessed by 10-fold cross-validation: RK achieved RMSE of 2.7 mS/m for ECe and 2.9 cmol/kg for ESP, compared with 3.8 and 4.2 for ordinary kriging without covariates. The resulting classification into non-saline-sodic, transitional, and saline-sodic zones covered 48%, 27%, and 25% of the field area respectively. Zone boundaries were consistent with field observations of sparse sunflower emergence and yellow chlorotic patches that historically corresponded to sodium-dominated spots. The study demonstrates that combining two proximal sensing methods as regression covariates reduces the number of expensive laboratory analyses needed for reliable soil unit mapping."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08249",
+        "kind": "publication",
+        "title": "Geostatistical methods in precision soil survey: a practical guide for practitioners in Southeast Europe",
+        "body": {
+          "recordId": "SYN-PUB-08249",
+          "field": "abstract",
+          "text": "This book chapter reviews the practical application of variogram modelling, ordinary kriging, kriging with external drift, and regression-kriging for soil property mapping, with examples drawn from surveys conducted in Serbia, Romania, and Hungary. It addresses common difficulties faced by practitioners in the region, including sparse sampling networks, non-stationarity of saline soil properties, and the choice between model-based and algorithm-based interpolators. Step-by-step guidance is provided on exploratory data analysis, normal score transformation, variogram fitting, and uncertainty quantification through conditional simulation. Case studies illustrate the mapping of pH, ECe, organic carbon, and particle size distribution at field and catchment scales. Software options including R packages gstat and automap, as well as QGIS plugins, are discussed with attention to reproducibility and open data formats. The chapter is aimed at soil scientists and agronomists who have basic statistical knowledge but limited prior experience with geostatistics, and it draws heavily on datasets from Vojvodina and the broader Pannonian region."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08250",
+        "kind": "publication",
+        "title": "Temporal stability of ECa spatial patterns in a recurrently flooded saline field over five growing seasons",
+        "body": {
+          "recordId": "SYN-PUB-08250",
+          "field": "abstract",
+          "text": "The temporal stability of apparent electrical conductivity (ECa) spatial patterns was examined in a 62-hectare field subject to periodic flooding in the Danube–Tisa–Danube canal zone of Vojvodina. EM38 surveys were repeated in May and October of each year from 2016 to 2020, producing ten maps per depth mode (vertical and horizontal dipoles). Spearman rank correlation coefficients between ECa maps from different years ranged from 0.74 to 0.93 for the vertical dipole mode, indicating moderate to strong temporal stability of high- and low-conductivity zones despite annual flooding events. Stable high-ECa zones coincided with fine-textured depressions identified by a 1-m LiDAR digital terrain model. Zones of lower stability were located on sloping transitions between microrelief elements. Temporal stability index maps were produced by calculating the coefficient of variation at each interpolated grid node across the ten survey dates. Results suggest that a single growing-season survey can adequately represent salt distribution for management purposes in stable zones, while transition zones require repeated measurement. The LiDAR terrain derivatives explained 58% of spatial variance in mean ECa across the ten surveys."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08251",
+        "kind": "publication",
+        "title": "Mapping soil pH at 1:5000 scale combining ion-selective electrode rapid measurements and regression-kriging in alkaline agricultural land",
+        "body": {
+          "recordId": "SYN-PUB-08251",
+          "field": "abstract",
+          "text": "A rapid ion-selective electrode (ISE) method for field measurement of soil pH was calibrated and used to densify a sparse laboratory sample network for regression-kriging in an alkaline agricultural area near Kikinda, Serbia. Laboratory pH values from 54 standard samples (1:2.5 water suspension, glass electrode) and 210 in-field ISE readings were collected across 95 hectares. The bias of ISE versus laboratory measurements averaged 0.12 pH units and was corrected by a linear calibration. Regression-kriging using ISE readings as a covariate reduced cross-validation RMSE for laboratory pH from 0.31 (ordinary kriging alone) to 0.18. The final 1:5000-scale map identified three zones: pH 7.4–7.8 (32% of area), pH 7.9–8.3 (51%), and pH above 8.3 (17%), the last corresponding closely to visible lime-encrusted surface patches and prior EM38 surveys. The approach substantially reduces laboratory costs per hectare while maintaining mapping accuracy sufficient for liming and micronutrient management decisions. Semivariogram parameters and calibration coefficients are reported to allow replication at similar alkaline sites in the Pannonian region."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08252",
+        "kind": "publication",
+        "title": "Evaluation of sample size reduction strategies for regression-kriging of soil electrical conductivity using dense EM38 grids as covariates",
+        "body": {
+          "recordId": "SYN-PUB-08252",
+          "field": "abstract",
+          "text": "Determining the minimum number of laboratory soil samples required for acceptable regression-kriging accuracy is practically important because laboratory analysis is the main cost driver in proximal-sensing-assisted surveys. Using a fully sampled reference dataset of 148 soil cores and a continuous EM38 grid from a 115-hectare saline field in Vojvodina, this study evaluated the effect of progressively reducing the calibration sample set to 100, 75, 50, 30, and 20 samples on regression-kriging predictions of ECe, ESP, and clay content. Sampling configurations were replicated 100 times using random, conditioned Latin hypercube, and spatial coverage designs. Cross-validation RMSE for ECe increased moderately from 1.9 mS/m (n=148) to 2.6 mS/m (n=30) under the conditioned Latin hypercube design, but rose sharply to 4.3 mS/m at n=20. For ESP and clay content, a threshold near n=40–50 was identified below which spatial coverage sampling outperformed random designs by 15–22% in RMSE. Nugget variance estimates became unstable below n=30, compromising kriging weights. Results indicate that for fields with strong covariate signals, conditioned Latin hypercube designs with 40–50 soil cores are a reasonable compromise between cost and mapping accuracy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08253",
+        "kind": "publication",
+        "title": "Radiation partitioning between maize and bean strips of contrasting widths under continental climate conditions",
+        "body": {
+          "recordId": "SYN-PUB-08253",
+          "field": "abstract",
+          "text": "Strip widths of 0.75 m, 1.5 m, and 3.0 m were tested in a three-year field experiment near Novi Sad using paired quantum sensors placed at 10 cm intervals across canopy profiles. The fraction of photosynthetically active radiation intercepted by the shorter maize strips decreased by 18–24 % relative to sole-crop controls, with corresponding increases in transmitted radiation to the bean understorey. Biomass accumulation in bean rows adjacent to maize borders exceeded interior-row biomass by up to 31 % in the 0.75 m treatment, attributed to lateral light penetration. A simple geometric interception model parameterised from row height and azimuth reproduced observed PAR profiles with RMSE below 12 µmol m⁻² s⁻¹ across 80 % of measurement positions. Results suggest that strip width is the dominant design variable for radiation management in this intercrop combination under temperate continental conditions."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0168",
+        "kind": "project",
+        "title": "Geostatistical Mapping of Salt-Affected Soils in Vojvodina for Sustainable Agricultural Land Management",
+        "body": {
+          "recordId": "SYN-PRJ-0168",
+          "field": "summary",
+          "text": "The project aimed to produce a systematic, georeferenced database of saline and sodic soil properties for five municipalities in the central Vojvodina region covering approximately 4 000 hectares of agricultural land. Field campaigns combined EM38 surveys, pXRF scanning, and targeted soil coring to obtain ECe, ESP, pH, texture, and organic carbon. Regression-kriging was applied to generate 1:10 000-scale prediction maps and associated uncertainty surfaces. Outputs were delivered to local agricultural extension services in open GIS formats. The project also produced a standardised field protocol for cost-effective saline soil surveys intended for use by other research teams and agricultural advisory bodies in the province."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0169",
+        "kind": "project",
+        "title": "Cross-Border Assessment of Salt-Affected Soil Dynamics in the Pannonian Basin",
+        "body": {
+          "recordId": "SYN-PRJ-0169",
+          "field": "summary",
+          "text": "CROSSALT investigates the spatial extent and temporal dynamics of saline-sodic soils across a 120 000-hectare study region straddling the Serbia–Hungary border. Kosanović leads the work package responsible for harmonising Serbian and Hungarian soil sampling protocols, joint EM38 field campaigns, and cross-border regression-kriging mapping. The project integrates Sentinel-2 spectral indices as additional covariates alongside proximal sensor data to extend mapping to areas without dense ground surveys. Outputs include a bilingual soil data portal, unified salinity hazard maps, and recommendations for transboundary land management. A training workshop for farmers and extension officers is planned for the final project year."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "open_to",
+            "quote": "joint projects with companies needing field-scale soil characterisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "open_to",
+            "quote": "contract research on precision agriculture soil surveys",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

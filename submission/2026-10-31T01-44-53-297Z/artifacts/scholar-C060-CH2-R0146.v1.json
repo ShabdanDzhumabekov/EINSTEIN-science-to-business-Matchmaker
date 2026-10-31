@@ -1,0 +1,206 @@
+{
+  "ref": {
+    "artifactId": "scholar-C060-CH2-R0146",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0146",
+    "name": "Bojana Novaković",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Traffic Engineering",
+    "fields": [
+      "Transportation Engineering",
+      "Machine Learning and Statistical Modelling",
+      "Urban Mobility and Public Transport",
+      "Data Science"
+    ],
+    "keywords": [
+      "travel time prediction",
+      "automatic vehicle location",
+      "Bayesian state-space models",
+      "recurrent neural networks",
+      "urban public transport",
+      "GTFS",
+      "schedule adherence",
+      "time-series forecasting",
+      "telemetry data",
+      "bus rapid transit"
+    ],
+    "openTo": [
+      "joint projects with companies operating urban mobility platforms or fleet management software",
+      "contract research on travel time or schedule reliability analysis using company AVL/GPS data",
+      "consulting on AVL data preprocessing and quality assessment",
+      "student internships for MSc students working on transport data pipelines or ML model deployment",
+      "equipment access to departmental computing cluster for computationally intensive partner tasks"
+    ],
+    "bio": {
+      "recordId": "R0146",
+      "field": "bio",
+      "text": "Bojana Novaković received her BSc and MSc degrees in Traffic Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2011 and 2014 respectively, and completed her PhD at the same institution in 2020, with a dissertation on Bayesian state-space models for bus travel time estimation using archived AVL data. She joined the Department of Traffic Engineering as a teaching assistant in 2015 and was appointed Assistant Professor in 2021. Her research group focuses on probabilistic and machine-learning methods for predicting travel times and schedule adherence in urban bus networks, drawing on large historical telemetry archives and GTFS feeds. She teaches courses in transport modelling and traffic data analysis. The group uses a local computing cluster for model training and maintains a curated AVL dataset covering the Novi Sad city bus network from 2016 onward."
+    },
+    "industryExperience": {
+      "recordId": "R0146",
+      "field": "industry_experience",
+      "text": "During 2019–2020 Novaković collaborated under a service contract with the Novi Sad city public transport operator to audit their AVL data archive and produce a data-quality report used in a fleet management tender. She has no further formal industry employment."
+    },
+    "notes": {
+      "recordId": "R0146",
+      "field": "notes",
+      "text": "Novaković is particularly interested in connecting with companies that already collect AVL or GPS fleet data but lack the analytical capacity to use it for prediction or planning. She prefers collaborations where her group retains the right to publish anonymised results. Workload is moderate; she can take on one new collaboration in 2026."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01892",
+        "kind": "publication",
+        "title": "Estimating Bus Segment Travel Times from Low-Frequency AVL Data Using a Kalman Filter Approach",
+        "body": {
+          "recordId": "SYN-PUB-01892",
+          "field": "abstract",
+          "text": "Low-frequency automatic vehicle location (AVL) logs—where GPS pings arrive every 30–90 seconds—create ambiguity in assigning travel times to individual road segments. This study develops a Kalman filter formulation that treats segment-level travel time as a latent state evolving according to a random-walk process, with noisy observations derived from interpolated stop-to-stop timestamps. The model is fitted to 14 months of archived AVL records from the Novi Sad city bus network covering four high-frequency lines, comprising roughly 2.1 million individual trip legs. Segment-level mean absolute error (MAE) is reduced by 18% compared with a historic-average baseline. The filter's uncertainty estimates align well with empirical variance, making them suitable for downstream reliability analyses. Sensitivity tests show that the method degrades gracefully as ping frequency decreases to one observation per minute, retaining useful predictions even for partially instrumented fleets."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01893",
+        "kind": "publication",
+        "title": "Day-of-Week and Seasonal Patterns in Urban Bus Punctuality: A Three-Year Retrospective for a Mid-Sized Serbian City",
+        "body": {
+          "recordId": "SYN-PUB-01893",
+          "field": "abstract",
+          "text": "Using three years (2015–2017) of timestamped passenger counting and AVL records from the Novi Sad public transport operator, this paper characterises temporal patterns in schedule deviation across 22 bus lines. Deviation is defined as the signed difference between actual and scheduled arrival at timepoints. Hierarchical clustering on daily deviation profiles identifies five recurring pattern types: typical weekday, Friday-evening peak, Saturday, Sunday, and holiday. Analysis of variance with post-hoc Tukey tests confirms significant differences between clusters for 19 of 22 lines. Mixed-effects regression models explain 61% of variance in afternoon-peak deviation using predictors including headway, route length, and precipitation intensity drawn from a local weather station. Results provide empirical benchmarks for timetable revision and serve as reference data for subsequent predictive modelling work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01894",
+        "kind": "publication",
+        "title": "A Switching State-Space Model for Bus Travel Time on Corridors with Traffic Signals",
+        "body": {
+          "recordId": "SYN-PUB-01894",
+          "field": "abstract",
+          "text": "Arterial bus corridors with multiple signalised intersections exhibit bimodal travel time distributions caused by platoon catching and red-phase delays. Standard Gaussian state-space models fit poorly to such data. This paper proposes a switching state-space model with two latent regimes—free-flow and signal-delay—governed by a Markov chain whose transition probabilities are informed by time-of-day covariates. Inference is performed via the expectation-maximisation algorithm applied to 26 months of AVL data on three signalised corridors in Novi Sad. The switching model achieves a root-mean-square error (RMSE) of 41 seconds on 15-minute-ahead predictions, compared with 58 seconds for a single-regime benchmark. The paper also reports calibration diagnostics and discusses practical limits on the observability of regime states from AVL alone, suggesting supplementary fixed-sensor data as a remedy."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01895",
+        "kind": "publication",
+        "title": "Comparing LSTM and GRU Architectures for Stop-Level Arrival Time Prediction Using Historical AVL Sequences",
+        "body": {
+          "recordId": "SYN-PUB-01895",
+          "field": "abstract",
+          "text": "Long short-term memory (LSTM) and gated recurrent unit (GRU) networks are evaluated for predicting bus arrival times at individual stops 1 to 5 stops ahead, using sequences of observed running times extracted from four years of AVL data. Input features include time-in-service, day type, weather category, and the running time of the three most recent preceding trips on the same line. Both architectures are trained on 80% of calendar weeks and tested on the remaining 20%. On the held-out set, GRU achieves mean absolute percentage error (MAPE) of 8.3% versus 8.7% for LSTM; the difference is statistically significant at the 5% level across 11 of 16 lines tested. Training times for GRU are approximately 22% shorter. Analysis of error by time-of-day shows that both models underperform during the evening peak on lines sharing a congested corridor, suggesting that network-level interaction features would be beneficial."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01896",
+        "kind": "publication",
+        "title": "Data Preprocessing Pipelines for Archived AVL Feeds: A Practitioner's Guide",
+        "body": {
+          "recordId": "SYN-PUB-01896",
+          "field": "abstract",
+          "text": "Archived AVL data from municipal bus operators frequently contain duplicate records, GPS dropouts, implausible speed spikes, and mismatched vehicle identifiers. This book chapter describes a systematic preprocessing pipeline developed and tested on the Novi Sad AVL archive (2016–2021, approximately 18 million raw records) and validated against a comparable archive from a partner city in Hungary. The pipeline consists of six sequential stages: deduplication, map matching, speed filtering, stop-event reconstruction, trip identification, and running-time segmentation. Application of the full pipeline retains 91.4% of raw records for the Novi Sad dataset and 88.7% for the Hungarian dataset, with discarded records attributable predominantly to GPS blackout zones and garage movements. Code is provided as open-source Python modules. The chapter also discusses operator-specific idiosyncrasies and provides decision rules for handling edge cases such as express trip variants and vehicle changes mid-route."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01897",
+        "kind": "publication",
+        "title": "Transfer Learning Across Bus Networks: Can a Model Trained on Novi Sad Data Generalise to Subotica?",
+        "body": {
+          "recordId": "SYN-PUB-01897",
+          "field": "abstract",
+          "text": "Training deep learning models for travel time prediction requires large historical archives that many smaller cities lack. This study investigates whether a GRU model pre-trained on five years of Novi Sad AVL data can be fine-tuned with limited data (4 weeks) from Subotica, a city with a smaller and sparser bus network. Fine-tuning uses only the final two recurrent layers and the output head; lower layers are frozen. On Subotica test data, the fine-tuned model achieves MAE of 52 seconds per stop-to-stop segment, compared with 71 seconds for a model trained from scratch on the same 4-week Subotica dataset and 48 seconds for a model trained on the full Subotica archive. Results suggest that transfer is beneficial when target-city data are scarce but that network topology differences limit gains beyond approximately 8 weeks of fine-tuning data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01899",
+        "kind": "publication",
+        "title": "Integrating Passenger Load Data from Automatic Passenger Counters into Travel Time Prediction Models",
+        "body": {
+          "recordId": "SYN-PUB-01899",
+          "field": "abstract",
+          "text": "Dwell time at stops depends partly on the number of boarding and alighting passengers, yet most travel time prediction models treat dwell time as a fixed offset. This study incorporates real-time passenger load estimates from automatic passenger counters (APCs) installed on 28 vehicles of the Novi Sad fleet into a Bayesian state-space model and a GRU model. APC-augmented versions of both models are compared against their load-blind counterparts on one year of data (2023). The state-space model with APC data reduces RMSE on stop-to-stop segments adjacent to high-boarding stops by 14%, while the GRU model improves by 9%. The gain is concentrated at two major interchange stops during peak hours. The paper discusses data fusion challenges arising from partial fleet instrumentation, including a multiple-imputation scheme for trips where APC coverage is missing."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01900",
+        "kind": "publication",
+        "title": "Benchmarking Probabilistic Travel Time Models Under Extreme Weather Events: Evidence from Novi Sad Winter Data",
+        "body": {
+          "recordId": "SYN-PUB-01900",
+          "field": "abstract",
+          "text": "Rare but operationally significant weather events—heavy snowfall, freezing rain, dense fog—cause travel time distributions to shift substantially beyond what is captured in typical training data. This preprint evaluates six probabilistic models (historic quantile, Gaussian state-space, switching state-space, MC-dropout GRU, quantile regression forest, conformal prediction wrapper on GRU) on 18 extreme-weather episodes identified in Novi Sad AVL records between 2016 and 2025, totalling 214 affected service-days. All models show degraded coverage during the first two hours of a snow event relative to normal-weather performance. Conformal prediction maintains nominal 90% coverage most consistently, at the cost of wider intervals. The quantile regression forest is the best-performing model on CRPS (continuous ranked probability score) averaged across all episodes. These findings motivate dedicated extreme-weather calibration strategies and suggest maintaining a rolling fine-tuning window triggered by weather alerts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01901",
+        "kind": "publication",
+        "title": "Measuring Walking Access to Bus Stops in Novi Sad: A Distance-Decay Approach",
+        "body": {
+          "recordId": "SYN-PUB-01901",
+          "field": "abstract",
+          "text": "This paper examines pedestrian access to bus stops in Novi Sad using a distance-decay gravity model calibrated on household travel survey data collected in 2011 (n = 1,840 respondents). Stop-level catchment areas were estimated at 300 m, 500 m, and 800 m thresholds. Results show that approximately 18% of the city's residential parcels fall outside the 500 m catchment of any bus stop, with the highest gaps concentrated in three outer districts: Klisa, Futog periphery, and Adice. The decay parameter β was estimated at 0.0041 per metre, slightly steeper than values reported for larger Central European cities. The paper argues that flat catchment buffers routinely overestimate coverage in hilly or barrier-divided neighbourhoods and recommends network-based distance calculations even for relatively flat cities such as Novi Sad. Findings were submitted as technical input to the 2013 revision of the city's public transport development plan."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0420",
+        "kind": "project",
+        "title": "Real-Time Learning Models for Bus Network Reliability in Mid-Sized Balkan Cities",
+        "body": {
+          "recordId": "SYN-PRJ-0420",
+          "field": "summary",
+          "text": "REALBUS addresses the gap between research-grade travel time predictors and deployable tools for cities with limited IT infrastructure. The project develops lightweight Bayesian and neural network models that can be retrained nightly on a standard server using the previous week of AVL data, without requiring GPU hardware. Pilot deployments are planned in Novi Sad and one partner city. The project produces open-source software, a curated benchmark dataset under a public licence, and a methodology report addressed to transport planners. A secondary objective is to build a labelled dataset of disruption events (roadworks, accidents, protests) linked to AVL anomalies, to support future work on event-triggered model adaptation."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0421",
+        "kind": "project",
+        "title": "Cross-Modal Telemetry Fusion for Urban Mobility Analysis in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-0421",
+          "field": "summary",
+          "text": "TRIMODDATA brings together research teams from Novi Sad and Pécs to build a shared methodology for fusing AVL, bike-sharing, and floating-car data into unified travel time surfaces for urban corridors. Novaković leads the work package on public transport telemetry, responsible for harmonising AVL preprocessing standards between the two cities and for producing stop-level travel time estimates as inputs to the joint fusion model. The project includes two student exchange visits per year and a joint summer school on urban mobility data. Outputs include a bilingual (Serbian/Hungarian) data-sharing protocol and a web dashboard for corridor performance monitoring."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0959",
+        "kind": "project",
+        "title": "Urban Traffic Emission and Noise Exposure Assessment for Mid-Sized Cities in the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-0959",
+          "field": "summary",
+          "text": "URBANEX aimed to produce harmonised noise and air quality exposure datasets for five mid-sized Western Balkan cities with populations between 100 000 and 350 000, where regulatory monitoring is sparse. The project developed a transferable modelling workflow combining locally calibrated emission factors, AERMOD and SoundPlan, and census population grids to generate population-weighted exposure indicators comparable across cities. Field validation campaigns using portable LCS sensor arrays were conducted in Novi Sad, Niš, Banja Luka, and Bitola. The project produced open datasets, a technical guidance document for municipal authorities, and a web map interface for public communication of results. Three journal papers and one policy brief were delivered."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0146",
+            "field": "open_to",
+            "quote": "joint projects with companies operating urban mobility platforms or fleet management software",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0146",
+            "field": "open_to",
+            "quote": "contract research on travel time or schedule reliability analysis using company AVL/GPS data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

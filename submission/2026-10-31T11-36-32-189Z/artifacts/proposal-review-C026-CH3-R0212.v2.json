@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0212",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Company resources comprise two technicians with process-engineering backgrounds and a basic wet-chemistry bench, without a dedicated research budget. Funding for drilling, external analyses and trials remains to be established.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "We have two technicians with process engineering backgrounds",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.49; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "ref": {
+    "artifactId": "business-C065-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C065-CH2",
+    "companyId": "C065",
+    "companyName": "Harmat Szoftver d.o.o.",
+    "sector": "Custom software and IT services for EU clients",
+    "location": "Subotica",
+    "challenge": {
+      "text": {
+        "recordId": "C065-CH2",
+        "field": "text",
+        "text": "We want to add a product recommendation widget to our e-commerce clients' stores, but with only 500–2,000 transactions per client the collaborative filtering models we tried give worse results than simple best-seller sorting."
+      },
+      "detail": {
+        "recordId": "C065-CH2",
+        "field": "detail",
+        "text": "Several of our e-commerce clients have asked us to add a 'you might also like' widget to their product pages. We tried building a standard collaborative filtering model last autumn using transaction logs from three clients. The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520. The models we trained gave recommendations that were either obvious — recommending the best-sellers regardless of what the user was viewing — or simply wrong, suggesting unrelated items because the purchase co-occurrence matrix was too sparse to be useful. We ended up shipping nothing and telling the clients to wait. Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test. We do not have the budget or the traffic to wait for larger datasets. We want to understand whether there is a sensible approach — maybe content-based signals from product descriptions or category metadata, maybe some kind of hybrid — that would give meaningfully better results than a best-seller list on catalogs this small. A working prototype for one client would be enough to start. We can give a collaborator full read access to anonymised transaction and product catalogue data."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C065",
+        "field": "about",
+        "text": "Harmat Szoftver d.o.o. was founded in 2016 by the Varga family in Subotica, a city where Hungarian, Serbian and Slovak speakers share the same streets, markets and shopping carts. That everyday multilingual reality is the reason we exist. Our founders spent years building internal tools for regional distributors and kept hitting the same wall: software that looked fine in one language fell apart in the next. We decided to fix that problem properly.\n\nToday we are a team of eighteen — developers, QA testers, a pair of in-house translators and a small support desk — all based in Subotica. We build custom web portals, e-commerce integrations and customer support tools for small and mid-sized businesses in Hungary, Slovakia and the northern Serbian market. Our clients run furniture shops, agricultural suppliers, pharmacy chains and courier services. They are not looking for flashy technology; they want software that works, invoices that arrive on time and someone who picks up the phone.\n\nWhat sets us apart is straightforward: we test every user-facing string in all three languages before a build ships, we keep a small team rather than growing beyond what we can manage well, and we have stayed profitable every year since 2018. We are not a venture-backed startup. We are a studio that intends to be here in twenty years."
+      },
+      "products": [
+        {
+          "recordId": "C065",
+          "field": "products",
+          "text": "Custom web portals for SME clients in Hungary and Slovakia"
+        },
+        {
+          "recordId": "C065",
+          "field": "products",
+          "text": "E-commerce integrations (cart, payment, inventory sync) for regional online shops"
+        },
+        {
+          "recordId": "C065",
+          "field": "products",
+          "text": "Multilingual customer support tools with Hungarian, Slovak and Serbian interfaces"
+        },
+        {
+          "recordId": "C065",
+          "field": "products",
+          "text": "Maintenance and hosting plans for existing client installations"
+        },
+        {
+          "recordId": "C065",
+          "field": "products",
+          "text": "Light-touch digital onboarding packages for brick-and-mortar retailers moving online"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "PHP (Laravel framework) for backend portal development"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "Vue.js for frontend interfaces"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "MySQL and MariaDB for transactional data"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "WooCommerce and custom REST API integrations"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "Gettext-based localisation with in-house translator review workflow"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "Docker for containerised deployments on client VPS environments"
+        },
+        {
+          "recordId": "C065",
+          "field": "tech",
+          "text": "Basic Python scripts for sales data exports and reporting"
+        }
+      ],
+      "plans": {
+        "recordId": "C065",
+        "field": "plans",
+        "text": "Over the next two years we plan to bring the competing Subotica studio into the company and expand our client base into the Czech market, where demand for Slovak-language tooling gives us a natural entry point. We also want to move at least two clients from one-off project billing to annual subscription arrangements to improve revenue predictability."
+      },
+      "rdCapacity": {
+        "recordId": "C065",
+        "field": "rd_capacity",
+        "text": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration, plus access to anonymised client datasets under a data-sharing agreement."
+      },
+      "pastCollaborations": {
+        "recordId": "C065",
+        "field": "past_collaborations",
+        "text": "None formal; one of our senior developers completed a short professional training course at the Subotica Tech Centre in 2021, but we have not done a structured collaboration with a university or research institution."
+      }
+    }
+  }
+}

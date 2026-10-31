@@ -1,0 +1,168 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0258",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0258",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Which combination of indexing-time and query-time Serbian script normalization can reduce cross-script search failures in KlozuraPro without unacceptable latency or false matches? The first experiment would compare indexing-only, query-only and combined normalization against the existing PostgreSQL search on relevance-labelled contract queries covering both script directions, mixed-script text and ambiguous Latin sequences, testing retrieval quality and latency rather than assuming improvements.",
+    "rationale": [
+      {
+        "text": "Vukelić has evaluated lexicon-based query expansion and morphological normalization for document retrieval, providing a relevant experimental foundation for comparing normalization strategies.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03262",
+            "field": "abstract",
+            "quote": "user queries formulated in Serbian are expanded using a morphology-aware translation lexicon before being matched against an indexed German document collection.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03262",
+            "field": "abstract",
+            "quote": "Mean Average Precision improved from 0.41 for a baseline bag-of-words approach to 0.58 when using the expanded lexicon with morphological normalization on both sides.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work on regional administrative text provides experience identifying domain-specific linguistic failures and evaluating lightweight lexical corrections.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03266",
+            "field": "abstract",
+            "quote": "The paper proposes a lightweight post-processing layer using a small hybrid lexicon of 2,100 regional-specific forms",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked with Serbian legal-text annotation, which is relevant to constructing and reviewing a contract-search evaluation set.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03265",
+            "field": "abstract",
+            "quote": "This paper presents a semantic role annotation study conducted on a 280,000-token Serbian–German parallel corpus of EU legal texts.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has experience collaborating with industry and advising on text search in a Serbian document-management setting.",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "industry_experience",
+            "quote": "He has provided informal consulting on text search systems to a Novi Sad-based software company developing document management tools for Serbian public institutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The implementation must integrate with the existing PostgreSQL full-text search rather than assume a different retrieval backend.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "The root cause is that our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Normalization must support mixed-script documents and explicitly handle ambiguous Latin-to-Cyrillic mappings; acceptable search-latency overhead must be agreed and measured.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope implementation and evaluation to the backend engineer's six-week allocation and the company's single-project capacity.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the researcher's stated capacity for only one new collaboration starting in late 2025 or 2026; current availability still requires confirmation.",
+        "sources": [
+          {
+            "recordId": "R0258",
+            "field": "notes",
+            "quote": "has capacity for one new collaboration starting in late 2025 or 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The cited retrieval results concern cross-language technical or administrative collections, not Serbian cross-script contract search. Direct transliteration and PostgreSQL integration are not validated by this evidence; the first experiment must test that transfer.",
+      "Ambiguous mappings and mixed-script tokens may recover missing documents while also introducing false matches, especially for names, identifiers and foreign-language terms.",
+      "The reported one-in-five failure rate comes from a January 2024 log sample and may not represent the current system or isolate script mismatch from other causes.",
+      "Current researcher availability, access to representative contracts and query logs, data-use permissions, and the project budget remain unknown; any could prevent a timely start.",
+      "Index migration, additional index storage or query expansion may exceed the six-week engineering allocation or the as-yet undefined latency tolerance."
+    ],
+    "questions": [
+      "Can Vukelić confirm current availability, weekly effort and a start date aligned with the company's six-week backend allocation?",
+      "Can the company provide an approved, representative contract and query-log sample, with relevance judgements covering both script directions, mixed scripts and ambiguous mappings? What anonymization, access and retention rules apply?",
+      "What PostgreSQL version, text-search configuration, dictionaries and indexes are currently used, and where does script handling occur in the parsing and NLP pipeline?",
+      "What are the current search volume, concurrency and latency distributions, and what numerical latency overhead and retrieval-quality trade-offs are acceptable?",
+      "Which dialect-sensitive sequences, foreign names, identifiers and mixed-script examples are known to fail, and who will adjudicate their intended matches?",
+      "Does a fresh log analysis reproduce the January 2024 failure estimate, and how many failures are actually attributable to script mismatch?",
+      "What budget, index-storage headroom, reindexing window and deployment or rollback arrangements are available?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0258",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0258",
+        "version": 1
+      }
+    ]
+  }
+}

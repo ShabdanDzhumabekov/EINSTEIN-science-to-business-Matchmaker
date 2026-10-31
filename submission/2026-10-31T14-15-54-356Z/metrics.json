@@ -1,0 +1,10 @@
+{
+  "dispatchedRequests": 28,
+  "reportedCostUSD": 0.7047998759999999,
+  "requestsWithoutKnownBill": 0,
+  "criticInterventions": 3,
+  "models": [
+    "openai/gpt-6.1-sol",
+    "typesafe/jev-1.14"
+  ]
+}

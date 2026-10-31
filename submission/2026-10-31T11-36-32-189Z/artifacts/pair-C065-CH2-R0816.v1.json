@@ -1,0 +1,208 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can product-attribute similarity, alone or combined with sparse purchase signals, produce more useful product-page recommendations than best-seller sorting for one Harmat client with only 500–2,000 orders? The first experiment would test transfer from the researcher's larger retail studies to this client's catalogue and transaction volume using chronological holdouts, comparing popularity, content-only and lightweight hybrid models before considering a traffic-feasible online test.",
+    "rationale": [
+      {
+        "text": "Erić has directly studied attribute-based recommendations for products without purchase histories, including comparison against a frequency-only baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "Cosine similarity between attribute vectors is used to rank candidate new items against items with established purchase histories.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "compared to 0.19 for a random baseline and 0.27 for a frequency-only heuristic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work provides a concrete lightweight hybrid candidate combining product metadata with basket co-occurrence, rather than relying exclusively on sparse collaborative signals.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has relevant evaluation experience covering chronological splits, single-purchase users, discontinued products and the baseline families needed for this task.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08872",
+            "field": "abstract",
+            "quote": "A preprocessing protocol is specified, including rules for temporal train-test split, treatment of single-purchase users, and handling of product discontinuations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08872",
+            "field": "abstract",
+            "quote": "Four baseline architectures are evaluated under this protocol: global popularity, pure content-based cosine similarity, item-based kNN collaborative filtering, and a simple linear hybrid",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has led algorithm development and evaluation in a regional small-retailer collaboration explicitly addressing limited customer numbers and IT infrastructure.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "The project aimed to produce recommendation methods and practical implementation guidelines suited to retailers with fewer than five hundred active customers and limited IT infrastructure.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0030",
+            "field": "summary",
+            "quote": "Erić led the work package responsible for algorithm development and evaluation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The approach must work with the existing very small datasets and cannot depend on waiting for substantially more transactions or a larger budget.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be limited to the agreed anonymised transaction and catalogue data under a data-sharing agreement; additional behavioural tracking cannot be assumed.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope should begin with one client's prototype, and best-seller sorting must remain an explicit comparator rather than treating model complexity as evidence of improvement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company-side integration and data preparation must fit approximately one mid-level developer-day per week.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deployment plan must account for the existing integration and client-hosting environment; additional serving infrastructure requires explicit agreement.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher scheduling must respect her stated caution about commitments exceeding one day per week outside the faculty during semester; actual availability remains unconfirmed.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester but is flexible in summer months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer to Harmat's transaction volumes is unvalidated: the cited hybrid study used 9,200 baskets across clothing retailers, whereas Harmat has roughly 520–1,900 orders per client. The first experiment must test whether co-occurrence adds value at this lower volume rather than importing published weights or gains.",
+      "Structured grocery and clothing attributes may not transfer to the selected client's products or multilingual descriptions. Catalogue completeness, language consistency and attribute relevance must be audited in the first experiment; the supplied evidence does not establish multilingual text-recommendation performance.",
+      "Low traffic and few held-out purchases may make both offline estimates and online uplift inconclusive. Better next-purchase ranking would not by itself establish higher widget conversion or revenue.",
+      "Content similarity may produce overly narrow or merely substitutable suggestions rather than useful complementary purchases; the intended meaning of 'you might also like' is not yet defined.",
+      "Researcher availability, project budget, delivery deadline, target-client approval and hosting limits remain unknown. Limited company engineering time could make data cleaning or integration the bottleneck.",
+      "The researcher's interest in live transaction streams may not be satisfied by a one-off anonymised export; ongoing access and refresh arrangements are not established."
+    ],
+    "questions": [
+      "Can Erić confirm availability, a start date and a workable allocation within the semester constraint, and does a single-client prototype with periodic anonymised refreshes meet her collaboration interests?",
+      "Which client will participate, how many active products and usable baskets does it have, and are timestamps, basket identifiers, quantities, product availability and stable anonymised customer identifiers retained?",
+      "How complete are product categories, descriptions and structured attributes, in which languages, and what rights and safeguards will the data-sharing agreement specify for access, retention and derived models?",
+      "Should the widget recommend substitutes, complements or both, and what business outcome, ranking metrics, coverage requirements and minimum worthwhile improvement should determine whether to proceed?",
+      "Can Harmat share the previous A/B test design and results, current traffic and conversion volumes so that an achievable evaluation duration and uncertainty criteria can be agreed?",
+      "What are the budget, deadline, VPS resource and latency limits, refresh frequency, integration owner and maintenance expectations for the prototype and any subsequent deployment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

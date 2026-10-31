@@ -1,0 +1,102 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0524",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0524",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How can Lex Automatika insert robust Serbian Cyrillic–Latin transliteration and mixed-script normalisation into its PostgreSQL full-text search pipeline—at indexing time, query time, or both—so contract search retrieves documents across scripts without noticeable latency degradation, while resolving dialect-dependent mapping ambiguities?",
+    "rationale": [
+      {
+        "text": "Papp's doctoral and group focus is cross-lingual alignment in multilingual legal corpora, matching the legal-contract and cross-script setting.",
+        "sources": [
+          {
+            "recordId": "R0524",
+            "field": "bio",
+            "quote": "dissertation on cross-lingual sentence alignment in multilingual legal corpora",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has direct transliteration and phonetic-normalisation experience in cross-lingual Serbian–Hungarian record matching.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06153",
+            "field": "abstract",
+            "quote": "using a combination of phonetic normalisation, transliteration, and fuzzy attribute matching",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has built fine-tuned multilingual transformer document matching across South Slavic languages without explicit translation.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06155",
+            "field": "abstract",
+            "quote": "identify semantically equivalent tender notices across Serbian, Croatian, and Macedonian without explicit translation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has worked on incremental indexing and script normalisation for mixed-script Serbian news streams.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Kada tok vesti dolazi iz više izvora koji koriste različita pisma, inkrementalni indekser mora da normalizuje pismo svake pristigle stavke pre umetanja.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has prior industry experience deploying cross-lingual Serbian–Hungarian document matching.",
+        "sources": [
+          {
+            "recordId": "R0524",
+            "field": "industry_experience",
+            "quote": "automated cross-lingual matching of damage-claim documents submitted in Serbian and Hungarian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Transfer gap: Papp's mixed-script real-time search work was evaluated on a simulated news stream, not on Lex Automatika's PostgreSQL contract index; the first experiment must test script-normalised search on the company's actual contract documents and query logs.",
+      "Dialect-dependent Latin-to-Cyrillic mappings may remain ambiguous without a company-approved mapping policy; this is explicitly acknowledged as an edge case in the task.",
+      "Papp is currently at full teaching load and can take on new projects only from late 2025 onward, which may not align with the company's six-week backend-engineer window.",
+      "The company has only one backend engineer available for up to six weeks, which may limit integration, reindexing and latency evaluation.",
+      "A robust solution must handle mixed-script documents, not only fully-Cyrillic or fully-Latin ones, so simple query-time transliteration may be insufficient."
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0524",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0524",
+        "version": 1
+      }
+    ]
+  }
+}

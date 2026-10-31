@@ -1,0 +1,234 @@
+{
+  "ref": {
+    "artifactId": "scholar-C132-CH4-R0181",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0181",
+    "name": "Slađana Ranković",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Data Integration and Management",
+      "Knowledge Representation and Ontologies",
+      "Applied Statistics and Probabilistic Methods",
+      "Information Systems"
+    ],
+    "keywords": [
+      "schema matching",
+      "ontology-driven integration",
+      "entity resolution",
+      "record linkage",
+      "data quality",
+      "heterogeneous data sources",
+      "constraint propagation",
+      "tabular data",
+      "probabilistic matching",
+      "knowledge graphs"
+    ],
+    "openTo": [
+      "joint research projects",
+      "contract research on data integration and data quality assessment",
+      "consulting on schema matching and record linkage system design",
+      "student internships (BSc and MSc level)",
+      "co-supervision of industrial PhD candidates",
+      "access to benchmark datasets and matching evaluation infrastructure"
+    ],
+    "bio": {
+      "recordId": "R0181",
+      "field": "bio",
+      "text": "Slađana Ranković completed her undergraduate and master's studies in Computer Science at the Faculty of Sciences, University of Novi Sad, graduating in 2005 and 2007 respectively. She received her PhD in 2013 from the same institution, with a dissertation on constraint-based approaches to automated schema matching over heterogeneous relational sources. She joined the Department of Mathematics and Informatics as a Research Associate in 2014 and was promoted to Senior Research Associate in 2019. Her group develops methods for ontology-driven data integration, probabilistic record linkage, and data quality assessment over tabular and semi-structured data. She teaches courses on database systems and data integration at undergraduate and postgraduate levels. The group works with PostgreSQL, Python-based matching frameworks, and RDF triple stores, and maintains a locally curated benchmark repository of heterogeneous administrative datasets."
+    },
+    "industryExperience": {
+      "recordId": "R0181",
+      "field": "industry_experience",
+      "text": "Ranković provided consultancy to a regional logistics company during 2020–2021 on the integration of legacy warehouse management system exports with a new ERP platform, which informed the 2021 study on ERP schema matching patterns. She has also contributed as a technical reviewer on two data quality audit engagements for municipal clients."
+    },
+    "notes": {
+      "recordId": "R0181",
+      "field": "notes",
+      "text": "Prefers projects where there is a concrete dataset to work with rather than purely theoretical engagements. Currently co-supervising two PhD students, so capacity for new commitments is moderate; shorter-term contract research or clearly scoped consulting arrangements are more feasible than new large project coordination roles in the near term."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02340",
+        "kind": "publication",
+        "title": "A Constraint-Based Framework for Schema Correspondence Discovery in Relational Databases",
+        "body": {
+          "recordId": "SYN-PUB-02340",
+          "field": "abstract",
+          "text": "Schema matching between relational databases often relies on name similarity and structural heuristics, which perform poorly when attribute names are abbreviated or domain-specific. This paper introduces a framework that encodes integrity constraints—primary keys, foreign keys, check constraints, and functional dependencies—as logical predicates and uses constraint propagation to narrow the space of candidate correspondences. The approach was evaluated on 14 pairs of real administrative database schemas from three Serbian municipal registries, comprising between 40 and 210 attributes per schema. Precision of the top-ranked matches reached 0.81 on average, compared with 0.67 for a name-similarity baseline and 0.72 for a combined linguistic-structural baseline. The framework operates without a predefined domain ontology, making it applicable in settings where such resources are absent. Runtime scales roughly linearly with the number of constraints and remains under 90 seconds for all tested schema pairs on commodity hardware."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02341",
+        "kind": "publication",
+        "title": "Benchmark Construction for Tabular Schema Matching: Methodology and a Regional Administrative Dataset",
+        "body": {
+          "recordId": "SYN-PUB-02341",
+          "field": "abstract",
+          "text": "Reproducible evaluation of schema matching systems requires benchmark datasets that reflect realistic heterogeneity. Existing benchmarks predominantly cover English-language corporate or biomedical schemas; comparable resources for South-East European administrative data are lacking. This paper describes a methodology for constructing matching benchmarks from publicly available municipal and cadastral databases, covering attribute renaming, type coercion, vertical partitioning, and denormalisation as transformation types. A benchmark comprising 22 schema pairs derived from Serbian and Croatian administrative sources was assembled and manually annotated by three independent experts, with inter-annotator agreement measured using Fleiss's kappa (κ = 0.79). The benchmark is released under an open licence alongside tooling for generating transformation variants. Baseline results for five publicly available matchers are reported, revealing that all systems degrade substantially under vertical partitioning transformations, with F1 scores dropping by 18–34 percentage points relative to the renaming-only condition."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02342",
+        "kind": "publication",
+        "title": "Ontology Alignment as a Mediator for Cross-Source Record Linkage in Healthcare Data",
+        "body": {
+          "recordId": "SYN-PUB-02342",
+          "field": "abstract",
+          "text": "Record linkage across healthcare datasets is hampered by inconsistent coding of clinical concepts alongside the usual name and date variation in patient identifiers. This paper presents a pipeline that first aligns source-specific informal terminologies to a shared biomedical ontology using a weighted combination of lexical and structural similarity, then uses the aligned concept mappings as typed blocking keys for subsequent probabilistic record linkage. The method was tested on two synthetic patient registries generated from a de-identified regional dataset of 120,000 records, with controlled introduction of errors at rates matching those observed in practice. Recall at a false-match rate of 1% reached 0.91 with ontology-guided blocking, versus 0.83 with standard phonetic blocking. The alignment step required manual validation of 7% of proposed correspondences, substantially lower than the 23% required by direct linkage without ontological mediation. The pipeline is implemented as modular Python components."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02343",
+        "kind": "publication",
+        "title": "Declarative Data Quality Rules for Tabular Integration Pipelines: Specification and Automated Checking",
+        "body": {
+          "recordId": "SYN-PUB-02343",
+          "field": "abstract",
+          "text": "Data quality problems in integration pipelines are often detected late, after erroneous records have propagated through multiple transformation steps. This paper proposes a declarative language for expressing data quality rules over tabular sources, covering completeness, domain conformance, referential consistency, and cross-column dependency constraints. Rules are compiled into SQL CHECK expressions and evaluated incrementally as new data batches arrive. The specification language was designed to be accessible to domain analysts without programming expertise, using a controlled natural language surface syntax. A user study with 12 participants from two Serbian public institutions showed that analysts with no SQL background could write correct rules for 78% of test scenarios after a two-hour training session. Automated checking was integrated into a lightweight ETL framework and evaluated on five operational data feeds from a regional land registry, detecting between 3% and 11% of records as quality-violating across the feeds."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02344",
+        "kind": "publication",
+        "title": "Probabilistic Record Linkage Under Attribute Uncertainty: A Fellegi–Sunter Extension with Soft Evidence",
+        "body": {
+          "recordId": "SYN-PUB-02344",
+          "field": "abstract",
+          "text": "The classical Fellegi–Sunter model assigns binary agreement weights to attribute comparisons, which is inadequate when attribute values are themselves uncertain—for instance, when OCR-transcribed documents carry confidence scores. This paper extends the model by replacing binary comparison outcomes with soft evidence distributions derived from OCR confidence, date parsing ambiguity, and address geocoding uncertainty. The extended model is estimated using the EM algorithm, with the soft-evidence likelihoods entering the expectation step as weighted fractional counts. Experiments were conducted on a historical population register from Vojvodina comprising approximately 85,000 transcribed entries with associated OCR confidence metadata. Compared with the standard binary Fellegi–Sunter baseline, the soft-evidence extension improved F1 by 4.2 percentage points at the operating threshold selected to minimise clerical review burden. The improvement was largest for records with moderate OCR confidence (0.6–0.8), where binary discretisation loses the most information."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02345",
+        "kind": "publication",
+        "title": "Integrating Open Government Datasets via Lightweight Domain Ontologies: A Case Study in Urban Mobility",
+        "body": {
+          "recordId": "SYN-PUB-02345",
+          "field": "abstract",
+          "text": "Open government data portals publish datasets in varied formats and with inconsistent vocabularies, limiting automated integration. This paper reports a case study in which seven open datasets related to urban mobility in the City of Novi Sad—covering public transport stops, road incidents, parking zones, and pedestrian counts—were integrated using a lightweight OWL ontology constructed semi-automatically from dataset metadata. Schema-to-ontology mappings were derived using an existing matcher extended with gazetteer-based geographic concept recognition. The integrated knowledge graph contained approximately 340,000 triples and was used to answer ten competency questions defined with municipal analysts. Four of the ten questions required multi-dataset joins that would have been impossible without mediation through the ontology. Mapping accuracy was 0.88 precision and 0.83 recall; remaining errors were concentrated in temporal attribute representations, where date format heterogeneity was particularly pronounced."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02346",
+        "kind": "publication",
+        "title": "Entity Resolution in Multilingual Tabular Data: Handling Serbian Cyrillic–Latin Transcription and Diacritic Variation",
+        "body": {
+          "recordId": "SYN-PUB-02346",
+          "field": "abstract",
+          "text": "Entity resolution in South-East European administrative data must contend with script duality (Cyrillic and Latin representations of Serbian), inconsistent diacritic usage, and transliteration variation that standard phonetic encoders do not handle. This paper presents a preprocessing and comparison layer specifically designed for Serbian-language tabular records, incorporating a rule-based Cyrillic–Latin normaliser, a diacritic-robust string distance metric derived from Jaro–Winkler, and a learned classifier that combines normalised string features with administrative code agreement. The system was evaluated on a manually labelled dataset of 9,400 record pairs drawn from two voter registration extracts with known linkage status. F-measure reached 0.94, compared with 0.87 for a Latin-only Jaro–Winkler baseline and 0.89 for an existing generic multilingual matcher. Error analysis shows that remaining false negatives are concentrated in records where both name and address were independently transcribed with errors."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02347",
+        "kind": "publication",
+        "title": "Schema Matching for Tabular Data Exports from ERP Systems: Patterns and Failure Modes",
+        "body": {
+          "recordId": "SYN-PUB-02347",
+          "field": "abstract",
+          "text": "Enterprise resource planning systems produce tabular exports whose schema structure is shaped by vendor conventions rather than domain semantics, creating systematic difficulties for automatic schema matching. This paper analyses 41 schema pairs from ERP export files provided by eight companies in the manufacturing and logistics sectors in the Vojvodina region. A taxonomy of 12 recurring schema patterns is introduced, covering code-column concatenation, multi-valued delimited cells, silent null conventions, and vendor-specific date epoch offsets. For each pattern, the failure rate of three representative matchers (a linguistic matcher, a structural matcher, and a machine learning matcher trained on public benchmarks) is reported. Linguistic matchers fail most severely on code-column patterns (precision drop of 0.31), while structural matchers are most affected by multi-valued cells. The analysis informs a set of pre-matching normalisation rules whose application raises average matcher precision by 0.12 across all three systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02348",
+        "kind": "publication",
+        "title": "Incremental Ontology-Driven Integration of Streaming Agricultural Sensor Data",
+        "body": {
+          "recordId": "SYN-PUB-02348",
+          "field": "abstract",
+          "text": "Precision agriculture deployments generate continuous streams from heterogeneous sensors—soil moisture probes, weather stations, and drone-mounted multispectral cameras—each with its own data model and update frequency. This paper describes an incremental integration architecture in which a shared agricultural ontology mediates between streaming sources, and schema-to-ontology mappings are maintained and revised as sensor firmware updates alter field names or units. The architecture uses a sliding-window change detector to identify structural drift in incoming streams and triggers targeted re-matching only for affected schema fragments. Evaluated on 18 months of operational data from a pilot precision agriculture installation covering 420 hectares in the Bačka region, the system processed an average of 2.1 million attribute values per day with a mapping latency under 400 milliseconds. Structural drift events occurred 14 times during the evaluation period; automated re-matching resolved 11 without human intervention."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02350",
+        "kind": "publication",
+        "title": "Data Quality Profiling of Integrated Supply Chain Datasets: A Constraint Discovery Approach",
+        "body": {
+          "recordId": "SYN-PUB-02350",
+          "field": "abstract",
+          "text": "Integrated supply chain datasets assembled from supplier, warehouse, and logistics systems accumulate quality problems that are difficult to characterise without domain-specific rule sets. This paper proposes an approach that mines approximate functional dependencies and inclusion dependencies from integrated tabular data and uses these as automatically discovered quality constraints for ongoing profiling. Discovered constraints are ranked by coverage and interestingness scores and presented to domain stewards for validation; accepted constraints are then applied to incoming data batches as quality monitors. The method was applied to a dataset of 1.4 million order and shipment records from a composite supply chain dataset assembled from four source systems in the food processing sector in Vojvodina. Automated mining proposed 218 candidate constraints; domain stewards validated 134, of which 41 were found to be violated in the current integrated dataset, flagging approximately 6.3% of records as requiring review. Runtime for the full mining pass was under three hours on a single server."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0672",
+        "kind": "project",
+        "title": "Interoperable Data Integration Methods for Regional Public Administration",
+        "body": {
+          "recordId": "SYN-PRJ-0672",
+          "field": "summary",
+          "text": "The project developed reusable ontology-driven integration components for public administration data in the Western Balkans region, focusing on cadastral, civil registry, and urban planning datasets. Work packages addressed schema matching under multilingual conditions, probabilistic record linkage for cross-registry deduplication, and declarative data quality rule specification adapted to the legislative constraints of Serbian administrative data. The project produced an open-source toolkit, two benchmark datasets released publicly, and a set of integration guidelines adopted in a pilot by two municipal administrations in Vojvodina. Four researchers and two PhD students were involved throughout the project duration."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0673",
+        "kind": "project",
+        "title": "Cross-Platform Agricultural Data Linkage for Precision Farming Decision Support",
+        "body": {
+          "recordId": "SYN-PRJ-0673",
+          "field": "summary",
+          "text": "AGRILINK brought together researchers in data integration and agronomists to develop a data linkage layer connecting soil analysis laboratories, precision irrigation platforms, and remote sensing providers active in the AP Vojvodina region. Slađana Ranković led the work package on schema harmonisation and ontology construction, producing a shared agricultural data ontology and a set of tested schema-to-ontology mapping procedures. The project resulted in a pilot integration covering three farms with a combined area of approximately 900 hectares and informed subsequent larger-scale integration work published in a journal article in 2022."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1046",
+        "kind": "project",
+        "title": "Evolutionary Optimisation of Embedded Neural Architectures for Industrial IoT",
+        "body": {
+          "recordId": "SYN-PRJ-1046",
+          "field": "summary",
+          "text": "EMBEVO developed multi-objective evolutionary methods for designing neural network architectures that satisfy strict memory and latency constraints imposed by low-power microcontrollers used in industrial monitoring applications. The project built a shared benchmark of 12 embedded target boards and associated profiling toolchains, enabling reproducible comparison of NAS methods across hardware platforms. Research produced tabular and surrogate-assisted NAS benchmarks, constraint-handling strategies, and architectural patterns suited to sub-512 KB devices. The project involved three research groups at the University of Novi Sad and one at the University of Belgrade, and supported two doctoral students through completion of their dissertations."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1055",
+        "kind": "project",
+        "title": "Automated Learning and Verification of Communication Protocol Models",
+        "body": {
+          "recordId": "SYN-PRJ-1055",
+          "field": "summary",
+          "text": "The project develops algorithms and tools for automatically constructing finite automaton models of communication protocols from network traffic, without access to protocol specifications. The main research directions are: improving the scalability of state-merging inference to protocols with large alphabets; integrating fuzzing-based counterexample generation into the inference loop; and establishing theoretical sample complexity guarantees for the resulting hybrid active-passive framework. A secondary objective is producing a verified automaton-based anomaly detector applicable to industrial control system traffic. The project involves collaboration with the School of Electrical Engineering in Belgrade and the Faculty of Informatics at Masaryk University in Brno. The team consists of four researchers at the University of Novi Sad plus two external collaborators."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "open_to",
+            "quote": "co-supervision of industrial PhD candidates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0181",
+            "field": "open_to",
+            "quote": "joint research projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0181",
+            "field": "open_to",
+            "quote": "contract research on data integration and data quality assessment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

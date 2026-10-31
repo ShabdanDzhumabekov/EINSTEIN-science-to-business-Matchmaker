@@ -1,0 +1,232 @@
+{
+  "ref": {
+    "artifactId": "proposal-C001-CH1-R0416",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0416",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C001-CH1-R0416",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Per-site automaton baselines for unlabelled Modbus/BACnet drift detection",
+    "facts": [
+      {
+        "text": "ArmaturaSec has zero examples of malicious traffic and says supervised classifiers are useless there; a classifier fed public ICS datasets produced so many false positives that clients switched alerts off.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "our clients have never been breached (or don't know it), so we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "fed it data from public ICS datasets",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The required detector must learn what normal looks like on a specific site and flag drift from that per-site baseline.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "something that learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Training data are several terabytes of captures from consenting clients over three years; the company can dedicate one to two engineers part-time with archives, hardware bench and firmware codebase under NDA, plus one engineer who has been reading about anomaly detection for six months.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have one engineer who has been reading about anomaly detection for six months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ProtoSense is a passive protocol inspection module for Modbus TCP and BACnet/IP traffic; the planned fifth hardware variant in late 2025 has a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "release a fifth hardware variant in late 2025 with a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable to a plant manager in plain language, and the method must work with no attack examples.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we need a method that works with no attack examples and that we can explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Hadžić's published detector infers an automaton from normal traffic as a baseline and flags messages causing transitions absent from the model; on 230,000 SCADA sessions with 4,800 injected anomalies it reported precision 0.91 and recall 0.87 averaged across anomaly types.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04998",
+            "field": "abstract",
+            "quote": "Once a finite automaton model of a protocol is inferred from normal traffic, it can serve as a baseline for anomaly detection",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04998",
+            "field": "abstract",
+            "quote": "messages causing transitions absent from the model are flagged",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04998",
+            "field": "abstract",
+            "quote": "230,000 sessions from a SCADA communication protocol captured in a test environment, of which 4,800 sessions contain injected anomalies of five types",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04998",
+            "field": "abstract",
+            "quote": "The inferred DFA correctly flags anomalous sessions with a precision of 0.91 and a recall of 0.87 averaged across anomaly types.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Hadžić offers GInferLib, an open-source Python library with seven grammatical inference algorithms, and has prior SCADA anomaly-detection pilot experience with BEZ Systems (2018–2020); she is open to joint company projects on protocol analysis or network security.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05000",
+            "field": "abstract",
+            "quote": "GInferLib, an open-source Python library providing implementations of seven grammatical inference algorithms for deterministic and nondeterministic finite automata",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0416",
+            "field": "industry_experience",
+            "quote": "Hadžić collaborated with BEZ Systems d.o.o., a Novi Sad-based embedded systems company, on an anomaly detection pilot for SCADA protocol traffic between 2018 and 2020",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0416",
+            "field": "open_to",
+            "quote": "joint projects with companies on protocol analysis or network security",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work formalises a one-sided error condition for safety-critical protocol verification: the hypothesis may reject strings in the target language but must not accept strings outside it.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04999",
+            "field": "abstract",
+            "quote": "the hypothesis may reject strings in the target language but must not accept strings outside it",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04999",
+            "field": "abstract",
+            "quote": "This one-sided error condition arises naturally in safety-critical protocol verification.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The published detector was evaluated on one SCADA protocol in a test environment with injected anomalies, so transfer to real Modbus TCP and BACnet/IP substation or pump-station traffic is unproven.",
+      "Because ArmaturaSec has no labelled attacks, the reported precision and recall cannot be assumed; the first experiment must build controlled injections on the hardware-in-the-loop bench and evaluate against held-out normal traffic.",
+      "A pure automaton baseline may miss Modbus/BACnet anomalies that do not change message-type sequences, such as register-value tampering; a hybrid or metadata feature test is likely needed.",
+      "False-positive fatigue is the historical failure mode, and drift flagging on noisy twenty-year-old networks could reproduce it; per-site threshold calibration and trace-coverage checks are important.",
+      "Explainability of transition-level flags to plant managers is untested, and Hadžić's availability is unknown, so this proposal is conditional on her confirming capacity."
+    ],
+    "proposedActions": [
+      "First experiment, proposed as an 8-week feasibility phase: select NDA-cleared normal Modbus TCP and BACnet/IP captures from at least two sites and hold out a later normal period per site.",
+      "Baseline and change: compare against current ProtoSense alerting and, where possible, the paper's HMM and rule-based baselines; infer one DFA per site from normal-only traces with GInferLib/RPNI, flag absent transitions, and attach a plain-language explanation template.",
+      "Use ArmaturaSec's hardware-in-the-loop bench with physical PLC simulators to inject replay, truncation, out-of-order, field-mutation and session-hijack-like sequences, recording detection by type.",
+      "Measure false positives per week on held-out normal traffic, precision and recall by anomaly type, and explanation comprehension with a plant-manager proxy; proposed go/no-go: proceed only if false positives are within company-confirmed tolerance and injected-anomaly recall is not materially below the published 0.87 reference, with the field-mutation gap quantified.",
+      "Contributions proposed, not committed: Hadžić supplies inference algorithms, evaluation methodology, GInferLib and explanation design; ArmaturaSec supplies NDA data, 1–2 part-time engineers, bench/PLC simulators, latency budget and alert-triage input.",
+      "Proposed timeline: weeks 1–2 data/NDA selection and bench setup; weeks 3–5 per-site inference; weeks 6–7 controlled injections and explanation test; week 8 go/no-go review."
+    ],
+    "questions": [
+      "Which Modbus TCP and BACnet/IP captures can be shared under NDA, from how many sites, and do any contain known incidents, maintenance windows or red-team exercises usable as weak labels?",
+      "What false-positive rate per site per week would clients tolerate, and how are ProtoSense alerts triaged today?",
+      "What are the compute, memory and latency budgets on current ProtoSense hardware and the planned security-processor variant?",
+      "Can ArmaturaSec provide the hardware-in-the-loop bench with physical PLC simulators for controlled anomaly injection?",
+      "What is Ksenija Hadžić's availability and supervision capacity, and over what timeframe?",
+      "Would the company also consider hosting an industrial PhD candidate under her co-supervision alongside a joint project?",
+      "What explanation form does a plant manager need in practice, and who would validate it?",
+      "How would ownership and licensing of inference code and resulting models be arranged, given GInferLib is open source and the firmware is under NDA?"
+    ],
+    "markdown": "# Per-site automaton baselines for unlabelled Modbus/BACnet drift detection\n\n## Verified facts\n- ArmaturaSec has zero examples of malicious traffic and says supervised classifiers are useless there; a classifier fed public ICS datasets produced so many false positives that clients switched alerts off. [F1]\n- The required detector must learn what normal looks like on a specific site and flag drift from that per-site baseline. [F2]\n- Training data are several terabytes of captures from consenting clients over three years; the company can dedicate one to two engineers part-time with archives, hardware bench and firmware codebase under NDA, plus one engineer who has been reading about anomaly detection for six months. [F3]\n- ProtoSense is a passive protocol inspection module for Modbus TCP and BACnet/IP traffic; the planned fifth hardware variant in late 2025 has a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency. [F4]\n- Alerts must be explainable to a plant manager in plain language, and the method must work with no attack examples. [F5]\n- Hadžić's published detector infers an automaton from normal traffic as a baseline and flags messages causing transitions absent from the model; on 230,000 SCADA sessions with 4,800 injected anomalies it reported precision 0.91 and recall 0.87 averaged across anomaly types. [F6]\n- Hadžić offers GInferLib, an open-source Python library with seven grammatical inference algorithms, and has prior SCADA anomaly-detection pilot experience with BEZ Systems (2018–2020); she is open to joint company projects on protocol analysis or network security. [F7]\n- Her work formalises a one-sided error condition for safety-critical protocol verification: the hypothesis may reject strings in the target language but must not accept strings outside it. [F8]\n\n## Our inference\n- The published detector was evaluated on one SCADA protocol in a test environment with injected anomalies, so transfer to real Modbus TCP and BACnet/IP substation or pump-station traffic is unproven.\n- Because ArmaturaSec has no labelled attacks, the reported precision and recall cannot be assumed; the first experiment must build controlled injections on the hardware-in-the-loop bench and evaluate against held-out normal traffic.\n- A pure automaton baseline may miss Modbus/BACnet anomalies that do not change message-type sequences, such as register-value tampering; a hybrid or metadata feature test is likely needed.\n- False-positive fatigue is the historical failure mode, and drift flagging on noisy twenty-year-old networks could reproduce it; per-site threshold calibration and trace-coverage checks are important.\n- Explainability of transition-level flags to plant managers is untested, and Hadžić's availability is unknown, so this proposal is conditional on her confirming capacity.\n\n## Proposed next steps\n- First experiment, proposed as an 8-week feasibility phase: select NDA-cleared normal Modbus TCP and BACnet/IP captures from at least two sites and hold out a later normal period per site.\n- Baseline and change: compare against current ProtoSense alerting and, where possible, the paper's HMM and rule-based baselines; infer one DFA per site from normal-only traces with GInferLib/RPNI, flag absent transitions, and attach a plain-language explanation template.\n- Use ArmaturaSec's hardware-in-the-loop bench with physical PLC simulators to inject replay, truncation, out-of-order, field-mutation and session-hijack-like sequences, recording detection by type.\n- Measure false positives per week on held-out normal traffic, precision and recall by anomaly type, and explanation comprehension with a plant-manager proxy; proposed go/no-go: proceed only if false positives are within company-confirmed tolerance and injected-anomaly recall is not materially below the published 0.87 reference, with the field-mutation gap quantified.\n- Contributions proposed, not committed: Hadžić supplies inference algorithms, evaluation methodology, GInferLib and explanation design; ArmaturaSec supplies NDA data, 1–2 part-time engineers, bench/PLC simulators, latency budget and alert-triage input.\n- Proposed timeline: weeks 1–2 data/NDA selection and bench setup; weeks 3–5 per-site inference; weeks 6–7 controlled injections and explanation test; week 8 go/no-go review.\n\n## Open questions\n- Which Modbus TCP and BACnet/IP captures can be shared under NDA, from how many sites, and do any contain known incidents, maintenance windows or red-team exercises usable as weak labels?\n- What false-positive rate per site per week would clients tolerate, and how are ProtoSense alerts triaged today?\n- What are the compute, memory and latency budgets on current ProtoSense hardware and the planned security-processor variant?\n- Can ArmaturaSec provide the hardware-in-the-loop bench with physical PLC simulators for controlled anomaly injection?\n- What is Ksenija Hadžić's availability and supervision capacity, and over what timeframe?\n- Would the company also consider hosting an industrial PhD candidate under her co-supervision alongside a joint project?\n- What explanation form does a plant manager need in practice, and who would validate it?\n- How would ownership and licensing of inference code and resulting models be arranged, given GInferLib is open source and the firmware is under NDA?",
+    "taskId": "C001-CH1",
+    "researcherId": "R0416",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0416",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C001-CH1-R0416",
+        "version": 1
+      }
+    ]
+  }
+}

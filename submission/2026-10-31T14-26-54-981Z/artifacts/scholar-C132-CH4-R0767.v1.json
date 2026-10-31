@@ -1,0 +1,273 @@
+{
+  "ref": {
+    "artifactId": "scholar-C132-CH4-R0767",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0767",
+    "name": "Strahinja Dragišić",
+    "faculty": "Faculty of Philosophy",
+    "department": "Department of Serbian Language and Linguistics",
+    "fields": [
+      "Computational Linguistics",
+      "Natural Language Processing",
+      "Lexicography and Lexicology",
+      "Slavic Linguistics"
+    ],
+    "keywords": [
+      "computational morphology",
+      "Serbian language",
+      "corpus annotation",
+      "named-entity recognition",
+      "inflected languages",
+      "semantic role labelling",
+      "lexicographic resources",
+      "domain adaptation",
+      "morphological tagging",
+      "South Slavic languages"
+    ],
+    "openTo": [
+      "joint projects on NLP tooling for Serbian or South Slavic languages",
+      "contract research for corpus annotation and morphological resource construction",
+      "consulting on domain-adapted text processing pipelines",
+      "student internships in corpus annotation and computational linguistics",
+      "industrial PhD supervision in applied NLP for Serbian"
+    ],
+    "bio": {
+      "recordId": "R0767",
+      "field": "bio",
+      "text": "Strahinja Dragišić completed his undergraduate and master's studies in Serbian language and linguistics at the Faculty of Philosophy, University of Novi Sad, and received his PhD from the same institution in 2014 with a dissertation on morphological tagging of legal texts in Serbian. He joined the Department of Serbian Language and Linguistics as a Research Associate in 2015 and was promoted to Senior Research Associate in 2020. His work centres on building and annotating corpora for Serbian and related South Slavic languages, with a particular focus on inflection-rich morphology, named-entity recognition, and semantic role labelling in specialised domains such as law, medicine, and finance. He teaches graduate courses on corpus linguistics and language technology. The group uses the departmental computational linguistics laboratory equipped with GPU workstations and maintains several in-house annotated corpora totalling over forty million tokens."
+    },
+    "industryExperience": {
+      "recordId": "R0767",
+      "field": "industry_experience",
+      "text": "Dragišić carried out a short-term consultancy for a Novi Sad-based legal technology startup in 2022, advising on morphological normalisation and entity detection for Serbian contract documents. He has no long-term industry employment."
+    },
+    "notes": {
+      "recordId": "R0767",
+      "field": "notes",
+      "text": "Dragišić is cautious about projects that require exclusive data transfer arrangements; all corpus outputs from publicly funded work must remain openly licensed. He is best approached for collaborations that have a clear resource-building component rather than pure application development."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08428",
+        "kind": "publication",
+        "title": "A Morphological Lexicon for Serbian Legal Texts: Construction and Evaluation",
+        "body": {
+          "recordId": "SYN-PUB-08428",
+          "field": "abstract",
+          "text": "This paper describes the construction of a domain-specific morphological lexicon targeting legal Serbian, a register characterised by archaic inflectional forms, borrowings from Austro-Hungarian administrative vocabulary, and multi-word terminological units. The lexicon was built through semi-automatic extraction from a 4.2-million-token corpus of court decisions and legislative documents, followed by manual verification by two trained annotators. The extraction pipeline combined a pre-existing general-purpose morphological dictionary with a rule-based extension module handling productive suffixation patterns not attested in general resources. The resulting lexicon contains 87,400 lemma–paradigm pairs and 620,000 fully inflected word forms with part-of-speech and morphosyntactic feature tags conforming to the MULTEXT-East specification. Evaluation on a held-out set of 5,000 sentences yielded a lemmatisation accuracy of 96.4 % and a full morphosyntactic tagging accuracy of 91.7 %, compared to 88.1 % for the same tagger using the general-purpose lexicon only. The lexicon is released under a Creative Commons licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08429",
+        "kind": "publication",
+        "title": "Annotating Named Entities in Serbian News Corpora: Guidelines and Inter-Annotator Agreement",
+        "body": {
+          "recordId": "SYN-PUB-08429",
+          "field": "abstract",
+          "text": "We present annotation guidelines and an inter-annotator agreement study for named-entity recognition in Serbian newswire text. Seven entity categories were defined—person, organisation, location, geopolitical entity, product, event, and work of art—with sub-type distinctions motivated by downstream information extraction needs. Three annotator pairs independently labelled a 120,000-token sample drawn from the SrpNovine reference corpus. Cohen's kappa for the coarse-grained scheme reached 0.81 on boundaries and 0.78 on boundary-plus-type agreement, while the fine-grained scheme yielded 0.69. The most frequent disagreement source was the organisation–geopolitical entity boundary, accounting for 34 % of all conflicts. Analysis of morphological ambiguity showed that genitive and instrumental case forms of proper nouns caused a disproportionate share of boundary errors compared to nominative forms. Revised guidelines incorporating additional decision trees for these categories raised agreement by 0.05 kappa points in a follow-up round. The annotated sample and the guidelines are made publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08430",
+        "kind": "publication",
+        "title": "Morphological Disambiguation of Serbian Using Conditional Random Fields with Lexical and Contextual Features",
+        "body": {
+          "recordId": "SYN-PUB-08430",
+          "field": "abstract",
+          "text": "Morphological disambiguation in Serbian is complicated by a high degree of syncretism across the seven-case nominal paradigm and by frequent zero-marked verb forms. This paper reports experiments using Conditional Random Fields with feature sets combining lexical unigrams and bigrams, character n-grams up to length five, morphological dictionary lookup confidence scores, and syntactic head distance estimates derived from a dependency parser. Training data consisted of 1.1 million tokens from the SrpNovine and SrpWiki corpora, annotated with full MULTEXT-East morphosyntactic descriptions. On the standard SrpNovine test partition, the CRF model achieved a per-token accuracy of 94.2 % on full morphosyntactic description compared to 91.8 % for a maximum-entropy baseline. The largest gains were observed for case disambiguation of adjectives (from 87.3 % to 92.6 %) and for verb mood disambiguation (from 90.1 % to 93.7 %). Error analysis identified multiword proper nouns and technical compound adjectives as persistent problem classes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08431",
+        "kind": "publication",
+        "title": "SrpMed: A Corpus of Serbian Medical Discharge Summaries with Morphosyntactic and Named-Entity Annotation",
+        "body": {
+          "recordId": "SYN-PUB-08431",
+          "field": "abstract",
+          "text": "Clinical text in Serbian poses specific challenges for natural language processing: heavy use of Latin-origin terminology, abundant abbreviations, non-standard orthography, and code-switching with English pharmacological names. This paper describes SrpMed, a corpus of 8,400 de-identified hospital discharge summaries comprising approximately 2.3 million tokens, collected from three clinical centres in Serbia under a data sharing agreement. Annotation covers sentence boundaries, tokenisation, lemmas, morphosyntactic tags, and a four-category named-entity scheme: medication, disease/disorder, anatomical location, and clinical procedure. A semi-automatic pipeline performed initial annotation; subsequent manual correction on a 200,000-token sample by two specialist annotators achieved Cohen's kappa of 0.84 for named entities. Baseline sequence labelling experiments using a BiLSTM-CRF architecture trained on the corrected sample attained an entity-level F1 of 79.3 % on a 20,000-token test set. Corpus statistics, annotation tools, and trained models are described."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08432",
+        "kind": "publication",
+        "title": "Semantic Role Labelling for Serbian: Frame Inventory, Annotation, and Baseline Models",
+        "body": {
+          "recordId": "SYN-PUB-08432",
+          "field": "abstract",
+          "text": "This paper presents the first systematic semantic role labelling resource for Serbian, covering 42 verbal frames drawn from a stratified sample of Serbian FrameNet-aligned predicates. Frame selection prioritised verbs frequent in journalistic and administrative registers. A 350,000-token corpus slice from SrpNovine was annotated with frame-evoking predicates and their semantic arguments following an adapted FrameNet methodology, with cross-validation of frame assignments against a Slovenian FrameNet resource to promote inter-language consistency. Annotation was carried out by four trained linguistics students supervised by two researchers; overall agreement on argument spans reached 0.76 kappa. Baseline models using a pipeline of dependency parsing followed by argument classification with an SVM achieved a labelled F1 of 66.4 % on core arguments and 54.1 % on peripheral arguments on the test partition. The work identifies subject–object ambiguity in passive constructions as the main error source. Frame definitions and annotated data are released."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00294",
+        "kind": "publication",
+        "title": "Cross-Lingual Transfer for Named-Entity Recognition Across South Slavic Languages: A Feature-Based Study",
+        "body": {
+          "recordId": "SYN-PUB-00294",
+          "field": "abstract",
+          "text": "Named-entity recognition systems trained on one South Slavic language can achieve moderate performance on related languages without any target-language training data, but the degree of transferability varies considerably by entity type and script. This study evaluates zero-shot cross-lingual transfer among Serbian, Croatian, Bosnian, Macedonian, and Slovenian using a shared feature representation built from romanised transliteration, language-independent character embeddings, and shared morphological clusters derived from multilingual Wiktionary. Transfer was evaluated on five NER test sets each containing between 15,000 and 40,000 tokens. Serbian-to-Croatian transfer attained an entity-level F1 of 72.1 %, the highest pair, while Serbian-to-Macedonian reached only 58.4 %, largely due to script and suffix divergence. Adding 1,000 target-language annotated tokens in a few-shot setting raised Macedonian F1 to 69.7 %. Results confirm that shared inflectional morphology, rather than lexical overlap alone, predicts transferability across this language group."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08433",
+        "kind": "publication",
+        "title": "Challenges in Annotating Financial Reports in Serbian: A Case Study in Domain Shift",
+        "body": {
+          "recordId": "SYN-PUB-08433",
+          "field": "abstract",
+          "text": "Automatic language processing of Serbian financial and corporate reporting texts faces domain shift from general-purpose models due to numerical expressions, specialised nominal compounds, anglicisms, and non-standard sentence structures in translated source material. This paper reports annotation of a 600,000-token corpus of annual reports, prospectus summaries, and audit findings collected from publicly listed companies registered in Serbia. Three annotation layers are described: morphosyntactic tagging, multi-word expression identification, and a five-class named-entity scheme covering company names, persons, monetary values, dates, and regulatory instrument references. Morphosyntactic tagging accuracy using an existing general model dropped from 94.2 % on newswire to 89.3 % on this corpus. Fine-tuning on 80,000 tokens of in-domain annotated data recovered accuracy to 93.6 %. Multi-word expression identification posed additional difficulties; only 61 % of financial compound nouns were correctly identified by general-purpose tools. The paper discusses annotation decisions and provides corpus statistics."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08434",
+        "kind": "publication",
+        "title": "A Valency Dictionary for Serbian Verbs: Structure, Coverage, and Computational Encoding",
+        "body": {
+          "recordId": "SYN-PUB-08434",
+          "field": "abstract",
+          "text": "This chapter describes the design and computational encoding of a valency dictionary for Serbian verbs, covering 3,200 lexical entries with a total of 6,800 valency frames. Each entry specifies obligatory and optional argument slots, their syntactic realisation (nominative subject, accusative or genitive object, prepositional phrases, infinitival complements), and a representative set of corpus-attested example sentences. Syntactic annotations were linked to dependency trees from the Universal Dependencies Serbian treebank to allow automatic frame lookup by tree pattern matching. The dictionary was built through manual analysis by three lexicographers working from frequency-sorted verb lists extracted from a 90-million-token balanced corpus of Serbian. Completeness was assessed by comparing frame inventories against a subset of Serbian verbs present in VerbNet-like resources for related languages; 74 % of attested frames had equivalents in Croatian or Slovenian resources, while 26 % required language-specific frame definitions. Inter-lexicographer agreement on frame assignment reached 0.82 kappa. Potential applications in semantic role labelling and pedagogical grammar are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08435",
+        "kind": "publication",
+        "title": "NERSrp 2.0: An Updated Named-Entity Recognition Benchmark for Serbian with Cross-Domain Test Sets",
+        "body": {
+          "recordId": "SYN-PUB-08435",
+          "field": "abstract",
+          "text": "We release NERSrp 2.0, an updated benchmark for named-entity recognition in Serbian that extends the earlier NERSrp 1.0 release with three additional test sets covering medical, financial, and social media text. The benchmark retains the original eight-category newswire annotation scheme and provides domain-specific sub-type extensions for medical entities. Total annotated data amounts to 1.1 million tokens across five domains. We report results for four system classes: a rule-and-dictionary baseline, a CRF system, a fine-tuned BERTić model, and a fine-tuned SrpBERT model. On the newswire test set, SrpBERT reaches an entity-level F1 of 89.7 %, but performance drops to 76.4 % on social media and 81.2 % on medical text without domain-specific fine-tuning. Adding 10,000 in-domain annotated tokens per domain narrows the gap by 4–7 F1 points. The benchmark, annotation guidelines, and evaluation scripts are released under open licences to facilitate reproducibility."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08436",
+        "kind": "publication",
+        "title": "Morphological Generation for Data Augmentation in Low-Resource Serbian NLP Tasks",
+        "body": {
+          "recordId": "SYN-PUB-08436",
+          "field": "abstract",
+          "text": "For morphologically rich languages with limited annotated data, generating inflectional variants of training examples can improve model generalisation without requiring additional manual annotation. This paper evaluates a morphological generation strategy applied to three Serbian NLP tasks: relation extraction from legal text, aspect-level sentiment classification of product reviews, and semantic textual similarity scoring. Generation was performed using a finite-state morphological transducer applied to noun and verb lemmas identified in training sentences, producing between two and nine inflectional variants per sentence depending on the syntactic head category. Training set sizes ranged from 400 to 3,000 examples per task. Augmentation improved F1 by 2.1–4.8 points across tasks when target training sets contained fewer than 1,000 examples, with diminishing returns above 2,500 examples. Negative transfer was observed in the STS task when augmented sentences altered argument roles, leading to a 1.2-point decrease. Analysis of augmentation errors attributes most regressions to verb aspect mismatches in finite-state generation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08437",
+        "kind": "publication",
+        "title": "Term Extraction and Glossary Construction for the Serbian Language in the Domain of Renewable Energy Regulation",
+        "body": {
+          "recordId": "SYN-PUB-08437",
+          "field": "abstract",
+          "text": "Consistent regulatory terminology for renewable energy is important for legislative drafting and public communication in Serbia, yet no comprehensive terminological resource exists. This paper describes a semi-automatic term extraction workflow applied to a 4.8-million-token corpus assembled from EU directive translations, national legislation, technical standards, and the proceedings of the Serbian Energy Agency. Candidate terms were extracted using a hybrid method combining statistical association measures (log-likelihood and PMI) for multi-word units with a morphological filter restricting candidates to nominal and adjectival groups. A total of 4,210 candidate terms were generated; expert review accepted 2,670 as valid domain terms. For each accepted term, the workflow automatically populated glossary fields including definition, source reference, part-of-speech, inflectional paradigm, and up to three corpus example sentences. Equivalents in English and German were semi-automatically linked via EU terminology databases. The resulting glossary is structured as a TEI-conformant XML resource and is intended for use in specialised dictionary compilation and legal translation support tools."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00285",
+        "kind": "publication",
+        "title": "Entity Grids for South Slavic: Adapting the Barzilay–Lapata Model to Pro-Drop Languages",
+        "body": {
+          "recordId": "SYN-PUB-00285",
+          "field": "abstract",
+          "text": "The entity grid model of Barzilay and Lapata (2008) represents local coherence as transition probabilities over grammatical roles across sentences. Its original design assumes English word order and frequent overt subject realization. In this paper we adapt the model for pro-drop South Slavic languages by augmenting the standard entity extraction pipeline with a null-subject recovery module trained on the SETimes.HR parallel corpus. We evaluate the adapted model on Serbian and Croatian text discrimination tasks using 600 document pairs (300 per language). The adapted model achieves 79.2% accuracy on Serbian and 81.1% on Croatian, compared to 71.4% and 72.9% respectively for the unmodified English pipeline. We analyze the contribution of recovered null subjects and find that they account for roughly one quarter of all subject-role transitions in the data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03273",
+        "kind": "publication",
+        "title": "Polysemy Patterns in Serbian Newspaper Vocabulary: A Frequency-Based Pilot Study",
+        "body": {
+          "recordId": "SYN-PUB-03273",
+          "field": "abstract",
+          "text": "This study examines polysemy distribution in a 2.4-million-token corpus of Serbian daily newspaper articles drawn from three national dailies published between 2006 and 2010. Using frequency ranking and concordance analysis in SketchEngine, the author identifies 318 high-frequency lemmas exhibiting at least three distinguishable senses in context. Sense boundaries were established through manual annotation following adapted WordNet criteria. Results indicate that approximately 34% of polysemous nouns in political reporting acquire secondary evaluative senses not attested in standard lexicographic sources. The paper argues that journalistic register drives systematic sense extension in a relatively short time window and proposes a preliminary taxonomy of extension types. Findings are compared with analogous observations in Croatian and Polish newspaper corpora from published literature. The study serves as a baseline for subsequent automated approaches to Serbian lexical sense disambiguation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00067",
+        "kind": "publication",
+        "title": "Digital Style Guides and Automated Spell-Checkers as Agents of Norm Enforcement: The Serbian Case",
+        "body": {
+          "recordId": "SYN-PUB-00067",
+          "field": "abstract",
+          "text": "Automated spell-checkers and the internal style guides of major Serbian digital news portals have become de facto normative instruments, yet they have received almost no attention from normativists. This article examines the spell-check dictionaries embedded in three widely used Serbian-language word processors and the published or leaked style guides of four digital news portals active in 2021. For each of 30 contested orthographic items, the study records which variant the spell-checker flags as an error and which the style guide prescribes. Results show that two of the three spell-checkers default to Belgrade solutions on 27 of 30 items, while the portals show more varied patterns. The article argues that the technological infrastructure of writing now constitutes a third normative centre alongside the two academic traditions, one that operates largely without philological oversight and reaches more daily users than any printed manual."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03371",
+        "kind": "publication",
+        "title": "Greek Ecclesiastical Terminology for Monastic Rank in Serbian Vitae: Phonological Adaptation Across Two Centuries",
+        "body": {
+          "recordId": "SYN-PUB-03371",
+          "field": "abstract",
+          "text": "The paper traces the phonological adaptation of twelve Greek terms designating monastic ranks (e.g. equivalents of hieromonachos, protosyngkellos, megaloskhemos) as they appear in Serbian hagiographic vitae spanning the thirteenth through fifteenth centuries. Drawing on a corpus of 34 texts, the study documents how the phonological shape of each term shifts across the period, distinguishing between adaptation patterns attributable to oral transmission, those traceable to the influence of contemporaneous Byzantine Greek pronunciation, and those produced by analogical pressure from the native Church Slavonic morphological system. Quantitative coding of 684 individual attestations shows that adaptation trajectories differ significantly between terms with high liturgical frequency and those occurring only in narrative contexts, suggesting that high-frequency liturgical vocabulary was subject to conservative orthographic stabilisation in scribal practice while lower-frequency terms continued to vary. The paper proposes a differentiated model of lexical integration that supplements the single-pathway accounts found in earlier Church Slavonic lexicology."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0674",
+        "kind": "project",
+        "title": "Serbian Language Resources for Specialised Natural Language Processing",
+        "body": {
+          "recordId": "SYN-PRJ-0674",
+          "field": "summary",
+          "text": "SRSLAN aimed to expand and systematise annotated language resources for Serbian in three specialised registers: legal, medical, and financial. The project produced three domain corpora totalling approximately 7 million annotated tokens, an updated version of the SrpNovine NER benchmark, and a valency dictionary for 3,200 Serbian verbs. A secondary objective was the development and public release of morphological processing tools adapted to each domain. The project employed two postdoctoral researchers and four student annotators at the University of Novi Sad and collaborated with the Jožef Stefan Institute in Ljubljana for cross-Slavic resource alignment. All outputs were deposited in the CLARIN.SI repository under open licences."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0675",
+        "kind": "project",
+        "title": "Multilingual Information Detection Across the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0675",
+          "field": "summary",
+          "text": "MIDANUBE addressed the need for multilingual text analysis tools in the Hungary–Serbia cross-border region, focusing on Serbian and Hungarian as administratively and economically important language pairs. Dragišić led the work package responsible for Serbian-side corpus collection and annotation, covering approximately 3 million tokens of cross-border news and public administration documents. The project developed a bilingual named-entity linking system capable of aligning entity mentions across the two typologically dissimilar languages. End-user evaluation was conducted with two regional public administration bodies. The Serbian annotation infrastructure and trained models produced within MIDANUBE were integrated into the NERSrp 2.0 benchmark release."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1505",
+        "kind": "project",
+        "title": "Serbian Church Slavonic Hagiographic Corpus: Digitisation, Annotation, and Linguistic Analysis",
+        "body": {
+          "recordId": "SYN-PRJ-1505",
+          "field": "summary",
+          "text": "The project aimed to build an open-access annotated digital corpus of Serbian Church Slavonic hagiographic texts spanning the thirteenth to fifteenth centuries, covering approximately 18,000 manuscript folios across 30 codices held in Serbian and regional institutions. Work packages addressed digitisation standardisation, TEI-based linguistic annotation, lexical database construction with emphasis on Greek borrowings, and corpus-based analysis of orthographic school variation. The project brought together philologists, linguists, and a computational specialist and produced a publicly accessible corpus release as well as updated entries for the Dictionary of Church Slavonic Language of the Serbian Redaction. Tanja Tešić contributed to the annotation design, Greek loanword analysis, and preparation of a protocol paper describing the digitisation and encoding methodology."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "open_to",
+            "quote": "industrial PhD supervision in applied NLP for Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "open_to",
+            "quote": "joint projects on NLP tooling for Serbian or South Slavic languages",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0767",
+            "field": "open_to",
+            "quote": "contract research for corpus annotation and morphological resource construction",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

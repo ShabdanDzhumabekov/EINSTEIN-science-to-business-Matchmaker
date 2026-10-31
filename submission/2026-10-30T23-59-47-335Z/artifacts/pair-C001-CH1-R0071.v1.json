@@ -1,0 +1,232 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0071",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0071",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a site-specific, label-free baseline model of Modbus TCP and BACnet/IP traffic be built from long-term normal captures, coupled with drift detection and a low false-alarm threshold policy, so that ProtoSense flags behaviour that departs from normal in a way that can be explained to a plant manager? The first experiment would test whether the researcher's semi-supervised one-class and drift-adaptation methods transfer from sensor time-series to protocol-level network traffic.",
+    "rationale": [
+      {
+        "text": "Rakić has a published semi-supervised one-class framework designed for exactly the situation ArmaturaSec describes: mostly unlabelled streams with only a small fraction of labelled anomalies.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00960",
+            "field": "abstract",
+            "quote": "proposes a constrained OC-SVM variant that incorporates labelled anomalies as must-outside constraints during kernel optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She works directly on concept drift adaptation in streaming fault data, which is what a site-specific normal baseline needs when plant operations change.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00961",
+            "field": "abstract",
+            "quote": "ADWIN combined with ensemble voting detects sudden drift with a median latency of 47 samples",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0071",
+            "field": "bio",
+            "quote": "methods for handling concept drift and label scarcity",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has demonstrated learning under extreme label scarcity with uncertainty-filtered self-training, reaching near-supervised performance from very few labels.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00962",
+            "field": "abstract",
+            "quote": "Starting from 2% labelled data, the filtered self-training approach reaches 91% of fully supervised F1 performance",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her threshold-selection work targets the exact failure ArmaturaSec suffered in deployment — tuning the operating point against an acceptable false-positive rate on heavily imbalanced data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00958",
+            "field": "abstract",
+            "quote": "Recommendations are given as a decision guide indexed by imbalance ratio and acceptable false-positive rate.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00964",
+            "field": "abstract",
+            "quote": "the chapter argues for systematic reporting of AUPRC and G-mean alongside domain-relevant cost measures",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has hands-on experience deploying detection pipelines on constrained edge hardware, matching ProtoSense's on-appliance inference requirement.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00963",
+            "field": "abstract",
+            "quote": "The quantised convolutional network fits within 200 KB and achieves 97% of its full-precision AUPRC while meeting a 5 ms per-window latency budget",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0119",
+            "field": "summary",
+            "quote": "Olivera Rakić leads the work package on model compression and edge deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her running DRIFTGUARD project already couples semi-supervised classification with drift detection and targeted labelling, which maps onto the ProtoSense baseline-plus-drift requirement.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0118",
+            "field": "summary",
+            "quote": "a semi-supervised classifier is coupled with a lightweight drift detector",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has prior industrial engagement auditing the validation practice of an operating classifier, relevant to rebuilding trust after the false-positive episode.",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "industry_experience",
+            "quote": "audit the evaluation practices of their existing predictive maintenance classifier, resulting in a revised validation protocol",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must operate without any labelled attack examples, since the company has none and supervised classifiers already failed.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "raises a flag when behaviour drifts from that baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work depends on access to the multi-terabyte normal-traffic archives and the hardware bench, released under NDA.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on the appliance itself without harming forwarding performance, so model size and per-window latency are hard limits.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alerts must be explainable in plain language to a plant manager, not only statistically scored.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we can explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The false-positive rate must be kept low enough that clients do not disable alerting again.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's availability for a new long-term commitment is limited and explicitly unknown before mid-2025.",
+        "sources": [
+          {
+            "recordId": "R0071",
+            "field": "notes",
+            "quote": "has limited capacity for new long-term commitments before mid-2025",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: all cited detection results come from vibration, SCADA, chemical reactor, semiconductor, server-counter and smart-meter data, not from Modbus TCP or BACnet/IP packet streams; the one-class work touched network intrusion logs, but only as aggregate flow features. Whether these methods hold on protocol-level traffic is untested and must be the first experiment.",
+      "Evaluation is fundamentally weak without any confirmed attacks: detection quality cannot be measured against ground truth unless controlled fault or attack traffic is injected on the hardware-in-the-loop bench with PLC simulators.",
+      "Drift in OT networks comes from firmware updates, maintenance and operational changes rather than sensor wear; the drift detectors cited were validated on industrial process streams and may not transfer.",
+      "Explainability to a plant manager is a stated need but no cited work demonstrates plain-language explanation of network anomaly decisions.",
+      "False-positive behaviour in real customer deployments is unproven; the earlier supervised attempt failed there and clients already distrust alerts.",
+      "The researcher has no documented Modbus/BACnet or OT network security background, and the company has only one engineer with six months of self-study in anomaly detection, so protocol-domain assumptions may go unchecked.",
+      "The researcher's overall availability is unknown and she already co-supervises two PhD students, so scope and timeline may not be sustainable.",
+      "The 2021 student project with a Novi Sad faculty was not continued formally, suggesting a prior mismatch in sustaining academic-industry collaborations."
+    ],
+    "questions": [
+      "The researcher lists both industrial PhD supervision and joint projects as open: which format does she prefer for this task, and does the company's single anomaly-detection engineer serve as the internal technical contact she asks for?",
+      "What is her actual availability and earliest start date given the two co-supervised DRIFTGUARD students and the stated limit before mid-2025?",
+      "Can ArmaturaSec generate labelled test events by injecting controlled attacks or faults on the hardware-in-the-loop bench with physical PLC simulators, and under what conditions?",
+      "What are the concrete memory and per-window latency budgets on the planned security-processor hardware variant, and what false-positive rate per site-day would clients accept?",
+      "What do the NDA terms allow regarding the traffic archives, the firmware codebase and publication of results or a benchmark dataset?",
+      "What form must the plain-language explanation take for a plant manager, and who on the company side validates that it is actionable?",
+      "How will normal baseline data be segmented across client sites, and is per-site model training and update on the appliance acceptable?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0071",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0071",
+        "version": 1
+      }
+    ]
+  }
+}

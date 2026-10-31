@@ -1,0 +1,215 @@
+{
+  "ref": {
+    "artifactId": "pair-C105-CH2-R0785",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C105-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C105-CH2-R0785",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can trace-driven profiling, resource allocation and interruption-aware scheduling reduce GenovaMed’s short-read star-allele pipeline toward below EUR 3 per sample and under 90 minutes per 24-sample batch without changing clinical accuracy? The first experiment would profile representative batches and replay selected VM/resource configurations against the unchanged pipeline, testing whether the researcher’s cloud models transfer to this genomic workflow before considering spot execution.",
+    "rationale": [
+      {
+        "text": "Đukić has directly relevant methods for investigating the trade-off between cloud rental cost and job latency.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08600",
+            "field": "abstract",
+            "quote": "A threshold-based control policy is derived by value iteration over a finite horizon of T = 200 decision epochs, with per-step costs reflecting both VM rental fees and job latency penalties.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her multi-resource scheduling work provides a basis for examining CPU, memory and network allocation once the actual pipeline bottlenecks are measured.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08602",
+            "field": "abstract",
+            "quote": "Multi-tenant cloud platforms require scheduling decisions that jointly allocate CPU, memory, and network bandwidth across competing tenant queues.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her research addresses both preemptible batch computing and checkpointing overhead, relevant to evaluating rather than assuming savings from spot instances.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06871",
+            "field": "abstract",
+            "quote": "This paper models a batch-processing workload that uses a mix of on-demand and preemptible instances",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-06162",
+            "field": "abstract",
+            "quote": "Long-running scientific workflow tasks benefit from periodic checkpointing to limit recomputation after node failures, but frequent checkpointing imposes I/O overhead.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience translating analytical cloud models into industry-facing capacity and scaling work.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "industry_experience",
+            "quote": "providing analytical support for their auto-scaling module design.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0785",
+            "field": "industry_experience",
+            "quote": "She has also delivered two workshops on queuing-theoretic capacity planning for engineering staff at NTP Novi Sad tenant companies.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Benchmark the existing Python/Snakemake cloud workflow at its operational batch size and cadence; isolated task speedups are insufficient without end-to-end measurement.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We wrote the pipeline ourselves in Python using Snakemake",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "Our bioinformatics pipeline takes a batch of 24 samples from raw sequencing reads to a final star-allele call in roughly four to six hours.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We run two batches a day on weekdays",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluate cost and turnaround jointly against the company's desired thresholds; these are experimental targets, not guaranteed outcomes.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "A good outcome would be getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Preserve clinical accuracy and agree validation and change-control requirements within the accredited laboratory workflow before production deployment.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "without touching the clinical accuracy of the calls.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "about",
+            "quote": "Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope implementation and experiments to the company's limited staff time and approximately EUR 8,000 annual discretionary R&D budget.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a small discretionary R&D budget of approximately 8,000 EUR per year.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Secure suitable operational traces and confirm permitted use of any retained clinical samples; the research group has limited access to production data.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "notes",
+            "quote": "her group has the analytical tools but limited access to large-scale production data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a set of retained clinical samples held under ethics approval",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Confirm researcher capacity before scheduling: the notes describe room for one new collaboration in a dated 2025–2026 context, not a confirmed current allocation.",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "notes",
+            "quote": "She is on a reduced administrative load in 2025–2026 due to her role as project PI",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0785",
+            "field": "notes",
+            "quote": "would be able to take on one new collaboration without difficulty.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The relevant publications use synthetic cloud workloads, simulations or non-genomic traces, not this short-read star-allele pipeline. Their reported improvements cannot be transferred directly; the first profiling-and-replay experiment must test model applicability and prediction error.",
+      "No genomic calling or clinical validation expertise is established in the researcher's supplied material. GenovaMed must retain responsibility for allele-call validation and clinical acceptance.",
+      "Alignment and calling are only suspected bottlenecks. Serial computation, storage I/O or tool-specific limits could make cloud scheduling insufficient to reach the cost and runtime targets.",
+      "Spot interruptions could increase recomputation, cost and turnaround; task restartability and checkpoint support in the actual tools remain unknown.",
+      "The cloud provider, instance configuration, billing boundaries and permissions for sharing genomic data or operational traces are unknown, so feasibility and achievable savings remain uncertain.",
+      "Current researcher availability and project timeline are unknown; the small company budget may constrain profiling instrumentation, repeated benchmarks and implementation."
+    ],
+    "questions": [
+      "Can Đukić confirm current availability for a joint project, the proposed start date and the time her group can commit?",
+      "Which cloud provider, VM types, storage and regional settings are used, and does EUR 9 per sample include storage, data transfer, idle capacity and failed runs?",
+      "Can GenovaMed provide the Snakemake DAG, tool versions, resource settings, representative execution logs and billing records, and permit collection of per-step CPU, memory and I/O measurements?",
+      "What representative validation set and acceptance criteria will establish unchanged clinical accuracy, including difficult CYP2D6 calls, and who signs off changes under the quality system?",
+      "What ethics, privacy, access-control and data-location restrictions apply to samples, sequencing reads and traces? Can benchmarking remain within the company's approved environment?",
+      "Which workflow steps support safe retries or checkpointing, and what interruption rate and deadline-miss risk would be acceptable for spot instances?",
+      "What project deadline and budget allocation are available for cloud experiments and implementation, and are the runtime and cost targets measured per batch, per sample or across routine operation?"
+    ],
+    "outcome": "pair",
+    "taskId": "C105-CH2",
+    "researcherId": "R0785",
+    "inputs": [
+      {
+        "artifactId": "business-C105-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C105-CH2-R0785",
+        "version": 1
+      }
+    ]
+  }
+}

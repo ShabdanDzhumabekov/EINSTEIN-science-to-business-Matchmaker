@@ -1,0 +1,263 @@
+{
+  "ref": {
+    "artifactId": "scholar-C105-CH2-R0785",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0785",
+    "name": "Sofija Đukić",
+    "faculty": "Faculty of Sciences",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Applied Mathematics and Stochastic Processes",
+      "Cloud Computing and Distributed Systems",
+      "Operations Research and Optimisation",
+      "Performance Modelling and Analysis"
+    ],
+    "keywords": [
+      "stochastic optimisation",
+      "queuing theory",
+      "dynamic resource allocation",
+      "cloud computing",
+      "Markov decision processes",
+      "auto-scaling",
+      "distributed systems",
+      "energy efficiency",
+      "scheduling algorithms",
+      "M/G/k queues"
+    ],
+    "openTo": [
+      "joint projects with companies on cloud resource optimisation",
+      "contract research on performance modelling and capacity planning",
+      "industrial PhD supervision",
+      "student internships involving simulation or data analysis",
+      "consulting on auto-scaling policy design and SLA modelling"
+    ],
+    "bio": {
+      "recordId": "R0785",
+      "field": "bio",
+      "text": "Sofija Đukić completed her BSc and MSc in Mathematics at the Faculty of Sciences, University of Novi Sad, in 2009 and 2011, respectively, and defended her PhD in Applied Mathematics at the same institution in 2016, with a dissertation on steady-state analysis of multi-server queuing networks under Markov-modulated arrival processes. She was appointed Teaching Assistant in 2013 and promoted to Assistant Professor in 2018. Her research group focuses on stochastic modelling of distributed computing infrastructures, covering task-scheduling policies, auto-scaling mechanisms, and energy-aware resource allocation under uncertain workloads. She teaches courses in probability theory, operations research, and stochastic processes at undergraduate and postgraduate levels. The group uses a small private OpenStack cluster and accesses PARADOX HPC at the University of Belgrade for simulation experiments."
+    },
+    "industryExperience": {
+      "recordId": "R0785",
+      "field": "industry_experience",
+      "text": "Đukić carried out a three-month consulting engagement in 2022 with a Novi Sad-based software company developing a private cloud management platform, providing analytical support for their auto-scaling module design. She has also delivered two workshops on queuing-theoretic capacity planning for engineering staff at NTP Novi Sad tenant companies."
+    },
+    "notes": {
+      "recordId": "R0785",
+      "field": "notes",
+      "text": "Đukić is particularly interested in collaborations where real operational traces from production cloud or edge deployments are available; her group has the analytical tools but limited access to large-scale production data. She is on a reduced administrative load in 2025–2026 due to her role as project PI and would be able to take on one new collaboration without difficulty."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08599",
+        "kind": "publication",
+        "title": "Steady-State Analysis of a Two-Stage Tandem Queue with Markov-Modulated Input and Finite Buffers",
+        "body": {
+          "recordId": "SYN-PUB-08599",
+          "field": "abstract",
+          "text": "This paper examines a tandem queuing model with two service stations, Markov-modulated Poisson arrivals, and finite intermediate buffers of capacity K. The authors derive the stationary distribution using matrix-analytic methods and obtain closed-form expressions for mean sojourn time and blocking probability as functions of K and the traffic intensity ρ. Numerical experiments are performed for phase-generator matrices calibrated to packet-switched network traces collected at the University of Novi Sad computing centre in 2011. Results show that blocking probability decreases by a factor of approximately 3 when K is increased from 5 to 20, while mean sojourn time increases by less than 8 percent, suggesting a practically useful buffer-sizing rule. The model is validated against a discrete-event simulation implemented in SimPy, with relative errors below 2 percent across all tested parameter combinations. The work provides a tractable basis for dimensioning two-tier storage or processing pipelines in early private cloud deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08600",
+        "kind": "publication",
+        "title": "Optimal Threshold Policies for Virtual Machine Provisioning in Elastic Cloud Clusters",
+        "body": {
+          "recordId": "SYN-PUB-08600",
+          "field": "abstract",
+          "text": "The paper formulates virtual machine (VM) provisioning in an Infrastructure-as-a-Service (IaaS) environment as a discrete-time Markov decision process (MDP). The state space encodes the number of active VMs, the queue length of pending jobs, and a two-state workload signal. A threshold-based control policy is derived by value iteration over a finite horizon of T = 200 decision epochs, with per-step costs reflecting both VM rental fees and job latency penalties. The optimal threshold is shown to depend on the ratio of rental cost to latency penalty in a monotone, piecewise-linear fashion for the parameter ranges examined. Experiments use a synthetic workload trace generated by a compound Poisson process with burst parameters estimated from publicly available Google cluster usage traces. The derived threshold policy reduces total expected cost by 17–24 percent compared to static over-provisioning across five cost-ratio scenarios. The model is intentionally kept small enough for exact MDP solution without approximation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08601",
+        "kind": "publication",
+        "title": "Energy-Delay Trade-offs in Heterogeneous Server Farms: A Queuing-Theoretic Approach",
+        "body": {
+          "recordId": "SYN-PUB-08601",
+          "field": "abstract",
+          "text": "This work studies a heterogeneous server farm composed of N fast servers with high power draw and M slow, energy-efficient servers, modelled as a mixed M/G/N+M queue with non-preemptive service and a join-the-shortest-queue routing discipline. Energy consumption is modelled as a convex function of server utilisation derived from SPECpower benchmark data for two classes of commodity hardware. The paper derives approximations for mean response time and mean power consumption under moderate-to-heavy traffic (ρ ∈ [0.5, 0.9]) using a decomposition method, and compares them against discrete-event simulation results. The relative error of the approximation is within 5 percent for mean response time and 3 percent for mean power in all tested configurations. A Pareto frontier of energy versus delay objectives is traced for different server-mix ratios, and it is found that a 40/60 fast-to-slow ratio achieves near-minimum delay at roughly 70 percent of the energy cost of an all-fast configuration at ρ = 0.75."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06161",
+        "kind": "publication",
+        "title": "Stochastic Fluid Models for Burst-Tolerant Auto-Scaling in Container Orchestration Platforms",
+        "body": {
+          "recordId": "SYN-PUB-06161",
+          "field": "abstract",
+          "text": "Container orchestration systems such as those based on declarative scheduling can scale replica counts in response to observed CPU utilisation, but default horizontal scaling policies do not account for the statistical structure of workload bursts. This paper adapts the stochastic fluid queue framework to model container-level resource consumption when arrivals follow a Markov-modulated process with two burst modes. The fluid level represents the accumulated processing backlog. Buffer overflow probabilities and expected drain times are derived in closed form using spectral decomposition of the generator matrix. The model is parameterised from a 72-hour trace of HTTP request arrivals to a microservices application running on an in-house three-node cluster. Predicted overflow probabilities match observed SLA breach rates with a mean absolute error of 0.008 across 15 experimental conditions. The paper proposes a scaling trigger rule based on the fluid model's overflow threshold and shows it reduces SLA violations by 31 percent compared to a CPU-only threshold rule in a controlled replay experiment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08602",
+        "kind": "publication",
+        "title": "Approximate Dynamic Programming for Multi-Resource Scheduling in Multi-Tenant Cloud Environments",
+        "body": {
+          "recordId": "SYN-PUB-08602",
+          "field": "abstract",
+          "text": "Multi-tenant cloud platforms require scheduling decisions that jointly allocate CPU, memory, and network bandwidth across competing tenant queues. This paper frames the problem as a continuous-time MDP with a product-form state space that grows exponentially in the number of tenants. Exact solution is tractable only for up to three tenants; for larger instances the paper applies a linear function approximation within an approximate policy iteration scheme, using basis functions derived from the single-resource optimal policies. Experiments are run on a simulated cluster with 6 tenants and 32 virtual CPU cores. The approximate policy achieves within 6 percent of a lower bound on average cost obtained by Lagrangian relaxation, and reduces mean job completion time by 19 percent relative to a first-come-first-served baseline. Sensitivity analysis shows the policy degrades gracefully as tenant arrival rate heterogeneity increases."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06871",
+        "kind": "publication",
+        "title": "Queuing Models for Spot-Instance Markets: Bidding Strategies Under Preemption Risk",
+        "body": {
+          "recordId": "SYN-PUB-06871",
+          "field": "abstract",
+          "text": "Cloud providers offer preemptible compute instances at discounted prices, but tasks running on such instances may be interrupted when market demand rises above supply. This paper models a batch-processing workload that uses a mix of on-demand and preemptible instances as an M[X]/M/c queue with unreliable servers, where server failures correspond to preemption events governed by an exogenous price process modelled as a two-state continuous-time Markov chain. The stationary distribution is derived numerically using truncated state-space methods. A bidding strategy that sets the maximum acceptable spot price as a function of the remaining job deadline and estimated preemption rate is derived from the first-passage time distribution. Experiments use preemption rate estimates from a 30-day synthetic price series generated with parameters drawn from published empirical studies of spot markets. The bidding strategy achieves a 22 percent cost reduction over a fixed-bid baseline while maintaining deadline miss probability below 5 percent."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08603",
+        "kind": "publication",
+        "title": "Workload Prediction for Proactive Scaling: A Comparison of Time-Series and Markov-Modulated Models",
+        "body": {
+          "recordId": "SYN-PUB-08603",
+          "field": "abstract",
+          "text": "Reactive auto-scaling introduces lag that can cause transient SLA violations during rapid workload changes. This paper compares two classes of predictive models—SARIMA-based time-series forecasts and hidden Markov models (HMMs) with Gaussian emission distributions—for 15-minute-ahead prediction of CPU demand in a web-serving workload. Evaluation is performed on four one-month traces collected from a private cloud operated at the Science and Technology Park Novi Sad testbed. Prediction accuracy is measured by mean absolute percentage error (MAPE) and by the downstream effect on scaling decisions, assessed via a queuing simulator. HMMs with three hidden states achieve lower MAPE (8.3 percent vs. 11.7 percent for SARIMA) on traces with clear regime-switching behaviour, but both methods perform comparably on smooth, diurnal traces. Proactive policies driven by either model reduce the frequency of under-provisioning events by 40–55 percent compared to a reactive CPU-threshold policy, at a cost of approximately 8 percent over-provisioning."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06162",
+        "kind": "publication",
+        "title": "Stochastic Optimisation of Checkpointing Intervals for Fault-Tolerant Scientific Workflows on Heterogeneous Clouds",
+        "body": {
+          "recordId": "SYN-PUB-06162",
+          "field": "abstract",
+          "text": "Long-running scientific workflow tasks benefit from periodic checkpointing to limit recomputation after node failures, but frequent checkpointing imposes I/O overhead. This paper models the workflow execution as a renewal reward process in which the checkpoint interval T is the decision variable, task failure rate λ follows an inhomogeneous Poisson process estimated from node-failure logs, and I/O overhead is a linear function of checkpoint size. The expected waste ratio—proportion of CPU time spent on recomputation and checkpointing—is derived analytically and minimised with respect to T for a given λ(t) profile. A closed-form approximately-optimal interval is obtained under the assumption that λ(t) is piecewise constant. The formula is validated on a simulation of a 128-node heterogeneous cluster over 500 simulated workflow executions. Optimal intervals range from 12 to 47 minutes depending on failure rate and checkpoint size, reducing waste by 28–36 percent compared to a fixed 30-minute interval baseline."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02601",
+        "kind": "publication",
+        "title": "Reinforcement Learning for Adaptive Queue Management in Edge-Cloud Continuum Deployments",
+        "body": {
+          "recordId": "SYN-PUB-02601",
+          "field": "abstract",
+          "text": "Edge nodes in a continuum deployment have limited queuing capacity and must decide whether to process requests locally or offload them to a central cloud tier. This paper formulates the per-edge offloading decision as a Markov decision process solved approximately by a tabular Q-learning agent. The state is a discretised pair of local queue length and observed round-trip latency to the cloud. Reward is the negative of per-request sojourn time. The agent is trained in a simulated environment parameterised from latency and arrival-rate measurements at two edge nodes of a pilot deployment at the NTP Novi Sad testbed during a three-week collection period. After convergence (approximately 800,000 simulated steps), the learned policy reduces mean sojourn time by 14 percent and 99th-percentile sojourn time by 23 percent compared to a static threshold offloading rule. Robustness to distributional shift is tested by applying the policy under a workload with 30 percent higher arrival rate; degradation is modest, with mean sojourn time increasing by 9 percent over the trained-condition optimum."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08604",
+        "kind": "publication",
+        "title": "A Fluid-Queue Bound on Tail Latency for Serverless Function Invocations with Cold-Start Delays",
+        "body": {
+          "recordId": "SYN-PUB-08604",
+          "field": "abstract",
+          "text": "Serverless computing platforms invoke functions on demand, incurring a cold-start initialisation delay when no warm instance is available. This paper models warm-pool management as a fluid queue driven by a background Markov chain with states representing high, medium, and low demand regimes. Cold-start events correspond to buffer underflow epochs. An upper bound on the tail probability of end-to-end latency exceeding a threshold d is derived analytically using the theory of Markov-modulated fluid queues. The bound is parameterised from invocation traces of three representative functions observed over a 48-hour period on an experimental serverless platform deployed at the University of Novi Sad. The bound is numerically tight within a factor of 1.4 across all tested thresholds d ∈ [50, 500] ms. A warm-pool sizing rule derived from the bound reduces empirical P99 latency by 18 percent relative to a heuristic rule based solely on mean invocation rate, with a 12 percent increase in idle-instance cost."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03304",
+        "kind": "publication",
+        "title": "Sequential Bayesian Updating of Remaining Useful Life Distributions Under Concept Drift",
+        "body": {
+          "recordId": "SYN-PUB-03304",
+          "field": "abstract",
+          "text": "Remaining useful life (RUL) models for rotating equipment are typically trained once and then applied statically, but operating conditions and load profiles drift over months or years, causing predictive accuracy to degrade. This preprint proposes a sequential Bayesian updating scheme in which the posterior over RUL model parameters is revised each time a failure or censoring event is recorded, using an importance-weighted likelihood that down-weights observations older than a tunable half-life τ. The method is evaluated on three datasets: a benchmark turbofan engine simulation, a set of 41 conveyor belt drives monitored over 31 months, and compressor units from a previous study by the same group. Choosing τ by cross-validation over a held-out cohort reduced mean absolute RUL error by 22% compared to the static model and by 9% compared to periodic full re-fitting on a 90-day rolling window. Computational overhead relative to a static model is approximately 3% per update cycle."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02602",
+        "kind": "publication",
+        "title": "Topological analysis of pore networks in ceramic materials from micro-CT imaging",
+        "body": {
+          "recordId": "SYN-PUB-02602",
+          "field": "abstract",
+          "text": "We analyse three-dimensional pore networks of five types of porous ceramic samples, each imaged by micro-CT at 1.8 μm voxel resolution, yielding binary volumes of approximately 500³ voxels. Skeletonisation produces point clouds of up to 180 000 points. We compute Čech complex persistent homology up to dimension 3 using a GPU-accelerated boundary matrix reduction implementation. H_0 features characterise connectivity of the pore space; H_1 and H_2 features correspond to tunnels and enclosed voids respectively. Samples with high sintering temperature exhibit fewer and larger H_1 generators, consistent with pore coarsening. We regress total porosity (range 12–38%) and pore-size distribution parameters from persistence diagram features using random forests, achieving R² = 0.91 on a held-out test set of 18 samples. The approach provides a parameter-free topological signature that complements mercury intrusion porosimetry. This is the first study applying persistent homology to sinter-controlled alumina ceramics."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01769",
+        "kind": "publication",
+        "title": "Maximal Prime Gaps in the Range [10^14, 10^14 + 2×10^10] and Comparison with Cramér–Granville Bounds",
+        "body": {
+          "recordId": "SYN-PUB-01769",
+          "field": "abstract",
+          "text": "We report a systematic search for maximal prime gaps—gaps that strictly exceed all previously observed gaps—within the interval from 10^14 to 10^14 + 2×10^10. The search identifies 14 new record gaps in this range, the largest being 1442. For each record gap we record the initiating prime, the gap length, and the value of (g_n / log^2 p_n), which serves as the empirical approximation to the Cramér–Granville constant. The largest normalised gap found is 0.863, well below the conjectured upper bound of 1 but meaningfully above the median 0.63 observed in our previous work. We compare our results against heuristic bounds derived from the Cramér model and the Granville refinement, noting that the Granville bound appears tighter in this range. Statistical tests for clustering of record gaps are performed, and no significant deviation from a Poisson process is detected."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07249",
+        "kind": "publication",
+        "title": "Enclosure Methods for ODEs Arising in Real-Time Embedded Control: Preliminary Results",
+        "body": {
+          "recordId": "SYN-PUB-07249",
+          "field": "abstract",
+          "text": "Rigorous ODE solvers have not been used in real-time embedded contexts because their computational overhead is assumed prohibitive. This preprint reports on a feasibility study in which a stripped-down version of ValODE—compiled to fixed-point interval arithmetic compatible with an ARM Cortex-M7 microcontroller—is used to compute enclosures for a two-state nonlinear control ODE in real time. The implementation uses order-6 Taylor integration with conservative step sizes pre-selected offline. On-chip timing measurements show that a single integration step completes in 38 microseconds, with enclosure diameters comparable to those obtained off-chip. The study is preliminary: only two test systems are considered, and no formal worst-case execution time analysis is provided. The goal of the preprint is to invite feedback from the embedded-systems community on whether the overhead is acceptable for safety-critical monitoring applications."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0024",
+        "kind": "project",
+        "title": "Stochastic Resource Management Models for Elastic Cloud Infrastructures",
+        "body": {
+          "recordId": "SYN-PRJ-0024",
+          "field": "summary",
+          "text": "STOCRES addresses the gap between classical queuing theory and the operational complexity of elastic cloud platforms. The project develops analytical and simulation-based models for auto-scaling, spot-instance bidding, and fault-tolerant scheduling, validated on a private cloud testbed hosted at the Faculty of Sciences. The team consists of four researchers from the Faculty of Sciences and one collaborator from the Faculty of Technical Sciences in Novi Sad. Key deliverables include a publicly released simulation library, three journal publications, and a short course on stochastic methods for cloud engineers offered once per year. The project also funds two PhD students working on edge-cloud offloading and serverless latency modelling, respectively."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0025",
+        "kind": "project",
+        "title": "Mathematical Foundations of Latency-Aware Scheduling in Edge-Cloud Continuum Networks",
+        "body": {
+          "recordId": "SYN-PRJ-0025",
+          "field": "summary",
+          "text": "EDGEMATH is a bilateral research and capacity-building project between the University of Novi Sad and the Budapest University of Technology and Economics. The Serbian team, led by Đukić, is responsible for Work Package 2 covering stochastic modelling and optimal control of offloading decisions at edge nodes. The Hungarian team contributes network measurement infrastructure and machine-learning expertise. The project includes three joint workshops, a summer school for doctoral students, and the co-development of a shared dataset of edge-node workload traces. Expected outputs include joint publications, a prototype offloading policy library, and recommendations for testbed operators on dimensioning warm-standby capacity."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0243",
+        "kind": "project",
+        "title": "Cross-Domain Transfer for Skeletal Motion Analysis in Sport and Healthcare",
+        "body": {
+          "recordId": "SYN-PRJ-0243",
+          "field": "summary",
+          "text": "CROSSMOVE is a joint Hungarian-Serbian project exploring whether motion-capture data collected in sport science institutes can serve as pre-training material for healthcare applications including gait pathology classification and post-operative rehabilitation monitoring. Vojnović leads the work package responsible for domain-gap analysis and adapter-based fine-tuning methods. Partner institutions contribute motion datasets from athletics and swimming biomechanics. The project includes a joint data collection campaign harmonising skeleton topology and metadata standards across sites to enable meaningful cross-domain transfer experiments. Three joint publications and one shared dataset are planned as primary outputs by the project end."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0785",
+            "field": "open_to",
+            "quote": "joint projects with companies on cloud resource optimisation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0785",
+            "field": "open_to",
+            "quote": "contract research on performance modelling and capacity planning",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

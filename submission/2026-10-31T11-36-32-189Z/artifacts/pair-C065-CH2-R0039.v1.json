@@ -1,0 +1,234 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0039",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0039",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a lightweight product-content or metadata-based recommender, optionally combined with purchase signals, improve product-page recommendations over best-seller sorting with only 500–2,000 transactions per client? The first experiment would test transfer to one client's catalogue using temporally held-out purchases, comparing simple content and hybrid variants against best-seller and category-based baselines, while assessing uncertainty, catalogue coverage and serving cost before considering an online trial.",
+    "rationale": [
+      {
+        "text": "His research directly addresses recommendation degradation under sparse data and changing catalogues, including practical guidance for resource-constrained SMEs.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0062",
+            "field": "summary",
+            "quote": "PERSEDA addresses the degradation of recommendation quality under extreme data sparsity and rapid catalogue change",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0062",
+            "field": "summary",
+            "quote": "a technical guideline document for SMEs seeking to deploy recommender systems on modest computational budgets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has tested product-metadata priors for item cold-start, providing a relevant candidate approach when purchase co-occurrence is insufficient.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00483",
+            "field": "abstract",
+            "quote": "The KG is constructed from product metadata (category hierarchy, brand relations, material attributes) for a fashion retail domain",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00483",
+            "field": "abstract",
+            "quote": "These embeddings are injected into a standard matrix factorisation model as a regularisation prior on the item factor matrix.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work on text features in hybrid recommendation is relevant to testing whether product descriptions add useful information, although the published application used job advertisements.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00489",
+            "field": "abstract",
+            "quote": "Item descriptions from a job advertisement portal (340,000 postings) are encoded with mean pooling over final-layer token embeddings",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00489",
+            "field": "abstract",
+            "quote": "replacing or complementing manually engineered metadata features.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He can contribute evaluation methods that explicitly address popularity bias and the possibility that offline improvements do not translate into online gains.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00484",
+            "field": "abstract",
+            "quote": "offline evaluation pitfalls including popularity bias in ranking metrics, and the gap between offline and online A/B test outcomes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00486",
+            "field": "abstract",
+            "quote": "We define and operationalise four group-fairness metrics for items: coverage, aggregate diversity, long-tail coverage, and Gini coefficient of recommendation frequency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior commercial e-commerce recommendation experience, relevant to translating an experiment into a client-facing prototype.",
+        "sources": [
+          {
+            "recordId": "R0039",
+            "field": "industry_experience",
+            "quote": "Ivković worked as a part-time machine learning consultant for a Novi Sad-based e-commerce startup, designing and evaluating their first collaborative filtering pipeline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The prototype must work with the existing small datasets rather than depend on substantial additional transaction collection; best-seller sorting must remain an explicit benchmark.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "text",
+            "quote": "with only 500–2,000 transactions per client",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be governed by a data-sharing agreement and use the anonymised transaction and catalogue data offered by the company.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope integration and company-side work around approximately one developer-day per week, initially targeting a single-client prototype.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deployment design must accommodate the company's existing web integrations and client-VPS environment; actual hardware and latency limits still need confirmation.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "PHP (Laravel framework) for backend portal development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any new user-facing widget strings must follow the company's three-language testing workflow.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "about",
+            "quote": "we test every user-facing string in all three languages before a build ships",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Gettext-based localisation with in-house translator review workflow",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Published metadata and text-hybrid results concern fashion cold-start and a large job-advertisement corpus, not an entire store with 500–2,000 transactions. The first experiment must test this scale and domain transfer rather than assume the reported gains apply.",
+      "Product-page relevance differs from user-history recommendation. Purchase logs alone may not establish which products were viewed together or whether an item is a substitute or complement; evaluation could therefore favour the wrong widget behaviour.",
+      "Catalogue size, metadata completeness, description languages and translation consistency are unknown. Weak or inconsistent content may remove the main advantage over collaborative filtering.",
+      "Low traffic and few purchases may make both temporal holdouts and online comparisons inconclusive. No meaningful improvement over best-sellers is assured.",
+      "Researcher availability, project funding, timetable and deployment resources are unknown; the company's limited engineering allocation could become an integration bottleneck.",
+      "The researcher prefers publishable results or thesis topics. Client confidentiality or restrictions on derived outputs could conflict with that preference unless agreed beforehand."
+    ],
+    "questions": [
+      "What researcher time, student support, funding and delivery timetable can both parties commit to for a joint project?",
+      "Which client should be the pilot, and what are its catalogue size, active-product count, transaction date range and repeat-customer frequency?",
+      "Are stable anonymised customer IDs, order-line timestamps, historical product availability, page views, impressions or session logs available, and what does the data-sharing agreement permit?",
+      "Should the widget recommend substitutes, complementary products or likely next purchases, and how will the company define commercially meaningful improvement?",
+      "How complete are descriptions, categories and attributes, which languages occur in the pilot catalogue, and are translated versions linked to the same product?",
+      "Can the parties agree a temporal evaluation protocol, ranking and coverage metrics, uncertainty reporting and an explicit inconclusive or no-improvement outcome before modelling?",
+      "What VPS CPU and memory, response-time target, refresh schedule and integration interface are available, and what budget exists for any external encoding services or compute?",
+      "Can anonymised findings, code or a student thesis be published without disclosing client data, and who will own the prototype and maintain it after the pilot?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0039",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0039",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C065-CH2-R0816",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “the largest contained 1,900 completed orders over eighteen months and the smallest around 520. Best-seller sorting outperformed its model in one client A/B test.” Our inference: “larger grocery and clothing studies do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.” Proposed next steps: “compare best-sellers, attribute-only similarity and lightweight hybrids.” Together these identify the small-data product-page recommendation problem and test alternatives against the baseline that previously won."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “using one client’s existing anonymised orders and catalogue only”; “Propose weeks one–two for agreement, permissions and metadata audit”; and “Confirm that this scope fits both weekly limits and the available budget before starting; otherwise reduce scope rather than assume additional staffing.” Verified facts specify dataset access “under a data-sharing agreement” and both weekly staffing limits. Proposed next steps additionally require testing “through the pilot’s WooCommerce or REST interface in its Docker/VPS environment against agreed latency and refresh limits” and “successful company review of all widget strings in three languages.” These preserve existing-data, access, budget and staffing constraints while making schedule, deployment and release conditional on verification."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s clothing-retail research combines cosine attribute similarity with within-session co-occurrence”; “Its evidence comes from two retailers providing 9,200 baskets, rather than this client’s product-page setting”; and “Erić’s attribute study discusses limitations involving attribute completeness and supplier data. Her review reports that content-based methods can over-specialise recommendations.” Our inference proposes “A lightweight attribute model, optionally blended with basket evidence” while explicitly stating that the studies “do not validate performance on Harmat’s smaller datasets, multilingual descriptions or product-page recommendations.” This connects her documented methods to the experiment without assuming transfer or suppressing reported limitations."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Harmat offers one mid-level developer for roughly one day weekly” and “offers read access to anonymised transactions and catalogues”; Erić’s documented research “combines cosine attribute similarity with within-session co-occurrence.” Proposed next steps: “Erić could lead evaluation; Harmat could prepare exports and integration.” Our inference: openness to joint projects “does not establish a commitment to this project or schedule.” These distinguish documented resources and expertise from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “using one client’s existing anonymised orders and catalogue only”; “First audit metadata and agree relevance; compare best-sellers, attribute-only similarity and lightweight hybrids”; “Create chronological training, tuning and untouched evaluation partitions”; and “Tune configurations only on tuning data.” Evaluation will “reveal one anchor and rank remaining purchased items” for eligible multi-item baskets. These specify inputs, comparator, experimental conditions and independent configuration selection and evaluation, with permissions, metadata and relevance agreement preceding execution."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “For eligible multi-item evaluation baskets, reveal one anchor and rank remaining purchased items; average NDCG@5 per basket, reporting singleton exclusions and catalogue coverage.” The observed remaining purchases supply the ranking labels, each basket supplies one evaluation unit, and the mean uses the eligible evaluation baskets rather than treating repeated customer or product appearances as independent evidence: the plan says to “check leakage and dependence from repeated customers and products.” Acceptance is proposed as “a 10% relative improvement target over best-sellers, with a paired, dependence-aware 95% confidence interval above zero,” applied to “the best tuning-selected configuration,” with “inadequate evaluation evidence” classified as “unresolved, not pass.” Our inference limits this to “a screening signal, not evidence of conversion gains,” and live acceptance “must use the company’s agreed business metric.” Thus the defined offline target cannot itself authorise a claim of business improvement."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps compare “best-sellers, attribute-only similarity and lightweight hybrids” using “chronological training, tuning and untouched evaluation partitions,” with configurations selected only on tuning data. Our inference states: “Basket-ranking results would provide a screening signal, not evidence of conversion gains.” Proposed next steps further state: “Offline success authorises only a proposed live test.” These support a comparison of complete recommendation configurations on held-out purchase ranking, without attributing conversion effects or claiming to isolate untested mechanisms."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Verified facts name “attribute completeness and supplier data” limitations and content methods that “can over-specialise recommendations.” Our inference says existing studies do not validate transfer and warns: “Similarity may also favour substitutes when the retailer wants complements.” Open questions ask which “metadata, languages, timestamps and basket identifiers are available” and what “traffic and evaluation duration could support a conclusive live comparison.” Proposed next steps say to “check leakage and dependence,” treat inadequate evidence as unresolved, and “do not assume historical read access includes impressions, clicks or sessions.” These cover the main methodological, data, relevance and implementation risks without presenting unknown conditions as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional on Erić’s availability, which remains unknown” and her openness “does not establish a commitment to this project or schedule.” Proposed next steps use “Erić could lead evaluation” and require confirmation that the scope “fits both weekly limits.” Open questions ask: “Can Erić confirm availability and interest in this specific joint project”. This matches the documented openness to joint projects while preserving unknown availability and semester limits."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could establish whether existing data supports a useful alternative to best-sellers, or justify retaining the simpler baseline without waiting for more transactions”; and “Subject to agreement, Erić could test the boundary between attribute-only and hybrid recommendation under smaller-data, multilingual e-commerce conditions using an anonymised client case.” Read with the explicit limitation that basket ranking is only “a screening signal,” these are conditional benefits supported by the proposed experiment, not guarantees of deployment or commercial gains."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.89,
+        0.94,
+        0.93,
+        0.97,
+        0.95,
+        0.61,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "ref": {
+    "artifactId": "scholar-C013-CH2-R0971",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0971",
+    "name": "Katarina Đorđević",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Civil Engineering and Geodesy",
+    "fields": [
+      "Geodesy and Geoinformatics",
+      "Spatial Data Infrastructure",
+      "Cartography and GIS",
+      "Civil Engineering (Infrastructure)"
+    ],
+    "keywords": [
+      "geospatial data integration",
+      "cadastral harmonisation",
+      "topological consistency",
+      "coordinate reference systems",
+      "spatial database management",
+      "INSPIRE directive",
+      "multi-source data fusion",
+      "datum transformation",
+      "land administration",
+      "spatial data quality"
+    ],
+    "openTo": [
+      "joint projects with companies working on spatial data management, land information systems, or infrastructure asset management",
+      "contract research on cadastral data quality assessment and CRS transformation",
+      "consulting on INSPIRE compliance and geospatial database design",
+      "industrial PhD supervision for candidates from surveying, GIS, or infrastructure companies",
+      "student internships in GIS and spatial database topics",
+      "equipment access (GNSS reference data, FME Workbench licences, PostGIS infrastructure)"
+    ],
+    "bio": {
+      "recordId": "R0971",
+      "field": "bio",
+      "text": "Katarina Đorđević completed her undergraduate and master's studies at the Faculty of Technical Sciences, University of Novi Sad, graduating in 2005 and 2008 respectively, before receiving her PhD in geodesy and geoinformatics from the same institution in 2013. She joined the Department of Civil Engineering and Geodesy as an assistant professor in 2014 and was promoted to associate professor in 2020. Her research group focuses on integrating heterogeneous geospatial datasets from cadastral, topographic, and utility sources, with particular attention to topological consistency validation, coordinate reference system transformations, and spatial database harmonisation under national and European standards. She teaches courses in geodesy, spatial data infrastructure, and GIS. The group regularly uses QGIS, PostGIS, FME Workbench, and ArcGIS Pro, and maintains access to GNSS reference station data through a bilateral agreement with the Serbian Geodetic Authority."
+    },
+    "industryExperience": {
+      "recordId": "R0971",
+      "field": "industry_experience",
+      "text": "Đorđević worked as a technical consultant for a municipal utility company in Novi Sad between 2010 and 2012, supporting the migration of their network GIS from a proprietary format to a PostGIS-based system. She has since maintained informal advisory contacts with several municipal cadastral offices in Vojvodina."
+    },
+    "notes": {
+      "recordId": "R0971",
+      "field": "notes",
+      "text": "Đorđević is currently co-supervising three PhD students and has limited availability for large new commitments before mid-2026; shorter consulting engagements or clearly scoped contract research are more feasible in the near term. She has expressed interest in working with companies at NTP Novi Sad involved in spatial data processing, smart city infrastructure, or digital twin development."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-10169",
+        "kind": "publication",
+        "title": "Transformation between the Gauss-Krüger D48 and ETRS89 reference frames using a locally refined grid shift model for northern Serbia",
+        "body": {
+          "recordId": "SYN-PUB-10169",
+          "field": "abstract",
+          "text": "Serbia's transition from the Bessel-ellipsoid-based D48 datum to ETRS89 requires transformation parameters that account for regional distortions accumulated over decades of triangulation adjustments. This paper derives a locally refined NTv2-compatible grid shift model for the Bačka and Srem subregions using 412 geodetic points with coordinates known in both systems. The grid was generated at 30-arcsecond spacing using least-squares collocation with a Gauss-Markov covariance function fitted to the observed residuals. Internal validation on a withheld set of 52 points shows a root-mean-square residual of 6.2 cm in planimetry and 9.1 cm in ellipsoidal height. The model outperforms the three-parameter Helmert solution currently recommended in national practice by a factor of 2.4 in planimetry. Grid shift files in NTv2 format are provided and tested for direct import into PROJ, QGIS, and FME."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10170",
+        "kind": "publication",
+        "title": "Topological validation of utility network datasets before integration into a municipal spatial database: a case study from Novi Sad water supply infrastructure",
+        "body": {
+          "recordId": "SYN-PUB-10170",
+          "field": "abstract",
+          "text": "Municipal spatial databases for infrastructure management frequently suffer from topological errors arising from independent data capture by different utility operators. This paper presents a structured validation workflow applied to the water supply network dataset of a medium-sized Serbian city, comprising approximately 1 800 km of pipe segments and 43 000 nodes. The workflow implements twelve topological rules covering dangling nodes, duplicate geometries, self-intersections, and network connectivity breaks, executed within a PostGIS environment extended with custom PL/pgSQL functions. Of the 43 000 nodes, 6.1% contained at least one topological error; dangling node errors accounted for 58% of all detected faults. After iterative semi-automated correction, the network reached full topological planarity sufficient for hydraulic simulation. Processing time was reduced by 67% compared to a manual correction baseline carried out by municipal technicians in a prior project phase. The approach is intended to be generalisable to other utility network types without significant modification."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00852",
+        "kind": "publication",
+        "title": "Harmonising land parcel data across administrative boundaries: a comparison of procedural approaches under the INSPIRE Land Cover and Cadastral Parcels themes",
+        "body": {
+          "recordId": "SYN-PUB-00852",
+          "field": "abstract",
+          "text": "Cross-border harmonisation of cadastral parcel datasets is required by the INSPIRE directive but remains challenging in practice due to differing national data models, geometry encodings, and attribute semantics. This paper compares three procedural approaches—direct attribute mapping, intermediate conceptual schema mediation, and instance-level transformation using feature manipulation—applied to a paired dataset of 28 000 parcels along a section of the Croatian-Serbian boundary. Data were obtained from the Croatian State Geodetic Administration and the Serbian Real Estate Cadastre for a 15 km stretch of the Danube floodplain. Attribute alignment covered parcel identifier structures, tenure type classifications, and area measurement methods. Geometric discrepancies at the boundary line reached up to 4.2 m, attributable to independent densification of the state border base. The paper quantifies attribute mapping completeness (87–94% depending on approach), geometry reconciliation rate, and processing time, and recommends a hybrid schema-mediation approach for routine operational use."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-03492",
+        "kind": "publication",
+        "title": "Detecting inconsistencies in multi-epoch cadastral boundary datasets using persistent homology",
+        "body": {
+          "recordId": "SYN-PUB-03492",
+          "field": "abstract",
+          "text": "Cadastral parcel databases accumulated over long periods often contain geometric inconsistencies arising from boundary updates that were not propagated to all dependent layers. This paper investigates the use of persistent homology, specifically Vietoris-Rips filtration on point clouds derived from parcel corner coordinates, to identify topological anomalies indicative of incomplete updates. A dataset of 9 400 parcels in a suburban fringe zone of Novi Sad spanning four cadastral update epochs (1987, 1999, 2008, 2019) was used. Persistent H0 and H1 features were computed and compared across epochs; anomalous persistence intervals flagged 312 boundary segments requiring manual inspection, of which 278 (89%) were confirmed as genuine inconsistencies by a cadastral surveyor. Computation was performed using the Gudhi library in Python. The method requires no prior knowledge of intended parcel topology and is applicable to legacy datasets lacking structured change history. Runtime on the test dataset was under four minutes on a standard workstation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10171",
+        "kind": "publication",
+        "title": "Integrating scanned analogue cadastral plans into a georeferenced vector database: accuracy evaluation of rubber-sheet versus affine transformation strategies",
+        "body": {
+          "recordId": "SYN-PUB-10171",
+          "field": "abstract",
+          "text": "Large quantities of Serbian cadastral information exist only as scanned analogue plans produced between 1945 and 1975. This paper evaluates the geometric accuracy achievable when converting 47 scanned plan sheets covering a 620-hectare mixed agricultural-urban area to georeferenced vector format. Two transformation strategies were compared: a global affine transformation using 8–12 control points per sheet, and a piecewise rubber-sheet transformation using a triangulated irregular network. Control points were identified by matching plan corner marks and boundary intersections to contemporary GNSS-surveyed field positions. The rubber-sheet approach achieved a mean residual error of 0.38 m versus 1.04 m for the affine approach, measured at 30 independent check points per sheet. However, rubber-sheeting introduced local geometric distortions at sheet edges that degraded topological consistency between adjacent sheets, necessitating a post-processing edge-matching step. The paper provides a decision framework for choosing between the two approaches based on plan age, condition, and intended use."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10172",
+        "kind": "publication",
+        "title": "Quality dimensions of volunteered geographic information for cadastral supplementation: an evaluation framework applied to OpenStreetMap building footprints",
+        "body": {
+          "recordId": "SYN-PUB-10172",
+          "field": "abstract",
+          "text": "Volunteered geographic information is increasingly considered as a supplementary or gap-filling source in formal cadastral datasets, particularly for building footprint data in areas with outdated surveys. This paper proposes an evaluation framework covering five quality dimensions—positional accuracy, completeness, attribute richness, semantic consistency, and temporal currency—and applies it to OpenStreetMap building footprints in four Vojvodina municipalities where cadastral building layers have not been updated since 2005. OSM footprints were compared against a reference dataset derived from 0.15 m aerial imagery from 2022. Completeness ranged from 41% to 78% across municipalities, positional RMSE from 1.1 m to 2.6 m, and semantic consistency (building type and use attribution) was below 30% in all areas. Results suggest OSM is useful for detecting unmapped structures but not for direct integration into formal cadastral registers without significant validation effort. The framework is designed to be reusable and operationalised as a semi-automated QGIS model."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10173",
+        "kind": "publication",
+        "title": "Automated detection of coordinate reference system metadata errors in geospatial dataset repositories: a rule-based approach",
+        "body": {
+          "recordId": "SYN-PUB-10173",
+          "field": "abstract",
+          "text": "Public geospatial data portals frequently contain datasets with incorrectly declared or missing coordinate reference system (CRS) metadata, leading to silent misregistration when data are consumed in GIS workflows. This paper describes a rule-based detection system that identifies likely CRS metadata errors by comparing declared CRS against geometric extents, coordinate value ranges, and resolution patterns without requiring external ground truth. The system was applied to 3 214 datasets downloaded from four national and regional open data portals covering Serbia, Bosnia and Herzegovina, and North Macedonia. Of these, 7.3% had incorrect CRS declarations and a further 4.1% had missing CRS metadata. Errors were unevenly distributed, with older datasets and raster files exhibiting higher error rates. The detection pipeline is implemented in Python using GDAL/OGR and produces a structured error report with suggested corrections. False positive rate on a manually validated subset of 400 datasets was 6.8%."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10174",
+        "kind": "publication",
+        "title": "A data model for managing CRS transformation provenance in multi-source spatial databases",
+        "body": {
+          "recordId": "SYN-PUB-10174",
+          "field": "abstract",
+          "text": "When geospatial datasets originating from different sources and reference frames are integrated into a single spatial database, the transformation steps applied to each dataset are rarely recorded in a queryable form, making it difficult to reproduce or audit derived products. This paper proposes a relational provenance data model that tracks, for each geometry or geometry collection, the source CRS, target CRS, transformation method, parameter set version, and operator identity. The model is implemented as an extension to a PostGIS schema and evaluated on a case study involving the integration of six datasets (cadastral, topographic, utility, remote sensing) spanning four source CRS. A query interface allows users to retrieve full transformation chains for any geometry in the database. Overhead in database size was 3–5% and query performance degradation under typical spatial queries was below 2%. The model is designed to be compatible with W3C PROV-O for export to semantic web environments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06299",
+        "kind": "publication",
+        "title": "Evaluating the fitness for purpose of the Serbian cadastral base map for use as a reference layer in municipal urban planning GIS",
+        "body": {
+          "recordId": "SYN-PUB-06299",
+          "field": "abstract",
+          "text": "Municipal urban planning in Serbia relies on the cadastral base map as a primary spatial reference, yet no systematic assessment of its fitness for planning-specific purposes has been conducted at a national scale. This paper develops a fitness-for-purpose assessment framework based on six criteria—positional accuracy, completeness, topological correctness, attribute currency, semantic alignment with planning ontology, and access and licensing constraints—and applies it to the cadastral datasets of eight municipalities of varying size and development pressure in the Vojvodina and Šumadija regions. Data were obtained directly from municipal cadastral offices under a research agreement. Positional accuracy (assessed by GNSS check survey, n=2 400 points) varied from 0.3 m to 2.1 m RMSE across municipalities. Topological correctness was below 95% in six of eight municipalities. Attribute currency was rated adequate in three municipalities. The paper concludes with a scoring matrix and identifies the principal bottlenecks for routine planning use."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10175",
+        "kind": "publication",
+        "title": "Harmonisation of multi-source subsurface utility datasets for a 3D cadastre pilot in a dense urban environment",
+        "body": {
+          "recordId": "SYN-PUB-10175",
+          "field": "abstract",
+          "text": "Three-dimensional cadastres for subsurface utility infrastructure require harmonising data from multiple operators who record geometry, attributes, and depth information using different conventions and at different levels of accuracy. This paper reports on a pilot implementation covering a 1.2 km² district of central Novi Sad involving six utility operators (electricity, gas, water supply, sewerage, telecommunications, and district heating). A common 3D data model was designed as a profile of the OGC CityGML Utility Network ADE, with explicit representation of vertical position uncertainty derived from as-built survey records, ground-penetrating radar measurements, and design drawings. Of 89 km of recorded utility lines, 34% had no reliable depth information; for these, a Gaussian uncertainty model was assigned based on utility type and installation period. Geometric conflicts between utility geometries were detected at 1 240 locations, of which 61% were attributable to CRS inconsistencies. Conflict resolution procedures and their effect on topological coherence of the 3D model are described."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10176",
+        "kind": "publication",
+        "title": "Minimum viable spatial data infrastructure components for small and medium municipalities in the Western Balkans: a gap analysis and implementation roadmap",
+        "body": {
+          "recordId": "SYN-PUB-10176",
+          "field": "abstract",
+          "text": "Most guidance on spatial data infrastructure (SDI) implementation is oriented toward national or regional actors, leaving small and medium municipalities without practical frameworks appropriate to their resources. This book chapter synthesises findings from structured interviews with cadastral and IT staff in 23 municipalities across Serbia, Bosnia and Herzegovina, and Montenegro (combined population range 8 000–120 000), supplemented by review of 47 municipal geoportals and data catalogues. A gap analysis framework covering data holdings, metadata practice, interoperability, institutional capacity, and legal compliance is developed and applied. Results show that fewer than 30% of surveyed municipalities maintain a machine-readable metadata catalogue and fewer than 15% publish data in INSPIRE-compliant formats. The chapter proposes a three-tier minimum viable SDI model scaled to municipal capacity, together with a phased implementation roadmap prioritising cadastral and utility datasets as foundational layers. Cost estimates and open-source toolchain recommendations are included."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02450",
+        "kind": "publication",
+        "title": "Probabilistic Flood Hazard Maps Under Climate Projections for the Sava Lowlands: Combining Regional Climate Model Ensembles with a 2-D Hydraulic Solver",
+        "body": {
+          "recordId": "SYN-PUB-02450",
+          "field": "abstract",
+          "text": "Flood frequency analysis for infrastructure design conventionally relies on historical discharge records, which may not represent future hydroclimatic conditions. This study propagated an ensemble of 18 EURO-CORDEX regional climate model runs at 0.11° resolution through a calibrated HBV hydrological model and a TELEMAC-2D hydraulic model to derive probabilistic flood hazard maps for a 120 km reach of the lower Sava for the 2071–2100 period under RCP 4.5 and RCP 8.5. The ensemble spread in projected 100-year flood peak was ±41% around the ensemble median under RCP 8.5, substantially larger than the sampling uncertainty derived from the historical record alone. Inundation extent under the 90th-percentile RCP 8.5 projection exceeded the present-day 100-year inundation area by 18%. The analysis highlights that climate model uncertainty dominates total uncertainty for long planning horizons and should be reflected in updated flood risk zoning ordinances in Serbia and Bosnia and Herzegovina."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07903",
+        "kind": "publication",
+        "title": "Deployment challenges and lessons learned from long-term SHM on five Vojvodina road bridges",
+        "body": {
+          "recordId": "SYN-PUB-07903",
+          "field": "abstract",
+          "text": "This chapter summarises field experience accumulated over six years of monitoring five reinforced concrete road bridges in the Autonomous Province of Vojvodina, ranging in age from 22 to 61 years at the time of initial instrumentation. Bridge spans varied from 18 to 67 metres and structural types included solid slabs, T-girders, and voided decks. For each structure, the chapter describes the sensor layout rationale, installation procedure, observed hardware failures and their remediation, and the quality of modal data recovered. Across all five sites, cumulative monitoring exceeded 14 000 node-days. Hardware failure modes included antenna corrosion (three incidents), battery depletion faster than predicted due to low winter temperatures (seven incidents), and firmware crashes attributed to memory overflow under high-traffic vibration amplitudes (two incidents). Modal tracking continuity, defined as the fraction of 20-minute windows yielding at least three identifiable modes, averaged 83 % over all sites and seasons. Practical recommendations are given for enclosure design, battery sizing, and firmware robustness in continental-climate deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01544",
+        "kind": "publication",
+        "title": "Sensitivity of Back-Calculated Subgrade Moduli to Measurement Spacing in FWD Testing on Low-Traffic Roads in Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-01544",
+          "field": "abstract",
+          "text": "Falling weight deflectometer tests were performed on twelve rural road sections in Vojvodina with varying subgrade soil types, including loess and alluvial clay deposits. Deflection bowls were recorded at sensor spacings of 200, 300, and 450 mm, and back-calculation was carried out using an iterative least-squares algorithm calibrated against laboratory resilient modulus measurements from undisturbed core samples. Results showed that reducing sensor spacing from 450 to 200 mm improved subgrade modulus prediction accuracy by 11 to 18 percent depending on soil type, with the largest gains observed for silty clay profiles. Seasonal testing in April and October revealed modulus differences of up to 35 percent on sections with shallow water tables, underscoring the importance of measurement timing. The study recommends a minimum of two FWD campaigns per year for maintenance planning on roads with fine-grained subgrades in the Pannonian region."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0468",
+        "kind": "project",
+        "title": "Cross-Border Cadastral Data Harmonisation and Transformation Infrastructure for the Danube Region",
+        "body": {
+          "recordId": "SYN-PRJ-0468",
+          "field": "summary",
+          "text": "CADASTRANS addressed technical barriers to sharing and comparing cadastral parcel data across the Hungary-Serbia border, with a focus on coordinate reference system alignment, attribute schema mediation, and topological quality assurance. The project produced a shared transformation grid for the border zone, a feature manipulation engine workflow for schema conversion between Hungarian and Serbian national formats, and a prototype cross-border data access service conforming to INSPIRE OGC WFS standards. Katarina Đorđević led the work package on data quality assessment and transformation infrastructure, supervising two research staff and one PhD student at the Novi Sad side. Outputs included four technical reports, two peer-reviewed papers, and a publicly accessible demonstration geoportal operated by the Vojvodina Institute for Nature Conservation as associated partner."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0469",
+        "kind": "project",
+        "title": "Foundations for a 3D Subsurface Utility Cadastre in the Republic of Serbia",
+        "body": {
+          "recordId": "SYN-PRJ-0469",
+          "field": "summary",
+          "text": "SUBSURFACE3D is developing the methodological and technical foundations required for a future national 3D cadastre of subsurface utility infrastructure in Serbia. The project covers three main themes: harmonisation of heterogeneous data from utility operators into a unified 3D data model based on CityGML Utility Network ADE; quantification and modelling of depth uncertainty for utilities with incomplete as-built records; and assessment of legal and institutional preconditions for integrating 3D utility data into the formal Real Estate Cadastre. Fieldwork involves GPR surveys and GNSS-referenced direct measurement at exposed utility points in two pilot municipalities. The project team at Novi Sad consists of Đorđević and three researchers from geodesy and civil engineering. A stakeholder working group including the Serbian Geodetic Authority and four utility companies meets quarterly."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0877",
+        "kind": "project",
+        "title": "Low-Cost Sensor Networks for Condition Assessment of Ageing Reinforced Concrete Bridges in the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-0877",
+          "field": "summary",
+          "text": "The project deployed and evaluated low-cost wireless accelerometer networks on eight reinforced concrete road bridges in Serbia and Bosnia and Herzegovina with deck ages ranging from 28 to 54 years. Key objectives were to establish temperature-compensated modal baselines, develop and validate automated anomaly detection algorithms, and produce a practical deployment guideline for road administrations. Field campaigns totalled over 22 000 sensor-days of continuous data. The project also conducted a laboratory phase involving four large-scale beam specimens subjected to progressive damage, used for validating feature extraction methods developed from the field data. A draft technical guideline for low-budget bridge monitoring was submitted to the Serbian Roads directorate."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates from surveying, GIS, or infrastructure companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "open_to",
+            "quote": "joint projects with companies working on spatial data management, land information systems, or infrastructure asset management",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0971",
+            "field": "open_to",
+            "quote": "contract research on cadastral data quality assessment and CRS transformation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

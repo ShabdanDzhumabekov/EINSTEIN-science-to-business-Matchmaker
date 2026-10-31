@@ -1,0 +1,203 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0954",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0954",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What explains the apparent increase in manganese and the reported iron exceedances in AquaCikl’s greywater systems: upstream variability, reagent or media release, biologically mediated cycling, or inadequate removal? A first experiment would combine hydraulically matched stage sampling and metal balances with controlled live-versus-abiotic media and tank-deposit tests to assess transfer of drinking-water biofilm methods to industrial greywater, before testing an existing-equipment process change.",
+    "rationale": [
+      {
+        "text": "Ljubojević investigates relationships between iron-cycling microorganisms and corrosion chemistry, providing a relevant basis for examining a biological contribution without assuming it causes these exceedances.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1116",
+            "field": "summary",
+            "quote": "The work package addresses the relationship between Gallionella and Sideroxydans population dynamics, corrosion tubercle chemistry and discolouration events.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her experimental work combines chemical measurements, molecular monitoring and mass-balance reasoning, which could support discrimination between competing process explanations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05972",
+            "field": "abstract",
+            "quote": "Bulk water was sampled twice weekly for nitrite, nitrate, ammonia, heterotrophic plate count and qPCR-based enumeration of Nitrosomonas-related amoA gene copies.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05972",
+            "field": "abstract",
+            "quote": "Total inorganic nitrogen mass balance confirmed that the observed nitrite originated from ammonia released by chloramine autodecomposition.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience developing field sampling and molecular monitoring workflows linked to operational water-quality records.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1115",
+            "field": "summary",
+            "quote": "development of a qPCR-based three-marker panel (amoA, nxrB, cyc2) benchmarked against water quality records.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-1115",
+            "field": "summary",
+            "quote": "Deliverables included an open-access reference sequence database, field sampling protocol documentation, and a training workshop for utility technicians held in Novi Sad in November 2022.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project is consistent with her stated openness to contract research on industrial water systems.",
+        "sources": [
+          {
+            "recordId": "R0954",
+            "field": "open_to",
+            "quote": "contract research: metagenomic profiling of industrial water systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Use the company-reported manganese and iron limits as provisional acceptance thresholds, confirming the applicable regulatory text, sampling point and analytical basis before intervention verification.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Diagnosis must resolve the apparent manganese increase using representative, hydraulically matched stage samples and metal balances rather than presuming coagulation failure or microbial causation.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Candidate changes must fit existing installations without major equipment replacement; repeating dose or pH adjustments needs new mechanistic justification because those changes have already failed to produce meaningful improvement.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "increasing coagulant dose by 30 percent and dropping pH from 7.4 to 6.9 during coagulation, without meaningful improvement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope field diagnosis and intervention testing within the four-month company staffing commitment and three available installations, leaving time before the five-month reinspection.",
+        "sources": [
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "with access to three operating installations for field testing.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Structure the engagement through a University agreement addressing IP and agree response-time expectations; her notes identify possible delays but do not establish current availability.",
+        "sources": [
+          {
+            "recordId": "R0954",
+            "field": "notes",
+            "quote": "prefers that any engagement is structured through a formal agreement with the University to ensure IP clarity.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0954",
+            "field": "notes",
+            "quote": "review requests during manuscript preparation phases may delay response times.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest evidence concerns iron cycling and nitrification in drinking-water infrastructure, not manganese removal in industrial greywater. The first experiment must test matrix compatibility and biological versus abiotic metal release; manganese-specific capability and intervention efficacy are not established.",
+      "Microbial abundance or iron-cycling genes may correlate with deposits without causing exceedances. Reagent contamination, media leaching, accumulated solids and upstream variability remain competing explanations.",
+      "Inlet and outlet concentrations alone do not establish a metal mass balance in a recycling system. Hydraulic timing, recirculation, flow differences and dissolved-versus-total measurements could produce an apparent increase.",
+      "Actual iron concentrations, the applicable compliance protocol and metal-analysis turnaround are unknown, potentially delaying diagnosis and verification.",
+      "Researcher availability, project budget, laboratory throughput and permissible operational interruptions remain unknown and could prevent completion within the company’s staffing window."
+    ],
+    "questions": [
+      "Can Ljubojević commit named staff and laboratory capacity for a four-month joint project, with agreed turnaround times and a University agreement?",
+      "What budget is available for metal analyses, controlled release tests, targeted molecular work and field trials, and who will lead the non-biological process-chemistry investigation?",
+      "Can AquaCikl provide the applicable regulation and permit, compliance sampling location, total-versus-dissolved definitions, actual iron results and accredited laboratory methods?",
+      "Were inlet and outlet samples matched to hydraulic residence time, flow and recirculation? Can the team obtain process diagrams, operating histories, dosing records and upstream client-process changes?",
+      "Which media, coagulant batches, sludge inventories, holding times and cleaning regimes are used at each affected site, and can representative reagents, media and tank deposits be sampled?",
+      "Can the first experiment include hydraulically matched stage sampling, analytical blanks and recovery controls, reagent and media leach tests, and controlled live-versus-abiotic incubations with metal and redox measurements?",
+      "Which existing-equipment adjustments and temporary side-stream trials are permissible, and what repeated accredited measurements will be required to assess compliance before reinspection?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0954",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0954",
+        "version": 1
+      }
+    ]
+  }
+}

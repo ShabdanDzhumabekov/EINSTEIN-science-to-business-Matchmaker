@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-31-02-552Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "constraint_contradicted",
+        "severity": "blocking",
+        "claim": "Require attack-free training/calibration, authorised access, Yocto on-device execution within agreed budgets, and no measurable forwarding-latency increase under agreed representative loads.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "A few of them have been running their networks for twenty years with no security monitoring at all, so if they were compromised they would not know.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We have plenty of normal traffic — we have collected several terabytes of captures from consenting clients over the past three years — but we have nothing labelled as malicious.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Requiring attack-free training and calibration makes the pilot depend on a cleanliness guarantee the company cannot provide, contradicting the proposal's own treatment of the archives as unlabelled. Require no attack-labelled training or calibration instead, and explicitly assess sensitivity to possible contamination.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

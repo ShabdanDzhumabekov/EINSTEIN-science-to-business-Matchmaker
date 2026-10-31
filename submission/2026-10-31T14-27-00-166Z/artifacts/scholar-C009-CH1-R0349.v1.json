@@ -1,0 +1,305 @@
+{
+  "ref": {
+    "artifactId": "scholar-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-27-00-166Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0349",
+    "name": "Stefan Dragić",
+    "faculty": "Prirodno-matematički fakultet",
+    "department": "Department of Mathematics and Informatics",
+    "fields": [
+      "Information Retrieval",
+      "Natural Language Processing",
+      "Text Mining",
+      "Computational Linguistics"
+    ],
+    "keywords": [
+      "information retrieval",
+      "script normalization",
+      "transliteration",
+      "Serbian text",
+      "mixed-script indexing",
+      "Cyrillic-Latin",
+      "inverted index",
+      "query expansion",
+      "morphological analysis",
+      "corpus linguistics"
+    ],
+    "openTo": [
+      "joint projects with companies that manage large Serbian-language document collections",
+      "contract research on internal search engine customization",
+      "consulting on script normalization and multilingual indexing",
+      "industrial PhD supervision for candidates with a software background",
+      "student internships (master's level) focused on NLP pipeline development"
+    ],
+    "bio": {
+      "recordId": "R0349",
+      "field": "bio",
+      "text": "Stefan Dragić je diplomirao matematiku na Prirodno-matematičkom fakultetu Univerziteta u Novom Sadu 2001. godine, a doktorirao je 2008. na istom fakultetu, s tezom o indeksiranju višeskriptnih tekstualnih korpusa. Nakon postdoktorskog boravka na Univerzitetu u Beču (2009–2010), vratio se na Departman za matematiku i informatiku, gde je 2019. izabran u zvanje redovnog profesora. Njegova istraživačka grupa bavi se pronalaženjem informacija u dokumentima koji sadrže mešovito ćirilično-latinično srpsko pismo, normalizacijom skripte, transliteracijom kao korakom u pretprocesiranju i izgradnjom invertovanih indeksa otpornih na varijacije pisma. Predaje kurseve iz upravljanja bazama podataka i rudarenja teksta. Laboratorija koristi sopstvene korpuse pravnih i novinarskih tekstova."
+    },
+    "industryExperience": {
+      "recordId": "R0349",
+      "field": "industry_experience",
+      "text": "U periodu 2022–2023. sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke, u okviru ugovornog istraživanja trajanja 18 meseci."
+    },
+    "notes": {
+      "recordId": "R0349",
+      "field": "notes",
+      "text": "Dragić preferira saradnju s kompanijama koje imaju jasno definisan i dovoljno veliki tekstualni korpus na srpskom jeziku; nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente. Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-04278",
+        "kind": "publication",
+        "title": "Izgradnja invertovanog indeksa za srpske tekstove sa mešovitim pismom: osnovna metodologija",
+        "body": {
+          "recordId": "SYN-PUB-04278",
+          "field": "abstract",
+          "text": "U radu se opisuje metodologija izgradnje invertovanog indeksa koji istovremeno obrađuje ćirilična i latinična pojavljivanja srpskih reči bez prethodnog potpunog prevođenja u jedno pismo. Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji, a zatim se fonemski ključevi koriste kao primarni identifikatori u indeksu. Eksperimenti su sprovedeni na korpusu od 120 000 novinskih članaka preuzetih iz tri srpska dnevna lista u periodu 2000–2008. Mere preciznosti i odziva upoređene su s dva bazična sistema koji koriste isključivo ćirilični, odnosno isključivo latinični indeks. Predloženi sistem postiže F1 vrednost od 0,81 u zadatku ad-hoc pretrage, što je povećanje od 14 procentnih poena u odnosu na bolji od dva bazična sistema. Rad takođe razmatra pitanje memorijskog otiska hibridnog indeksa i predlaže strategiju kompresije rečnika."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04279",
+        "kind": "publication",
+        "title": "Phoneme-Based Token Canonicalization for Serbian Script Unification",
+        "body": {
+          "recordId": "SYN-PUB-04279",
+          "field": "abstract",
+          "text": "Serbian is officially written in both Cyrillic and Latin scripts, and documents frequently contain tokens in both scripts within a single sentence or paragraph. This paper presents a token canonicalization procedure in which each token is mapped to a phoneme sequence using deterministic grapheme-to-phoneme rules derived from Serbian orthographic conventions, and the resulting phoneme string serves as the canonical form for retrieval purposes. We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions. The phoneme-based canonical form reduced the out-of-vocabulary rate from 9.3% to 2.1% compared with a Latin-only baseline and from 11.7% to 2.4% compared with a Cyrillic-only baseline. Precision at rank 10 improved by 8 percentage points over both baselines. Edge cases involving foreign loanwords and proper nouns are discussed, and a set of override rules is proposed for the 230 most frequent exceptions identified in the corpus."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-00225",
+        "kind": "publication",
+        "title": "Uticaj morfološke redukcije na preciznost pretrage srpskih višeskriptnih dokumenata",
+        "body": {
+          "recordId": "SYN-PUB-00225",
+          "field": "abstract",
+          "text": "Srpski jezik je morfološki bogat, što znači da ista leksema može imati nekoliko desetina flektivnih oblika. U ovom radu ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa. Koristimo tri stemera dostupna za srpski jezik — dva pravilo-zasnovana i jedan statistički — i kombinujemo ih s fonemskim kanonizacionim korakom opisanim u prethodnim radovima. Evaluacija je sprovedena na podskupu CLEF 2012 kolekcije koji sadrži dokumente u oba pisma. Rezultati pokazuju da redosled operacija (stemovanje pre ili posle normalizacije skripte) utiče na odziv, pri čemu stemovanje posle normalizacije daje konzistentno bolje rezultate za sve tri kombinacije (poboljšanje od 4 do 9 procentnih poena u MAP). Rad daje i analizu grešaka za 50 ručno pregledanih upita."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04280",
+        "kind": "publication",
+        "title": "Cross-Script Query Expansion Using Transliteration Variants in Serbian Web Search",
+        "body": {
+          "recordId": "SYN-PUB-04280",
+          "field": "abstract",
+          "text": "Users searching Serbian-language web content often type queries in one script while relevant documents are stored in the other. This paper studies the effect of automatically expanding queries with their transliteration variants before submission to an inverted index. We constructed a test collection of 1 800 queries and 210 000 web pages crawled from .rs domains, with relevance judgments pooled from four assessors. Three expansion strategies were compared: (1) appending the full transliteration variant, (2) appending only tokens whose transliteration differs from the original by more than two characters, and (3) expanding only named entities detected by a rule-based tagger. Strategy 3 achieved the best mean average precision of 0.497, versus 0.431 for no expansion, while reducing index bloat to 6% over the baseline index size. We also report retrieval latency measurements on a commodity server, showing that the overhead introduced by expansion remains under 12 ms at the 95th percentile for queries up to eight tokens."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04281",
+        "kind": "publication",
+        "title": "Automatska detekcija i korekcija nedoslednosti pisma u srpskim digitalnim arhivima",
+        "body": {
+          "recordId": "SYN-PUB-04281",
+          "field": "abstract",
+          "text": "Digitalni arhivi srpskih novina i institucionalnih dokumenata često sadrže nedoslednosti gde je isti dokument delom u ćirilici, a delom u latinici, ponekad zbog grešaka pri skeniranju ili uredničkih intervencija. Ovaj rad predlaže metod automatske detekcije takvih nedoslednosti na nivou rečenice, korišćenjem klasifikatora koji kao atribute uzima raspodelu skriptnih blokova, učestalosti bigrama i morfosintaksičke signale. Klasifikator je treniran na 9 400 ručno označenih rečenica iz arhive jednog novosadskog lista i testiran na 2 100 rečenica iz arhive beogradskog lista. Postiže preciznost od 0,91 i odziv od 0,88 u klasi nedoslednih rečenica. Korak korekcije primenjuje fonemsku transliteraciju na detektovane nedosledne tokene. Eksperiment na donstremu (pretragom dokumenta) pokazuje da korigovana verzija arhive daje veću tačnost od nekorigovane za 7 procentnih poena u prosečnoj preciznosti."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04282",
+        "kind": "publication",
+        "title": "A Benchmark Corpus for Mixed-Script Serbian Information Retrieval",
+        "body": {
+          "recordId": "SYN-PUB-04282",
+          "field": "abstract",
+          "text": "Reproducible evaluation of retrieval systems for Serbian requires a shared test collection that explicitly accounts for mixed-script documents. This paper describes the construction of SrMIR-1, a benchmark corpus comprising 95 000 documents from four genres — news, law, literature, and social media — with 600 topics and graded relevance judgments produced by 12 trained assessors following TREC-style pooling at depth 30. Approximately 41% of documents contain tokens in both scripts. Inter-assessor agreement, measured by Cohen's kappa, was 0.73 across all topics. The paper reports baseline results for five retrieval models: BM25, language modelling with Dirichlet smoothing, a transliteration-aware BM25 variant, a neural dense retrieval model fine-tuned on Serbian, and a hybrid sparse–dense model. The transliteration-aware BM25 variant achieves the highest nDCG@10 of 0.531 among sparse models, while the hybrid model reaches 0.587. The corpus is publicly available under a Creative Commons licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04283",
+        "kind": "publication",
+        "title": "Indeksiranje pravnih dokumenata sa heterogenim pismom: studija slučaja sudske prakse u Srbiji",
+        "body": {
+          "recordId": "SYN-PUB-04283",
+          "field": "abstract",
+          "text": "Sudske odluke u Srbiji nastajale su kroz nekoliko decenija u različitim pisarskim praksama i sistemima za obradu teksta, što je rezultovalo korpusom u kome se isti pravni termin pojavljuje u ćiriličnom i latiničnom obliku, ponekad unutar istog paragrafa. Ovaj rad opisuje sistem za pretragu koji je prilagođen ovoj karakteristici i koji se koristi u pilot projektu jednog regionalnog suda. Sistem koristi troslojan pristup: normalizaciju pisma, pravno-specifičnu listu sinonima i rangirač koji uvažava strukturu dokumenta (izreka, obrazloženje, dispozitiv). Evaluacija je sprovedena na 5 800 upita sudskog osoblja tokom tromesečnog pilot perioda. Sistem je postigao prosečnu preciznost od 0,74, uz korisničku ocenu zadovoljstva 4,1 od 5. Rad diskutuje tehničke i organizacione izazove uvođenja pretražnog sistema u pravnu praksu."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01686",
+        "kind": "publication",
+        "title": "Character-Level Neural Transliteration for Serbian: Training Data, Architecture Choices, and Error Analysis",
+        "body": {
+          "recordId": "SYN-PUB-01686",
+          "field": "abstract",
+          "text": "Deterministic rule-based transliteration between Serbian Cyrillic and Latin scripts handles the majority of tokens correctly, but fails on foreign loanwords, abbreviations, and alphanumeric strings. This paper investigates whether a character-level sequence-to-sequence neural model can handle these exceptions while remaining accurate on regular tokens. We trained models on a corpus of 2.3 million aligned Cyrillic–Latin token pairs extracted from parallel editions of official gazettes, experimenting with LSTM encoder-decoder architectures with attention, as well as a character-level transformer. The transformer model achieved a character error rate of 0.4% on regular tokens and 3.1% on the exception classes, compared with 0.1% and 19.4% respectively for the deterministic baseline. We performed a detailed error analysis categorising 800 mistransliterated tokens by type. The paper concludes that a cascaded system — deterministic rules followed by the neural model for detected exceptions — outperforms either component alone, reaching a token error rate of 0.6% overall."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04284",
+        "kind": "publication",
+        "title": "Script-Aware Passage Retrieval for Serbian Question Answering",
+        "body": {
+          "recordId": "SYN-PUB-04284",
+          "field": "abstract",
+          "text": "Open-domain question answering over Serbian-language document collections requires a passage retrieval component that is robust to the script in which both the question and the passage are written. This paper describes an adaptation of a BM25-based passage retrieval pipeline in which the tokenizer applies script normalization before indexing and at query time. We built an evaluation set of 340 factoid questions with 1 to 4 correct passages each, drawn from a mixed-script encyclopedia-style corpus of 180 000 passages. We compared four configurations: BM25 with no normalization, BM25 with script normalization, a dense bi-encoder model trained on Serbian data, and a hybrid of the latter two. The script-normalized BM25 retrieves at least one correct passage in the top 20 for 72% of questions, a gain of 17 percentage points over unnormalized BM25. The hybrid model reaches 81%. Failure analysis highlights questions containing transliterated foreign proper nouns as the main remaining challenge."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02734",
+        "kind": "publication",
+        "title": "Pretraga u realnom vremenu nad tokom vesti na srpskom jeziku s mešovitim pismom",
+        "body": {
+          "recordId": "SYN-PUB-02734",
+          "field": "abstract",
+          "text": "Sistemi za pretragu u realnom vremenu nad tokovima vesti zahtevaju inkrementalno ažuriranje indeksa s niskim kašnjenjem. Kada tok vesti dolazi iz više izvora koji koriste različita pisma, inkrementalni indekser mora da normalizuje pismo svake pristigle stavke pre umetanja. Ovaj rad opisuje arhitekturu sistema koji obrađuje do 1 200 novinskih članaka u minuti, sa prosečnim kašnjenjem indeksiranja od 340 ms na jednom serverskom čvoru s 16 jezgara. Normalizacija pisma i fonemska kanonizacija implementirane su kao paraleln cevovod koji dodaje manje od 15% vremenske cene u odnosu na sistem bez normalizacije. Evaluacija preciznosti pretrage sprovedena je na simuliranom toku od 2,1 miliona članaka prikupljenih tokom 30 dana. Sistem je prilagodljiv i može se horizontalno skalirati dodavanjem čvorova za normalizaciju nezavisno od čvorova za indeksiranje."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02735",
+        "kind": "publication",
+        "title": "Evaluating Pretrained Multilingual Embeddings for Mixed-Script Serbian Document Retrieval",
+        "body": {
+          "recordId": "SYN-PUB-02735",
+          "field": "abstract",
+          "text": "Pretrained multilingual transformer models encode text at the subword level and might be expected to handle script variation implicitly, since their vocabularies cover both Serbian scripts. This paper measures to what extent this expectation holds in practice. We fine-tuned three publicly available multilingual models of different sizes on SrMIR-1, the mixed-script Serbian retrieval benchmark, and compared their nDCG@10 scores against a script-normalizing BM25 baseline and a hybrid model. Without fine-tuning, the multilingual models rank below the BM25 baseline on mixed-script queries. After fine-tuning on 12 000 query–passage pairs, the best model reaches nDCG@10 of 0.601, above the hybrid BM25 baseline of 0.587. However, for queries and documents that mix scripts within a single sentence, fine-tuned models underperform by up to 9 percentage points relative to their performance on single-script inputs, indicating that subword tokenization does not fully resolve the alignment problem. We release the fine-tuning splits and evaluation scripts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04285",
+        "kind": "publication",
+        "title": "Normalizacija skripte u kontekstu pretraživača internih dokumenata za mala i srednja preduzeća: iskustva iz prakse",
+        "body": {
+          "recordId": "SYN-PUB-04285",
+          "field": "abstract",
+          "text": "Mala i srednja preduzeća u Srbiji čuvaju interne dokumente — ugovore, zapisnike, izveštaje — u mešovitom pismu bez konzistentne politike. Ovaj rad opisuje iskustva iz tri pilot implementacije interne pretrage zasnovane na open-source pretražnom okviru dopunjenom modulom za normalizaciju pisma razvijenim u okviru naše istraživačke grupe. Pilot kompanije imale su kolekcije između 8 000 i 45 000 dokumenata. Merili smo preciznost pretrage pre i posle uvođenja normalizacije, korisnički odaziv i troškove uvođenja. U svim slučajevima normalizacija je poboljšala preciznost za najmanje 11 procentnih poena. Administrativni troškovi uvođenja bili su niski jer je modul integrisan kao dodatak bez izmene ostatka sistema. Rad identifikuje i ograničenja: module treba ažurirati kada kompanija uvede novu terminologiju u jednom pismu, jer inicijalni rečnik sinonima nije potpun."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04286",
+        "kind": "publication",
+        "title": "SrMIR-2: Extending the Mixed-Script Serbian Retrieval Benchmark to Social Media and Administrative Registers",
+        "body": {
+          "recordId": "SYN-PUB-04286",
+          "field": "abstract",
+          "text": "SrMIR-1, released in 2017, covered news, law, literature, and general web content. Since then, social media posts and administrative e-government documents have become important retrieval targets, both exhibiting pronounced script mixing and informal orthography. This paper describes SrMIR-2, which adds two new document registers to the benchmark: 60 000 posts from a Serbian microblogging platform and 28 000 administrative forms and decisions from three municipal e-government portals. We created 280 new topics for these registers with relevance judgments from six trained assessors (kappa = 0.69). Baseline experiments show that script-normalizing BM25 outperforms unnormalized BM25 by a larger margin on social media (22 percentage points in nDCG@10) than on administrative documents (9 points), attributable to the higher rate of informal transliteration in social media. The benchmark is released with code for reproducible evaluation. We also report an ablation study isolating the contribution of named-entity handling in the normalization pipeline."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04287",
+        "kind": "publication",
+        "title": "Latency–Accuracy Trade-offs in Script-Normalizing Retrieval Pipelines Under Production Load",
+        "body": {
+          "recordId": "SYN-PUB-04287",
+          "field": "abstract",
+          "text": "Deploying script-normalizing retrieval in production requires careful attention to latency, especially when normalization involves neural components. This paper presents a systematic study of trade-offs along the latency–accuracy spectrum for five pipeline configurations ranging from a purely deterministic rule-based normalizer to a full transformer-based normalizer, tested on a simulated production workload derived from query logs of a Serbian news aggregator with peak loads of 340 queries per second. We measure mean reciprocal rank, P@5, and end-to-end latency at the 50th, 90th, and 99th percentiles on a server cluster of four nodes. The deterministic normalizer adds 3 ms median latency with MRR of 0.61. The transformer-based normalizer achieves MRR of 0.68 but adds 47 ms at the 99th percentile. A cascaded configuration — deterministic normalizer with neural fallback triggered only for out-of-vocabulary tokens — reaches MRR of 0.66 with a 99th-percentile latency overhead of only 9 ms. Detailed profiling data and configuration files are provided."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04288",
+        "kind": "publication",
+        "title": "A Corpus Study of Designer Intent Encoding in Commercial Game Level Data",
+        "body": {
+          "recordId": "SYN-PUB-04288",
+          "field": "abstract",
+          "text": "Understanding how human designers encode intent in level geometry is necessary for building generators that align with design goals. We manually annotated 620 levels from six released commercial-style games distributed under open licenses, tagging 14 categories of spatial intent including chokepoint placement, reward pacing, and difficulty escalation. Inter-annotator agreement reached Cohen's κ = 0.71 across three annotators. Statistical analysis reveals that chokepoint density correlates negatively with level width-to-length ratio (Pearson r = −0.43, p < 0.001) and that reward pacing patterns cluster into four archetypes by k-means on pacing-curve descriptors. We use these findings to propose a vocabulary of 14 soft-constraint templates that can be embedded in a CSP-based generator. Preliminary generation tests using three templates show that 73% of generated levels are classified into the intended archetype by a trained SVM classifier."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01783",
+        "kind": "publication",
+        "title": "Tabu Search Heuristics for the Heterogeneous Workforce Scheduling Problem",
+        "body": {
+          "recordId": "SYN-PUB-01783",
+          "field": "abstract",
+          "text": "We describe a tabu search framework for constructing and improving feasible schedules for a heterogeneous workforce consisting of employees with partially overlapping skill sets. The problem arises in a light-manufacturing context where tasks require combinations of up to three certified competencies and must be completed within narrow time windows over a 28-day horizon. The benchmark set comprises 15 instances ranging from 30 to 120 employees, generated from anonymised data provided by an industrial partner in the Novi Sad economic zone. The tabu search uses a compound neighbourhood that combines shift swaps, skill-reassignment moves, and day-off exchanges. A frequency-based long-term memory component was included to diversify the search after prolonged stagnation. Computational experiments show that the heuristic finds solutions within 2.1% of a known lower bound on average across all instances, with a worst-case gap of 5.8%. Run times remain below 90 seconds on a standard desktop processor for instances with up to 120 employees."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04289",
+        "kind": "publication",
+        "title": "Sampling Theorems on Homogeneous Trees via Spectral Theory of the Laplace Operator",
+        "body": {
+          "recordId": "SYN-PUB-04289",
+          "field": "abstract",
+          "text": "Homogeneous trees of degree q+1 carry a natural group structure when q is a prime power, allowing the application of harmonic analysis on p-adic groups. This paper establishes a Whittaker–Shannon-type sampling theorem for band-limited functions on such trees, where band-limitation is defined via the spherical Fourier transform and the spectrum of the combinatorial Laplacian. We prove that the critical sampling density for exact reconstruction equals (q+1)/2q per vertex in the natural metric on the tree, and provide an explicit interpolation formula using spherical functions as kernels. Stability under perturbation of sample locations is quantified in terms of the tree's girth. Numerical experiments on trees with q = 2, 3, 5 show that the interpolation formula converges in at most 15 iterations of a conjugate-gradient scheme to relative errors below 10^{-8}."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04290",
+        "kind": "publication",
+        "title": "A Comparison of Signature Truncation Depths for Short Financial Price Paths",
+        "body": {
+          "recordId": "SYN-PUB-04290",
+          "field": "abstract",
+          "text": "The path signature of a continuous or piecewise-linear path provides a graded sequence of features whose informational content grows with truncation depth. In practice, choosing a truncation depth involves a trade-off between feature dimensionality and expressive power. We study this trade-off systematically on intraday foreign-exchange price paths of varying length, constructed from one-minute mid-price data over a 24-month window covering four currency pairs. For each path length (30, 60, 120, and 240 minutes) and truncation depth (2 through 6), we train a regularised logistic regression to predict direction of the subsequent 15-minute return, reporting area under the ROC curve across 500 walk-forward validation windows. Depth 4 consistently offers the best accuracy-to-dimensionality ratio across all path lengths tested, with depth 5 providing marginal gains at substantially higher cost when the number of channels exceeds 5. We further show that lead-lag transformation of the bivariate price-volume path before signature extraction improves AUC by an average of 0.023. These findings provide practical guidance for practitioners applying signature methods to financial tick data without access to large computational budgets."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01334",
+        "kind": "publication",
+        "title": "Conditional tail expectation for bivariate environmental risk under asymmetric dependence",
+        "body": {
+          "recordId": "SYN-PUB-01334",
+          "field": "abstract",
+          "text": "The conditional tail expectation (CTE), also known as expected shortfall, is a coherent risk measure widely used in financial risk management but less frequently applied to environmental hazard quantification. This paper derives analytical expressions for the bivariate CTE when the dependence structure belongs to the class of Archimedean copulas with completely monotone generators, covering the Clayton, Gumbel–Hougaard and Joe families. The expressions are used to compute the expected discharge at one gauging station given that discharge at a second station simultaneously exceeds its empirical 95th, 99th and 99.9th percentiles, using records from eleven paired stations in the Tisza basin. Clayton copula fits indicate substantial asymmetry in lower and upper tail dependence, and the resulting CTEs are 12 to 38 percent higher than those implied by the bivariate Gaussian model with matched Kendall τ. Simulation experiments confirm the accuracy of the analytical results for sample sizes as small as n = 200."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0546",
+        "kind": "project",
+        "title": "Mixed-Script Information Retrieval for South Slavic Administrative and Legal Documents",
+        "body": {
+          "recordId": "SYN-PRJ-0546",
+          "field": "summary",
+          "text": "Projekat MixIR bavio se izgradnjom pretražnih sistema prilagođenih srpskim administrativnim i pravnim dokumentima koji sadrže mešovito pismo. Cilj je bio razvoj metodoloških osnova i softverskih alata za normalizaciju pisma, transliteraciju i rangiranje koji se mogu primeniti u javnom sektoru. U okviru projekta izgrađen je anotiran korpus od 150 000 dokumenata, razvijen je open-source modul za normalizaciju pisma kompatibilan s popularnim okvirima za pretragu, i sprovedene su tri pilot implementacije u saradnji s jednom opštinskom upravom i jednim regionalnim sudom. Rezultati su objavljeni u sedam naučnih radova i prezentovani na tri međunarodne konferencije."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0547",
+        "kind": "project",
+        "title": "Serbian–Romanian Cross-Language Information Retrieval with Script and Morphology Normalization",
+        "body": {
+          "recordId": "SYN-PRJ-0547",
+          "field": "summary",
+          "text": "Projekat SERIR istražuje višejezičnu pretragu između srpskog i rumunskog, s posebnim fokusom na dokumentima pogranične administracije koji se čuvaju u oba jezika i, na srpskoj strani, u oba pisma. Stefan Dragić rukovodi radnim paketom koji pokriva normalizaciju skripte i transliteraciju na srpskoj strani, dok partnerski tim iz Temišvara razvija morfološku normalizaciju za rumunski. Zajednički test korpus sadrži 40 000 dokumenata u četiri žanra. Projektom se finansiraju dva doktoranda i jedno postdoktorsko istraživačko mesto."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates with a software background",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "contract research on internal search engine customization",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "non_english"
+    ]
+  }
+}

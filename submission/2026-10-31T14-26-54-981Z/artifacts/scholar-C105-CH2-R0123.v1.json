@@ -1,0 +1,235 @@
+{
+  "ref": {
+    "artifactId": "scholar-C105-CH2-R0123",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0123",
+    "name": "Boris Rakić",
+    "faculty": "BioSense Institute",
+    "department": "Data Science and Bioinformatics Group",
+    "fields": [
+      "Bioinformatics",
+      "High-Performance Computing",
+      "Genomics",
+      "Cloud Computing"
+    ],
+    "keywords": [
+      "read alignment",
+      "variant calling",
+      "pipeline parallelisation",
+      "cloud cost optimisation",
+      "clinical genomics",
+      "WGS/WES processing",
+      "HPC scheduling",
+      "workflow management",
+      "GATK",
+      "genomic data compression"
+    ],
+    "openTo": [
+      "joint projects",
+      "contract research",
+      "consulting",
+      "student internships"
+    ],
+    "bio": {
+      "recordId": "R0123",
+      "field": "bio",
+      "text": "Boris Rakić received his B.Sc. in Computer Science from the University of Novi Sad in 2011 and his M.Sc. in Bioinformatics from the same institution in 2014. He completed his Ph.D. at the University of Novi Sad in 2019, with a thesis on parallelising short-read alignment algorithms for shared-memory architectures. Since 2020 he has been a Research Associate in the Data Science and Bioinformatics Group at BioSense Institute, where the group develops scalable data pipelines for precision agriculture and clinical genomics. He contributes to teaching a graduate-level course on biological data analysis. He works primarily with the group's on-premises HPC cluster and has hands-on experience with AWS and Google Cloud genomics environments."
+    },
+    "industryExperience": {
+      "recordId": "R0123",
+      "field": "industry_experience",
+      "text": "Boris Rakić completed a three-month consulting engagement in 2023 with a Novi Sad-based health-tech startup to audit and optimise their cloud-based WES processing pipeline, reducing their per-sample cloud spend by approximately 35 %."
+    },
+    "notes": {
+      "recordId": "R0123",
+      "field": "notes",
+      "text": "He is particularly interested in partnerships with companies that generate or process genomic data at scale and face concrete cost or throughput constraints; he is less interested in purely theoretical or database-curation collaborations."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-01612",
+        "kind": "publication",
+        "title": "Cache-Oblivious Data Layouts for Short-Read Alignment on Shared-Memory Multicore Systems",
+        "body": {
+          "recordId": "SYN-PUB-01612",
+          "field": "abstract",
+          "text": "Short-read alignment is a memory-bandwidth-limited operation, and cache behaviour strongly influences throughput on modern multicore CPUs. We reformulated the FM-index traversal used in a widely adopted aligner to use a cache-oblivious layout derived from a van Emde Boas tree arrangement of the Burrows–Wheeler transform array. Experiments on a 32-core Intel Xeon system using 150 bp paired-end reads from a 30× human whole-genome dataset showed a 1.8× reduction in last-level cache misses and a 22 % wall-clock speedup compared to the reference implementation at equivalent accuracy. The layout adds roughly 4 % to index construction time and approximately 6 % to peak memory usage. We also measured performance on a smaller 16-core ARM server-class machine, observing a 17 % speedup, indicating the approach transfers across architectures. Profiling data are provided for three additional organisms with genome sizes ranging from 135 Mb to 2.4 Gb. The reformulated index is available as a patch against the original tool's source repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01613",
+        "kind": "publication",
+        "title": "Evaluating SLURM Scheduling Policies for Mixed-Priority Genomic Workloads on a University HPC Cluster",
+        "body": {
+          "recordId": "SYN-PUB-01613",
+          "field": "abstract",
+          "text": "University HPC clusters frequently host both long-running genomic assembly jobs and short, interactive variant-calling tasks submitted by clinical collaborators. We ran a six-month measurement study on a 640-core cluster at the University of Novi Sad, logging 18 400 job submissions across three user groups. We then replayed the trace under five SLURM scheduling configurations—backfill-only, priority preemption, gang scheduling, fair-share with decay factor 0.5, and a hybrid policy—using a discrete-event simulator we built in Python. The hybrid policy combining fair-share weighting with selective preemption of low-priority assembly jobs reduced median wait time for clinical variant-calling tasks from 47 minutes to 11 minutes, at the cost of a 3 % increase in total cluster makespan over the trace period. We describe configuration parameters, discuss trade-offs for clusters with heterogeneous node types, and release the simulator and anonymised job trace under an open licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01614",
+        "kind": "publication",
+        "title": "Parallelisation Strategies for GATK HaplotypeCaller in Clinical Whole-Exome Sequencing Cohorts",
+        "body": {
+          "recordId": "SYN-PUB-01614",
+          "field": "abstract",
+          "text": "GATK HaplotypeCaller remains a bottleneck in clinical WES pipelines because its local de novo assembly step is largely single-threaded at the per-sample level. We systematically evaluated three strategies for throughput improvement on a cohort of 412 anonymised WES samples (mean coverage 85×, 38–62 Mb target): genomic-interval scatter–gather with 100 Mb shards, sample-level parallelism across nodes, and a combination of both. Job orchestration used Snakemake with a SLURM backend. The scatter–gather approach alone reduced mean per-sample runtime from 4.1 hours to 41 minutes on 32 cores. Combining it with sample-level parallelism across 8 nodes processed the full 412-sample cohort in 19 hours wall time compared to 70 hours in the sequential baseline. We measured concordance against the baseline using precision and recall on GIAB benchmark variants: SNP precision 99.91 %, recall 99.87 %; indel precision 99.34 %, recall 99.21 %. Configuration files and Snakemake rules are provided as supplementary material."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01615",
+        "kind": "publication",
+        "title": "Cost Modelling for Spot-Instance-Based Genomic Pipelines on Commercial Cloud Platforms",
+        "body": {
+          "recordId": "SYN-PUB-01615",
+          "field": "abstract",
+          "text": "Spot and preemptible instances offer substantial per-hour cost reductions for cloud compute but introduce job interruption risk that can increase total cost when checkpointing is not implemented. We built a cost model for WGS alignment and variant-calling pipelines that incorporates hourly spot price distributions sampled over 90 days from two cloud providers, mean time to interruption distributions per instance family, and checkpoint overhead for BWA-MEM2 and GATK stages. Simulations over 500 synthetic cohort scenarios (50–1000 samples, 10×–30× coverage) showed that naive use of spot instances without checkpointing increased effective cost by 18–34 % relative to on-demand pricing in high-volatility markets. A bidding and checkpoint strategy derived from the model reduced pipeline cost by 41 % on average relative to on-demand in stable price periods. We validated the model against actual billing records from a 200-sample pilot run. The model is implemented as a Python library with a command-line interface."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01616",
+        "kind": "publication",
+        "title": "Lossless Compression of Aligned BAM Files Using Reference-Relative Encoding of Soft-Clipped Reads",
+        "body": {
+          "recordId": "SYN-PUB-01616",
+          "field": "abstract",
+          "text": "Soft-clipped bases in BAM files are stored as raw sequence and contribute disproportionately to file size in samples with adapter contamination or structural-variant-rich regions. We characterised soft-clip content in 60 WGS BAM files (mean 30× coverage, 150 bp reads) and found that soft-clipped bases account for 9–23 % of stored bases but represent only 2–6 % of aligned bases. We designed a reference-relative encoding scheme that replaces soft-clipped sequences with a compact difference representation against a local reference window, embedded within a standard BAM extension tag so that existing downstream tools read the files without modification. Across the 60-file benchmark, the scheme reduced total BAM size by 7.4 % on average with a maximum of 14.1 % in the most clip-heavy sample. Encoding and decoding add 4 % and 2 % respectively to BAM I/O time. The codec is implemented as a standalone C utility compatible with htslib."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01617",
+        "kind": "publication",
+        "title": "Benchmarking Short-Read Aligners on Clinically Relevant Structural Variant Loci",
+        "body": {
+          "recordId": "SYN-PUB-01617",
+          "field": "abstract",
+          "text": "Alignment accuracy at structural variant breakpoints affects downstream SV calling quality, yet most aligner benchmarks focus on SNPs and small indels. We constructed a synthetic benchmark dataset of 2 200 breakpoint-spanning read pairs spanning 110 curated SV loci (deletions, tandem duplications, and inversions ranging from 50 bp to 50 kb) derived from a validated clinical variant database. Four short-read aligners were evaluated: two BWT-based and two graph-based tools. We measured mapping quality distribution, soft-clip rate within 200 bp of breakpoints, and downstream SV call concordance using two SV callers. Graph-based aligners achieved 12–18 percentage point higher recall at inversion breakpoints compared to BWT-based aligners, but produced 2.3× more multimapping reads genome-wide, increasing false-positive SV calls by 9 %. Runtime and memory differences between aligner classes were substantial: graph-based alignment required 3.1× more peak RAM and 2.4× more wall time per sample. Results are tabulated per SV class and size bin."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01618",
+        "kind": "publication",
+        "title": "Dynamic Resource Allocation for Multi-Tenant Genomic Workflow Execution Using Kubernetes and Nextflow",
+        "body": {
+          "recordId": "SYN-PUB-01618",
+          "field": "abstract",
+          "text": "Research institutes increasingly run multiple concurrent genomic projects sharing the same cloud-native infrastructure. Static resource quotas lead to either underutilisation during low-demand periods or job queuing during peaks. We describe and evaluate a dynamic allocation layer sitting between Nextflow and a Kubernetes cluster, which adjusts CPU and memory requests per workflow task based on rolling estimates of per-task resource consumption drawn from a historical job database. The system was deployed on a 96-vCPU Kubernetes cluster running up to eight simultaneous WGS projects over a four-month period. Compared to static quotas tuned by an experienced administrator, the dynamic allocator reduced mean cluster idle fraction from 31 % to 11 % and cut average pipeline makespan by 19 % across 34 production runs. Memory overcommit events dropped from 6.2 % to 1.4 % of tasks. We discuss failure-mode handling and the overhead of the allocation service itself, which consumed under 0.3 % of cluster CPU on average."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01619",
+        "kind": "publication",
+        "title": "Quantifying the Effect of Reference Genome Version Mismatches on Clinical Variant Reporting in a Diagnostic Setting",
+        "body": {
+          "recordId": "SYN-PUB-01619",
+          "field": "abstract",
+          "text": "Clinical laboratories sometimes receive sequencing data aligned to GRCh37 while their reporting databases reference GRCh38, or vice versa, and liftover coordinates introduce small but non-trivial error rates. We processed 180 WES samples from a regional diagnostic laboratory three times each: aligned natively to GRCh37, aligned natively to GRCh38, and lifted over from GRCh37 to GRCh38 using a standard chain-file tool. Variant concordance between native GRCh38 and lifted-over calls was 99.61 % for SNPs and 97.83 % for indels. Discordant calls were enriched in segmental duplication regions and near microsatellite tracts. We identified 14 variants in clinically annotated disease genes that were present in native calls but absent after liftover, and 9 that appeared only after liftover due to coordinate shifts at homopolymer runs. The findings quantify a practically relevant error source and inform a simple quality-control step we recommend be added to diagnostic pipelines that accept externally aligned data."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01620",
+        "kind": "publication",
+        "title": "Change-point localisation under irregular sampling intervals in harvester grain elevator sensor data",
+        "body": {
+          "recordId": "SYN-PUB-01620",
+          "field": "abstract",
+          "text": "CAN-bus message scheduling on agricultural machines is priority-driven rather than synchronous, resulting in irregular inter-sample intervals that violate the stationarity assumptions of most change-point detection methods. This paper characterises the sampling irregularity in grain elevator load-cell and speed encoder channels (median interval 210 ms, coefficient of variation 0.41) and proposes an adaptation of the PELT algorithm using a continuous-time Ornstein-Uhlenbeck cost function to handle non-uniform sampling. The method is compared with naive application of standard PELT (assuming uniform intervals), BOCPD with Gaussian predictive distribution, and a simple linear interpolation pre-processing followed by standard PELT. Data come from six harvesters across two seasons, with 44 annotated change-point events derived from video-synchronised field observations. The OU-PELT method achieved a mean absolute localisation error of 1.8 seconds, compared to 4.1 seconds for naive PELT and 2.7 seconds for BOCPD. Computational cost of OU-PELT was approximately 3× that of standard PELT but remained under 50 ms per 1000-observation segment on a laptop CPU."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01621",
+        "kind": "publication",
+        "title": "Impact of Coding Quality Variability on Readmission Model Fairness Across Hospitals of Different Sizes",
+        "body": {
+          "recordId": "SYN-PUB-01621",
+          "field": "abstract",
+          "text": "Hospital readmission prediction models trained on pooled multi-site data may encode systematic coding quality differences between large academic centres and smaller regional hospitals, producing models that perform well on average but poorly for patients from lower-resource institutions. Using a five-site harmonised cohort (n = 28 700), this study quantified coding completeness via a proposed completeness score derived from expected code density for given diagnoses, and stratified model performance metrics by site. AUC ranged from 0.79 at the largest academic site to 0.68 at the smallest district hospital. Post-hoc reweighting of training instances by inverse completeness score narrowed this gap to 0.79 versus 0.74 with no significant change in overall AUC. Fairness-aware calibration further reduced site-level calibration discrepancy measured by expected calibration error from 0.07 to 0.04. Implications for deployment of shared readmission models in heterogeneous health systems are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01622",
+        "kind": "publication",
+        "title": "Incorporating Protein Domain Co-occurrence Features into Graph Neural Network Drug–Target Interaction Models",
+        "body": {
+          "recordId": "SYN-PUB-01622",
+          "field": "abstract",
+          "text": "Standard drug–target interaction (DTI) models based on graph neural networks typically encode proteins through sequence-derived embeddings or raw amino acid k-mer features. Protein domain composition, however, captures functionally relevant structural units that are often conserved across distantly related proteins and can be shared between otherwise dissimilar targets. We propose a domain co-occurrence feature layer that augments existing protein node representations by embedding Pfam domain pair frequencies computed from a reference proteome of 20 318 reviewed human proteins. These enriched node features are fed into an attentional graph encoder operating on a bipartite drug–protein graph. Experiments on the BindingDB filtered benchmark (17 246 interactions, 1 340 unique drugs, 762 unique targets) show that adding domain co-occurrence features improves AUROC from 0.869 to 0.891 and reduces the performance gap on low-data target classes (fewer than 10 known ligands) by 6.3 percentage points. An ablation study confirms that the gain is attributable specifically to domain co-occurrence rather than increased parameter count."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-01623",
+        "kind": "publication",
+        "title": "Упоредна анализа метода избора обележја за предикцију клиничких исхода на малим скуповима података",
+        "body": {
+          "recordId": "SYN-PUB-01623",
+          "field": "abstract",
+          "text": "Рад анализира перформансе пет метода избора обележја — филтерских, обмотачких и уграђених — примењених на четири клиничка скупа података с мање од 2.000 примерака свaki. Коришћени су Pearson-ов коефицијент корелације, LASSO регресија, Random Forest важност обележја, рекурзивна елиминација обележја и мутуална информација. Свака метода оцењена је кроз стабилност избора (Jaccard индекс преко 50 итерација bootstrap узорковања) и утицај на AUROC логистичке регресије на истим скуповима. Резултати показују да ниједна метода конзистентно не доминира; LASSO показује највишу стабилност (просечни Jaccard 0,61), али не и највишу предиктивну вредност. Рад закључује да је за мале скупове оправдано ансамблско рангирање обележја које комбинује рангове из виш метода, уз потврду на независном скупу."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0254",
+        "kind": "project",
+        "title": "Cloud-Adaptive Genomic Workflow Orchestration for Clinical Research in the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-0254",
+          "field": "summary",
+          "text": "GENOMFLO addresses the high computational cost and long turnaround time of clinical WGS and WES pipelines at research hospitals in Serbia and the region. The project develops and validates a cloud-cost-aware orchestration layer that dynamically selects between on-premises HPC and spot-instance cloud execution depending on queue state, sample priority, and real-time cloud pricing. It also provides standardised containerised workflow components for alignment and variant calling that can be deployed by laboratories with limited bioinformatics staff. Pilot deployments are planned at two regional clinical partners. The project includes training activities for clinical bioinformaticians and releases all software under an open-source licence."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0255",
+        "kind": "project",
+        "title": "Scalable Variant Detection Pipelines for Plant Breeding Genomics",
+        "body": {
+          "recordId": "SYN-PRJ-0255",
+          "field": "summary",
+          "text": "AGRIVAR focused on adapting variant-calling pipelines originally designed for human clinical genomics to the needs of plant breeding programmes in Vojvodina, where large polyploid crop genomes and population-scale resequencing studies create distinct computational challenges. Boris Rakić contributed to the HPC pipeline engineering component, adapting scatter–gather variant-calling workflows for wheat and sunflower genome assemblies and tuning SLURM resource requests for large polyploid genome indexes. The project produced benchmark datasets for two commercially important crop species and a set of open workflow templates deposited in the group's public repository."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0178",
+        "kind": "project",
+        "title": "Federated Anomaly and Reliability Monitoring for Networked Agricultural Machinery",
+        "body": {
+          "recordId": "SYN-PRJ-0178",
+          "field": "summary",
+          "text": "FARMWATCH developed privacy-preserving, distributed anomaly detection methods for agricultural machinery fleets operating across multiple ownership boundaries. The project designed federated learning protocols adapted for ensemble anomaly detectors and validated them on real telemetry from tractor and harvester fleets in Vojvodina and partner sites in Romania. A secondary workstream produced an annotated benchmark dataset of multivariate agricultural telemetry with verified fault labels, which was released publicly at project close. The project trained two Ph.D. students and resulted in four journal publications. Total budget was approximately 2.8 million RSD over three years."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0123",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0123",
+            "field": "open_to",
+            "quote": "contract research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

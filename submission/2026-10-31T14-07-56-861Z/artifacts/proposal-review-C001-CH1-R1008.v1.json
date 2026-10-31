@@ -1,0 +1,125 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Run a proposed six-week passive-replay experiment using selected site captures and separate Modbus/BACnet bench scenarios. Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds, training and calibrating without attack examples. Select configurations on tuning data, then freeze them for independent evaluation. Proposed go/no-go targets for the best configuration, whichever wins: separately for each protocol, detect at least 90% of injected episodes within 60 seconds",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "What we actually need is something that learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The proposal does not define the injected conditions, what constitutes an episode, when its 60-second clock starts, or how an alert is matched to it; an easy or heavily repeated scenario could therefore satisfy 90% without establishing meaningful anomaly coverage. Add a prerequisite to agree and freeze a per-protocol scenario inventory, episode/onset and matching rules, and scenario counts or weighting before held-out evaluation, keeping evaluation injections out of configuration selection.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "obtain correct explanation paraphrases from at least 80% of participating plant managers",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The manager denominator is stated, but neither the explanations each manager must assess nor the rule for a correct paraphrase and an overall successful manager is defined; success on one selectively easy explanation could pass without demonstrating useful comprehension. Make acceptance conditional on a pre-agreed explanation sample covering both protocols and a short scoring rubric defining per-explanation correctness and per-manager success.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “these archives are therefore unlabelled, not verified clean” and “false positives from an earlier supervised classifier led clients to disable alerts.” Proposed next steps: “Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds, training and calibrating without attack examples.” These identify and address the concrete need for site-specific Modbus/BACnet anomaly detection without confirmed attack training data and without recreating intolerable alert burden."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “training and calibrating without attack examples”; “Also require passive operation, agreed CPU/RAM limits, Yocto integration, and no measurable forwarding-latency increase at agreed peak load”; “Missing evidence or prerequisites means no pass”; and “postpone broader integration if staffing proves insufficient.” Open questions: “Can both parties secure the NDA, client permissions and university data-sharing agreement needed for independent site captures and Modbus/BACnet bench evaluation?” Verified facts: “ArmaturaSec states capacity for one to two part-time engineers.” These respect attack-data, on-device execution, access and staffing constraints, with hardware limits and permissions explicitly unresolved prerequisites rather than assumed capabilities."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss's Modbus research estimated register-level distributions of request timing, payload values, and function-code sequences. ICAROS developed threshold calibration without labelled attack data”; and “Kiss's research identifies risks from short training captures and a trade-off between false alarms and response latency.” Our inference: “Modbus and other-protocol results do not validate BACnet, ArmaturaSec sites, or ProtoSense hardware.” These connect her documented methods to the proposed site-specific detector while identifying reported trade-offs and the limits of transfer."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec describes archive, bench, and firmware access under NDA. Kiss describes university testbed availability under a data-sharing agreement.” Proposed next steps: “Subject to agreement, ArmaturaSec's part-time engineers would supply permitted captures, parser outputs, current hardware and bench integration; Kiss would lead modelling, calibration and evaluation design.” Our inference: “Kiss's availability and staffing commitment remain unknown.” These distinguish documented resources from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps specify “selected site captures and separate Modbus/BACnet bench scenarios,” “Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds,” and “Select configurations on tuning data, then freeze them for independent evaluation.” They also propose “chronological training, tuning, and held-out evaluation periods spanning operating modes.” The baseline and temporal separation are present, but the injected conditions and episode construction are unspecified, so the detection experiment cannot yet be assessed or its acceptance interpreted."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “separately for each protocol, detect at least 90% of injected episodes within 60 seconds; generate at most one alert episode per observed site-day; and obtain correct explanation paraphrases from at least 80% of participating plant managers.” Alert burden is operationalized by “Merge alerts for the same site/entity separated by no more than five minutes; divide episode counts by complete capture hours/24, counting unresolved alerts,” and uncertain labels remain unknown. However, injected episodes lack a defined inventory, onset and detection-matching rule, and manager success lacks a defined explanation task and correctness rule; both targets could pass on selectively easy tests without demonstrating the intended capability."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds.” Potential benefits: “The experiment could establish whether site-specific detection offers tolerable alert burden and understandable explanations on current ProtoSense hardware.” Our inference: “neither manager comprehension nor attack-versus-fault discrimination is established.” These frame a comparison of detector packages and conditional feasibility, without claiming that the design separately identifies the effects of site specificity, calibration or model choice."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Transfer remains uncertain: Modbus and other-protocol results do not validate BACnet, ArmaturaSec sites, or ProtoSense hardware. Contaminated archives and automatic adaptation could also conceal persistent suspicious behaviour.” Verified facts identify “risks from short training captures and a trade-off between false alarms and response latency.” Proposed next steps: “Keep suspicious episodes out of baseline updates pending operator approval.” These name the main transfer, contamination, adaptation and published-method risks while leaving availability, permissions and resource limits open."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This proposal is conditional because Kiss's availability and staffing commitment remain unknown, despite her stated openness to joint projects.” Proposed next steps assign responsibilities “Subject to agreement,” and Open questions asks “Can Kiss confirm availability and staffing for this conditional joint project within a mutually agreed budget and scope?” These match her openness to joint projects without treating it as a staffing commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could establish whether site-specific detection offers tolerable alert burden and understandable explanations on current ProtoSense hardware, while identifying BACnet or integration gaps before a pilot”; and “Conditional on agreement and permissions, Kiss could test calibration and drift handling across unfamiliar sites and BACnet.” These are plausible, explicitly conditional benefits of the proposed operational-replay and bench experiment, not guarantees of deployment success."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.53,
+        0.9,
+        0.81,
+        0.94,
+        0.87,
+        0.84,
+        0.75
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

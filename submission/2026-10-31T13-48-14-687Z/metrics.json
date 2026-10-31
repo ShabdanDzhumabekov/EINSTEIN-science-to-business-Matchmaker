@@ -1,0 +1,11 @@
+{
+  "dispatchedRequests": 22,
+  "reportedCostUSD": 0.42712151799999987,
+  "requestsWithoutKnownBill": 0,
+  "criticInterventions": 1,
+  "models": [
+    "openai/gpt-6.1-sol",
+    "typesafe/jev-1.14",
+    "deepseek/deepseek-v4.1-flash-1017"
+  ]
+}

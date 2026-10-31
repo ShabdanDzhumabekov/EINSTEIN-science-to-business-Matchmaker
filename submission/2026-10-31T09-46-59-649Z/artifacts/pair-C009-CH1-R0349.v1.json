@@ -1,0 +1,177 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Could a script-normalizing, morphology-aware indexing and query pipeline that combines phoneme-based canonicalization with Serbian lemmatization or stemming and cross-script query expansion reduce LinguaBot's measured no-useful-result rate from about 18% to below 5% on real support queries while remaining maintainable as vocabulary changes? The first experiment would test this on LinguaBot's labelled support-query data and current Elasticsearch setup, not assume it transfers from the researcher's existing corpora.",
+    "rationale": [
+      {
+        "text": "The researcher has a directly relevant method for building an inverted index that handles both Cyrillic and Latin Serbian tokens through phoneme-based canonical forms.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work explicitly studies how stemming and lemmatization interact with script normalization, which matches LinguaBot's combined morphological-mismatch and script-confusion problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "Rezultati pokazuju da redosled operacija (stemovanje pre ili posle normalizacije skripte) utiče na odziv, pri čemu stemovanje posle normalizacije daje konzistentno bolje rezultate za sve tri kombinacije",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has measured cross-script query expansion against a no-expansion baseline, including index-bloat effects relevant to an Elasticsearch deployment.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "Strategy 3 achieved the best mean average precision of 0.497, versus 0.431 for no expansion, while reducing index bloat to 6% over the baseline index size.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied latency–accuracy trade-offs for script-normalizing retrieval pipelines, including a cascaded configuration designed to limit neural normalization overhead.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "A cascaded configuration — deterministic normalizer with neural fallback triggered only for out-of-vocabulary tokens — reaches MRR of 0.66 with a 99th-percentile latency overhead of only 9 ms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior contract-research experience adapting a search module for Serbian court decisions, close to LinguaBot's client-facing document search context.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The plan must attack the measured business failure mode: about 18% of real support queries returned no useful result, with more than half of those misses traced to morphological mismatch or script confusion.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "about 18% returned no useful result, and our analysis traced more than half of those misses directly to morphological mismatch or script confusion.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must tolerate automatic script mixing and must be updateable when new vocabulary arrives without requiring a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must be testable within six months and fit a modest tooling/data budget of about 8,000 EUR.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation can use the company's labelled query-response data and its two in-house linguists for annotation or validation.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The approach must fit an existing Elasticsearch-based retrieval stack whose current Croatian-oriented stemmer misses Serbian-specific forms.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's stated capacity is one smaller industrial contract or consultancy engagement, not an unlimited scope.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: much of the researcher's evidence comes from news, legal, benchmark or pilot corpora, not from LinguaBot's bank support queries; the first experiment must test on the company's mixed-script support data. Source: SYN-PUB-04278 reports experiments on a 2000–2008 newspaper corpus.",
+      "Maintenance risk: the researcher's own pilot work notes that the module must be updated when a company introduces new terminology in one script, because the initial synonym dictionary is incomplete. Source: SYN-PUB-04285 abstract.",
+      "Residual accuracy risk: foreign loanwords, abbreviations and proper nouns are known failure cases for deterministic transliteration, so exception handling must be planned. Source: SYN-PUB-04279 abstract.",
+      "Latency risk: a transformer-based normalizer adds 47 ms at the 99th percentile, so production chat/search latency budgets must be checked. Source: SYN-PUB-04287 abstract.",
+      "Budget and time risk: the company wants a six-month test with about 8,000 EUR, so data work, integration and evaluation must be tightly scoped. Source: C009-CH1 detail.",
+      "Researcher availability is unknown; his notes say he has capacity for one smaller industrial contract, but this does not confirm a six-month joint-project commitment."
+    ],
+    "questions": [
+      "Can Stefan Dragić confirm his availability and capacity for a six-month joint project or contract research, and whether industrial PhD supervision is also of interest?",
+      "What is the current Elasticsearch index mapping and Serbian analyzer chain, and can script normalization be inserted at both indexing and query time without a full re-index?",
+      "What privacy, licensing or client-consent terms apply to the 85,000 labelled query-response pairs and the 12,000-query bank sample?",
+      "How exactly is a 'no useful result' defined and measured today, and what baseline and evaluation set will be used to test the below-5% target?",
+      "Who will own and maintain the lexicon, exception rules and new product terminology after the six-month project, and how will updates be triggered?",
+      "What production latency, throughput and deployment constraints must the retrieval pipeline meet?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

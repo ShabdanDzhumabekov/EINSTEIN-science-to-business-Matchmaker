@@ -1,0 +1,203 @@
+{
+  "ref": {
+    "artifactId": "pair-C065-CH2-R0195",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0195",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can product-description and category signals, alone or in a lightweight hybrid recommender, improve product-page recommendations over best-seller sorting with only 500–2,000 transactions per client? The first experiment would test transfer from educational cold-start recommendation to one retail catalogue using time-based evaluation against popularity and collaborative-filtering baselines, without assuming an improvement.",
+    "rationale": [
+      {
+        "text": "Dragišić has directly investigated metadata-assisted hybrid recommendation for items without interaction histories, providing a relevant methodological starting point rather than a validated retail solution.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02511",
+            "field": "abstract",
+            "quote": "using a knowledge tracing model to generate pseudo-interaction vectors for new exercises based on their tagged knowledge components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02511",
+            "field": "abstract",
+            "quote": "then incorporating these vectors into a matrix factorisation pipeline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her recommendation evaluation work includes the popularity comparator and temporal leakage controls needed to reassess the company's failed collaborative-filtering approach.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02507",
+            "field": "abstract",
+            "quote": "a reproducible baseline suite comprising user-based CF, item-based CF, matrix factorisation (SVD and NMF), and a popularity baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02507",
+            "field": "abstract",
+            "quote": "Evaluation follows a strict time-based split to prevent future information leaking into training.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has examined sensitivity to metadata quality, which is relevant when assessing whether product categories can support recommendations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02511",
+            "field": "abstract",
+            "quote": "Sensitivity to the quality of knowledge component tagging is examined through a manual tag-corruption experiment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience contributing to a company's recommendation pipeline through a research partnership.",
+        "sources": [
+          {
+            "recordId": "R0195",
+            "field": "industry_experience",
+            "quote": "as a research partner on the ADALEARN project, contributing to the design of their recommendation pipeline.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The initial scope must work with the existing small datasets and limited traffic, target one client prototype, and retain best-seller sorting as the baseline; accumulating a much larger dataset is not an acceptable prerequisite.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "text",
+            "quote": "with only 500–2,000 transactions per client",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data access must be covered by a data-sharing agreement and use the offered anonymised transaction and catalogue data; additional behavioural logging cannot be assumed.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Integration and experiment support must fit approximately one developer-day per week from the company.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any deployed prototype must accommodate the company's WooCommerce/REST integrations and client-VPS deployment environment; compute requirements need checking against the researcher's cluster-based working environment.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0195",
+            "field": "bio",
+            "quote": "Her work relies primarily on the faculty's high-performance computing cluster and open educational datasets",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Publication and confidentiality terms should be agreed before work starts to accommodate the researcher's stated publication preference.",
+        "sources": [
+          {
+            "recordId": "R0195",
+            "field": "notes",
+            "quote": "She prefers collaborations that allow publication of results.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated hybrid uses educational knowledge components and learner models, not retail descriptions or purchase intent. Its transfer to substantially smaller retail logs is unvalidated and must be tested in the first benchmark.",
+      "There is no supplied evidence of product-text or multilingual recommendation expertise. Inconsistent descriptions or category labels could make content-based recommendations unreliable.",
+      "Sparse transactions and low traffic may leave both offline comparisons and an online A/B test inconclusive; offline ranking improvements would not establish conversion gains.",
+      "Researcher availability is explicitly unknown. Her stated partnership interests focus on learning and training platforms, so willingness to undertake this retail application still needs confirmation.",
+      "The total budget, deadline, VPS resources and availability of impression, click or session logs are unknown; these could prevent the intended evaluation or deployment."
+    ],
+    "questions": [
+      "Will Dragišić undertake a retail recommendation joint project, and what time commitment and start date can she offer?",
+      "Which client will supply the prototype dataset, and what are its catalogue size, languages, description completeness, category consistency and product turnover?",
+      "Do anonymised records retain timestamps, order-item links and stable user or session identifiers? Are product-page views, recommendation impressions and clicks available?",
+      "What counts as a useful recommendation: substitutes, complementary items or either? Which offline metric, minimum useful improvement and online business outcome should govern the decision to proceed?",
+      "What budget, delivery window, VPS CPU/RAM limits and response-time requirements apply, and who will own ongoing operation?",
+      "Can the data-sharing agreement permit publishable aggregate findings or reproducible methods without exposing client data?",
+      "Given current traffic, is an adequately informative online comparison feasible, and what decision will be made if the first benchmark shows no reliable advantage over best-sellers?"
+    ],
+    "outcome": "pair",
+    "taskId": "C065-CH2",
+    "researcherId": "R0195",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0195",
+        "version": 1
+      }
+    ]
+  }
+}

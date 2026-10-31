@@ -1,0 +1,174 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0493",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0493",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware geocoding and spatial modelling link partially located farm policies to hail exposure estimates and identify potentially underpriced portfolio segments more reliably than municipality-level loading? The first experiment would mask known policy coordinates to settlement level, test whether methods transferred from health registries recover useful exposure estimates, and compare held-out loss predictions while explicitly testing the limits of five-kilometre daily weather data.",
+    "rationale": [
+      {
+        "text": "Pejić has directly relevant experience adapting spatial smoothing to incomplete addresses in administrative insurance claims, although in health rather than agricultural insurance.",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "industry_experience",
+            "quote": "adapting registry-based spatial smoothing approaches to the fund's incomplete address fields.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His hierarchical geographic imputation methods address the company's settlement-only location problem and have an R implementation validated on real Vojvodina registry data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05817",
+            "field": "abstract",
+            "quote": "a missing street address is known to lie within a settlement, which lies within a municipality.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05817",
+            "field": "abstract",
+            "quote": "The procedure was implemented in R and validated on the Vojvodina CRC registry",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has evaluated Serbian address-geocoding methods against field-verified coordinates, providing relevant experience for measuring rural location uncertainty rather than treating matches as exact.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05812",
+            "field": "abstract",
+            "quote": "The ensemble approach also produced positional accuracy estimates; median offset from field-verified coordinates was 148 m for urban addresses and 540 m for rural addresses.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work provides a precedent for masked-location validation and evaluating both prediction error and uncertainty coverage.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05819",
+            "field": "abstract",
+            "quote": "A random 30% of geocoded cases were masked to simulate the incomplete-geocoding scenario.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05819",
+            "field": "abstract",
+            "quote": "Predictive performance was evaluated by mean absolute error and interval coverage at tract level.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level exposure must not be presented as directly observed: settlement-only policy locations and five-kilometre daily weather inputs impose spatial and temporal limits that the feasibility experiment must quantify.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must work within the reported three-year, approximately 1,200-policy dataset and use real location references; confirm that loss coordinates identify insured assets before using them as geocoding ground truth.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0493",
+            "field": "notes",
+            "quote": "He has expressed preference for partners who can supply real address or location data for validation work rather than purely synthetic datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any operational output must feed the existing Python quarterly pricing workflow rather than remain a standalone map; an integration owner is needed given the company's shared operational staffing.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The initial scope and schedule must accommodate limited supervisory capacity before mid-2027; actual availability remains unconfirmed.",
+        "sources": [
+          {
+            "recordId": "R0493",
+            "field": "notes",
+            "quote": "which limits capacity for large new commitments before mid-2027.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated methods concern residential cancer records and relatively smooth incidence surfaces, not farm parcels, narrow hail tracks or insured loss severity. Population-weighted allocation and spatial smoothing could misplace agricultural exposure or blur storm boundaries; the first masked-coordinate experiment must test this transfer.",
+      "Daily five-kilometre weather grids may not contain enough information to identify field-level hail intensity. Better geocoding alone cannot recover unobserved storm detail, and finer-resolution weather observations may be needed.",
+      "Three claim years may represent too few independent storms for stable validation. Geo-tagged losses alone may also give a biased view of exposure if non-claiming policies and coverage histories are unavailable.",
+      "The reported 18% excess does not establish exposure misclassification as its cause; repair inflation, coverage mix, deductibles or claims practices could also explain the gap.",
+      "Researcher availability, budget, deadline, data-access permissions and operational ownership are unknown. His stated joint-project interest concerns spatial health analysis, so willingness to undertake agricultural insurance work needs confirmation.",
+      "Operational adoption could fail despite a successful prototype: the company's earlier flood-risk mapping collaboration was completed but has not been integrated into pricing."
+    ],
+    "questions": [
+      "Will Pejić undertake a bounded agricultural-insurance joint project, and what time can he and his team commit before and after mid-2027?",
+      "Do the available records include all insured farms, including those without claims, with coverage periods, sums insured, deductibles, premiums, asset type and dated claim amounts?",
+      "What do the loss coordinates represent: damaged fields or buildings, farm residences, settlement centroids or assessor locations? Can parcel boundaries or independently verified asset coordinates be obtained for validation?",
+      "Which hail-related variables, timestamps, uncertainty estimates and historical revisions does MeteoVoj supply, and can radar, hail reports or finer-resolution observations be licensed if the existing grid proves insufficient?",
+      "What budget, delivery deadline, data-protection arrangements and weather-data usage rights apply, and who will own the R-to-Python integration and ongoing maintenance?",
+      "Can the first experiment reserve whole storms or years for evaluation, compare against municipality loading, and agree acceptable location error, exposure uncertainty and held-out loss calibration before any pricing deployment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0493",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0493",
+        "version": 1
+      }
+    ]
+  }
+}

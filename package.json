@@ -1,0 +1,27 @@
+{
+	"name": "einstein-matchmaker",
+	"version": "0.1.0",
+	"type": "module",
+	"private": true,
+	"engines": { "node": ">=24.0.0" },
+	"scripts": {
+		"start": "tsx src/app/run.ts",
+		"stars": "tsx src/app/stars.ts",
+		"smoke": "tsx src/app/smoke.ts",
+		"fetch-data": "bash scripts/fetch-data.sh",
+		"check": "npm run typecheck && npm test",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run"
+	},
+	"dependencies": {
+		"@mozaik-ai/core": "4.2.0",
+		"dotenv": "^17.4.2",
+		"zod": "^4.6.7"
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.6",
+		"tsx": "^4.23.15",
+		"typescript": "^7.0.2",
+		"vitest": "^5.0.5"
+	}
+}

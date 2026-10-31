@@ -1,0 +1,198 @@
+{
+  "ref": {
+    "artifactId": "pair-C114-CH2-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T12-43-03-800Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C114-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C114-CH2-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can script-aware Serbian text processing support extraction of actionable IPs, domains, file hashes and TTPs from ŠtitNet’s regional community corpus with sufficient precision for daily MISP ingestion and limited analyst review? The first experiment would compare extraction with and without script normalization on an analyst-labelled sample, testing slang handling, preservation of exact indicator strings, per-type precision and recall, and review time before any operational deployment.",
+    "rationale": [
+      {
+        "text": "Dragić has directly relevant methods for unifying mixed Cyrillic–Latin Serbian tokens, providing a research basis for handling the company’s inconsistent scripts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "each token is mapped to a phoneme sequence using deterministic grapheme-to-phoneme rules derived from Serbian orthographic conventions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His research includes informal Serbian social-media text, making the proposed transfer closer than work restricted to legal and news corpora, although threat-community extraction remains untested.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04286",
+            "field": "abstract",
+            "quote": "social media posts and administrative e-government documents have become important retrieval targets, both exhibiting pronounced script mixing and informal orthography.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04286",
+            "field": "abstract",
+            "quote": "script-normalizing BM25 outperforms unnormalized BM25 by a larger margin on social media (22 percentage points in nDCG@10)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has investigated transliteration exceptions involving abbreviations and alphanumeric strings, which is relevant to designing safeguards around technical tokens rather than normalizing all text indiscriminately.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01686",
+            "field": "abstract",
+            "quote": "Deterministic rule-based transliteration between Serbian Cyrillic and Latin scripts handles the majority of tokens correctly, but fails on foreign loanwords, abbreviations, and alphanumeric strings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01686",
+            "field": "abstract",
+            "quote": "We performed a detailed error analysis categorising 800 mistransliterated tokens by type.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group has experience integrating script-normalization modules into existing company search systems, supporting an incremental prototype rather than a wholesale platform replacement.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "Ovaj rad opisuje iskustva iz tri pilot implementacije interne pretrage zasnovane na open-source pretražnom okviru dopunjenom modulom za normalizaciju pisma razvijenim u okviru naše istraživačke grupe.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "Administrativni troškovi uvođenja bili su niski jer je modul integrisan kao dodatak bez izmene ostatka sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The initial study must work from the existing, unstructured plain-text collection; access, usable volume and annotation feasibility must be established before fixing the experimental scope.",
+        "sources": [
+          {
+            "recordId": "C114-CH2",
+            "field": "detail",
+            "quote": "We have collected roughly eight months of raw scraped text from publicly accessible parts of some of these communities, stored as plain text files",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The pipeline must address informal language, slang and inconsistent Latin–Cyrillic mixing, and cover the requested indicator and TTP categories rather than only document retrieval.",
+        "sources": [
+          {
+            "recordId": "C114-CH2",
+            "field": "detail",
+            "quote": "some of this text is informal, uses slang, and mixes Latin and Cyrillic script inconsistently.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C114-CH2",
+            "field": "detail",
+            "quote": "structured indicators — IPs, domains, file hashes, TTPs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Operational acceptance requires at least daily execution, integration with the existing MISP instance, and agreed precision and review-effort thresholds; those thresholds are not yet specified.",
+        "sources": [
+          {
+            "recordId": "C114-CH2",
+            "field": "detail",
+            "quote": "A good outcome is a pipeline that runs at least daily, extracts indicators with acceptable precision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C114-CH2",
+            "field": "detail",
+            "quote": "feeds them into our existing MISP instance with minimal analyst review per batch.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Annotation, validation and integration work must fit the company’s limited analyst allocation and infrastructure-engineer support.",
+        "sources": [
+          {
+            "recordId": "C114",
+            "field": "rd_capacity",
+            "quote": "We can allocate one to two analysts for up to six hours per week to support a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C114",
+            "field": "rd_capacity",
+            "quote": "alongside our lead infrastructure engineer who manages the Elastic and MISP stack.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope the collaboration as a small, research-led engagement: Dragić reports capacity for one smaller industrial contract or consultancy, not an unrestricted software-development project. His actual start date and weekly availability remain unknown.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The evidence establishes retrieval and normalization expertise, not validated cyber-threat indicator extraction, TTP interpretation or MISP integration. The first labelled-sample experiment must test this transfer before operational use.",
+      "Results on social media, legal documents and news may not transfer to adversarial slang, obfuscated indicators or other regional languages. Normalization could corrupt exact technical strings; the first experiment must explicitly test preservation and extraction errors.",
+      "Mentioning an IP or domain does not establish maliciousness. Without contextual validation, an apparently precise extractor could introduce benign, stale or misleading indicators into client-facing feeds.",
+      "The limited analyst allocation may constrain gold-standard annotation and ongoing review, especially for ambiguous TTPs.",
+      "Researcher scheduling, project budget, deployment hardware and delivery timetable are unknown; the stated small-engagement capacity may not cover an end-to-end production system.",
+      "Public accessibility alone does not establish permission for research sharing, retention or redistribution. Corpus access conditions and handling of personal or sensitive material remain unconfirmed."
+    ],
+    "questions": [
+      "What start date, weekly commitment and deliverables can Dragić confirm for a small joint project, and what budget and delivery timetable can ŠtitNet support?",
+      "How many documents and tokens are available, which languages and source types are represented, and are timestamps, source references and collection permissions retained?",
+      "What access, storage, retention and redistribution rules apply to the corpus and extracted indicators, including personal data and any external model services?",
+      "What precision and recall thresholds are required for each indicator type and TTP category, and how many analyst minutes per daily batch are acceptable?",
+      "Can the analysts create and adjudicate a representative labelled sample within their allocation, including slang, mixed scripts, benign mentions, obfuscation and exact-string preservation cases?",
+      "Who will own threat-context rules, TTP annotation and MISP integration, and what MISP schema, provenance, deduplication, confidence and review-before-publication rules are required?",
+      "What compute and deployment environment is available, and who will maintain source ingestion, terminology updates and the pipeline after the research pilot?"
+    ],
+    "outcome": "pair",
+    "taskId": "C114-CH2",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C114-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C114-CH2-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

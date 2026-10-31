@@ -1,0 +1,131 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C132-CH4-R0349",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Dragić is open to company joint projects. His notes describe two active projects and capacity for one smaller industrial contract or consultancy; his schedule for this collaboration is unconfirmed.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "joint projects with companies that manage large Serbian-language document collections",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this fact by its source sentences at 0.49. Keep in the fact only what the source states; move any condition, requirement or next step into proposedActions or questions.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "and p95/p99 latency increases at most 5% under company-approved representative load.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Unlike the failure-rate and precision gates, the latency gate specifies only a threshold, not an uncertainty-aware acceptance rule; noisy tail-latency estimates could therefore pass despite a true slowdown above the agreed limit. Add a concise requirement that the 95% upper confidence bound on each p95/p99 relative increase be at most 5%, with insufficient precision leaving the decision unresolved.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company estimates that script mismatch affects roughly one in five searches, based on a January 2024 server-log sample.” Proposed next steps specifies “zero hits despite an accessible relevant document” and compares “unchanged PostgreSQL, indexing-only normalization, query-only normalization and both”; these identify the concrete cross-script retrieval failure and the company's unresolved pipeline-placement decision."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Go only with sufficient evidence, verified PostgreSQL/Python compatibility and delivery within the six-week engineering allocation”; “separately evaluate held-out cross-script, mixed-script and ambiguous-mapping slices”; and “p95/p99 latency increases at most 5% under company-approved representative load.” Verified facts acknowledges “capacity for roughly one external project alongside product development.” Together with the proposed six-week schedule and conditional staffing questions, these respect the engineering, integration, scope and robustness constraints and propose verification; the latency acceptance uncertainty is addressed separately under metric."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Dragić's work maps tokens to phoneme-based canonical forms for retrieval and evaluates this approach on manually annotated relevance pairs from Serbian court decisions” and “transformer normalization achieved MRR 0.68 but added 47 ms at the 99th percentile on its tested workload.” Our inference: “Court-decision results suggest methodological relevance, not validation for contracts or PostgreSQL.” Proposed next steps: “Keep the initial prototype deterministic to limit integration scope”; these connect his documented retrieval method and reported latency trade-off to a bounded transfer experiment rather than claiming production suitability."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “The company engineer would implement integration and workload replay; company reviewers would judge relevance. Dragić would propose normalization rules, experimental controls and error analysis, subject to confirmed hours.” Open questions asks what corpus, logs and reviewers “can support independent tuning and evaluation”; documented technical capacity is distinguished from proposed work and unconfirmed staffing or access."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “use authorized contracts and randomly sampled current query occurrences, separately allocated to tuning and held-out evaluation after checking document/query-family independence”; “Compare unchanged PostgreSQL, indexing-only normalization, query-only normalization and both, holding parsing, ranking and load constant”; and “Select the best configuration on tuning data.” These specify inputs, a production baseline, the compared conditions and separate configuration selection from held-out evaluation, with execution resources left as explicit prerequisites."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps defines proposed targets “on overall evaluation and each slice,” including “a 95% upper confidence bound of at most 5% for zero hits despite an accessible relevant document” and “a 95% lower bound on P@10 change of at least −2 percentage points.” It also states “Judge all evaluation queries, including nonzero results,” “Count each query occurrence once, without deduplication; divide failures by all evaluated occurrences in that population,” and “Count unresolved relevance cases as failures and use conservative precision bounds.” However, “p95/p99 latency increases at most 5% under company-approved representative load” lacks a statistical acceptance condition for the latency target; “Go only with sufficient evidence” does not define one."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare unchanged PostgreSQL, indexing-only normalization, query-only normalization and both, holding parsing, ranking and load constant” and “A null result for either normalization location alone would not rule out a joint effect.” Our inference also treats alternative failure causes as hypotheses: “The historical failure estimate may combine script mismatch with parsing or other failures.” These support a controlled placement comparison without attributing all failures to script mismatch or overlooking a joint effect."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Canonicalization could conflate names, abbreviations or legal terms” and “Court-decision results suggest methodological relevance, not validation for contracts or PostgreSQL.” Proposed next steps requires tests of “ambiguous mappings, foreign names, abbreviations and within-token mixtures” and recording “index growth, rebuild time and maintenance effort.” Open questions explicitly leaves budget, test environment, access, reviewers and maintenance unresolved; these cover the principal transfer, exception-handling, runtime and execution risks without presenting unknowns as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Verified facts: “His notes describe two active projects and capacity for one smaller industrial contract or consultancy; his schedule for this collaboration is unconfirmed.” Proposed next steps makes Dragić's role “subject to confirmed hours,” and Open questions asks him to “confirm a start date and weekly contribution for a small joint project”; the joint-project format respects his stated openness and limited, unconfirmed availability."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could identify where normalization belongs and whether it reduces confirmed cross-script failures without unacceptable relevance or latency costs” and “Subject to agreement and authorized access, Dragić could test how phoneme-based normalization transfers from court decisions to contract retrieval, using judged queries and controlled PostgreSQL comparisons.” Both benefits follow from the proposed first experiment and remain conditional rather than guaranteed."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.73,
+        0.9,
+        0.86,
+        0.74,
+        0.49,
+        0.95,
+        0.97
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

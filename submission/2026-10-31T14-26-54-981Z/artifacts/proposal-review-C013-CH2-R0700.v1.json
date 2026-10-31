@@ -1,0 +1,131 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C013-CH2-R0700",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C013-CH2-R0700",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C013-CH2-R0700",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: its upper 95% uncertainty bound is at most 10%, with lower error than municipality rating; insufficient independent claims means no pass.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "A good outcome would be a method that takes our policy locations, matches them to hail intensity estimates at field level, and tells us which parts of our portfolio are priced too low.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Aggregate mean claim severity can meet this rule through an overall pricing adjustment while assigning hail exposure incorrectly across fields or failing to identify underpriced segments; the qualitative field-matching prerequisites do not test that result. Retain the severity target but add a held-out acceptance rule for the calibration of segments selected on tuning data and a verifiable location-to-hazard matching criterion, with success conditional on agreeing both before evaluation.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Define severity error as absolute observed/assumed mean cost per confirmed hail claim minus one, with comparable coverage and developed losses.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The source establishes loss records, not a confirmed-hail evaluation set, and the proposal does not specify how repeated records become claims or how uncertain hail labels and unverifiable locations affect the evaluated denominator; selecting only readily confirmed, precisely located losses could yield a false portfolio-wide pass. Add a compact prerequisite to agree claim consolidation, independent hail confirmation, uncertain-label handling and evaluation coverage, restricting any acceptance claim to represented populations.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company reports hail claims about 18% above its loss assumption over three summers, currently uses municipality-level hail loadings” and “The company says a large share of farm addresses identify settlements rather than coordinates.” Proposed next steps: “Produce a documented Python prototype with location-confidence flags, uncertainty ranges and candidate underpriced segments.” These identify the concrete pricing, location-resolution and automation problems rather than a generic mapping goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “using the stated three claim years and about 1,200 policies”; “checking storm, policy and spatial dependence before fixing splits”; “retain settlement-only records as uncertain rather than assigning invented coordinates”; “Confirm workload, budget and ownership before starting; stop for renegotiation if suitable observations or independent evaluation records are unavailable”; and “demonstrate a repeatable quarterly-input dry run rather than delivering maps alone.” Verified facts states “a start no earlier than September 2025”; Open questions asks for “a feasible start consistent with his stated scheduling restriction”. These respect the available data, uncertain locations, limited staffing, integration requirement and scheduling restriction through explicit feasibility prerequisites."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Tošić’s published hail method instead used dual-polarisation radar to produce one-kilometre hazard maps, validated against parcel-level crop losses—not this company's building losses or exact field-level intensity” and “The researcher's radar–satellite hail-cell study reported a probability of detection of 0.81 and a false alarm ratio of 0.23 in leave-one-season-out validation.” Our inference: “one-kilometre hazard mapping does not establish exact field-level intensity or transfer to farm buildings.” These connect his documented hail methods to the problem while acknowledging resolution, detection and crop-to-building transfer limits."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Company pricing staff would reconcile losses, exposure, assumptions and coverage; IT would support secure extracts and pipeline testing. Tošić would lead hail reconstruction, uncertainty modelling and validation design. Confirm workload, budget and ownership before starting”. Verified facts documents the company's Python pipeline and the researcher's hail-mapping work; Open questions asks whether Tošić can “confirm interest in this specific joint project, current capacity”. These distinguish documented capabilities from proposed roles and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps specifies inputs, controls and separation: “Reserve separate tuning and evaluation storms/seasons”; “Compare municipality rating, existing-grid matching, improved locations alone, hail-specific estimates alone, and both improvements, holding other pricing inputs constant”; and “Select the configuration on tuning data.” However, “its upper 95% uncertainty bound is at most 10%, with lower error than municipality rating” tests aggregate severity calibration without requiring evidence that field matching identifies underpriced portfolio segments; the experiment could pass while missing that objective."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Define severity error as absolute observed/assumed mean cost per confirmed hail claim minus one, with comparable coverage and developed losses” and “Proposed go/no-go: its upper 95% uncertainty bound is at most 10%, with lower error than municipality rating; insufficient independent claims means no pass.” The proposal supplies a company-relevant severity target and an explicit uncertainty bound, alongside evaluation “separately for crops and buildings”, but lacks an acceptance test for field-level portfolio differentiation and does not define claim consolidation, confirmation or treatment of uncertain hail labels and excluded locations."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Compare municipality rating, existing-grid matching, improved locations alone, hail-specific estimates alone, and both improvements, holding other pricing inputs constant.” Our inference: “asset values, coverage, vulnerability and loss development could also explain the excess claim cost; spatial association alone would not establish its cause.” The proposed comparisons separate location and observation changes, include their combination, and explicitly avoid attributing the historical excess to hail exposure alone."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Verified facts: “False hail identification is therefore a relevant risk, not an eliminated problem.” Our inference identifies limits to exact field-level intensity and building transfer, and alternative loss drivers. Proposed next steps: “insufficient independent claims means no pass” and “Missing building evaluation or field-location evidence remains an unresolved prerequisite, not success.” Open questions asks whether historical observations “can ... be licensed across all three years and the portfolio territory”. These name the main methodological, sampling, location and access risks without treating unknowns as established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional on confirming Tošić’s current availability.” Proposed next steps: “Propose an eight-week pilot after availability and access confirmation”. Open questions: “Can Tošić confirm interest in this specific joint project, current capacity and a feasible start consistent with his stated scheduling restriction?” These make the proposed joint-project role and timing conditional rather than interpreting general openness as a commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could show whether finer hail information materially improves claim-cost calibration and identifies candidate underpriced segments, or whether location quality and other loss drivers need attention first” and “Subject to agreement and data access, Tošić could test transfer of parcel-level crop-hail methods to mixed farm-property risks”. These are plausible, conditional benefits of the proposed retrospective study, not guaranteed outcomes or commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.93,
+        0.67,
+        0.83,
+        0.98,
+        0.92,
+        0.92
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

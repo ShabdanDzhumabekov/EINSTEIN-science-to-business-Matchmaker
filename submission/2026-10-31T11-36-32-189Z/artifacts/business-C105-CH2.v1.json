@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C105-CH2",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C105-CH2",
+    "companyId": "C105",
+    "companyName": "GenovaMed d.o.o.",
+    "sector": "Biotech, diagnostics and lab services",
+    "location": "Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C105-CH2",
+        "field": "text",
+        "text": "Our bioinformatics pipeline for calling star alleles from short-read sequencing data takes 4–6 hours per batch of 24 samples on our current cloud setup, which costs us about 9 EUR per sample in compute — that's killing our margin at the price point pharmacies will pay."
+      },
+      "detail": {
+        "recordId": "C105-CH2",
+        "field": "detail",
+        "text": "Our bioinformatics pipeline takes a batch of 24 samples from raw sequencing reads to a final star-allele call in roughly four to six hours. We run two batches a day on weekdays, and the cloud compute bill is working out to about 9 EUR per sample. At the price point pharmacies are willing to pay — which is genuinely constrained by what they can charge patients under Serbian out-of-pocket pricing — that compute cost alone is a serious problem before we even account for lab consumables and staff time. We wrote the pipeline ourselves in Python using Snakemake, and it works correctly; the issue is that we have not optimised it for cost or speed. We have looked briefly at spot instances to cut the hourly rate, but we have not properly profiled which steps are the bottleneck. We think alignment and the star-allele calling step are the heavy consumers, but we are not certain. A good outcome would be getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes, without touching the clinical accuracy of the calls."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C105",
+        "field": "about",
+        "text": "GenovaMed d.o.o. was founded in 2019 by a small group of molecular biologists and clinical pharmacists who noticed that Serbian prescribers had almost no practical way to check whether a patient's genetics would affect how they metabolise a prescribed drug. We set up in Novi Sad's Science and Technology Park and spent our first two years validating a pharmacogenomic testing panel focused on the CYP2C19 and CYP2D6 enzyme genes — the two variants responsible for a large share of adverse drug reactions and treatment failures in everyday cardiology and psychiatry prescribing.\n\nToday we work with private clinics and independent pharmacies across Serbia, returning genotype reports that help prescribers choose the right drug and dose from the start rather than adjusting after a bad outcome. Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.\n\nThe team is twelve people: four in the wet lab, two in bioinformatics, two in clinical reporting, and the rest in operations, sales, and finance. We are small on purpose — we want to stay close to the samples and close to the prescribers who use our results. What makes us different is not the technology itself, which is broadly available, but the care we put into the clinical interpretation layer and the speed at which a pharmacy or clinic gets a usable answer."
+      },
+      "products": [
+        {
+          "recordId": "C105",
+          "field": "products",
+          "text": "CYP2C19 / CYP2D6 genotyping panel for clinical prescribing support"
+        },
+        {
+          "recordId": "C105",
+          "field": "products",
+          "text": "Extended metaboliser panel covering CYP2C9, VKORC1 and SLCO1B1 for anticoagulant and statin therapy"
+        },
+        {
+          "recordId": "C105",
+          "field": "products",
+          "text": "Batch genotyping service for private pharmacy chains"
+        },
+        {
+          "recordId": "C105",
+          "field": "products",
+          "text": "Clinical pharmacist result consultation (add-on to panel reports)"
+        },
+        {
+          "recordId": "C105",
+          "field": "products",
+          "text": "Anonymised population-level allele frequency reporting for clinic research files"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "Chelex-based and silica-column DNA extraction from saliva and buccal swabs"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "Multiplex allele-specific PCR for targeted variant detection"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "Short-read next-generation sequencing on a benchtop sequencer"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "In-house star-allele calling pipeline (Python, Snakemake) running on cloud VMs"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "ISO 15189 accredited quality management system"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "LIMS for sample tracking and chain-of-custody documentation"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "PDF report generation with structured clinical pharmacist annotations"
+        },
+        {
+          "recordId": "C105",
+          "field": "tech",
+          "text": "Secure SFTP and web portal for result delivery to clinic partners"
+        }
+      ],
+      "plans": {
+        "recordId": "C105",
+        "field": "plans",
+        "text": "GenovaMed plans to expand its pharmacy channel to at least three additional cities in Serbia by the end of 2025 and to launch a pilot in one private clinic network in Bosnia and Herzegovina. The company is also preparing a Series A fundraising round to support wet-lab capacity expansion and the mobile patient app."
+      },
+      "rdCapacity": {
+        "recordId": "C105",
+        "field": "rd_capacity",
+        "text": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each to a collaborative project, with access to the in-house sequencer, a set of retained clinical samples held under ethics approval, and a small discretionary R&D budget of approximately 8,000 EUR per year."
+      },
+      "pastCollaborations": {
+        "recordId": "C105",
+        "field": "past_collaborations",
+        "text": "GenovaMed completed a six-month feasibility project in 2022 with a private clinical laboratory in Novi Sad, Labora Centar d.o.o., to cross-validate allele calls between the two sites' sequencing workflows."
+      }
+    }
+  }
+}

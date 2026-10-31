@@ -1,0 +1,46 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0212",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0212",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Zorić lists openness to joint projects, but availability for the actual delivery window is unconfirmed. Her availability-related note concerns 2025/26, not the stated 2024 deadline. This joint-project proposal is conditional on confirming capacity.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "joint project applications with companies working on landfill aftercare or groundwater remediation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0212",
+            "field": "notes",
+            "quote": "Zorić is on a reduced teaching load in the 2025/26 academic year due to project finalisation commitments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.42; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

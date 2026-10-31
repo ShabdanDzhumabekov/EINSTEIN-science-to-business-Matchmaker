@@ -1,0 +1,197 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0261",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0261",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware spatial exposure modelling link incompletely geocoded farm policies to hail estimates and identify potentially underpriced portfolio segments more reliably than municipality-level loading? A first experiment would test whether the available location and weather data support field-level inference, and whether transferring spatial-extremes and Bayesian pricing methods improves held-out claims prediction and calibration without implying unsupported spatial precision.",
+    "rationale": [
+      {
+        "text": "He has directly relevant Bayesian insurance-pricing experience, including credibility weighting and quarterly model updating, although the demonstrated application is motor telematics rather than hail.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03299",
+            "field": "abstract",
+            "quote": "classic credibility estimators can be embedded in a Bayesian linear model with conjugate normal–inverse-gamma priors.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03299",
+            "field": "abstract",
+            "quote": "outlines a procedure for updating the model quarterly as new data arrive.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work on spatial dependence in extreme events provides a methodological starting point for modelling geographically concentrated hail exposure, subject to validation on hail data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03298",
+            "field": "abstract",
+            "quote": "A spatial analysis using a max-stable process model reveals a correlation range of approximately 2.1 km",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He leads probabilistic modelling and uncertainty quantification for agricultural sensor networks in the same region.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0101",
+            "field": "summary",
+            "quote": "Struhár leads the work package on probabilistic modelling and uncertainty quantification, contributing Gaussian process and Bayesian hierarchical methods tailored to irregular and energy-constrained sampling schedules.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical property-insurance consulting experience spanning model specification, data pipelines and regulatory documentation.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "industry_experience",
+            "quote": "a sensor-based premium adjustment scheme for commercial fire risk, covering model specification, data pipeline requirements, and regulatory documentation.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience includes interpretable Bayesian risk pipelines designed for organisations without dedicated data-science teams.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0100",
+            "field": "summary",
+            "quote": "extracting interpretable statistical features, and fitting hierarchical Bayesian risk models suitable for small and medium enterprises that lack dedicated data science teams.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Policy-to-field matching must resolve or explicitly propagate settlement-level location uncertainty; a settlement centroid cannot be treated as a verified insured field.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Field-level hail estimates must be supportable from the available weather observations; finer model output alone cannot overcome coarse spatial and temporal inputs.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a storm can devastate one village and leave the farm two kilometres away untouched.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Initial estimation and validation must respect the limited historical sample and avoid treating policies affected by the same storm as independent validation observations.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must include an automated route into the existing quarterly Python pricing workflow, rather than stopping at a GIS map.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and maintenance must fit the company's shared operational staffing capacity.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Plan formal data-sharing arrangements before transferring policy and claims records, consistent with the researcher's stated collaboration preference.",
+        "sources": [
+          {
+            "recordId": "R0261",
+            "field": "notes",
+            "quote": "He prefers collaborations where data-sharing agreements can be established formally; his department has a standard template for this.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "There is a material transfer gap: the demonstrated spatial-extremes method concerns water-network pressure, agricultural models concern microclimate and disease, and pricing validation concerns motor telematics—not hail losses. The first experiment must test these transfers rather than assume them.",
+      "Daily five-kilometre weather grids and settlement-only addresses may make defensible field-level hail reconstruction impossible without additional observations or parcel information.",
+      "Three claim years may contain too few independent hailstorms to estimate tail losses or demonstrate stable pricing improvements; random policy splits could exaggerate performance.",
+      "The reported 18% excess does not establish hail-exposure mismeasurement as its cause; insured values, coverage, claims handling and loss inflation may also matter.",
+      "Researcher availability and committed joint-project effort are unknown. Budget, delivery deadline, weather-data usage rights and company acceptance requirements are also unknown.",
+      "Integration could stall under shared staffing constraints; the company's earlier flood-mapping prototype was completed but has not entered the pricing system."
+    ],
+    "questions": [
+      "What joint-project effort can the researcher commit, and who will own geospatial engineering, actuarial validation and production integration?",
+      "Can insured assets be linked to verified coordinates or cadastral parcels, and do loss geotags identify the damaged asset rather than a settlement or reporting address?",
+      "What exactly does MeteoVoj provide about hail, with what timestamps, uncertainty and historical coverage? Are radar, station, satellite or independent hail-footprint observations accessible and licensed for this use?",
+      "Are policy-year exposure records available for both claimed and unclaimed policies, including insured values, deductibles, coverage changes, claim dates and claim development?",
+      "Can the first experiment reserve entire storms, locations and a season for validation, compare against municipality loading, and agree prediction, calibration and spatial-resolution acceptance criteria before modelling?",
+      "What budget, deadline and company staff allocation are available, including any funding needed for supplementary weather data or geocoding?",
+      "What data-protection, pricing-explainability and regulatory approvals apply, and can the parties execute the researcher's formal data-sharing agreement?",
+      "What interface, monitoring, approval and maintenance requirements must an automated pricing output satisfy, and what prevented integration of the earlier flood-risk tool?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0261",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0261",
+        "version": 1
+      }
+    ]
+  }
+}

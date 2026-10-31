@@ -1,0 +1,187 @@
+{
+  "ref": {
+    "artifactId": "proposal-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Testing sparse-data product recommendations against best-seller sorting",
+    "facts": [
+      {
+        "text": "Harmat reports datasets ranging from around 520 to 1,900 completed orders, cannot wait for larger datasets, and found best-seller sorting superior to collaborative filtering in one client’s A/B test.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat wants an initial prototype for one client. Its offered access covers anonymised transactions and product catalogues under a data-sharing agreement; additional behavioural tracking is not part of that stated offer.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Harmat can allocate roughly one mid-level developer-day weekly. Its environment includes WooCommerce/custom REST integrations and Docker deployments on client VPS environments; additional serving infrastructure is not established.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "Docker for containerised deployments on client VPS environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić lists openness to joint projects with retail technology companies, but cautions against commitments exceeding one day weekly outside the faculty during semester.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "joint projects with retail technology companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "She is cautious about commitments that require more than one day per week outside the faculty during the academic semester but is flexible in summer months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić’s research offers a concrete candidate: combining cosine similarity of product attributes with basket co-occurrence. That study used 9,200 baskets from two clothing retailers, not Harmat’s smaller client datasets.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02898",
+            "field": "abstract",
+            "quote": "Data come from two small clothing retailers operating in Serbia, collectively yielding 9,200 baskets over 18 months, with a median basket size of three items.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her review identifies over-specialisation as a content-based recommendation risk. Her benchmarking work specifies temporal splitting, single-purchase-user treatment and discontinued-product handling.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03666",
+            "field": "abstract",
+            "quote": "Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08872",
+            "field": "abstract",
+            "quote": "A preprocessing protocol is specified, including rules for temporal train-test split, treatment of single-purchase users, and handling of product discontinuations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a lightweight joint project could test whether metadata compensates for sparse purchases without assuming that a hybrid must win. Transfer to this client’s catalogue, languages and smaller order volume remains unvalidated.",
+      "The proposal is conditional because Erić’s actual availability is unconfirmed. Limited engineering time suggests starting with precomputed recommendations rather than assuming new serving infrastructure.",
+      "Offline purchase ranking could establish technical promise, but likely cannot establish widget conversion or revenue gains. Sparse evaluation data may leave the result inconclusive."
+    ],
+    "proposedActions": [
+      "Propose a six-week first experiment on one approved client’s existing orders and catalogue. Harmat would prepare anonymised exports and review catalogue languages; Erić would design evaluation and models. Audit attributes, timestamps and availability; create chronological training, tuning and untouched evaluation samples, checking independence and leakage. Use an explicit matrix: popularity baseline; attributes only; co-occurrence only; attributes plus co-occurrence. Tune only before evaluation, without importing published weights. Measure precision at three on confirmed held-out co-purchases, coverage, uncertainty and expert-rated substitute/complement usefulness; missing purchases are not definitive negatives. Propose a 10% relative precision improvement over popularity, with a positive confidence-bound difference, as a negotiable target. Go only if the best tested configuration meets agreed usefulness and coverage criteria using existing data, agreed budget, developer allocation and hosting limits; otherwise stop or report inconclusive. Offline success would authorise prototype testing, not a claim of business uplift.",
+      "Subject to the gate, propose precomputed recommendations exposed through the existing integration. Benchmark resource use, latency and refresh effort on the agreed VPS, review user-facing languages, and document maintenance. Any additional infrastructure would require approval rather than being assumed.",
+      "Agree a traffic-feasible online comparison against best-sellers only after reviewing prior A/B results. Predefine the company’s business metric, minimum worthwhile improvement and uncertainty rule; do not expand deployment without meeting that criterion. If traffic is insufficient, report the business effect as unresolved."
+    ],
+    "questions": [
+      "Can Erić confirm availability, start timing and semester-compatible allocation, including whether periodic anonymised refreshes would meet her collaboration interests?",
+      "Which client can approve participation, and what usable baskets, catalogue attributes, languages, timestamps and identifiers can be shared under agreed access, retention and derived-model safeguards?",
+      "Should recommendations prioritise substitutes, complements or both, and what business metric, minimum improvement, coverage and uncertainty criteria should govern progression?",
+      "What budget, deadline, VPS and latency limits, refresh expectations and maintenance ownership are acceptable, and can Harmat share prior A/B results and traffic volumes?"
+    ],
+    "benefits": {
+      "company": "Harmat could learn whether existing catalogue information supports a worthwhile alternative to best-sellers, or whether further recommendation development is unjustified at present.",
+      "researcher": "Subject to agreement, Erić could test the boundary of attribute–behaviour hybrids at smaller transaction volumes using an approved client dataset and practical integration feedback."
+    },
+    "markdown": "# Testing sparse-data product recommendations against best-seller sorting\n\n## Verified facts\n- Harmat reports datasets ranging from around 520 to 1,900 completed orders, cannot wait for larger datasets, and found best-seller sorting superior to collaborative filtering in one client’s A/B test. [F1]\n- Harmat wants an initial prototype for one client. Its offered access covers anonymised transactions and product catalogues under a data-sharing agreement; additional behavioural tracking is not part of that stated offer. [F2]\n- Harmat can allocate roughly one mid-level developer-day weekly. Its environment includes WooCommerce/custom REST integrations and Docker deployments on client VPS environments; additional serving infrastructure is not established. [F3]\n- Erić lists openness to joint projects with retail technology companies, but cautions against commitments exceeding one day weekly outside the faculty during semester. [F4]\n- Erić’s research offers a concrete candidate: combining cosine similarity of product attributes with basket co-occurrence. That study used 9,200 baskets from two clothing retailers, not Harmat’s smaller client datasets. [F5]\n- Her review identifies over-specialisation as a content-based recommendation risk. Her benchmarking work specifies temporal splitting, single-purchase-user treatment and discontinued-product handling. [F6]\n\n## Potential benefits\n- For the company: Harmat could learn whether existing catalogue information supports a worthwhile alternative to best-sellers, or whether further recommendation development is unjustified at present.\n- For the researcher: Subject to agreement, Erić could test the boundary of attribute–behaviour hybrids at smaller transaction volumes using an approved client dataset and practical integration feedback.\n\n## Our inference\n- This suggests a lightweight joint project could test whether metadata compensates for sparse purchases without assuming that a hybrid must win. Transfer to this client’s catalogue, languages and smaller order volume remains unvalidated.\n- The proposal is conditional because Erić’s actual availability is unconfirmed. Limited engineering time suggests starting with precomputed recommendations rather than assuming new serving infrastructure.\n- Offline purchase ranking could establish technical promise, but likely cannot establish widget conversion or revenue gains. Sparse evaluation data may leave the result inconclusive.\n\n## Proposed next steps\n- Propose a six-week first experiment on one approved client’s existing orders and catalogue. Harmat would prepare anonymised exports and review catalogue languages; Erić would design evaluation and models. Audit attributes, timestamps and availability; create chronological training, tuning and untouched evaluation samples, checking independence and leakage. Use an explicit matrix: popularity baseline; attributes only; co-occurrence only; attributes plus co-occurrence. Tune only before evaluation, without importing published weights. Measure precision at three on confirmed held-out co-purchases, coverage, uncertainty and expert-rated substitute/complement usefulness; missing purchases are not definitive negatives. Propose a 10% relative precision improvement over popularity, with a positive confidence-bound difference, as a negotiable target. Go only if the best tested configuration meets agreed usefulness and coverage criteria using existing data, agreed budget, developer allocation and hosting limits; otherwise stop or report inconclusive. Offline success would authorise prototype testing, not a claim of business uplift.\n- Subject to the gate, propose precomputed recommendations exposed through the existing integration. Benchmark resource use, latency and refresh effort on the agreed VPS, review user-facing languages, and document maintenance. Any additional infrastructure would require approval rather than being assumed.\n- Agree a traffic-feasible online comparison against best-sellers only after reviewing prior A/B results. Predefine the company’s business metric, minimum worthwhile improvement and uncertainty rule; do not expand deployment without meeting that criterion. If traffic is insufficient, report the business effect as unresolved.\n\n## Open questions\n- Can Erić confirm availability, start timing and semester-compatible allocation, including whether periodic anonymised refreshes would meet her collaboration interests?\n- Which client can approve participation, and what usable baskets, catalogue attributes, languages, timestamps and identifiers can be shared under agreed access, retention and derived-model safeguards?\n- Should recommendations prioritise substitutes, complements or both, and what business metric, minimum improvement, coverage and uncertainty criteria should govern progression?\n- What budget, deadline, VPS and latency limits, refresh expectations and maintenance ownership are acceptable, and can Harmat share prior A/B results and traffic volumes?",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

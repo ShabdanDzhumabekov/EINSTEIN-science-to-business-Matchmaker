@@ -1,0 +1,199 @@
+{
+  "ref": {
+    "artifactId": "pair-C105-CH2-R0123",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C105-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C105-CH2-R0123",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can profiling-led resource allocation, workflow parallelisation and interruption-aware cloud execution reduce GenovaMed’s 24-sample star-allele pipeline below 3 EUR per sample and ideally below 90 minutes while preserving clinical accuracy? The first experiment would profile the existing workflow and compare selected optimisations with its baseline on representative approved samples, explicitly testing whether methods demonstrated on WGS/WES transfer to this pharmacogenomic workflow.",
+    "rationale": [
+      {
+        "text": "Rakić has commercial experience auditing and reducing cloud costs for a genomic processing pipeline.",
+        "sources": [
+          {
+            "recordId": "R0123",
+            "field": "industry_experience",
+            "quote": "audit and optimise their cloud-based WES processing pipeline, reducing their per-sample cloud spend by approximately 35 %.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His research demonstrates Snakemake-based genomic parallelisation with explicit accuracy comparisons, relevant to evaluating optimisation without assuming clinical equivalence.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01614",
+            "field": "abstract",
+            "quote": "Job orchestration used Snakemake with a SLURM backend.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01614",
+            "field": "abstract",
+            "quote": "We measured concordance against the baseline using precision and recall on GIAB benchmark variants",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His cloud cost modelling addresses interruption risk and checkpoint overhead, relevant to evaluating spot instances rather than assuming lower hourly prices mean lower total costs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01615",
+            "field": "abstract",
+            "quote": "We built a cost model for WGS alignment and variant-calling pipelines",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01615",
+            "field": "abstract",
+            "quote": "mean time to interruption distributions per instance family, and checkpoint overhead for BWA-MEM2 and GATK stages.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His alignment research evaluates memory behaviour and multicore performance, providing relevant experience if profiling confirms alignment as a bottleneck.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01612",
+            "field": "abstract",
+            "quote": "We reformulated the FM-index traversal used in a widely adopted aligner to use a cache-oblivious layout",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01612",
+            "field": "abstract",
+            "quote": "Experiments on a 32-core Intel Xeon system using 150 bp paired-end reads from a 30× human whole-genome dataset",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Benchmark complete 24-sample batches against the current runtime and compute cost; below 3 EUR per sample and under 90 minutes are targets to test, not assured outcomes.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "text",
+            "quote": "takes 4–6 hours per batch of 24 samples on our current cloud setup",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Clinical accuracy must be preserved, with deployment validation compatible with the laboratory’s accredited quality system and pharmacist review.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "without touching the clinical accuracy of the calls.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "about",
+            "quote": "Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Optimisation must account for the existing Python/Snakemake cloud-VM workflow and two-batch weekday operating cadence; a replacement platform cannot be assumed.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "tech",
+            "quote": "In-house star-allele calling pipeline (Python, Snakemake) running on cloud VMs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We run two batches a day on weekdays",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation using retained clinical samples must respect their ethics approval; permitted researcher access and cloud reuse require confirmation.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a set of retained clinical samples held under ethics approval",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Project scope and benchmarking expenditure must fit the company’s staff allocation and approximately 8,000 EUR annual discretionary R&D budget.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a small discretionary R&D budget of approximately 8,000 EUR per year.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The cited performance methods were demonstrated on WGS/WES workflows, not this star-allele pipeline. The first experiment must test transfer to representative pharmacogenomic samples; variant-level concordance alone does not establish star-allele or clinical equivalence.",
+      "The bottlenecks are unconfirmed. Alignment or caller optimisation may have little end-to-end benefit if other stages dominate.",
+      "The requested cost reduction exceeds the approximately 35% reduction reported in the consulting engagement; neither that result nor published speedups establishes that both company targets are attainable.",
+      "Spot interruptions, retries and checkpoint overhead could erase savings or delay clinical batches.",
+      "Cloud configuration, cost-accounting boundaries, data-access permissions and validation-set coverage are unknown, limiting reliable estimates and experiment design.",
+      "Researcher availability and delivery capacity are unknown despite open joint-project willingness; the company’s limited budget may constrain the feasible scope."
+    ],
+    "questions": [
+      "Can Rakić confirm his availability, effort, start date and delivery capacity for a joint project, and what deadline does GenovaMed require?",
+      "Which aligner, star-allele caller, reference builds and allele-definition versions are used? Can the team provide workflow code, logs and per-stage resource measurements?",
+      "Which cloud provider, regions, VM types, storage and concurrency limits are used? Does the 9 EUR baseline include storage, transfers, retries and idle capacity?",
+      "Does the 90-minute target end at computational calls or include reporting and pharmacist review? What batch deadline and reliability requirements apply?",
+      "Which approved samples and independently validated star-allele calls are available, including difficult CYP2D6 copy-number and structural cases? Who will define acceptance criteria and adjudicate discordances?",
+      "What do ethics approval and data-governance arrangements permit for researcher access, cloud processing, transfer and retention?",
+      "What change-control and revalidation evidence is required before deployment, and can initial benchmarks run separately from production?",
+      "How much of the annual R&D budget is available for researcher effort and benchmarking, and are code changes, spot instances and alternative VM configurations acceptable?"
+    ],
+    "outcome": "pair",
+    "taskId": "C105-CH2",
+    "researcherId": "R0123",
+    "inputs": [
+      {
+        "artifactId": "business-C105-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C105-CH2-R0123",
+        "version": 1
+      }
+    ]
+  }
+}

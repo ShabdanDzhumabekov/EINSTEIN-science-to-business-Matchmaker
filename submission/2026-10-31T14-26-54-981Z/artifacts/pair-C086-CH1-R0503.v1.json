@@ -1,0 +1,233 @@
+{
+  "ref": {
+    "artifactId": "pair-C086-CH1-R0503",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C086-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C086-CH1-R0503",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Which firmware architecture and hybrid classical/post-quantum signing flow could support ML-DSA in the KL-HSM line within its memory, performance and security constraints? The first experiment would port a standards-conformant ML-DSA implementation to representative KL-HSM hardware and its production toolchain, testing correctness, memory use, signing latency and leakage before using the findings to develop a versioned migration roadmap and integration proof of concept.",
+    "rationale": [
+      {
+        "text": "Nikolić has direct experience implementing and measuring Dilithium signatures on ARM Cortex-M hardware, relevant to evaluating the company's ML-DSA migration.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "We implement the NIST post-quantum signature finalists CRYSTALS-Dilithium (security levels 2 and 3) and Falcon-512 in C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05919",
+            "field": "abstract",
+            "quote": "Signing is substantially more expensive for Falcon due to the discrete Gaussian sampler: 14.8 ms versus 3.2 ms for Dilithium-2.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her HSM project experience combines algorithm adaptation, implementation security evaluation and migration-roadmap work.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0502",
+            "field": "summary",
+            "quote": "Work packages cover algorithm selection and adaptation, FPGA and secure microcontroller implementation, side-channel and fault-injection evaluation, and a migration roadmap document targeting IEC 62443 compliance.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work supports testing implementation security under the actual compiler and architecture rather than assuming that nominally constant-time source code is sufficient.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05922",
+            "field": "abstract",
+            "quote": "Leakage detection using Welch's t-test and TVLA methodology crosses the threshold of |t| = 4.5 in three of eight compiler/architecture combinations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05922",
+            "field": "abstract",
+            "quote": "We trace each instance to specific compiler transformations visible in the generated assembly",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed reproducible embedded-PQC benchmarking methods suitable for structuring performance and resource trade-off measurements.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05923",
+            "field": "abstract",
+            "quote": "We validate the suite by collecting results for Kyber-512, Dilithium-2, Falcon-512, SPHINCS+-SHA2-128s, and Classic McEliece 348864 across all four targets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05923",
+            "field": "abstract",
+            "quote": "a fixed GCC toolchain version and flag set, a cycle-counting harness based on hardware performance counters",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She brings industrial PQC-readiness assessment experience and has explicitly expressed interest in joint projects with HSM developers.",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "industry_experience",
+            "quote": "a six-month applied research contract in 2022 covering PQC readiness assessment for their smart metering gateway product line.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0503",
+            "field": "open_to",
+            "quote": "joint projects with companies developing HSMs, IoT security firmware, or industrial control system security",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The proof of concept must fit the KL-HSM's actual flash and RAM limits and integrate with its existing ARM Cortex-M C firmware; a drop-in replacement cannot be assumed.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The migration must address larger key material, changed signature flows, hybrid operation and the product's PKCS#11 interface, rather than delivering an isolated algorithm benchmark.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "we have not touched the firmware architecture to accommodate larger key material or different signature flows.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "how hybrid classical/post-quantum operation will work during transition.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086",
+            "field": "tech",
+            "quote": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must account for the KL-500's stated Common Criteria EAL4+ certification objective when proposing firmware changes; the current certification status needs confirmation.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "plans",
+            "quote": "Kriptolog intends to achieve Common Criteria EAL4+ certification for the KL-500 HSM by the end of 2025",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must support a documented roadmap and at least one working integration proof of concept within twelve months, including firmware-version planning and measured performance trade-offs.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "which firmware version will support post-quantum algorithms, what the performance trade-offs are",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company work package must remain well-defined and practically applicable within its modest collaborative R&D capacity.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Work should include real hardware and measurable deliverables. If SLE97 comparison hardware is needed, laboratory access must accommodate the limit of two evaluation kits or partner-supplied units.",
+        "sources": [
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "Prefers collaborative arrangements that involve real hardware and measurable deliverables rather than purely theoretical work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0503",
+            "field": "notes",
+            "quote": "The lab has limited availability of the Infineon SLE97 evaluation kits (two units); industrial partners providing additional hardware would accelerate shared projects.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Published Dilithium results use an STM32F407 and earlier scheme variants, not the KL-HSM production platform or necessarily final ML-DSA. The initial target-hardware experiment must establish correctness, resource fit and security under the company's toolchain; published timings are not forecasts.",
+      "The demonstrated hybrid HSM architecture combines ECDH and Kyber using a secure microcontroller plus FPGA. It does not validate hybrid RSA/ECDSA and ML-DSA signing on the company's constrained microcontroller; prototype the signing policy, interface and verifier compatibility separately.",
+      "Memory optimisation and acceptable latency may conflict with side-channel or fault resistance. Successful functional integration would not establish production security or certification readiness.",
+      "The researcher's current availability is unknown. Company engineering allocation, project budget, hardware access and acceptance thresholds are also unspecified, threatening the twelve-month schedule.",
+      "The stated end-2025 certification target does not establish current certification status. Firmware changes could require additional evaluation work whose scope and cost are unknown.",
+      "Client verifier capabilities and transition requirements are unspecified; a working HSM implementation alone may not produce an interoperable migration path."
+    ],
+    "questions": [
+      "Can Nikolić commit to the proposed twelve-month joint project, and what researcher and laboratory effort is available?",
+      "Which KL-300 or KL-500 variant is the initial target, and what are its exact MCU, free flash/RAM, compiler, RTOS, acceleration features and firmware-access arrangements?",
+      "Will Kriptolog provide representative development HSMs, firmware source, build tools, its existing ML-DSA prototype and non-production test keys?",
+      "Does the scope cover client firmware signing, verification of the HSM's own updates, or both? Which ML-DSA parameter sets, latency, throughput and memory thresholds define acceptance?",
+      "What does hybrid signing mean for these clients: dual signatures, separate selectable mechanisms, or another construction? Which PKCS#11 consumers and firmware verifiers must interoperate?",
+      "What is the KL-500's current Common Criteria status, and which evaluator-approved change-control, side-channel and fault-testing requirements apply?",
+      "What budget and named company engineering allocation are available, and which firmware release milestones must the roadmap support?",
+      "What confidentiality, publication, intellectual-property and library-licensing terms will govern access to proprietary firmware and delivery of the proof of concept?"
+    ],
+    "outcome": "pair",
+    "taskId": "C086-CH1",
+    "researcherId": "R0503",
+    "inputs": [
+      {
+        "artifactId": "business-C086-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C086-CH1-R0503",
+        "version": 1
+      }
+    ]
+  }
+}

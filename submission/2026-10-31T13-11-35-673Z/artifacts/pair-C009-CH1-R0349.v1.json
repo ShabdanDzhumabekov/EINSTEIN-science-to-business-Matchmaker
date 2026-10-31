@@ -1,0 +1,191 @@
+{
+  "ref": {
+    "artifactId": "pair-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T13-11-35-673Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can Serbian morphological reduction combined with token-level script normalization and query-time or incremental vocabulary updates reduce LinguaBot’s retrieval misses toward its below-5% target without full re-indexing? The first experiment would compare these components against the current Elasticsearch baseline on held-out support queries, explicitly testing transfer to banking terminology, within-word script mixing, and newly introduced vocabulary while measuring retrieval quality, latency, and maintenance effort.",
+    "rationale": [
+      {
+        "text": "Dragić has directly studied how Serbian morphological reduction interacts with script normalization, providing a relevant basis for testing pipeline order rather than treating the two problems separately.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "U ovom radu ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His research includes token canonicalization for Serbian cross-script retrieval, evaluated using annotated query–document relevance pairs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has investigated query-side transliteration expansion, offering a candidate approach to test where changing the stored index is undesirable.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "This paper studies the effect of automatically expanding queries with their transliteration variants before submission to an inverted index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work addresses production latency trade-offs between deterministic normalization and neural fallback, relevant to selecting a resource-conscious support-search pipeline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04287",
+            "field": "abstract",
+            "quote": "A cascaded configuration — deterministic normalizer with neural fallback triggered only for out-of-vocabulary tokens — reaches MRR of 0.66 with a 99th-percentile latency overhead of only 9 ms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical experience with normalization modules integrated into existing enterprise search systems, although the evidence does not establish Elasticsearch compatibility.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "Administrativni troškovi uvođenja bili su niski jer je modul integrisan kao dodatak bez izmene ostatka sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must address Serbian inflection and mixed scripts, including within-word errors, and support vocabulary updates without a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "text",
+            "quote": "Our search misses answers because Serbian words change form (e.g. 'kartica', 'karticu', 'karticom') and users mix Latin and Cyrillic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Integration must work with the existing Elasticsearch setup; a replacement search platform should not be assumed.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Evaluation should use the company's labelled support data and linguist validation, with the below-5% miss rate treated as a target to test rather than an assured outcome.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The scope must fit approximately EUR 8,000 for tooling or data work and yield something testable within six months; whether research fees and infrastructure have separate funding is unknown.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Keep the engagement small and explicitly research-oriented: Dragić reports capacity for one smaller industrial contract or consultancy, not an unrestricted software-development assignment.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "nije zainteresovan za opšte projekte razvoja softvera bez istraživačke komponente.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Results from legal documents, news, web search, and benchmark collections may not transfer to short banking and telecom support queries or within-word script typos. The first experiment must evaluate these cases separately on LinguaBot data.",
+      "Incremental document indexing and query expansion do not establish that changes to morphological rules or canonical forms can avoid re-indexing existing content. This must be tested with a simulated vocabulary update.",
+      "Foreign loanwords, proper nouns, abbreviations, and alphanumeric product strings are documented normalization failure cases; aggressive canonicalization could also merge distinct terms and reduce precision.",
+      "More than half of the observed misses were attributed to morphology or script confusion, but the remaining causes are unresolved. Fixing normalization alone may not bring the total miss rate below 5%.",
+      "Earlier enterprise pilots still required terminology-related module updates. A low-maintenance update process is therefore an unvalidated requirement, not an established capability.",
+      "Current researcher availability and committed hours remain unknown despite the stated small-engagement capacity. Data-access permissions, deployment resources, latency limits, and funding for research effort are also unspecified."
+    ],
+    "questions": [
+      "Can Dragić confirm a start date and committed hours for a six-month joint project, given his two active projects?",
+      "Can the team access de-identified query-response pairs, corresponding knowledge-base documents, relevance labels, and the 12,000-query diagnostic sample? What client permissions, access controls, and processing-location restrictions apply?",
+      "How is a 'no useful result' defined, at what retrieval depth, and how will the below-5% target be evaluated across clients and on temporally held-out queries?",
+      "Which Elasticsearch version, analyzers, index mappings, and update mechanisms are in use? Does 'without a full re-index' permit partial backfills, new fields, or query-time expansion?",
+      "What are the production latency, throughput, memory, and hardware limits, and are neural components or external APIs permitted?",
+      "Does the EUR 8,000 cover only tooling and data work, or also research fees and infrastructure? How much engineering and linguist time can LinguaBot commit?",
+      "Can the first experiment include linguist-labelled strata for inflection, cross-script queries, within-word mixing, product names, and unrelated misses, plus a later-vocabulary holdout to test update effort and regression?"
+    ],
+    "outcome": "pair",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

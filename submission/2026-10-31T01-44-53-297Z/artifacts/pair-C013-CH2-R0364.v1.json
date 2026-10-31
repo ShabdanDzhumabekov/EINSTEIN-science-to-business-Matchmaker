@@ -1,0 +1,132 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0364",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0364",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Develop and test a method that links Pannonia Osiguranje-Tech farm policy locations to field-level hail intensity estimates, using MeteoVoj gridded weather data and the available claim records, and that identifies portfolio segments where hail pricing may be too low. The first experiment should test whether Pejić's precipitation downscaling and field-validation approach transfers to hail intensity and settlement-level policy addresses.",
+    "rationale": [
+      {
+        "text": "Pejić is openly interested in joint projects on spatial weather data products for agri-insurance and in contract research on satellite precipitation downscaling/geostatistical interpolation.",
+        "sources": [
+          {
+            "recordId": "R0364",
+            "field": "open_to",
+            "quote": "joint projects on spatial weather data products for agri-insurance or precision agriculture",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0364",
+            "field": "open_to",
+            "quote": "contract research involving satellite precipitation downscaling or geostatistical interpolation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has applied kriging with external drift to downscale satellite rainfall estimates to a 1 km grid over northern Serbia.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04461",
+            "field": "abstract",
+            "quote": "kriging with external drift (KED) to downscale 10-day accumulated rainfall to a 1 km grid over northern Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work includes field-level validation of downscaled precipitation grids against dense micro-station networks in Vojvodina.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04465",
+            "field": "abstract",
+            "quote": "The KED-downscaled product at 1 km showed mean absolute errors of 3.1 mm per 10-day period",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has directly studied how precipitation-grid resolution affects insurance index properties and payout frequency, which matches the company's pricing question.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04462",
+            "field": "abstract",
+            "quote": "Trigger and exit thresholds calibrated on the 1 km product changed payout frequency by up to 18 percentage points compared with coarser inputs.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built a 25-year field-scale rainfall archive and burn analysis explicitly intended for insurers and reinsurers in the Pannonian agricultural zone.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04014",
+            "field": "abstract",
+            "quote": "These outputs are intended to support insurers and reinsurers operating in the Pannonian agricultural zone in setting actuarially fair premiums.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He contributed to a production-grade geostatistical downscaling pipeline producing field-scale daily rainfall grids over Vojvodina for agricultural insurance applications.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0112",
+            "field": "summary",
+            "quote": "developed and validated a production-grade geostatistical downscaling pipeline for converting coarse-resolution satellite precipitation products into field-scale (1 km) daily rainfall grids over Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has industry experience advising a regional agricultural insurance intermediary on spatial resolution requirements for parametric rainfall products in Vojvodina.",
+        "sources": [
+          {
+            "recordId": "R0364",
+            "field": "industry_experience",
+            "quote": "advising on spatial resolution requirements for parametric rainfall products covering Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "The demonstrated evidence is for precipitation/rainfall, while the company task is hail intensity; transfer to hail is untested and must be the first experiment.",
+      "The company receives daily gridded weather data at five-kilometre resolution, but Vojvodina hailstorms are narrow and fast-moving, so the existing grid may be too coarse in space and time for field-level hail mapping.",
+      "A large share of farm policy addresses are stored only at settlement level, not as coordinates, which could prevent reliable field-level matching without geocoding or aggregation.",
+      "Only three full claim years and about 1,200 farm policies are available, which may limit validation of rare hail events and portfolio-level pricing conclusions.",
+      "The company has no dedicated research unit and limited pricing/IT capacity, so an operational method may be delayed by competing operational work.",
+      "Pejić's availability and capacity for this collaboration are unknown.",
+      "The company's previous flood-risk mapping prototype with a Novi Sad faculty was completed but not integrated into pricing, indicating a risk that a new prototype may not reach operational use."
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0364",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0364",
+        "version": 1
+      }
+    ]
+  }
+}

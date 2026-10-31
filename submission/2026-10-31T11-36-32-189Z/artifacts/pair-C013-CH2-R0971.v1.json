@@ -1,0 +1,193 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0971",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0971",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an uncertainty-aware spatial linkage workflow connect farm policies to defensible hail-exposure estimates and help identify potentially underpriced portfolio segments relative to municipality-level rating? The first experiment would audit a verified sample of policy-to-parcel matches and test whether the available daily five-kilometre weather data contain enough information for field-level differentiation before evaluating pricing relevance on held-out storms or years.",
+    "rationale": [
+      {
+        "text": "Đorđević has directly relevant experience harmonising cadastral schemas, coordinate systems and spatial data quality—the core integration work needed before policies can be linked reliably to weather layers.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0468",
+            "field": "summary",
+            "quote": "Katarina Đorđević led the work package on data quality assessment and transformation infrastructure, supervising two research staff and one PhD student",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0468",
+            "field": "summary",
+            "quote": "with a focus on coordinate reference system alignment, attribute schema mediation, and topological quality assurance.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work provides methods for checking supplementary building-location data rather than treating OpenStreetMap as authoritative, which is relevant to resolving incomplete farm locations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10172",
+            "field": "abstract",
+            "quote": "Results suggest OSM is useful for detecting unmapped structures but not for direct integration into formal cadastral registers without significant validation effort.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10172",
+            "field": "abstract",
+            "quote": "The framework is designed to be reusable and operationalised as a semi-automated QGIS model.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has demonstrated Python-based checks for coordinate-reference metadata errors, supporting an automated quality-control stage for incoming spatial datasets.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10173",
+            "field": "abstract",
+            "quote": "The detection pipeline is implemented in Python using GDAL/OGR and produces a structured error report with suggested corrections.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her PostGIS provenance work offers a basis for making policy-location transformations reproducible and inspectable.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10174",
+            "field": "abstract",
+            "quote": "A query interface allows users to retrieve full transformation chains for any geometry in the database.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10174",
+            "field": "abstract",
+            "quote": "The model is implemented as an extension to a PostGIS schema",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Location matching must explicitly retain uncertainty and distinguish settlement-level addresses from verified insured buildings or fields; settlement centroids cannot be treated as field coordinates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Field-level hail inference must pass a resolution-feasibility check; assigning a weather-grid value to a parcel does not itself establish field-level hail intensity.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a storm can devastate one village and leave the farm two kilometres away untouched.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must respect the limited historical sample and separate storms or years between development and testing rather than treating nearby claims from one storm as independent evidence.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must include an operational handoff into the existing Python pricing workflow, with integration effort scoped to teams that also support day-to-day operations.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "past_collaborations",
+            "quote": "which was completed but not yet integrated into the pricing system.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Start with a tightly scoped joint-project feasibility phase and confirm staffing and dates; the recorded availability limitation must not be assumed to have expired automatically.",
+        "sources": [
+          {
+            "recordId": "R0971",
+            "field": "notes",
+            "quote": "limited availability for large new commitments before mid-2026; shorter consulting engagements or clearly scoped contract research are more feasible in the near term.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated cadastral, building-data and CRS methods have not been validated here for settlement-to-insured-field matching or hail reconstruction. The first experiment must test both linkage accuracy and weather-data sufficiency on independently verified locations.",
+      "Five-kilometre daily data may not resolve narrow hail tracks even after policy geocoding improves. Additional observations or a hail specialist may be necessary; their availability and cost are unknown.",
+      "The supplied material does not establish hail-specific modelling or insurance-pricing expertise. The researcher can anchor the spatial integration work, but actuarial and meteorological responsibilities need explicit ownership.",
+      "Three claim years may contain too few independent hail events for stable pricing conclusions. Availability of complete non-claim exposure, premiums, insured values and coverage terms is unknown.",
+      "Better exposure mapping may not explain the reported 18% excess claim cost; coverage mix, repair costs or other factors could contribute.",
+      "Current researcher availability, project budget, data-use permissions and company integration ownership remain unconfirmed. Limited operational capacity and a previous unintegrated mapping prototype create delivery risk."
+    ],
+    "questions": [
+      "Can Đorđević confirm current availability, the scope she can lead, and whether a short feasibility phase within a joint project is workable?",
+      "Can the company supply insured parcel or building identifiers, address histories and a manually verified location sample? Do claim coordinates identify the damaged asset, the policyholder address or another location?",
+      "What variables does MeteoVoj actually provide, at what temporal aggregation, with what hail-validation evidence and licensing terms? Are radar, hail reports or other independent event observations accessible?",
+      "Can the first experiment compare verified-location linkage accuracy and weather discrimination within affected settlements, with predefined criteria for stopping field-level inference or seeking higher-resolution data?",
+      "Are policy-year exposure records available for both claimed and unclaimed policies, including premiums, insured values, deductibles, coverage type and event dates?",
+      "Who will own actuarial validation and hail interpretation, and what held-out comparison against municipality-level rating would justify further development?",
+      "What permissions and safeguards apply to policy, claims and cadastral data, and may external parcel or weather data be used in commercial pricing?",
+      "What budget, delivery window, IT owner and acceptance criteria are available for integrating and maintaining the workflow in the quarterly pricing pipeline?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0971",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0971",
+        "version": 1
+      }
+    ]
+  }
+}

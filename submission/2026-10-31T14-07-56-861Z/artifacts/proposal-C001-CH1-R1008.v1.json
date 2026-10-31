@@ -1,0 +1,204 @@
+{
+  "ref": {
+    "artifactId": "proposal-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Explainable, Site-Specific Anomaly Detection for ProtoSense",
+    "facts": [
+      {
+        "text": "ArmaturaSec reports no confirmed malicious captures and several terabytes collected from consenting clients over three years. It acknowledges that historical compromises could have gone unnoticed; these archives are therefore unlabelled, not verified clean.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "if they were compromised they would not know.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ProtoSense passively inspects Modbus TCP and BACnet/IP. ArmaturaSec reports that false positives from an earlier supervised classifier led clients to disable alerts.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec reports hardware for on-device inference, custom Yocto Linux, and C/Rust firmware. Its hardware plan describes a dedicated security processor intended to support anomaly detection without affecting forwarding latency; that passage does not establish present availability or measured performance.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have the hardware to run inference on-device",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Embedded Linux (custom Yocto build)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "C and Rust for firmware components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "with a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec describes archive, bench, and firmware access under NDA. Kiss describes university testbed availability under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "ArmaturaSec states capacity for one to two part-time engineers. Kiss lists openness to joint projects with ICS monitoring companies.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's Modbus research estimated register-level distributions of request timing, payload values, and function-code sequences. ICAROS developed threshold calibration without labelled attack data.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "For each register address, empirical distributions of inter-request intervals, payload values, and function code sequences were estimated using kernel density estimation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0511",
+            "field": "summary",
+            "quote": "The project developed threshold calibration procedures for detectors operating without labelled attack data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Kiss's research identifies risks from short training captures and a trade-off between false alarms and response latency. Her incremental-model study recorded planned reconfiguration as a persistent anomaly episode.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10474",
+            "field": "abstract",
+            "quote": "Findings inform design choices for unsupervised detectors and highlight risks of training on short captures.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10477",
+            "field": "abstract",
+            "quote": "the trade-off between false alarm rate and response latency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "Concept drift induced by a planned process reconfiguration was detected as a persistent anomaly episode",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a practical joint project around interpretable statistical baselines rather than supervised attack classification. Changed timing, commands, registers, or BACnet objects could provide explanations, but neither manager comprehension nor attack-versus-fault discrimination is established.",
+      "Transfer remains uncertain: Modbus and other-protocol results do not validate BACnet, ArmaturaSec sites, or ProtoSense hardware. Contaminated archives and automatic adaptation could also conceal persistent suspicious behaviour.",
+      "This proposal is conditional because Kiss's availability and staffing commitment remain unknown, despite her stated openness to joint projects."
+    ],
+    "proposedActions": [
+      "Run a proposed six-week passive-replay experiment using selected site captures and separate Modbus/BACnet bench scenarios. Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds, training and calibrating without attack examples. Select configurations on tuning data, then freeze them for independent evaluation. Proposed go/no-go targets for the best configuration, whichever wins: separately for each protocol, detect at least 90% of injected episodes within 60 seconds; generate at most one alert episode per observed site-day; and obtain correct explanation paraphrases from at least 80% of participating plant managers. Merge alerts for the same site/entity separated by no more than five minutes; divide episode counts by complete capture hours/24, counting unresolved alerts. Require a day-block uncertainty upper bound below the burden target. Also require passive operation, agreed CPU/RAM limits, Yocto integration, and no measurable forwarding-latency increase at agreed peak load. Missing evidence or prerequisites means no pass; insufficient precision means extend evaluation.",
+      "Propose chronological training, tuning, and held-out evaluation periods spanning operating modes; check independence and leakage before testing. Review a uniform random sample of all evaluation windows, including windows without alerts, with known inclusion probability n/N. Treat unresolved labels as unknown, never normal, and measure detection only on injected or confirmed episodes. Test BACnet feature coverage explicitly and include legitimate maintenance changes; do not interpret pooled results as either protocol passing.",
+      "Subject to agreement, ArmaturaSec's part-time engineers would supply permitted captures, parser outputs, current hardware and bench integration; Kiss would lead modelling, calibration and evaluation design. Propose weeks one–two for permissions, sampling and resource limits, weeks three–four for tuning, and weeks five–six for frozen evaluation and manager review. Keep suspicious episodes out of baseline updates pending operator approval; postpone broader integration if staffing proves insufficient."
+    ],
+    "questions": [
+      "Can Kiss confirm availability and staffing for this conditional joint project within a mutually agreed budget and scope?",
+      "Which current ProtoSense platform, peak traffic load, CPU/RAM limits and forwarding-latency measurement tolerance should define hardware acceptance?",
+      "Can both parties secure the NDA, client permissions and university data-sharing agreement needed for independent site captures and Modbus/BACnet bench evaluation?",
+      "Who can review sampled windows, assess plain-language explanations and approve baseline updates, and will they accept or revise the proposed acceptance targets before testing?"
+    ],
+    "benefits": {
+      "company": "The experiment could establish whether site-specific detection offers tolerable alert burden and understandable explanations on current ProtoSense hardware, while identifying BACnet or integration gaps before a pilot.",
+      "researcher": "Conditional on agreement and permissions, Kiss could test calibration and drift handling across unfamiliar sites and BACnet, using operational captures and controlled bench scenarios to examine transfer beyond prior Modbus results."
+    },
+    "markdown": "# Explainable, Site-Specific Anomaly Detection for ProtoSense\n\n## Verified facts\n- ArmaturaSec reports no confirmed malicious captures and several terabytes collected from consenting clients over three years. It acknowledges that historical compromises could have gone unnoticed; these archives are therefore unlabelled, not verified clean. [F1]\n- ProtoSense passively inspects Modbus TCP and BACnet/IP. ArmaturaSec reports that false positives from an earlier supervised classifier led clients to disable alerts. [F2]\n- ArmaturaSec reports hardware for on-device inference, custom Yocto Linux, and C/Rust firmware. Its hardware plan describes a dedicated security processor intended to support anomaly detection without affecting forwarding latency; that passage does not establish present availability or measured performance. [F3]\n- ArmaturaSec describes archive, bench, and firmware access under NDA. Kiss describes university testbed availability under a data-sharing agreement. [F4]\n- ArmaturaSec states capacity for one to two part-time engineers. Kiss lists openness to joint projects with ICS monitoring companies. [F5]\n- Kiss's Modbus research estimated register-level distributions of request timing, payload values, and function-code sequences. ICAROS developed threshold calibration without labelled attack data. [F6]\n- Kiss's research identifies risks from short training captures and a trade-off between false alarms and response latency. Her incremental-model study recorded planned reconfiguration as a persistent anomaly episode. [F7]\n\n## Potential benefits\n- For the company: The experiment could establish whether site-specific detection offers tolerable alert burden and understandable explanations on current ProtoSense hardware, while identifying BACnet or integration gaps before a pilot.\n- For the researcher: Conditional on agreement and permissions, Kiss could test calibration and drift handling across unfamiliar sites and BACnet, using operational captures and controlled bench scenarios to examine transfer beyond prior Modbus results.\n\n## Our inference\n- This suggests a practical joint project around interpretable statistical baselines rather than supervised attack classification. Changed timing, commands, registers, or BACnet objects could provide explanations, but neither manager comprehension nor attack-versus-fault discrimination is established.\n- Transfer remains uncertain: Modbus and other-protocol results do not validate BACnet, ArmaturaSec sites, or ProtoSense hardware. Contaminated archives and automatic adaptation could also conceal persistent suspicious behaviour.\n- This proposal is conditional because Kiss's availability and staffing commitment remain unknown, despite her stated openness to joint projects.\n\n## Proposed next steps\n- Run a proposed six-week passive-replay experiment using selected site captures and separate Modbus/BACnet bench scenarios. Compare fixed-threshold rules with site-specific statistical baselines and calibrated thresholds, training and calibrating without attack examples. Select configurations on tuning data, then freeze them for independent evaluation. Proposed go/no-go targets for the best configuration, whichever wins: separately for each protocol, detect at least 90% of injected episodes within 60 seconds; generate at most one alert episode per observed site-day; and obtain correct explanation paraphrases from at least 80% of participating plant managers. Merge alerts for the same site/entity separated by no more than five minutes; divide episode counts by complete capture hours/24, counting unresolved alerts. Require a day-block uncertainty upper bound below the burden target. Also require passive operation, agreed CPU/RAM limits, Yocto integration, and no measurable forwarding-latency increase at agreed peak load. Missing evidence or prerequisites means no pass; insufficient precision means extend evaluation.\n- Propose chronological training, tuning, and held-out evaluation periods spanning operating modes; check independence and leakage before testing. Review a uniform random sample of all evaluation windows, including windows without alerts, with known inclusion probability n/N. Treat unresolved labels as unknown, never normal, and measure detection only on injected or confirmed episodes. Test BACnet feature coverage explicitly and include legitimate maintenance changes; do not interpret pooled results as either protocol passing.\n- Subject to agreement, ArmaturaSec's part-time engineers would supply permitted captures, parser outputs, current hardware and bench integration; Kiss would lead modelling, calibration and evaluation design. Propose weeks one–two for permissions, sampling and resource limits, weeks three–four for tuning, and weeks five–six for frozen evaluation and manager review. Keep suspicious episodes out of baseline updates pending operator approval; postpone broader integration if staffing proves insufficient.\n\n## Open questions\n- Can Kiss confirm availability and staffing for this conditional joint project within a mutually agreed budget and scope?\n- Which current ProtoSense platform, peak traffic load, CPU/RAM limits and forwarding-latency measurement tolerance should define hardware acceptance?\n- Can both parties secure the NDA, client permissions and university data-sharing agreement needed for independent site captures and Modbus/BACnet bench evaluation?\n- Who can review sampled windows, assess plain-language explanations and approve baseline updates, and will they accept or revise the proposed acceptance targets before testing?",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

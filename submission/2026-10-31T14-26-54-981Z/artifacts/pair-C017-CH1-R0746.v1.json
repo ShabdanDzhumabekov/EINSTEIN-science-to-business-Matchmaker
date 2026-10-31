@@ -1,0 +1,259 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0746",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0746",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can EM38-assisted regression-kriging and uncertainty-guided sampling identify Tisa floodplain salinity pockets of 0.3–0.8 hectares more reliably than TloCare’s four-hectare grid without increasing routine survey costs? A first experiment on representative Tisa fields would test local ECa-to-laboratory salinity calibration and pocket detection using spatially held-out reference samples, comparing the existing grid with sensor-guided sampling while accounting for sensor, fieldwork and laboratory costs.",
+    "rationale": [
+      {
+        "text": "He has directly relevant experience combining proximal sensing and regression-kriging to map saline-sodic zones on a commercial sunflower farm.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "Regression-kriging (RK) was applied to delineate saline-sodic soil management zones at a commercial sunflower farm of 280 hectares in central Vojvodina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08248",
+            "field": "abstract",
+            "quote": "Apparent electrical conductivity (ECa) from an EM38 survey and total sodium content from pXRF scanning served as covariates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His sampling-design research directly addresses the trade-off between laboratory sample count and mapping accuracy, including the failure of overly sparse calibration sets.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08252",
+            "field": "abstract",
+            "quote": "this study evaluated the effect of progressively reducing the calibration sample set to 100, 75, 50, 30, and 20 samples",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08252",
+            "field": "abstract",
+            "quote": "Nugget variance estimates became unstable below n=30, compromising kriging weights.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied the temporal stability of conductivity patterns in periodically flooded Vojvodina soils, relevant to assessing whether one survey can support later sampling decisions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08250",
+            "field": "abstract",
+            "quote": "The temporal stability of apparent electrical conductivity (ECa) spatial patterns was examined in a 62-hectare field subject to periodic flooding",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08250",
+            "field": "abstract",
+            "quote": "transition zones require repeated measurement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience includes targeted coring, uncertainty maps and GIS deliverables for agricultural advisory users.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0168",
+            "field": "summary",
+            "quote": "Field campaigns combined EM38 surveys, pXRF scanning, and targeted soil coring to obtain ECe, ESP, pH, texture, and organic carbon.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0168",
+            "field": "summary",
+            "quote": "Regression-kriging was applied to generate 1:10 000-scale prediction maps and associated uncertainty surfaces.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0168",
+            "field": "summary",
+            "quote": "Outputs were delivered to local agricultural extension services in open GIS formats.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has delivered salinity and sodicity maps through paid commissions for agricultural cooperatives, providing relevant experience with commercial agronomic outputs.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "industry_experience",
+            "quote": "Kosanović has carried out two paid soil survey commissions for agricultural cooperatives in Vojvodina, delivering ECe and ESP maps used for variable-rate gypsum application.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The operational design must resolve 0.3–0.8-hectare pockets without relying on blanket denser laboratory sampling; total fieldwork, laboratory costs and delivery time must fit the service economics.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "slani džepovi postoje na površini od svega 0,3 do 0,8 hektara",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "gušće uzorkovanje znači više terena, više laboratorijskih troškova i duži rok isporuke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "text",
+            "quote": "we can't afford to sample more densely.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Historical data must be audited for usable salinity targets and comparable sampling and laboratory protocols before pooling ten years of observations; the stated routine outputs do not establish ECe or ESP coverage.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "Imamo GPS koordinate svih dosadašnjih uzoraka i laboratorijske rezultate za oko 18.000 tačaka iz poslednjih deset godina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "about",
+            "quote": "Rezultati koje klijent vidi odnose se na pH, fosfor, kalijum, humus i potrebu za kalcifikacijom",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "Standardni agrohemijski protokoli po SRPS metodologiji za uzorkovanje i analizu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The workflow must provide zone guidance before dispatching the soil-sampling crew; any preliminary sensor survey must be explicitly scheduled and costed rather than assuming early-spring NDVI is sufficient.",
+        "sources": [
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "predvidimo gde su varijabilne zone pre nego što pošaljemo terenska ekipa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017-CH1",
+            "field": "detail",
+            "quote": "salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A field-based pilot must secure instrument bookings and consumables funding. The researcher offers short-term site visits, but sustained project availability remains unconfirmed.",
+        "sources": [
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "His EM38 and pXRF instruments are available to external partners subject to scheduling and consumables cost recovery.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "Kosanović is available for short-term consultancy visits to company sites within Serbia.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0746",
+            "field": "notes",
+            "quote": "He prefers collaborations that involve genuine field data collection rather than purely computational work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation must fit limited company development capacity and intermittent field support, with outputs compatible with the existing spatial database and portal.",
+        "sources": [
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "Imamo dva programera i jednog GIS specijalista koji mogu da odvoje do trećine radnog vremena za razvoj novih funkcija",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "rd_capacity",
+            "quote": "uz povremenu podršku terenske ekipe za testiranje u polju.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "PostGIS baza podataka za prostorne slojeve parcela",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C017",
+            "field": "tech",
+            "quote": "Leaflet.js za prikaz mapa u web portalu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The published results do not validate detection of TloCare’s small Tisa floodplain pockets. Local spatial structure, soil conditions and survey timing may differ; the first experiment must test local calibration and pocket detection rather than importing published spacing or accuracy.",
+      "The closest sunflower study used both EM38 and pXRF. An EM38-only workflow is a transfer gap and should be compared with the combined-sensor approach before assuming equivalent performance.",
+      "ECa is a proxy rather than a direct salinity diagnosis. Texture and changing field conditions may alter its relationship with laboratory salinity and cause false alarms or missed pockets.",
+      "The historical archive may lack ECe, ESP, sampling-depth metadata or sufficiently recent reference observations. Its size alone does not establish suitability for salinity prediction.",
+      "A preliminary sensor pass, repeat surveys in unstable zones and adequate calibration sampling may erase laboratory savings. The affordable sample count and detection performance remain unproven.",
+      "Researcher availability for sustained supervision of the project, instrument dates, company budget, field access and delivery deadlines remain unknown.",
+      "A model dependent on newly collected dense sensor data may not meet the company's desired pre-dispatch workflow unless surveys can be reused or collected economically in advance."
+    ],
+    "questions": [
+      "Which historical records contain ECe, ESP or other salinity measurements, and are sampling depth, date, laboratory method, parcel boundaries and quality-control metadata available?",
+      "Can the company provide the previously densely sampled Tisa parcels, including pocket boundaries and sunflower establishment observations, and secure access for new reference sampling?",
+      "What salinity threshold, minimum pocket-detection rate, tolerable false-alarm rate and spatial accuracy would make the service useful?",
+      "What are the current per-hectare fieldwork and laboratory costs, turnaround target, pilot budget and acceptable recurring cost ceiling?",
+      "Must predictions be available before any field visit, or is a separate advance EM38 survey acceptable? Can older sensor surveys be reused after local temporal-stability testing?",
+      "Can Kosanović confirm sustained joint-project availability, his role, instrument booking dates and cost-recovery terms?",
+      "Should the pilot compare EM38-only and EM38-plus-pXRF workflows, and who will fund the independent reference samples needed for spatially held-out validation?",
+      "Who will own and access the data and resulting models, and what GIS layers, uncertainty displays and sampling instructions must be delivered through the existing portal?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0746",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0746",
+        "version": 1
+      }
+    ]
+  }
+}

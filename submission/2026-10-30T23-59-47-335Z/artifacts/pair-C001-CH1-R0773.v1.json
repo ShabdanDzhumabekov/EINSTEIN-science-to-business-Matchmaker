@@ -1,0 +1,237 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0773",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0773",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an unsupervised, site-specific baseline model built from Modbus/BACnet traffic features, using adaptive change-point and control-chart methods with calibrated anomaly scores, detect behavioural drift without labelled attacks while producing plain-language alarms within the ProtoSense device latency budget? The first experiment would adapt Ostojić's multivariate SPC/change-point methods to packet-derived time series and test detection delay and false alarms on normal traffic plus simulated or red-team anomalies.",
+    "rationale": [
+      {
+        "text": "Ostojić's research directly addresses unsupervised anomaly detection under distribution shift and the absence of labelled fault data, which is the core constraint of ProtoSense.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08489",
+            "field": "abstract",
+            "quote": "Open challenges discussed include distribution shift under normal ageing, alarm rationalisation in dense sensor networks, and the absence of labelled fault data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08490",
+            "field": "abstract",
+            "quote": "One-class support vector machines produce a real-valued decision score that can serve as a univariate control-chart statistic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed online change-point and adaptive covariance/control-chart methods for non-stationary multivariate streams, a candidate basis for learning per-site traffic baselines.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08487",
+            "field": "abstract",
+            "quote": "a Bayesian online change-point detection model (BOCPD) extended to multivariate observations under a Normal-Inverse-Wishart conjugate prior",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08483",
+            "field": "abstract",
+            "quote": "replacing the static covariance estimate with a sliding-window estimator updated at each sampling instant",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work explicitly addresses calibration, threshold setting and interpretability of anomaly scores as control-chart statistics, relevant to alarms a plant manager can understand.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08490",
+            "field": "abstract",
+            "quote": "how to calibrate raw SVM scores to approximate a false-alarm probability",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08490",
+            "field": "abstract",
+            "quote": "interpretability of run rules and average-run-length guarantees",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has worked on drift monitoring and recalibration of deployed anomaly detectors, which is needed to keep site-specific baselines valid over months.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08494",
+            "field": "abstract",
+            "quote": "two-level monitoring architecture in which a primary anomaly detector (isolation forest trained offline) is supervised by a secondary drift monitor",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her group has experience with multi-site and federated monitoring architectures that avoid centralising raw data, matching a vendor serving many client sites.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08491",
+            "field": "abstract",
+            "quote": "pool monitoring knowledge across sites without centralising raw sensor data for privacy or bandwidth reasons",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0670",
+            "field": "summary",
+            "quote": "federated monitoring architecture for multi-site deployment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has prior paid consultancy replacing rule-based alarm systems with data-driven SPC and designing operator dashboards, supporting the explainability requirement.",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "industry_experience",
+            "quote": "carried out paid consultancy engagements for two manufacturers in the Vojvodina region",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0773",
+            "field": "industry_experience",
+            "quote": "advising on the replacement of rule-based alarm systems with data-driven SPC methods and on the design of operator dashboards",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her stated participation is open to joint projects and contract research on anomaly detection and SPC system design.",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "contract research on anomaly detection and SPC system design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must be unsupervised and must not depend on supervised classifiers trained on public ICS attack datasets.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must learn normal behaviour per site and use the company's consented traffic archives under NDA for training and evaluation.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "What we actually need is something that learns what normal looks like on a specific site and raises a flag when behaviour drifts from that baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Alarms must be explainable to a plant manager in plain language, not only as a raw anomaly score.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "We need a method that works with no attack examples and that we can explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must fit the planned on-device security processor without affecting packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher requires access to labelled or time-stamped operational data from real systems.",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "notes",
+            "quote": "particularly interested in collaborators who can provide access to labelled or time-stamped operational data from real production systems",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must respect Ostojić's stated limit on extensive hardware integration and embedded firmware work.",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "notes",
+            "quote": "not in a position to take on projects requiring extensive hardware integration or embedded firmware development beyond lightweight deployment of pre-trained models",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Ostojić's evidence is in process and sensor SPC, not Modbus/BACnet network traffic or intrusion detection; the transfer to packet-derived features is unproven and must be the first experiment.",
+      "No labelled attacks exist, so detection performance can only be assessed through proxies such as red-team or simulated anomalies and careful false-alarm analysis.",
+      "ProtoSense integration in C/Rust may exceed the researcher's stated embedded scope; company engineers would need to own firmware integration.",
+      "Ostojić's availability is unknown and not confirmed by any source.",
+      "Client traffic is under NDA and heterogeneous across sites; data access and per-site normal definitions may limit how much can be shared or generalised.",
+      "The company's prior academic collaboration was a one-semester student project that was not continued formally, so joint-project management is relatively untested."
+    ],
+    "questions": [
+      "What effort and start date can Ostojić commit, and should the work be structured as a joint project or as an industrial PhD with a company engineer as candidate?",
+      "Which time-stamped Modbus/BACnet captures and site metadata can be shared under NDA, and do they include change logs or operator context needed to define normal behaviour?",
+      "How should packet traffic be converted into multivariate time-series features: flows, function codes, BACnet objects, timing, or parser outputs already available in ProtoSense?",
+      "What detection and false-alarm targets will be used without labelled attacks, and can ArmaturaSec generate red-team or simulated malicious traffic for testing?",
+      "What is the target hardware and latency budget, and who owns integration of a trained model versus firmware development in C/Rust?",
+      "What form of plain-language explanation does a plant manager need, and what alarm-rationalisation process exists?",
+      "Can ArmaturaSec provide the stated one to two part-time engineers and hardware bench access, and is there a specific engineer who would work with the researcher?",
+      "Are there legal or data-protection constraints on using client traffic from multiple countries for model training and benchmarking?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0773",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0773",
+        "version": 1
+      }
+    ]
+  }
+}

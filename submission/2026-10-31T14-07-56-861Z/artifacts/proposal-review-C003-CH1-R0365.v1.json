@@ -1,0 +1,103 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: the best-supported configuration, whichever it is, must repeatedly reproduce field crack locations and fracture features, with contrasts distinguishable from scatter and service-relevant exposure justified against approximately 18 months.",
+        "sources": [],
+        "explanation": "“Confirmed,” “repeatedly,” field-feature matching and contrasts “distinguishable from scatter” lack acceptance rules, allowing a selected configuration to pass on loosely matched cracks or selectively interpreted replicates without establishing reproducible field failure. Add a compact prerequisite that, before held-out confirmation, the parties lock the crack-detection and field-match criteria, specimen-level replication and repeat-handling rule, treatment of ambiguous matches and runouts, contrast decision rule, and service-exposure justification.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj reports painted mild-steel hollow-section frames cracking at crossmember-to-stringer welds after about 18 months of continuous use, with 14 complete assemblies replaced under warranty this year.” Proposed next steps: “plus the room-temperature workshop control.” These identify the affected construction, service failure and warranty burden, and directly address the inadequacy of ambient-only testing."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose a replicated experiment on matching painted production crossmember-to-stringer joints”; “Thermal-off uses a fixed service-range temperature; thermal-on follows measured service excursions including 2–6 °C”; “Explicitly allocate company engineer time around live projects and reserve external laboratory capacity; revise the schedule if these prerequisites fail.” Open questions: “Can the shared equipment accommodate representative joints, measured cyclic loads and independently controlled condensation at 2–6 °C?” These preserve the actual construction and environment and make equipment compatibility, laboratory provision and limited company staffing prerequisites rather than assumed resources; no original budget or deadline limit is stated."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s research compared mechanical fatigue and thermal cycling in butt-welded S275JR plates between −30 °C and +20 °C. Out-of-phase loading shortened average crack-initiation life by 28% relative to the room-temperature baseline.” Our inference: “The plate experiments do not validate a mechanism in painted conveyor hollow sections at 2–6 °C. Their shorter-life result highlights interaction risk, not evidence that AutomVoj’s cracks have the same cause.” These tie an evidenced experimental method and its reported interaction effect to a transfer test while explicitly limiting its applicability."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj has site photographs and measurements, plus two retained failed sections” and “Erić’s chamber and fatigue machine are shared, with advance coordination needed for extended campaigns.” Proposed next steps: “AutomVoj would supply specimens and service information; Erić would propose fixtures, loading and analysis.” Open questions: “What permissions are available for examining and destructively sampling the retained sections, obtaining matching new or service-aged controls, and instrumenting customer sites?” These distinguish existing evidence and equipment from proposed contributions and unresolved permissions."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Cross independently controlled thermal cycling, condensation and belt vibration on/off: baseline, each alone, all pairs and the full combination, plus the room-temperature workshop control”; “Define wet/dry levels independently through dew-point control and vibration levels from site measurements; hold geometry, coating, mean load and inspection intervals comparable”; “Use separate specimens for protocol tuning and held-out confirmation, checking batch and exposure independence.” These specify representative inputs, controls, factorial comparisons and separate tuning and confirmation specimens, with measured levels and equipment feasibility treated as preparation prerequisites; the acceptance-rule gap is addressed under metric."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Measure cycles to confirmed cracking, crack origin/path, fracture features and factor contrasts against replicate scatter. Proposed go/no-go: the best-supported configuration, whichever it is, must repeatedly reproduce field crack locations and fracture features, with contrasts distinguishable from scatter and service-relevant exposure justified against approximately 18 months.” Also: “Insufficient exposure or unmatched fractures means inconclusive, not success.” The target appropriately concerns field reproduction rather than merely outperforming a control, but it does not define a confirmed crack, field-match criteria, the required extent of replication, or the rule for distinguishing contrasts from scatter; these are not explicitly made prerequisites to held-out acceptance."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Cross independently controlled thermal cycling, condensation and belt vibration on/off: baseline, each alone, all pairs and the full combination”; “hold geometry, coating, mean load and inspection intervals comparable”; “A null single-factor result does not exclude interactions; unresolved contrasts require further replication before causal conclusions.” These provide independently varied factors, comparable controls and interaction comparisons while withholding conclusions where contrasts remain unresolved."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “The retained sections could guide reproduction criteria, but may not represent all replacements. Condensation or coating damage could require additional expertise, and chamber temperature capability alone does not establish fixture compatibility or humidity control.” Proposed next steps: “Accelerated cracking alone would not demonstrate prevention of warranty failures; service follow-up would remain necessary.” Together with the explicit plate-to-frame transfer limitation, these name the main representativeness, expertise, equipment and acceleration risks without presenting unknown capabilities as facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “participation remains conditional because Erić’s availability is unknown; openness to this format is not a commitment to this project.” Open questions: “Can Erić confirm availability, and can both parties agree staff allocations, laboratory booking, budget and a decision deadline for this joint project?” These keep the joint-project format consistent with stated openness and make actual participation and resource commitments conditional."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The first experiment could distinguish individual and interacting service factors and show whether a laboratory test genuinely reproduces the field failure, informing subsequent production changes”; “Subject to agreement and access, Erić could test transfer of thermo-mechanical fatigue methods to painted hollow-section conveyor joints using retained failures, service measurements and representative specimens.” These are plausible, conditional gains from the proposed factorial transfer experiment rather than guarantees of warranty prevention or research access."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.95,
+        0.83,
+        0.98,
+        0.96,
+        0.98,
+        0.94,
+        0.59
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

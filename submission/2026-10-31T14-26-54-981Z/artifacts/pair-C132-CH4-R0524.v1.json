@@ -1,0 +1,173 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0524",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0524",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Investigate where Serbian Cyrillic–Latin normalization should occur in KlozuraPro’s PostgreSQL search pipeline to reduce script-related missed contracts without introducing false matches or unacceptable latency. The first experiment would compare indexing-time, query-time and combined normalization against the current baseline on an approved, annotated contract/query sample covering mixed scripts and ambiguous Latin sequences, measuring retrieval precision, recall, zero-hit rate, indexing overhead and p95 query latency.",
+    "rationale": [
+      {
+        "text": "Papp has directly relevant research on script normalization before indexing Serbian news from sources using different scripts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Kada tok vesti dolazi iz više izvora koji koriste različita pisma, inkrementalni indekser mora da normalizuje pismo svake pristigle stavke pre umetanja.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her search research explicitly measures normalization overhead, providing a useful starting point for performance-aware experiments rather than assuming normalization is free.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Normalizacija pisma i fonemska kanonizacija implementirane su kao paraleln cevovod koji dodaje manje od 15% vremenske cene u odnosu na sistem bez normalizacije.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has experience constructing annotated evaluation data for legal texts involving Serbian, relevant to designing a contract-search test set.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-06150",
+            "field": "abstract",
+            "quote": "We constructed a manually annotated corpus of 4,200 sentence pairs extracted from EU directive translations and national legislative texts.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has completed an applied document-matching engagement with an internally deployed prototype, supporting the practical collaboration format.",
+        "sources": [
+          {
+            "recordId": "R0524",
+            "field": "industry_experience",
+            "quote": "The engagement resulted in a prototype system deployed internally by the company.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The intervention must integrate with the existing PostgreSQL full-text search pipeline; choosing indexing-time, query-time or combined normalization is part of the work.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "our full-text search index in PostgreSQL treats the two scripts as completely different character sets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "at indexing time, at query time, or both",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Correctness testing must cover mixed-script documents and ambiguous Latin-to-Cyrillic mappings, not only uniformly written documents.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Search responsiveness is a hard acceptance condition; the company must quantify what counts as a noticeable slowdown before implementation.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope must fit the task-specific allocation of one backend engineer for at most six weeks and the company's one-external-project capacity.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "capacity for roughly one external project at a time alongside normal product development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the researcher's stated teaching-load restriction; the recorded earliest start does not establish current availability.",
+        "sources": [
+          {
+            "recordId": "R0524",
+            "field": "notes",
+            "quote": "Papp is currently at full teaching load and can take on new projects only from late 2025 onward.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The closest search evidence concerns Serbian news-stream indexing, not contract retrieval in PostgreSQL. Its indexing-overhead result does not establish query latency or legal-term correctness; the first experiment must test this transfer explicitly.",
+      "Normalization may conflate distinct terms or names, while ambiguous mappings may still miss relevant contracts. Recall gains must be checked against false matches.",
+      "The reported one-in-five failure estimate comes from January 2024 logs and may not represent current traffic or isolate script mismatch from other retrieval problems.",
+      "Access to representative contracts, query logs and relevance annotations is unknown. Confidentiality restrictions could prevent realistic evaluation unless an approved data-access arrangement is established.",
+      "Current researcher availability, project budget and alignment with the six-week engineering window remain unknown."
+    ],
+    "questions": [
+      "Can Papp confirm current availability and time commitment for a joint project, and can that overlap with the backend engineer's six-week window?",
+      "What budget, start date and deliverables are approved, including ownership of implementation, testing and production rollout?",
+      "Can the company provide approved contract text, query logs and relevance judgments covering both scripts, mixed-script documents and ambiguous sequences? Who will annotate them, and under what access and confidentiality rules?",
+      "What are the current PostgreSQL version, text-search configuration, tokenization and stemming rules, index size, document volume and query load?",
+      "What numerical limits apply to p95 query latency, indexing overhead and storage growth, and what precision/recall trade-off is acceptable?",
+      "Can the January 2024 estimate be rechecked on current logs, and which concrete ambiguous mappings, names or legal terms must the first experiment include?",
+      "What reindexing window, staging environment and rollback process are available?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0524",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0524",
+        "version": 1
+      }
+    ]
+  }
+}

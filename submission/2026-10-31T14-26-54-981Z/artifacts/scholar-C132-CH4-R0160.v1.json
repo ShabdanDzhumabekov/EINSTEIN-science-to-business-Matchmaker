@@ -1,0 +1,233 @@
+{
+  "ref": {
+    "artifactId": "scholar-C132-CH4-R0160",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0160",
+    "name": "Srđan Rajić",
+    "faculty": "Faculty of Philosophy",
+    "department": "Department of Serbian Language and Linguistics",
+    "fields": [
+      "Computational Linguistics",
+      "Natural Language Processing",
+      "Serbian Language Studies",
+      "Information Retrieval"
+    ],
+    "keywords": [
+      "Serbian computational morphology",
+      "morpho-syntactic tagging",
+      "informal text processing",
+      "short-text classification",
+      "orthographic variability",
+      "domain-specific NLP",
+      "corpus annotation",
+      "semantic categorisation",
+      "user-generated content",
+      "low-resource Slavic NLP"
+    ],
+    "openTo": [
+      "contract research on informal text classification and morpho-syntactic annotation for Serbian",
+      "joint projects on customer feedback or service log analysis",
+      "consulting on building or evaluating Serbian NLP pipelines for domain-specific text",
+      "student internships in corpus annotation and NLP data preparation",
+      "industrial PhD supervision in computational linguistics applied to company text data"
+    ],
+    "bio": {
+      "recordId": "R0160",
+      "field": "bio",
+      "text": "Srđan Rajić completed his undergraduate and master's studies in Serbian Language and Linguistics at the Faculty of Philosophy, University of Novi Sad, graduating in 2009 and 2011 respectively. He defended his doctoral dissertation on morpho-syntactic tagging of informal Serbian online text in 2017 at the same institution. Since 2018 he has held the position of Assistant Professor in the Department of Serbian Language and Linguistics. His research focuses on computational analysis of Serbian morphology and syntax in informal registers, including social media posts, user reviews, and domain-specific short messages, with a particular interest in handling orthographic inconsistency and lexical variability. He teaches courses in computational linguistics and corpus methods. His group makes use of the Faculty's corpus annotation workstations and collaborates with the CLARIN.SI and CLARIN-SR infrastructure for language resource access."
+    },
+    "industryExperience": {
+      "recordId": "R0160",
+      "field": "industry_experience",
+      "text": "During the INFORSRB project, Rajić coordinated data-sharing agreements with four domestic companies to obtain pseudonymised customer communication text, giving him practical exposure to data governance requirements and the gap between academic NLP benchmarks and real operational text quality. He has also provided informal consulting to one IT company in Novi Sad on preprocessing Serbian user-generated content for a search relevance task."
+    },
+    "notes": {
+      "recordId": "R0160",
+      "field": "notes",
+      "text": "Rajić has a clear preference for collaborations where the company shares text data for annotation and evaluation rather than expecting a fully deployed software product; his group produces annotated corpora, trained models, and technical reports rather than production-ready applications. He is not currently on sabbatical and supervises two doctoral students whose dissertation topics could align with an industry collaboration."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02079",
+        "kind": "publication",
+        "title": "Part-of-Speech Tagging of Serbian Internet Forum Text: Challenges from Phonological Respelling",
+        "body": {
+          "recordId": "SYN-PUB-02079",
+          "field": "abstract",
+          "text": "This paper examines the degradation of a standard Serbian part-of-speech tagger when applied to forum discussion data collected from a domestic automotive enthusiast community. A corpus of approximately 42,000 tokens was manually annotated using the MULTEXT-East tagset adapted for Serbian. Analysis showed that phonological respelling conventions—such as omission of diacritics, phonetic elongation, and loanword integration without morphological adaptation—caused tagger error rates to rise from 4.2% on newspaper text to 19.7% on the forum corpus. The paper describes a post-processing layer that applies rule-based normalization to the most frequent respelling patterns before tagging. After applying this layer to the 300 most frequent non-standard forms, the error rate dropped to 11.4%. The study concludes that a dedicated normalization module is more effective than retraining the base tagger on a small informal corpus, given the annotation cost involved. Frequency profiles of error-inducing token classes are provided as supplementary material."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02080",
+        "kind": "publication",
+        "title": "A Lexicon of Informal Serbian Morphological Variants for NLP Applications",
+        "body": {
+          "recordId": "SYN-PUB-02080",
+          "field": "abstract",
+          "text": "The paper presents the construction and evaluation of a manually curated lexicon mapping 8,740 informal orthographic variants of Serbian word forms to their standard dictionary entries, along with their morpho-syntactic tags. Source material was drawn from three online registers: sports commentary forums, food review portals, and classified advertisement listings. Variants were identified by comparing tokenised text against a pre-existing standard Serbian morphological dictionary and manually reviewing unmatched tokens. Each entry records the variant form, the canonical lemma, the tag, the source register, and a confidence score based on annotator agreement. An inter-annotator agreement of κ = 0.81 was achieved across two annotators for lemma assignment. The lexicon was released under a CC-BY licence and integrated as an optional module into the Serbian TreeTagger pipeline. Lookup precision on a held-out test set of 1,200 tokens reached 91.3%. The resource is intended to support downstream tasks such as sentiment analysis and named-entity recognition on informal Serbian text."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02081",
+        "kind": "publication",
+        "title": "Dependency Parsing of Short Telegraphic Sentences in Serbian Classified Advertisements",
+        "body": {
+          "recordId": "SYN-PUB-02081",
+          "field": "abstract",
+          "text": "Classified advertisement text in Serbian frequently omits function words, drops subjects, and uses non-standard punctuation, making dependency parsing with models trained on newspaper treebanks unreliable. This study collected 5,600 advertisement sentences from a domestic generalist listing platform across six product categories and parsed them using three publicly available dependency parsers trained on the Serbian UD treebank. Labelled attachment score (LAS) on the advertisement sentences averaged 61.4% across the three parsers, compared to 82.1% on a newspaper held-out set. The paper then reports on the manual annotation of 1,200 advertisement sentences as a supplementary treebank extension, with inter-annotator UAS of 0.87. Fine-tuning one parser on a 900/300 train-test split of these sentences raised LAS to 74.2%. Error analysis identified nominal predicate constructions and asyndetic listing as the primary sources of residual error. The annotated sentences are deposited with the CLARIN-SR repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02082",
+        "kind": "publication",
+        "title": "Semantic Role Labelling in Serbian Warranty Claim Texts: A Corpus Study",
+        "body": {
+          "recordId": "SYN-PUB-02082",
+          "field": "abstract",
+          "text": "This paper investigates the distribution of semantic roles in a corpus of 3,200 warranty claim descriptions submitted via an online form by customers of a domestic household appliance retailer. The texts are short (median 34 tokens), domain-restricted, and exhibit a characteristic predicate structure centred on malfunction verbs. A frame-semantic annotation scheme derived from FrameNet was applied, with 14 frames covering 88% of predicate occurrences in the corpus. Two annotators achieved κ = 0.79 on frame assignment. The annotated corpus was used to train a CRF-based semantic role labeller, which reached an F1 of 0.74 on a 20% held-out test set. The study identifies three recurring argument structures—DEVICE_MALFUNCTION, TEMPORAL_ONSET, and SYMPTOM_DESCRIPTION—that together account for 61% of all clause types. The paper argues that shallow semantic annotation is sufficient for downstream fault routing and priority scoring tasks in customer service contexts, and discusses annotation guidelines developed during the project."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02083",
+        "kind": "publication",
+        "title": "Character-Level Models for Morphological Analysis of Dialectally Influenced Serbian Social Media Text",
+        "body": {
+          "recordId": "SYN-PUB-02083",
+          "field": "abstract",
+          "text": "Serbian social media posts frequently incorporate lexical and phonological features associated with regional dialects, particularly Šumadija-Vojvodina and Zeta-South Serbian varieties, alongside standard Ekavian and Ijekavian forms. This study evaluates three character-level architectures—a character n-gram logistic regression baseline, a bidirectional LSTM, and a transformer trained from scratch on a 40 MB informal Serbian corpus—on a morphological analysis task over a manually annotated dataset of 6,800 tokens sampled from Twitter and Instagram. The transformer model achieved the highest lemmatisation accuracy at 89.1% and tag accuracy at 86.3%, outperforming the BiLSTM by 2.9 and 3.4 percentage points respectively. Performance gaps were largest for verb forms showing Ijekavian-Ekavian alternation and for clitic variants. The paper includes an ablation study showing that subword tokenisation tuned to Serbian morpheme boundaries improves accuracy by 1.7 points on the verb subset. Training data and evaluation scripts are made publicly available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02085",
+        "kind": "publication",
+        "title": "Annotation Consistency and Label Stability in Informal Serbian Corpora: A Study Across Four Annotation Rounds",
+        "body": {
+          "recordId": "SYN-PUB-02085",
+          "field": "abstract",
+          "text": "Repeated annotation of the same informal Serbian corpus segments by different annotators over a four-year period provides an opportunity to measure how guidelines, annotator training, and tagset revisions affect label consistency. This paper reports on four annotation rounds applied to a fixed 2,400-token sample drawn from forum and review text, each round involving a different pair of annotators using an evolving version of the morpho-syntactic guidelines. Pairwise Cohen's κ ranged from 0.71 in round one to 0.86 in round four, with the largest gains in tagging of particles and discourse markers. Across rounds, 14.3% of tokens received different majority tags, with verb aspect marking and reflexive pronoun classification as the most variable categories. The paper proposes a calibration protocol for informal corpus annotation projects and provides a freely downloadable inter-annotator disagreement log for the 2,400-token sample. Findings are relevant for teams building training data for Serbian NLP systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02086",
+        "kind": "publication",
+        "title": "Morpho-Syntactic Profiling of Serbian Technical Support Chat Logs",
+        "body": {
+          "recordId": "SYN-PUB-02086",
+          "field": "abstract",
+          "text": "Technical support conversations conducted via text chat present a dense mixture of standard Serbian, informal register, and domain jargon. This study analyses a corpus of 9,200 anonymised chat exchanges between agents and customers of a domestic internet service provider, totalling approximately 310,000 tokens. Morpho-syntactic profiles were constructed by running a normalisation-augmented tagger pipeline on the corpus and computing per-speaker type-token ratios, lemma entropy, and syntactic complexity proxies based on dependency arc lengths. Customer messages show significantly higher lexical entropy (mean 4.31 bits) compared to agent messages (3.19 bits), while agent messages exhibit longer average dependency arcs (3.8 vs. 2.6 tokens), reflecting formulaic syntax. The paper then trains a binary message-type classifier achieving F1 of 0.96, and a five-way intent classifier (complaint, inquiry, confirmation, instruction, escalation request) reaching macro-F1 of 0.81. Error cases are traced to morpho-syntactic ambiguity in elliptical customer turns. Implications for automatic ticket routing are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02087",
+        "kind": "publication",
+        "title": "Cross-Domain Transfer of Serbian Morpho-Syntactic Taggers: Automotive, Medical, and Legal Short Text",
+        "body": {
+          "recordId": "SYN-PUB-02087",
+          "field": "abstract",
+          "text": "This paper systematically tests how well a tagger trained on one informal domain transfers to two other informal domains in Serbian, using three corpora of roughly equal size (circa 15,000 tokens each): automotive forum posts, anonymised patient complaint summaries, and excerpts from online legal advice forums. All three corpora were annotated in-house using the MULTEXT-East 6.0 Serbian tagset. Cross-domain experiments show that the automotive-to-legal transfer retains 91.2% of in-domain F1, while automotive-to-medical drops to 81.7%, mainly due to Latinate medical terminology and nominal compound constructions absent from automotive text. A simple domain adaptation step using 500 in-domain labelled sentences recovers 5.1 F1 points in the medical condition. The paper presents confusion matrices for the six morpho-syntactic categories most affected by domain shift and provides practical guidance on minimum in-domain annotation effort as a function of target domain vocabulary overlap. All three corpora are deposited with CLARIN-SR."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02088",
+        "kind": "publication",
+        "title": "Lexical Borrowing Patterns and Morphological Integration of English Loanwords in Serbian Tech-Sector Short Messages",
+        "body": {
+          "recordId": "SYN-PUB-02088",
+          "field": "abstract",
+          "text": "This study examines how English loanwords are morphologically integrated in Serbian short messages produced by employees and customers in the information technology sector. A corpus of 7,800 messages was collected from two sources: internal project management tool threads from three IT companies operating in Novi Sad (shared under a data agreement with pseudonymisation) and publicly available technology product review pages. From this corpus, 2,140 loanword tokens were identified and classified according to their degree of morphological integration: unadapted citation forms, partially adapted forms retaining English plural marking, and fully integrated forms inflected according to Serbian nominal or verbal morphology. Results show that 38% of loanword tokens appear in unadapted form, 29% in partial adaptation, and 33% fully integrated. Integration rate correlates significantly with word frequency (Spearman r = 0.62) and with the part of speech, with verbs showing higher integration than nouns. Findings are discussed in relation to contact linguistics and as practical guidance for building normalization rules for Serbian tech-domain NLP pipelines."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02089",
+        "kind": "publication",
+        "title": "Stance and Engagement in Serbian Economics Research Articles: A Corpus-Based Study",
+        "body": {
+          "recordId": "SYN-PUB-02089",
+          "field": "abstract",
+          "text": "Drawing on a corpus of 75 Serbian-language economics research articles published in nationally ranked journals between 2008 and 2015, this study investigates stance and engagement features as defined within an interpersonal metadiscourse framework. The analysis quantifies the frequency and distribution of attitude markers, hedges, boosters, self-mentions, and reader-address forms, and examines their syntactic and pragmatic contexts. Economics articles in the corpus show comparatively high booster density (mean 8.9 per 1,000 words) relative to the author's earlier findings for natural-science and humanities texts, a result interpreted in relation to the persuasive demands of policy-relevant scholarship. Self-mention is present in 68 per cent of articles, predominantly in methods and conclusions sections. The paper contributes to the growing body of corpus evidence on academic discourse in smaller European languages and discusses implications for English-medium publication by Serbian economists."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02090",
+        "kind": "publication",
+        "title": "Transmission Chains and Textual Divergence in the Serbian Hagiographic Corpus of the Late Fourteenth Century",
+        "body": {
+          "recordId": "SYN-PUB-02090",
+          "field": "abstract",
+          "text": "This book chapter contributes to a collected volume on Balkan medieval textual transmission. It reconstructs partial transmission chains for four closely related vitae circulating in Serbian monastic scriptoria between approximately 1370 and 1430, using a combination of stemmatic analysis and orthographic profiling. The chapter identifies a previously overlooked intermediary manuscript tradition linking the Morava valley scriptoria to Athonite copying centres, evidenced by a cluster of shared orthographic deviations affecting 23 lexical items across all four texts. Particular attention is given to the role of deliberate editorial emendation versus mechanical copying error in producing observed textual divergences. The analysis makes use of a purpose-built collation database holding diplomatic transcriptions of 11 manuscript witnesses. The chapter argues for a more cautious use of single shared errors as indicators of direct copying relationships in this corpus, given the evidence for parallel consultation of common source texts by multiple independent scribes."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0110",
+        "kind": "project",
+        "title": "Annotation Infrastructure and Tagger Development for Informal Serbian in Digital Service Domains",
+        "body": {
+          "recordId": "SYN-PRJ-0110",
+          "field": "summary",
+          "text": "The project aimed to produce reusable annotated corpora and retrained tagger components covering three informal Serbian service domains: e-commerce, customer support chat, and classified advertising. Activities included corpus collection under data-sharing agreements with four domestic companies, development of normalisation rules for 12 recurring orthographic variability patterns, and fine-tuning of two open morpho-syntactic taggers on the resulting data. A total of approximately 95,000 tokens were annotated and deposited with the CLARIN-SR repository. The project also produced annotation guidelines revised through four internal calibration rounds, and contributed supplementary treebank sentences to the Serbian UD treebank. Two junior researchers were trained in corpus annotation methods through the project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0111",
+        "kind": "project",
+        "title": "Building a Shared Lexical Resource for Low-Resource Serbian NLP Across Regional Institutions",
+        "body": {
+          "recordId": "SYN-PRJ-0111",
+          "field": "summary",
+          "text": "A bilateral cooperation project between the University of Novi Sad and the University of Banja Luka, focused on harmonising and extending morphological lexicons for Serbian, Bosnian, and closely related varieties. Rajić leads the work package on informal variant coverage, contributing the informal morphological variant lexicon developed in earlier work and coordinating its extension with Ijekavian and Bosnian lexical variants. The project includes two joint annotation campaigns, exchange visits for doctoral students, and preparation of a shared evaluation benchmark for morphological analysis tools across the three standard varieties. A shared digital repository for the resulting resources is hosted at the University of Banja Luka."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0029",
+        "kind": "project",
+        "title": "Shared Language Technology Infrastructure for Adriatic and Pannonian Languages",
+        "body": {
+          "recordId": "SYN-PRJ-0029",
+          "field": "summary",
+          "text": "ADRIA-NLP is a consortium of eleven institutions across six countries building shared NLP infrastructure—corpora, annotation tools, and pre-trained language models—for eleven under-resourced languages of the Adriatic and Pannonian region, including Serbian, Croatian, Slovenian, Hungarian, Romanian, Albanian, and Macedonian. Uroš Janković leads the work package on cross-lingual morphological processing, responsible for harmonising tagsets across languages, delivering a shared morphological annotation pipeline, and coordinating evaluation campaigns. The work package also produces training materials for annotators and a data-sharing protocol compliant with GDPR and the European Language Data Space framework."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "open_to",
+            "quote": "industrial PhD supervision in computational linguistics applied to company text data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0160",
+            "field": "open_to",
+            "quote": "contract research on informal text classification and morpho-syntactic annotation for Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0160",
+            "field": "open_to",
+            "quote": "joint projects on customer feedback or service log analysis",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

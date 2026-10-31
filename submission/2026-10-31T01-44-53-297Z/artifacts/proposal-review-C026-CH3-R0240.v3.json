@@ -1,0 +1,24 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0240",
+    "version": 3
+  },
+  "kind": "review",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0240",
+      "version": 3
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0240",
+      "version": 3
+    },
+    "checkedClaimCount": 8,
+    "issues": []
+  }
+}

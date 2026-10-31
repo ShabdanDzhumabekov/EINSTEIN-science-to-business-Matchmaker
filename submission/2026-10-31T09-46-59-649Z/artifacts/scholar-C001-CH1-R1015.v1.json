@@ -1,0 +1,177 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R1015",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R1015",
+    "name": "Vuk Đukić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "cybersecurity",
+      "network security"
+    ],
+    "keywords": [
+      "intrusion detection",
+      "industrial control systems",
+      "anomaly detection",
+      "IoT security",
+      "threat modelling"
+    ],
+    "openTo": [
+      "industrial PhD supervision",
+      "joint projects"
+    ],
+    "bio": {
+      "recordId": "R1015",
+      "field": "bio",
+      "text": "Vuk Đukić is an Associate Professor at the Faculty of Technical Sciences, University of Novi Sad, within the Department of Computing and Control Engineering. His research focuses on cybersecurity and network security, with particular emphasis on intrusion detection, anomaly detection in industrial control systems, IoT security, and threat modelling. He has led and contributed to multiple national and international research initiatives aimed at securing critical infrastructure and smart environments. Professor Đukić has published in reputable journals and conferences and is actively involved in interdisciplinary collaboration with industry. He is open to supervising industrial PhD students and engaging in joint research projects with technology companies seeking expertise in operational technology security and advanced threat analysis."
+    },
+    "industryExperience": {
+      "recordId": "R1015",
+      "field": "industry_experience",
+      "text": ""
+    },
+    "notes": {
+      "recordId": "R1015",
+      "field": "notes",
+      "text": ""
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-10523",
+        "kind": "publication",
+        "title": "Unsupervised anomaly detection on Modbus traffic",
+        "body": {
+          "recordId": "SYN-PUB-10523",
+          "field": "abstract",
+          "text": "Industrial control systems increasingly rely on Modbus, a legacy serial communication protocol widely deployed in manufacturing and critical infrastructure environments. Despite its prevalence, Modbus lacks built-in security mechanisms, making it highly susceptible to network-based attacks. This paper presents an unsupervised anomaly detection framework specifically designed for Modbus traffic analysis. The proposed approach leverages autoencoder-based neural networks trained exclusively on benign traffic to establish a baseline behavioural profile of legitimate industrial communications. Anomalies are identified by measuring reconstruction error against learned normal patterns, without requiring labelled attack data. The framework is evaluated on a synthetic dataset generated from a real-world programmable logic controller testbed, covering scenarios such as unauthorised function code injection, coil manipulation, and replay attacks. Experimental results demonstrate detection rates exceeding 94% across all attack categories, with a false positive rate below 2%. The paper also analyses the impact of traffic window size and encoding granularity on detection performance, offering practical guidance for deployment in resource-constrained industrial environments."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10524",
+        "kind": "publication",
+        "title": "Threat modelling for smart building controllers",
+        "body": {
+          "recordId": "SYN-PUB-10524",
+          "field": "abstract",
+          "text": "Smart building automation systems increasingly integrate heterogeneous controllers managing heating, ventilation, access control, and fire suppression, all connected over IP-based networks. This convergence introduces significant attack surfaces that are rarely addressed through systematic security engineering. This paper applies a structured threat modelling methodology—adapted from STRIDE and augmented with ICS-specific threat categories—to a representative smart building controller architecture. The analysis identifies seventeen distinct threat scenarios spanning spoofing of sensor inputs, tampering with actuator commands, and denial-of-service against building management gateways. For each threat, the paper proposes corresponding mitigations including cryptographic command authentication, rate-limiting policies, and network segmentation strategies. A comparative evaluation against an unmitigated baseline system is conducted using a simulation environment, demonstrating measurable risk reduction across all identified threat categories. The findings offer actionable security guidance for building automation vendors and facility managers deploying next-generation smart infrastructure."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10525",
+        "kind": "publication",
+        "title": "A comparative study of intrusion detection architectures for SCADA networks",
+        "body": {
+          "recordId": "SYN-PUB-10525",
+          "field": "abstract",
+          "text": "Supervisory Control and Data Acquisition (SCADA) networks form the backbone of critical infrastructure sectors including energy distribution, water treatment, and transportation. Protecting these networks from cyber intrusions requires detection systems capable of operating on highly specialised industrial protocols while maintaining low false-positive rates in continuous operation. This paper conducts a systematic comparative evaluation of five intrusion detection architectures—signature-based, specification-based, statistical anomaly, deep learning, and hybrid approaches—applied to a common SCADA testbed. Each architecture is assessed across four attack categories: reconnaissance, command injection, man-in-the-middle, and denial-of-service. Performance is measured in terms of detection accuracy, latency, resource consumption, and adaptability to concept drift. Results show that hybrid architectures combining specification-based rules with neural anomaly scoring achieve the best overall balance, while purely deep-learning-based systems exhibit higher sensitivity to protocol version variability. The paper concludes with a decision framework to guide practitioners in selecting appropriate detection strategies based on operational constraints."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10526",
+        "kind": "publication",
+        "title": "Federated learning for distributed intrusion detection across IoT edge nodes",
+        "body": {
+          "recordId": "SYN-PUB-10526",
+          "field": "abstract",
+          "text": "Internet of Things deployments in industrial and smart city environments generate massive volumes of heterogeneous network traffic across geographically distributed edge nodes. Centralising this data for intrusion detection raises significant privacy and bandwidth concerns, particularly in multi-stakeholder environments. This paper proposes a federated learning framework for distributed intrusion detection, wherein each edge node trains a local anomaly detection model on its own traffic and periodically shares only model gradient updates with a central aggregation server. The aggregated global model is then redistributed to participating nodes, enabling collective knowledge improvement without raw data exposure. The framework is evaluated on a purpose-built IoT testbed consisting of twenty-four heterogeneous edge devices simulating smart metering, environmental sensing, and industrial actuation scenarios. Results demonstrate that the federated approach achieves detection accuracy within 3% of a centralised baseline while reducing data transmission overhead by over 80%. The paper also investigates the robustness of the framework against poisoning attacks introduced by compromised edge nodes."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10527",
+        "kind": "publication",
+        "title": "Threat modelling in IIoT supply chains: identifying lateral movement pathways",
+        "body": {
+          "recordId": "SYN-PUB-10527",
+          "field": "abstract",
+          "text": "Industrial Internet of Things supply chains encompass multiple layers of hardware vendors, firmware providers, system integrators, and end operators, each introducing potential vulnerabilities that adversaries may exploit for lateral movement across organisational boundaries. This paper presents a threat modelling methodology tailored to IIoT supply chain architectures, extending traditional STRIDE analysis with supply-chain-specific threat categories including firmware substitution, third-party library poisoning, and vendor credential reuse. A reference IIoT architecture involving a six-tier supply chain is modelled, and attack graphs are constructed to identify the most probable lateral movement pathways between tiers. Quantitative risk scores are assigned using a modified CVSS-based scoring system adapted for operational technology contexts. The analysis reveals that firmware update channels and remote maintenance interfaces constitute the highest-risk lateral movement vectors. Mitigation recommendations include cryptographic firmware signing, role-based access segmentation across supply chain tiers, and continuous behavioural monitoring of maintenance sessions. The framework is validated through a tabletop exercise with industrial practitioners."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10528",
+        "kind": "publication",
+        "title": "Network segmentation strategies for securing legacy OT environments",
+        "body": {
+          "recordId": "SYN-PUB-10528",
+          "field": "abstract",
+          "text": "Operational technology environments in manufacturing and utility sectors frequently rely on decades-old equipment designed without cybersecurity considerations. Retrofitting strong security controls onto such systems is often impractical, making network segmentation one of the most effective available defences. This paper systematically evaluates five segmentation strategies—air-gapping, DMZ insertion, unidirectional gateways, micro-segmentation using software-defined networking, and VLAN-based isolation—across three representative legacy OT environments modelled after real-world process control architectures. Each strategy is assessed against a standardised threat catalogue derived from known ICS incident reports, covering scenarios such as ransomware propagation, historian server compromise, and remote access exploitation. The evaluation employs a simulation-driven methodology combining network topology modelling with attack path analysis. Results indicate that micro-segmentation combined with unidirectional gateways at critical zone boundaries provides the highest resilience against multi-stage attacks, though at significant configuration complexity. The paper provides a practical scoring matrix to assist security engineers in selecting segmentation approaches based on available resources and operational constraints."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10529",
+        "kind": "publication",
+        "title": "Detecting replay attacks on DNP3 protocol in smart grid communications",
+        "body": {
+          "recordId": "SYN-PUB-10529",
+          "field": "abstract",
+          "text": "DNP3 is a widely deployed communication protocol in smart grid environments, facilitating data exchange between substations, remote terminal units, and control centres. Despite extensions introduced in DNP3 Secure Authentication version 5, many deployments remain vulnerable to replay attacks due to misconfiguration or the use of older protocol variants. This paper presents a lightweight detection mechanism for DNP3 replay attacks based on temporal sequence analysis of application-layer message fields. The proposed detector monitors request-response timing patterns, sequence counter consistency, and message fragment ordering to identify anomalous retransmission behaviour indicative of replay activity. The mechanism is implemented as a passive network probe requiring no modifications to existing field devices. Evaluation on a hardware-in-the-loop smart grid testbed shows that the detector correctly identifies replay attacks with 97.3% precision and 95.8% recall, while maintaining a processing latency below 12 milliseconds per packet—well within operational requirements. The paper further discusses integration of the detector into existing security information and event management pipelines used in utility control centres."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10530",
+        "kind": "publication",
+        "title": "Cybersecurity frameworks for critical infrastructure protection: a survey and gap analysis",
+        "body": {
+          "recordId": "SYN-PUB-10530",
+          "field": "abstract",
+          "text": "Critical infrastructure sectors—including energy, water, transportation, and telecommunications—face an evolving and increasingly sophisticated threat landscape. Numerous cybersecurity frameworks have been developed to guide operators in assessing and improving their security posture, including NIST CSF, IEC 62443, NERC CIP, and ISA/IEC standards. Despite their widespread adoption, significant gaps remain in how these frameworks address emerging challenges such as cloud-connected OT environments, AI-driven attacks, and supply chain interdependencies. This survey systematically reviews twelve major cybersecurity frameworks applicable to critical infrastructure, evaluating them across dimensions of scope, implementation guidance, assessment methodology, and adaptability to ICS-specific threats. A structured gap analysis reveals that most frameworks inadequately address real-time anomaly detection requirements, provide insufficient guidance on IoT integration, and lack concrete metrics for evaluating detection and response effectiveness. The paper proposes a consolidated gap taxonomy and outlines a research agenda addressing the most critical deficiencies. It is intended as a reference for both practitioners implementing security programmes and researchers developing next-generation framework components."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-10531",
+        "kind": "publication",
+        "title": "Intrusion detection in resource-constrained IoT devices using lightweight recurrent models",
+        "body": {
+          "recordId": "SYN-PUB-10531",
+          "field": "abstract",
+          "text": "Deploying intrusion detection directly on resource-constrained IoT devices such as microcontroller-based sensors and actuators presents fundamental challenges in terms of memory footprint, computational overhead, and energy consumption. This paper investigates the feasibility of implementing lightweight recurrent neural network models—specifically truncated LSTM and GRU variants—on devices with fewer than 256 KB of RAM. A model compression pipeline is developed that combines quantisation, pruning, and knowledge distillation to reduce model size by up to 94% relative to full-precision baselines, while preserving detection accuracy above 90% across standard IoT attack benchmarks. The compressed models are deployed on three representative IoT platforms and evaluated under realistic workload conditions. Power consumption measurements indicate that continuous on-device inference adds less than 4 mW overhead, making deployment feasible even on battery-powered nodes. The paper also proposes an adaptive inference strategy that dynamically reduces model complexity during high-load periods to prevent resource exhaustion. Results suggest that on-device intrusion detection is practically achievable for a broad class of constrained IoT deployments."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0017",
+        "kind": "project",
+        "title": "SECURE-ICS: security monitoring for factories",
+        "body": {
+          "recordId": "SYN-PRJ-0017",
+          "field": "summary",
+          "text": "SECURE-ICS addresses the growing need for robust cybersecurity monitoring in industrial manufacturing environments. The project develops an integrated security monitoring platform tailored specifically to factory automation systems, encompassing network traffic analysis, anomaly detection, and real-time alerting for operational technology networks. As academic partner, the University of Novi Sad team led by Professor Đukić contributes expertise in intrusion detection algorithm design, threat modelling for ICS environments, and evaluation methodology. The platform targets Modbus, PROFINET, and EtherNet/IP protocol stacks commonly found in Serbian manufacturing facilities. Deliverables include a deployable monitoring agent, a validated anomaly detection model trained on representative factory traffic, and a set of security assessment guidelines for small and medium enterprises in the industrial sector. The project runs from 2023 to 2025 under the Innovation Fund programme."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R1015",
+            "field": "open_to",
+            "quote": "industrial PhD supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R1015",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0349",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How should script normalization and transliteration be placed in a PostgreSQL full-text search pipeline so that Latin queries retrieve Cyrillic contracts, Cyrillic queries retrieve Latin contracts, and mixed-script documents remain searchable without noticeable latency increase? We would test index-time, query-time, and combined normalization, including a cascaded deterministic-plus-neural fallback for ambiguous or out-of-vocabulary tokens, against a held-out set of real contract searches.",
+    "rationale": [
+      {
+        "text": "Dragić has published a mixed-script inverted-index methodology that processes Cyrillic and Latin occurrences without full conversion to one script.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "invertovanog indeksa koji istovremeno obrađuje ćirilična i latinična pojavljivanja srpskih reči bez prethodnog potpunog prevođenja u jedno pismo",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has evaluated phoneme-based token canonicalization on a legal corpus and query–document relevance pairs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "We evaluated the approach on a manually annotated gold standard of 4 200 query–document relevance pairs drawn from a legal corpus of 38 000 court decisions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His query-expansion experiments measured retrieval latency overhead under 12 ms at the 95th percentile.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04280",
+            "field": "abstract",
+            "quote": "the overhead introduced by expansion remains under 12 ms at the 95th percentile for queries up to eight tokens.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical pilot experience adding script normalization to internal document search in SMEs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04285",
+            "field": "abstract",
+            "quote": "iskustva iz tri pilot implementacije interne pretrage zasnovane na open-source pretražnom okviru dopunjenom modulom za normalizaciju pisma",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has industry experience adapting a search module for Serbian court decisions for a legaltech startup.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He led a work package on script normalization and transliteration in a Serbian–Romanian administrative retrieval project.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0547",
+            "field": "summary",
+            "quote": "Stefan Dragić rukovodi radnim paketom koji pokriva normalizaciju skripte i transliteraciju na srpskoj strani",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "Most of the researcher's evidence comes from news, court, web, or encyclopedia corpora; transfer to the company's contract corpus and PostgreSQL full-text search is unproven and must be tested first.",
+      "The six-week, one-engineer capacity may not be enough to implement, evaluate, and tune index-time/query-time placement plus edge-case rules.",
+      "Dialect-dependent Latin-to-Cyrillic ambiguities and foreign loanwords or proper nouns remain error sources; the evidence identifies these as unresolved edge cases.",
+      "Actual researcher availability is marked unknown; notes indicate capacity for one smaller industrial contract or consultancy, but this is not confirmed against two active projects.",
+      "Company contract corpus size, script mix, and sample-sharing feasibility are unknown, so evaluation feasibility is uncertain.",
+      "Changing indexing may require reindexing existing documents; migration and downtime constraints are not stated."
+    ],
+    "questions": [
+      "Can Prof. Dragić confirm actual availability and effort level for a joint project given two active projects and the stated capacity for one smaller industrial contract or consultancy?",
+      "What is the size of the contract corpus, the share of mixed-script documents, and can a representative anonymized query/document sample be shared for evaluation?",
+      "Which PostgreSQL version and full-text search configuration are used, and is reindexing or downtime allowed for an index-time normalization approach?",
+      "What latency SLO applies to search, and which historical query log set will be used for before/after evaluation?",
+      "Which dialect or orthographic convention should govern ambiguous Latin sequences, and is there an existing exception lexicon for loanwords and proper nouns?",
+      "Is a neural fallback acceptable in the company's private cloud, or must the solution be purely deterministic for security or latency reasons?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0349",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

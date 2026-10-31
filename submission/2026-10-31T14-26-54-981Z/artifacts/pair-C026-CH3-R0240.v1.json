@@ -1,0 +1,199 @@
+{
+  "ref": {
+    "artifactId": "pair-C026-CH3-R0240",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0240",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can site-specific hydrogeological measurements establish groundwater flow directions and plausible leachate migration pathways sufficiently to support a four-well monitoring design and a defensible containment and treatment proposal? The first investigation would test whether methods demonstrated in regional aquifers transfer to this yard using borehole characterisation, surveyed groundwater heads, hydraulic tests and paired leachate–groundwater chemistry, with treatment options requiring separate bench-scale testing.",
+    "rationale": [
+      {
+        "text": "Vranješ has directly relevant consulting experience in site characterisation and monitoring-network design for a regional water utility.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "industry_experience",
+            "quote": "advising on site characterisation methodology and monitoring network design.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His field research provides experience measuring hydraulic gradients with multi-level piezometers and hydraulic testing, relevant to investigating the yard's unknown groundwater flow.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03043",
+            "field": "abstract",
+            "quote": "using a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03043",
+            "field": "abstract",
+            "quote": "Stage and groundwater-head data collected at 15-minute intervals were combined with streambed vertical hydraulic conductivity estimates obtained from falling-head slug tests.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His groundwater modelling work links subsurface characterisation to calibrated flow and travel-time analysis, offering a basis for testing migration scenarios once site data exist.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "A steady-state and transient groundwater flow model was constructed",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "The model was calibrated against 14 months of observed heads (RMSE = 0.18 m) and validated against a river-stage recession event.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project material includes groundwater vulnerability assessment combining existing records, targeted field campaigns and local contamination data.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1272",
+            "field": "summary",
+            "quote": "The project combined existing monitoring data with new field campaigns",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-1272",
+            "field": "summary",
+            "quote": "applied the DRASTIC vulnerability indexing method recalibrated against local contamination data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The regulatory deliverables are four installed groundwater monitoring wells and a remediation proposal within the ordered 120-day period. The stated late-June-2024 deadline must be reconciled with the current enforcement position before scheduling.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Well placement and migration assessment must address outdated baseline information and unknown seasonal groundwater directions; neither plume extent nor flow direction can be assumed from the existing sketch.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Containment planning must address an active suspected escape pathway and a liner not designed to retain liquids, alongside verification of the reported leachate strength.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "text",
+            "quote": "The leachate from our temporary storage yard has started seeping toward the site boundary",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan needs explicitly funded drilling, field measurements and appropriate analytical support rather than assuming company research funding or laboratory capability beyond its basic bench.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration should include substantive field measurements rather than being a modelling-only assignment, consistent with the researcher's stated working preference.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "notes",
+            "quote": "Prefers projects with a clear field measurement component rather than purely modelling-focused work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The evidence demonstrates regional groundwater and bank-filtration methods, not validated waste-yard leachate plume delineation. Initial site characterisation and hydraulic–chemical measurements must test transferability before relying on migration predictions.",
+      "No supplied evidence establishes landfill-leachate treatment design expertise. A treatment specialist and representative leachate bench tests may be necessary; attenuation observed in river-water bank filtration cannot establish treatment performance here.",
+      "Researcher availability for an urgent joint project is unknown despite open willingness to collaborate.",
+      "The stated deadline is already historical. Current compliance status, any extension and the remaining scope are unknown; a research project cannot substitute for overdue statutory action.",
+      "A short initial campaign may not resolve seasonal flow reversals or plume boundaries, and four wells may leave important uncertainty.",
+      "The available budget, drilling access, analytical capacity and inspectorate acceptance criteria are unknown. Delays in securing these could prevent delivery, and regulatory acceptance cannot be promised."
+    ],
+    "questions": [
+      "What is the current status of the inspectorate order, the four wells and the remediation submission, and what deadline now applies? Can the full order and acceptance requirements be shared?",
+      "Can Vranješ commit to the required site visits, design work and reporting schedule, and who would provide field and analytical support?",
+      "What budget and procurement route are available for drilling, surveying, instrumentation, external laboratory analyses and treatment testing?",
+      "Can the company provide the 1993 sketch, permitting documents, liner and drainage records, waste history, sampling methods and complete analytical results?",
+      "What access, utilities, underground services, neighbouring receptors and existing wells constrain safe well placement and boundary investigations?",
+      "Which qualified parties will handle drilling, any required professional sign-off, leachate treatment design and communication with the inspectorate?",
+      "Can an initial campaign combine borehole logs, surveyed heads, hydraulic tests and quality-controlled leachate–groundwater sampling, followed by repeated monitoring to test seasonal uncertainty?",
+      "What leachate volumes, rainfall responses, discharge or disposal routes and treatment targets must be established before selecting containment and bench-testing treatment options?"
+    ],
+    "outcome": "pair",
+    "taskId": "C026-CH3",
+    "researcherId": "R0240",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0240",
+        "version": 1
+      }
+    ]
+  }
+}

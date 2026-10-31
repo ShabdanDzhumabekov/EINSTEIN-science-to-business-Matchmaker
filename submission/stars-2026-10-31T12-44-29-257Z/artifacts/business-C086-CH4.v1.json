@@ -1,0 +1,120 @@
+{
+  "ref": {
+    "artifactId": "business-C086-CH4",
+    "version": 1
+  },
+  "kind": "business",
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "taskId": "C086-CH4",
+    "companyId": "C086",
+    "companyName": "Kriptolog a.d.",
+    "sector": "Cybersecurity",
+    "location": "Novi Sad",
+    "challenge": {
+      "text": {
+        "recordId": "C086-CH4",
+        "field": "text",
+        "text": "Our hardware security module enclosure needs to pass tamper-evidence tests for Common Criteria EAL4+ certification, but our in-house mechanical team keeps seeing micro-fractures in the epoxy potting layer under thermal cycling between -10°C and 60°C."
+      },
+      "detail": {
+        "recordId": "C086-CH4",
+        "field": "detail",
+        "text": "Common Criteria EAL4+ requires that our KL-HSM enclosure demonstrate tamper evidence under physical stress, including thermal cycling. Our target operating range for the certified product is -10°C to 60°C. During evaluation preparation, our mechanical team has been running thermal cycle tests and consistently finding micro-fractures in the epoxy potting layer after 50 to 80 cycles. The fractures appear near the corners of the PCB substrate and at points where metallic fasteners meet the potting compound. We have tried two different epoxy formulations from our current supplier, adjusted pour temperature, and varied curing time, but the cracking pattern persists. We do not have materials science expertise in-house; our mechanical team is competent at enclosure design but has no background in polymer behaviour under cyclic thermal stress. The certification timeline is a constraint: we have a pre-evaluation agreement with an accredited laboratory and the physical testing phase is scheduled to begin in seven months. We have physical samples, test data from the last four test runs, and the enclosure drawings available. A good outcome is an enclosure that passes 200 thermal cycles without visible fracturing."
+      }
+    },
+    "company": {
+      "about": {
+        "recordId": "C086",
+        "field": "about",
+        "text": "Kriptolog a.d. has been building security infrastructure since 1997, when a small team of network engineers in Novi Sad started integrating hardware and software for Yugoslav state institutions. After the turbulent early 2000s, we refocused: instead of reselling other vendors' equipment, we designed our own. Today we develop encryption hardware, public-key infrastructure software, and managed security services used by government agencies, national utilities, and payment processors across the Western Balkans.\n\nOur core product is the KL-HSM line of hardware security modules, manufactured and tested at our facility on the outskirts of Novi Sad. Alongside it, we maintain CertiCore, a certificate issuance and lifecycle management platform that currently issues and tracks roughly 380,000 certificates per year for about a dozen institutional clients. We also offer integration services for customers who need PKI woven into existing identity or payment systems.\n\nThe company employs 140 people, roughly half in engineering and the rest split between operations, sales, and support. Our technical leads have backgrounds in cryptographic engineering, embedded systems, and network security. We are not a fast-moving startup; we move deliberately, because the clients who trust us with signing keys and root certificates need exactly that. What sets us apart is that we design, manufacture, and support the full stack — firmware, hardware enclosure, and management software — without outsourcing the sensitive parts."
+      },
+      "products": [
+        {
+          "recordId": "C086",
+          "field": "products",
+          "text": "KL-HSM hardware security module family (KL-300 and KL-500 series)"
+        },
+        {
+          "recordId": "C086",
+          "field": "products",
+          "text": "CertiCore PKI platform for certificate issuance and lifecycle management"
+        },
+        {
+          "recordId": "C086",
+          "field": "products",
+          "text": "OCSP and CRL responder services for high-availability revocation checking"
+        },
+        {
+          "recordId": "C086",
+          "field": "products",
+          "text": "Managed PKI for government and critical-infrastructure clients"
+        },
+        {
+          "recordId": "C086",
+          "field": "products",
+          "text": "Security integration and consulting services"
+        }
+      ],
+      "tech": [
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "Custom ARM Cortex-M firmware in C for HSM cryptographic operations"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "Java EE backend for CertiCore certificate management platform"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "PostgreSQL with custom indexing for certificate and revocation databases"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "PKCS#11 and RFC 5280 / RFC 6960 (OCSP) standards"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "Epoxy potting and anti-tamper mesh for HSM physical enclosures"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "Common Criteria evaluation methodology (targeting EAL4+)"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "OpenSSL and Bouncy Castle cryptographic libraries"
+        },
+        {
+          "recordId": "C086",
+          "field": "tech",
+          "text": "Serbian GAAP accounting, transitioning toward IFRS"
+        }
+      ],
+      "plans": {
+        "recordId": "C086",
+        "field": "plans",
+        "text": "Kriptolog intends to achieve Common Criteria EAL4+ certification for the KL-500 HSM by the end of 2025 and use that certification as the primary credential for entering German and Austrian government procurement frameworks. In parallel, we plan to release a post-quantum-ready firmware branch for the KL-HSM line and grow the CertiCore platform toward handling one million certificates annually."
+      },
+      "rdCapacity": {
+        "recordId": "C086",
+        "field": "rd_capacity",
+        "text": "We have a core R&D group of twelve engineers working on firmware, cryptographic protocols, and the CertiCore platform, with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable."
+      },
+      "pastCollaborations": {
+        "recordId": "C086",
+        "field": "past_collaborations",
+        "text": "Kriptolog completed a joint testing project with Sigurnost-Pro d.o.o. from Belgrade in 2021, validating interoperability between our OCSP responder and their identity management gateway for a shared government client."
+      }
+    }
+  }
+}

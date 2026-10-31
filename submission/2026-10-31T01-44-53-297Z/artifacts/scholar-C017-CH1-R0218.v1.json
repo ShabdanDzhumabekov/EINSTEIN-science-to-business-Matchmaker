@@ -1,0 +1,254 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0218",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0218",
+    "name": "Spasoje Orlović",
+    "faculty": "BioSense Institute",
+    "department": "Data Science and Bioinformatics Group",
+    "fields": [
+      "Machine Learning and Pattern Recognition",
+      "Agricultural Informatics",
+      "Environmental Sensor Data Analysis",
+      "Bioinformatics"
+    ],
+    "keywords": [
+      "time-series feature extraction",
+      "supervised classification",
+      "phenology prediction",
+      "agrometeorology",
+      "random forests",
+      "sensor data fusion",
+      "crop stress detection",
+      "imbalanced datasets",
+      "gradient boosting",
+      "cross-validation"
+    ],
+    "openTo": [
+      "joint projects on agricultural data analytics",
+      "contract research on sensor data processing and predictive modelling",
+      "industrial PhD supervision for candidates with machine learning or data engineering background",
+      "student internships involving time-series data and Python-based ML pipelines",
+      "consulting on deployment and retraining strategies for operational agronomic ML systems",
+      "equipment access to hyperspectral radiometry and microclimate sensor infrastructure"
+    ],
+    "bio": {
+      "recordId": "R0218",
+      "field": "bio",
+      "text": "Spasoje Orlović received his BSc and MSc in Computer Science from the University of Novi Sad, Faculty of Sciences, in 2005 and 2008 respectively, and completed his PhD in Computational Intelligence at the same institution in 2013. He joined the BioSense Institute in 2014 as a Research Associate and was promoted to Senior Research Associate in 2019. The Data Science and Bioinformatics Group focuses on extracting actionable information from large heterogeneous sensor archives collected across agricultural landscapes in the Pannonian region. Orlović's work centres on time-series feature engineering, ensemble classifiers, and regression pipelines applied to crop phenology and agrometeorological event detection. He supervises MSc students and delivers occasional guest lectures on applied machine learning at the Faculty of Sciences. The group operates a local HPC cluster and maintains archives of multi-year data from soil moisture, microclimate, and hyperspectral imaging networks."
+    },
+    "industryExperience": {
+      "recordId": "R0218",
+      "field": "industry_experience",
+      "text": "During the CROPWATCH project Orlović collaborated with two commercial farming operations in Vojvodina to pilot the early warning dashboard, providing informal technical advice on sensor placement and alert interpretation. He has no formal prior employment outside academia."
+    },
+    "notes": {
+      "recordId": "R0218",
+      "field": "notes",
+      "text": "Orlović prefers collaborations where real sensor data are available from the company side; he has limited interest in purely synthetic benchmark problems. He is available for new industry contracts from mid-2025 onward following the conclusion of CROPWATCH."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02775",
+        "kind": "publication",
+        "title": "Comparative evaluation of temporal feature sets for frost event detection using surface microclimate loggers",
+        "body": {
+          "recordId": "SYN-PUB-02775",
+          "field": "abstract",
+          "text": "Frost events cause substantial yield losses in early-season vegetable cultivation across the Pannonian plain. This study compared six families of time-series features — including autocorrelation coefficients, entropy measures, wavelet sub-band energies, slope statistics, rolling quantiles, and tsfresh-style catch22 descriptors — extracted from 15-minute air and soil temperature records collected at 23 stations over four growing seasons (2009–2012). Binary classifiers (logistic regression, k-nearest neighbours, random forest, and support vector machine with RBF kernel) were trained and evaluated using stratified 10-fold cross-validation. The dataset contained 1 847 station-days, of which 214 were labelled frost days, creating notable class imbalance. SMOTE oversampling was applied before each training fold. The random forest trained on wavelet plus slope features achieved the highest F1 score of 0.81 on the held-out test set, compared to 0.63 for logistic regression on raw temperature statistics. Feature importance analysis identified minimum overnight temperature slope and 4-hour wavelet detail energy as the two most discriminative descriptors. Results suggest that simple distributional statistics underperform relative to dynamical features for frost detection at short time horizons."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02776",
+        "kind": "publication",
+        "title": "Soil moisture regime classification for irrigated maize using hidden Markov models fitted to capacitance sensor sequences",
+        "body": {
+          "recordId": "SYN-PUB-02776",
+          "field": "abstract",
+          "text": "Accurate classification of soil moisture regimes supports irrigation scheduling in large-scale maize production. Hidden Markov models (HMMs) with Gaussian emission distributions were fitted to hourly capacitance sensor readings from 18 instrumented maize fields in Vojvodina across the 2010 and 2011 seasons. Fields were manually labelled into three moisture regimes — deficit, adequate, and excess — by agronomists using gravimetric reference samples taken at weekly intervals. A three-state left-right HMM topology was compared against a fully connected topology; the fully connected model achieved mean classification accuracy of 78.4 % against the expert labels. A baseline majority-class classifier scored 51.2 %. The study also examined the effect of sensor depth (10, 30, and 60 cm) on classification performance; the 30 cm depth provided the best balance between surface noise and root-zone relevance. HMM log-likelihood trajectories were used to detect regime transitions, with a mean detection lag of 2.7 hours relative to expert annotations. The approach requires no manual threshold setting and adapts across soil texture classes represented in the dataset."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02778",
+        "kind": "publication",
+        "title": "Handling sensor dropout in agricultural time-series archives: a structured comparison of imputation strategies",
+        "body": {
+          "recordId": "SYN-PUB-02778",
+          "field": "abstract",
+          "text": "Long-term environmental sensor archives frequently contain gaps caused by power outages, transmission errors, and hardware failures. This study benchmarked seven imputation strategies on a 6-year hourly temperature and relative-humidity archive from 27 Vojvodina stations: last-observation carry-forward, linear interpolation, seasonal decomposition with LOESS residual filling, k-nearest-neighbour spatial borrowing, matrix factorisation, a regression tree trained on auxiliary weather model output, and a recurrent neural network (LSTM). Gaps were simulated by masking known complete records at three gap lengths: 1 hour, 6 hours, and 24 hours. Performance was measured by RMSE and mean absolute error against the held-out true values, averaged across 500 independent random masking trials. LSTM achieved the lowest RMSE for 24-hour gaps (0.41 °C) but required substantially more computation than spatial k-NN (RMSE 0.58 °C). For 1-hour gaps, linear interpolation was within 0.05 °C RMSE of the best method. The study provides practical guidance on method selection given gap length and available computational budget, and is accompanied by a Python package deposited on the institutional repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02779",
+        "kind": "publication",
+        "title": "Feature stability across growing seasons for machine-learning models in precision agriculture: a replication study",
+        "body": {
+          "recordId": "SYN-PUB-02779",
+          "field": "abstract",
+          "text": "Machine-learning models for agronomic prediction are typically evaluated on held-out data from the same or adjacent seasons as the training set. This study examined whether feature importances and classification boundaries remain stable when models are applied to data collected two to five seasons after training. Five previously published random forest and gradient boosting models addressing frost, drought stress, phenological stage, irrigation regime, and pest pressure were retrained on data from 2010–2013 and prospectively applied to 2014–2018 records from the same sensor networks. Shapley value profiles were computed annually for each model. Rank correlation between feature importance in the training period and each subsequent season was calculated; median Spearman ρ across models was 0.74 in year one post-training, declining to 0.51 by year five. Classification accuracy declined by a mean of 6.3 percentage points per season for models that did not undergo any retraining. Annual partial retraining on 10 % new labelled data recovered most of the performance loss. The study argues for embedding retraining schedules into operational deployment pipelines rather than treating trained models as static artefacts."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02780",
+        "kind": "publication",
+        "title": "Drought stress onset prediction in sunflower from multi-depth soil moisture and canopy temperature: an ensemble regression study",
+        "body": {
+          "recordId": "SYN-PUB-02780",
+          "field": "abstract",
+          "text": "Early prediction of drought stress onset in sunflower allows irrigation to be applied before yield-limiting physiological damage occurs. This study combined multi-depth capacitance soil moisture readings (10, 30, 60, and 90 cm) with infrared canopy temperature measured by stationary radiometers at 14 instrumented plots in Vojvodina across three growing seasons (2016–2018). The target variable was time-to-stress onset in days, defined as the first day leaf water potential fell below −0.8 MPa as measured weekly by pressure chamber. Features were extracted over a rolling 5-day window: mean, variance, linear trend, and cross-depth Pearson correlation coefficients of soil moisture, plus the canopy-minus-air temperature differential. Five regression algorithms were evaluated — ridge regression, random forest, gradient boosting, k-NN regression, and a Gaussian process regressor — via 5-fold cross-validation. Gradient boosting achieved the lowest mean absolute error of 1.3 days against measured stress onset. Cross-depth soil moisture correlation emerged as the most informative feature class according to permutation importance. The model was deployed experimentally on two commercial farms in the 2019 season and issued stress warnings between one and two days before observed wilting symptoms in 11 of 14 monitored plots."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02781",
+        "kind": "publication",
+        "title": "Time-series classification of hyperspectral reflectance trajectories for early detection of powdery mildew in winter wheat",
+        "body": {
+          "recordId": "SYN-PUB-02781",
+          "field": "abstract",
+          "text": "Powdery mildew caused by Blumeria graminis reduces winter wheat yields by 5–15 % in epidemic years in Vojvodina. Hyperspectral reflectance time series were collected at weekly intervals from 32 field plots across the 2017 and 2018 growing seasons using a ground-mounted spectroradiometer covering 400–2 500 nm at 1 nm resolution. Disease severity ratings were assigned by plant pathologists on the same weekly schedule. After dimensionality reduction by principal component analysis retaining 95 % of spectral variance, temporal features including derivatives of PC scores, area under the reflectance curve in the red-edge region, and dynamic time warping distances to a healthy reference trajectory were computed. A multiclass SVM with radial basis function kernel was trained to distinguish healthy, mildly infected (1–10 % leaf area affected), and severely infected (> 10 %) canopy states. Leave-one-season-out accuracy was 74 %, compared to 58 % for a single-date spectral classifier. The temporal derivative of the red-edge PC score provided the largest gain in F1 relative to the static baseline. The method detected onset of mild infection on average 8 days before visual symptoms were rated as actionable by field agronomists."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02157",
+        "kind": "publication",
+        "title": "Benchmarking tabular deep learning against gradient boosting for agronomic event prediction on small heterogeneous sensor datasets",
+        "body": {
+          "recordId": "SYN-PUB-02157",
+          "field": "abstract",
+          "text": "Tabular deep learning architectures such as TabNet and FT-Transformer have been proposed as alternatives to gradient boosting on structured data. This paper evaluates both families on six agronomic event prediction tasks drawn from BioSense Institute sensor archives, covering frost occurrence, soil moisture regime classification, phenological stage identification, drought stress onset, mildew infection level, and irrigation demand. Dataset sizes range from 890 to 4 200 labelled instances with 12 to 61 input features derived from environmental sensor records. Gradient boosting (XGBoost and LightGBM) outperformed TabNet and FT-Transformer on four of six tasks by statistically significant margins according to paired Wilcoxon signed-rank tests at α = 0.05. The two tasks where deep models matched gradient boosting involved the largest datasets and highest feature counts. Training time for gradient boosting was two to three orders of magnitude shorter. The paper concludes that, for the dataset scales typical in single-network agronomic sensor deployments, gradient boosting remains the preferred default and tabular deep learning does not yet justify the additional computational cost and tuning effort."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02782",
+        "kind": "publication",
+        "title": "Sensor fusion from heterogeneous archive types for crop water stress index estimation: aligning satellite revisit cycles with ground sensor intervals",
+        "body": {
+          "recordId": "SYN-PUB-02782",
+          "field": "abstract",
+          "text": "Satellite-derived thermal infrared data and ground-based microclimate sensor records operate on incompatible temporal grids: satellite revisit cycles of 5–16 days versus hourly ground observations. This study developed a temporal alignment and fusion pipeline for estimating the crop water stress index (CWSI) across a 3 000-hectare maize-growing area in southern Vojvodina using Sentinel-3 land surface temperature composites and a network of 19 ground stations recording air temperature, relative humidity, and wind speed at hourly resolution. Gaussian process regression with a time-warping kernel was used to interpolate ground measurements to satellite overpass times. CWSI estimates from fused data were compared against reference values computed from eddy covariance flux tower measurements at two locations. Fusion-derived CWSI tracked the flux-tower reference with Pearson r = 0.83 and RMSE of 0.07 index units across the 2019 and 2020 seasons, compared to r = 0.61 when satellite data alone was used. The pipeline processes a new satellite scene in under four minutes on standard workstation hardware. Code is available under a permissive open licence."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02783",
+        "kind": "publication",
+        "title": "Conformal prediction intervals for agronomic event classifiers: coverage guarantees on temporally autocorrelated sensor data",
+        "body": {
+          "recordId": "SYN-PUB-02783",
+          "field": "abstract",
+          "text": "Standard conformal prediction methods assume exchangeability of calibration and test samples, an assumption violated by temporally autocorrelated environmental sensor data. This paper adapts split conformal prediction to produce marginal and conditional coverage guarantees for agronomic event classifiers trained on sequential sensor records. The adaptation uses a block-hold-out calibration scheme that respects the autocorrelation structure of daily and weekly sensor cycles. Four classifiers — random forest, XGBoost, ridge logistic regression, and a 1-D convolutional neural network — were wrapped with the adapted conformal layer and evaluated on phenological stage and frost event datasets from BioSense Institute archives. Empirical coverage of 90 % prediction sets was 89.1 % to 90.8 % across classifiers and datasets, compared to 84.3 % to 87.9 % under naive exchangeable conformal calibration. Prediction set sizes were larger in periods of high sensor noise and smaller in meteorologically stable periods, which corresponds to intuitive uncertainty behaviour. The method requires no modification of the underlying classifier and adds negligible inference-time overhead."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02784",
+        "kind": "publication",
+        "title": "Multi-site transfer learning for phenological event detection when labelled target-domain data are scarce",
+        "body": {
+          "recordId": "SYN-PUB-02784",
+          "field": "abstract",
+          "text": "Obtaining labelled phenological observations at new sensor network sites is costly and time-consuming, creating a barrier to deploying trained prediction models in new regions. This study evaluated four transfer learning strategies — direct transfer, feature normalisation followed by direct transfer, fine-tuning on small labelled target sets, and domain-adversarial training — for phenological stage classifiers moving from a Vojvodina source network of 31 stations to three target networks located in Hungary (12 stations), Romania (8 stations), and Slovenia (6 stations). Transfer was tested at labelled-target-data budgets of 0, 10, 30, and 100 instances. At zero labelled target data, fine-tuning was not applicable; domain-adversarial transfer yielded macro-F1 of 0.61 on the Hungarian target compared to 0.70 for a fully supervised in-domain model. At 30 labelled instances, fine-tuning matched in-domain performance for the Hungarian and Romanian targets. The Slovenian target remained consistently harder to transfer to due to greater climatic divergence. Results suggest that investing effort in collecting 20–40 labelled instances in a new deployment region is more cost-effective than pursuing zero-shot domain adaptation for this application."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02785",
+        "kind": "publication",
+        "title": "Temporal Alignment of Multi-Site Electronic Health Record Data: Challenges and a Case Study from Three Vojvodina Hospitals",
+        "body": {
+          "recordId": "SYN-PUB-02785",
+          "field": "abstract",
+          "text": "When aggregating EHR data from multiple hospitals for longitudinal analysis, differences in timestamping conventions, fiscal-year resets, and local workflow patterns produce artefactual temporal patterns that can bias any time-sensitive model. This case study documents alignment problems encountered while merging discharge records from three Vojvodina hospitals (combined n = 22 600 admissions, 2010–2016) and describes rule-based and statistical correction procedures for eight identified artefact classes. A particularly common issue was duplicate admissions split across calendar-year system resets, affecting 3.1 % of records. Corrective procedures raised within-hospital event sequence consistency scores from a median of 0.81 to 0.96, measured by a proposed rank-correlation-based consistency index. The chapter situates these problems in the broader EHR data quality literature and offers a reproducible data-quality reporting template adaptable to similar regional settings."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02786",
+        "kind": "publication",
+        "title": "Integrating satellite-derived soil moisture indices as external drift variables in microbiome kriging models",
+        "body": {
+          "recordId": "SYN-PUB-02786",
+          "field": "abstract",
+          "text": "Soil moisture is a primary driver of microbial community structure, yet it is seldom measured exhaustively at field scale. Satellite remote sensing offers spatially dense moisture proxies that could serve as external drift variables in kriging. We evaluated this idea using a dataset of 64 soil samples from an organic wheat farm near Sremska Mitrovica. Sentinel-1 SAR backscatter and a derived surface soil moisture index were extracted for each sampling date and location. Universal kriging with SAR-derived moisture as drift variable was compared to ordinary kriging for predicting Shannon diversity and three indicator taxa. The external drift reduced RMSE for Shannon diversity from 0.31 to 0.22 nats and improved spatial maps visually by resolving a low-diversity patch aligned with a slight topographic depression. Variogram parameters estimated with and without the drift variable differed substantially, highlighting the importance of removing large-scale trends before estimating spatial dependence. Practical constraints related to temporal mismatch between SAR acquisition and soil sampling are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02787",
+        "kind": "publication",
+        "title": "A Unified Regularised Framework for Absolute Risk Estimation Under Competing Risks in Clinical Genomics Pipelines",
+        "body": {
+          "recordId": "SYN-PUB-02787",
+          "field": "abstract",
+          "text": "Absolute risk—the probability that a specific event occurs by a given time in the presence of competing hazards—is more directly actionable for clinical decision-making than relative hazard ratios, yet few software tools integrate penalised estimation with reliable absolute risk calibration. This paper describes a coherent framework combining subdistribution hazard modelling (elastic net Fine–Gray), baseline cumulative incidence estimation via smoothing splines, and isotonic regression post-calibration. Performance was evaluated on three cancer datasets: hepatocellular carcinoma (n = 287), chronic lymphocytic leukaemia (n = 331), and endometrial cancer (n = 214), all with competing causes of death. The framework consistently produced better-calibrated absolute risk predictions than the standard cause-specific hazard approach (mean calibration slope 0.96 vs. 0.81 across datasets). An R package, survAbsRisk, is described and illustrated, providing a reproducible pipeline from raw feature matrix to patient-level risk curves."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0138",
+        "kind": "project",
+        "title": "Harmonised Long-Term Sensor Data Infrastructures for Agronomic Modelling in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-0138",
+          "field": "summary",
+          "text": "SENSODAT established a cross-border data infrastructure connecting existing soil and microclimate sensor networks in Vojvodina and southern Hungary. The BioSense Institute team led the work package on data quality assurance, harmonisation, and machine-learning-ready feature archive generation. Activities included designing a shared metadata schema, implementing automated gap-detection and imputation pipelines, and producing a curated multi-year archive of 47 stations with documented provenance. The archive was made openly accessible under a Creative Commons licence and was used as the primary data source for several subsequent modelling studies. Deliverables also included a training workshop for agricultural advisory staff in both countries on using the archive for local prediction tasks."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0139",
+        "kind": "project",
+        "title": "Data-Driven Early Warning System for Crop Stress Events in Vojvodina",
+        "body": {
+          "recordId": "SYN-PRJ-0139",
+          "field": "summary",
+          "text": "CROPWATCH developed and field-validated a modular early warning system for four agronomically significant crop stress events — frost, drought, powdery mildew onset, and waterlogging — affecting the principal field crops grown in Vojvodina. The project combined multi-source sensor data fusion, transfer learning across station networks, and conformal prediction for uncertainty-aware alert generation. A prototype web dashboard was built and tested with agronomic advisors from two regional agricultural extension services during the 2023 and 2024 seasons. The system issued alerts at least 24 hours in advance for 79 % of observed events across the pilot fields. The project also trained two MSc students who contributed to the machine-learning pipeline development."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1773",
+        "kind": "project",
+        "title": "Statistical Foundations for Compositional Microbiome Data in Environmental Monitoring",
+        "body": {
+          "recordId": "SYN-PRJ-1773",
+          "field": "summary",
+          "text": "MICROSTAT addressed methodological gaps in the statistical treatment of compositional microbiome data in environmental contexts, including agricultural soils, freshwater sediments, and forest litter. Filip Vučković contributed to the soil-focused tasks, specifically the development and benchmarking of spatially aware Dirichlet-multinomial regression models. The project involved collaboration with a statistician at the University of Belgrade and a bioinformatician at the University of Kragujevac. Deliverables include an R package (deposited on CRAN) providing functions for spatial DM regression, a simulation-based benchmark paper, and training materials used in two postgraduate workshops at the Faculty of Sciences in Novi Sad."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0218",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates with machine learning or data engineering background",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0218",
+            "field": "open_to",
+            "quote": "joint projects on agricultural data analytics",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0218",
+            "field": "open_to",
+            "quote": "contract research on sensor data processing and predictive modelling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C001-CH1-R1008",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: at least 80% of fully annotated injected episodes detected within 60 seconds of onset; the alert-burden criterion below; at least 80% correct identification of changed behaviour and appropriate next action by representative plant managers",
+        "sources": [],
+        "explanation": "Neither 80% target states a statistical acceptance condition, and the explanation target does not define the scored unit, denominator, repeated-user handling or treatment of incomplete answers; small or repeatedly scored samples could therefore pass without sufficient evidence. Add a compact prerequisite defining episode matching and explanation scoring, repeat handling, and a confidence-bound or equivalent acceptance rule for each target, retaining separate protocol evaluation.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Propose counting all alert episodes, merging flagged non-overlapping ten-second windows within each site/protocol when gaps are at most 60 seconds. Divide by observed site/protocol-days; require an upper 95% day-block-bootstrap bound of one episode/day separately per protocol, retaining unresolved alerts.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Transitive merging permits an always-flagging detector to produce one long episode, pass the episode-rate bound and detect injected scenarios while failing the company's usable-alert objective. Retain episode counting but add an agreed acceptance limit on flagged-time exposure or persistent-alert duration, or cap merging duration so persistent false alerting cannot disappear from the burden measure.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ProtoSense covers Modbus TCP and BACnet/IP. ArmaturaSec reports that its previous classifier's false positives caused clients to disable alerts.” Proposed next steps: “Separate unlabelled, presumed-normal training, tuning and later held-out periods” and “training and calibrating without attack labels.” These identify the concrete two-protocol, site-specific detection problem and its operational false-alarm and missing-label constraints."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “training and calibrating without attack labels”; “Negotiate the NDA, client permissions and testbed data-sharing agreement within the stated part-time capacity”; “Benchmark the actual appliance and integrate through its Yocto/C/Rust environment”; and “agreed CPU, RAM, storage and throughput limits; and no measurable forwarding-latency increase under representative peak load at agreed measurement resolution.” Open questions: “Can Kiss confirm availability, implementation responsibilities and a feasible budget and schedule for this joint project?” These preserve label, staffing, confidentiality and on-device constraints, with execution conditional on permissions, feasible staffing and agreed measurable hardware budgets rather than assumed compatibility."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Kiss’s Modbus research models per-register timing, values and command sequences. Her incremental modelling work also tested operator-acknowledged resets after planned process reconfiguration” and “Her review discusses a false-alarm versus response-latency tradeoff.” Our inference: “The supplied work does not establish BACnet validity or ProtoSense hardware compatibility.” Proposed next steps: “Require operator approval for baseline resets and test whether persistent injected anomalies are silently learned away.” These connect her documented baseline and adaptation methods to the proposed detector while identifying transfer limits and the relevant adaptation and latency trade-offs."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “ArmaturaSec states a collaboration capacity of one to two part-time engineers and names traffic archives, a hardware bench and its firmware codebase as resources under an NDA framework” and “Kiss’s group operates an ICS testbed with Modbus/TCP and DNP3 traffic generators.” Proposed next steps: “ArmaturaSec would supply authorised Modbus and BACnet captures, bench replay and firmware integration; Kiss would design features and evaluation.” Open questions: “Can Kiss confirm availability, implementation responsibilities and a feasible budget and schedule for this joint project?” These distinguish documented resources from proposed responsibilities and unresolved commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Separate unlabelled, presumed-normal training, tuning and later held-out periods; check independence and operating-mode coverage. Compare fixed-threshold rules with statistical and one-class baselines, training and calibrating without attack labels. Select the best configuration on tuning data, whichever method wins; evaluate separately per protocol on held-out client replay and controlled bench anomalies, including BACnet-specific commands and legitimate changes.” This supplies inputs, a rule-based comparator, candidate conditions and separated selection and evaluation; equipment and permissions remain explicit prerequisites. Acceptance-rule defects are identified under metric."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “at least 80% of fully annotated injected episodes detected within 60 seconds of onset” and “at least 80% correct identification of changed behaviour and appropriate next action by representative plant managers” lack statistical acceptance rules; the explanation target also lacks a defined scoring denominator and repeat-handling rule. The alert metric specifies “merging flagged non-overlapping ten-second windows within each site/protocol when gaps are at most 60 seconds” and an “upper 95% day-block-bootstrap bound of one episode/day separately per protocol,” but an indefinitely flagged stream can merge into one episode and satisfy this target despite intolerable alert persistence."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Our inference: “The supplied work does not establish BACnet validity or ProtoSense hardware compatibility” and “injected scenarios cannot establish real-world attack recall.” Proposed next steps: “Select the best configuration on tuning data, whichever method wins.” These limit conclusions to performance of selected configurations on the proposed evaluation rather than claiming an isolated causal contribution from model family, features or adaptation."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Unnoticed compromise could contaminate training, while maintenance could trigger nuisance alerts. Automatic adaptation might absorb persistent attacks; restrictive updates could increase alert burden. The reported false-alarm versus response-latency tradeoff is a deployment risk.” The same section states that BACnet validity, hardware compatibility and real-world attack recall are not established. Open questions ask about availability, equipment, permissions and reviewers; these cover the principal transfer, contamination, drift, resource and execution uncertainties without presenting them as resolved facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “Participation remains conditional because Kiss’s availability is unknown, despite her stated openness to joint projects.” Open questions: “Can Kiss confirm availability, implementation responsibilities and a feasible budget and schedule for this joint project?” These make the proposed joint-project roles conditional and assign no declined role."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The pilot could establish whether site-specific detection produces manageable, understandable alerts on both protocols without compromising appliance operation, and identify unresolved deployment barriers” and “Subject to agreement, Kiss could investigate transfer from established Modbus methods to BACnet and operational hardware.” These are conditional benefits corresponding to the planned operational, transfer and explanation evaluations rather than guarantees."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.95,
+        0.89,
+        0.93,
+        0.98,
+        0.95,
+        0.95,
+        0.96
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

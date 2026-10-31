@@ -1,0 +1,199 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0087",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0087",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can an uncertainty-aware spatial data pipeline link incompletely located farm policies to hail exposure estimates and identify potentially underpriced portfolio segments more reliably than municipality-level rating? The first experiment would test whether cadastral data-cleaning and overlay methods transfer to policy–weather linkage, and whether the available five-kilometre daily weather data support any defensible field-level differentiation, using spatially and temporally held-out claims.",
+    "rationale": [
+      {
+        "text": "Lalić has demonstrated cadastral spatial-query benchmarking experience relevant to building and testing policy-to-parcel and parcel-to-weather overlays.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01176",
+            "field": "abstract",
+            "quote": "Query response times were measured across six spatial query types (bounding-box, point-in-polygon, distance, k-nearest-neighbour, clip, and overlay)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His published Python/PostGIS preprocessing work provides a concrete starting point for checking parcel geometry quality before exposure assignment.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01181",
+            "field": "abstract",
+            "quote": "This paper presents a preprocessing workflow implemented in Python using Shapely and PostGIS that automatically detects and classifies four error types",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project experience covers production-scale spatial data pipelines and operator-facing outputs, relevant to moving beyond manual QGIS analysis.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0494",
+            "field": "summary",
+            "quote": "The project developed a reference pipeline covering topological error correction, coordinate precision normalisation, spatial grid partitioning, and incremental tile cache management.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0494",
+            "field": "summary",
+            "quote": "Project outputs include open-source pipeline components, operator training materials, and a technical handbook for cadastral SDI administrators.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has practical industry experience redesigning PostGIS schemas for cadastral data management.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "industry_experience",
+            "quote": "on PostGIS schema redesign for their cadastral data management product between 2016 and 2018.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Field-level exposure assignment must explicitly retain location and weather-resolution uncertainty; neither settlement-only addresses nor coarse weather grids establish field-level hail intensity.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation must work within the available three-year, approximately 1,200-policy dataset and test against the existing municipality-level rating baseline.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "Our current approach is to rate by municipality and apply a single hail loading per municipality",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The deliverable must support automated pricing inputs compatible with the company's existing batch-scoring workflow, rather than stop at a map prototype.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and handover must accommodate a company without a dedicated research unit and with shared operational/development staff.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the stated one-engagement capacity from mid-2026 onward; actual availability remains unconfirmed.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "notes",
+            "quote": "His group has capacity to take on one additional contract research engagement from mid-2026 onward.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data-sharing arrangements should accommodate his preference for authentic, anonymised production data under NDA.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "notes",
+            "quote": "He prefers industry partners who can share anonymised but authentic data under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest evidence concerns cadastral engineering, not hail-intensity estimation or insurance pricing. Transfer to policy–weather linkage must be tested first; meteorological and actuarial expertise may also be needed.",
+      "Five-kilometre daily weather observations may not resolve narrow, fast-moving hail tracks. More precise parcel geometries alone cannot create missing meteorological information.",
+      "Settlement-level policy addresses may remain ambiguous even where loss records are geo-tagged; claim locations may not identify every insured field or building.",
+      "Three summers may contain too few independent storms for stable out-of-sample conclusions. Claims-only or incomplete exposure records could bias apparent underpricing.",
+      "The reported excess claim cost does not establish that hail exposure is its cause; coverage, insured values and other loss drivers require examination.",
+      "Integration could stall under operational workload, as the company's earlier flood-mapping prototype was completed but not integrated into pricing.",
+      "Current researcher availability, project budget, delivery deadline, data licences and company commitment of staff remain unknown."
+    ],
+    "questions": [
+      "Can Lalić confirm current availability for a joint project, the earliest start date and staff allocation within the one-engagement capacity?",
+      "What budget, deadline, company technical owner and actuarial owner can be committed?",
+      "Can the company provide all insured exposures, including non-claiming policies, policy periods, sums insured, coverage terms, claim dates and loss amounts?",
+      "What do the loss geotags represent, and can settlement-only policy records be linked to verified parcel identifiers, field boundaries or insured-building coordinates?",
+      "Which hail-related variables, timestamps, uncertainty estimates and historical coverage does MeteoVoj provide? Are radar or other independent event observations available if the initial resolution test fails?",
+      "Can policy, cadastral and weather data be shared and linked under suitable licences and an NDA, with anonymisation that preserves necessary spatial relationships?",
+      "Who will supply meteorological and actuarial expertise, and what held-out validation criteria would justify using an exposure factor rather than retaining municipality-level rating?",
+      "What deployment interfaces, database extensions, access controls and audit requirements apply, and who will maintain the pipeline after handover?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0087",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0087",
+        "version": 1
+      }
+    ]
+  }
+}

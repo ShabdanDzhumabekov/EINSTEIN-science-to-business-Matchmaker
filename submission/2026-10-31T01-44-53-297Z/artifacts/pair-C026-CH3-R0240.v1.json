@@ -1,0 +1,195 @@
+{
+  "ref": {
+    "artifactId": "pair-C026-CH3-R0240",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0240",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can the existing site data plus a newly designed groundwater monitoring network resolve the leachate flow direction, its seasonal variation and the lateral extent of the COD plume beneath the temporary storage yard, and support a containment and treatment proposal the Subotica Environmental Inspectorate will accept? The first experiment would test whether lowland alluvial monitoring and flow/transport modelling methods developed at bank-filtration and recharge sites transfer to a waste-yard leachate setting.",
+    "rationale": [
+      {
+        "text": "The researcher has directly relevant consulting experience in site characterisation and monitoring network design for a regional water utility.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "industry_experience",
+            "quote": "advising on site characterisation methodology and monitoring network design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built and operated dense multi-level piezometer networks to characterise hydraulic gradients and vertical exchange fluxes, which is the core instrumentation this task requires.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03043",
+            "field": "abstract",
+            "quote": "a network of 18 multi-level piezometers installed at three transects perpendicular to the riverbank",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-1271",
+            "field": "summary",
+            "quote": "monitoring network installation and data collection at two BF sites on the Danube and two recharge transects in Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has constructed and calibrated groundwater flow models and used particle-tracking transport simulation to estimate travel times, which is the basis for predicting where leachate moves.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "MT3DMS particle tracking indicated median travel times of 18–42 days at the production well field",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His synthesis work explicitly addresses method selection for data-sparse lowland settings, which matches a site with only a 1993 hydrogeological sketch.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03048",
+            "field": "abstract",
+            "quote": "reviews methods applicable in data-sparse lowland settings (slug tests, streambed temperature profiling, environmental tracers, water balance approaches)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has worked on groundwater vulnerability assessment recalibrated against local contamination data, which is directly analogous to a monitoring network built around a known contamination source.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1272",
+            "field": "summary",
+            "quote": "applied the DRASTIC vulnerability indexing method recalibrated against local contamination data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His stated preferences and openness align with the task: he wants field measurement work and is open to contract research on site-specific hydrogeological assessment.",
+        "sources": [
+          {
+            "recordId": "R0240",
+            "field": "notes",
+            "quote": "Prefers projects with a clear field measurement component rather than purely modelling-focused work.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0240",
+            "field": "open_to",
+            "quote": "contract research on site-specific hydrogeological assessment or recharge studies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The work is deadline-bound: four groundwater monitoring wells must be installed and a remediation proposal submitted within 120 days, by late June 2024.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Baseline data are almost absent: only a 1993 hydrogeological sketch exists, and neither the flow direction nor the contamination extent is known, so new field characterisation is unavoidable.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The output must be acceptable to the regulator, so the plan has to be framed as a leachate containment and treatment proposal, not only a monitoring exercise.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "draft a leachate containment and treatment proposal that the inspectorate will accept",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The measured COD is already well above the threshold that triggers a formal response, so containment and treatment options must be part of the scope from the start.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "COD came back at 3,400 mg/L, which is well above the threshold that triggers a formal response",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has no dedicated research budget and only a basic wet-chemistry bench, so laboratory analyses beyond routine COD/heavy-metal sampling must be planned with external capacity.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "we have no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: the researcher's documented field sites are riverbank bank-filtration sites, agricultural recharge transects and canal systems; there is no evidence in his material of work on landfill or waste-yard leachate, so the method transfer must be tested in the first field campaign rather than assumed.",
+      "Transport modelling evidence is limited to particle tracking of travel times at a production well field, not reactive or attenuating contaminant transport; predicting COD and leachate behaviour in the subsurface is unproven for this team and site.",
+      "With only a 1993 hydrogeological sketch and unknown seasonal flow direction, the four wells could be sited off-plume; a preliminary reconnaissance and seasonal head measurement are needed before final siting.",
+      "The 120-day window leaves little room for drilling permits, contractor procurement and well installation, and the company's lack of a dedicated research budget makes the field and laboratory work vulnerable to funding delays.",
+      "The researcher's availability within the spring 2024 window is unknown, and his stated capacity for industrial PhD co-supervision starts only in autumn 2026, so an industrial PhD format cannot serve this deadline.",
+      "COD values were produced on the company's in-house bench; the inspectorate may require accredited laboratory analyses, which is not evidenced anywhere in the material."
+    ],
+    "questions": [
+      "Is the researcher available to start field work within the 120-day window (spring 2024), given that his availability is currently unknown?",
+      "Would he prefer a joint project or is he also willing to co-supervise an industrial PhD student, given that his industrial PhD supervision willingness is recorded as unknown?",
+      "Who will carry out and fund the drilling and installation of the four wells, and which permits are required for drilling on the site?",
+      "What site information exists beyond the 1993 sketch: depth to water table, liner construction details, existing boreholes, and any nearby production or monitoring wells?",
+      "Which parameters and analytical standards will the Subotica Environmental Inspectorate require, and is an accredited laboratory available for confirmatory analyses?",
+      "What waste types and volumes were stored in the yard over the twelve years, and were any hazardous items present that would change the leachate composition?"
+    ],
+    "outcome": "pair",
+    "taskId": "C026-CH3",
+    "researcherId": "R0240",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0240",
+        "version": 1
+      }
+    ]
+  }
+}

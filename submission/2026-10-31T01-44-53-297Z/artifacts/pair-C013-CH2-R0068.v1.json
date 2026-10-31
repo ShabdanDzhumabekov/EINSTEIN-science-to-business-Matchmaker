@@ -1,0 +1,35 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0068",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0068",
+      "version": 1
+    }
+  ],
+  "content": {
+    "outcome": "no_fit",
+    "reason": "Although Lekić's parcel-level remote-sensing and weather-data fusion work (e.g., SYN-PUB-00921, SYN-PRJ-1822) is technically relevant to field-level hail exposure mapping, the material states he left the University of Novi Sad in March 2026 and is now a postdoctoral researcher in Austria, so he is unavailable for this collaboration.",
+    "taskId": "C013-CH2",
+    "researcherId": "R0068",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0068",
+        "version": 1
+      }
+    ]
+  }
+}

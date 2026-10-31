@@ -1,0 +1,181 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T13-53-23-732Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0288",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Serbian morphology and mixed-script retrieval for LinguaBot",
+    "facts": [
+      {
+        "text": "LinguaBot reports an Elasticsearch baseline using a Croatian stemmer, Serbian-specific inflection misses, and Latin/Cyrillic switching even inside words.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports about 18% no-useful-result queries in a 12,000-query sample from one bank, around 85,000 labelled query-response pairs across clients, and two linguists able to annotate or validate solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot reports quarterly terminology additions and difficulty scaling manual synonym maintenance. Its stated tooling/data budget is around EUR 8,000.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić’s work describes Serbian hybrid lemmatization, within-token script normalization, and retrieval experiments in which lemmatization with paradigm-aware indexing achieved the highest F1.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "This paper presents a rule-based and machine-learning hybrid lemmatizer designed specifically for Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her morphological lexicon study reports lower paradigm correctness for borrowings than common vocabulary. Her normalization study reports a precision/generalization tradeoff between lookup tables and neural mapping.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03592",
+            "field": "abstract",
+            "quote": "finding 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić lists joint projects among her participation interests.",
+        "sources": [
+          {
+            "recordId": "R0288",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a joint project connecting linguistic error analysis with Elasticsearch engineering, but the proposal is conditional because Nikolić’s availability and committed effort remain unknown.",
+      "Corpus and social-media results do not establish banking or telecom retrieval performance. Borrowing errors and normalization-induced conflation are specific precision risks; incremental Elasticsearch integration also remains unvalidated.",
+      "Morphology and script interventions may leave other causes of misses unresolved, so even substantial component improvements may not achieve the company’s overall target."
+    ],
+    "proposedActions": [
+      "Propose a six-month experiment using separate tuning and held-out evaluation samples from the labelled pairs, checking client, temporal and duplicate independence. Compare current Elasticsearch with normalization, lemmatization and paradigm expansion: baseline, each alone, every pair and all three, with fixed documents and rankings. Select the best configuration on tuning data. Linguists would judge every evaluation query using an agreed usefulness rubric. Count each query once: misses divided by all evaluated queries, with unresolved judgments counted as misses. Evaluate the original bank separately; pooled clients cannot substitute. Proposed go/no-go: the best configuration’s upper 95% confidence bound is below 5% on that bank’s held-out queries, with no precision regression, including after a vocabulary-update replay; demonstrate within-word typo handling and updates without full re-indexing; stay within approximately EUR 8,000 tooling/data expenditure and six months, and meet pre-agreed maintenance and operational caps. Missing bank evaluation data or insufficient evidence means no pass, regardless of which configuration wins.",
+      "Propose that Nikolić specify script-boundary normalization, Serbian lemma mapping and paradigm-generation rules as independently switchable factors; LinguaBot engineers would implement query-time adapters against unchanged indexes. Its linguists would validate relevance and stratify inflection, within-word mixing and unseen product terms. Use comparable controls throughout, report interactions, and investigate remaining misses even when a factor has no isolated effect.",
+      "Propose month one for permissions, licences, baseline reproduction and evaluation design; months two–four for adaptation and tuning; and months five–six for frozen evaluation and vocabulary-update replay. Record precision at an agreed retrieval depth, latency, update delay and maintenance hours per vocabulary batch. Include bank and telecom slices without assuming the original bank baseline represents every client."
+    ],
+    "questions": [
+      "Can Nikolić confirm availability and effort for this joint project, alongside LinguaBot’s engineering allocation and any separate researcher-compensation budget?",
+      "What permissions, de-identification controls and commercial-use licences would permit the proposed query, document and research-tool access?",
+      "Can LinguaBot supply independent held-out queries from the original bank and confirm the usefulness rubric, retrieval depth and precision-regression definition?",
+      "What Elasticsearch configuration, permitted update operations, hosting limits, latency ceilings, vocabulary-update delay and maintenance-hours cap should govern acceptance?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify which linguistic changes reduce actual retrieval misses and whether vocabulary updates remain practical without rebuilding the index.",
+      "researcher": "Subject to agreement and permissions, the project could provide labelled support-query evidence for testing transfer of Serbian morphology and cross-script methods into operational retrieval."
+    },
+    "markdown": "# Serbian morphology and mixed-script retrieval for LinguaBot\n\n## Verified facts\n- LinguaBot reports an Elasticsearch baseline using a Croatian stemmer, Serbian-specific inflection misses, and Latin/Cyrillic switching even inside words. [F1]\n- The company reports about 18% no-useful-result queries in a 12,000-query sample from one bank, around 85,000 labelled query-response pairs across clients, and two linguists able to annotate or validate solutions. [F2]\n- LinguaBot reports quarterly terminology additions and difficulty scaling manual synonym maintenance. Its stated tooling/data budget is around EUR 8,000. [F3]\n- Nikolić’s work describes Serbian hybrid lemmatization, within-token script normalization, and retrieval experiments in which lemmatization with paradigm-aware indexing achieved the highest F1. [F4]\n- Her morphological lexicon study reports lower paradigm correctness for borrowings than common vocabulary. Her normalization study reports a precision/generalization tradeoff between lookup tables and neural mapping. [F5]\n- Nikolić lists joint projects among her participation interests. [F6]\n\n## Potential benefits\n- For the company: The experiment could identify which linguistic changes reduce actual retrieval misses and whether vocabulary updates remain practical without rebuilding the index.\n- For the researcher: Subject to agreement and permissions, the project could provide labelled support-query evidence for testing transfer of Serbian morphology and cross-script methods into operational retrieval.\n\n## Our inference\n- This suggests a joint project connecting linguistic error analysis with Elasticsearch engineering, but the proposal is conditional because Nikolić’s availability and committed effort remain unknown.\n- Corpus and social-media results do not establish banking or telecom retrieval performance. Borrowing errors and normalization-induced conflation are specific precision risks; incremental Elasticsearch integration also remains unvalidated.\n- Morphology and script interventions may leave other causes of misses unresolved, so even substantial component improvements may not achieve the company’s overall target.\n\n## Proposed next steps\n- Propose a six-month experiment using separate tuning and held-out evaluation samples from the labelled pairs, checking client, temporal and duplicate independence. Compare current Elasticsearch with normalization, lemmatization and paradigm expansion: baseline, each alone, every pair and all three, with fixed documents and rankings. Select the best configuration on tuning data. Linguists would judge every evaluation query using an agreed usefulness rubric. Count each query once: misses divided by all evaluated queries, with unresolved judgments counted as misses. Evaluate the original bank separately; pooled clients cannot substitute. Proposed go/no-go: the best configuration’s upper 95% confidence bound is below 5% on that bank’s held-out queries, with no precision regression, including after a vocabulary-update replay; demonstrate within-word typo handling and updates without full re-indexing; stay within approximately EUR 8,000 tooling/data expenditure and six months, and meet pre-agreed maintenance and operational caps. Missing bank evaluation data or insufficient evidence means no pass, regardless of which configuration wins.\n- Propose that Nikolić specify script-boundary normalization, Serbian lemma mapping and paradigm-generation rules as independently switchable factors; LinguaBot engineers would implement query-time adapters against unchanged indexes. Its linguists would validate relevance and stratify inflection, within-word mixing and unseen product terms. Use comparable controls throughout, report interactions, and investigate remaining misses even when a factor has no isolated effect.\n- Propose month one for permissions, licences, baseline reproduction and evaluation design; months two–four for adaptation and tuning; and months five–six for frozen evaluation and vocabulary-update replay. Record precision at an agreed retrieval depth, latency, update delay and maintenance hours per vocabulary batch. Include bank and telecom slices without assuming the original bank baseline represents every client.\n\n## Open questions\n- Can Nikolić confirm availability and effort for this joint project, alongside LinguaBot’s engineering allocation and any separate researcher-compensation budget?\n- What permissions, de-identification controls and commercial-use licences would permit the proposed query, document and research-tool access?\n- Can LinguaBot supply independent held-out queries from the original bank and confirm the usefulness rubric, retrieval depth and precision-regression definition?\n- What Elasticsearch configuration, permitted update operations, hosting limits, latency ceilings, vocabulary-update delay and maintenance-hours cap should govern acceptance?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0288",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0288",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

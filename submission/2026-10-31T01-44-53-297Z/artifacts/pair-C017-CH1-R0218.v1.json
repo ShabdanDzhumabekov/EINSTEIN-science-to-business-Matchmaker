@@ -1,0 +1,115 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0218",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0218",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can TloCare's ten-year archive of grid soil samples, combined with available environmental covariates and future proximal sensing, predict small salinity pockets near the Tisa well enough to guide denser sampling only where it is needed? The first test would compare predictive maps against held-out and targeted validation samples in 0.3–0.8 ha zones before any operational deployment.",
+    "rationale": [
+      {
+        "text": "The researcher has a documented focus on extracting actionable information from large heterogeneous agricultural sensor archives in the Pannonian region.",
+        "sources": [
+          {
+            "recordId": "R0218",
+            "field": "bio",
+            "quote": "extracting actionable information from large heterogeneous sensor archives collected across agricultural landscapes in the Pannonian region",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His core methods — time-series feature engineering, ensemble classifiers and regression pipelines — match the need to turn sparse point samples and covariates into spatial predictions.",
+        "sources": [
+          {
+            "recordId": "R0218",
+            "field": "bio",
+            "quote": "Orlović's work centres on time-series feature engineering, ensemble classifiers, and regression pipelines applied to crop phenology and agrometeorological event detection.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has handled class imbalance in agronomic event detection, which is relevant because salinity pockets are rare relative to the full sample grid.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02775",
+            "field": "abstract",
+            "quote": "creating notable class imbalance. SMOTE oversampling was applied before each training fold.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His benchmarking supports gradient boosting as the preferred default for small heterogeneous agronomic sensor datasets, a practical starting point for TloCare's historical sample set.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02157",
+            "field": "abstract",
+            "quote": "for the dataset scales typical in single-network agronomic sensor deployments, gradient boosting remains the preferred default",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied feature stability across seasons and argues for retraining schedules, which fits a ten-year archive and multi-season service.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02779",
+            "field": "abstract",
+            "quote": "The study argues for embedding retraining schedules into operational deployment pipelines rather than treating trained models as static artefacts.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His transfer-learning work gives a concrete basis for testing how many new labelled samples are needed when moving predictions to Tisa-side fields with scarce labels.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02784",
+            "field": "abstract",
+            "quote": "Results suggest that investing effort in collecting 20–40 labelled instances in a new deployment region is more cost-effective than pursuing zero-shot domain adaptation for this application.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "No publication in the material addresses soil salinity or EC-based salinity mapping directly; the closest demonstrated targets are frost, soil moisture, drought stress and powdery mildew, so transfer to salinity pockets must be tested rather than assumed. Source: SYN-PUB-02780.abstract, quote: 'Early prediction of drought stress onset in sunflower allows irrigation to be applied before yield-limiting physiological damage occurs.'",
+      "The existing 4-ha grid may under-label the 0.3–0.8 ha salinity pockets, creating biased training labels and missed validation zones. Source: C017-CH1.detail, quote: 'slani džepovi postoje na površini od svega 0,3 do 0,8 hektara i da ih naša standardna mreža preskače'.",
+      "Satellite NDVI alone was already reported as unsuccessful for early-spring salinity detection, so any model relying mainly on vegetation indices may fail operationally. Source: C017-CH1.detail, quote: 'nismo imali dobre rezultate jer se salinitet ne vidi jasno na vegetacionim indeksima u ranom proleću'.",
+      "Proximal EC or NIR sensing is still a future plan, not an available data source, so the first phase cannot assume such measurements exist. Source: C017.plans, quote: 'U naredne dve godine planiramo da uvedemo bar jednu vrstu terenskog senzorskog merenja (elektrokonduktivitet ili blisku infracrvenu spektroskopiju)'.",
+      "Long-term archives commonly contain gaps, and the ten-year TloCare dataset's completeness and imputation needs are not documented in the task. Source: SYN-PUB-02778.abstract, quote: 'Long-term environmental sensor archives frequently contain gaps caused by power outages, transmission errors, and hardware failures.'",
+      "TloCare's past research pilot was not formalised and produced no joint result, so governance, data-sharing and publication terms are unproven. Source: C017.past_collaborations, quote: 'saradnja nije formalizovana i nije objavljen zajednički rezultat'.",
+      "The researcher's availability status is recorded as unknown; notes indicate a mid-2025 start, but capacity for a joint project and exact start date need confirmation. Source: R0218.notes, quote: 'He is available for new industry contracts from mid-2025 onward following the conclusion of CROPWATCH.'"
+    ],
+    "questions": [],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0218",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0218",
+        "version": 1
+      }
+    ]
+  }
+}

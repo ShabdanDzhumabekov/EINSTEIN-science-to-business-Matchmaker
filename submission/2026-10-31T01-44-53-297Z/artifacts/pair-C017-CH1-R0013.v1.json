@@ -1,0 +1,110 @@
+{
+  "ref": {
+    "artifactId": "pair-C017-CH1-R0013",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C017-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C017-CH1-R0013",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can TloCare's ten-year grid sampling record, laboratory results and available spatial covariates be used to predict 0.3–0.8 ha salinity pockets in variable Tisa floodplain fields before field teams are sent, so that denser sampling is targeted only where needed? The first test would be a held-out validation against fields where denser resampling already exists, not a promise of deployable accuracy.",
+    "rationale": [
+      {
+        "text": "The researcher has directly modelled soil properties from routinely measured variables including electrical conductivity using regression and random forest, a relevant basis for data-driven prediction of salinity-related zones.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00146",
+            "field": "abstract",
+            "quote": "routinely measured soil variables—pH (KCl), organic carbon, clay content, and electrical conductivity—using multiple linear regression and random forest models.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built GIS-assisted spatial prediction frameworks that combine survey data with terrain covariates, matching TloCare's need to predict variable zones before sampling.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00151",
+            "field": "abstract",
+            "quote": "combining conventional soil survey data with topographic wetness index (TWI) derived from a 5 m resolution digital elevation model.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work includes sodic/saline soil chemistry and amendment experiments, giving him domain grounding in the soil constraints behind sunflower establishment failure.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00148",
+            "field": "abstract",
+            "quote": "Solonetz soils in the Banat plain suffer from high exchangeable sodium percentage (ESP) that restricts permeability and root development.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has studied hydromorphic soils with seasonal waterlogging dynamics, which is relevant to the variable alluvial and hydromorphic soils along the Tisa.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00144",
+            "field": "abstract",
+            "quote": "Hydromorphic soils subject to seasonal waterlogging exhibit dynamic shifts in cation exchange capacity (CEC)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has paid consultancy experience in soil survey design and interpretation for large arable areas, which supports work with a commercial soil-testing service.",
+        "sources": [
+          {
+            "recordId": "R0013",
+            "field": "industry_experience",
+            "quote": "involving soil survey design and interpretation of buffering data for approximately 2 300 ha of arable land.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "The researcher's published prediction work targets lime requirement, acidity and CEC rather than small salinity-pocket occurrence in Tisa floodplain fields; this target and spatial-scale transfer must be tested in the first experiment.",
+      "Association-specific models may not transfer: the material reports that a model trained on chernozem performed poorly on Fluvisol samples, while TloCare's problem fields include alluvial/hydromorphic soils.",
+      "TloCare's historical grid is one point per 4 ha and is reported to miss 0.3–0.8 ha saline pockets, so the historical data may contain too few positive examples for reliable prediction without targeted validation data.",
+      "Early-season NDVI was not a good guide because salinity was not clearly visible in vegetation indices, so remote-sensing-only approaches carry a high failure risk.",
+      "Laboratory report ingestion is only partly automated, so data cleaning and harmonisation could add time before modelling starts.",
+      "Dr Marić's availability is unknown and must be confirmed before committing to a joint project."
+    ],
+    "questions": [
+      "What is Dr Marić's actual availability and capacity for a joint project, given that availability is currently unknown?",
+      "Will TloCare and the university execute a formal collaboration and data-sharing agreement covering the 18,000-point company dataset and the researcher's 800-soil archive?",
+      "Which fields have denser resampling data, especially around the reported 0.3–0.8 ha saline pockets, that can serve as independent validation?",
+      "How does TloCare define the target operationally: soil electrical conductivity, ESP/Na, sunflower establishment failure, or a combined salinity/sodicity indicator?",
+      "Which covariates are available before field teams are dispatched: DEM/TWI, soil association boundaries, satellite time series, or planned EC/NIR sensor measurements?",
+      "Should the first output be a predicted variable-zone map, an adaptive sampling plan, or both, and how should it fit the existing client portal?"
+    ],
+    "outcome": "pair",
+    "taskId": "C017-CH1",
+    "researcherId": "R0013",
+    "inputs": [
+      {
+        "artifactId": "business-C017-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C017-CH1-R0013",
+        "version": 1
+      }
+    ]
+  }
+}

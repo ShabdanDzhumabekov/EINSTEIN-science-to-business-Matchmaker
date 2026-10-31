@@ -1,0 +1,125 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "If reproduction passes, use the supported mechanism and a calibrated structural model to select welding, filler or geometry changes on tuning specimens.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "A good outcome would be understanding exactly what is causing the cracks so we can change our welding procedure, filler material, or joint design and stop the warranty replacements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The reproduction gate can pass even if every condition, including the room-temperature reference, produces indistinguishable cracking, so it does not establish which factors or interactions explain the field failure. Require prespecified held-out factorial contrasts with an uncertainty-aware decision rule before calling a mechanism supported, and classify reproduction without discriminating contrasts as inconclusive.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: reproduce the observed connection location and fracture features in at least two of three evaluation replicates of the best-supported condition, with measured exposures reproduced and uncertainty reported.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits, and we still have two of the failed sections in storage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The two-of-three rule leaves the counted fracture-match event and treatment of ambiguous field-to-laboratory matches undefined, and reproducing an exposure spectrum does not specify how long a specimen may be cycled before a crack counts as successful reproduction. Make evaluation conditional on freezing a field-informed matching rubric, uncertain-match handling and an exposure/censoring window before held-out testing; otherwise generic eventual fatigue cracking could satisfy the gate.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “AutomVoj reports cracking after about 18 months at main crossmember-to-stringer connections in painted mild-steel hollow-section frames. Room-temperature loaded workshop tests have not reproduced the failure.” This identifies the particular component, service failure and failed workshop reproduction rather than a generic fatigue problem."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “production-representative painted crossmember-to-stringer specimens”; “Reserve scarce failed material through an agreed sampling map”; “Confirm rig capacity, independent moisture control, safe operation and company engineering allocation before specimen manufacture.” Open questions: “Can AutomVoj authorise examination and limited destructive sampling of the retained sections, provide fabrication and coating records, and arrange representative service-load, temperature and humidity measurements?” These preserve component representativeness and scarce evidence while making equipment, data access and limited staff allocation execution prerequisites; budget and deadline are appropriately left open."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s published work compared mechanical fatigue with thermal cycling in butt-welded S275JR plates, using excursions between −30 °C and +20 °C. It reported faster crack growth than simple mechanical-plus-thermal predictions, suggesting interaction rather than simple addition.” Our inference: “Transfer remains unvalidated: colder plate tests do not establish the mechanism in painted hollow-section joints at 2–6 °C.” These connect his demonstrated combined-loading method to the proposed factorial investigation without assuming transfer across temperatures, materials and geometries."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s chamber and servo-hydraulic machine are shared facilities with advance scheduling arrangements.” Proposed next steps: “AutomVoj would supply fabrication details, specimens and service measurements; Erić would lead fracture examination and testing, subject to agreement.” Our inference: “Condensation control and corrosion expertise may require additional support”. These distinguish documented resources, proposed responsibilities and capabilities or commitments still requiring confirmation."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "fail",
+        "evidence": "Proposed next steps specifies inputs, controls and separation: “Test all eight combinations: baseline, each factor alone, all pairs and the full combination, plus the room-temperature workshop reference” and “Use separate tuning and held-out evaluation specimens, checking independence.” However, “Proposed go/no-go: reproduce the observed connection location and fracture features in at least two of three evaluation replicates of the best-supported condition” can pass without any informative contrast between conditions; the missing requirement is a comparative result supporting the mechanism subsequently used to select changes."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “Measure cycles to a predefined detectable crack, crack growth, origin and fracture morphology” and “reproduce the observed connection location and fracture features in at least two of three evaluation replicates of the best-supported condition, with measured exposures reproduced and uncertainty reported.” The replicate denominator and numerical decision rule are stated, but the fracture-match event, handling of uncertain matches and exposure or censoring rule for a successful reproduction are not defined; reporting uncertainty alone does not resolve those acceptance ambiguities."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "fail",
+        "evidence": "Proposed next steps: “establish independent levels for thermal cycling (steady chilled versus measured excursions), condensation (dry versus controlled wetting) and vibration (absent versus measured spectrum), holding static belt load, weld condition and coating comparable” provides an appropriate factorial comparison. However, “If reproduction passes, use the supported mechanism” exceeds a gate requiring only reproduction in one condition: no differential response or interaction contrast is required before treating a mechanism as supported."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Transfer remains unvalidated”; “Condensation control and corrosion expertise may require additional support; accelerated loading could also produce an irrelevant fracture mechanism.” Proposed next steps: “Reserve scarce failed material through an agreed sampling map” and “No accelerated result establishes an 18-month service life.” Together with the availability, budget and access questions, these identify the principal transfer, evidence-preservation and execution risks as unresolved rather than established facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “conditional on Erić’s unknown availability and AutomVoj’s agreement. Openness to this format does not establish a commitment or equipment booking.” Open questions: “Can Erić confirm availability and bookable facilities, and can AutomVoj confirm participation in this joint-project format?” These respect documented openness to joint projects without assuming availability, bookings or company agreement."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The first comparison could distinguish individual and interacting service factors” and “Subject to agreement and access, Erić could test the transfer of thermo-mechanical fatigue methods to coated hollow-section conveyor joints”. Proposed next steps: “reduced warranty replacements would remain a longer-term field-validation question.” These are plausible conditional benefits of the comparisons, not guarantees of a service-life improvement or participant commitments."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.93,
+        0.58,
+        0.92,
+        0.97,
+        0.98,
+        0.94,
+        0.62
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

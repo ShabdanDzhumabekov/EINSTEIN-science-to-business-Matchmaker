@@ -1,0 +1,57 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T13-48-14-687Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "constraint_contradicted",
+        "severity": "blocking",
+        "claim": "Proposed diagnostic go/no-go requires repeated reproduction of the field crack location and morphology at representative 2–10 °C exposure",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 5 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The company states its cold stores run at 2–5 °C, so calling 2–10 °C 'representative' allows acceptance testing above the service range and weakens the reproduction criterion; the fact list already uses 2–5 °C, and the acceptance exposure should be aligned with that stated range.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "jevFactCheck": {
+      "support": [
+        0.98,
+        0.9,
+        0.93,
+        0.75,
+        0.98,
+        0.89,
+        0.88
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

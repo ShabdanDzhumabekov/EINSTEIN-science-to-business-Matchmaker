@@ -1,0 +1,232 @@
+{
+  "ref": {
+    "artifactId": "scholar-C017-CH1-R0177",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0177",
+    "name": "Nada Bulatović",
+    "faculty": "Faculty of Civil Engineering Subotica",
+    "department": "Department of Geotechnics",
+    "fields": [
+      "Geotechnical Engineering",
+      "Applied Geostatistics",
+      "Probabilistic Geotechnics",
+      "Engineering Geology"
+    ],
+    "keywords": [
+      "geostatistical interpolation",
+      "kriging",
+      "cone penetration testing",
+      "alluvial soils",
+      "subsurface uncertainty",
+      "spatial variability",
+      "probabilistic soil modelling",
+      "borehole data",
+      "sequential Gaussian simulation",
+      "heterogeneous deposits"
+    ],
+    "openTo": [
+      "joint projects with companies needing subsurface uncertainty quantification for construction sites",
+      "contract research for site investigation data analysis and geostatistical reporting",
+      "consulting on CPT data interpretation and soil spatial variability",
+      "student internships for civil or geotechnical engineering students with programming interest",
+      "equipment access to CPT rig for collaborative field campaigns"
+    ],
+    "bio": {
+      "recordId": "R0177",
+      "field": "bio",
+      "text": "Nada Bulatović completed her Bachelor's and Master's degrees in Civil Engineering at the Faculty of Civil Engineering Subotica, University of Novi Sad, in 2008 and 2011 respectively, and defended her doctoral dissertation at the same faculty in 2017. Her dissertation examined kriging-based uncertainty quantification for alluvial deposit characterisation along the Danube–Tisa corridor. She joined the Department of Geotechnics as a teaching assistant in 2012 and was promoted to Assistant Professor in 2018. Her research focuses on geostatistical interpolation of subsurface properties, probabilistic soil profile reconstruction from sparse CPT and borehole datasets, and spatial variability modelling in heterogeneous alluvial sediments. She teaches Foundation Engineering and Soil Mechanics. The group uses a Pagani TG-73 CPT rig, in-situ vane shear equipment, and open-source geostatistical platforms including GSLIB and SGeMS."
+    },
+    "industryExperience": {
+      "recordId": "R0177",
+      "field": "industry_experience",
+      "text": "Bulatović has provided paid consulting services to Geoinvest d.o.o. Novi Sad on three infrastructure projects between 2019 and 2023, involving geostatistical interpretation of CPT datasets for highway and levee design. She also contributed technical review of subsurface models for a residential development geotechnical report prepared by a local engineering firm in 2022."
+    },
+    "notes": {
+      "recordId": "R0177",
+      "field": "notes",
+      "text": "Bulatović is on parental leave from October 2025 through April 2026 and has limited availability for new commitments during that period. She is particularly interested in collaborations that involve real field datasets rather than purely desk-based work, and prefers projects where the geostatistical component is central rather than peripheral."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02283",
+        "kind": "publication",
+        "title": "Variogram Analysis of Cone Penetration Resistance in Alluvial Deposits of the Tisa Floodplain",
+        "body": {
+          "recordId": "SYN-PUB-02283",
+          "field": "abstract",
+          "text": "The paper presents a systematic variogram analysis of cone tip resistance (qc) measured at 14 CPT locations across a 3.2 km² test area in the Tisa floodplain near Senta. Experimental directional variograms were computed for three depth intervals (0–5 m, 5–10 m, 10–18 m) to characterise horizontal and vertical spatial continuity separately. Exponential and spherical variogram models were fitted and their parameters compared across intervals. Results indicate that horizontal ranges decrease with depth, from approximately 480 m in the uppermost interval to 210 m at depth, reflecting increased lateral heterogeneity in deeper Pleistocene layers. Nugget-to-sill ratios remain below 0.15 in all cases, suggesting dominant structured variability. The fitted models provide a basis for ordinary kriging interpolation of qc fields subsequently used in settlement estimation for a planned road embankment. The study demonstrates that even with sparse sampling, statistically stable variogram models can be obtained when vertical stationarity is enforced within defined depth windows."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02284",
+        "kind": "publication",
+        "title": "Ordinary Kriging versus Inverse Distance Weighting for Undrained Shear Strength Mapping: A Case Study from the Danube Terrace near Novi Sad",
+        "body": {
+          "recordId": "SYN-PUB-02284",
+          "field": "abstract",
+          "text": "Undrained shear strength (cu) values derived from 22 field vane shear tests and 6 boreholes with laboratory UU triaxial data were used to compare ordinary kriging (OK) and inverse distance weighting (IDW) at p = 2 and p = 3 for spatial interpolation across a 1.8 km² terrace segment. Leave-one-out cross-validation was applied to quantify prediction errors. Mean absolute error for OK was 4.1 kPa compared to 6.8 kPa for IDW (p = 2) and 7.4 kPa for IDW (p = 3). OK also produced narrower prediction intervals in areas of dense sampling while correctly widening uncertainty in data-sparse zones. The kriging variance maps revealed three zones of high uncertainty coinciding with areas where borehole spacing exceeded 180 m. Recommendations are given for minimum sampling density needed to keep relative kriging standard deviation below 20% of the mean cu estimate in comparable alluvial settings. Results support replacing IDW with OK as the default interpolation method in routine geotechnical site investigations of similar scale."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02285",
+        "kind": "publication",
+        "title": "Probabilistic Delineation of Soft Clay Lenses in a Multi-Layer Alluvial Profile Using Sequential Gaussian Simulation",
+        "body": {
+          "recordId": "SYN-PUB-02285",
+          "field": "abstract",
+          "text": "Soft clay lenses embedded within silty sand sequences pose a significant risk for differential settlement and slope instability. This study applies sequential Gaussian simulation (SGS) to reconstruct the three-dimensional distribution of normalised cone resistance Qt from 19 CPT soundings at a highway construction site in southern Bačka. One hundred equiprobable realisations were generated using a spherical variogram model with horizontal range 320 m and vertical range 1.8 m. The frequency of Qt values below a threshold of 1.2—indicative of soft clay—was computed voxel-by-voxel to produce a probability-of-occurrence map for soft clay at each 0.5 m depth slice. Results show that a coherent soft clay body with greater than 60% probability of occurrence extends over approximately 0.4 ha at depths of 6.5–8.0 m, a feature not apparent from deterministic interpolation. The probabilistic maps were used to revise pile length recommendations, increasing average pile depth from 11 m to 13.5 m over the identified zone. The workflow is implemented in Python using the open-source GeostatsPy library and is fully reproducible."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02286",
+        "kind": "publication",
+        "title": "Influence of Borehole Spacing on Kriging Uncertainty in Alluvial Soil Profiles: A Simulation-Based Study",
+        "body": {
+          "recordId": "SYN-PUB-02286",
+          "field": "abstract",
+          "text": "A systematic investigation of how borehole spacing affects kriging prediction uncertainty was conducted using synthetic alluvial profiles generated via unconditional SGS with known variogram parameters calibrated to the Bačka Plain. Virtual sampling grids with spacings from 25 m to 400 m were applied to each synthetic field, and ordinary kriging was performed at each spacing to reconstruct the reference field. Average kriging standard deviation and fraction of the reference field lying outside 90% prediction intervals were computed as functions of spacing for three soil parameters: compression index Cc, friction angle φ', and oedometric modulus Es. For Cc, acceptable uncertainty levels (kriging CV < 25%) required spacing below 150 m for shallow layers and below 80 m for deeper, more heterogeneous layers. The results are presented as design charts directly usable by practitioners to plan site investigation campaigns. A simplified equation relating required borehole spacing to target uncertainty and variogram range is proposed and validated against three published datasets from Serbia and Hungary."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02287",
+        "kind": "publication",
+        "title": "Geostatistical Methods in Geotechnical Site Investigation",
+        "body": {
+          "recordId": "SYN-PUB-02287",
+          "field": "abstract",
+          "text": "This book chapter provides a practical introduction to geostatistical interpolation techniques applicable to geotechnical site characterisation, written for practitioners and graduate students with a background in soil mechanics but limited exposure to spatial statistics. Topics covered include experimental variogram computation, variogram model fitting, ordinary and simple kriging, indicator kriging for soil type classification, and stochastic simulation methods. Each method is illustrated with worked examples drawn from CPT and borehole datasets collected in the Pannonian Basin region. Particular attention is paid to common pitfalls: non-stationarity arising from depth trends, anisotropy caused by depositional layering, and the consequences of over-smoothing in kriging maps. The chapter also discusses how kriging variance can be propagated into geotechnical calculations such as bearing capacity and settlement estimates under uncertainty. Software options including GSLIB, SGeMS, and Python-based tools are briefly reviewed. The chapter forms part of a regional textbook on advanced geotechnical investigation methods."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02288",
+        "kind": "publication",
+        "title": "Indicator Kriging for Soil Classification from CPT Data along the Danube–Tisa–Danube Canal Corridor",
+        "body": {
+          "recordId": "SYN-PUB-02288",
+          "field": "abstract",
+          "text": "Soil type classification along a 12 km stretch of the Danube–Tisa–Danube canal embankment was performed using indicator kriging (IK) applied to CPT-derived soil behaviour type indices (Ic) from 31 soundings. Six soil classes were defined following Robertson's SBTn scheme, and indicator transforms were constructed for each class. Experimental indicator variograms were computed per class and fitted with nested spherical models. IK provided class-probability maps at 0.25 m vertical resolution and 20 m horizontal resolution. Post-processing by maximum-probability assignment yielded a most-likely soil type cross-section, while the probability fields quantified classification uncertainty. Comparison with lithological logs from 8 boreholes showed 82% agreement at borehole locations for the dominant classes (silty sand and sandy silt). Misclassification occurred primarily at thin clay interbeds less than 0.4 m thick, below the effective vertical resolution of the kriging grid. The IK outputs were used directly as input to a one-dimensional consolidation model for embankment settlement prediction."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02289",
+        "kind": "publication",
+        "title": "Bayesian Updating of Prior Variogram Parameters Using CPT Data: Application to a Flood Protection Levee in Northern Serbia",
+        "body": {
+          "recordId": "SYN-PUB-02289",
+          "field": "abstract",
+          "text": "Prior information about soil variability structures in the Pannonian Basin is available from published studies but may not be directly transferable to a specific site. This study applies a Bayesian framework to update prior distributions on variogram range and sill parameters as CPT soundings are progressively added during a phased investigation of a 4.2 km levee reach near Kanjiža. Prior distributions were derived from a database of 38 variogram models from comparable alluvial sites in Serbia and Hungary. Likelihood functions were constructed from cross-validation residuals at each investigation phase (8, 14, 22, and 29 CPT locations). Posterior mean horizontal range estimates converged from 380 m (prior) to 245 m after 22 soundings, with a 90% credible interval of 190–310 m. The updated variogram parameters reduced kriging variance by 31% on average compared to using the prior. The framework provides a practical tool for adaptive site investigation: quantifying how much uncertainty reduction is achieved by each additional sounding and informing decisions about when sampling is sufficient. Results are relevant to levee safety assessment under probabilistic failure criteria."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02290",
+        "kind": "publication",
+        "title": "Combining CPT and Seismic Refraction Data for Constrained Geostatistical Modelling of a Shallow Aquifer–Aquitard System",
+        "body": {
+          "recordId": "SYN-PUB-02290",
+          "field": "abstract",
+          "text": "CPT soundings provide high vertical resolution but limited horizontal coverage, whereas seismic refraction surveys yield continuous lateral profiles at lower vertical resolution. This paper presents a co-kriging approach that integrates 24 CPT-derived layer boundary depths with seismic refraction first-arrival velocity data acquired along four 300 m profiles at a groundwater monitoring site in the Subotica Sand area. A linear coregionalisation model was fitted to the cross-variogram between CPT-derived aquitard top depth and seismic interval velocity in the overlying saturated sand layer. Co-kriging reduced the average estimation standard deviation of aquitard top depth by 22% relative to ordinary kriging using CPT data alone. The resulting depth-to-aquitard surface showed a previously unmapped depression of approximately 1.5 m at the centre of the study area, consistent with a paleochannel inferred from aerial photograph interpretation. The co-kriged model was used as a geometric input to a MODFLOW groundwater flow model, and sensitivity analyses confirmed that the depression materially affected simulated hydraulic head distributions. The study argues for routine integration of shallow geophysics in geostatistical site modelling when CPT coverage is sparse."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02291",
+        "kind": "publication",
+        "title": "A Benchmark Comparison of Machine Learning Interpolation and Ordinary Kriging for CPT-Derived Soil Properties in the Bačka Plain",
+        "body": {
+          "recordId": "SYN-PUB-02291",
+          "field": "abstract",
+          "text": "Random forest regression, gradient boosting, and ordinary kriging were benchmarked for spatial prediction of friction ratio Rf and sleeve friction fs from a CPT dataset of 47 soundings in the Bačka Plain alluvial region. Each method was evaluated using 10-fold spatial cross-validation with folds defined by spatial block partitioning to avoid proximity bias. Kriging achieved the lowest root mean square error for Rf (0.31%) compared to random forest (0.38%) and gradient boosting (0.36%). For fs, performance differences were smaller and not statistically significant at the 95% level. Machine learning methods showed a tendency to underpredict extreme values in data-sparse zones, a consequence of regression toward the mean. Kriging prediction intervals were well-calibrated, with empirical coverage of 91% for nominal 90% intervals, whereas prediction intervals from gradient boosting required conformal post-processing to achieve comparable calibration. The paper concludes that ordinary kriging remains competitive for continuous soil property interpolation from CPT data in geologically simple alluvial settings, though machine learning may offer advantages when auxiliary environmental covariates are incorporated. Reproducible Python code and the full dataset are provided as supplementary material."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02293",
+        "kind": "publication",
+        "title": "Geotechnical characterisation of deep peat deposits for infrastructure planning in northern Vojvodina",
+        "body": {
+          "recordId": "SYN-PUB-02293",
+          "field": "abstract",
+          "text": "A systematic geotechnical investigation of deep peat deposits (thickness 2.5 to 11.8 m) in the northern Vojvodina region was undertaken as input for regional infrastructure planning. Thirty-two boreholes with continuous sampling were drilled at fourteen sites. Physical properties, Atterberg limits, grain size distribution, organic content, and basic compressibility parameters were determined for 124 specimens. Peat was classified according to the von Post scale as H3–H7 at most sites. Undrained shear strength measured by field vane tests ranged from 9 to 31 kPa and correlated strongly with bulk density (R² = 0.74). Depth profiles showed that in most locations the peat layer is underlain by soft organic clay before transition to medium stiff clay, requiring two-layer consolidation modelling. The data were compiled into a GIS database accessible to regional planning authorities and are intended to serve as a reference for future infrastructure projects."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0496",
+        "kind": "project",
+        "title": "Probabilistic Subsurface Characterisation of Alluvial Corridors for Flood Infrastructure Safety Assessment",
+        "body": {
+          "recordId": "SYN-PRJ-0496",
+          "field": "summary",
+          "text": "The project developed geostatistical workflows for probabilistic characterisation of alluvial subsurface conditions along flood protection levees in the Vojvodina region. Field data collection involved 68 CPT soundings and 14 boreholes along three levee reaches. Sequential Gaussian simulation was used to generate ensembles of subsurface realisations, which were subsequently coupled with limit-equilibrium slope stability analysis to produce probabilistic levee failure curves. The project produced open-access datasets and a freely distributed Python toolbox for CPT-based geostatistical modelling. Collaboration with the Provincial Directorate for Water Management provided access to historical investigation archives. Results were disseminated to practitioners through two workshops held in Novi Sad and Sombor."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0497",
+        "kind": "project",
+        "title": "Cross-Border Harmonisation of Geotechnical Investigation Standards and Geostatistical Practice for Infrastructure Projects",
+        "body": {
+          "recordId": "SYN-PRJ-0497",
+          "field": "summary",
+          "text": "GROUNDLINK addresses inconsistencies in geotechnical investigation and data interpretation practice between Serbia and Hungary, particularly for cross-border infrastructure such as road bridges and canal structures along the Tisa River. The project compiles a harmonised CPT and borehole database from both sides of the border, develops bilingual guidance documents for geostatistical interpolation in shared alluvial formations, and delivers joint training for practising geotechnical engineers. Nada Bulatović leads Work Package 3, covering geostatistical data analysis and uncertainty reporting. The project includes a pilot application to a planned pedestrian–cycle bridge over the Tisa near Horgoš. Expected outputs include a bilingual practitioner guide and a shared online geotechnical data portal."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1660",
+        "kind": "project",
+        "title": "Floodplain Liquefaction Risk Assessment for Infrastructure in the Pannonian Basin",
+        "body": {
+          "recordId": "SYN-PRJ-1660",
+          "field": "summary",
+          "text": "The project addressed liquefaction risk to linear infrastructure (roads, railway embankments, pipelines) in the Hungarian–Serbian cross-border floodplain zone. Work included compilation of a joint CPT and borehole database, harmonisation of cyclic laboratory testing protocols between the two partner institutions, and production of cross-border liquefaction susceptibility maps in GIS format. Field reconnaissance after minor seismic events (Mw 4.3–4.8) was used to validate map predictions against observed ground behaviour. Final deliverables included a bilingual technical manual for infrastructure designers and a set of GIS layers deposited with provincial planning authorities on both sides of the border."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1663",
+        "kind": "project",
+        "title": "Mechanisms of Long-Term Creep in Organic Soils of the Vojvodina Lowland and Their Relevance to Infrastructure Serviceability",
+        "body": {
+          "recordId": "SYN-PRJ-1663",
+          "field": "summary",
+          "text": "The project investigated the microscale mechanisms responsible for long-term creep in organic clays and peats from Vojvodina through a combination of advanced laboratory testing and microstructural analysis. Testing included CRS and stepped-load oedometer tests, triaxial creep tests, mercury intrusion porosimetry, and X-ray diffraction. A series of numerical isotache model calibrations were performed and validated against three monitored embankment sites. Special attention was given to the effect of seasonal groundwater variation on creep rate, motivated by observed discrepancies between predicted and measured long-term settlements in drainage-affected agricultural land. Results from the project contributed to four journal publications and one book chapter, and supported two doctoral dissertations in progress."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0177",
+            "field": "open_to",
+            "quote": "joint projects with companies needing subsurface uncertainty quantification for construction sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0177",
+            "field": "open_to",
+            "quote": "contract research for site investigation data analysis and geostatistical reporting",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0177",
+            "field": "open_to",
+            "quote": "equipment access to CPT rig for collaborative field campaigns",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

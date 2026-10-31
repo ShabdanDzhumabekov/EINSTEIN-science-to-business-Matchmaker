@@ -1,0 +1,40 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C026-CH3-R0240",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C026-CH3-R0240",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C026-CH3-R0240",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "His field work includes a dense multi-level piezometer network and particle-tracking transport simulation at a production well field.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03045",
+            "field": "abstract",
+            "quote": "A steady-state and transient groundwater flow model was constructed for a 3.2 km reach of the Tisa River near Titel, Vojvodina, to simulate bank filtrate travel times under varying pumping and river-stage conditions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The particle-tracking work in SYN-PUB-03045 is a numerical modelling study (MODFLOW-2005 with MT3DMS), not field work; rephrase to separate field instrumentation experience from modelling experience so the researcher's skills are not overstated.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

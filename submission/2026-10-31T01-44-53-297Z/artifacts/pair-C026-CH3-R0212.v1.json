@@ -1,0 +1,248 @@
+{
+  "ref": {
+    "artifactId": "pair-C026-CH3-R0212",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C026-CH3",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C026-CH3-R0212",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a site-specific groundwater monitoring network and a passive/containment-based leachate remediation proposal be designed for Zelena Petlja's unlined temporary storage yard within the inspectorate's 120-day deadline, using existing data plus a targeted field campaign to test seasonal flow and leachate transport assumptions?",
+    "rationale": [
+      {
+        "text": "Zorić is explicitly open to contract research on site-specific leachate transport modelling and containment design, which matches the core task.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "open_to",
+            "quote": "contract research on site-specific leachate transport modelling and containment design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has consulting experience in groundwater monitoring programme design and interceptor drain performance assessment at operational landfills.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "industry_experience",
+            "quote": "provided technical consulting to Ekološki Inženjering Panonija d.o.o. between 2016 and 2018 on groundwater monitoring programme design and interceptor drain performance assessment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has field experience monitoring leachate in a northern Vojvodina alluvial aquifer with an 18-piezometer network and has recommended dual-tracer compliance monitoring.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "A closed landfill in northern Vojvodina was monitored over a 30-month period using a network of 18 piezometers",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02714",
+            "field": "abstract",
+            "quote": "recommends dual-tracer campaigns for compliance monitoring at comparable sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has published design charts for passive interceptor drains as a containment alternative at small municipal landfills.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02715",
+            "field": "abstract",
+            "quote": "Passive interceptor drains placed perpendicular to groundwater flow are a cost-effective alternative to pump-and-treat systems at small municipal landfills",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02715",
+            "field": "abstract",
+            "quote": "dimensionless design charts for drain spacing, penetration depth, and gravel-pack hydraulic conductivity ratio",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has studied seasonal water-table controls on leachate infiltration at a municipal transfer station, directly relevant to the yard's unknown seasonal flow conditions.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "monitored water table levels at 15-minute intervals over 24 months using pressure transducers installed in six piezometers around a municipal transfer station in Novi Sad",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has reviewed leachate-hydrogeology chapters of environmental impact studies for Vojvodina waste-facility permit applications, supporting the inspectorate-facing proposal.",
+        "sources": [
+          {
+            "recordId": "R0212",
+            "field": "industry_experience",
+            "quote": "reviewed environmental impact study chapters on leachate hydrogeology for several municipal waste facility permit applications in Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her project work includes dense piezometer networks and region-specific passive containment design guidelines for Vojvodina waste facilities.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0329",
+            "field": "summary",
+            "quote": "installation of a dense piezometer network at four representative sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0329",
+            "field": "summary",
+            "quote": "development of region-specific passive containment design guidelines",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The collaboration must produce four groundwater monitoring wells and a remediation proposal within the inspectorate's 120-day order, before late June 2024.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "issued an order requiring us to install four groundwater monitoring wells within 120 days and to submit a remediation proposal",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "all before the 120-day deadline runs out in late June 2024",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The plan must start from sparse recent hydrogeological information: only a 1993 sketch exists, and both contamination extent and seasonal flow direction are unknown.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We have a hydrogeological sketch from when the site was first permitted in 1993 but nothing more recent.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "We do not know how far the contamination has moved or which direction groundwater flows under the site at different seasons.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Containment design must assume the yard liner is not a liquid-retention barrier; liner defects can greatly increase groundwater loading under wet conditions.",
+        "sources": [
+          {
+            "recordId": "C026-CH3",
+            "field": "detail",
+            "quote": "The liner under that area was never designed for liquid retention.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02724",
+            "field": "abstract",
+            "quote": "a 50 mm circular defect increased cumulative groundwater loading by 340 % relative to an intact liner under wet antecedent conditions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Analytical and staffing capacity is limited to a basic wet-chemistry bench and two process technicians, with no dedicated research budget or laboratory.",
+        "sources": [
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "no dedicated research budget or laboratory beyond the basic wet-chemistry bench used for leachate monitoring",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C026",
+            "field": "rd_capacity",
+            "quote": "two technicians with process engineering backgrounds who track sorting-line performance data daily",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Seasonal water-table variation must be designed for; mean-annual assumptions can underestimate peak leachate infiltration by up to 40% in this climatic setting.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02716",
+            "field": "abstract",
+            "quote": "containment designs based solely on mean annual conditions may underestimate peak infiltration by up to 40 % in this climatic setting",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The remediation proposal should use site-specific geochemical attenuation evidence where relevant, because attenuation factors are expected in Serbian landfill permit assessments.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02717",
+            "field": "abstract",
+            "quote": "reporting geochemical attenuation factors as part of site-specific risk assessments for Serbian landfill permit applications",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Researcher availability for the 2024 120-day deadline is unknown; the only availability evidence refers to a reduced teaching load in 2025/26.",
+      "Her leachate-transport evidence comes from closed landfills, a transfer station and gravel/alluvial aquifer studies; applying it to an unlined temporary storage yard with high COD and unknown flow is a transfer gap to test in the first field campaign.",
+      "The 120-day deadline leaves little time for seasonal monitoring; the study that addressed seasonality used 24 months of water-table monitoring.",
+      "The company states no dedicated research budget or laboratory beyond a basic wet-chemistry bench, which may constrain drilling, laboratory analysis and model calibration.",
+      "Her passive-treatment evidence focuses on ammonium removal by zeolite PRBs; it does not demonstrate treatment of 3,400 mg/L COD leachate, so the treatment proposal may need additional processes and pilot testing.",
+      "The inspectorate's acceptance criteria for well design and remediation proposal content are not specified, so regulatory sign-off remains a risk."
+    ],
+    "questions": [
+      "Can Zorić confirm availability and field capacity for the 120-day window ending late June 2024, given her teaching load and project commitments?",
+      "What exactly does the inspectorate order require for the four wells (locations, depths, construction, sampling frequency) and what remediation-proposal format or standards will be accepted?",
+      "What existing site data can be shared: the 1993 hydrogeological sketch, borehole logs, water levels, leachate sampling QA/QC, waste composition, yard drainage, liner condition and topography?",
+      "What budget and procurement route exist for drilling, laboratory analyses and any treatment pilot, given the stated lack of a dedicated research budget?",
+      "What are the leachate flow/volume, COD/ammonium/heavy-metal concentrations beyond the single COD value, and any seasonal water-table data?",
+      "Will the company provide site access, technician time and permission for data use or publication, and what IP terms would apply?",
+      "Can external funding or a joint project application cover the work, and how would that timeline fit the 120-day regulatory deadline?"
+    ],
+    "outcome": "pair",
+    "taskId": "C026-CH3",
+    "researcherId": "R0212",
+    "inputs": [
+      {
+        "artifactId": "business-C026-CH3",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C026-CH3-R0212",
+        "version": 1
+      }
+    ]
+  }
+}

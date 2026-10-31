@@ -1,0 +1,214 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0349",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Morphology- and Script-Aware Serbian Support Search",
+    "facts": [
+      {
+        "text": "In a sample of 12,000 real support queries from one bank client about 18% returned no useful result; more than half of those misses were traced to morphological mismatch or script confusion, and the stated outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our analysis traced more than half of those misses directly to morphological mismatch or script confusion",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work must be testable within six months and fit a modest tooling/data budget of around 8,000 EUR.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot holds about 85,000 labelled query-response pairs across all clients, and two in-house linguists can annotate or validate proposed solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Users freely switch between Latin and Cyrillic script mid-sentence; the current Elasticsearch setup uses a Croatian-built basic stemmer, and the stack includes spaCy with custom Serbian morphological components.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "users freely switch between Latin and Cyrillic script mid-sentence",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009",
+            "field": "tech",
+            "quote": "spaCy with custom Serbian morphological components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The indexing approach must be updatable when new vocabulary arrives without a full re-index.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Dragić's group works on mixed-script Serbian information retrieval, script normalization, transliteration and inverted indexes robust to script variation, and has studied how stemming and lemmatisation interact with script normalization during index construction.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "bio",
+            "quote": "Njegova istraživačka grupa bavi se pronalaženjem informacija u dokumentima koji sadrže mešovito ćirilično-latinično srpsko pismo, normalizacijom skripte, transliteracijom kao korakom u pretprocesiranju i izgradnjom invertovanih indeksa otpornih na varijacije pisma.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "ispitujemo kako stemovanje i lematizacija interaguju s postupkom normalizacije skripte pri izgradnji pretražnog indeksa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His phoneme-based canonicalization reduced the out-of-vocabulary rate from 9.3% to 2.1% against a Latin-only baseline on a legal gold standard, and his real-time retrieval work addresses incremental index updating under low latency.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04279",
+            "field": "abstract",
+            "quote": "The phoneme-based canonical form reduced the out-of-vocabulary rate from 9.3% to 2.1% compared with a Latin-only baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02734",
+            "field": "abstract",
+            "quote": "Sistemi za pretragu u realnom vremenu nad tokovima vesti zahtevaju inkrementalno ažuriranje indeksa s niskim kašnjenjem.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has an open-source script-normalization module compatible with popular search frameworks, prior contract research adapting a search module for Serbian court decisions with a Novi Sad startup, and is open to contract research on internal search engine customization.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0546",
+            "field": "summary",
+            "quote": "razvijen je open-source modul za normalizaciju pisma kompatibilan s popularnim okvirima za pretragu",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "industry_experience",
+            "quote": "sarađivao je s jednim novosadskim startapom iz oblasti legaltech-a na prilagođavanju pretražnog modula za srpske sudske odluke",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0349",
+            "field": "open_to",
+            "quote": "contract research on internal search engine customization",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His notes state two active projects but capacity for one smaller industrial contract or consultancy; his exact availability for this format is not confirmed.",
+        "sources": [
+          {
+            "recordId": "R0349",
+            "field": "notes",
+            "quote": "Trenutno je angažovan na dva aktivna projekta, ali ima kapaciteta za jedan manji industrijski ugovor ili konsultantski angažman.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "The strongest published evidence comes from news, legal, web and benchmark corpora rather than bank support chat, so transfer to LinguaBot's 12,000-query sample and 85,000 labelled pairs is an open test rather than an established result.",
+      "Because fine-tuned multilingual models still underperform on within-sentence script mixing, residual misses likely remain; a cascaded deterministic-plus-neural-fallback normalizer is a plausible candidate to test.",
+      "Since manual synonym lists do not scale, an incrementally updated exception and lemma resource with a named owner likely matters as much as the initial accuracy gain.",
+      "A six-month, ~8,000 EUR frame suggests a focused pilot on one product and one index rather than production hardening across all clients."
+    ],
+    "proposedActions": [
+      "First experiment (months 1–2): freeze a held-out slice of LinguaBot's 12,000 bank queries and 85,000 labelled pairs, fix a written definition of 'no useful result', and measure the current Elasticsearch/Croatian-stemmer baseline. Then test deterministic Latin/Cyrillic normalization, phoneme canonicalization and morphology-aware lemma indexing inside the existing Elasticsearch/spaCy stack. Researcher proposes the normalization, canonicalization and index design; company supplies data, environment and linguist validation time. Proposed go/no-go: continue only if the held-out miss rate falls materially toward the below-5% target and residual errors are analysable by category (morphology, script mixing, vocabulary).",
+      "Months 3–4: test incremental vocabulary update by holding out quarter-specific product terms; measure whether adding them avoids a full re-index and how much linguist time it costs.",
+      "Months 5–6: validate on independent labelled pairs with the in-house linguists; measure miss rate, the script-mixing failure subset and latency against baseline, then decide on a production pilot.",
+      "Negotiation targets, not guarantees: held-out miss rate below 5%; vocabulary updates without full re-index; agreed latency overhead versus the current baseline; documented maintenance owner."
+    ],
+    "questions": [
+      "Can Stefan Dragić confirm his availability and the exact scope of one smaller six-month contract or consultancy, given his two active projects?",
+      "Which LinguaBot product and Elasticsearch index should be targeted, and what are the current latency, throughput and deployment constraints?",
+      "Can LinguaBot provide the 12,000-query bank sample, the 85,000 labelled pairs, query logs and linguist validation time within the ~8,000 EUR budget?",
+      "How exactly is 'no useful result' defined for the 18% baseline, and which query set defines the below-5% target?",
+      "Who owns and updates the normalization, lemma and exception resources after the project, and how often does new product terminology arrive?",
+      "Does LinguaBot prefer a joint project or an industrial PhD format, and is there co-funding or in-kind engineering time beyond the stated budget?"
+    ],
+    "markdown": "# Morphology- and Script-Aware Serbian Support Search\n\n## Verified facts\n- In a sample of 12,000 real support queries from one bank client about 18% returned no useful result; more than half of those misses were traced to morphological mismatch or script confusion, and the stated outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process. [F1]\n- The work must be testable within six months and fit a modest tooling/data budget of around 8,000 EUR. [F2]\n- LinguaBot holds about 85,000 labelled query-response pairs across all clients, and two in-house linguists can annotate or validate proposed solutions. [F3]\n- Users freely switch between Latin and Cyrillic script mid-sentence; the current Elasticsearch setup uses a Croatian-built basic stemmer, and the stack includes spaCy with custom Serbian morphological components. [F4]\n- The indexing approach must be updatable when new vocabulary arrives without a full re-index. [F5]\n- Dragić's group works on mixed-script Serbian information retrieval, script normalization, transliteration and inverted indexes robust to script variation, and has studied how stemming and lemmatisation interact with script normalization during index construction. [F6]\n- His phoneme-based canonicalization reduced the out-of-vocabulary rate from 9.3% to 2.1% against a Latin-only baseline on a legal gold standard, and his real-time retrieval work addresses incremental index updating under low latency. [F7]\n- He has an open-source script-normalization module compatible with popular search frameworks, prior contract research adapting a search module for Serbian court decisions with a Novi Sad startup, and is open to contract research on internal search engine customization. [F8]\n- His notes state two active projects but capacity for one smaller industrial contract or consultancy; his exact availability for this format is not confirmed. [F9]\n\n## Our inference\n- The strongest published evidence comes from news, legal, web and benchmark corpora rather than bank support chat, so transfer to LinguaBot's 12,000-query sample and 85,000 labelled pairs is an open test rather than an established result.\n- Because fine-tuned multilingual models still underperform on within-sentence script mixing, residual misses likely remain; a cascaded deterministic-plus-neural-fallback normalizer is a plausible candidate to test.\n- Since manual synonym lists do not scale, an incrementally updated exception and lemma resource with a named owner likely matters as much as the initial accuracy gain.\n- A six-month, ~8,000 EUR frame suggests a focused pilot on one product and one index rather than production hardening across all clients.\n\n## Proposed next steps\n- First experiment (months 1–2): freeze a held-out slice of LinguaBot's 12,000 bank queries and 85,000 labelled pairs, fix a written definition of 'no useful result', and measure the current Elasticsearch/Croatian-stemmer baseline. Then test deterministic Latin/Cyrillic normalization, phoneme canonicalization and morphology-aware lemma indexing inside the existing Elasticsearch/spaCy stack. Researcher proposes the normalization, canonicalization and index design; company supplies data, environment and linguist validation time. Proposed go/no-go: continue only if the held-out miss rate falls materially toward the below-5% target and residual errors are analysable by category (morphology, script mixing, vocabulary).\n- Months 3–4: test incremental vocabulary update by holding out quarter-specific product terms; measure whether adding them avoids a full re-index and how much linguist time it costs.\n- Months 5–6: validate on independent labelled pairs with the in-house linguists; measure miss rate, the script-mixing failure subset and latency against baseline, then decide on a production pilot.\n- Negotiation targets, not guarantees: held-out miss rate below 5%; vocabulary updates without full re-index; agreed latency overhead versus the current baseline; documented maintenance owner.\n\n## Open questions\n- Can Stefan Dragić confirm his availability and the exact scope of one smaller six-month contract or consultancy, given his two active projects?\n- Which LinguaBot product and Elasticsearch index should be targeted, and what are the current latency, throughput and deployment constraints?\n- Can LinguaBot provide the 12,000-query bank sample, the 85,000 labelled pairs, query logs and linguist validation time within the ~8,000 EUR budget?\n- How exactly is 'no useful result' defined for the 18% baseline, and which query set defines the below-5% target?\n- Who owns and updates the normalization, lemma and exception resources after the project, and how often does new product terminology arrive?\n- Does LinguaBot prefer a joint project or an industrial PhD format, and is there co-funding or in-kind engineering time beyond the stated budget?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0349",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0349",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0349",
+        "version": 1
+      }
+    ]
+  }
+}

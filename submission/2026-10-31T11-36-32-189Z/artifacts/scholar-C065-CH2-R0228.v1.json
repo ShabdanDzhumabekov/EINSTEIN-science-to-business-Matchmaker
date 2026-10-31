@@ -1,0 +1,167 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0228",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0228",
+    "name": "Dunja Simić",
+    "faculty": "Ekonomski fakultet u Subotici",
+    "department": "Department of Business Informatics",
+    "fields": [
+      "Business Informatics",
+      "Customer Analytics",
+      "Applied Statistics",
+      "Information Systems"
+    ],
+    "keywords": [
+      "customer lifetime value",
+      "churn prediction",
+      "survival analysis",
+      "B2B SaaS",
+      "subscription services",
+      "longitudinal data",
+      "hazard models",
+      "CLV decay",
+      "retention modelling",
+      "event history analysis"
+    ],
+    "openTo": [
+      "joint projects",
+      "contract research",
+      "student internships",
+      "consulting on churn modelling and survival analysis for subscription businesses"
+    ],
+    "bio": {
+      "recordId": "R0228",
+      "field": "bio",
+      "text": "Dunja Simić je doktorand na Katedri za poslovnu informatiku Ekonomskog fakulteta u Subotici, Univerziteta u Novom Sadu, gde je upisala doktorske studije 2022. godine. Diplomirala je i masterirala na istom fakultetu, s fokusom na analitiku poslovnih podataka. Istraživački rad obavlja u okviru grupe koja se bavi kvantitativnim metodama u menadžmentu odnosa s klijentima, naročito primenom survival analize i event-history modela na longitudinalnim skupovima podataka iz SaaS i B2B okruženja. Učestvuje u nastavi na predmetima Poslovna statistika i Uvod u analitiku podataka. Za analizu koristi softverske pakete R i Python, a podatke pribavlja kroz saradnju s nekoliko regionalnih tehnoloških kompanija."
+    },
+    "industryExperience": {
+      "recordId": "R0228",
+      "field": "industry_experience",
+      "text": "Tokom 2022. i 2023. godine sarađivala je kao eksterna analitičarka s jednim regionalnim SaaS provajderom na pripremi i anonimizaciji podataka o ugovorima za potrebe istraživanja. Ova saradnja nije podrazumevala formalni konsultantski ugovor."
+    },
+    "notes": {
+      "recordId": "R0228",
+      "field": "notes",
+      "text": "Dunja Simić je u aktivnoj fazi pisanja doktorske disertacije i preferira saradnje koje se mogu uključiti u okvir njene teze ili je neposredno podržavaju podacima. Nije u mogućnosti da nadzire doktorske studente. Kompanijama koje poseduju longitudinalne skupove podataka o pretplatnim ugovorima može ponuditi analizu u zamenu za pristup podacima."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02895",
+        "kind": "publication",
+        "title": "Primena Cox-ovog modela proporcionalnih hazarda na predikciju odliva klijenata u B2B softverskim pretplatama: studija slučaja na tržištu jugoistočne Evrope",
+        "body": {
+          "recordId": "SYN-PUB-02895",
+          "field": "abstract",
+          "text": "Rad istražuje primenu Cox-ovog modela proporcionalnih hazarda za identifikaciju predikatora odliva (churn) u segmentu malih i srednjih preduzeća koja koriste pretplatne softverske usluge. Skup podataka obuhvata 1.847 aktivnih i 612 ugašenih ugovora prikupljenih od tri SaaS provajdera sa sedištem u Srbiji i Severnoj Makedoniji, u periodu od 36 meseci. Kao kovariante korišćene su: dužina trajanja pretplate, frekvencija prijava na sistem, broj prijavljenih tehničkih tiketa, vrednost ugovora i tip industrije klijenta. Rezultati pokazuju da frekvencija korišćenja sistema i broj eskaliranih tiketa imaju statistički značajan efekat na hazard (p < 0,01), dok vrednost ugovora sama po sebi nije pouzdan prediktor. Konkordancijski indeks modela iznosi 0,74. Rad doprinosi razumevanju specifičnosti B2B tržišta u tranzicionim ekonomijama gde je dostupnost longitudinalnih podataka ograničena."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02896",
+        "kind": "publication",
+        "title": "Temporal Patterns in Customer Lifetime Value Decay Among Mid-Market B2B Software Subscribers: A Parametric Survival Approach",
+        "body": {
+          "recordId": "SYN-PUB-02896",
+          "field": "abstract",
+          "text": "This study models the rate at which contracted customer lifetime value (CLV) erodes over the duration of a subscription in mid-market B2B software accounts. Using a dataset of 3,214 annual subscription contracts drawn from two anonymised enterprise resource planning vendors operating in Central and Eastern Europe, we fit Weibull, log-logistic, and generalised gamma accelerated failure time models to time-to-significant-downsell events, defined as a revenue reduction of 20% or more at renewal. The Weibull model with shape parameter 1.43 provides the best fit by AIC. Key predictors of accelerated CLV decay include a high ratio of support interactions to active users (HR = 1.31, 95% CI: 1.18–1.46) and contract vintage exceeding 24 months without an upsell event (HR = 1.19). Controlling for firm size and sector, companies in professional services show lower decay hazard relative to manufacturing. The findings suggest that CLV decay is not uniform and that usage intensity metrics available within the first six months of a contract carry strong prognostic value for long-term revenue trajectories."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02897",
+        "kind": "publication",
+        "title": "Identifikacija ranih indikatora odliva u pretplatnim B2B uslugama korišćenjem recurrent event survival modela",
+        "body": {
+          "recordId": "SYN-PUB-02897",
+          "field": "abstract",
+          "text": "Rad se bavi problemom ponavljajućih događaja downgrade-a pretplate pre konačnog raskida ugovora, koji klasični single-event modeli ne uspevaju adekvatno da obuhvate. Korišćenjem AG (Andersen–Gill) modela na uzorku od 980 ugovornih odnosa praćenih tokom 48 meseci, analiziran je vremenski sled parcijalnih smanjenja vrednosti pretplate kao prediktor konačnog odliva. Podaci su obezbeđeni kroz anonimizovanu saradnju s jednim regionalnim provajderom poslovnog softvera. Rezultati ukazuju da prisustvo bar dva downgrade događaja u prvih 18 meseci udvostruičava verovatnoću raskida ugovora u narednom kvartalu. Rad takođe ispituje vremensku zavisnost kovarijanti, posebno promene u broju licenci i administrativnih kontakata, kao signal organizacionih promena kod klijenta. Ograničenje studije leži u oslonjenosti na podatke jednog provajdera, što može umanjiti eksternu validnost nalaza."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02898",
+        "kind": "publication",
+        "title": "Incorporating Session-Level Behavioural Signals into a Content-Based Recommender for a Sparse Transactional Log",
+        "body": {
+          "recordId": "SYN-PUB-02898",
+          "field": "abstract",
+          "text": "This paper proposes a recommendation architecture that augments a content-based item similarity model with short-session behavioural signals derived from point-of-sale sequences. The hypothesis is that items co-purchased within the same basket, even without long-term user history, carry exploitable proximity information. Data come from two small clothing retailers operating in Serbia, collectively yielding 9,200 baskets over 18 months, with a median basket size of three items. Item content features include garment category, fabric type, and price range. A weighted combination of cosine attribute similarity and within-session co-occurrence frequency is used to score candidate recommendations. Grid search over the weighting parameter identifies an optimal blend of 0.6 content to 0.4 session co-occurrence, yielding a precision at three of 0.38 against a pure content baseline of 0.29. The study highlights that even minimal session data meaningfully stabilises recommendation quality when transaction histories per user are fewer than five."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02633",
+        "kind": "publication",
+        "title": "Does Pension Payment Digitalisation Change Spending Behaviour? A Quasi-Experimental Study in Serbia",
+        "body": {
+          "recordId": "SYN-PUB-02633",
+          "field": "abstract",
+          "text": "In 2019, the Serbian Pension and Disability Insurance Fund extended mandatory electronic pension disbursement to previously exempt rural post-office recipients. This policy change is used as a quasi-experiment to assess whether forced digital payment onboarding alters discretionary spending patterns and subjective financial wellbeing among retirees. Administrative disbursement records were linked to anonymised transaction data from a partner savings bank for 1,104 newly onboarded pensioners in two affected regions. A synthetic control group of 1,098 long-standing electronic recipients was constructed using propensity score matching. Difference-in-differences estimates over 18 post-treatment months show a modest but significant increase in non-cash retail spending (+7.4%) and a decrease in cash withdrawal frequency (-1.9 withdrawals per month). Subjective financial control, measured via a short embedded survey at 12 months, did not differ significantly between groups."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02899",
+        "kind": "publication",
+        "title": "Semantic Heterogeneity in Serbian Public Procurement Notices: An Empirical Analysis",
+        "body": {
+          "recordId": "SYN-PUB-02899",
+          "field": "abstract",
+          "text": "This study examines the degree of semantic heterogeneity present in machine-readable procurement notices published on the Serbian Public Procurement Portal between 2008 and 2011. A corpus of 18 340 notices was parsed and their textual fields tokenised and lemmatised using a custom Serbian-language NLP pipeline. Cluster analysis identified 214 terminological clusters with overlapping intended meanings but inconsistent labelling, particularly in works and services categories. The paper quantifies homonymy and synonymy rates per procurement category and correlates heterogeneity scores with contracting authority type (ministry, local government, public enterprise). Local government notices exhibit the highest heterogeneity index (0.71 on a 0–1 scale) compared to ministries (0.44). Findings provide an empirical baseline for ontology normalisation efforts and suggest that mandatory use of a reference vocabulary would reduce ambiguity in approximately 62 % of problematic notice fields."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-1587",
+        "kind": "project",
+        "title": "Longitudinal Modelling of Revenue Retention and Churn Dynamics in B2B Software Markets of the Western Balkans",
+        "body": {
+          "recordId": "SYN-PRJ-1587",
+          "field": "summary",
+          "text": "Projekat ispituje dinamiku zadržavanja prihoda i odliva klijenata u B2B segmentu tržišta poslovnog softvera u zemljama Zapadnog Balkana, s naglaskom na Srbiju i Severnu Makedoniju. Glavni cilj je izgradnja longitudinalnog analitičkog okvira koji kombininju survival analizu s metodama strojnog učenja za rano upozoravanje na rizik od odliva. Pored akademskog istraživanja, projekat predviđa razvoj prototipskog alata za analitiku zadržavanja koji će biti testiran u saradnji s dva partnerska softverska preduzeća. Dunja Simić učestvuje u prikupljanju i pripremi podataka, specifikaciji survival modela i izradi izveštaja. Projektom rukovodi njen mentor s Ekonomskog fakulteta u Subotici."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0305",
+        "kind": "project",
+        "title": "Report-Based Operational Analytics for Regional Infrastructure Portfolios",
+        "body": {
+          "recordId": "SYN-PRJ-0305",
+          "field": "summary",
+          "text": "REPORA addressed the gap between the large volumes of engineering project reports produced by regional infrastructure agencies and the limited analytical use made of them. The project developed and validated a full pipeline from semi-structured PDF ingestion through field extraction, schema normalisation, and dimensional warehousing, to a configurable KPI dashboard layer. Three partner organisations in Vojvodina served as application sites, providing access to historical report repositories totalling over 2,100 documents. Research outputs included the versioned metadata registry approach to schema drift, the multilingual extraction comparison, and the reference architecture paper. The project also produced an open annotated corpus of 300 engineering report excerpts in Serbian and Hungarian made available to the research community under a CC-BY licence."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "unknown",
+        "sources": []
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0228",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0228",
+            "field": "open_to",
+            "quote": "contract research",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": [
+      "non_english"
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R1008",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T13-11-35-673Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R1008",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can site-specific statistical baselines and incrementally updated one-class detectors identify unusual Modbus TCP and BACnet/IP behaviour without labelled attack training data, while producing understandable alerts within ProtoSense's device limits? The first experiment would test transfer to BACnet and new client sites using chronological capture replay and isolated bench scenarios, measuring operator-reviewed false alerts, scenario detection, drift response, explanation usefulness, and resource overhead.",
+    "rationale": [
+      {
+        "text": "Kiss has directly relevant experience calibrating unsupervised detectors without labelled attacks and adapting them to operational SCADA changes.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0511",
+            "field": "summary",
+            "quote": "The project developed threshold calibration procedures for detectors operating without labelled attack data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0511",
+            "field": "summary",
+            "quote": "incremental Gaussian mixture and autoencoder update algorithms suited to concept drift induced by planned process changes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her Modbus work provides a concrete starting point for site-specific register baselines using observable timing, value, and command-sequence deviations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "This paper describes the construction of per-register statistical baselines for Modbus/TCP traffic captured over six months on a live substation automation testbed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10472",
+            "field": "abstract",
+            "quote": "For each register address, empirical distributions of inter-request intervals, payload values, and function code sequences were estimated",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her research includes measured resource-conscious deployment, relevant to selecting candidates for ProtoSense hardware benchmarking rather than assuming server-based methods will fit.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-10239",
+            "field": "abstract",
+            "quote": "A combined 8-bit quantised, 25%-pruned model achieved inference at 0.9 ms per 10-second window on an ARM Cortex-A7 target",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00492",
+            "field": "abstract",
+            "quote": "Memory footprint per detector instance was under 120 KB.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her experience includes operational utility partners and long-term industrial traffic measurements, supporting evaluation beyond public datasets or short synthetic captures.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "industry_experience",
+            "quote": "Kiss has collaborated with a regional energy distributor and a water utility as monitoring data partners on two funded projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-10474",
+            "field": "abstract",
+            "quote": "This measurement study presents a 12-month passive capture of traffic from four industrial sites",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "A joint project matches her stated interest in companies deploying ICS monitoring solutions.",
+        "sources": [
+          {
+            "recordId": "R1008",
+            "field": "open_to",
+            "quote": "joint projects with companies deploying ICS monitoring solutions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Training and threshold selection must not depend on confirmed malicious client examples. Treat archived traffic as presumed normal rather than verified clean, and separate chronological training and evaluation periods.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have nothing labelled as malicious.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "so if they were compromised they would not know.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The scope must cover both Modbus TCP and BACnet/IP, with site-specific baselines, manageable alert burden, and explanations understandable to plant managers.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "products",
+            "quote": "ProtoSense: passive protocol inspection module for Modbus TCP and BACnet/IP traffic",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "learns what normal looks like on a specific site",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we can explain to a plant manager in plain language.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on-device within the actual appliance's resource and forwarding-latency limits, with a viable integration path into the custom Linux and firmware environment.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have the hardware to run inference on-device",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "support on-device anomaly detection without affecting packet forwarding latency.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "Embedded Linux (custom Yocto build)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "tech",
+            "quote": "C and Rust for firmware components",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work plan must fit one to two part-time company engineers; archive, bench, and firmware access require an NDA, and access to the research group's testbed requires a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "with access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R1008",
+            "field": "notes",
+            "quote": "Her group's testbed capacity is available to industrial partners under a data-sharing agreement.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The supplied research demonstrates Modbus, DNP3, and other protocols, but not BACnet-specific validation. BACnet feature extraction and detector behaviour are a transfer gap that the first experiment must test.",
+      "Published results on other testbeds, sites, and processors do not establish performance on client networks or ProtoSense. Chronological replay and target-device benchmarking may reveal unacceptable false alerts, missed scenarios, or resource overhead.",
+      "Historical captures may contain undetected compromise; unlabelled calibration cannot by itself establish attack detection accuracy. Bench attacks provide controlled evidence but may not represent real adversaries.",
+      "Seasonal operation and planned changes may resemble attacks, while automatic adaptation could absorb malicious behaviour. Update gating and operator acknowledgement need testing.",
+      "Observable feature deviations offer a possible explanation mechanism, but plant-manager comprehension and operational usefulness have not been demonstrated for this deployment.",
+      "Researcher availability and allocated staff time are unknown. Company budget, delivery deadline, exact hardware limits, current status of the planned hardware variant, and client permissions for research use are also unknown."
+    ],
+    "questions": [
+      "What researcher and student effort can Kiss commit, and when? What budget, milestones, and delivery deadline can the company support?",
+      "Which appliance is the initial target, and what are its CPU, RAM, storage, sustained traffic load, inference budget, and permitted forwarding-latency impact? Was the planned late-2025 hardware variant released?",
+      "Which sites and captures cover each protocol, operating mode, maintenance event, and seasonal cycle? What research access, retention, anonymisation, and cross-border handling permissions do client agreements allow?",
+      "Can the first experiment use a BACnet-capable isolated bench or replay environment alongside Modbus, and who will define representative benign changes and attack scenarios without exposing live plants?",
+      "What false-alert rate per site and operator workload are acceptable, what detection delays matter, and who will adjudicate alerts when ground truth is unavailable?",
+      "Which baseline-deviation explanations would plant managers find actionable, and who can participate in a comprehension and usefulness test?",
+      "Who may approve baseline updates after operational changes, and how should updates be frozen, audited, or rolled back when compromise is suspected?",
+      "What NDA, data-sharing, intellectual-property, publication, and production-maintenance terms will govern the collaboration?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R1008",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R1008",
+        "version": 1
+      }
+    ]
+  }
+}

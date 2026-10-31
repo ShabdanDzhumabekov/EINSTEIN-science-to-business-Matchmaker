@@ -1,0 +1,110 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0767",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0767",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How can Lex Automatika add script-aware normalisation to KlozuraPro's PostgreSQL full-text search pipeline so that Latin- and Cyrillic-script queries retrieve the same Serbian contract documents, including mixed-script documents, without noticeably increasing query latency? The project would compare indexing-time, query-time and combined transliteration/normalisation strategies on representative contract and query samples.",
+    "rationale": [
+      {
+        "text": "Dragišić has a research background specifically in morphological processing of legal Serbian texts.",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "bio",
+            "quote": "dissertation on morphological tagging of legal texts in Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has prior legal-tech consultancy experience in morphological normalisation for Serbian contract documents.",
+        "sources": [
+          {
+            "recordId": "R0767",
+            "field": "industry_experience",
+            "quote": "advising on morphological normalisation and entity detection for Serbian contract documents",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built a large domain-specific morphological lexicon for legal Serbian, directly relevant to robust handling of inflected and specialised contract vocabulary.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08428",
+            "field": "abstract",
+            "quote": "The resulting lexicon contains 87,400 lemma–paradigm pairs and 620,000 fully inflected word forms",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His South Slavic cross-lingual work has used romanised transliteration as part of a shared feature representation, giving him relevant exposure to script transfer issues.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00294",
+            "field": "abstract",
+            "quote": "shared feature representation built from romanised transliteration, language-independent character embeddings, and shared morphological clusters",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His project work has produced openly released Serbian language resources, matching the resource-building component he is best approached for.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0674",
+            "field": "summary",
+            "quote": "All outputs were deposited in the CLARIN.SI repository under open licences.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [],
+    "risks": [
+      "The transliteration evidence in the researcher's material is from cross-lingual named-entity recognition feature representation, not from PostgreSQL full-text search; transfer to indexing-time or query-time normalisation is untested and should be the first experiment.",
+      "The company already notes dialect-dependent edge cases where the same Latin sequence maps to different Cyrillic letters; the researcher's material does not show which convention KlozuraPro clients expect.",
+      "Mixed-script document retrieval is not directly covered by the cited resources; the legal lexicon and corpora do not prove robustness on documents mixing Cyrillic and Latin within the same contract.",
+      "Researcher availability is unknown, so capacity for a joint project cannot be assumed until confirmed.",
+      "Lex Automatika has one backend engineer for up to six weeks and capacity for roughly one external project at a time, which may constrain implementation and evaluation scope.",
+      "The researcher's caution about exclusive data transfer and requirement for open licensing of publicly funded corpus outputs may conflict with client contract data, server logs or proprietary platform constraints."
+    ],
+    "questions": [
+      "Can Strahinja Dragišić confirm his availability and capacity for a joint project, and whether he would also consider an industrial PhD format?",
+      "Which Serbian Latin–Cyrillic transliteration convention or conventions must KlozuraPro support, especially for dialect-dependent edge cases?",
+      "Can Lex Automatika provide anonymised mixed-script contract samples and query-log samples under agreed data terms for evaluation?",
+      "What is the current search-latency baseline and the acceptable latency budget for the new normalisation step?",
+      "Which pipeline points may be changed: PostgreSQL indexing/query functions, application-layer query rewriting, or both?",
+      "Can publicly funded corpus outputs be openly licensed, and what restrictions apply to client contract data and server logs?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0767",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0767",
+        "version": 1
+      }
+    ]
+  }
+}

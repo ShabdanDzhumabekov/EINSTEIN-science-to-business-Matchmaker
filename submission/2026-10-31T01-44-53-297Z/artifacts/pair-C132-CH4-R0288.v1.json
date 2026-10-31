@@ -1,0 +1,161 @@
+{
+  "ref": {
+    "artifactId": "pair-C132-CH4-R0288",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C132-CH4",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C132-CH4-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How should a cross-script normalisation and transliteration layer be placed in KlozuraPro's PostgreSQL full-text search pipeline — at indexing time, at query time, or both — so that Serbian contracts stored in Cyrillic, Latin or mixed script are retrieved regardless of the query script, while ambiguous dialect-dependent mappings and mixed-script documents are handled? As a hypothesis to test, we would measure whether the resulting search keeps current response times and reduces zero-hit searches on the server-log sample.",
+    "rationale": [
+      {
+        "text": "Nikolić has built a Serbian lemmatizer that handles both Cyrillic and Latin scripts transparently through a unified internal representation, which is directly relevant to treating both scripts consistently in a search pipeline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "The proposed system handles both scripts transparently by applying a unified internal representation before lemmatization, then restoring the original script in the output.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has empirically studied why Serbian queries miss relevant documents and found that full lemmatization combined with paradigm-aware indexing yields the highest retrieval F1, matching the company's retrieval-miss problem.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has compared normalisation strategies for Serbian spelling variants, including script-switching, and reported precision and generalisation trade-offs that bear on choosing a transliteration approach for search.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has developed a cross-script tokeniser that detects script boundaries within tokens and normalises them before downstream processing, which is relevant to the company's need for mixed-script document handling.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The solution must handle mixed-script documents, not only documents that are entirely Cyrillic or entirely Latin.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We want a solution that is robust enough to handle mixed-script documents, not just fully-Cyrillic or fully-Latin ones",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must not noticeably slow down search response times.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "does not slow down search response times noticeably",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must resolve edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "there are edge cases where the same Latin sequence maps to different Cyrillic letters depending on dialect conventions",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The solution must work with the existing PostgreSQL full-text search index, which currently treats the two scripts as different character sets.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "our full-text search index in PostgreSQL treats the two scripts as completely different character sets",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The collaboration must fit a capacity of one backend engineer for up to six weeks and roughly one external project at a time alongside normal product development.",
+        "sources": [
+          {
+            "recordId": "C132-CH4",
+            "field": "detail",
+            "quote": "We have one backend engineer who can work on this for up to six weeks",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C132",
+            "field": "rd_capacity",
+            "quote": "with capacity for roughly one external project at a time alongside normal product development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: Nikolić's cross-script and lemmatization evidence comes from corpus, lemmatizer and tokeniser pipelines, not from a PostgreSQL full-text search index; whether placing normalisation at indexing time, query time or both works in KlozuraPro's production index must be tested as a first experiment.",
+      "The cross-script tokeniser evidence is from a social media corpus, so applying it to legal contract documents is a domain transfer that is not yet validated.",
+      "Dialect and orthographic conventions can make Latin-to-Cyrillic mapping ambiguous, so a single normative mapping may not satisfy all clients or documents and may require a documented convention or configurability.",
+      "The researcher's availability is recorded as unknown, so the timeline and level of involvement cannot be confirmed.",
+      "The six-week engagement with one backend engineer may be tight for a robust mixed-script solution that also preserves current search response times.",
+      "Performance risk: normalisation added to indexing or querying could conflict with the requirement not to noticeably slow search, and this remains untested."
+    ],
+    "questions": [
+      "What is the researcher's availability and time commitment for this collaboration, which is currently recorded as unknown?",
+      "Which orthographic or dialect convention should be normative for Latin-to-Cyrillic mappings where the same sequence can map to different letters?",
+      "Does the researcher and the company prefer a joint project or an industrial PhD supervision arrangement, given that both are open?",
+      "What latency threshold defines a 'noticeable' slowdown in search response times?",
+      "Can the researcher access a sample of stored contracts and the January 2024 server logs, and what confidentiality or ISO 27001-aligned policy constraints apply to client documents?",
+      "What is the current PostgreSQL full-text search schema and configuration, so the placement of normalisation at indexing time, query time or both can be assessed?"
+    ],
+    "outcome": "pair",
+    "taskId": "C132-CH4",
+    "researcherId": "R0288",
+    "inputs": [
+      {
+        "artifactId": "business-C132-CH4",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C132-CH4-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

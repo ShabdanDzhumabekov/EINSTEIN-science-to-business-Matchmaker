@@ -1,0 +1,94 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C003-CH1-R0365",
+    "version": 2
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C003-CH1-R0365",
+      "version": 2
+    },
+    "checkedClaimCount": 7,
+    "issues": [],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “painted mild-steel hollow-section frames cracking at crossmember-to-stringer welds after about 18 months of continuous use, with 14 assemblies replaced this year.” Potential benefits: “identify whether its workshop test misses field-relevant damage”. These identify the specific field failure, warranty burden and workshop-reproduction problem rather than a generic fatigue goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “newly made, painted production-representative crossmember-to-stringer joints”; “Include the actual 2–6 °C operating range and measured excursions”; “after advance laboratory booking”; and “Confirm fixture, humidity and load compatibility and allocate company engineering time first.” Open questions: “What staff time, budget and decision deadline can each side allocate to the proposed campaign?” These preserve the construction and operating conditions and make laboratory capability, shared-equipment access and limited company staffing prerequisites; the original material specifies no fixed budget or deadline."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Erić’s published work compared room-temperature, cold-isothermal and combined thermo-mechanical fatigue programmes in butt-welded S275JR plates.” Our inference: “plate tests at substantially colder temperatures do not validate mechanisms in painted hollow-section conveyor joints at 2–6 °C” and “Condensation and coating effects remain a transfer gap”. Proposed next steps: “A null single-factor effect does not exclude interactions.” These connect his own experimental method to the problem while acknowledging the material, geometry, temperature and environmental limits and retaining the interaction-sensitive interpretation warranted by the cited work."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts: “The company lacks low-temperature cyclic-testing capability. Erić’s chamber and servo-hydraulic machine are shared with two other groups.” Proposed next steps: “AutomVoj would supply specifications, specimens and service-measurement support; Erić would lead inspection, fatigue testing and analysis.” Our inference: “His stated openness is not a project commitment”. These distinguish documented resources and company evidence from proposed responsibilities and unconfirmed commitments."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “using newly made, painted production-representative crossmember-to-stringer joints and retained failures as references”; “Compare the room-temperature workshop baseline with a chilled eight-condition matrix: baseline, thermal cycling alone, condensation alone, vibration alone, each pair and all three”; and “Separate tuning specimens from held-out confirmation specimens and verify independence.” These specify inputs, baseline, independently varied conditions and separate confirmation, with execution details expressly gated by protocol agreement and compatibility checks."
+      },
+      {
+        "item": "metric",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Measure cycles to detected cracking, crack location, growth and fracture features”; “proceed only if the best-supported configuration, whichever it is, reproducibly matches field failure and the contrasts support an explanatory hypothesis”; “lock crack-detection thresholds, field-match features and tolerances, specimen-level replication, repeat-handling, runout and ambiguous-match rules, and the contrast decision rule”; and “Propose at least three confirmation specimens per selected condition, all meeting the locked field-match criteria; count ambiguous matches as failures and runouts as non-reproductions.” Together with “Unresolved criteria or unjustified exposure block confirmation”, these define a proposed specimen-level acceptance rule tied to reproducing the company’s failure, require exposure justification and resolution of remaining measurement rules, and prevent acceptance merely because one condition performs differently from another."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Independently set thermal levels to constant temperature versus measured cycling, moisture to dry versus controlled condensation, and vibration to absent versus measured loaded-belt excitation; hold static loading, fabrication and other controls comparable”; “A null single-factor effect does not exclude interactions”; and “Predefine uncertainty-adjusted contrasts and justify loading and acceleration against approximately 18 months of service before interpreting causality.” These support conditional explanatory hypotheses through controlled factorial comparisons without claiming that the suspected causes or accelerated-test transfer are already established."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference: “Condensation and coating effects remain a transfer gap; corrosion expertise may be needed. Two retained sections may not represent all replacements, and accelerated cracking could arise through a different mechanism”; and “shared equipment does not establish fixture compatibility or condensation-control capability.” Proposed next steps: “Unresolved criteria or unjustified exposure block confirmation.” These identify the main transfer, representativeness, mechanism and equipment risks and treat unresolved capabilities as questions or prerequisites."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “This joint-project proposal is conditional because Erić’s availability is unknown. His stated openness is not a project commitment”. Open questions: “Can Erić confirm availability for this joint project and compatible laboratory access”. These make the proposed roles conditional on agreement and availability and are consistent with his documented openness to joint projects."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could distinguish interacting service factors from assumed causes and identify whether its workshop test misses field-relevant damage, informing which production changes merit validation”; and “Subject to agreement and access, Erić could test transfer of thermo-mechanical fatigue methods to painted conveyor joints using service measurements, failed sections and controlled comparisons.” These are plausible, conditional gains from the initial experiment, not guarantees of eliminating warranty failures or commitments to subsequent research."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.97,
+        0.74,
+        0.96,
+        0.85,
+        0.99,
+        0.61,
+        0.57
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

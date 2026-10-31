@@ -1,0 +1,122 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T14-15-54-356Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "plan_underspecified",
+        "severity": "blocking",
+        "claim": "Proposed go/no-go: the selected configuration’s upper 95% confidence bound is below 5% separately on the bank-client population, initially and after vocabulary updates; updates require no full re-index; agreed maintenance and latency caps hold; and a prototype is testable within six months and approximately EUR 8,000 tooling/data expenditure.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We need an approach that handles lemmatisation or indexing in a way that is accurate for Serbian, tolerates script mixing automatically, and can be updated when new vocabulary arrives without a full re-index.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009",
+            "field": "about",
+            "quote": "today we serve four banks and two telecoms providers across Serbia",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The bank-only aggregate gate can pass despite unacceptable telecom performance or persistent failures on within-word mixing and unseen terminology; merely evaluating those cases does not constrain acceptance. Add separate, pre-agreed acceptance rules for telecom and the required mixing/new-vocabulary strata, retaining constructed probes as a separate evaluation rather than automatically imposing the bank’s below-5% target on every stratum.",
+        "owner": "proposal_writer"
+      }
+    ],
+    "checklist": [
+      {
+        "item": "problem",
+        "verdict": "pass",
+        "evidence": "Verified facts: “LinguaBot reports that about 18% of 12,000 real support queries from one bank client returned no useful result; its analysis attributed more than half of those misses to morphology or script confusion.” Also: “The company describes an Elasticsearch baseline using a Croatian-built stemmer, within-word script mixing, and manual synonym maintenance that does not scale with quarterly terminology changes.” These identify the concrete retrieval failures and maintenance problem rather than a generic search-improvement goal."
+      },
+      {
+        "item": "constraints",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “updates require no full re-index; agreed maintenance and latency caps hold; and a prototype is testable within six months and approximately EUR 8,000 tooling/data expenditure. Missing evidence means no pass.” Verification is proposed through “Replay new terminology against existing indexed documents, recording update operations, retrieval changes, maintenance hours and latency.” Access is an explicit prerequisite: “Before testing, establish corpus access and usable relevance judgments”. Open questions ask “what maintenance-hours cap is acceptable” and “how are researcher fees and annotation effort funded beyond the tooling/data allocation?” These make acceptance conditional on the update, resource, access and timing constraints rather than assuming feasibility."
+      },
+      {
+        "item": "researcher_fit",
+        "verdict": "pass",
+        "evidence": "Verified facts: “Dragić’s research maps tokens to phoneme sequences for script canonicalization. His morphological-reduction study investigates interactions between stemming, lemmatization and script normalization.” The reported trade-off is explicit: “regular-token character error was higher for the transformer than for deterministic rules, despite improvement on exceptions.” Our inference: “Legal and benchmark evidence does not validate short banking or telecom queries, within-word typos, or vocabulary-rule changes without re-indexing.” Together these connect his documented methods to the two failure mechanisms while delimiting transfer and acknowledging an accuracy trade-off."
+      },
+      {
+        "item": "contributions",
+        "verdict": "pass",
+        "evidence": "Verified facts document “around 85,000 labelled query-response pairs across all clients and two in-house linguists able to annotate or validate solutions” and “capacity for one smaller industrial contract or consultancy”. Proposed next steps distinguish proposed roles: “LinguaBot would supply engineering and linguist validation; Dragić would guide canonicalization, morphological comparisons and error analysis, subject to agreement on his limited allocation.” Open questions request “a named company engineering counterpart” and authorization for data access; documented capacity is therefore distinguished from unconfirmed allocation and contributions."
+      },
+      {
+        "item": "first_experiment",
+        "verdict": "pass",
+        "evidence": "Proposed next steps: “Propose an eight-configuration experiment: existing Elasticsearch baseline; script canonicalization, Serbian morphological normalization and incremental vocabulary handling individually; all three pairwise combinations; and the full combination.” Also: “Define each factor independently and hold corpus, ranking and queries constant” and “Use separate tuning and held-out evaluation samples from the 85,000 pairs, checking independence; select the configuration on tuning data.” The requirements to “prevent query, answer-template and client leakage” and “Keep constructed typo probes separate from representative queries” establish the inputs, controlled comparisons and separate selection/evaluation stages, with execution details reserved for protocol agreement."
+      },
+      {
+        "item": "metric",
+        "verdict": "fail",
+        "evidence": "Proposed next steps define the event and denominator: “Count one miss per query occurrence with no useful result, without deduplication; divide by all evaluated occurrences and count unresolved judgments as misses.” Labels would come from “Linguists would judge every evaluation query at an agreed retrieval cutoff.” The statistical rule is “the selected configuration’s upper 95% confidence bound is below 5% separately on the bank-client population, initially and after vocabulary updates”. However, “Evaluate representative bank-client queries separately, plus telecom, within-word mixing and unseen terminology” supplies evaluation but no separate acceptance rule for those additional populations or required cases; the bank-only gate could pass while those cases remain unsuccessful."
+      },
+      {
+        "item": "causal_claims",
+        "verdict": "pass",
+        "evidence": "Proposed next steps require “all three pairwise combinations; and the full combination” and “Define each factor independently and hold corpus, ranking and queries constant.” They also state: “A factor showing no isolated benefit would narrow the hypothesis, not end investigation of interactions.” The factorial comparisons and explicit caution about interactions support component-level investigation without asserting that isolated effects determine combined performance."
+      },
+      {
+        "item": "risks",
+        "verdict": "pass",
+        "evidence": "Our inference states: “Legal and benchmark evidence does not validate short banking or telecom queries, within-word typos, or vocabulary-rule changes without re-indexing” and “Incremental document insertion is not equivalent to updating rules against existing content.” It also warns: “Normalization may address only part of the miss rate. Exception handling could introduce errors or maintenance burdens”. Verified facts identify the neural method’s regular-token error trade-off, while Open questions leave access, hardware, latency, funding and availability unresolved; the principal transfer, update, accuracy and execution risks are not presented as settled facts."
+      },
+      {
+        "item": "participation",
+        "verdict": "pass",
+        "evidence": "Our inference: “Participation is conditional: joint-project willingness is open, but Dragić’s actual availability and allocation remain unconfirmed.” Proposed next steps assign his contribution “subject to agreement on his limited allocation”, and Open questions ask him to “confirm availability, start timing and allocation for this small research-focused joint project”. These respect his limited capacity and exclusion of general software development without assigning a confirmed commitment."
+      },
+      {
+        "item": "benefits",
+        "verdict": "pass",
+        "evidence": "Potential benefits: “The experiment could identify which components reduce actual support-search misses and whether terminology updates remain practical without rebuilding the index.” For the researcher: “Subject to agreement and authorized access, Dragić could test normalization interactions on industrial support queries and study transfer beyond legal and benchmark retrieval.” Both benefits follow from the proposed comparisons and update replay and are framed as possibilities rather than guaranteed outcomes."
+      }
+    ],
+    "unverifiedIssues": [],
+    "jevFactCheck": {
+      "support": [
+        0.97,
+        0.89,
+        0.99,
+        0.75,
+        0.93,
+        0.94,
+        0.91
+      ],
+      "threshold": 0.5,
+      "question": {
+        "instructions": "Does the `evidence` of `fact_<n>` in `facts` directly support its `claim`? Judge only against that evidence; missing evidence is not support.",
+        "whenTrue": "The evidence directly supports the claim",
+        "whenFalse": "The evidence does not establish the claim or contradicts it"
+      }
+    }
+  }
+}

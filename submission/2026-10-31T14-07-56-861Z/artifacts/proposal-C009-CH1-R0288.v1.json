@@ -1,0 +1,186 @@
+{
+  "ref": {
+    "artifactId": "proposal-C009-CH1-R0288",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T14-07-56-861Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C009-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C009-CH1-R0288",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C009-CH1-R0288",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Reducing Serbian support-search misses without full re-indexing",
+    "facts": [
+      {
+        "text": "LinguaBot attributes search failures to Serbian inflection and mixed scripts, including script changes inside words.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "text",
+            "quote": "Our search misses answers because Serbian words change form (e.g. 'kartica', 'karticu', 'karticom') and users mix Latin and Cyrillic.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our users freely switch between Latin and Cyrillic script mid-sentence — sometimes mid-word in typos.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company reports that about 18% of 12,000 real support queries from one bank returned no useful result. Its separate labelled query-response dataset contains around 85,000 pairs across all clients.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "LinguaBot currently uses Elasticsearch with a Croatian-oriented stemmer. It reports that manual synonym-list maintenance does not scale as clients introduce product terminology quarterly.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Our current Elasticsearch setup uses a basic stemmer that was built for Croatian and misses a significant share of Serbian-specific forms.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "maintaining those lists manually does not scale as clients add new product terminology every quarter.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company identifies approximately EUR 8,000 for tooling or data work and says its two in-house linguists can annotate or validate solutions.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić’s work presents Serbian-specific hybrid lemmatization, within-token script normalization, and retrieval comparisons in which full lemmatization with paradigm-aware indexing achieved the highest F1.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03588",
+            "field": "abstract",
+            "quote": "This paper presents a rule-based and machine-learning hybrid lemmatizer designed specifically for Serbian",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03594",
+            "field": "abstract",
+            "quote": "We introduce a cross-script tokeniser that identifies script boundaries within tokens and normalises them before downstream processing",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03589",
+            "field": "abstract",
+            "quote": "Full lemmatization combined with paradigm-aware indexing yields the highest F1 score.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her lexicon research reports lower paradigm correctness for borrowings than common vocabulary. Her normalization study reports a tradeoff: lookup tables had highest precision, while the neural model generalized better to unseen borrowings.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-03592",
+            "field": "abstract",
+            "quote": "finding 91.3% paradigm correctness for common vocabulary and 78.6% for borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03591",
+            "field": "abstract",
+            "quote": "The lookup-table approach achieves the highest precision while the neural model generalises better to unseen foreign borrowings.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Nikolić’s participation material lists openness to joint projects.",
+        "sources": [
+          {
+            "recordId": "R0288",
+            "field": "open_to",
+            "quote": "joint projects",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "This suggests a strong methodological match, but corpus and social-media results do not establish useful-answer retrieval performance on banking or telecom support, especially mixed-script typos and unseen products.",
+      "Query-time normalization and paradigm expansion could support vocabulary updates without rebuilding the index, but compatibility with existing indexed representations remains untested. Borrowing errors and normalization-induced ambiguity could increase irrelevant results.",
+      "This joint-project proposal is conditional because Nikolić’s availability is unknown; openness to collaboration does not establish a delivery commitment."
+    ],
+    "proposedActions": [
+      "First, propose replaying company-labelled queries against corresponding knowledge-base snapshots. Reserve separate tuning and held-out evaluation samples; check duplicate, client and temporal leakage. Independently switch Serbian lemmatization, within-token script normalization and paradigm expansion on/off: test the current Elasticsearch baseline, each alone, all pairs and all three, holding other settings constant. Select the best configuration on tuning data, then freeze it. Measure no-useful-result query events divided by all evaluated query events, counting repeated submissions separately without merging. Linguists would adjudicate every evaluation query at an agreed retrieval depth; unresolved cases count as misses. Require the upper 95% confidence bound below 5%, separately on held-out queries from the original bank; pooled results cannot substitute. Report other clients and mixed-script, inflectional and unseen-product subsets separately. Insufficient bank data means no pass. Nikolić would propose linguistic components; company engineers would implement replay and integration, with linguists validating relevance. Go/no-go also requires the feasibility and maintenance gates below, regardless of which configuration wins.",
+      "Test new product vocabulary through query-time or auxiliary-lexicon updates in the existing Elasticsearch workflow, with zero full re-index operations as a gate. Repeat held-out retrieval evaluation after updates. Before testing, agree precision, latency and linguist-hours-per-update limits; measure each and require compliance alongside the miss-rate gate. Bound annotation work within the two linguists’ agreed allocation. Investigate null component effects and interactions rather than treating a null effect alone as disproving the mechanism.",
+      "Propose month one for permissions, baseline reproduction and evaluation definitions; months two–four for component comparisons and integration; months five–six for frozen evaluation and update rehearsal. Gate continuation on a testable prototype within six months and tooling/data costs within approximately EUR 8,000. Research-time funding, engineering allocation and maintenance ownership remain to be agreed; these are proposed planning limits, not commitments."
+    ],
+    "questions": [
+      "Can Nikolić confirm availability for this joint project and agree research responsibilities with the company’s engineering and maintenance owners?",
+      "What client permissions, de-identification rules, processing-location restrictions and commercial-use licences would govern the datasets, knowledge-base snapshots and research tools?",
+      "Can the company supply independent held-out data from the original bank and agree useful-result depth, relevance adjudication, precision, latency and maintenance-effort acceptance limits?",
+      "Which Elasticsearch mappings, permitted incremental-update mechanisms, compute resources, staff allocations and research-time funding are available?"
+    ],
+    "benefits": {
+      "company": "The experiment could identify which linguistic components reduce actual support-search misses and whether the best configuration can meet the bank-specific target while accommodating vocabulary changes without full re-indexing.",
+      "researcher": "Subject to agreement and permissions, Nikolić could test how corpus-derived morphology and cross-script methods transfer to support retrieval, using labelled queries and expert-reviewed product-vocabulary cases."
+    },
+    "markdown": "# Reducing Serbian support-search misses without full re-indexing\n\n## Verified facts\n- LinguaBot attributes search failures to Serbian inflection and mixed scripts, including script changes inside words. [F1]\n- The company reports that about 18% of 12,000 real support queries from one bank returned no useful result. Its separate labelled query-response dataset contains around 85,000 pairs across all clients. [F2]\n- LinguaBot currently uses Elasticsearch with a Croatian-oriented stemmer. It reports that manual synonym-list maintenance does not scale as clients introduce product terminology quarterly. [F3]\n- The company identifies approximately EUR 8,000 for tooling or data work and says its two in-house linguists can annotate or validate solutions. [F4]\n- Nikolić’s work presents Serbian-specific hybrid lemmatization, within-token script normalization, and retrieval comparisons in which full lemmatization with paradigm-aware indexing achieved the highest F1. [F5]\n- Her lexicon research reports lower paradigm correctness for borrowings than common vocabulary. Her normalization study reports a tradeoff: lookup tables had highest precision, while the neural model generalized better to unseen borrowings. [F6]\n- Nikolić’s participation material lists openness to joint projects. [F7]\n\n## Potential benefits\n- For the company: The experiment could identify which linguistic components reduce actual support-search misses and whether the best configuration can meet the bank-specific target while accommodating vocabulary changes without full re-indexing.\n- For the researcher: Subject to agreement and permissions, Nikolić could test how corpus-derived morphology and cross-script methods transfer to support retrieval, using labelled queries and expert-reviewed product-vocabulary cases.\n\n## Our inference\n- This suggests a strong methodological match, but corpus and social-media results do not establish useful-answer retrieval performance on banking or telecom support, especially mixed-script typos and unseen products.\n- Query-time normalization and paradigm expansion could support vocabulary updates without rebuilding the index, but compatibility with existing indexed representations remains untested. Borrowing errors and normalization-induced ambiguity could increase irrelevant results.\n- This joint-project proposal is conditional because Nikolić’s availability is unknown; openness to collaboration does not establish a delivery commitment.\n\n## Proposed next steps\n- First, propose replaying company-labelled queries against corresponding knowledge-base snapshots. Reserve separate tuning and held-out evaluation samples; check duplicate, client and temporal leakage. Independently switch Serbian lemmatization, within-token script normalization and paradigm expansion on/off: test the current Elasticsearch baseline, each alone, all pairs and all three, holding other settings constant. Select the best configuration on tuning data, then freeze it. Measure no-useful-result query events divided by all evaluated query events, counting repeated submissions separately without merging. Linguists would adjudicate every evaluation query at an agreed retrieval depth; unresolved cases count as misses. Require the upper 95% confidence bound below 5%, separately on held-out queries from the original bank; pooled results cannot substitute. Report other clients and mixed-script, inflectional and unseen-product subsets separately. Insufficient bank data means no pass. Nikolić would propose linguistic components; company engineers would implement replay and integration, with linguists validating relevance. Go/no-go also requires the feasibility and maintenance gates below, regardless of which configuration wins.\n- Test new product vocabulary through query-time or auxiliary-lexicon updates in the existing Elasticsearch workflow, with zero full re-index operations as a gate. Repeat held-out retrieval evaluation after updates. Before testing, agree precision, latency and linguist-hours-per-update limits; measure each and require compliance alongside the miss-rate gate. Bound annotation work within the two linguists’ agreed allocation. Investigate null component effects and interactions rather than treating a null effect alone as disproving the mechanism.\n- Propose month one for permissions, baseline reproduction and evaluation definitions; months two–four for component comparisons and integration; months five–six for frozen evaluation and update rehearsal. Gate continuation on a testable prototype within six months and tooling/data costs within approximately EUR 8,000. Research-time funding, engineering allocation and maintenance ownership remain to be agreed; these are proposed planning limits, not commitments.\n\n## Open questions\n- Can Nikolić confirm availability for this joint project and agree research responsibilities with the company’s engineering and maintenance owners?\n- What client permissions, de-identification rules, processing-location restrictions and commercial-use licences would govern the datasets, knowledge-base snapshots and research tools?\n- Can the company supply independent held-out data from the original bank and agree useful-result depth, relevance adjudication, precision, latency and maintenance-effort acceptance limits?\n- Which Elasticsearch mappings, permitted incremental-update mechanisms, compute resources, staff allocations and research-time funding are available?",
+    "taskId": "C009-CH1",
+    "researcherId": "R0288",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C009-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C009-CH1-R0288",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C009-CH1-R0288",
+        "version": 1
+      }
+    ]
+  }
+}

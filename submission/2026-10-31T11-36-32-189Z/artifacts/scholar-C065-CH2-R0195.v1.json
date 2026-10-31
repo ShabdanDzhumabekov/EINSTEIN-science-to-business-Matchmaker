@@ -1,0 +1,243 @@
+{
+  "ref": {
+    "artifactId": "scholar-C065-CH2-R0195",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0195",
+    "name": "Vera Dragišić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Machine Learning and Artificial Intelligence",
+      "Intelligent Tutoring Systems",
+      "Recommender Systems",
+      "Educational Technology"
+    ],
+    "keywords": [
+      "reinforcement learning",
+      "recommender systems",
+      "knowledge tracing",
+      "intelligent tutoring systems",
+      "adaptive learning",
+      "sequential decision-making",
+      "student modelling",
+      "deep learning",
+      "educational data mining",
+      "Bayesian knowledge estimation"
+    ],
+    "openTo": [
+      "joint projects with companies developing e-learning or HR training platforms",
+      "contract research on knowledge tracing and learner modelling",
+      "student internships for master's students with machine learning background",
+      "consulting on adaptive assessment system design",
+      "industrial PhD co-supervision"
+    ],
+    "bio": {
+      "recordId": "R0195",
+      "field": "bio",
+      "text": "Vera Dragišić received her B.Sc. and M.Sc. degrees in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad, in 2013 and 2015 respectively, and completed her Ph.D. in 2021 with a dissertation on reinforcement learning approaches for adaptive learning path recommendation. She joined the Department of Computing and Control Engineering as a Research Associate in 2022. Her group focuses on personalised learning systems, sequential decision-making models, and knowledge tracing for educational platforms. She teaches courses on machine learning and intelligent systems at undergraduate level. Her work relies primarily on the faculty's high-performance computing cluster and open educational datasets; she also maintains collaborations with research groups in Ljubljana and Budapest on adaptive tutoring benchmarks."
+    },
+    "industryExperience": {
+      "recordId": "R0195",
+      "field": "industry_experience",
+      "text": "Dragišić collaborated with EduPath d.o.o., a Novi Sad-based educational technology startup, as a research partner on the ADALEARN project, contributing to the design of their recommendation pipeline. She has no prior full-time industry employment."
+    },
+    "notes": {
+      "recordId": "R0195",
+      "field": "notes",
+      "text": "Dragišić is in the final year of the ADALEARN project and is actively seeking follow-on funding; she is particularly interested in partnerships with companies that have access to learner interaction logs, as data availability is the main bottleneck for her research. She prefers collaborations that allow publication of results."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-02505",
+        "kind": "publication",
+        "title": "Bayesian Knowledge Tracing with Slip and Guess Parameters on Secondary-School Mathematics Data",
+        "body": {
+          "recordId": "SYN-PUB-02505",
+          "field": "abstract",
+          "text": "This paper revisits the classic Bayesian Knowledge Tracing (BKT) model and investigates the effect of per-skill versus per-student estimation of slip and guess parameters on a dataset of 4,200 secondary-school students interacting with a mathematics practice platform over one academic year. The dataset comprised approximately 380,000 response records covering 47 distinct knowledge components. We fitted BKT models using expectation-maximisation and compared predictive accuracy under three parameterisation strategies. Per-skill parameterisation yielded an AUC of 0.71, while a mixed per-student model reached 0.74 on held-out data. We also analysed the correlation between estimated knowledge gain rates and teacher-assigned end-of-term grades, finding a Pearson r of 0.61. The study confirms known limitations of BKT regarding temporal spacing of practice sessions and suggests that richer contextual features are needed to improve short-term prediction. The results serve as a reproducible baseline for subsequent deep-learning knowledge tracing experiments conducted by the authors."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02506",
+        "kind": "publication",
+        "title": "Comparing Deep Knowledge Tracing Architectures on a Regional Language-Learning Corpus",
+        "body": {
+          "recordId": "SYN-PUB-02506",
+          "field": "abstract",
+          "text": "Deep Knowledge Tracing (DKT) models based on recurrent neural networks have shown strong performance on English-language datasets, but their applicability to smaller, less standardised corpora remains underexplored. We assembled a corpus from a Serbian-language online learning platform covering vocabulary and grammar exercises for adult learners (n=1,850 users, 210,000 interaction records, 63 skills). We trained and evaluated standard LSTM-based DKT, a bidirectional variant, and a memory-augmented network (DKVMN) under five-fold cross-validation. DKVMN achieved the best AUC of 0.782 compared to 0.761 for standard DKT and 0.769 for the bidirectional model. We find that sequence length and the proportion of cold-start users substantially affect model ranking. Hyperparameter sensitivity is documented in detail, and all code and anonymised data splits are released under an open licence. The paper discusses practical implications for deploying knowledge tracing in low-resource educational settings."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02507",
+        "kind": "publication",
+        "title": "A Collaborative Filtering Baseline Suite for Learning Resource Recommendation in Higher Education",
+        "body": {
+          "recordId": "SYN-PUB-02507",
+          "field": "abstract",
+          "text": "Recommendation of learning materials in higher education is often benchmarked against general-purpose collaborative filtering methods without careful attention to temporal leakage or cold-start conditions. This book chapter presents a reproducible baseline suite comprising user-based CF, item-based CF, matrix factorisation (SVD and NMF), and a popularity baseline, evaluated on interaction logs from a university learning management system (6,400 students, 14 courses, approximately 95,000 resource access events recorded over two academic years). Evaluation follows a strict time-based split to prevent future information leaking into training. Results show that NMF with 40 latent factors achieves NDCG@10 of 0.231, outperforming user-based CF (0.198) and item-based CF (0.204). We discuss the importance of distinguishing between mandatory and optional resource access in constructing implicit feedback signals, and provide practical guidance for researchers who wish to use LMS logs as a benchmark source. All preprocessing scripts are made available."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02508",
+        "kind": "publication",
+        "title": "Incorporating Forgetting Curves into Transformer-Based Knowledge Tracing",
+        "body": {
+          "recordId": "SYN-PUB-02508",
+          "field": "abstract",
+          "text": "Standard attention-based knowledge tracing models treat all past interactions as equally retrievable, which contradicts well-established memory consolidation findings. We propose a forgetting-aware self-attention mechanism that weights historical interactions according to an exponential decay function parameterised per knowledge component. The model is evaluated on three public benchmark datasets (ASSISTments 2009, Junyi Academy, and EdNet-KT1) as well as a proprietary corpus from a regional STEM tutoring platform (2,300 students, 48 skills). On ASSISTments 2009, the forgetting-aware model achieves AUC 0.821 versus 0.808 for a vanilla transformer baseline trained under identical conditions. On the regional STEM corpus, the improvement is smaller (0.793 vs. 0.787), likely due to the shorter average session gaps. Ablation experiments isolate the contribution of the decay function from other architectural choices. We also report calibration error (ECE) alongside AUC, arguing that well-calibrated confidence estimates are important for downstream mastery gating decisions in tutoring systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02509",
+        "kind": "publication",
+        "title": "Offline Policy Evaluation for Reinforcement Learning-Based Learning Path Recommenders",
+        "body": {
+          "recordId": "SYN-PUB-02509",
+          "field": "abstract",
+          "text": "Learning path recommendation is framed naturally as a sequential decision problem, yet online reinforcement learning evaluation in educational settings raises ethical and logistical concerns. This paper examines three offline policy evaluation (OPE) methods—inverse propensity scoring (IPS), doubly robust estimation, and fitted Q-evaluation—applied to a logged dataset from a mathematics adaptive learning platform (8,100 learners, 92,000 sessions). The logging policy was a rule-based system used in production. We estimate the value of two candidate RL policies: a Q-network trained on the same logs and a policy derived from a knowledge-tracing reward signal. Doubly robust estimation yields the narrowest confidence intervals and most stable rankings across bootstrap samples. The paper provides a practical guide for applying OPE in educational contexts, including discussion of distributional shift issues that arise when learner populations change across academic years. Limitations regarding unmeasured confounders are discussed explicitly."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02510",
+        "kind": "publication",
+        "title": "Reward Shaping Strategies for Reinforcement Learning Tutors Targeting Long-Term Retention",
+        "body": {
+          "recordId": "SYN-PUB-02510",
+          "field": "abstract",
+          "text": "Reinforcement learning tutors optimised for immediate correctness can implicitly encourage cramming behaviour, sacrificing long-term retention. We study four reward shaping strategies—immediate correctness, delayed post-test score, spaced-repetition bonus, and a composite reward—within a simulated student environment calibrated from real interaction logs. The simulator models forgetting using a two-parameter retention function estimated from data collected across three months of use of a vocabulary tutoring application (1,200 adult learners). Policies trained with the composite reward achieve 12.4% higher simulated retention at a 14-day lag compared to policies trained on immediate correctness alone, without requiring more practice items. We conduct sensitivity analyses on simulator parameters to assess how much the conclusions depend on the accuracy of the retention model. The paper also contributes a publicly released simulation framework written in Python that other researchers can extend with alternative student models."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02511",
+        "kind": "publication",
+        "title": "Combining Knowledge Tracing and Collaborative Filtering for Cold-Start Exercise Recommendation",
+        "body": {
+          "recordId": "SYN-PUB-02511",
+          "field": "abstract",
+          "text": "New exercises added to an adaptive platform lack interaction history, creating a cold-start problem for collaborative filtering-based recommenders. We address this by using a knowledge tracing model to generate pseudo-interaction vectors for new exercises based on their tagged knowledge components, then incorporating these vectors into a matrix factorisation pipeline. Experiments are conducted on a dataset from a regional online STEM preparation service (4,700 registered students, 310 exercises, of which 80 were designated cold-start items). The hybrid approach achieves Hit Rate@5 of 0.44 on cold-start exercises versus 0.29 for content-based filtering and 0.21 for random recommendation. On warm exercises, performance is comparable to standard NMF. We also report results segmented by student proficiency level, showing that low-proficiency students benefit most from the hybrid approach. Sensitivity to the quality of knowledge component tagging is examined through a manual tag-corruption experiment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02512",
+        "kind": "publication",
+        "title": "Evaluating Fairness Metrics in Knowledge Tracing Models Across Demographic Groups",
+        "body": {
+          "recordId": "SYN-PUB-02512",
+          "field": "abstract",
+          "text": "Knowledge tracing models are increasingly used to trigger pedagogical interventions, yet their differential accuracy across demographic groups has received limited systematic attention. Using a dataset from a national mathematics competition preparation platform (11,200 students with self-reported gender and regional school category), we evaluate five knowledge tracing models—BKT, DKT, DKVMN, SAKT, and AKT—on per-group AUC, calibration error, and false mastery rate. We find that all five models show higher false mastery rates for students from rural school categories (up to 6.1 percentage points above the overall mean), with the gap being smallest for AKT. Gender differences in AUC are modest (under 1.5 percentage points) but calibration differences are more pronounced. We discuss potential sources of these disparities including uneven data density and systematic differences in item exposure. The paper proposes a reporting checklist for fairness-aware evaluation of knowledge tracing systems."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02513",
+        "kind": "publication",
+        "title": "Towards Real-Time Adaptive Hint Delivery Using Multi-Armed Bandits in a Web-Based Tutoring Environment",
+        "body": {
+          "recordId": "SYN-PUB-02513",
+          "field": "abstract",
+          "text": "Hints in tutoring systems are often delivered based on fixed rules or teacher intuition rather than empirical optimisation. We frame hint timing and type selection as a contextual multi-armed bandit problem and deploy a LinUCB agent within a web-based mathematics tutoring environment used by secondary-school students. A four-week in-classroom experiment involved 340 students from five schools in Vojvodina, randomised at the class level to bandit, fixed-schedule hint, and no-hint conditions. The bandit condition yielded a statistically significant improvement in post-test scores over the fixed-schedule condition (Cohen's d = 0.31, p = 0.018) and over no-hint (d = 0.47, p < 0.001). Engagement metrics (session length, voluntary return rate) also favoured the bandit condition. We describe the deployment architecture, discuss teacher acceptance challenges encountered during the study, and identify confounds arising from class-level randomisation."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-02514",
+        "kind": "publication",
+        "title": "Benchmarking Recurrent and Attention-Based Architectures for Short Industrial Time-Series Under Data Scarcity",
+        "body": {
+          "recordId": "SYN-PUB-02514",
+          "field": "abstract",
+          "text": "Recurrent neural networks and transformer-based models have demonstrated strong performance on long, richly labelled time series, but their behaviour on short sequences with fewer than 200 training examples is less well characterised. This benchmark study evaluates LSTM, GRU, temporal convolutional networks, and a lightweight transformer variant across eight industrial classification tasks with training set sizes ranging from 45 to 190 labelled sequences. Each architecture is trained with five random seeds, and performance is reported as mean and standard deviation of macro-F1. The temporal convolutional network shows the most stable performance (standard deviation across seeds consistently below 2.1 F1 points) and achieves the highest average macro-F1 of 0.71 at training sizes below 100. Transformer models exhibit high variance at small sizes (standard deviation up to 6.8 F1 points) but improve rapidly as training data increase beyond 150 examples. Practical guidance on architecture selection as a function of dataset size is summarised in a decision table."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0268",
+        "kind": "project",
+        "title": "Adaptive Learning Pathways for STEM Education Using Reinforcement Learning",
+        "body": {
+          "recordId": "SYN-PRJ-0268",
+          "field": "summary",
+          "text": "ADALEARN investigates the use of offline reinforcement learning methods to construct personalised learning paths for secondary-school students in mathematics and physics. The project collects interaction logs from a partner online tutoring platform operating in Serbia and uses these logs to train and evaluate sequential recommendation policies via offline policy evaluation techniques. A key objective is developing a reward function that balances short-term exercise performance with estimated long-term knowledge retention, measured through delayed post-tests administered at 4-week intervals. The project also produces an open benchmark dataset and releases evaluation tooling for the Serbian research community. Two Ph.D. students and three master's students are involved."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0269",
+        "kind": "project",
+        "title": "Fairness-Aware Knowledge Tracing for National Assessment Platforms",
+        "body": {
+          "recordId": "SYN-PRJ-0269",
+          "field": "summary",
+          "text": "KT-FAIR examines sources of demographic disparity in knowledge tracing model outputs when models are deployed in national-scale assessment preparation platforms. The project combines empirical analysis of existing interaction datasets with targeted data collection across school types in Vojvodina. It develops and tests mitigation strategies including reweighted training objectives and post-hoc calibration adjustments. Collaboration with the Department of Educational Technology at TU Kaiserslautern provides access to comparative datasets from German secondary-school platforms, enabling cross-country analysis. Expected outputs include a fairness evaluation framework, two journal articles, and a policy brief directed at the Institute for Education Quality and Evaluation of Serbia."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0032",
+        "kind": "project",
+        "title": "Formal Verification Methods for Workflow Execution Engines in Industry",
+        "body": {
+          "recordId": "SYN-PRJ-0032",
+          "field": "summary",
+          "text": "FORMWORK investigated scalable formal verification techniques for workflow execution engines used in industrial process management software. The project developed modular reachability analysis methods, incremental re-verification algorithms after workflow updates, and a translation toolchain from BPMN 2.0 to verifiable Petri net representations. Industrial workflow specifications were obtained from four partner companies in the manufacturing and logistics sectors in Vojvodina. The project produced eleven peer-reviewed publications, two open-source tool extensions (LoLA and CPN Tools plugins), and a publicly available benchmark suite of 320 annotated workflow nets. One master's thesis and two doctoral dissertations were completed within the project."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0411",
+        "kind": "project",
+        "title": "Semantic Reconfiguration Management for Shared Human-Robot Workstations",
+        "body": {
+          "recordId": "SYN-PRJ-0411",
+          "field": "summary",
+          "text": "RECONMAN was a cross-border cooperation project between research groups in Serbia and Hungary aimed at reducing the time and expertise required to reconfigure shared human-robot workstations when product variants change. The project combined the semantic workcell description approach from Novi Sad with safety zone modelling expertise from Óbuda University and a shared demonstrator workcell installed at the Hungarian partner site. Simić's group led the work package on knowledge representation and program synthesis, contributing the OWL-based workcell model, the reconfiguration rule engine, and integration with the safety system API. The project also supported two student exchange visits and co-supervised one master's thesis."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0463",
+        "kind": "project",
+        "title": "Cross-border Freight Optimisation for Small and Medium Enterprises in the Pannonian Region",
+        "body": {
+          "recordId": "SYN-PRJ-0463",
+          "field": "summary",
+          "text": "CROSSLOG aims to improve freight routing efficiency for small and medium logistics operators in the Hungarian–Serbian border region. The project collects route and order data from eight participating SME carriers, develops a shared optimisation platform with a web-based dispatcher interface, and provides training workshops. Emilija Vranješ leads Work Package 3, which covers the algorithmic core: dynamic routing models capable of handling cross-border regulatory constraints such as mandatory rest stops, customs clearance windows, and bilateral transport permits. Deliverables include a deployable routing engine and a public benchmark dataset representing cross-border delivery patterns in the region."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0195",
+            "field": "open_to",
+            "quote": "industrial PhD co-supervision",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0195",
+            "field": "open_to",
+            "quote": "joint projects with companies developing e-learning or HR training platforms",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0195",
+            "field": "open_to",
+            "quote": "contract research on knowledge tracing and learner modelling",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0087",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0087",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "How can Pannonia Osiguranje-Tech match farm policy locations, including addresses known only at settlement level, to field-level hail intensity estimates and test whether the resulting exposure indicators explain the observed 18% excess in hail claims? The first experiment would test spatial linkage and validation against the three available claim years, not assume that a pricing correction is already proven.",
+    "rationale": [
+      {
+        "text": "Lalić has measured expertise in spatial indexing for large polygon datasets, which can be transferred to indexing and joining policy locations against hail-grid polygons.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01176",
+            "field": "abstract",
+            "quote": "The hybrid block-clustered GiST reduced median bounding-box query time by 38 % relative to default GiST",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has tested spatial grid partitioning under high concurrency, which is relevant to partitioning weather grids and policy points for scalable matching.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01179",
+            "field": "abstract",
+            "quote": "Spatial grid partitioning achieved the highest throughput (1 340 tiles/s) and lowest 95th-percentile latency (310 ms) under peak load",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has built reference spatial pipelines covering coordinate precision normalisation and spatial grid partitioning on production-scale municipality datasets in the Serbia-Hungary border region.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0494",
+            "field": "summary",
+            "quote": "The project developed a reference pipeline covering topological error correction, coordinate precision normalisation, spatial grid partitioning, and incremental tile cache management.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His group operates the PostGIS, GeoServer and Mapbox infrastructure needed to prototype and benchmark a policy-to-grid matching and visualisation pipeline.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "bio",
+            "quote": "dedicated GIS server cluster running PostGIS, GeoServer, and Mapbox GL JS",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has direct experience with CRS and OGC interoperability problems that can undermine a policy-to-grid join.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01183",
+            "field": "abstract",
+            "quote": "Common issues include absent GetFeatureInfo implementations, inconsistent EPSG code declarations, and missing INSPIRE metadata elements.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Policy geocoding is incomplete: many farm addresses are settlement-level only, so the plan must include an explicit geocoding or probabilistic linkage step, or additional parcel identifiers, before field-level matching is claimed.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The available weather grid is five-kilometre resolution, while the business problem is field-level hail intensity for narrow, fast-moving storms; any method must test whether this resolution is adequate or needs downscaling or auxiliary data.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "Vojvodina hailstorms are narrow and fast-moving",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Validation is limited to three claim years and about 1,200 farm policies, so the evaluation must be designed around that sample and must not overstate field-level accuracy outside it.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "three full claim years with geo-tagged loss data for about 1,200 farm policies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The output must be automatable into the pricing model, not only a manual QGIS exercise; the company's small pricing and IT teams split operational support and new product build, so integration ownership and effort are hard requirements.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "applied development work is carried out by a four-person pricing team and a six-person IT team who split their time between operational support and new product build",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's group has capacity for only one additional contract research engagement from mid-2026 onward, so the project timeline must respect that availability constraint.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "notes",
+            "quote": "capacity to take on one additional contract research engagement from mid-2026 onward",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Data sharing must be arranged under NDA with anonymised but authentic policy, claim and weather records; otherwise the researcher's preferred collaboration mode is not met.",
+        "sources": [
+          {
+            "recordId": "R0087",
+            "field": "notes",
+            "quote": "prefers industry partners who can share anonymised but authentic data under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The researcher's cited evidence is cadastral polygon indexing and web-map delivery, not hail intensity or insurance loss modelling; the transfer to hail exposure is unproven and must be tested in the first experiment.",
+      "The five-kilometre weather grid may not resolve narrow hail swaths that leave one village damaged and a farm two kilometres away untouched, so apparent field-level matches could be false.",
+      "Settlement-level addresses may make field-level exposure assignment uncertain and could bias which parts of the portfolio appear underpriced.",
+      "The company's small pricing and IT teams split operational support and new product build, and a prior flood-risk mapping prototype with a Novi Sad faculty was completed but not integrated into pricing, indicating an integration and maintenance risk.",
+      "The researcher's availability is not explicitly confirmed beyond the note of capacity from mid-2026, and the participation record marks availability as unknown.",
+      "NDA and anonymisation requirements may constrain what can be shared, published or reused, especially if the researcher wants authentic production data rather than synthetic benchmarks."
+    ],
+    "questions": [
+      "Can Pannonia provide parcel identifiers or coordinates for the 1,200 farm policies, or is settlement-level address the only location data available?",
+      "What exactly does the MeteoVoj hail product contain: which hail variable, historical archive length, update frequency, uncertainty information and licensing terms for the three claim years?",
+      "What actuarial target defines success: a revised hail loading, a portfolio segment flag for underpriced policies, or a validated exposure index, and who in pricing will sign it off?",
+      "Will the collaboration be run as a joint project, and is there any interest in the researcher's open industrial PhD supervision option?",
+      "Can the company share anonymised policy, claim and weather data under NDA, and what publication or reuse rights would the researcher and any PhD student retain?",
+      "Who from the pricing and IT teams will own integration and maintenance after the project, and what compute environment will host the matching pipeline?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0087",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0087",
+        "version": 1
+      }
+    ]
+  }
+}

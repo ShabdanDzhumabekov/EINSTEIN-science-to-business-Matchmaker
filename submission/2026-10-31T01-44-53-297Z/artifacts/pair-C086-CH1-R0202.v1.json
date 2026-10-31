@@ -1,0 +1,225 @@
+{
+  "ref": {
+    "artifactId": "pair-C086-CH1-R0202",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C086-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C086-CH1-R0202",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can the KL-HSM firmware be migrated to ML-DSA and hybrid classical/post-quantum signatures within its constrained ARM Cortex-M flash and RAM budget, and what parameter set, constant-time implementation strategy and hybrid combiner give an acceptable security/performance trade-off for clients planning five- to ten-year cycles? The first experiment would port a constant-time ML-DSA (and hybrid X25519/ML-DSA or ECDSA/ML-DSA) prototype onto the KL-HSM microcontroller target and measure key/signature sizes, signing latency, stack and flash footprint against a documented migration roadmap.",
+    "rationale": [
+      {
+        "text": "Tešić has direct, published expertise in lattice parameter selection with concrete security targets, which is the core of choosing ML-DSA parameters for the KL-HSM line.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02591",
+            "field": "abstract",
+            "quote": "We identify parameter sets achieving 128-bit post-quantum security with ciphertext overhead below 900 bytes.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has published on timing side-channel leakage in lattice decapsulation and on countermeasures, which maps to the HSM requirement that signing keys never leak through firmware timing behaviour.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02593",
+            "field": "abstract",
+            "quote": "we demonstrate that branch-free NTT implementations can still leak information through operand-dependent memory access patterns during coefficient reduction modulo q",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has hands-on embedded benchmarking experience on ARM Cortex-M class targets, the same class of hardware Kriptolog runs its HSM firmware on.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02598",
+            "field": "abstract",
+            "quote": "We implement the compressed scheme in constant-time C and benchmark it on an ARM Cortex-M4 microcontroller",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has worked on formal, tool-supported verification of constant-time polynomial arithmetic, which is relevant to convincing clients and evaluators that the migrated firmware is safe.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01087",
+            "field": "abstract",
+            "quote": "This paper presents a Frama-C/WP-based verification of a complete constant-time NTT implementation",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has analysed security degradation in hybrid classical/post-quantum combiners, which is exactly the transition-mode operation Kriptolog's clients need.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02600",
+            "field": "abstract",
+            "quote": "Hybrid KEM combiners are increasingly used in TLS 1.3 and other protocols to hedge against failures of either the classical (ECDH) or post-quantum component.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work on entropy-source deviation and decapsulation failure probability addresses the hardware RNG quality question that arises when moving signing operations into an HSM.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02595",
+            "field": "abstract",
+            "quote": "The results provide concrete guidance for hardware entropy source quality requirements in NTRU deployments.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She is already involved in transferring post-quantum standards into industrial embedded settings, including ML-DSA, which matches the roadmap deliverable Kriptolog needs.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-1039",
+            "field": "summary",
+            "quote": "producing guidelines for integrating ML-KEM and ML-DSA into industrial communication protocols",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has prior industry consultancy on integrating draft ML-KEM into a production library, including finding real constant-time defects.",
+        "sources": [
+          {
+            "recordId": "R0202",
+            "field": "industry_experience",
+            "quote": "reviewing their TLS library integration of draft ML-KEM and identifying two constant-time violations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The migration must fit a constrained microcontroller with limited flash and RAM; a straight drop-in of larger ML-DSA key material and different signature flows is excluded by design.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "Our HSM firmware runs on a constrained microcontroller with limited flash and RAM, so a straight drop-in is not possible.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Hybrid classical/post-quantum operation during the transition period must be part of the plan, not an afterthought.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "how hybrid classical/post-quantum operation will work during transition",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Timeline: the deliverable is a documented roadmap plus at least one working proof-of-concept integration inside twelve months.",
+        "sources": [
+          {
+            "recordId": "C086-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a documented roadmap and at least one working proof-of-concept integration inside twelve months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Firmware changes must remain compatible with the planned Common Criteria EAL4+ evaluation of the KL-500, which runs to end of 2025.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "plans",
+            "quote": "Kriptolog intends to achieve Common Criteria EAL4+ certification for the KL-500 HSM by the end of 2025",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Entropy source quality is a hard constraint on the parameter choice: deviation of the hardware RNG from the nominal error distribution inflates failure probability and must be characterised before parameters are frozen.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02595",
+            "field": "abstract",
+            "quote": "The results provide concrete guidance for hardware entropy source quality requirements in NTRU deployments.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Company-side effort is limited: the twelve-engineer R&D group can take on collaboration only with a well-defined, practically applicable scope.",
+        "sources": [
+          {
+            "recordId": "C086",
+            "field": "rd_capacity",
+            "quote": "with modest capacity to take on collaborative projects if the scope is well-defined and the output is practically applicable",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Researcher availability is bounded: she is available from the autumn 2025 semester, which sets the realistic start date and must be confirmed against the twelve-month clock.",
+        "sources": [
+          {
+            "recordId": "R0202",
+            "field": "notes",
+            "quote": "Tešić is available for collaboration starting from the autumn 2025 semester.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap from KEM to signatures: her embedded implementation evidence is on a module-NTRU/ML-KEM-style KEM (SYN-PUB-02598), while Kriptolog needs ML-DSA signing, whose rejection sampling and signing flow differ from encapsulation; testing a signing prototype on the HSM target must be the first experiment, not an assumption.",
+      "Transfer gap from Cortex-M4 reference hardware to the KL-HSM microcontroller: published numbers are 1.14 ms encapsulation / 1.37 ms decapsulation at 168 MHz on Cortex-M4 (SYN-PUB-02598), but the exact KL-HSM part, clock and flash/RAM budget are not stated by the company, so footprint and latency may not carry over.",
+      "Her constant-time and formal-verification work centres on the NTT for the KEM parameter set (SYN-PUB-01087, SYN-PUB-02593); ML-DSA signing code paths (sampling, rejection loop) are a different constant-time problem and may need new verification effort.",
+      "Hybrid combiner analysis she published is formulated for KEM combiners (SYN-PUB-02600); how that maps onto hybrid signature flows inside an HSM is an open question for the roadmap.",
+      "Common Criteria EAL4+ work scheduled for end 2025 (C086.plans) may freeze the firmware architecture while the PoC is running, creating a conflict between certification scope and a new PQ firmware branch.",
+      "Internal ML-DSA capability is thin: only one engineer has done prototype work (C086-CH1.detail), so integration capacity on the company side is a bottleneck.",
+      "Researcher availability status is recorded as unknown in the participation data; the autumn 2025 start comes only from her notes and needs explicit confirmation.",
+      "Scope creep risk: 'documented roadmap plus working PoC in twelve months' plus hybrid operation plus certification compatibility is a large scope for a modest-capacity R&D group (C086.rd_capacity)."
+    ],
+    "questions": [
+      "Which exact microcontroller and clock does the KL-HSM line use, and what are the hard flash and RAM budgets available to the cryptographic firmware?",
+      "Which post-quantum signature is the target (ML-DSA-44/65/87), and which hybrid construction does the company intend to offer clients (e.g. ECDSA/ML-DSA, RSA/ML-DSA)?",
+      "Can you characterise or provide measurements of the HSM's hardware entropy source so failure-probability bounds can be applied?",
+      "Will the PQ firmware branch be inside or outside the scope of the Common Criteria EAL4+ evaluation, and who signs off on the migration roadmap?",
+      "Can you confirm your availability and expected time commitment from the autumn 2025 semester, and whether the twelve-month PoC window is measured from that start?",
+      "Who from Kriptolog's engineering team is the counterpart for the ML-DSA prototype work, and how much of their time is committed?",
+      "How will intellectual property, publication rights and any open-source release of the PoC be handled?",
+      "What is the first milestone both sides accept — e.g. an ML-DSA signing benchmark on the HSM target at fixed parameter sets — before the roadmap is written?"
+    ],
+    "outcome": "pair",
+    "taskId": "C086-CH1",
+    "researcherId": "R0202",
+    "inputs": [
+      {
+        "artifactId": "business-C086-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C086-CH1-R0202",
+        "version": 1
+      }
+    ]
+  }
+}

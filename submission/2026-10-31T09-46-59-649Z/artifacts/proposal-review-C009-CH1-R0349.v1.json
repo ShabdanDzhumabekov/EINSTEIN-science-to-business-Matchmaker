@@ -1,0 +1,54 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    },
+    "checkedClaimCount": 7,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "against the latency budget the company states",
+        "sources": [],
+        "explanation": "The company's original challenge does not state a latency or throughput budget; the proposal's own open questions ask for it. This should read as a budget to be confirmed by the company, not as an existing stated constraint.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "The working material would be the company's labelled query-response pairs, its 12,000-query bank sample and its two linguists for validation, conditional on his agreement and confirmed availability.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "We have a labelled query-response dataset of around 85,000 pairs across all clients, and our two in-house linguists can annotate or validate proposed solutions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The 12,000-query bank sample is mentioned only as the basis of the company's prior measurement, not as data offered for reuse; the sentence conditions access only on the researcher's availability. Make any use of the bank sample explicitly conditional on company approval and client/privacy clearance, or remove it from the confirmed working material.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

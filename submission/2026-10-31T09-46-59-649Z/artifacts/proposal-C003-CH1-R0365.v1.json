@@ -1,0 +1,180 @@
+{
+  "ref": {
+    "artifactId": "proposal-C003-CH1-R0365",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C003-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C003-CH1-R0365",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C003-CH1-R0365",
+      "version": 1
+    }
+  ],
+  "content": {
+    "isConditional": true,
+    "title": "Reproducing cold-store weld-joint cracking in conveyor frames under combined thermal cycling, condensation and vibration",
+    "facts": [
+      {
+        "text": "The company reports that its conveyor frames crack at the weld joints after roughly 18 months in chilled environments, that it replaced 14 assemblies under warranty this year, and that it cannot reproduce the failure in its workshop because it tests at room temperature.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "text",
+            "quote": "Our conveyor frames crack at the weld joints after roughly 18 months of operation in chilled environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "text",
+            "quote": "we've replaced 14 assemblies under warranty this year and we can't reproduce the failure in our workshop because we test at room temperature",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The customer cold stores typically operate between 2 °C and 6 °C, and the company states it does not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "typically operating between 2 °C and 6 °C",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We do not currently have the equipment or know-how to test at low temperatures under cyclic load.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company holds photos and measurements of the cracked joints from site visits and still has two of the failed sections in storage.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "We have photos and measurements of the cracked joints from site visits",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "we still have two of the failed sections in storage",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The frames are welded from mild steel hollow section, painted for corrosion resistance before delivery, and the company's fabrication shop works in mild steel and stainless steel MIG/MAG welded frame fabrication.",
+        "sources": [
+          {
+            "recordId": "C003-CH1",
+            "field": "detail",
+            "quote": "welded from mild steel hollow section and painted for corrosion resistance before delivery",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C003",
+            "field": "tech",
+            "quote": "Mild steel and stainless steel MIG/MAG welded frame fabrication",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić's group routinely uses servo-hydraulic fatigue testing machines, a climate chamber reaching −60 °C and in-house Abaqus FE models, but the climate chamber and servo-hydraulic machine are shared with two other research groups, so extended test campaigns require advance coordination.",
+        "sources": [
+          {
+            "recordId": "R0365",
+            "field": "bio",
+            "quote": "The group routinely uses servo-hydraulic fatigue testing machines, a climate chamber capable of reaching −60 °C, and in-house FE models built in Abaqus",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0365",
+            "field": "notes",
+            "quote": "Erić's climate chamber and servo-hydraulic machine are shared with two other research groups; scheduling access for extended test campaigns requires advance coordination.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić's published work reports that superimposed thermal cycling during mechanical fatigue alters crack initiation and growth in butt-welded S275JR plates, and that in S355 cruciform joints peak longitudinal weld-toe residual stress of +287 MPa relaxed to +61 MPa after 1000 cycles at 180 MPa.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04475",
+            "field": "abstract",
+            "quote": "superimposed thermal cycling (between −30 °C and +20 °C at 0.5 cycles per hour) during mechanical fatigue loading alters crack initiation and growth behaviour in butt-welded S275JR plates",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04478",
+            "field": "abstract",
+            "quote": "Initial peak longitudinal residual stress averaged +287 MPa in the as-welded state. After 1000 cycles at 180 MPa, surface residual stresses had relaxed to +61 MPa",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company has no dedicated R&D department; technical development happens informally through project work.",
+        "sources": [
+          {
+            "recordId": "C003",
+            "field": "rd_capacity",
+            "quote": "We have no dedicated R&D department; technical development happens informally through project work",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Erić's availability is not stated in the material, so scheduling the shared climate chamber and servo-hydraulic machine is likely the main schedule risk and the proposal is conditional on his confirmation.",
+      "Because the company suspects thermal cycling, condensation and belt vibration act together, a matrix that changes one factor at a time plus one combined condition should show which factor matters, since a factor with no effect alone does not rule out the combined mechanism.",
+      "Examination of the two failed sections likely shows whether the service cracks share low-temperature features such as cleavage facets or crack-flank oxidation, and the residual-stress relaxation evidence suggests welding procedure, filler and joint geometry are plausible levers to test."
+    ],
+    "proposedActions": [
+      "First experiment (proposed, subject to specimen supply and chamber access): T-joint specimens made from AutomVoj's mild-steel hollow section with the current MIG/MAG procedure and paint, plus unpainted controls, run against an isothermal workshop-temperature baseline. Conditions: 4 °C isothermal dry, 4 °C with condensation, 2 °C to 6 °C thermal cycling under belt vibration load, and one combined condition, changing one suspected factor at a time. Measured: cycles to a 5% stiffness drop and crack location/orientation by DIC and strain gauges, compared with the site photos and the two failed sections. Proposed go/no-go: a condition reproduces weld-toe cracking at the crossmember-to-stringer connection consistent with the failed sections and the company judges the mechanism plausible; otherwise the load, temperature and condensation histories are revised. Proposed screening timeline about six months after specimen and rig readiness. Researcher to provide rig, chamber, instrumentation and analysis; company to provide specimens, weld records and site data.",
+      "Destructive examination of the two failed sections is proposed first: SEM fractography, weld-toe metallography, hardness and residual-stress measurement, compared with reference specimens from the current procedure. This should locate initiation sites and check for low-temperature features before the test matrix is frozen; the company would need to release the sections and their weld records.",
+      "Once a condition reproduces cracking, test one candidate remedy per campaign, either revised welding heat input, an alternative filler, or a modified joint geometry, against the current design under that condition. Proposed success criterion is a measurable increase in cycles to crack initiation judged on the company's own warranty-relevant basis, with the threshold agreed before testing."
+    ],
+    "questions": [
+      "Can Erić confirm his availability and scheduling capacity for an extended low-temperature cyclic test campaign on the shared climate chamber and servo-hydraulic machine?",
+      "What service temperature, vibration/load and condensation histories can AutomVoj provide from cold-store sites, and can loggers be installed on operating conveyors?",
+      "Can the two failed sections be released for destructive metallurgical and fractographic examination, and what weld procedure, filler metal, joint geometry and paint system records exist for them?",
+      "What budget, timeline and decision criteria would AutomVoj use to judge whether a changed welding procedure, filler material or joint design is successful?"
+    ],
+    "benefits": {
+      "company": "The first experiment could tell AutomVoj whether cracking at the crossmember-to-stringer connection can be reproduced under the 2 °C to 6 °C cold-store condition with condensation and belt vibration present, which the room-temperature workshop test cannot show. If a condition reproduces the failure, the company would gain a test basis for judging changes to welding procedure, filler material or joint design before they reach warranty-relevant service.",
+      "researcher": "The work would let Erić's group test whether its thermal-cycling and residual-stress findings from butt-welded plates and cruciform joints carry over to mild-steel hollow-section T-joints in a wet cold-store regime, which is outside the −40 °C structural-steel conditions in its published evidence. It would give the group industrial specimens, weld records and two failed sections to examine, conditional on the company releasing them and on Erić's availability being confirmed."
+    },
+    "markdown": "# Reproducing cold-store weld-joint cracking in conveyor frames under combined thermal cycling, condensation and vibration\n\n## Verified facts\n- The company reports that its conveyor frames crack at the weld joints after roughly 18 months in chilled environments, that it replaced 14 assemblies under warranty this year, and that it cannot reproduce the failure in its workshop because it tests at room temperature. [F1]\n- The customer cold stores typically operate between 2 °C and 6 °C, and the company states it does not currently have the equipment or know-how to test at low temperatures under cyclic load. [F2]\n- The company holds photos and measurements of the cracked joints from site visits and still has two of the failed sections in storage. [F3]\n- The frames are welded from mild steel hollow section, painted for corrosion resistance before delivery, and the company's fabrication shop works in mild steel and stainless steel MIG/MAG welded frame fabrication. [F4]\n- Erić's group routinely uses servo-hydraulic fatigue testing machines, a climate chamber reaching −60 °C and in-house Abaqus FE models, but the climate chamber and servo-hydraulic machine are shared with two other research groups, so extended test campaigns require advance coordination. [F5]\n- Erić's published work reports that superimposed thermal cycling during mechanical fatigue alters crack initiation and growth in butt-welded S275JR plates, and that in S355 cruciform joints peak longitudinal weld-toe residual stress of +287 MPa relaxed to +61 MPa after 1000 cycles at 180 MPa. [F6]\n- The company has no dedicated R&D department; technical development happens informally through project work. [F7]\n\n## Potential benefits\n- For the company: The first experiment could tell AutomVoj whether cracking at the crossmember-to-stringer connection can be reproduced under the 2 °C to 6 °C cold-store condition with condensation and belt vibration present, which the room-temperature workshop test cannot show. If a condition reproduces the failure, the company would gain a test basis for judging changes to welding procedure, filler material or joint design before they reach warranty-relevant service.\n- For the researcher: The work would let Erić's group test whether its thermal-cycling and residual-stress findings from butt-welded plates and cruciform joints carry over to mild-steel hollow-section T-joints in a wet cold-store regime, which is outside the −40 °C structural-steel conditions in its published evidence. It would give the group industrial specimens, weld records and two failed sections to examine, conditional on the company releasing them and on Erić's availability being confirmed.\n\n## Our inference\n- Erić's availability is not stated in the material, so scheduling the shared climate chamber and servo-hydraulic machine is likely the main schedule risk and the proposal is conditional on his confirmation.\n- Because the company suspects thermal cycling, condensation and belt vibration act together, a matrix that changes one factor at a time plus one combined condition should show which factor matters, since a factor with no effect alone does not rule out the combined mechanism.\n- Examination of the two failed sections likely shows whether the service cracks share low-temperature features such as cleavage facets or crack-flank oxidation, and the residual-stress relaxation evidence suggests welding procedure, filler and joint geometry are plausible levers to test.\n\n## Proposed next steps\n- First experiment (proposed, subject to specimen supply and chamber access): T-joint specimens made from AutomVoj's mild-steel hollow section with the current MIG/MAG procedure and paint, plus unpainted controls, run against an isothermal workshop-temperature baseline. Conditions: 4 °C isothermal dry, 4 °C with condensation, 2 °C to 6 °C thermal cycling under belt vibration load, and one combined condition, changing one suspected factor at a time. Measured: cycles to a 5% stiffness drop and crack location/orientation by DIC and strain gauges, compared with the site photos and the two failed sections. Proposed go/no-go: a condition reproduces weld-toe cracking at the crossmember-to-stringer connection consistent with the failed sections and the company judges the mechanism plausible; otherwise the load, temperature and condensation histories are revised. Proposed screening timeline about six months after specimen and rig readiness. Researcher to provide rig, chamber, instrumentation and analysis; company to provide specimens, weld records and site data.\n- Destructive examination of the two failed sections is proposed first: SEM fractography, weld-toe metallography, hardness and residual-stress measurement, compared with reference specimens from the current procedure. This should locate initiation sites and check for low-temperature features before the test matrix is frozen; the company would need to release the sections and their weld records.\n- Once a condition reproduces cracking, test one candidate remedy per campaign, either revised welding heat input, an alternative filler, or a modified joint geometry, against the current design under that condition. Proposed success criterion is a measurable increase in cycles to crack initiation judged on the company's own warranty-relevant basis, with the threshold agreed before testing.\n\n## Open questions\n- Can Erić confirm his availability and scheduling capacity for an extended low-temperature cyclic test campaign on the shared climate chamber and servo-hydraulic machine?\n- What service temperature, vibration/load and condensation histories can AutomVoj provide from cold-store sites, and can loggers be installed on operating conveyors?\n- Can the two failed sections be released for destructive metallurgical and fractographic examination, and what weld procedure, filler metal, joint geometry and paint system records exist for them?\n- What budget, timeline and decision criteria would AutomVoj use to judge whether a changed welding procedure, filler material or joint design is successful?",
+    "taskId": "C003-CH1",
+    "researcherId": "R0365",
+    "format": "joint_project",
+    "inputs": [
+      {
+        "artifactId": "business-C003-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C003-CH1-R0365",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C003-CH1-R0365",
+        "version": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "ref": {
+    "artifactId": "pair-C013-CH2-R0727",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C013-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C013-CH2-R0727",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can uncertainty-aware policy geolocation and spatial modelling of hail exposure improve identification of potentially underpriced Vojvodina farm risks compared with municipality-level rating? The first experiment would test whether the available weather data contain recoverable field-scale hail information, using independently verified locations and hail observations where obtainable, before evaluating predictive value on held-out storms and locations.",
+    "rationale": [
+      {
+        "text": "Đukić has directly relevant experience downscaling climate fields in Vojvodina using satellite covariates, station observations and regression-kriging, providing a methodological starting point rather than an established hail solution.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08093",
+            "field": "abstract",
+            "quote": "Monthly mean air temperature fields at 1 km resolution were produced for the Vojvodina plain",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08093",
+            "field": "abstract",
+            "quote": "A regression-kriging framework was adopted",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His agricultural frost research connects downscaled climate inputs to parcel-scale hazard differentiation, an analogous workflow for investigating spatial insurance exposure.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-05667",
+            "field": "abstract",
+            "quote": "Maps produced at the parcel scale (0.5 ha) showed risk differentiation of up to 35 percentage points",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-05667",
+            "field": "abstract",
+            "quote": "The index was validated against three independent frost event records with an accuracy of 81 %.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work explicitly examines predictive uncertainty and spatial coherence, relevant to avoiding unjustified precision in field-level exposure estimates.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08098",
+            "field": "abstract",
+            "quote": "However, regression-kriging produced better-calibrated prediction intervals and smoother spatial fields in data-sparse mountain regions.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08099",
+            "field": "abstract",
+            "quote": "Uncertainty was quantified by propagating station observation errors and ERA-20C ensemble spread through the downscaling chain",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The supplied project material documents a validated agroclimatic pipeline with Python processing and spatial service outputs, offering a practical starting point for integration work.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0124",
+            "field": "summary",
+            "quote": "The project developed and validated a multi-source satellite downscaling pipeline producing 500 m agroclimatic grids for Serbia.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0124",
+            "field": "summary",
+            "quote": "a Web Map Service interface, and a documented open-source Python processing chain.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Policy-to-field matching must explicitly handle settlement-only addresses; uncertain locations cannot be treated as verified field coordinates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a large share of our farm addresses are stored only at the settlement level, not as coordinates.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The initial feasibility test must respect the weather feed's daily, five-kilometre resolution and establish whether it supports useful hail localization before producing field-level estimates.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We do receive daily gridded weather data from MeteoVoj d.o.o. at a five-kilometre resolution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "a storm can devastate one village and leave the farm two kilometres away untouched.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The validation plan must work within the stated three-year, approximately 1,200-policy dataset unless additional historical observations are secured.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "We have three full claim years with geo-tagged loss data for about 1,200 farm policies to work with.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Deliverables must include an automated pricing-data interface compatible with the company's Python batch workflow, not only GIS maps.",
+        "sources": [
+          {
+            "recordId": "C013-CH2",
+            "field": "detail",
+            "quote": "turning that into something that feeds the pricing model automatically is beyond what our team can do alone.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "tech",
+            "quote": "Python-based batch scoring pipeline for quarterly rating factor refresh",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Implementation and maintenance responsibilities must fit the company's limited, shared pricing and IT capacity.",
+        "sources": [
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "The company has no dedicated research unit",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C013",
+            "field": "rd_capacity",
+            "quote": "a four-person pricing team and a six-person IT team who split their time between operational support and new product build.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Methodological rigour and publication rights must be agreed before starting, and the plan must not depend on Đukić accepting an additional administrative coordination role.",
+        "sources": [
+          {
+            "recordId": "R0727",
+            "field": "notes",
+            "quote": "prefers that methodological rigour and publication rights be explicitly agreed before project start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0727",
+            "field": "notes",
+            "quote": "He is not seeking additional administrative coordination roles in the near term",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The demonstrated methods concern temperature, precipitation, frost and other agroclimatic variables, not field-scale hail intensity. Hail's localized, fast-moving structure may not be recoverable from daily five-kilometre grids; the first experiment must test this transfer rather than assume it.",
+      "Settlement-level policy addresses and geo-tagged losses may describe different locations or spatial entities. Geocoding errors could create apparently precise but incorrect exposure assignments.",
+      "Three claim years may contain too few independent hailstorms for robust validation. Losses also reflect insured value, coverage, vulnerability and reporting, so a spatial loss pattern alone cannot establish hail intensity or underpricing.",
+      "Independent hail observations, field boundaries, weather variables, data-use permissions and the availability of non-claim exposure records are unknown; their absence could prevent validation or require additional data acquisition.",
+      "Researcher availability, project budget, delivery deadlines and allocated company staff time are unknown.",
+      "Operational uptake is not assured: the company's earlier flood-mapping collaboration was completed but has not been integrated into pricing."
+    ],
+    "questions": [
+      "What time can Đukić and supporting researchers commit, and who will handle administrative coordination and company-side technical ownership?",
+      "What budget, pilot duration, operational deadline and ongoing maintenance allocation are available?",
+      "Which MeteoVoj variables actually measure or proxy hail, at what temporal aggregation, with what historical coverage and licensing rights? Can event-level radar, hail reports or station observations be obtained for independent validation?",
+      "Can policy locations be verified against parcels or insured-building coordinates, and what exactly do the loss geotags represent? Who can resolve ambiguous settlement-only addresses?",
+      "Does the dataset include all insured policies, including those without claims, along with exposure periods, insured values, coverage terms, deductibles, loss dates and asset or crop characteristics?",
+      "Can the first pilot use verified locations and independent hail events, with storm- and location-held-out evaluation against municipality ratings and the unmodified weather grid? What localization accuracy, calibration and pricing-relevance criteria would justify proceeding?",
+      "What privacy, access-control, retention, publication and intellectual-property terms apply, and what uncertainty explanations and actuarial approvals are required before pricing use?",
+      "Which interfaces and deployment environment should the automated output target, and how should the planned Guidewire migration affect integration scope?"
+    ],
+    "outcome": "pair",
+    "taskId": "C013-CH2",
+    "researcherId": "R0727",
+    "inputs": [
+      {
+        "artifactId": "business-C013-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C013-CH2-R0727",
+        "version": 1
+      }
+    ]
+  }
+}

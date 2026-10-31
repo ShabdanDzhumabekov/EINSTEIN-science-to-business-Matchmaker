@@ -1,0 +1,205 @@
+{
+  "ref": {
+    "artifactId": "pair-C053-CH1-R0185",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T14-26-54-981Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C053-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C053-CH1-R0185",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "What causes manganese to increase across AquaCikl's treatment process, and which changes to existing operations could bring manganese and iron within the stated discharge limits? The first experiment would combine time-aligned, stage-by-stage metal and flow measurements with controlled reagent, filter-media and holding-tank tests to distinguish metal release, accumulation and sampling effects from inadequate removal, before testing a targeted operational change.",
+    "rationale": [
+      {
+        "text": "Jovanović has relevant industrial wastewater characterisation and treatment-recommendation experience, supporting an applied diagnostic project.",
+        "sources": [
+          {
+            "recordId": "R0185",
+            "field": "industry_experience",
+            "quote": "Jovanović has conducted two contract characterisation and treatability studies for textile finishing companies in Vojvodina (2019 and 2023)",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0185",
+            "field": "industry_experience",
+            "quote": "providing effluent analysis and treatment design recommendations that fed into permit renewal applications.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her work on surfactant–coagulant interactions provides a basis for testing whether the wastewater matrix contributes to coagulation failure, without assuming it explains manganese behaviour.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02388",
+            "field": "abstract",
+            "quote": "Zeta potential measurements demonstrated that SLES progressively stabilised dye-coagulant flocs at surfactant concentrations above 80 mg/L, reducing colour removal from 88% to 54%.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02392",
+            "field": "abstract",
+            "quote": "The findings suggest that surfactant composition, not only total concentration, should inform coagulant selection in textile plant design.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The supplied research includes water-treatment data reconciliation and measurement-error detection, relevant to investigating the apparent increase in manganese concentration.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-02396",
+            "field": "abstract",
+            "quote": "Data reconciliation by weighted least-squares (WLS) adjustment forces closure while distributing corrections proportionally to measurement uncertainties.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-02396",
+            "field": "abstract",
+            "quote": "Gross-error detection using the global chi-squared test identified three sensors with systematic biases exceeding 12%, which were subsequently recalibrated.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has demonstrated responsibility for integrating treatment stages within a project that included industrial field characterisation and a pilot demonstration.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0619",
+            "field": "summary",
+            "quote": "a field characterisation campaign covering eight textile plants on both sides of the border, and a pilot demonstration at a partner facility in Vojvodina.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PRJ-0619",
+            "field": "summary",
+            "quote": "Branislava Jovanović led the work package responsible for advanced oxidation process optimisation and integration with biological post-treatment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Validation must assess both metals against the company's stated regulatory limits, not only manganese removal or general water-quality improvement.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "Serbian regulation SR-IED-2023 lowered the allowable manganese in treated discharge to 0.10 mg/L and iron to 0.30 mg/L.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Diagnosis must investigate the apparent manganese increase and use stage-resolved sampling; a concentration difference alone cannot establish a metal mass source.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "the raw greywater entering our plant contains between 0.04 and 0.07 mg/L manganese",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "are reading 0.18 mg/L manganese at the outlet of our coagulation stage across three different client sites.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "We have on-site analytical kit and can pull samples at every process stage.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Any proposed remedy must be implementable at existing installations without major equipment replacement.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "A good outcome is a root-cause finding with a specific process change we can implement at existing installations without replacing major equipment.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Fieldwork and validation must fit the five-month reinspection deadline and the company's four-month staffing commitment.",
+        "sources": [
+          {
+            "recordId": "C053-CH1",
+            "field": "detail",
+            "quote": "one large laundry client faces a reinspection in five months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C053",
+            "field": "rd_capacity",
+            "quote": "can dedicate two senior process engineers and one lab technician to a defined project for up to four months",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scheduling must respect the researcher's stated late-2026 start availability and the seasonal availability of spare analytical capacity.",
+        "sources": [
+          {
+            "recordId": "R0185",
+            "field": "notes",
+            "quote": "is available for new collaborations starting from late 2026.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0185",
+            "field": "notes",
+            "quote": "Her lab has spare analytical capacity on the TOC analyser and UV reactor outside of teaching semesters.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The reinspection date is not specified, so compatibility with the late-2026 research start is unknown; current staffing availability also needs confirmation.",
+      "The directly attributable coagulation evidence concerns dyes and surfactants, not manganese release or removal in recycled greywater. The first experiment must test transfer to actual site water and reagents rather than assume comparable behaviour.",
+      "The supplied manganese projects do not establish Jovanović's individual role; one names another researcher. Specialist manganese oxidation, media and redox expertise may need to be added.",
+      "The data-reconciliation study used surface-water flow, conductivity and turbidity data, not trace-metal measurements in greywater. Measurement uncertainty, sample timing and metal recovery must be tested before applying that approach.",
+      "Accredited outlet confirmation does not resolve whether inlet and outlet samples represent comparable operating periods or metal fractions. Missing flow, recycle and solids inventories could lead to a false root-cause conclusion.",
+      "Trace-metal analytical capacity, project budget and permissible operational interruptions are unknown and could prevent timely validation across the sites."
+    ],
+    "questions": [
+      "What is the exact reinspection date, and can Jovanović commit sufficient time within the company's four-month project window?",
+      "What are the current iron concentrations and sampling locations, and what compliance sampling, metal fractions and analytical methods does the applicable permit require?",
+      "Can the first campaign obtain residence-time-aligned inlet, interstage and outlet samples, paired dissolved and total metals, flow and recycle records, and appropriate blanks and duplicates?",
+      "Can reagent batches, fresh and used filter media, holding-tank water and deposits be tested for manganese and iron release under site-relevant pH and redox conditions?",
+      "Which accredited laboratory can provide sufficiently sensitive metal measurements, with what turnaround time and cost?",
+      "What are the complete treatment sequence, recycle paths, media ages, reagent specifications, tank residence times and recent operating changes at each affected site?",
+      "What budget, operating-cost increase and trial-related downtime are acceptable, and who can authorise and document changes before reinspection?",
+      "What was Jovanović's role, if any, in the supplied manganese-removal projects, and should a manganese or filter-media specialist join the team?"
+    ],
+    "outcome": "pair",
+    "taskId": "C053-CH1",
+    "researcherId": "R0185",
+    "inputs": [
+      {
+        "artifactId": "business-C053-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C053-CH1-R0185",
+        "version": 1
+      }
+    ]
+  }
+}

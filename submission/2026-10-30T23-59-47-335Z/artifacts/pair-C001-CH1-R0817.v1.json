@@ -1,0 +1,227 @@
+{
+  "ref": {
+    "artifactId": "pair-C001-CH1-R0817",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-30T23-59-47-335Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C001-CH1",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C001-CH1-R0817",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can a self-supervised, contrastive representation learned from a site's unlabelled Modbus/BACnet traffic characterise normal behaviour well enough to flag anomalous flows and behaviour drift, and can the resulting score be explained to a plant manager in plain language without any labelled attack examples? The first experiment tests whether flow- and packet-level features from ProtoSense captures can be tokenised and modelled with the researcher's missingness- and time-gap-aware self-supervised pipeline, evaluated against operator-verified normal periods and controlled testbed injections.",
+    "rationale": [
+      {
+        "text": "Her core line of work is learning useful representations from industrial logs with no labelled examples, which matches the company's zero-attack-example constraint directly.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08878",
+            "field": "abstract",
+            "quote": "can learn meaningful latent representations from such logs without any labelled examples",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08885",
+            "field": "abstract",
+            "quote": "TabSCL is evaluated on seven datasets from manufacturing and utilities sectors",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her time-aware contrastive objective has been evaluated specifically on downstream anomaly detection, the exact task ProtoSense needs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08881",
+            "field": "abstract",
+            "quote": "improved downstream anomaly detection AUROC by an average of 4.3 percentage points over a standard fixed-window contrastive baseline",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She treats missingness and non-uniform sampling as first-class design elements rather than an imputation afterthought, which suits packet captures with gaps and event-driven logging.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08885",
+            "field": "abstract",
+            "quote": "a missingness-aware feature tokeniser that encodes observed/unobserved status as part of the token embedding",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08885",
+            "field": "abstract",
+            "quote": "with missing rates between 12 % and 58 % per channel",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has already built deployment-time drift monitoring for tracking representation quality after model handover, which corresponds to the company's need to flag drift from a site baseline.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0778",
+            "field": "summary",
+            "quote": "development of lightweight deployment-time drift monitors for tracking representation quality after model handover",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Her projects include taking these representations onto constrained edge hardware, relevant to on-device inference on an appliance.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0779",
+            "field": "summary",
+            "quote": "including the TabSCL framework and its deployment onto edge hardware",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "She has a track record of building benchmark datasets jointly with regional industrial partners and is explicitly open to company projects on self-supervised pipelines for industrial data.",
+        "sources": [
+          {
+            "recordId": "SYN-PRJ-0778",
+            "field": "summary",
+            "quote": "developed benchmark datasets in partnership with three manufacturing companies in Vojvodina",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0817",
+            "field": "open_to",
+            "quote": "contract research on self-supervised or contrastive learning pipelines for industrial data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "The method must operate without any labelled malicious traffic; supervised training on public ICS datasets is not acceptable, since that approach already produced unusable false-positive rates in the field.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "text",
+            "quote": "we have zero examples of malicious traffic and supervised classifiers are useless to us",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "it flagged so many false positives in real deployments that clients started switching the alerts off",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Every alert must be explainable to a plant manager in plain language, so the anomaly score needs an accompanying human-readable justification.",
+        "sources": [
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we can explain to a plant manager in plain language",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Inference must run on the appliance itself, on the planned variant with a dedicated security processor, without degrading packet forwarding latency.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "plans",
+            "quote": "a fifth hardware variant in late 2025 with a dedicated security processor to support on-device anomaly detection without affecting packet forwarding latency",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The work depends on client traffic archives, the hardware bench and the existing firmware codebase, all shared under NDA, so data-sharing, anonymisation and client-consent terms must be settled before any modelling.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "access to our traffic archives, our hardware bench, and our existing firmware codebase under NDA",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C001-CH1",
+            "field": "detail",
+            "quote": "we have collected several terabytes of captures from consenting clients over the past three years",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The researcher's working precondition is at least six months of historical logs from the industrial partner.",
+        "sources": [
+          {
+            "recordId": "R0817",
+            "field": "notes",
+            "quote": "industrial partner can share at least six months of historical sensor logs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Capacity is tight on both sides: the company can release only one to two engineers part-time, and only one doctoral student is available for a secondment of up to three months, while the researcher's own availability is unknown.",
+        "sources": [
+          {
+            "recordId": "C001",
+            "field": "rd_capacity",
+            "quote": "We can dedicate one to two engineers part-time to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0817",
+            "field": "notes",
+            "quote": "available for secondment to an NTP company for up to three months from mid-2025",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "Transfer gap: all of her cited anomaly-detection evidence comes from process/SCADA sensor logs and tabular sensor datasets, not from network packet captures; whether Modbus/BACnet flow and packet features behave like her sparse tabular sensor streams is untested and must be the first experiment.",
+      "Evaluation without labels: with no confirmed attack captures, true detection performance cannot be measured directly; only operator-confirmed normal periods and testbed-injected traffic can serve as a proxy, and this limits how strongly any result can be claimed.",
+      "Explainability is not evidenced in her material: her publications report representation quality, AUROC and F1, but nothing on producing plain-language explanations, so the plant-manager-facing requirement is a genuine open problem.",
+      "Alert fatigue repeats the earlier failure: the company's clients already switched off alerts once; a per-site baseline that drifts or is over-sensitive could end the same way, and per-site retraining on terabytes of captures may be needed for each customer.",
+      "Her cross-domain transfer evidence is qualified, which matters for a product shipped to many different sites with heterogeneous networks.",
+      "Her own availability is unknown, and the only committed student resource is a three-month secondment, which may be too short for a multi-site, multi-year capture study; company engineering support is part-time only.",
+      "Data access depends on client consent and NDA terms; some clients with twenty years of unmonitored operation may be unwilling to release packet captures, and the captures may contain sensitive operational detail."
+    ],
+    "questions": [
+      "Can ArmaturaSec provide flow-level or packet-level feature exports from ProtoSense with documented semantics, rather than only raw pcap, and who defines the feature schema?",
+      "Is any traffic available that is known or strongly suspected to be malicious (incident reports, red-team exercises, testbed injection with physical PLC simulators) for validation, even if not part of the training data?",
+      "What is the target hardware profile and latency budget for on-device inference, and is the dedicated-security-processor variant available on the bench now?",
+      "What false-alarm rate do clients actually tolerate before switching alerts off, and how quickly must a new site baseline be learned from that site's traffic?",
+      "What form of explanation is acceptable to a plant manager — per-alert contributing features, a drift score, or a narrative summary — and has this been tested with end users?",
+      "What are the NDA, anonymisation and client-consent conditions for sharing three years of captures, and which clients have agreed?",
+      "What is the researcher's actual availability, and is the intended arrangement a joint project, an industrial PhD, or a combination with the ADAPT-ICS student secondment?",
+      "Who funds the work and for how long, given one to two part-time company engineers and a three-month student secondment?"
+    ],
+    "outcome": "pair",
+    "taskId": "C001-CH1",
+    "researcherId": "R0817",
+    "inputs": [
+      {
+        "artifactId": "business-C001-CH1",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C001-CH1-R0817",
+        "version": 1
+      }
+    ]
+  }
+}

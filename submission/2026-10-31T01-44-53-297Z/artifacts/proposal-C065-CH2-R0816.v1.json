@@ -1,0 +1,231 @@
+{
+  "ref": {
+    "artifactId": "proposal-C065-CH2-R0816",
+    "version": 1
+  },
+  "kind": "proposal",
+  "runId": "2026-10-31T01-44-53-297Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C065-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C065-CH2-R0816",
+      "version": 1
+    },
+    {
+      "artifactId": "pair-C065-CH2-R0816",
+      "version": 1
+    }
+  ],
+  "content": {
+    "title": "Hybrid Recommender Prototype for Small E-Commerce Catalogues",
+    "facts": [
+      {
+        "text": "The company's material states that with only 500–2,000 transactions per client its collaborative filtering models gave worse results than simple best-seller sorting, with the largest dataset at 1,900 completed orders over eighteen months and the smallest around 520, and that it cannot wait for larger datasets; it also reports the purchase co-occurrence matrix was too sparse to be useful.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "text",
+            "quote": "with only 500–2,000 transactions per client the collaborative filtering models we tried give worse results than simple best-seller sorting",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "The largest dataset had 1 900 completed orders over eighteen months; the smallest had around 520.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We do not have the budget or the traffic to wait for larger datasets.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "the purchase co-occurrence matrix was too sparse to be useful",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company's material reports that simple best-seller sorting outperformed the model in its one client A/B test and that a working prototype for one client would be enough to start.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "Simple best-seller sorting actually outperformed the model in our A/B test on the one client where we got far enough to test.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "A working prototype for one client would be enough to start.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company can give full read access to anonymised transaction and product catalogue data under a data-sharing agreement.",
+        "sources": [
+          {
+            "recordId": "C065-CH2",
+            "field": "detail",
+            "quote": "We can give a collaborator full read access to anonymised transaction and product catalogue data.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "access to anonymised client datasets under a data-sharing agreement",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The company can allocate one mid-level developer for roughly one day per week and reports it has not done a structured collaboration with a university or research institution, while Erić is cautious about commitments requiring more than one day per week outside the faculty during the academic semester.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "rd_capacity",
+            "quote": "We can allocate one mid-level developer for roughly one day per week to an applied research collaboration",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "past_collaborations",
+            "quote": "we have not done a structured collaboration with a university or research institution",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "notes",
+            "quote": "cautious about commitments that require more than one day per week outside the faculty during the academic semester",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "The client stack includes PHP/Laravel backend development, MySQL/MariaDB transactional data, and WooCommerce with custom REST API integrations.",
+        "sources": [
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "PHP (Laravel framework) for backend portal development",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "MySQL and MariaDB for transactional data",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C065",
+            "field": "tech",
+            "quote": "WooCommerce and custom REST API integrations",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić lists joint projects with retail technology companies as open; her dissertation concerned hybrid recommendation strategies for data-sparse retail environments, and her group combines content-based filtering with behavioural signals from sparse transaction logs typical of small and medium retail businesses.",
+        "sources": [
+          {
+            "recordId": "R0816",
+            "field": "open_to",
+            "quote": "joint projects with retail technology companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "bio",
+            "quote": "dissertation on hybrid recommendation strategies for data-sparse retail environments",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0816",
+            "field": "bio",
+            "quote": "combining content-based filtering with behavioural signals derived from sparse transactional logs typical of small and medium retail businesses",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić's work shows structured product attribute data can be encoded into feature vectors for new-item recommendation, but it notes limitations in attribute completeness and supplier data availability, and warns that content-based methods tend to over-specialise recommendations.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "structured product attribute data—category hierarchy, price tier, packaging size, and supplier origin—can be encoded into feature vectors to support immediate recommendation of new items",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-08868",
+            "field": "abstract",
+            "quote": "Limitations related to attribute completeness and supplier data availability are discussed.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-03666",
+            "field": "abstract",
+            "quote": "Content-based methods show more stable baseline performance under these conditions but tend to over-specialise recommendations.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Erić's matrix-factorization study found hit rate drops below the non-personalised popularity baseline at 0.3% density.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-08869",
+            "field": "abstract",
+            "quote": "hit rate drops below the non-personalised popularity baseline at 0.3% density",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "inferences": [
+      "Because Erić's evaluations use grocery, clothing, pharmacy and home-goods retail data rather than Harmat's e-commerce catalogues, transfer to a Harmat client is plausible but unproven; the first test should therefore be a one-client transfer check.",
+      "A content-heavy hybrid is more likely to beat best-seller sorting on small catalogues if metadata is rich enough, but sparse co-occurrence and over-specialisation could erase the gain, so a one-factor-at-a-time comparison should show which signal matters.",
+      "The proposal is conditional because Erić's availability is unknown and semester-limited; joint-project willingness is open, but a one-day-per-week cadence still needs her confirmation."
+    ],
+    "proposedActions": [
+      "First experiment: select one Harmat client after a data-sharing agreement and use its anonymised completed orders, expected in the 500–2,000 range, plus product catalogue metadata, split by time into train/test; baseline is best-seller sorting. Build two variants: content-only attribute similarity and a content plus session/co-occurrence hybrid. Measure offline precision@5 and recall@5 against the baseline, then, if offline results justify it, run a small A/B test on product pages against best-seller. Researcher contribution: Erić designs and evaluates the recommender; company contribution: Harmat supplies data access and one developer for Laravel/MySQL/WooCommerce integration and logging. This tests transfer from Erić's published retail settings to one Harmat catalogue. Go/no-go: proceed only if the hybrid beats best-seller by an agreed relative margin (proposed ≥10% on precision@5) and metadata completeness passes an agreed threshold; stop if metadata is too incomplete or no variant beats popularity. Proposed timeline: 4 weeks data audit and offline test, 4–6 weeks integration/A/B if go.",
+      "Agree before start the A/B success criterion: metric (click-through or add-to-cart rate), minimum relative lift over best-seller, evaluation window and minimum traffic; treat these as negotiation targets, not guarantees, and confirm the one-client test has enough traffic for reliability.",
+      "Audit product metadata per client: descriptions, categories, attributes, price tier, supplier and languages; quantify completeness and flag fields needed for attribute vectors and explanations.",
+      "Run a one-factor-at-a-time comparison (best-seller, content-only, content+session, content+co-occurrence) on the same temporal split to identify which factor drives any gain, and document integration constraints for Laravel/MySQL/WooCommerce."
+    ],
+    "questions": [
+      "Which client and catalogue will be used for the prototype, and what are the exact transaction, user, SKU and time-span counts?",
+      "What product metadata fields are available (descriptions, categories, attributes, price tier, supplier), in which languages, and how complete are they?",
+      "What is the precise success criterion versus best-seller sorting: metric, minimum lift, evaluation window and available A/B traffic?",
+      "Can Harmat confirm the joint-project format, data-sharing agreement, anonymisation procedure and data access mechanism, and name who will do the PHP/Vue/MySQL/WooCommerce integration?",
+      "Can Branislava Erić confirm availability for the required one-day-per-week cadence during semester and summer flexibility, and is there interest in an industrial PhD track, which is currently unknown?"
+    ],
+    "markdown": "# Hybrid Recommender Prototype for Small E-Commerce Catalogues\n\n## Verified facts\n- The company's material states that with only 500–2,000 transactions per client its collaborative filtering models gave worse results than simple best-seller sorting, with the largest dataset at 1,900 completed orders over eighteen months and the smallest around 520, and that it cannot wait for larger datasets; it also reports the purchase co-occurrence matrix was too sparse to be useful. [F1]\n- The company's material reports that simple best-seller sorting outperformed the model in its one client A/B test and that a working prototype for one client would be enough to start. [F2]\n- The company can give full read access to anonymised transaction and product catalogue data under a data-sharing agreement. [F3]\n- The company can allocate one mid-level developer for roughly one day per week and reports it has not done a structured collaboration with a university or research institution, while Erić is cautious about commitments requiring more than one day per week outside the faculty during the academic semester. [F4]\n- The client stack includes PHP/Laravel backend development, MySQL/MariaDB transactional data, and WooCommerce with custom REST API integrations. [F5]\n- Erić lists joint projects with retail technology companies as open; her dissertation concerned hybrid recommendation strategies for data-sparse retail environments, and her group combines content-based filtering with behavioural signals from sparse transaction logs typical of small and medium retail businesses. [F6]\n- Erić's work shows structured product attribute data can be encoded into feature vectors for new-item recommendation, but it notes limitations in attribute completeness and supplier data availability, and warns that content-based methods tend to over-specialise recommendations. [F7]\n- Erić's matrix-factorization study found hit rate drops below the non-personalised popularity baseline at 0.3% density. [F8]\n\n## Our inference\n- Because Erić's evaluations use grocery, clothing, pharmacy and home-goods retail data rather than Harmat's e-commerce catalogues, transfer to a Harmat client is plausible but unproven; the first test should therefore be a one-client transfer check.\n- A content-heavy hybrid is more likely to beat best-seller sorting on small catalogues if metadata is rich enough, but sparse co-occurrence and over-specialisation could erase the gain, so a one-factor-at-a-time comparison should show which signal matters.\n- The proposal is conditional because Erić's availability is unknown and semester-limited; joint-project willingness is open, but a one-day-per-week cadence still needs her confirmation.\n\n## Proposed next steps\n- First experiment: select one Harmat client after a data-sharing agreement and use its anonymised completed orders, expected in the 500–2,000 range, plus product catalogue metadata, split by time into train/test; baseline is best-seller sorting. Build two variants: content-only attribute similarity and a content plus session/co-occurrence hybrid. Measure offline precision@5 and recall@5 against the baseline, then, if offline results justify it, run a small A/B test on product pages against best-seller. Researcher contribution: Erić designs and evaluates the recommender; company contribution: Harmat supplies data access and one developer for Laravel/MySQL/WooCommerce integration and logging. This tests transfer from Erić's published retail settings to one Harmat catalogue. Go/no-go: proceed only if the hybrid beats best-seller by an agreed relative margin (proposed ≥10% on precision@5) and metadata completeness passes an agreed threshold; stop if metadata is too incomplete or no variant beats popularity. Proposed timeline: 4 weeks data audit and offline test, 4–6 weeks integration/A/B if go.\n- Agree before start the A/B success criterion: metric (click-through or add-to-cart rate), minimum relative lift over best-seller, evaluation window and minimum traffic; treat these as negotiation targets, not guarantees, and confirm the one-client test has enough traffic for reliability.\n- Audit product metadata per client: descriptions, categories, attributes, price tier, supplier and languages; quantify completeness and flag fields needed for attribute vectors and explanations.\n- Run a one-factor-at-a-time comparison (best-seller, content-only, content+session, content+co-occurrence) on the same temporal split to identify which factor drives any gain, and document integration constraints for Laravel/MySQL/WooCommerce.\n\n## Open questions\n- Which client and catalogue will be used for the prototype, and what are the exact transaction, user, SKU and time-span counts?\n- What product metadata fields are available (descriptions, categories, attributes, price tier, supplier), in which languages, and how complete are they?\n- What is the precise success criterion versus best-seller sorting: metric, minimum lift, evaluation window and available A/B traffic?\n- Can Harmat confirm the joint-project format, data-sharing agreement, anonymisation procedure and data access mechanism, and name who will do the PHP/Vue/MySQL/WooCommerce integration?\n- Can Branislava Erić confirm availability for the required one-day-per-week cadence during semester and summer flexibility, and is there interest in an industrial PhD track, which is currently unknown?",
+    "taskId": "C065-CH2",
+    "researcherId": "R0816",
+    "format": "joint_project",
+    "isConditional": true,
+    "inputs": [
+      {
+        "artifactId": "business-C065-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C065-CH2-R0816",
+        "version": 1
+      },
+      {
+        "artifactId": "pair-C065-CH2-R0816",
+        "version": 1
+      }
+    ]
+  }
+}

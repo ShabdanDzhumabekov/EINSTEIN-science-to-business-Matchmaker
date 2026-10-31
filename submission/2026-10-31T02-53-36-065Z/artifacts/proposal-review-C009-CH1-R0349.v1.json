@@ -1,0 +1,124 @@
+{
+  "ref": {
+    "artifactId": "proposal-review-C009-CH1-R0349",
+    "version": 1
+  },
+  "kind": "review",
+  "runId": "2026-10-31T02-53-36-065Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    }
+  ],
+  "content": {
+    "phase": "proposal",
+    "subject": {
+      "artifactId": "proposal-C009-CH1-R0349",
+      "version": 1
+    },
+    "checkedClaimCount": 8,
+    "issues": [
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "LinguaBot's material states that in a sample of 12,000 real support queries from one bank client about 18% returned no useful result, more than half traced to morphological mismatch or script confusion, and that a good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "in a sample of 12,000 real support queries from one bank client, about 18% returned no useful result",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "A good outcome is getting that 18% miss rate below 5% and keeping it there with a manageable maintenance process.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.26; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "The company needs an approach that is accurate for Serbian, tolerates script mixing automatically and can be updated when new vocabulary arrives without a full re-index; the stated tooling/data budget is modest, around 8,000 EUR, and results should be testable within six months.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "can be updated when new vocabulary arrives without a full re-index",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.39; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "In the researcher's publication, each token is mapped to a phoneme-based canonical form used as the primary identifier in an inverted index, reaching F1 0.81 in ad-hoc search, 14 percentage points above the better of two single-script baselines, on 120,000 news articles.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi postupak uključuje korak normalizacije tokena kojim se za svaki token generiše kanonska forma zasnovana na fonemskoj reprezentaciji, a zatim se fonemski ključevi koriste kao primarni identifikatori u indeksu.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-04278",
+            "field": "abstract",
+            "quote": "Predloženi sistem postiže F1 vrednost od 0,81 u zadatku ad-hoc pretrage, što je povećanje od 14 procentnih poena u odnosu na bolji od dva bazična sistema.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.4; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "The researcher's work on morphological reduction finds that stemming after script normalisation gives consistently better results for all three stemmer combinations (4–9 MAP points), with the evaluation run on a CLEF 2012 subset containing documents in both scripts.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "pri čemu stemovanje posle normalizacije daje konzistentno bolje rezultate za sve tri kombinacije",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-00225",
+            "field": "abstract",
+            "quote": "Evaluacija je sprovedena na podskupu CLEF 2012 kolekcije koji sadrži dokumente u oba pisma.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "Jev rates the support of this claim by its quoted evidence at 0.45; restate it to match the quote or remove it.",
+        "owner": "proposal_writer"
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "blocking",
+        "claim": "Test the deterministic normaliser with a neural fallback limited to out-of-vocabulary tokens against the company's stated production latency and throughput expectations before any wider rollout.",
+        "sources": [
+          {
+            "recordId": "C009-CH1",
+            "field": "detail",
+            "quote": "Budget for tooling or data work is modest — around 8,000 EUR — and we want something testable within six months.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ],
+        "explanation": "The company never states any latency or throughput expectations; the proposal's own open question asks for the SLOs. Reword to make the target explicitly unknown, e.g. 'against production latency/throughput requirements to be confirmed with the company (see open questions)', so the plan is not read as fitting an already-agreed SLO.",
+        "owner": "proposal_writer"
+      }
+    ]
+  }
+}

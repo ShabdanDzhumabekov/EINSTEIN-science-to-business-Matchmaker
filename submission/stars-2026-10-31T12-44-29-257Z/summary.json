@@ -1,0 +1,22 @@
+{
+  "runId": "2026-10-31T12-44-29-257Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "researcherId": "R0365",
+  "screened": 489,
+  "kept": 8,
+  "attempts": [
+    {
+      "taskId": "C003-CH1",
+      "status": "ready",
+      "proposalPath": "proposals/C003-CH1.md"
+    },
+    {
+      "taskId": "C086-CH4",
+      "status": "check_failed"
+    },
+    {
+      "taskId": "C068-CH2",
+      "status": "check_failed"
+    }
+  ]
+}

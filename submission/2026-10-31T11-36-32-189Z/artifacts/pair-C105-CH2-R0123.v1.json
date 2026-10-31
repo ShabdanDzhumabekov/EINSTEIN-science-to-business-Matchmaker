@@ -1,0 +1,209 @@
+{
+  "ref": {
+    "artifactId": "pair-C105-CH2-R0123",
+    "version": 1
+  },
+  "kind": "pair",
+  "runId": "2026-10-31T11-36-32-189Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [
+    {
+      "artifactId": "business-C105-CH2",
+      "version": 1
+    },
+    {
+      "artifactId": "scholar-C105-CH2-R0123",
+      "version": 1
+    }
+  ],
+  "content": {
+    "format": "joint_project",
+    "jointProblem": "Can profiling-led resource tuning, workflow parallelisation and interruption-aware cloud execution reduce GenovaMed’s 24-sample star-allele pipeline below 3 EUR per sample and ideally below 90 minutes without changing clinical call accuracy? The first experiment would profile representative batches and compare baseline versus conservatively optimised executions, testing whether methods demonstrated on WGS/WES transfer to this targeted pharmacogenomic workflow before considering production changes.",
+    "rationale": [
+      {
+        "text": "Rakić has directly relevant commercial experience auditing and optimising cloud genomics costs, although the reported WES savings do not establish what is achievable for this task.",
+        "sources": [
+          {
+            "recordId": "R0123",
+            "field": "industry_experience",
+            "quote": "audit and optimise their cloud-based WES processing pipeline, reducing their per-sample cloud spend by approximately 35 %.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His work provides practical experience with Snakemake orchestration and parallelisation of clinical variant-calling workflows, relevant to investigating GenovaMed’s existing pipeline.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01614",
+            "field": "abstract",
+            "quote": "Job orchestration used Snakemake with a SLURM backend.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01614",
+            "field": "abstract",
+            "quote": "genomic-interval scatter–gather with 100 Mb shards, sample-level parallelism across nodes, and a combination of both.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "He has investigated the interruption and checkpointing economics needed to assess spot instances rather than assuming a lower hourly price means lower total cost.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01615",
+            "field": "abstract",
+            "quote": "Spot and preemptible instances offer substantial per-hour cost reductions for cloud compute but introduce job interruption risk that can increase total cost when checkpointing is not implemented.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01615",
+            "field": "abstract",
+            "quote": "We validated the model against actual billing records from a 200-sample pilot run.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "His alignment research supports examining memory and CPU bottlenecks, while his clinical benchmarking work demonstrates attention to downstream accuracy trade-offs.",
+        "sources": [
+          {
+            "recordId": "SYN-PUB-01612",
+            "field": "abstract",
+            "quote": "Short-read alignment is a memory-bandwidth-limited operation, and cache behaviour strongly influences throughput on modern multicore CPUs.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "SYN-PUB-01617",
+            "field": "abstract",
+            "quote": "We measured mapping quality distribution, soft-clip rate within 200 bp of breakpoints, and downstream SV call concordance using two SV callers.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "text": "Evaluate cost and latency together on complete 24-sample batches at the normal two-batch weekday workload. Below 3 EUR per sample is the cost objective and under 90 minutes is an aspirational runtime target, not an established outcome.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "Our bioinformatics pipeline takes a batch of 24 samples from raw sequencing reads to a final star-allele call in roughly four to six hours.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We run two batches a day on weekdays",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "getting compute cost below 3 EUR per sample and ideally cutting total run time to under 90 minutes",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Clinical call accuracy must be preserved, with any production changes validated and documented within the accredited laboratory quality system.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "without touching the clinical accuracy of the calls.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "about",
+            "quote": "Our laboratory is accredited under ISO 15189 and every report is reviewed by a clinical pharmacist before it leaves the building.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Begin with profiling the existing Python/Snakemake cloud-VM workflow; the suspected alignment and calling bottlenecks are unconfirmed, so neither a rewrite nor infrastructure migration should be assumed necessary.",
+        "sources": [
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We wrote the pipeline ourselves in Python using Snakemake",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "tech",
+            "quote": "In-house star-allele calling pipeline (Python, Snakemake) running on cloud VMs",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105-CH2",
+            "field": "detail",
+            "quote": "We think alignment and the star-allele calling step are the heavy consumers, but we are not certain.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Scope implementation and validation to the small annual R&D budget and the company staff allocation; extensive infrastructure development may not be affordable.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "The two-person bioinformatics team and two senior molecular biologists can dedicate roughly two days per week each to a collaborative project",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a small discretionary R&D budget of approximately 8,000 EUR per year.",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      {
+        "text": "Use retained clinical samples only within the permitted ethics scope; availability of samples does not establish permission to share sequencing data or move them to another computing environment.",
+        "sources": [
+          {
+            "recordId": "C105",
+            "field": "rd_capacity",
+            "quote": "a set of retained clinical samples held under ethics approval",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      }
+    ],
+    "risks": [
+      "The strongest optimisation evidence concerns WGS/WES, GATK and particular aligners, not GenovaMed’s star-allele caller. The first baseline-versus-optimised experiment must test transfer on the actual panel, including representative difficult CYP2D6 cases; SNP/indel concordance alone would not establish star-allele accuracy.",
+      "Neither reported commercial savings nor publication speedups establish the substantially larger combined improvement sought here. Profiling may reveal serial caller work, I/O or fixed overheads that limit achievable cost and latency reductions.",
+      "Spot interruptions, retries and checkpoint overhead may erase savings or breach turnaround targets. Current provider, VM configuration, billing boundaries and checkpoint support are unknown.",
+      "The researcher’s availability is unknown, and the company’s limited budget may constrain paid effort and validation coverage. No delivery schedule can yet be committed.",
+      "The scope of ethics approval, data-access permissions and production change-control requirements is unknown; these could prevent external benchmarking or delay deployment."
+    ],
+    "questions": [
+      "Can Rakić confirm his availability, proposed effort, start date and fees for a joint project within the approximately 8,000 EUR annual budget?",
+      "Which aligner, star-allele caller, reference genome, allele-definition versions and Snakemake rules are used, and can the team provide source code, logs and representative resource traces?",
+      "What cloud provider, VM types, CPU/RAM/storage configuration and purchasing model are used? Does the 9 EUR figure include storage, transfers, idle resources and failed runs, and what should count toward the target?",
+      "What representative, ethically permitted benchmark data and independently validated star-allele truth calls are available, particularly for CYP2D6 structural and copy-number cases?",
+      "Who will approve accuracy acceptance criteria, investigate discordant calls and authorise deployment under the ISO 15189 quality system? What rollback and reproducibility evidence is required?",
+      "Do existing ethics and data-processing permissions allow researcher access and execution on alternative cloud resources or BioSense infrastructure, and what security and retention conditions apply?",
+      "Is the 90-minute objective measured from raw-read availability to completed calls for the full batch, including queuing and retries? What deadline and turnaround variability are acceptable?"
+    ],
+    "outcome": "pair",
+    "taskId": "C105-CH2",
+    "researcherId": "R0123",
+    "inputs": [
+      {
+        "artifactId": "business-C105-CH2",
+        "version": 1
+      },
+      {
+        "artifactId": "scholar-C105-CH2-R0123",
+        "version": 1
+      }
+    ]
+  }
+}

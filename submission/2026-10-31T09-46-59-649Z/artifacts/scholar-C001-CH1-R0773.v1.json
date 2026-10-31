@@ -1,0 +1,304 @@
+{
+  "ref": {
+    "artifactId": "scholar-C001-CH1-R0773",
+    "version": 1
+  },
+  "kind": "scholar",
+  "runId": "2026-10-31T09-46-59-649Z",
+  "datasetVersion": "einstein-matchmaker-data@4fb99b3",
+  "inputs": [],
+  "content": {
+    "researcherId": "R0773",
+    "name": "Branislava Ostojić",
+    "faculty": "Faculty of Technical Sciences",
+    "department": "Department of Computing and Control Engineering",
+    "fields": [
+      "Statistical Process Control",
+      "Machine Learning",
+      "Industrial Cyber-Physical Systems",
+      "Time Series Analysis"
+    ],
+    "keywords": [
+      "multivariate statistical process control",
+      "change-point detection",
+      "non-stationary time series",
+      "adaptive thresholding",
+      "unsupervised anomaly detection",
+      "cyber-physical systems",
+      "online learning",
+      "control charts",
+      "kernel methods",
+      "industrial monitoring"
+    ],
+    "openTo": [
+      "joint research projects with companies operating sensor-instrumented production equipment",
+      "contract research on anomaly detection and SPC system design",
+      "industrial PhD supervision for candidates employed in manufacturing or automation companies",
+      "consulting on deployment and calibration of statistical monitoring systems",
+      "student internships focused on data collection and algorithm prototyping",
+      "equipment access (laboratory testbed with PLC, vibration, pressure, and temperature acquisition)"
+    ],
+    "bio": {
+      "recordId": "R0773",
+      "field": "bio",
+      "text": "Branislava Ostojić received her Dipl.Ing. in Computer Engineering from the Faculty of Technical Sciences, University of Novi Sad in 2000, followed by an M.Sc. in 2003 and a Ph.D. in 2009, both from the same institution. She was appointed Assistant Professor in 2010, Associate Professor in 2016, and Full Professor in 2022. Her research group focuses on statistical process control for industrial systems, combining multivariate time-series analysis with machine learning methods such as kernel-based change-point detection, online anomaly scoring, and adaptive control-chart thresholds for non-stationary signals. She teaches courses in Stochastic Systems, Applied Statistics for Engineers, and Industrial Data Analysis. The group operates within the Laboratory for Intelligent Measurement and Control Systems at FTN, using a real-time data acquisition testbed with programmable logic controllers, vibration sensors, and a shared high-memory compute server for streaming-data experiments."
+    },
+    "industryExperience": {
+      "recordId": "R0773",
+      "field": "industry_experience",
+      "text": "Ostojić has carried out paid consultancy engagements for two manufacturers in the Vojvodina region, advising on the replacement of rule-based alarm systems with data-driven SPC methods and on the design of operator dashboards for process monitoring. Both engagements ran for approximately six months each."
+    },
+    "notes": {
+      "recordId": "R0773",
+      "field": "notes",
+      "text": "Ostojić is particularly interested in collaborators who can provide access to labelled or time-stamped operational data from real production systems, as clean annotated industrial datasets are the main bottleneck for her group's current research. She is not in a position to take on projects requiring extensive hardware integration or embedded firmware development beyond lightweight deployment of pre-trained models."
+    },
+    "works": [
+      {
+        "recordId": "SYN-PUB-08483",
+        "kind": "publication",
+        "title": "A Multivariate CUSUM Scheme with Adaptive Estimation of Covariance Structure for Batch Chemical Processes",
+        "body": {
+          "recordId": "SYN-PUB-08483",
+          "field": "abstract",
+          "text": "Classical multivariate CUSUM charts assume a fixed in-control covariance matrix, an assumption routinely violated in batch manufacturing where operating conditions shift between phases. This paper proposes replacing the static covariance estimate with a sliding-window estimator updated at each sampling instant, with the window length selected by minimising a penalised prediction error over a rolling validation segment. The scheme was evaluated on a publicly available benchmark dataset from a simulated batch reactor (50 process variables, 1 000 batches) as well as on data collected from a plastics-extrusion line at a partner facility. On the benchmark, the average run length to detection for mean-shift magnitudes between 0.5 and 2.0 standard deviations improved by 18–34% compared with the fixed-covariance baseline, at the cost of a 7% increase in false-alarm rate. Parameter sensitivity, computational cost per sample, and the practical question of selecting the penalty coefficient are discussed in detail. The method is implemented in a freely available R package accompanying the paper."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08484",
+        "kind": "publication",
+        "title": "Comparison of Kernel Density and Parametric Approaches to Control-Chart Limit Setting Under Non-Normality",
+        "body": {
+          "recordId": "SYN-PUB-08484",
+          "field": "abstract",
+          "text": "Control limits in Shewhart-type charts are almost always derived under a Gaussian assumption. When process measurements exhibit skewness or heavy tails, this leads to inflated false-alarm rates or missed detections. This paper compares five methods for setting control limits on individual measurements: standard ±3σ, Johnson transformation, Box–Cox transformation, Pearson-family fitting, and nonparametric kernel density estimation with reflection boundary correction. Simulations covered twelve non-normal distributions (skewness 0.5–4.0, kurtosis 3–12) at sample sizes of 100, 300, and 1 000 in-control observations. The kernel density method achieved the closest empirical false-alarm rates to the nominal 0.27% in 10 of 12 distributions at n = 300, but required careful bandwidth selection. A practical decision flowchart is provided. The findings are illustrated using vibration amplitude data from a rotating-machine testbed in the authors' laboratory."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08485",
+        "kind": "publication",
+        "title": "Online Detection of Covariance Shifts in Industrial Sensor Arrays Using the Generalised Likelihood Ratio Test",
+        "body": {
+          "recordId": "SYN-PUB-08485",
+          "field": "abstract",
+          "text": "Changes in the covariance structure of a multivariate sensor stream can signal developing faults before any univariate indicator crosses a threshold. This paper applies a sequential generalised likelihood ratio (GLR) test to detect covariance shifts in an online, computationally efficient manner. The test statistic is computed over a sliding dual-window: a reference window of fixed length and a test window that grows until a detection is declared. Theoretical bounds on average run length are derived under a Wishart distribution model and confirmed by Monte Carlo simulation for dimensions p = 5, 10, 20 with 10 000 replicates each. The method is applied to a 14-channel temperature and pressure dataset from a district-heating substation, where it detected three confirmed maintenance events 40–120 seconds earlier than the plant's existing alarm system. Computational complexity is O(p²) per new sample after initial setup."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08486",
+        "kind": "publication",
+        "title": "Monitoring Nonlinear Process Dynamics with a Kernel Principal Component Analysis Control Chart: A Practical Assessment",
+        "body": {
+          "recordId": "SYN-PUB-08486",
+          "field": "abstract",
+          "text": "Kernel principal component analysis (KPCA) projects nonlinear process data into a feature space where conventional Hotelling T² and Q statistics can be applied. Despite a substantial theoretical literature, practical guidance on kernel and hyperparameter selection for SPC purposes remains limited. This paper presents a systematic assessment of radial-basis-function and polynomial kernels across four industrial benchmark datasets (Tennessee Eastman process, simulated polymerisation reactor, rolling-mill dataset, and an in-house compressor dataset) using fault-detection rate and false-alarm rate as primary metrics. Cross-validation on in-control data was used to select the bandwidth parameter. Results show that RBF-KPCA outperforms linear PCA on three of four datasets, with the compressor data yielding the largest improvement (fault-detection rate 81% vs. 57% at a 1% false-alarm rate). The effect of the number of retained components is also analysed. An open-source Python implementation is included."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08487",
+        "kind": "publication",
+        "title": "Bayesian Change-Point Models for Multivariate Non-Stationary Time Series in Continuous Manufacturing",
+        "body": {
+          "recordId": "SYN-PUB-08487",
+          "field": "abstract",
+          "text": "Many continuous manufacturing processes operate under time-varying mean and variance due to raw-material variability and gradual equipment wear. Standard SPC methods tuned on historical data deteriorate in such environments. This paper formulates a Bayesian online change-point detection model (BOCPD) extended to multivariate observations under a Normal-Inverse-Wishart conjugate prior. The model simultaneously estimates the probability of a change and updates the predictive distribution after each new sample. Two variants are compared: one with a fixed hazard rate and one with a hazard rate estimated from past inter-change intervals using empirical Bayes. On simulated data with p = 8 variables, 500 change points, and signal-to-noise ratios between 0.5 and 3.0, the empirical-Bayes variant reduced the mean detection delay by 1.8 samples at a fixed false-alarm rate of 0.5%. The method was validated on accelerometer data from a CNC milling machine spindle over a six-month period."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07256",
+        "kind": "publication",
+        "title": "Adaptive EWMA Charts for Monitoring Autocorrelated Process Outputs: Simulation Study and Factory Trial",
+        "body": {
+          "recordId": "SYN-PUB-07256",
+          "field": "abstract",
+          "text": "Autocorrelation in process outputs is common when sampling is faster than the process time constant. Standard EWMA charts applied to autocorrelated data produce elevated false-alarm rates. This paper proposes an adaptive EWMA scheme in which the smoothing parameter λ is updated at each time step using a gradient-descent rule that minimises the one-step-ahead prediction error over a forgetting-factor-weighted window of past residuals. The scheme is compared with three baselines—fixed-λ EWMA on raw observations, fixed-λ EWMA on residuals from a fitted ARIMA model, and a T² chart on ARIMA residuals—across an AR(1) process with ρ ∈ {0.3, 0.6, 0.9} and mean shifts of 0.5 to 2.5σ. The adaptive scheme matched or exceeded ARIMA-residual EWMA in all tested conditions and was substantially easier to implement in a production PLC environment. A six-week trial on a bottling line confirmed an 11% reduction in false alarms."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08488",
+        "kind": "publication",
+        "title": "Unsupervised Segmentation of Industrial Time Series via a Penalised Piecewise-Stationary Model",
+        "body": {
+          "recordId": "SYN-PUB-08488",
+          "field": "abstract",
+          "text": "Long industrial time series collected from cyber-physical systems rarely satisfy stationarity over their full length. This paper treats segmentation as a model-selection problem: a piecewise-stationary multivariate Gaussian model is fitted, and the number and positions of segments are chosen by minimising a modified BIC penalising both the number of segments and their minimum length. Optimisation uses a dynamic programming algorithm with complexity O(n²) in the number of observations. The approach is compared with binary segmentation and wild binary segmentation on 24 synthetic scenarios (varying segment lengths 50–500 and p = 4–16 variables) and on three industrial datasets: a paper-machine headbox, a wastewater treatment blower, and a refrigeration compressor. BIC-guided dynamic programming achieved the lowest mean absolute error in estimated change-point locations on 19 of 24 synthetic scenarios and recovered all manually labelled regime changes in the wastewater dataset."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08489",
+        "kind": "publication",
+        "title": "Statistical Process Control for Cyber-Physical Systems: A Survey of Methods and Open Challenges",
+        "body": {
+          "recordId": "SYN-PUB-08489",
+          "field": "abstract",
+          "text": "Cyber-physical systems produce streams of heterogeneous sensor data at high sampling rates, creating both opportunities and difficulties for statistical process control. This chapter surveys methods applicable to the monitoring of such systems, organising them along four dimensions: the stationarity assumption (static vs. adaptive), the observation structure (univariate vs. multivariate), the supervision level (supervised vs. unsupervised), and the computational setting (batch vs. online). For each combination, representative methods are described and their assumptions, strengths, and computational requirements are tabulated. Special attention is given to the interaction between control-chart theory and machine-learning approaches, including isolation forest, autoencoders, and one-class SVMs as anomaly scorers whose output feeds threshold-based alarms. Open challenges discussed include distribution shift under normal ageing, alarm rationalisation in dense sensor networks, and the absence of labelled fault data. The chapter concludes with a set of benchmark recommendations for the community."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08490",
+        "kind": "publication",
+        "title": "One-Class SVM Anomaly Scores as Control-Chart Statistics: Calibration, Threshold Setting, and Recalibration Frequency",
+        "body": {
+          "recordId": "SYN-PUB-08490",
+          "field": "abstract",
+          "text": "One-class support vector machines produce a real-valued decision score that can serve as a univariate control-chart statistic, enabling the combination of nonlinear pattern recognition with the interpretability of run rules and average-run-length guarantees. This paper addresses three practical questions: (1) how to calibrate raw SVM scores to approximate a false-alarm probability, (2) how to set the control limit given a desired in-control ARL, and (3) how frequently the SVM must be retrained to maintain calibration when the in-control distribution drifts slowly. Using a Platt-scaling calibration step and a bootstrap-based limit-setting procedure, the method achieves in-control ARLs within 5% of nominal across six simulated drift scenarios. Recalibration triggered by a secondary drift-detection statistic on residuals reduced worst-case ARL inflation from 43% to 9% on a simulated six-month conveyor-belt dataset with gradual load increase. The paper reports training times and discusses feasibility for edge deployment."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08491",
+        "kind": "publication",
+        "title": "Federated Learning for Distributed Statistical Process Monitoring Across Multiple Production Lines",
+        "body": {
+          "recordId": "SYN-PUB-08491",
+          "field": "abstract",
+          "text": "When identical or similar machines operate at multiple plants, it is attractive to pool monitoring knowledge across sites without centralising raw sensor data for privacy or bandwidth reasons. This paper adapts federated averaging to train a shared anomaly-detection model for multivariate SPC, with each plant training locally on its own data and contributing model updates to a central aggregator. Four federated aggregation strategies are compared against a centralised baseline and a local-only baseline on a network of five simulated production lines with heterogeneous fault-type distributions. Federated averaging with client-side control-limit adjustment achieved fault-detection rates within 4 percentage points of the centralised model on three of five sites, while local-only models lagged by 11–19 percentage points. Communication overhead, convergence speed, and the influence of data heterogeneity on model drift are quantified. Limitations regarding non-IID client data are discussed."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07722",
+        "kind": "publication",
+        "title": "Detecting Abrupt and Gradual Faults in Hydraulic Actuator Systems Using a Combined CUSUM–Autoencoder Approach",
+        "body": {
+          "recordId": "SYN-PUB-07722",
+          "field": "abstract",
+          "text": "Hydraulic actuator faults manifest as either abrupt jumps in pressure or flow or as gradual drift in actuator efficiency. Standard CUSUM charts detect the former reliably but respond slowly to the latter, while autoencoder reconstruction error captures complex multivariate deviations but is insensitive to the direction of change. This paper proposes a two-stage detector: a shallow convolutional autoencoder generates a residual vector, and a sign-constrained CUSUM statistic accumulates this residual in the direction identified by an offline fault-mode analysis. The combined statistic is evaluated on the public Hydraulic System Condition dataset (2 205 cycles, 17 sensors, four fault types) and on a laboratory actuator testbed. For gradual efficiency-loss faults, the combined scheme reduced mean detection delay from 41 cycles (autoencoder alone) to 17 cycles at a matched false-alarm rate of 1%. No improvement over plain CUSUM was observed for abrupt pressure-drop faults, confirming complementary strengths."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08493",
+        "kind": "publication",
+        "title": "Benchmarking Change-Point Detection Algorithms on Annotated Industrial Datasets: Methodology and Initial Results",
+        "body": {
+          "recordId": "SYN-PUB-08493",
+          "field": "abstract",
+          "text": "Published evaluations of change-point detection algorithms are difficult to compare because they use different datasets, annotation conventions, and performance metrics. This paper proposes a reproducible benchmarking protocol and applies it to eight algorithms—including BOCPD, PELT, RUPTURES binary segmentation, wild binary segmentation, BOCD with student-t likelihood, L2-cost dynamic programming, a kernel change-point detector, and an LSTM-based method—on six annotated industrial datasets contributed by the authors and three collaborating groups. Annotations were produced by domain engineers and reviewed by a second engineer; disagreements were resolved by consensus. Metrics reported include F1 score at a tolerance of five samples, mean absolute error in change-point location, and computational time per 1 000 observations. No single algorithm dominated across all datasets. PELT performed best on datasets with large between-segment variance ratios, while the kernel method was most robust on datasets with covariance-only changes. The datasets and annotation files are deposited in a public repository."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08494",
+        "kind": "publication",
+        "title": "Monitoring Concept Drift in Online Anomaly Detection Models for Industrial IoT Streams",
+        "body": {
+          "recordId": "SYN-PUB-08494",
+          "field": "abstract",
+          "text": "Anomaly detection models deployed in industrial IoT environments face concept drift: the statistical properties of normal operation change over months due to seasonal variation, equipment ageing, or production-mix changes. This paper proposes a two-level monitoring architecture in which a primary anomaly detector (isolation forest trained offline) is supervised by a secondary drift monitor based on the Page–Hinkley test applied to the score distribution's empirical mean and variance. When drift is confirmed, a lightweight incremental update procedure re-weights the forest using recent in-control samples without full retraining. The architecture is evaluated on 18 months of data from three IoT-connected air-compressor units at a manufacturing plant, comprising approximately 4.7 million observations per unit. The drift monitor correctly identified seven of eight documented operating-regime transitions with one false trigger. Post-update fault-detection rates recovered to within 3% of the initial model's performance within 2 000 samples of each transition."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-08495",
+        "kind": "publication",
+        "title": "Adaptive Binarisation of Low-Contrast Scanned Documents Using Local Gradient Statistics",
+        "body": {
+          "recordId": "SYN-PUB-08495",
+          "field": "abstract",
+          "text": "Binarisation is a critical pre-processing step for OCR pipelines operating on degraded paper documents. This paper evaluates three families of local thresholding algorithms—Sauvola, Niblack, and a modified Bradley–Roth variant—on a corpus of 480 scanned Serbian administrative forms from the 1990s, characterised by ink fade and uneven illumination. We propose a parameter selection scheme based on histogram skewness and local contrast variance that adapts the window size and correction factor without manual tuning. On the DIBCO 2011 benchmark the method achieves an F-measure of 88.3% and a pseudo-recall of 90.1%, comparable to supervised deep learning approaches while requiring no training data. Processing time on a single CPU core averages 1.4 seconds per A4 page at 300 dpi. The approach is integrated into an open-source preprocessing toolkit released alongside the paper."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-06242",
+        "kind": "publication",
+        "title": "Scheduling Dependent Task Graphs with Shared Peripherals on Multi-Core Microcontrollers: An ILP Approach",
+        "body": {
+          "recordId": "SYN-PUB-06242",
+          "field": "abstract",
+          "text": "Many embedded control applications express their computation as directed acyclic task graphs (DAGs) where nodes represent computation phases and edges encode data dependencies and shared peripheral access sequences (SPI, I2C, UART). This paper formulates the problem of scheduling such DAGs on a dual-core STM32H7 microcontroller as a mixed-integer linear programme that jointly models core assignment, execution order, and peripheral arbitration. A symmetry-breaking constraint set reduces solution space by a factor of up to 4.8 on symmetric DAGs. Experiments used 12 control application DAGs collected from open-source embedded projects, ranging from 8 to 47 nodes. The ILP produced valid schedules with average hyperperiod makespan 11% below a list-scheduling baseline. Peripheral contention accounted for 19–34% of total schedule length, motivating the joint treatment of computation and peripheral arbitration. The paper discusses how the formulation extends to three or more cores."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-04542",
+        "kind": "publication",
+        "title": "Comparison of Interval Newton and Krawczyk Operators for Parameter Bounds in a Lorenz-Type System",
+        "body": {
+          "recordId": "SYN-PUB-04542",
+          "field": "abstract",
+          "text": "The Lorenz-type ordinary differential equation system is widely used as a testbed for nonlinear parameter estimation because its sensitivity to initial conditions and parameter values makes classical gradient-based methods unreliable. This conference paper presents a systematic numerical comparison of the interval Newton operator and the Krawczyk operator for computing guaranteed enclosures of equilibrium-consistent parameter sets in a three-dimensional Lorenz-type system. Six parameter configurations are studied, covering both chaotic and non-chaotic regimes. Integration of the state equations is performed using a validated Runge–Kutta scheme with step-size control based on interval extensions. Results show that the Krawczyk operator converges to tighter boxes in four of the six cases but incurs a 22% higher per-iteration cost due to the matrix–vector product with the interval remainder term. Both operators are embedded within the same branch-and-bound framework, and wall-clock times for achieving a relative box diameter below 10^-3 are reported. The study finds no single operator that dominates across all tested regimes, motivating a hybrid switching strategy for future work."
+        }
+      },
+      {
+        "recordId": "SYN-PUB-07181",
+        "kind": "publication",
+        "title": "Interpretable Visual Question Answering via Scene Graphs and Answer Set Programs",
+        "body": {
+          "recordId": "SYN-PUB-07181",
+          "field": "abstract",
+          "text": "Visual question answering systems typically produce answers without explicit intermediate reasoning traces. We present a pipeline that first generates a scene graph using a trained relation-detection network, serialises the graph as ASP facts, and then uses a question-parsing module to convert natural-language questions into ASP queries. The ASP solver returns both the answer and the subset of scene-graph atoms that support it, forming a human-readable proof. The pipeline is evaluated on two benchmark VQA datasets totalling 94,000 question–image pairs filtered for questions answerable from scene graphs alone (approximately 61% of the full sets). Accuracy is 73.4% and 69.8% on the two benchmarks, below the best end-to-end neural systems by 4–6 points, but a panel of 20 domain experts rated the proof traces as 'sufficiently informative to audit' in 81% of correct answers. We discuss the main accuracy loss: errors in the upstream scene graph propagate irreversibly to the logic layer."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0670",
+        "kind": "project",
+        "title": "Adaptive Data-Driven Anomaly Detection for Cyber-Physical Production Systems",
+        "body": {
+          "recordId": "SYN-PRJ-0670",
+          "field": "summary",
+          "text": "The project developed and validated a family of adaptive anomaly detection methods for multivariate sensor streams in manufacturing cyber-physical systems, with particular focus on handling non-stationarity caused by regime changes and gradual drift. Core contributions included the extreme-value-theory adaptive thresholding scheme, a federated monitoring architecture for multi-site deployment, and an annotated benchmark collection of six industrial datasets with reproducible evaluation protocols. The laboratory testbed was extended with additional vibration and pressure sensors during the project period. Two doctoral dissertations were completed under project funding, and seven journal papers were published. Results were transferred to two manufacturing companies in the Vojvodina region through technology-transfer workshops."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0671",
+        "kind": "project",
+        "title": "Interoperable Monitoring Middleware for Industrial IoT with Embedded Statistical Quality Control",
+        "body": {
+          "recordId": "SYN-PRJ-0671",
+          "field": "summary",
+          "text": "This cross-border project addressed the integration of statistical process control logic into IoT middleware platforms used by small and medium-sized manufacturers in the Hungary–Serbia border region. The Novi Sad team led the work package on SPC algorithm design and embedded deployment, contributing drift-robust anomaly scoring modules certified to run on Cortex-M class microcontrollers. The Hungarian partner coordinated middleware architecture and communication protocols, while a regional chamber of commerce facilitated access to pilot companies. Three pilot deployments were completed: a food-packaging line, a metal-pressing workshop, and a grain-drying facility. Evaluation covered detection latency, energy consumption, and false-alarm frequency over 12-month monitoring periods."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0240",
+        "kind": "project",
+        "title": "Warehouse Pose Estimation Under Real-World Conditions for Worker Safety Monitoring",
+        "body": {
+          "recordId": "SYN-PRJ-0240",
+          "field": "summary",
+          "text": "The project developed and validated monocular pose estimation methods adapted to logistics warehouse environments where occlusion, mixed artificial lighting, and heavy machinery create severe domain shift from standard benchmark conditions. Research activities included collection and annotation of the WarePose dataset, design of source-free adaptation procedures, and integration of kinematic constraint layers into detection pipelines. Collaboration with two logistics companies in Vojvodina provided access to real facilities for data collection and for pilot deployment of a software monitoring prototype. The project also supported two PhD students and produced six peer-reviewed publications. The resulting software prototype estimates ergonomic risk indicators from monocular CCTV footage without modifying existing camera infrastructure."
+        }
+      },
+      {
+        "recordId": "SYN-PRJ-0764",
+        "kind": "project",
+        "title": "Wireless Resource Management for Immersive Media Applications",
+        "body": {
+          "recordId": "SYN-PRJ-0764",
+          "field": "summary",
+          "text": "WIRE360 was a cross-border cooperation project between Serbian and Hungarian universities targeting resource allocation strategies for immersive video applications in shared wireless cells. Janković led the work package responsible for application-layer quality modelling and subjective evaluation methodology. The project established joint subjective testing infrastructure, collected a shared head-tracking database distributed to regional research institutions, and delivered two pilot demonstrations of viewport-adaptive streaming in public venues in Novi Sad and Subotica. Three bilateral staff exchanges and four joint publications resulted from the collaboration."
+        }
+      }
+    ],
+    "participation": {
+      "industrialPhdSupervision": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "industrial PhD supervision for candidates employed in manufacturing or automation companies",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "jointProject": {
+        "status": "open",
+        "sources": [
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "joint research projects with companies operating sensor-instrumented production equipment",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          },
+          {
+            "recordId": "R0773",
+            "field": "open_to",
+            "quote": "contract research on anomaly detection and SPC system design",
+            "datasetVersion": "einstein-matchmaker-data@4fb99b3"
+          }
+        ]
+      },
+      "availability": {
+        "status": "unknown",
+        "sources": []
+      }
+    },
+    "qualityFlags": []
+  }
+}
